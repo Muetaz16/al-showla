@@ -340,7 +340,7 @@ export default function CartPage() {
       } else {
         setBoqRef(null);
         setBoqFileName(null);
-        setBoqError(result.message);
+        setBoqError((result as any).message);
       }
     };
     reader.readAsDataURL(file);
