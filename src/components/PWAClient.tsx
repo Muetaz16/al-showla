@@ -2,8 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-// Registers the service worker, surfaces a connection-status pill, and exposes
-// an "install app" button when the browser offers the PWA install prompt (item 18, Unit 1).
+// Surfaces a connection-status pill and an "install app" button.
+// NOTE: the service worker is intentionally DISABLED and actively unregistered.
+// A cached SW was serving stale HTML after deploys, causing hydration mismatches
+// and blank pages on returning devices. Self-healing beats offline caching here:
+// unregistering + clearing caches recovers any stuck device on its next visit.
 export default function PWAClient() {
   const [online, setOnline] = useState(true);
   const [showOffline, setShowOffline] = useState(false);
@@ -11,8 +14,15 @@ export default function PWAClient() {
   const [installed, setInstalled] = useState(false);
 
   useEffect(() => {
+    // Remove any previously-installed service worker + its caches so no device
+    // stays stuck on a stale cached build.
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {});
+      navigator.serviceWorker.getRegistrations()
+        .then((regs) => regs.forEach((r) => r.unregister()))
+        .catch(() => {});
+    }
+    if (typeof caches !== "undefined") {
+      caches.keys().then((keys) => keys.forEach((k) => caches.delete(k))).catch(() => {});
     }
 
     setOnline(navigator.onLine);

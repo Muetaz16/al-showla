@@ -195,13 +195,25 @@ export default function Home() {
 
   /* ── Intersection Observer for animations ── */
   useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>(".ao,.al,.ar");
+    // Signal that JS is managing reveals; this disables the CSS fail-safe so
+    // content isn't left blank if this effect never runs (see globals.css).
+    document.documentElement.classList.add("reveal-js");
+    const els = Array.from(document.querySelectorAll<HTMLElement>(".ao,.al,.ar"));
     if (!els.length) return;
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("av"); } });
-    }, { threshold: 0.12 });
-    els.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
+    const revealAll = () => els.forEach((el) => el.classList.add("av"));
+    // No IntersectionObserver support → just show everything.
+    if (typeof IntersectionObserver === "undefined") { revealAll(); return; }
+    try {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("av"); } });
+      }, { threshold: 0.12 });
+      els.forEach((el) => obs.observe(el));
+      // Safety net: reveal anything still hidden after 3s so content is never stuck.
+      const timer = setTimeout(revealAll, 3000);
+      return () => { obs.disconnect(); clearTimeout(timer); };
+    } catch {
+      revealAll();
+    }
   }, [lang]);
 
   /* ── Counter animation ── */

@@ -451,6 +451,17 @@ footer { background: var(--blue-deeper); }
 .ar { opacity: 0; transform: translateX(30px); transition: opacity .75s ease, transform .75s ease; }
 [dir=rtl] .ar { transform: translateX(-30px); }
 .av { opacity: 1 !important; transform: none !important; }
+
+/* Fail-safe: the scroll-reveal effect only hides content while the JS observer is
+   actually managing it (it adds `reveal-js` to <html> on mount). If that never
+   happens — JS disabled/crashed, a stale service worker, or a browser extension
+   interfering with hydration — content force-reveals after ~1s so the page is
+   NEVER left blank. On a normal load `reveal-js` is added within a few hundred ms,
+   well before this fires, so there is no flash and scroll animations stay intact. */
+@keyframes reveal-failsafe { to { opacity: 1; transform: none; } }
+html:not(.reveal-js) .ao,
+html:not(.reveal-js) .al,
+html:not(.reveal-js) .ar { animation: reveal-failsafe .5s ease 1.5s forwards; }
 .d1 { transition-delay: .07s; } .d2 { transition-delay: .13s; } .d3 { transition-delay: .19s; }
 .d4 { transition-delay: .25s; } .d5 { transition-delay: .31s; } .d6 { transition-delay: .37s; }
 .d7 { transition-delay: .43s; } .d8 { transition-delay: .49s; } .d9 { transition-delay: .55s; }

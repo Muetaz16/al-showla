@@ -221,6 +221,7 @@ function ProductCard({
       <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "#f0f6fd" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={product.imageUrl || "/placeholder-product.svg"} alt={lang === "ar" ? product.nameAr : product.nameEn}
+          loading="lazy" decoding="async"
           style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform .5s" }}
           onError={(e) => {
             const img = e.target as HTMLImageElement;
@@ -676,6 +677,7 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
                   }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={p.imageUrl || "/placeholder-product.svg"} alt={p.nameAr}
+                      loading="lazy" decoding="async"
                       onError={(e) => { const img = e.currentTarget; if (img.src !== window.location.origin + "/placeholder-product.svg") img.src = "/placeholder-product.svg"; }}
                       style={{
                       width: 100, height: 72, objectFit: "cover",
@@ -1290,6 +1292,7 @@ function ProductModal({
           <div style={{ flex: "1 1 300px" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={product.imageUrl || "/placeholder-product.svg"} alt=""
+              loading="lazy" decoding="async"
               onError={(e) => { const img = e.currentTarget; if (img.src !== window.location.origin + "/placeholder-product.svg") img.src = "/placeholder-product.svg"; }}
               style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
