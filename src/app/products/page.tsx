@@ -1142,7 +1142,7 @@ export default function ProductsPage() {
             </div>
           ) : (
             <div className="pcard-grid">
-              {displayedProducts.map(p => (
+              {displayedProducts.map((p: any) => (
               <ProductCard
                 key={p.id}
                 product={p}

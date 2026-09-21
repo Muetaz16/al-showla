@@ -24,10 +24,10 @@ export async function getProducts(): Promise<Product[]> {
       return INITIAL_PRODUCTS;
     }
     
-    return products.map(p => ({
+    return products.map((p: any) => ({
       ...p,
       brand: p.legacyBrand || "",
-      certificates: p.certificates.map(c => ({
+      certificates: p.certificates.map((c: any) => ({
         nameAr: c.scope || "",
         nameEn: c.scope || "",
         issuer: c.grantingAuthority,
