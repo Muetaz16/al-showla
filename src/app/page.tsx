@@ -64,7 +64,7 @@ const T = {
     prod1: "Building & Construction Solutions", prod2: "Industrial Tools & Equipment",
     prod3: "Gypsum Board Systems", prod4: "Ceramic Tiles",
     prod5: "Interior & Exterior Decor", prod6: "Roofing Systems",
-    prod7: "Cement & Steel", prod8: "Thermal Insulation",
+    prod7: "Cement & Steel", prod8: "Thermal Insulation", prodAll: "All Products",
     brandsLbl: "Our Brands",
     // Clients
     clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
@@ -142,7 +142,7 @@ const T = {
     prod1: "أنظمة حلول البناء والانشاء", prod2: "الأدوات والمعدات الصناعية",
     prod3: "أنظمة الجبس بورد", prod4: "بلاط السيراميك",
     prod5: "الديكور الداخلي والخارجي", prod6: "أنظمة التعرفية",
-    prod7: "الأسمنت والحديد", prod8: "عزل حراري",
+    prod7: "الأسمنت والحديد", prod8: "عزل حراري", prodAll: "جميع المنتجات",
     brandsLbl: "علاماتنا التجارية",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
     cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
@@ -289,10 +289,11 @@ export default function Home() {
     { bg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600", tag: "Category 01", t: t.prod1, categoryId: "waterproof" },
     { bg: "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600", tag: "Category 02", t: t.prod2, categoryId: "tools" },
     { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", tag: "Category 03", t: t.prod3, categoryId: "gypsum" },
-    { bg: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600", tag: "Category 04", t: t.prod4, categoryId: "sanitary" },
-    { bg: "https://images.unsplash.com/photo-1565793319886-04e3bfae58b8?w=600", tag: "Category 05", t: t.prod5, categoryId: "flooring" },
+    { bg: "/services/cat-ceramic.jpg", tag: "Category 04", t: t.prod4, categoryId: "sanitary" },
+    { bg: "/services/cat-decor.jpg", tag: "Category 05", t: t.prod5, categoryId: "flooring" },
     { bg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600", tag: "Category 06", t: t.prod6, categoryId: "adhesives" },
     { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", tag: "Category 07", t: t.prod7, categoryId: "steel" },
+    { bg: "/services/cat-all.jpg", tag: lang === "ar" ? "تصفّح" : "Browse", t: t.prodAll, categoryId: "" },
   ];
 
   const BRAND_DATA = [
@@ -478,7 +479,7 @@ export default function Home() {
     },
     {
       name: "الشركة الليبية للحديد والصلب",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/LISCO.jpg",
+      url: "/partners/libyan-iron-steel.jpg",
       country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
       founded: "—",
       website: "#",
@@ -490,7 +491,7 @@ export default function Home() {
     },
     {
       name: "شركة جولدن متيل",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/GoldenMetal.jpg",
+      url: "/partners/golden-metal.jpg",
       country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
       founded: "—",
       website: "#",
@@ -502,7 +503,7 @@ export default function Home() {
     },
     {
       name: "الشركة العربية للأسمنت",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/ArabCement.jpg",
+      url: "/partners/arabian-cement.jpg",
       country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
       founded: "—",
       website: "#",
@@ -705,12 +706,6 @@ export default function Home() {
               <p className="sp" style={{ marginBottom: 14 }}>{t.aboutP2}</p>
               <p className="sp">{t.aboutP3}</p>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
-                <a href="/AlShowla_Company_Profile.pdf" target="_blank" rel="noopener noreferrer"
-                  style={{ background: "var(--blue)", color: "#fff", padding: "12px 26px", fontSize: 13, fontWeight: 700, textDecoration: "none", cursor: "pointer", transition: "background .25s" }}
-                  onMouseOver={(e) => { (e.target as HTMLElement).style.background = "var(--blue-dark)"; }}
-                  onMouseOut={(e) => { (e.target as HTMLElement).style.background = "var(--blue)"; }}>
-                  {t.downloadProfile}
-                </a>
                 <a href="#contact"
                   style={{ border: "2px solid var(--blue)", color: "var(--blue)", padding: "11px 26px", fontSize: 13, fontWeight: 700, textDecoration: "none", cursor: "pointer", transition: "all .25s" }}
                   onMouseOver={(e) => { const el = e.target as HTMLElement; el.style.background = "var(--blue)"; el.style.color = "#fff"; }}
@@ -804,7 +799,7 @@ export default function Home() {
               { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800", ico: "📦", n: "01", t: t.svc1t, b: t.svc1b, descAr: "نقوم باستيراد وتوزيع أجود مواد البناء والمعدات من أفضل الشركات العالمية والمصانع المعتمدة لتصل إلى مواقع العمل في كافة أنحاء ليبيا. نضمن لك سلسلة إمداد مستقرة، أداءً عالي الجودة، وأسعاراً تنافسية تلبي احتياجات كافة المشاريع الكبرى والصغرى.", descEn: "We import and distribute the highest quality building materials and equipment from top global companies and certified factories to work sites across Libya. We guarantee a stable supply chain, high-quality performance, and competitive prices that meet the needs of all projects." },
               { bg: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800", ico: "🔧", n: "02", t: t.svc2t, b: t.svc2b, descAr: "فريقنا الهندسي المتخصص يقدم استشارات فنية متكاملة لاختيار المواد الأنسب لمشروعك، ووضع خطط التوريد الفعالة. نحن هنا لمساعدتك في تحقيق أعلى معايير الجودة وتوفير الوقت والتكاليف من خلال التخطيط السليم وتقديم الحلول الهندسية المبتكرة.", descEn: "Our specialized engineering team provides comprehensive technical consultations to select the most suitable materials for your project and develop effective supply plans. We are here to help you achieve the highest quality standards and save time and costs." },
               { bg: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800", ico: "🌐", n: "03", t: t.svc3t, b: t.svc3b, descAr: "نفتخر بكوننا الوكيل الحصري والموزع المعتمد لعدد من كبرى العلامات التجارية العالمية في السوق الليبية. هذا يضمن لك الحصول على منتجات أصلية بضمان المصنع وتوفير الدعم الفني المباشر من الشركة الأم، مما يضمن كفاءة الأداء واستدامة المشاريع.", descEn: "We are proud to be the exclusive agent and authorized distributor for several major global brands in the Libyan market. This guarantees you original products with factory warranties and direct technical support from the parent company." },
-              { bg: "https://images.unsplash.com/photo-1565793319886-04e3bfae58b8?w=800", ico: "🕐", n: "04", t: t.svc4t, b: t.svc4b, descAr: "نلتزم بتقديم خدمة ما بعد البيع والدعم الفني على مدار الساعة لضمان استمرارية أعمالك دون توقف. فريق الدعم الفني وخدمة العملاء لدينا جاهز دائماً للرد على استفساراتك، وتوفير الحلول السريعة لأي تحديات قد تواجهها في الموقع.", descEn: "We are committed to providing round-the-clock after-sales service and technical support to ensure your business continuity without interruption. Our technical support and customer service team is always ready to answer your inquiries and offer quick solutions." },
+              { bg: "/services/support-247.jpg", ico: "🕐", n: "04", t: t.svc4t, b: t.svc4b, descAr: "نلتزم بتقديم خدمة ما بعد البيع والدعم الفني على مدار الساعة لضمان استمرارية أعمالك دون توقف. فريق الدعم الفني وخدمة العملاء لدينا جاهز دائماً للرد على استفساراتك، وتوفير الحلول السريعة لأي تحديات قد تواجهها في الموقع.", descEn: "We are committed to providing round-the-clock after-sales service and technical support to ensure your business continuity without interruption. Our technical support and customer service team is always ready to answer your inquiries and offer quick solutions." },
             ].map((s, i) => (
               <div className="svc-card" key={i} onClick={() => setSelectedService(s)} style={{ cursor: "pointer" }}>
                 <div className="svc-img" style={{ backgroundImage: `url(${s.bg})` }} />
@@ -834,7 +829,7 @@ export default function Home() {
           </div>
           <div className="prod-grid">
             {products.map((p, i) => (
-              <a href={`/products?category=${p.categoryId}`} className="pc" key={i} style={{ cursor: "pointer", textDecoration: "none" }}>
+              <a href={p.categoryId ? `/products?category=${p.categoryId}` : "/products"} className="pc" key={i} style={{ cursor: "pointer", textDecoration: "none" }}>
                 <div className="pc-bg" style={{ backgroundImage: `url(${p.bg})` }} />
                 <div className="pc-sh" />
                 <div className="pc-ln" />
