@@ -1,0 +1,52 @@
+"use client";
+
+import { useState } from "react";
+import { submitReturnRequest } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
+
+export default function ReturnsPage() {
+  const [sent, setSent] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [form, setForm] = useState({ name: "", phone: "", orderId: "", reason: "", details: "" });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSaving(true);
+    const ok = await submitReturnRequest(form);
+    setSaving(false);
+    if (ok) setSent(true);
+  };
+
+  return (
+    <div dir="rtl" style={{ minHeight: "100vh", background: "#f7f9fc", fontFamily: "'Cairo', sans-serif" }}>
+      <SiteHeader />
+      <div style={{ maxWidth: 600, margin: "40px auto", padding: "0 5%" }}>
+        <h1 style={{ fontSize: 28, fontWeight: 900, color: "#0f1c2e" }}>الإرجاع والاستبدال</h1>
+        <p style={{ color: "#64748b", marginBottom: 24 }}>قدّم طلب إرجاع أو استبدال خلال 7 أيام من الاستلام.</p>
+        {sent ? (
+          <div style={{ background: "#d1fae5", padding: 24, borderRadius: 12, textAlign: "center", fontWeight: 700, color: "#059669" }}>✅ تم استلام طلبك — سنتواصل معك قريباً</div>
+        ) : (
+          <form onSubmit={handleSubmit} style={{ background: "#fff", padding: 28, borderRadius: 16, boxShadow: "0 4px 20px rgba(0,0,0,.06)" }}>
+            {[
+              { key: "name", label: "الاسم", type: "text" },
+              { key: "phone", label: "الهاتف", type: "tel" },
+              { key: "orderId", label: "رقم الطلب", type: "text" },
+              { key: "reason", label: "سبب الإرجاع", type: "text" },
+            ].map(f => (
+              <div key={f.key} style={{ marginBottom: 16 }}>
+                <label style={{ display: "block", fontWeight: 700, marginBottom: 6, fontSize: 13 }}>{f.label}</label>
+                <input required type={f.type} value={(form as Record<string, string>)[f.key]} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))} style={{ width: "100%", padding: 12, borderRadius: 8, border: "1px solid #e2e8f0" }} />
+              </div>
+            ))}
+            <div style={{ marginBottom: 20 }}>
+              <label style={{ display: "block", fontWeight: 700, marginBottom: 6, fontSize: 13 }}>تفاصيل إضافية</label>
+              <textarea rows={4} value={form.details} onChange={e => setForm(p => ({ ...p, details: e.target.value }))} style={{ width: "100%", padding: 12, borderRadius: 8, border: "1px solid #e2e8f0" }} />
+            </div>
+            <button type="submit" disabled={saving} style={{ width: "100%", padding: 14, background: "#0051a2", color: "#fff", border: "none", borderRadius: 10, fontWeight: 800, cursor: "pointer" }}>{saving ? "جاري الإرسال..." : "إرسال الطلب"}</button>
+          </form>
+        )}
+      </div>
+      <SiteFooter />
+    </div>
+  );
+}

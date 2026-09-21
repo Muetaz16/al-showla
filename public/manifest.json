@@ -1,0 +1,33 @@
+{
+  "name": "الشعلة الرائدة — المكتب الميداني",
+  "short_name": "الشعلة",
+  "description": "منصة مبيعات وخدمات الشعلة الرائدة — تعمل مع دعم وضع عدم الاتصال",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "background_color": "#001f4d",
+  "theme_color": "#0051a2",
+  "categories": ["business", "shopping", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

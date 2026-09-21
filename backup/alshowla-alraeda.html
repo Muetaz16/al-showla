@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>AL-SHOWLA AL-RAEDA | مواد البناء والحلول الإنشائية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --blue:#0051a2;--blue-dark:#003578;--blue-deeper:#001f4d;
+  --blue-mid:#0068cc;--blue-light:#e8f2fc;--blue-soft:#d0e6f8;
+  --accent:#f59e0b;--white:#fff;--off:#f7f9fc;
+  --gray:#64748b;--gray-light:#e2e8f0;
+  --text:#0f1c2e;--text2:#3d5473;
+  --sh:0 4px 24px rgba(0,81,162,.1);--shl:0 12px 48px rgba(0,81,162,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--text);font-family:'Cairo',sans-serif;overflow-x:hidden;cursor:none}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#f0f6fd}::-webkit-scrollbar-thumb{background:var(--blue)}
+
+/* ── CURSOR (desktop only) ── */
+#dot,#ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition-property:width,height}
+#dot{width:8px;height:8px;background:var(--blue)}
+#ring{width:32px;height:32px;border:1.5px solid rgba(0,81,162,.5);transition:width .2s,height .2s}
+@media(max-width:860px){#dot,#ring{display:none}body{cursor:auto}}
+
+/* ── LANG TOGGLE ── */
+.lang-btn{position:fixed;top:50%;left:14px;transform:translateY(-50%);z-index:1100;display:flex;flex-direction:column;gap:0;border-radius:28px;overflow:hidden;box-shadow:var(--shl);border:1.5px solid var(--gray-light)}
+[dir=rtl] .lang-btn{left:auto;right:14px}
+.lang-opt{padding:10px 12px;font-size:11px;font-weight:800;letter-spacing:.08em;background:var(--white);color:var(--gray);border:none;cursor:pointer;transition:all .25s;font-family:'Cairo',sans-serif;min-width:48px;text-align:center}
+.lang-opt.active{background:var(--blue);color:var(--white)}
+.lang-opt:hover:not(.active){background:var(--blue-light);color:var(--blue)}
+@media(max-width:860px){.lang-btn{top:auto;bottom:100px;left:14px;flex-direction:row;border-radius:24px}
+[dir=rtl] .lang-btn{left:auto;right:14px}}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;transition:all .4s;gap:16px}
+#nav.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--gray-light)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;cursor:none;flex-shrink:0}
+.nav-logo img{height:42px;display:block}
+.nav-logo-txt{font-family:'Cairo',sans-serif;font-weight:800;font-size:14px;letter-spacing:.03em;color:var(--blue-dark);line-height:1.2}
+.nav-logo-sub{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-mid)}
+.nav-links{display:flex;align-items:center;gap:22px;flex-wrap:nowrap}
+.nav-links a{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text2);text-decoration:none;cursor:none;transition:color .25s;white-space:nowrap}
+[dir=rtl] .nav-links a{letter-spacing:0;text-transform:none;font-size:13px}
+.nav-links a:hover{color:var(--blue)}
+.nav-drop{position:relative}
+.nav-drop-menu{display:none;position:absolute;top:calc(100% + 10px);left:0;background:var(--white);border:1px solid var(--gray-light);border-top:3px solid var(--blue);box-shadow:var(--shl);min-width:190px;padding:6px 0}
+[dir=rtl] .nav-drop-menu{left:auto;right:0}
+.nav-drop:hover .nav-drop-menu{display:block}
+.nav-drop-menu a{display:block;padding:11px 18px;font-size:12px;font-weight:600;color:var(--text2);text-decoration:none;transition:all .2s;white-space:nowrap;text-transform:none;letter-spacing:0}
+.nav-drop-menu a:hover{background:var(--blue-light);color:var(--blue)}
+.nav-cta{background:var(--blue);color:var(--white)!important;padding:10px 22px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:none;transition:background .25s;white-space:nowrap;flex-shrink:0;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+[dir=rtl] .nav-cta{letter-spacing:0;text-transform:none;font-size:12px;clip-path:none}
+.nav-cta:hover{background:var(--blue-dark)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--blue);display:block;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* ── MOBILE NAV ── */
+.mob-nav{display:none;position:fixed;inset:0;background:var(--blue-deeper);z-index:998;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:80px 20px 40px;overflow-y:auto}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:'Cairo',sans-serif;font-size:1.9rem;font-weight:700;color:var(--white);text-decoration:none;cursor:pointer;transition:color .25s;text-align:center}
+.mob-nav a:hover{color:var(--accent)}
+.mob-nav-divider{width:40px;height:2px;background:rgba(255,255,255,.15)}
+
+/* ── HERO ── */
+#home{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--blue-deeper)}
+.hero-photo{position:absolute;inset:0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,rgba(0,31,77,.93) 0%,rgba(0,53,120,.82) 45%,rgba(0,81,162,.5) 75%,rgba(0,104,204,.28) 100%)}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);background-size:38px 38px;pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:1360px;margin:0 auto;padding:100px 5% 60px;display:grid;grid-template-columns:1fr 440px;gap:60px;align-items:center;min-height:100vh}
+.hero-left{padding:20px 0}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);padding:7px 16px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:24px}
+[dir=rtl] .hero-tag{letter-spacing:0;text-transform:none;font-size:12px}
+.hero-tag::before{content:'';width:8px;height:8px;background:var(--accent);border-radius:50%;flex-shrink:0}
+h1.hh{font-family:'Cairo',sans-serif;font-size:clamp(2.4rem,5vw,5.6rem);font-weight:900;line-height:1.08;color:var(--white);margin-bottom:22px}
+h1.hh em{font-style:normal;color:var(--accent)}
+.hero-p{font-size:15px;line-height:1.9;color:rgba(255,255,255,.75);max-width:500px;margin-bottom:36px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-w{background:var(--white);color:var(--blue-dark);padding:13px 30px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:none;transition:all .3s;display:inline-block;font-family:'Cairo',sans-serif}
+[dir=rtl] .btn-w{letter-spacing:0;text-transform:none;font-size:13px}
+.btn-w:hover{background:var(--blue-light);transform:translateY(-2px)}
+.btn-gh{border:2px solid rgba(255,255,255,.5);color:var(--white);padding:12px 30px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:none;transition:all .3s;display:inline-block;font-family:'Cairo',sans-serif}
+[dir=rtl] .btn-gh{letter-spacing:0;text-transform:none;font-size:13px}
+.btn-gh:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+.hstats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.15);margin-top:44px}
+.hstat{background:rgba(255,255,255,.08);padding:22px 14px;text-align:center;border:1px solid rgba(255,255,255,.06)}
+.hstat-n{font-family:'Cairo',sans-serif;font-size:2.4rem;font-weight:900;color:var(--white);line-height:1}
+.hstat-l{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:4px}
+[dir=rtl] .hstat-l{letter-spacing:0;text-transform:none;font-size:11px}
+.hero-right{display:flex;align-items:center;justify-content:center}
+#hsvg{width:100%;max-width:440px}
+.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2}
+.hero-scroll span{font-size:9px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.sline{width:1px;height:36px;background:linear-gradient(to bottom,rgba(255,255,255,.5),transparent);animation:sp 2s ease-in-out infinite}
+@keyframes sp{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* ── TICKER ── */
+.ticker{background:var(--blue);padding:11px 0;overflow:hidden;white-space:nowrap}
+.t-inner{display:inline-flex;animation:tkr 32s linear infinite}
+.ti{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--white);padding:0 36px;display:inline-flex;align-items:center;gap:14px}
+[dir=rtl] .ti{letter-spacing:0;text-transform:none;font-size:13px}
+.ti::after{content:'◆';font-size:6px;color:rgba(255,255,255,.45)}
+@keyframes tkr{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── SECTION BASE ── */
+.sec{padding:100px 0}
+.con{max-width:1360px;margin:0 auto;padding:0 5%}
+.lbl{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+[dir=rtl] .lbl{letter-spacing:0;text-transform:none;font-size:12px}
+.lbl::before{content:'';width:22px;height:2px;background:var(--blue);flex-shrink:0}
+.lbl-w{color:rgba(255,255,255,.8)}.lbl-w::before{background:rgba(255,255,255,.6)}
+h2.sh{font-family:'Cairo',sans-serif;font-size:clamp(2rem,3.5vw,3.4rem);font-weight:900;line-height:1.15;color:var(--text);margin-bottom:14px}
+h2.sh em{font-style:normal;color:var(--blue)}
+h2.shw{color:var(--white)}.h2.shw em{color:var(--accent)}
+.sp{font-size:15px;line-height:1.9;color:var(--text2);max-width:560px}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about-imgbox{position:relative}
+.about-imgbox-inner{position:relative;overflow:hidden}
+.about-imgbox-inner::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,81,162,.28),transparent 60%);z-index:1;pointer-events:none}
+.about-imgbox-inner img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .7s ease}
+.about-imgbox-inner:hover img{transform:scale(1.04)}
+.about-imgbox::after{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:2px solid var(--blue-soft);z-index:-1}
+[dir=rtl] .about-imgbox::after{left:12px;right:-12px}
+.ab-badge{position:absolute;bottom:-18px;right:-18px;background:var(--blue);width:118px;height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3}
+[dir=rtl] .ab-badge{right:auto;left:-18px}
+.ab-n{font-family:'Cairo',sans-serif;font-size:2.4rem;font-weight:900;color:var(--white);line-height:1}
+.ab-t{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-align:center}
+[dir=rtl] .ab-t{letter-spacing:0;text-transform:none;font-size:10px}
+
+/* vision/mission bento */
+.vm-bento{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--gray-light);margin-top:70px}
+.vm-pane{position:relative;overflow:hidden;min-height:280px}
+.vm-pane img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.vm-pane:hover img{transform:scale(1.04)}
+.vm-over{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,31,77,.96) 40%,rgba(0,81,162,.5) 80%,rgba(0,81,162,.1) 100%);padding:32px;display:flex;flex-direction:column;justify-content:flex-end}
+.vm-t{font-family:'Cairo',sans-serif;font-size:1.6rem;font-weight:800;color:var(--white);margin-bottom:9px;line-height:1.25}
+.vm-t em{font-style:normal;color:var(--accent)}
+.vm-b{font-size:13px;line-height:1.85;color:rgba(255,255,255,.75)}
+.vm-b ul{list-style:none}
+.vm-b ul li{padding-inline-start:16px;position:relative;padding-bottom:3px}
+.vm-b ul li::before{content:'›';position:absolute;inset-inline-start:0;color:var(--accent)}
+
+/* values */
+.vals{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--gray-light);margin-top:3px}
+.val-item{padding:26px 18px;border-inline-end:1px solid var(--gray-light);transition:background .3s}
+.val-item:last-child{border-inline-end:none}
+.val-item:hover{background:var(--blue-light)}
+.val-ico{font-size:22px;margin-bottom:9px}
+.val-t{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--blue);margin-bottom:5px}
+[dir=rtl] .val-t{text-transform:none;letter-spacing:0;font-size:13px}
+.val-b{font-size:12px;line-height:1.7;color:var(--gray)}
+
+/* ── CEO ── */
+.ceo-grid{display:grid;grid-template-columns:360px 1fr;gap:72px;align-items:center}
+.ceo-portrait-wrap{position:relative}
+.ceo-portrait-wrap::before{content:'';position:absolute;top:-12px;inset-inline-start:-12px;width:55px;height:55px;border-top:3px solid var(--blue);border-inline-start:3px solid var(--blue)}
+.ceo-portrait-wrap::after{content:'';position:absolute;bottom:-12px;inset-inline-end:-12px;width:55px;height:55px;border-bottom:3px solid var(--accent);border-inline-end:3px solid var(--accent)}
+.ceo-portrait-wrap img{width:100%;display:block;object-fit:cover;object-position:top center;aspect-ratio:.82;filter:saturate(.85)}
+.ceo-name{font-family:'Cairo',sans-serif;font-size:2.2rem;font-weight:900;color:var(--text);margin-bottom:4px}
+.ceo-role{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:26px}
+[dir=rtl] .ceo-role{letter-spacing:0;text-transform:none;font-size:13px}
+.ceo-quote{font-family:'Cairo',sans-serif;font-size:1.2rem;font-weight:600;color:var(--blue-dark);line-height:1.8;margin-bottom:20px;padding:18px 20px;background:var(--blue-light);border-inline-start:4px solid var(--blue)}
+.ceo-body{font-size:14px;line-height:1.95;color:var(--text2)}
+.ceo-kpis{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--gray-light);margin-top:30px}
+.ceo-kpi{padding:20px 14px;text-align:center;border-inline-end:1px solid var(--gray-light)}
+.ceo-kpi:last-child{border-inline-end:none}
+.ceo-kpi-n{font-family:'Cairo',sans-serif;font-size:1.9rem;font-weight:900;color:var(--blue)}
+.ceo-kpi-l{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gray);margin-top:2px}
+[dir=rtl] .ceo-kpi-l{letter-spacing:0;text-transform:none;font-size:10px}
+
+/* ── SERVICES ── */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;background:var(--gray-light);margin-top:48px}
+.svc-card{position:relative;overflow:hidden;cursor:none;aspect-ratio:.88}
+.svc-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease}
+.svc-card:hover .svc-img{transform:scale(1.08)}
+.svc-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,31,77,.97) 28%,rgba(0,81,162,.4) 64%,transparent 100%)}
+.svc-body{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 20px}
+.svc-idx{font-family:'Cairo',sans-serif;font-size:3rem;font-weight:900;color:rgba(255,255,255,.05);line-height:1;margin-bottom:auto;padding-top:10px;transition:color .4s}
+.svc-card:hover .svc-idx{color:rgba(255,255,255,.12)}
+.svc-ico{width:38px;height:38px;background:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:11px;font-size:17px;opacity:0;transform:translateY(8px);transition:all .4s}
+.svc-card:hover .svc-ico{opacity:1;transform:translateY(0)}
+.svc-t{font-family:'Cairo',sans-serif;font-size:13px;font-weight:800;color:var(--white);line-height:1.3;margin-bottom:7px}
+.svc-b{font-size:12px;line-height:1.75;color:rgba(255,255,255,.65);max-height:0;overflow:hidden;transition:max-height .5s ease}
+.svc-card:hover .svc-b{max-height:110px}
+.svc-bar{position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--accent);transition:width .5s ease}
+.svc-card:hover .svc-bar{width:100%}
+
+/* ── CLIENTS ── */
+.cl-bento{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:300px 300px;gap:3px;background:var(--gray-light)}
+.cl-card{position:relative;overflow:hidden;cursor:none}
+.cl-card.tall{grid-row:span 2}
+.cl-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s,filter .4s}
+.cl-card:hover img{transform:scale(1.06);filter:brightness(.85) saturate(1.1)}
+.cl-over{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,31,77,.93) 0%,rgba(0,81,162,.18) 55%,transparent 100%);padding:20px;display:flex;flex-direction:column;justify-content:flex-end}
+.cl-dot{width:9px;height:9px;background:var(--accent);border-radius:50%;margin-bottom:9px;transform:scale(0);transition:transform .3s .1s}
+.cl-card:hover .cl-dot{transform:scale(1)}
+.cl-t{font-family:'Cairo',sans-serif;font-size:14px;font-weight:800;color:var(--white);line-height:1.3}
+.cl-sub{font-size:12px;color:rgba(255,255,255,.6);margin-top:3px;opacity:0;transform:translateY(4px);transition:all .3s}
+.cl-card:hover .cl-sub{opacity:1;transform:translateY(0)}
+.cl-ln{position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.cl-card:hover .cl-ln{transform:scaleX(1)}
+
+/* ── D3 ── */
+.d3-layout{display:grid;grid-template-columns:1fr 480px;gap:72px;align-items:center}
+#d3svg{width:100%;max-width:480px;display:block}
+.d3-li{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--gray-light)}
+.d3-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.d3-nm{font-size:13px;font-weight:600;color:var(--text2);flex:1}
+.d3-pct{font-family:'Cairo',sans-serif;font-size:1.4rem;font-weight:900;color:var(--blue)}
+.bar-rows{margin-top:44px;padding-top:40px;border-top:1px solid var(--gray-light)}
+.br-row{display:flex;align-items:center;gap:12px;margin-bottom:13px}
+.br-lbl{font-size:12px;font-weight:700;color:var(--text2);width:165px;flex-shrink:0}
+.br-track{flex:1;height:4px;background:var(--blue-soft);border-radius:4px;overflow:hidden}
+.br-fill{height:100%;background:var(--blue);border-radius:4px;width:0;transition:width 1.6s ease}
+.br-num{font-size:12px;font-weight:800;color:var(--blue);width:34px;text-align:end;flex-shrink:0}
+
+/* ── PRODUCTS ── */
+.prod-hd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;gap:28px;flex-wrap:wrap}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;background:var(--gray-light)}
+.pc{position:relative;overflow:hidden;cursor:none;min-height:240px}
+.pc-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease}
+.pc:hover .pc-bg{transform:scale(1.07)}
+.pc-sh{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,31,77,.97) 28%,rgba(0,53,120,.35) 68%,transparent 100%)}
+.pc-ln{position:absolute;top:0;inset-inline-end:0;width:3px;height:0;background:var(--accent);transition:height .5s ease}
+.pc:hover .pc-ln{height:100%}
+.pc-body{position:absolute;inset:0;padding:18px 16px;display:flex;flex-direction:column;justify-content:flex-end}
+.pc-num{font-family:'Cairo',sans-serif;font-size:2.8rem;font-weight:900;color:rgba(255,255,255,.04);line-height:1;margin-bottom:auto;padding-top:8px;transition:color .4s}
+.pc:hover .pc-num{color:rgba(255,255,255,.12)}
+.pc-tag{font-size:9px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;opacity:0;transition:opacity .3s}
+[dir=rtl] .pc-tag{letter-spacing:0;text-transform:none;font-size:10px}
+.pc:hover .pc-tag{opacity:1}
+.pc-t{font-family:'Cairo',sans-serif;font-size:12px;font-weight:800;text-transform:uppercase;color:var(--white);line-height:1.3}
+[dir=rtl] .pc-t{text-transform:none;font-size:13px}
+
+/* brands */
+.brands-g{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--gray-light)}
+.br-cell{padding:26px 12px;display:flex;align-items:center;justify-content:center;border-inline-end:1px solid var(--gray-light);transition:background .3s;cursor:none}
+.br-cell:last-child{border-inline-end:none}
+.br-cell:hover{background:var(--blue-light)}
+.br-cell img{max-height:48px;max-width:110px;object-fit:contain;filter:grayscale(100%) opacity(.5);transition:filter .35s}
+.br-cell:hover img{filter:grayscale(0%) opacity(1)}
+
+/* ── PARTNERS ── */
+.pg-grid{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--gray-light);margin-top:44px}
+.pg{padding:26px 8px;display:flex;align-items:center;justify-content:center;border-inline-end:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);transition:background .3s;cursor:none;position:relative;overflow:hidden}
+.pg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.pg:hover{background:var(--blue-light)}.pg:hover::after{transform:scaleX(1)}
+.pg img{max-height:46px;max-width:100%;object-fit:contain;filter:grayscale(100%) opacity(.5);transition:filter .4s}
+.pg:hover img{filter:grayscale(0%) opacity(1)}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.c-bar{height:4px;background:linear-gradient(90deg,var(--white),rgba(255,255,255,.4));margin-bottom:28px;width:72px}
+.c-h{font-family:'Cairo',sans-serif;font-size:1.9rem;font-weight:900;color:var(--white);margin-bottom:8px}
+.c-h em{font-style:normal;color:var(--accent)}
+.c-p{font-size:14px;line-height:1.9;color:rgba(255,255,255,.7);margin-bottom:28px}
+.ci{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.ci-ico{font-size:19px;flex-shrink:0;margin-top:2px}
+.ci-lbl{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:3px}
+[dir=rtl] .ci-lbl{letter-spacing:0;text-transform:none;font-size:10px}
+.ci-val{font-size:14px;color:rgba(255,255,255,.85)}
+.ci-val a{color:var(--accent);text-decoration:none;font-weight:700}
+.soc-row{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.soc-a{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.25);padding:9px 16px;text-decoration:none;cursor:none;transition:all .3s;font-family:'Cairo',sans-serif}
+[dir=rtl] .soc-a{letter-spacing:0;text-transform:none;font-size:12px}
+.soc-a:hover{background:var(--white);color:var(--blue);border-color:var(--white)}
+.form-wrap{background:var(--white);padding:36px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fg{margin-bottom:12px}
+.fg label{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:6px;font-family:'Cairo',sans-serif}
+[dir=rtl] .fg label{letter-spacing:0;text-transform:none;font-size:11px}
+.fg input,.fg textarea,.fg select{width:100%;background:var(--off);border:1.5px solid var(--gray-light);color:var(--text);padding:11px 13px;font-family:'Cairo',sans-serif;font-size:14px;outline:none;transition:border-color .25s;border-radius:0}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--blue);background:var(--white)}
+.fg textarea{height:110px;resize:vertical}
+.fsub{width:100%;background:var(--blue);color:var(--white);border:none;padding:14px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:none;transition:background .25s;margin-top:4px}
+[dir=rtl] .fsub{letter-spacing:0;text-transform:none}
+.fsub:hover{background:var(--blue-dark)}
+
+/* ── FOOTER ── */
+footer{background:var(--blue-deeper)}
+.ft-top{max-width:1360px;margin:0 auto;padding:56px 5% 36px;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:52px}
+.ft-brand img{height:38px;filter:brightness(0) invert(1);display:block;margin-bottom:14px}
+.ft-brand p{font-size:13px;color:rgba(255,255,255,.48);line-height:1.85;max-width:270px}
+.ft-col-h{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px;font-family:'Cairo',sans-serif}
+[dir=rtl] .ft-col-h{letter-spacing:0;text-transform:none;font-size:11px}
+.ft-links{list-style:none}
+.ft-links li{margin-bottom:8px}
+.ft-links a{font-size:13px;color:rgba(255,255,255,.58);text-decoration:none;cursor:none;transition:color .25s}
+.ft-links a:hover{color:var(--accent)}
+.ft-bot{max-width:1360px;margin:0 auto;padding:18px 5%;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.ft-copy{font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.03em}
+.ft-soc{display:flex;gap:14px}
+.ft-soc a{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.42);text-decoration:none;cursor:none;transition:color .25s}
+.ft-soc a:hover{color:var(--accent)}
+
+/* WhatsApp */
+.wafab{position:fixed;bottom:24px;right:24px;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:997;box-shadow:0 4px 18px rgba(37,211,102,.38);cursor:none;transition:transform .3s;animation:wap 2.5s ease-in-out infinite}
+[dir=rtl] .wafab{right:auto;left:24px}
+.wafab:hover{transform:scale(1.1)}
+.wafab svg{width:26px;height:26px;fill:white}
+@keyframes wap{0%,100%{box-shadow:0 4px 18px rgba(37,211,102,.38)}50%{box-shadow:0 4px 34px rgba(37,211,102,.62)}}
+
+/* ── ANIMATIONS ── */
+.ao{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.al{opacity:0;transform:translateX(-30px);transition:opacity .75s ease,transform .75s ease}
+[dir=rtl] .al{transform:translateX(30px)}
+.ar{opacity:0;transform:translateX(30px);transition:opacity .75s ease,transform .75s ease}
+[dir=rtl] .ar{transform:translateX(-30px)}
+.av{opacity:1!important;transform:none!important}
+.d1{transition-delay:.07s}.d2{transition-delay:.13s}.d3{transition-delay:.19s}.d4{transition-delay:.25s}
+.d5{transition-delay:.31s}.d6{transition-delay:.37s}.d7{transition-delay:.43s}.d8{transition-delay:.49s}
+.d9{transition-delay:.55s}.d10{transition-delay:.61s}.d11{transition-delay:.67s}.d12{transition-delay:.73s}
+.d13{transition-delay:.79s}.d14{transition-delay:.85s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1200px){
+  .hero-inner{grid-template-columns:1fr 380px;gap:40px}
+  .svc-grid,.prod-grid{grid-template-columns:repeat(2,1fr)}
+  .pg-grid{grid-template-columns:repeat(4,1fr)}
+  .brands-g{grid-template-columns:repeat(3,1fr);border:1px solid var(--gray-light)}
+  .br-cell:nth-child(3){border-inline-end:none}
+  .br-cell:nth-child(4){border-top:1px solid var(--gray-light)}
+  .ft-top{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;padding-top:90px}
+  .hero-right{display:none}
+  .about-grid,.ceo-grid,.d3-layout,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .cl-bento{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .cl-card.tall{grid-row:span 1}
+  .cl-bento .cl-card img{height:220px;width:100%;object-fit:cover}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hstats{grid-template-columns:repeat(2,1fr)}
+  .vm-bento{grid-template-columns:1fr}
+  .vals{grid-template-columns:repeat(3,1fr)}
+  .d3-layout{grid-template-columns:1fr}
+  #d3svg{max-width:360px;margin:0 auto}
+  .sec{padding:72px 0}
+}
+@media(max-width:600px){
+  .hero-inner{padding:88px 5% 44px}
+  h1.hh{font-size:2.2rem}
+  .hstats{grid-template-columns:repeat(2,1fr)}
+  .svc-grid{grid-template-columns:1fr}
+  .prod-grid{grid-template-columns:1fr 1fr}
+  .cl-bento{grid-template-columns:1fr}
+  .pg-grid{grid-template-columns:repeat(2,1fr)}
+  .brands-g{grid-template-columns:repeat(2,1fr)}
+  .vals{grid-template-columns:1fr 1fr}
+  .val-item:nth-child(5){border-inline-end:none}
+  .ft-top{grid-template-columns:1fr;gap:28px}
+  .f2{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .ceo-grid{grid-template-columns:1fr}
+  .ceo-portrait-wrap img{aspect-ratio:unset;max-height:360px;object-position:top}
+  .hero-btns{flex-direction:column;gap:10px}
+  .btn-w,.btn-gh{text-align:center}
+  .sec{padding:60px 0}
+  .wafab{bottom:80px}
+  [dir=rtl] .wafab{bottom:80px}
+  .ceo-kpis{grid-template-columns:repeat(2,1fr)}
+  .ceo-kpi:nth-child(2){border-inline-end:none}
+  .ceo-kpi:nth-child(3){border-top:1px solid var(--gray-light)}
+  .ceo-kpi:nth-child(4){border-top:1px solid var(--gray-light);border-inline-end:none}
+}
+@media(max-width:380px){
+  .prod-grid{grid-template-columns:1fr}
+  .pg-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div id="dot"></div>
+<div id="ring"></div>
+
+<!-- LANG TOGGLE -->
+<div class="lang-btn">
+  <button class="lang-opt active" id="btn-en" onclick="setLang('en')">EN</button>
+  <button class="lang-opt" id="btn-ar" onclick="setLang('ar')">AR</button>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#home" class="nav-logo">
+    <img src="https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png" alt="Logo" style="height:38px" onerror="this.style.display='none'"/>
+    <div>
+      <div class="nav-logo-txt" data-en="AL-SHOWLA AL-RAEDA" data-ar="الشعلة الرائدة">AL-SHOWLA AL-RAEDA</div>
+      <div class="nav-logo-sub" data-en="Building Materials & Construction" data-ar="مواد البناء والحلول الإنشائية">Building Materials & Construction</div>
+    </div>
+  </a>
+  <div class="nav-links" id="nav-links">
+    <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+    <div class="nav-drop">
+      <a href="#about" data-en="Company ▾" data-ar="الشركة ▾">Company ▾</a>
+      <div class="nav-drop-menu">
+        <a href="#about" data-en="Who We Are" data-ar="من نحن">Who We Are</a>
+        <a href="#ceo" data-en="CEO's Message" data-ar="كلمة رئيس مجلس الإدارة">CEO's Message</a>
+      </div>
+    </div>
+    <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+    <a href="#products" data-en="Products" data-ar="منتجاتنا">Products</a>
+    <a href="#clients" data-en="Clients" data-ar="عملاؤنا">Clients</a>
+    <a href="#partners" data-en="Partners" data-ar="شركاؤنا">Partners</a>
+    <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    <a href="https://wa.me/218948020200" class="nav-cta" target="_blank" data-en="Order Now" data-ar="اطلب الآن">Order Now</a>
+  </div>
+  <div class="hamburger" id="hbg" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobnav">
+  <a href="#home" onclick="toggleMob()" data-en="Home" data-ar="الرئيسية">Home</a>
+  <div class="mob-nav-divider"></div>
+  <a href="#about" onclick="toggleMob()" data-en="Who We Are" data-ar="من نحن">Who We Are</a>
+  <a href="#ceo" onclick="toggleMob()" data-en="CEO's Message" data-ar="كلمة الرئيس">CEO's Message</a>
+  <div class="mob-nav-divider"></div>
+  <a href="#services" onclick="toggleMob()" data-en="Services" data-ar="خدماتنا">Services</a>
+  <a href="#products" onclick="toggleMob()" data-en="Products" data-ar="منتجاتنا">Products</a>
+  <a href="#clients" onclick="toggleMob()" data-en="Clients" data-ar="عملاؤنا">Clients</a>
+  <a href="#partners" onclick="toggleMob()" data-en="Partners" data-ar="شركاؤنا">Partners</a>
+  <div class="mob-nav-divider"></div>
+  <a href="#contact" onclick="toggleMob()" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
+  <a href="https://wa.me/218948020200" target="_blank" style="color:var(--accent)" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+  <div class="hero-photo">
+    <img src="https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg" alt="Hero"
+         onerror="this.parentElement.style.background='var(--blue-deeper)'"/>
+  </div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag ao" data-en="Est. 2005 · Tripoli, Libya · International Quality" data-ar="تأسست 2005 · طرابلس، ليبيا · جودة عالمية">Est. 2005 · Tripoli, Libya · International Quality</div>
+      <h1 class="hh ao d1">
+        <span data-en="Building Libya's Future with" data-ar="نبني مستقبل ليبيا">Building Libya's Future with</span><br/>
+        <em data-en="World-Class Materials" data-ar="بمواد عالمية الجودة">World-Class Materials</em>
+      </h1>
+      <p class="hero-p ao d2" data-en="Al-Showla Al-Raeda — a leading Libyan company specialized in the import and distribution of premium building materials and construction solutions since 2005, trusted by contractors, developers, and government institutions across Libya." data-ar="الشعلة الرائدة — شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005، موثوقة لدى المقاولين والمطورين والمؤسسات الحكومية في ليبيا.">Al-Showla Al-Raeda — a leading Libyan company specialized in the import and distribution of premium building materials and construction solutions since 2005, trusted by contractors, developers, and government institutions across Libya.</p>
+      <div class="hero-btns ao d3">
+        <a href="#about" class="btn-w" data-en="Discover Our Story" data-ar="اكتشف قصتنا">Discover Our Story</a>
+        <a href="#contact" class="btn-gh" data-en="Get a Quote" data-ar="احصل على عرض سعر">Get a Quote</a>
+      </div>
+      <div class="hstats ao d4">
+        <div class="hstat"><div class="hstat-n" data-t="20">0</div><div class="hstat-l" data-en="Years Experience" data-ar="سنة خبرة">Years Experience</div></div>
+        <div class="hstat"><div class="hstat-n" data-t="100">0</div><div class="hstat-l" data-en="Projects Delivered" data-ar="مشروع منجز">Projects Delivered</div></div>
+        <div class="hstat"><div class="hstat-n" data-t="75">0</div><div class="hstat-l" data-en="Satisfied Clients" data-ar="عميل راضٍ">Satisfied Clients</div></div>
+        <div class="hstat"><div class="hstat-n" data-t="14">0</div><div class="hstat-l" data-en="Global Brands" data-ar="علامة عالمية">Global Brands</div></div>
+      </div>
+    </div>
+    <div class="hero-right ao d2">
+      <svg id="hsvg" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="sline"></div>
+    <span data-en="Scroll" data-ar="انزل">Scroll</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="t-inner" id="tkr">
+    <span class="ti" data-en="Building Materials" data-ar="مواد البناء">Building Materials</span>
+    <span class="ti" data-en="Sanitary Ware" data-ar="المستلزمات الصحية">Sanitary Ware</span>
+    <span class="ti" data-en="Waterproofing Systems" data-ar="أنظمة العزل المائي">Waterproofing Systems</span>
+    <span class="ti" data-en="Gypsum Board Systems" data-ar="ألواح الجبس">Gypsum Board Systems</span>
+    <span class="ti" data-en="Sika · DeWalt · Saint-Gobain · Knauf · Stanley" data-ar="سيكا · ديوالت · سان جوبان · كناف · ستانلي">Sika · DeWalt · Saint-Gobain · Knauf · Stanley</span>
+    <span class="ti" data-en="Steel Products" data-ar="منتجات الصلب">Steel Products</span>
+    <span class="ti" data-en="Industrial Flooring" data-ar="أرضيات صناعية">Industrial Flooring</span>
+    <span class="ti" data-en="Power Tools" data-ar="أدوات كهربائية">Power Tools</span>
+    <span class="ti" data-en="Building Materials" data-ar="مواد البناء">Building Materials</span>
+    <span class="ti" data-en="Sanitary Ware" data-ar="المستلزمات الصحية">Sanitary Ware</span>
+    <span class="ti" data-en="Waterproofing Systems" data-ar="أنظمة العزل المائي">Waterproofing Systems</span>
+    <span class="ti" data-en="Gypsum Board Systems" data-ar="ألواح الجبس">Gypsum Board Systems</span>
+    <span class="ti" data-en="Sika · DeWalt · Saint-Gobain · Knauf · Stanley" data-ar="سيكا · ديوالت · سان جوبان · كناف · ستانلي">Sika · DeWalt · Saint-Gobain · Knauf · Stanley</span>
+    <span class="ti" data-en="Steel Products" data-ar="منتجات الصلب">Steel Products</span>
+    <span class="ti" data-en="Industrial Flooring" data-ar="أرضيات صناعية">Industrial Flooring</span>
+    <span class="ti" data-en="Power Tools" data-ar="أدوات كهربائية">Power Tools</span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="sec" style="background:var(--white)">
+<div class="con">
+  <div class="about-grid">
+    <div class="about-imgbox al">
+      <div class="about-imgbox-inner">
+        <img src="https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg" alt="About Alshowla" onerror="this.src='https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Mision-scaled-e1768074828455.jpg'"/>
+      </div>
+      <div class="ab-badge"><div class="ab-n">20+</div><div class="ab-t" data-en="Years of Trust" data-ar="عاماً من الثقة">Years of Trust</div></div>
+    </div>
+    <div class="ar">
+      <div class="lbl" data-en="Who We Are" data-ar="من نحن">Who We Are</div>
+      <h2 class="sh"><span data-en="Smart Solutions for" data-ar="حلول ذكية لـ">Smart Solutions for</span> <em data-en="Stronger Projects" data-ar="مشاريع أقوى">Stronger Projects</em></h2>
+      <p class="sp" style="margin-bottom:14px" data-en="Al-Showla Al-Raeda is a leading Libyan company specialized in the import and distribution of high-quality building and sanitary materials. Since its establishment in 2005, the company has built a strong market presence based on reliability, diversity of products, and strict adherence to international quality standards." data-ar="الشعلة الرائدة شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة. منذ تأسيسها عام 2005، بنت الشركة حضوراً سوقياً قوياً يقوم على الموثوقية وتنوع المنتجات والالتزام الصارم بمعايير الجودة الدولية.">Al-Showla Al-Raeda is a leading Libyan company specialized in the import and distribution of high-quality building and sanitary materials. Since its establishment in 2005, the company has built a strong market presence based on reliability, diversity of products, and strict adherence to international quality standards.</p>
+      <p class="sp" data-en="In 2021, the company entered a new strategic phase by becoming an exclusive importer and authorized agent for several leading global brands — strengthening its position as a vital link between international manufacturers and the Libyan market." data-ar="في عام 2021، دخلت الشركة مرحلة استراتيجية جديدة بأن أصبحت مستورداً حصرياً ووكيلاً معتمداً لعدة علامات تجارية عالمية رائدة، مما عزز مكانتها كحلقة وصل حيوية بين المصنّعين الدوليين والسوق الليبية.">In 2021, the company entered a new strategic phase by becoming an exclusive importer and authorized agent for several leading global brands — strengthening its position as a vital link between international manufacturers and the Libyan market.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+        <a href="https://alshowla.com/wp-content/uploads/2026/01/Showla.pdf" target="_blank" style="background:var(--blue);color:var(--white);padding:12px 26px;font-size:13px;font-weight:700;text-decoration:none;cursor:none;transition:background .25s;font-family:'Cairo',sans-serif" onmouseover="this.style.background='var(--blue-dark)'" onmouseout="this.style.background='var(--blue)'" data-en="Download Profile" data-ar="تحميل الملف التعريفي">Download Profile</a>
+        <a href="#contact" style="border:2px solid var(--blue);color:var(--blue);padding:11px 26px;font-size:13px;font-weight:700;text-decoration:none;cursor:none;transition:all .25s;font-family:'Cairo',sans-serif" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--blue)'" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vision & Mission -->
+  <div class="vm-bento ao">
+    <div class="vm-pane">
+      <img src="https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg" alt="Vision" onerror="this.style.background='var(--blue-dark)'"/>
+      <div class="vm-over">
+        <div class="lbl lbl-w" data-en="Our Vision" data-ar="رؤيتنا">Our Vision</div>
+        <div class="vm-t"><span data-en="Leading Locally," data-ar="رائدون محلياً،">Leading Locally,</span> <em data-en="Shining Regionally" data-ar="متألقون إقليمياً">Shining Regionally</em></div>
+        <p class="vm-b" data-en="To be a leading company locally and regionally in the import and distribution of building materials — a benchmark for quality and innovation that promotes sustainable urban development." data-ar="أن نكون شركة رائدة محلياً وإقليمياً في استيراد وتوزيع مواد البناء، ومرجعاً في الجودة والابتكار من خلال تقديم حلول متكاملة تعزز التنمية العمرانية المستدامة.">To be a leading company locally and regionally in the import and distribution of building materials — a benchmark for quality and innovation that promotes sustainable urban development.</p>
+      </div>
+    </div>
+    <div class="vm-pane">
+      <img src="https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Mision-scaled-e1768074828455.jpg" alt="Mission" onerror="this.style.background='var(--blue)'"/>
+      <div class="vm-over">
+        <div class="lbl lbl-w" data-en="Our Mission" data-ar="مهمتنا">Our Mission</div>
+        <div class="vm-t"><em data-en="Comprehensive" data-ar="حلول">Comprehensive</em> <span data-en="Solutions" data-ar="شاملة">Solutions</span></div>
+        <div class="vm-b"><ul>
+          <li data-en="Supplying internationally certified, high-quality materials" data-ar="توريد مواد عالية الجودة ومعتمدة دولياً">Supplying internationally certified, high-quality materials</li>
+          <li data-en="Building strategic partnerships with leading manufacturers" data-ar="بناء شراكات استراتيجية مع كبار المصنعين">Building strategic partnerships with leading manufacturers</li>
+          <li data-en="Providing technical and engineering support to clients" data-ar="تقديم الدعم الفني والهندسي للعملاء">Providing technical and engineering support to clients</li>
+          <li data-en="Committing to sustainability and transparency" data-ar="الالتزام بالاستدامة والشفافية في جميع العمليات">Committing to sustainability and transparency</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Values -->
+  <div class="vals ao">
+    <div class="val-item"><div class="val-ico">🤝</div><div class="val-t" data-en="Commitment" data-ar="الالتزام">Commitment</div><div class="val-b" data-en="Fulfilling all contracts and deadlines with integrity." data-ar="الوفاء بجميع العقود والمواعيد بنزاهة.">Fulfilling all contracts and deadlines with integrity.</div></div>
+    <div class="val-item"><div class="val-ico">⭐</div><div class="val-t" data-en="Trust" data-ar="الثقة">Trust</div><div class="val-b" data-en="Building long-term, reliable partnerships." data-ar="بناء شراكات موثوقة وطويلة الأمد.">Building long-term, reliable partnerships.</div></div>
+    <div class="val-item"><div class="val-ico">🏆</div><div class="val-t" data-en="Quality" data-ar="الجودة">Quality</div><div class="val-b" data-en="Our constant commitment to deliver the very best." data-ar="التزامنا الدائم بتقديم الأفضل دائماً.">Our constant commitment to deliver the very best.</div></div>
+    <div class="val-item"><div class="val-ico">🌱</div><div class="val-t" data-en="Sustainability" data-ar="الاستدامة">Sustainability</div><div class="val-b" data-en="Supporting environmentally friendly projects." data-ar="دعم المشاريع الصديقة للبيئة.">Supporting environmentally friendly projects.</div></div>
+    <div class="val-item"><div class="val-ico">💡</div><div class="val-t" data-en="Innovation" data-ar="الابتكار">Innovation</div><div class="val-b" data-en="Introducing the latest solutions to the market." data-ar="تقديم أحدث الحلول والمنتجات للسوق.">Introducing the latest solutions to the market.</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ CEO ═══ -->
+<section id="ceo" class="sec" style="background:var(--off)">
+<div class="con">
+  <div class="ceo-grid">
+    <div class="al">
+      <div class="ceo-portrait-wrap">
+        <img src="https://alshowla.com/wp-content/uploads/2026/01/CEO-250x250.png" alt="Al Mahdi Al Awami"
+             onerror="this.outerHTML='<div style=&quot;width:100%;aspect-ratio:.82;max-height:420px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-family:Cairo,sans-serif;font-size:5rem;color:var(--blue);&quot;>م.ع</div>'"/>
+      </div>
+    </div>
+    <div class="ar">
+      <div class="lbl" data-en="Chairman's Message" data-ar="كلمة رئيس مجلس الإدارة">Chairman's Message</div>
+      <div class="ceo-name" data-en="Al Mahdi Al Awami" data-ar="المهدي العوامي">Al Mahdi Al Awami</div>
+      <div class="ceo-role" data-en="Chairman & Founder — Alshowla Alraeda" data-ar="رئيس مجلس الإدارة والمؤسس — الشعلة الرائدة">Chairman & Founder — Alshowla Alraeda</div>
+      <div class="ceo-quote" data-en='"We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation."' data-ar='"نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد."'>"We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation."</div>
+      <p class="ceo-body" data-en="It is my pleasure to welcome you to the official website of Alshowla Alraeda Company for Importing Building Materials — a company founded on solid expertise spanning more than two decades." data-ar="يسعدني أن أرحب بكم على الموقع الرسمي لشركة الشعلة الرائدة لاستيراد مواد البناء — شركة تأسست على خبرة راسخة تمتد لأكثر من عقدين من الزمان.">It is my pleasure to welcome you to the official website of Alshowla Alraeda Company for Importing Building Materials — a company founded on solid expertise spanning more than two decades.</p>
+      <p class="ceo-body" style="margin-top:12px" data-en="We are committed to delivering high-quality, integrated solutions and building sustainable strategic partnerships that contribute to the development of Libya's construction sector in line with the highest international standards." data-ar="نحن ملتزمون بتقديم حلول متكاملة عالية الجودة وبناء شراكات استراتيجية مستدامة تساهم في تطوير قطاع البناء والتشييد في ليبيا وفق أعلى المعايير الدولية.">We are committed to delivering high-quality, integrated solutions and building sustainable strategic partnerships that contribute to the development of Libya's construction sector in line with the highest international standards.</p>
+      <div class="ceo-kpis">
+        <div class="ceo-kpi"><div class="ceo-kpi-n">2005</div><div class="ceo-kpi-l" data-en="Founded" data-ar="سنة التأسيس">Founded</div></div>
+        <div class="ceo-kpi"><div class="ceo-kpi-n">2021</div><div class="ceo-kpi-l" data-en="Global Expansion" data-ar="التوسع العالمي">Global Expansion</div></div>
+        <div class="ceo-kpi"><div class="ceo-kpi-n">14</div><div class="ceo-kpi-l" data-en="Global Brands" data-ar="علامة عالمية">Global Brands</div></div>
+        <div class="ceo-kpi"><div class="ceo-kpi-n">20+</div><div class="ceo-kpi-l" data-en="Years Leading" data-ar="سنة ريادة">Years Leading</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" class="sec" style="background:var(--blue-deeper)">
+<div class="con">
+  <div class="ao" style="text-align:center;max-width:640px;margin:0 auto 0">
+    <div class="lbl lbl-w" style="justify-content:center" data-en="What We Offer" data-ar="ما نقدمه">What We Offer</div>
+    <h2 class="sh" style="color:var(--white);text-align:center"><span data-en="Our" data-ar="خدماتنا">Our</span> <em data-en="Services" data-ar="">Services</em></h2>
+    <p class="sp" style="color:rgba(255,255,255,.7);margin:0 auto;text-align:center" data-en="Comprehensive building material solutions covering every aspect of modern construction." data-ar="حلول شاملة لمواد البناء تغطي كل جوانب البناء الحديث من الأساسات حتى التشطيبات الفاخرة.">Comprehensive building material solutions covering every aspect of modern construction.</p>
+  </div>
+  <div class="svc-grid ao">
+    <div class="svc-card d1"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/insultaion.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">01</div><div class="svc-ico">🧱</div><div class="svc-t" data-en="Concrete Additives & Solutions" data-ar="إضافات الخرسانة والحلول الإنشائية">Concrete Additives & Solutions</div><div class="svc-b" data-en="Enhanced admixtures, curing compounds, structural repair systems and specialized grouts." data-ar="إضافات محسّنة، ومركبات المعالجة، وأنظمة الإصلاح الإنشائي، والملاط المتخصص.">Enhanced admixtures, curing compounds, structural repair systems and specialized grouts.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d2"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/fluorescent-lamp-modern-ceiling.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">02</div><div class="svc-ico">🏗️</div><div class="svc-t" data-en="Wall & Ceiling Systems" data-ar="أنظمة الجدران والأسقف">Wall & Ceiling Systems</div><div class="svc-b" data-en="Gypsum boards and suspended ceiling systems with modern interior finishing solutions." data-ar="ألواح الجبس وأنظمة الأسقف المعلقة مع حلول التشطيبات الداخلية الحديثة.">Gypsum boards and suspended ceiling systems with modern interior finishing solutions.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d3"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/cement-1.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">03</div><div class="svc-ico">💧</div><div class="svc-t" data-en="Waterproofing & Insulation" data-ar="العزل المائي والحراري">Waterproofing & Insulation</div><div class="svc-b" data-en="Comprehensive waterproofing and thermal insulation, sealants, and moisture protection." data-ar="حلول شاملة للعزل المائي والحراري، ومواد الحشو، والحماية من الرطوبة.">Comprehensive waterproofing and thermal insulation, sealants, and moisture protection.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d4"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/industry.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">04</div><div class="svc-ico">🔷</div><div class="svc-t" data-en="Industrial & Decorative Flooring" data-ar="الأرضيات الصناعية والزخرفية">Industrial & Decorative Flooring</div><div class="svc-b" data-en="Epoxy and polyurethane systems, industrial Ucrete, wooden and PVC flooring." data-ar="أنظمة الإيبوكسي والبولي يوريثان، والأرضيات الصناعية والخشبية والـ PVC.">Epoxy and polyurethane systems, industrial Ucrete, wooden and PVC flooring.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d5"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/sports.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">05</div><div class="svc-ico">⚽</div><div class="svc-t" data-en="Sports Infrastructure" data-ar="البنية التحتية الرياضية">Sports Infrastructure</div><div class="svc-b" data-en="Specialized solutions for sports field construction and advanced finishing systems." data-ar="حلول متخصصة لإنشاء الملاعب الرياضية وأنظمة التشطيبات المتقدمة.">Specialized solutions for sports field construction and advanced finishing systems.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d6"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/stacks-steel-stacked-warehouse-with-words-rectangle-side.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">06</div><div class="svc-ico">🔩</div><div class="svc-t" data-en="Steel & Metal Products" data-ar="منتجات الصلب والمعادن">Steel & Metal Products</div><div class="svc-b" data-en="High-quality reinforcement steel and metal structures for major construction projects." data-ar="حديد تسليح عالي الجودة وهياكل معدنية لمشاريع البناء الكبرى.">High-quality reinforcement steel and metal structures for major construction projects.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d7"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/construction-2.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">07</div><div class="svc-ico">🔧</div><div class="svc-t" data-en="Construction Tools & Equipment" data-ar="أدوات ومعدات البناء">Construction Tools & Equipment</div><div class="svc-b" data-en="Professional hand and power tools, high-performance machinery and measuring devices." data-ar="أدوات يدوية وكهربائية احترافية، وماكينات عالية الأداء، وأجهزة قياس حديثة.">Professional hand and power tools, high-performance machinery and measuring devices.</div></div><div class="svc-bar"></div></div>
+    <div class="svc-card d8"><div class="svc-img" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/2105.m30.i030.n007.P.c30.1371274946-Concrete-tiles.-Realistic-stone-floor-and-wall-cement-pattern-dark-grey-granite-structure.-Vector-grunge-tiles.webp')"></div><div class="svc-shade"></div><div class="svc-body"><div class="svc-idx">08</div><div class="svc-ico">🪟</div><div class="svc-t" data-en="Ceramic, Porcelain & Marble" data-ar="سيراميك وبورسلان ورخام">Ceramic, Porcelain & Marble</div><div class="svc-b" data-en="Modern collections in various sizes and designs for residential and commercial projects." data-ar="تشكيلات عصرية بأحجام وتصاميم متنوعة للمشاريع السكنية والتجارية.">Modern collections in various sizes and designs for residential and commercial projects.</div></div><div class="svc-bar"></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ CLIENTS ═══ -->
+<section id="clients" class="sec" style="background:var(--white)">
+<div class="con">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;gap:28px;flex-wrap:wrap">
+    <div class="al"><div class="lbl" data-en="Who We Serve" data-ar="من نخدم">Who We Serve</div><h2 class="sh"><span data-en="Our" data-ar="عملاؤنا">Our</span> <em data-en="Clients" data-ar="">Clients</em></h2></div>
+    <p class="sp ar" style="max-width:380px;margin:0" data-en="Trusted by contractors, developers, government institutions and private clients across Libya." data-ar="موثوقون لدى المقاولين والمطورين والمؤسسات الحكومية والعملاء الخاصين في أنحاء ليبيا.">Trusted by contractors, developers, government institutions and private clients across Libya.</p>
+  </div>
+  <div class="cl-bento ao">
+    <div class="cl-card tall d1"><img src="https://alshowla.com/wp-content/uploads/2026/01/c5.jpg" alt="Real Estate Developers" onerror="this.parentElement.style.background='var(--blue-dark)'"/><div class="cl-over"><div class="cl-dot"></div><div class="cl-t" data-en="Real Estate Developers" data-ar="المطورون العقاريون">Real Estate Developers</div><div class="cl-sub" data-en="Premium materials for landmark projects" data-ar="مواد متميزة للمشاريع الكبرى">Premium materials for landmark projects</div></div><div class="cl-ln"></div></div>
+    <div class="cl-card d2"><img src="https://alshowla.com/wp-content/uploads/2026/01/c3.jpg" alt="Traders" onerror="this.parentElement.style.background='var(--blue)'"/><div class="cl-over"><div class="cl-dot"></div><div class="cl-t" data-en="Traders & Business Owners" data-ar="التجار وأصحاب الأعمال">Traders & Business Owners</div><div class="cl-sub" data-en="Reliable wholesale supply chain" data-ar="سلسلة إمداد جملة موثوقة">Reliable wholesale supply chain</div></div><div class="cl-ln"></div></div>
+    <div class="cl-card d3"><img src="https://alshowla.com/wp-content/uploads/2026/01/constr.jpg" alt="Government" onerror="this.parentElement.style.background='var(--blue-deeper)'"/><div class="cl-over"><div class="cl-dot"></div><div class="cl-t" data-en="Government & Infrastructure" data-ar="الحكومة والبنية التحتية">Government & Infrastructure</div><div class="cl-sub" data-en="National-scale project support" data-ar="دعم المشاريع على النطاق الوطني">National-scale project support</div></div><div class="cl-ln"></div></div>
+    <div class="cl-card d4"><img src="https://alshowla.com/wp-content/uploads/2026/01/c2.jpg" alt="Contractors" onerror="this.parentElement.style.background='var(--blue-mid)'"/><div class="cl-over"><div class="cl-dot"></div><div class="cl-t" data-en="Major Contracting Companies" data-ar="شركات المقاولات الكبرى">Major Contracting Companies</div><div class="cl-sub" data-en="End-to-end material solutions" data-ar="حلول مواد متكاملة من البداية للنهاية">End-to-end material solutions</div></div><div class="cl-ln"></div></div>
+    <div class="cl-card d5"><img src="https://alshowla.com/wp-content/uploads/2026/01/c1.jpg" alt="Private" onerror="this.parentElement.style.background='var(--blue-dark)'"/><div class="cl-over"><div class="cl-dot"></div><div class="cl-t" data-en="Individuals & Private Projects" data-ar="الأفراد والمشاريع الخاصة">Individuals & Private Projects</div><div class="cl-sub" data-en="Quality materials for every home" data-ar="مواد جودة لكل منزل">Quality materials for every home</div></div><div class="cl-ln"></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ D3 ═══ -->
+<section class="sec" style="background:var(--off)" id="d3sec">
+<div class="con">
+  <div class="d3-layout">
+    <div class="al">
+      <div class="lbl" data-en="Data Insights" data-ar="نظرة تحليلية">Data Insights</div>
+      <h2 class="sh"><span data-en="Product" data-ar="محفظة">Product</span> <em data-en="Portfolio" data-ar="منتجاتنا">Portfolio</em></h2>
+      <p class="sp" style="margin-bottom:28px" data-en="A diverse range of premium products covering every stage of construction. Hover over segments to explore." data-ar="مجموعة متنوعة من المنتجات المتميزة تغطي كل مراحل البناء. مرر مؤشرك على الأقسام للاستكشاف.">A diverse range of premium products covering every stage of construction. Hover over segments to explore.</p>
+      <div id="d3leg"></div>
+    </div>
+    <div class="ar"><svg id="d3svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  </div>
+  <div class="bar-rows ao">
+    <div class="lbl" style="margin-bottom:18px" data-en="Performance Metrics" data-ar="مؤشرات الأداء">Performance Metrics</div>
+    <div id="barrows"></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ PRODUCTS ═══ -->
+<section id="products" class="sec" style="background:var(--white)">
+<div class="con">
+  <div class="prod-hd">
+    <div class="al"><div class="lbl" data-en="What We Supply" data-ar="ما نورده">What We Supply</div><h2 class="sh"><span data-en="Our" data-ar="منتجاتنا">Our</span> <em data-en="Products" data-ar="">Products</em></h2></div>
+    <div class="ar" style="display:flex;gap:10px;flex-wrap:wrap">
+      <a href="https://alshowla.com/wp-content/uploads/2026/01/Showla.pdf" target="_blank" style="border:2px solid var(--blue);color:var(--blue);padding:11px 22px;font-size:13px;font-weight:700;text-decoration:none;cursor:none;transition:all .25s;font-family:'Cairo',sans-serif" onmouseover="this.style.background='var(--blue)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--blue)'" data-en="Download Catalogue" data-ar="تحميل الكتالوج">Download Catalogue</a>
+      <a href="#contact" style="background:var(--blue);color:var(--white);padding:12px 22px;font-size:13px;font-weight:700;text-decoration:none;cursor:none;transition:background .25s;font-family:'Cairo',sans-serif" onmouseover="this.style.background='var(--blue-dark)'" onmouseout="this.style.background='var(--blue)'" data-en="Request Quote" data-ar="طلب عرض سعر">Request Quote</a>
+    </div>
+  </div>
+  <div class="prod-grid ao">
+    <div class="pc d1"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/insultaion.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">01</div><div class="pc-tag" data-en="Category 01" data-ar="الفئة 01">Category 01</div><div class="pc-t" data-en="Building Materials & Chemicals" data-ar="مواد البناء والكيماويات الإنشائية">Building Materials & Chemicals</div></div></div>
+    <div class="pc d2"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/construction-2.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">02</div><div class="pc-tag" data-en="Category 02" data-ar="الفئة 02">Category 02</div><div class="pc-t" data-en="Workshop & Power Tools" data-ar="أدوات الورشة والأدوات الكهربائية">Workshop & Power Tools</div></div></div>
+    <div class="pc d3"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/fluorescent-lamp-modern-ceiling.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">03</div><div class="pc-tag" data-en="Category 03" data-ar="الفئة 03">Category 03</div><div class="pc-t" data-en="Gypsum Board Systems" data-ar="أنظمة ألواح الجبس">Gypsum Board Systems</div></div></div>
+    <div class="pc d4"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/industry.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">04</div><div class="pc-tag" data-en="Category 04" data-ar="الفئة 04">Category 04</div><div class="pc-t" data-en="Flooring Solutions" data-ar="حلول الأرضيات">Flooring Solutions</div></div></div>
+    <div class="pc d5"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/stacks-steel-stacked-warehouse-with-words-rectangle-side.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">05</div><div class="pc-tag" data-en="Category 05" data-ar="الفئة 05">Category 05</div><div class="pc-t" data-en="Core Building Materials & Steel" data-ar="مواد البناء الأساسية والصلب">Core Building Materials & Steel</div></div></div>
+    <div class="pc d6"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/2105.m30.i030.n007.P.c30.1371274946-Concrete-tiles.-Realistic-stone-floor-and-wall-cement-pattern-dark-grey-granite-structure.-Vector-grunge-tiles.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">06</div><div class="pc-tag" data-en="Category 06" data-ar="الفئة 06">Category 06</div><div class="pc-t" data-en="Interior Finishing" data-ar="التشطيبات الداخلية">Interior Finishing</div></div></div>
+    <div class="pc d7"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/sports.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">07</div><div class="pc-tag" data-en="Category 07" data-ar="الفئة 07">Category 07</div><div class="pc-t" data-en="Turf & Sports Solutions" data-ar="حلول العشب والرياضة">Turf & Sports Solutions</div></div></div>
+    <div class="pc d8"><div class="pc-bg" style="background-image:url('https://alshowla.com/wp-content/uploads/2026/01/cement-1.webp')"></div><div class="pc-sh"></div><div class="pc-ln"></div><div class="pc-body"><div class="pc-num">08</div><div class="pc-tag" data-en="Category 08" data-ar="الفئة 08">Category 08</div><div class="pc-t" data-en="Specialized Products" data-ar="منتجات متخصصة">Specialized Products</div></div></div>
+  </div>
+  <div class="lbl ao" style="margin:40px 0 0" data-en="Brands We Represent" data-ar="العلامات التي نمثلها">Brands We Represent</div>
+  <div class="brands-g ao">
+    <div class="br-cell d1"><img src="https://alshowla.com/wp-content/uploads/2026/01/Sika.jpg" alt="Sika"/></div>
+    <div class="br-cell d2"><img src="https://alshowla.com/wp-content/uploads/2026/01/AGT.jpg" alt="AGT"/></div>
+    <div class="br-cell d3"><img src="https://alshowla.com/wp-content/uploads/2026/01/DEWALT.jpg" alt="DeWalt"/></div>
+    <div class="br-cell d4"><img src="https://alshowla.com/wp-content/uploads/2026/01/GYPROC.jpg" alt="Gyproc"/></div>
+    <div class="br-cell d5"><img src="https://alshowla.com/wp-content/uploads/2026/04/weber.jpg" alt="Weber"/></div>
+    <div class="br-cell d6"><img src="https://alshowla.com/wp-content/uploads/2026/04/top-wet.jpg" alt="Top Wet"/></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ PARTNERS ═══ -->
+<section id="partners" class="sec" style="background:var(--off)">
+<div class="con">
+  <div style="text-align:center;margin-bottom:0" class="ao">
+    <div class="lbl" style="justify-content:center" data-en="Our Global Network" data-ar="شبكتنا العالمية">Our Global Network</div>
+    <h2 class="sh" style="text-align:center"><span data-en="Trusted" data-ar="شركاؤنا">Trusted</span> <em data-en="Partners" data-ar="الموثوقون">Partners</em></h2>
+    <p class="sp" style="margin:0 auto;text-align:center;max-width:500px" data-en="Exclusive importer and authorized agent for 14 world-class brands, bringing international quality directly to Libya's construction market." data-ar="مستورد حصري ووكيل معتمد لـ 14 علامة تجارية عالمية، نجلب الجودة الدولية مباشرةً إلى سوق البناء الليبية.">Exclusive importer and authorized agent for 14 world-class brands, bringing international quality directly to Libya's construction market.</p>
+  </div>
+  <div class="pg-grid ao">
+    <div class="pg d1"><img src="https://alshowla.com/wp-content/uploads/2026/01/Sika.jpg" alt="Sika"/></div>
+    <div class="pg d2"><img src="https://alshowla.com/wp-content/uploads/2026/01/Saint-Goban.jpg" alt="Saint-Gobain"/></div>
+    <div class="pg d3"><img src="https://alshowla.com/wp-content/uploads/2026/01/Master-building.jpg" alt="MBS"/></div>
+    <div class="pg d4"><img src="https://alshowla.com/wp-content/uploads/2026/01/KNAUF.jpg" alt="Knauf"/></div>
+    <div class="pg d5"><img src="https://alshowla.com/wp-content/uploads/2026/01/GYPROC.jpg" alt="Gyproc"/></div>
+    <div class="pg d6"><img src="https://alshowla.com/wp-content/uploads/2026/01/DEWALT.jpg" alt="DeWalt"/></div>
+    <div class="pg d7"><img src="https://alshowla.com/wp-content/uploads/2026/01/Stanley.jpg" alt="Stanley"/></div>
+    <div class="pg d8"><img src="https://alshowla.com/wp-content/uploads/2026/01/B-DECKER.jpg" alt="Black & Decker"/></div>
+    <div class="pg d9"><img src="https://alshowla.com/wp-content/uploads/2026/01/DELI.jpg" alt="Deli"/></div>
+    <div class="pg d10"><img src="https://alshowla.com/wp-content/uploads/2026/01/DELI-tools.jpg" alt="Deli Tools"/></div>
+    <div class="pg d11"><img src="https://alshowla.com/wp-content/uploads/2026/01/AGT.jpg" alt="AGT"/></div>
+    <div class="pg d12"><img src="https://alshowla.com/wp-content/uploads/2026/01/REform.jpg" alt="Reform"/></div>
+    <div class="pg d13"><img src="https://alshowla.com/wp-content/uploads/2026/01/LCC.jpg" alt="LCC"/></div>
+    <div class="pg d14"><img src="https://alshowla.com/wp-content/uploads/2026/01/NCC.jpg" alt="NCC"/></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="sec" style="background:var(--blue-deeper)">
+<div class="con">
+  <div style="text-align:center;margin-bottom:52px" class="ao">
+    <div class="lbl lbl-w" style="justify-content:center" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</div>
+    <h2 class="sh" style="color:var(--white);text-align:center"><span data-en="Contact" data-ar="اتصل">Contact</span> <em data-en="Us" data-ar="بنا">Us</em></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="al">
+      <div class="c-bar"></div>
+      <h3 class="c-h"><span data-en="Let's Build Something" data-ar="لنبني شيئاً">Let's Build Something</span> <em data-en="Together" data-ar="معاً">Together</em></h3>
+      <p class="c-p" data-en="Whether you're a contractor, developer, or private client — our team is ready to support your next project with the right materials and expert guidance." data-ar="سواء كنت مقاولاً أو مطوراً أو عميلاً خاصاً — فريقنا جاهز لدعم مشروعك القادم بالمواد المناسبة والتوجيه المتخصص.">Whether you're a contractor, developer, or private client — our team is ready to support your next project with the right materials and expert guidance.</p>
+      <div class="ci"><div class="ci-ico">📍</div><div><div class="ci-lbl" data-en="Location" data-ar="الموقع">Location</div><div class="ci-val" data-en="Tripoli, Libya" data-ar="طرابلس، ليبيا">Tripoli, Libya</div></div></div>
+      <div class="ci"><div class="ci-ico">📞</div><div><div class="ci-lbl" data-en="Phone" data-ar="الهاتف">Phone</div><div class="ci-val"><a href="tel:+218948020200">+218 94 802 0200</a></div></div></div>
+      <div class="ci"><div class="ci-ico">💬</div><div><div class="ci-lbl" data-en="WhatsApp" data-ar="واتساب">WhatsApp</div><div class="ci-val"><a href="https://wa.me/218948020200" target="_blank" data-en="Chat with us →" data-ar="راسلنا →">Chat with us →</a></div></div></div>
+      <div class="ci"><div class="ci-ico">🌐</div><div><div class="ci-lbl" data-en="Website" data-ar="الموقع الإلكتروني">Website</div><div class="ci-val"><a href="https://alshowla.com" target="_blank">alshowla.com →</a></div></div></div>
+      <div class="ci"><div class="ci-ico">📄</div><div><div class="ci-lbl" data-en="Company Profile" data-ar="الملف التعريفي">Company Profile</div><div class="ci-val"><a href="https://alshowla.com/wp-content/uploads/2026/01/Showla.pdf" target="_blank" data-en="Download PDF →" data-ar="تحميل PDF →">Download PDF →</a></div></div></div>
+      <div class="soc-row">
+        <a href="https://facebook.com/ALSHOLA1500" target="_blank" class="soc-a" data-en="Facebook" data-ar="فيسبوك">Facebook</a>
+        <a href="https://linkedin.com/company/alshowla-alraeda" target="_blank" class="soc-a" data-en="LinkedIn" data-ar="لينكدإن">LinkedIn</a>
+        <a href="https://wa.me/218948020200" target="_blank" class="soc-a" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+      </div>
+    </div>
+    <div class="ar">
+      <div class="form-wrap">
+        <div class="f2">
+          <div class="fg"><label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label><input type="text" data-en-ph="Your full name" data-ar-ph="اسمك الكامل" placeholder="Your full name"/></div>
+          <div class="fg"><label data-en="Company" data-ar="الشركة">Company</label><input type="text" data-en-ph="Company name" data-ar-ph="اسم الشركة" placeholder="Company name"/></div>
+        </div>
+        <div class="f2">
+          <div class="fg"><label data-en="Email" data-ar="البريد الإلكتروني">Email</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="fg"><label data-en="Phone" data-ar="رقم الهاتف">Phone</label><input type="tel" placeholder="+218 ..."/></div>
+        </div>
+        <div class="fg">
+          <label data-en="Product / Service Interest" data-ar="المنتج / الخدمة المطلوبة">Product / Service Interest</label>
+          <select>
+            <option data-en="Select a category..." data-ar="اختر فئة...">Select a category...</option>
+            <option data-en="Building Materials & Chemicals" data-ar="مواد البناء والكيماويات">Building Materials & Chemicals</option>
+            <option data-en="Workshop & Power Tools" data-ar="أدوات الورشة">Workshop & Power Tools</option>
+            <option data-en="Gypsum Board Systems" data-ar="أنظمة الجبس">Gypsum Board Systems</option>
+            <option data-en="Flooring Solutions" data-ar="حلول الأرضيات">Flooring Solutions</option>
+            <option data-en="Waterproofing & Insulation" data-ar="العزل المائي والحراري">Waterproofing & Insulation</option>
+            <option data-en="Steel & Metal Products" data-ar="منتجات الصلب والمعادن">Steel & Metal Products</option>
+            <option data-en="Sports Infrastructure" data-ar="البنية التحتية الرياضية">Sports Infrastructure</option>
+            <option data-en="Other" data-ar="أخرى">Other</option>
+          </select>
+        </div>
+        <div class="fg"><label data-en="Message" data-ar="الرسالة">Message</label><textarea data-en-ph="Tell us about your project requirements..." data-ar-ph="أخبرنا عن متطلبات مشروعك..." placeholder="Tell us about your project requirements..."></textarea></div>
+        <button class="fsub" onclick="handleForm(this)" data-en="Send Message →" data-ar="إرسال الرسالة ←">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="ft-top">
+    <div class="ft-brand">
+      <img src="https://alshowla.com/wp-content/uploads/2026/05/AlShowla-White-Logo-scaled-e1779186745427.png" alt="Logo" onerror="this.outerHTML='<div style=&quot;font-family:Cairo,sans-serif;font-size:14px;font-weight:900;color:var(--white);margin-bottom:14px;&quot;>الشعلة الرائدة</div>'"/>
+      <p data-en="A leading Libyan company specialized in the import and distribution of high-quality building materials and sanitary ware since 2005." data-ar="شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005.">A leading Libyan company specialized in the import and distribution of high-quality building materials and sanitary ware since 2005.</p>
+    </div>
+    <div>
+      <div class="ft-col-h" data-en="Company" data-ar="الشركة">Company</div>
+      <ul class="ft-links">
+        <li><a href="#about" data-en="Who We Are" data-ar="من نحن">Who We Are</a></li>
+        <li><a href="#ceo" data-en="CEO's Message" data-ar="كلمة الرئيس">CEO's Message</a></li>
+        <li><a href="#services" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+        <li><a href="#products" data-en="Products" data-ar="منتجاتنا">Products</a></li>
+        <li><a href="#clients" data-en="Clients" data-ar="عملاؤنا">Clients</a></li>
+        <li><a href="#partners" data-en="Partners" data-ar="شركاؤنا">Partners</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-h" data-en="Services" data-ar="الخدمات">Services</div>
+      <ul class="ft-links">
+        <li><a href="#services" data-en="Waterproofing" data-ar="العزل المائي">Waterproofing</a></li>
+        <li><a href="#services" data-en="Gypsum Systems" data-ar="أنظمة الجبس">Gypsum Systems</a></li>
+        <li><a href="#services" data-en="Steel Products" data-ar="منتجات الصلب">Steel Products</a></li>
+        <li><a href="#services" data-en="Flooring" data-ar="الأرضيات">Flooring</a></li>
+        <li><a href="#services" data-en="Sports Infra" data-ar="البنية الرياضية">Sports Infra</a></li>
+        <li><a href="#services" data-en="Power Tools" data-ar="الأدوات الكهربائية">Power Tools</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-h" data-en="Connect" data-ar="تواصل">Connect</div>
+      <ul class="ft-links">
+        <li><a href="#contact" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+        <li><a href="https://wa.me/218948020200" target="_blank" data-en="WhatsApp Order" data-ar="اطلب عبر واتساب">WhatsApp Order</a></li>
+        <li><a href="https://facebook.com/ALSHOLA1500" target="_blank">Facebook</a></li>
+        <li><a href="https://linkedin.com/company/alshowla-alraeda" target="_blank">LinkedIn</a></li>
+        <li><a href="https://alshowla.com/wp-content/uploads/2026/01/Showla.pdf" target="_blank" data-en="Company Profile" data-ar="الملف التعريفي">Company Profile</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <div class="ft-copy" data-en="© 2026 AL-SHOWLA AL-RAEDA. All Rights Reserved. Building Materials & Construction Solutions — Libya." data-ar="© 2026 الشعلة الرائدة. جميع الحقوق محفوظة. مواد البناء والحلول الإنشائية — ليبيا.">© 2026 AL-SHOWLA AL-RAEDA. All Rights Reserved.</div>
+    <div class="ft-soc">
+      <a href="https://facebook.com/ALSHOLA1500" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/company/alshowla-alraeda" target="_blank">LinkedIn</a>
+      <a href="https://wa.me/218948020200" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/218948020200?text=Hello%2C%20I%20need%20to%20know%20more%20about%3A" class="wafab" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// ── LANGUAGE SYSTEM ──
+let currentLang = 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  const root = document.getElementById('html-root');
+  root.lang = lang;
+  root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+
+  // Swap all text nodes
+  document.querySelectorAll('[data-en][data-ar]').forEach(el => {
+    const txt = el.getAttribute('data-' + lang);
+    if (txt) el.textContent = txt;
+  });
+
+  // Swap placeholders
+  document.querySelectorAll('[data-en-ph][data-ar-ph]').forEach(el => {
+    el.placeholder = el.getAttribute('data-' + lang + '-ph') || el.placeholder;
+  });
+
+  // Save preference
+  try { localStorage.setItem('lang', lang); } catch(e) {}
+
+  // Update D3 legend text
+  buildD3Legend();
+}
+
+// ── CURSOR ──
+const dot = document.getElementById('dot'), ring = document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot.style.left=mx+'px'; dot.style.top=my+'px'; });
+(function ar() { rx+=(mx-rx)*.13; ry+=(my-ry)*.13; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(ar); })();
+document.querySelectorAll('a,button,.svc-card,.pc,.cl-card,.pg,.br-cell,.val-item').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width='50px'; ring.style.height='50px'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='32px'; ring.style.height='32px'; });
+});
+
+// ── NAV ──
+window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('solid', window.scrollY > 40));
+
+function toggleMob() {
+  const m = document.getElementById('mobnav');
+  const h = document.getElementById('hbg');
+  m.classList.toggle('open');
+  h.classList.toggle('open');
+}
+
+// ── COUNTERS ──
+function runCounters() {
+  document.querySelectorAll('.hstat-n[data-t]').forEach(el => {
+    const t = +el.dataset.t; let c = 0;
+    const tm = setInterval(() => { c = Math.min(c + t/55, t); el.textContent = Math.floor(c)+'+'; if (c >= t) clearInterval(tm); }, 22);
+  });
+}
+
+// ── INTERSECTION OBSERVER ──
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('av');
+      e.target.querySelectorAll('.br-fill').forEach((b, i) => {
+        setTimeout(() => { b.style.width = b.dataset.v + '%'; }, i * 160 + 200);
+      });
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.ao,.al,.ar').forEach(el => io.observe(el));
+setTimeout(() => {
+  document.querySelectorAll('#home .ao, #home .al, #home .ar').forEach(el => el.classList.add('av'));
+  runCounters();
+}, 180);
+
+// ── HERO SVG RINGS ──
+(function() {
+  const svg = d3.select('#hsvg'), S = 440, cx = S/2, cy = S/2;
+  [190,160,130,100,70].forEach(r => svg.append('circle').attr('cx',cx).attr('cy',cy).attr('r',r).attr('fill','none').attr('stroke','rgba(255,255,255,.06)').attr('stroke-width',1));
+  const rings = [
+    {label:'PROJECTS',val:100,max:120,r:185,color:'rgba(255,255,255,.9)',w:15},
+    {label:'CLIENTS',val:75,max:100,r:158,color:'#60a5fa',w:11},
+    {label:'PARTNERS',val:14,max:16,r:132,color:'#f59e0b',w:11},
+    {label:'YEARS',val:20,max:25,r:108,color:'rgba(255,255,255,.4)',w:8},
+  ];
+  const arc = d3.arc();
+  rings.forEach((d,i) => {
+    svg.append('path').attr('transform',`translate(${cx},${cy})`).attr('d',arc({innerRadius:d.r-d.w/2,outerRadius:d.r+d.w/2,startAngle:-Math.PI/2,endAngle:Math.PI*1.5})).attr('fill','rgba(255,255,255,.04)');
+    const end = (d.val/d.max)*Math.PI*2-Math.PI/2;
+    const path = svg.append('path').attr('transform',`translate(${cx},${cy})`).attr('fill',d.color).attr('d',arc({innerRadius:d.r-d.w/2,outerRadius:d.r+d.w/2,startAngle:-Math.PI/2,endAngle:-Math.PI/2}));
+    path.transition().duration(1800).delay(i*180).ease(d3.easeQuadOut).attrTween('d',()=>{const it=d3.interpolate(-Math.PI/2,end);return t=>arc({innerRadius:d.r-d.w/2,outerRadius:d.r+d.w/2,startAngle:-Math.PI/2,endAngle:it(t)})});
+  });
+  svg.append('text').attr('x',cx).attr('y',cy-8).attr('text-anchor','middle').attr('font-family','Cairo,sans-serif').attr('font-size','50').attr('font-weight','900').attr('fill','white').text('20+');
+  svg.append('text').attr('x',cx).attr('y',cy+18).attr('text-anchor','middle').attr('font-family','Cairo,sans-serif').attr('font-size','10').attr('font-weight','700').attr('letter-spacing','3').attr('fill','rgba(255,255,255,.4)').text('YEARS');
+})();
+
+// ── D3 DONUT ──
+const chartData = [
+  {en:'Building Materials',ar:'مواد البناء',v:28,c:'#0051a2'},
+  {en:'Flooring Systems',ar:'أنظمة الأرضيات',v:22,c:'#0068cc'},
+  {en:'Steel Products',ar:'منتجات الصلب',v:18,c:'#60a5fa'},
+  {en:'Waterproofing',ar:'العزل المائي',v:14,c:'#93c5fd'},
+  {en:'Tools & Equipment',ar:'الأدوات والمعدات',v:11,c:'#f59e0b'},
+  {en:'Interior Finishing',ar:'التشطيبات الداخلية',v:7,c:'#0ea5e9'},
+];
+
+function buildD3Legend() {
+  const leg = document.getElementById('d3leg');
+  leg.innerHTML = '';
+  chartData.forEach(d => {
+    leg.innerHTML += `<div class="d3-li"><div class="d3-dot" style="background:${d.c}"></div><div class="d3-nm">${d[currentLang]}</div><div class="d3-pct">${d.v}%</div></div>`;
+  });
+}
+
+(function() {
+  const W=480,H=480,R=175,iR=98;
+  const svg = d3.select('#d3svg').attr('viewBox',`0 0 ${W} ${H}`);
+  const cx=W/2, cy=H/2;
+  const pie = d3.pie().value(d=>d.v).padAngle(.02);
+  const arc = d3.arc().innerRadius(iR).outerRadius(R);
+  const arcH = d3.arc().innerRadius(iR).outerRadius(R+18);
+  const g = svg.append('g').attr('transform',`translate(${cx},${cy})`);
+  const cl = svg.append('text').attr('x',cx).attr('y',cy-6).attr('text-anchor','middle').attr('font-family','Cairo,sans-serif').attr('font-size','11').attr('font-weight','700').attr('letter-spacing','2').attr('fill','#94a3b8').text('PRODUCTS');
+  const cv = svg.append('text').attr('x',cx).attr('y',cy+36).attr('text-anchor','middle').attr('font-family','Cairo,sans-serif').attr('font-size','46').attr('font-weight','900').attr('fill','#0051a2').text('');
+  g.selectAll('path').data(pie(chartData)).enter().append('path')
+    .attr('fill',d=>d.data.c).attr('opacity',.9)
+    .attr('d',d=>{const s={...d,endAngle:d.startAngle};return arc(s)})
+    .on('mouseenter',function(e,d){d3.select(this).transition().duration(180).attr('d',arcH).attr('opacity',1);cl.text(d.data[currentLang].toUpperCase());cv.text(d.data.v+'%')})
+    .on('mouseleave',function(){d3.select(this).transition().duration(180).attr('d',arc).attr('opacity',.9);cl.text('PRODUCTS');cv.text('')})
+    .transition().duration(1600).delay((_,i)=>i*100).ease(d3.easeQuadOut)
+    .attrTween('d',function(d){const it=d3.interpolate({startAngle:d.startAngle,endAngle:d.startAngle},d);return t=>arc(it(t))});
+  buildD3Legend();
+
+  // Bar chart
+  const barsEn = ['Client Satisfaction','On-time Delivery','Product Quality','Partner Coverage','Market Reach'];
+  const barsAr = ['رضا العملاء','الالتزام بالمواعيد','جودة المنتجات','تغطية الشركاء','الانتشار السوقي'];
+  const barsV  = [96,94,98,88,82];
+  const br = document.getElementById('barrows');
+  barsEn.forEach((l,i) => {
+    br.innerHTML += `<div class="br-row"><div class="br-lbl" data-en="${l}" data-ar="${barsAr[i]}">${l}</div><div class="br-track"><div class="br-fill" data-v="${barsV[i]}"></div></div><div class="br-num">${barsV[i]}%</div></div>`;
+  });
+})();
+
+// ── FORM ──
+function handleForm(btn) {
+  const msgEn = 'Sending...', msgAr = 'جاري الإرسال...';
+  const doneEn = '✓ Message Sent!', doneAr = '✓ تم الإرسال!';
+  btn.textContent = currentLang === 'ar' ? msgAr : msgEn;
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = currentLang === 'ar' ? doneAr : doneEn;
+    btn.style.background = '#16a34a';
+    setTimeout(() => {
+      btn.textContent = btn.getAttribute('data-'+currentLang);
+      btn.disabled = false;
+      btn.style.background = '';
+    }, 3000);
+  }, 1200);
+}
+
+// ── RESTORE LANG ──
+try {
+  const saved = localStorage.getItem('lang');
+  if (saved === 'ar') setLang('ar');
+} catch(e) {}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "client": "منير",
+    "phone": "0911602667",
+    "items": 1,
+    "total": 850,
+    "details": [
+      {
+        "productId": "st-002",
+        "quantity": 1
+      }
+    ],
+    "notes": "",
+    "id": "ORD-4871",
+    "date": "2026-06-28T13:03:08.894Z",
+    "status": "pending"
+  },
+  {
+    "client": "منير",
+    "phone": "-098765",
+    "items": 2,
+    "total": 4650,
+    "details": [
+      {
+        "productId": "st-002",
+        "quantity": 1
+      },
+      {
+        "productId": "st-001",
+        "quantity": 1
+      }
+    ],
+    "notes": "",
+    "id": "ORD-9465",
+    "date": "2026-06-28T13:13:24.685Z",
+    "status": "pending"
+  }
+]

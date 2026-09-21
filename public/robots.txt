@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /login
+Disallow: /contractor/login
+Disallow: /driver/login
+Disallow: /cart
+Disallow: /profile
+Disallow: /api/
+
+Sitemap: https://alshowla.com/sitemap.xml

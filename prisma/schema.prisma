@@ -1,0 +1,415 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// NextAuth standard models
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String? @db.Text
+  access_token       String? @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String? @db.Text
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  role          String?   @default("user") // admin, contractor, user
+  password      String?
+  
+  favorites     String[]
+
+  accounts      Account[]
+  sessions      Session[]
+  reviews       Review[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// Application models
+
+model Product {
+  id            String   @id
+  categoryId    String
+  brandId       String?
+  brand         Brand?   @relation(fields: [brandId], references: [id])
+  legacyBrand   String?  // Keep legacy string if needed during transition
+  imageUrl      String
+  priceBase     Float
+  wholesalePrice Float?
+  inStock       Boolean  @default(true)
+  stockCount    Int?
+  minStockCount Int?
+  isNew         Boolean  @default(false)
+  isFeatured    Boolean  @default(false)
+  rating        Float    @default(0)
+  reviewCount   Int      @default(0)
+  viewCount     Int      @default(0)
+  certificates  Certificate[]
+  nameAr        String
+  nameEn        String
+  descriptionAr String
+  descriptionEn String
+  unit          String
+  specAr        String[]
+  specEn        String[]
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  reviews       Review[]
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  productId String
+  userId    String
+  userName  String
+  rating    Int
+  comment   String
+  date      DateTime @default(now())
+
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Contractor {
+  id          String   @id
+  balance     Float    @default(0)
+  creditLimit Float    @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Order {
+  id            String   @id @default(cuid())
+  client        String
+  contractorId  String?
+  driverId      String?
+  driverName    String?
+  total         Float
+  status        String   @default("pending") // pending, confirmed, processing, delivered, cancelled
+  date          DateTime @default(now())
+  details       Json     // Array of OrderItem
+  stockDeducted Boolean  @default(false)
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  target    String   // 'admin' or contractorId
+  title     String
+  body      String
+  timestamp BigInt
+  read      Boolean  @default(false)
+}
+
+model Log {
+  id        String   @id @default(cuid())
+  time      String
+  user      String
+  action    String
+  type      String
+  timestamp BigInt
+}
+
+model FaqItem {
+  id         String @id @default(cuid())
+  questionAr String
+  questionEn String
+  answerAr   String
+  answerEn   String
+  order      Int    @default(0)
+}
+
+model BlogPost {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  titleAr   String
+  titleEn   String
+  excerptAr String?
+  excerptEn String?
+  bodyAr    String
+  bodyEn    String
+  published Boolean  @default(false)
+  date      DateTime @default(now())
+}
+
+model Banner {
+  id         String  @id @default(cuid())
+  titleAr    String?
+  titleEn    String?
+  subtitleAr String?
+  subtitleEn String?
+  imageUrl   String
+  link       String?
+  active     Boolean @default(true)
+  order      Int     @default(0)
+}
+
+model Coupon {
+  code            String   @id
+  discountPercent Float
+  expiresAt       DateTime?
+  maxUses         Int?
+  usedCount       Int      @default(0)
+  createdAt       DateTime @default(now())
+}
+
+model ChatSession {
+  id         String   @id @default(cuid())
+  clientName String
+  assignedTo String
+  status     String   @default("open")
+  createdAt  DateTime @default(now())
+}
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  sessionId String
+  sender    String
+  message   String
+  timestamp BigInt
+}
+
+// Submissions
+
+model SampleRequest {
+  id     String   @id @default(cuid())
+  name   String?
+  data   Json
+  status String   @default("pending")
+  date   DateTime @default(now())
+}
+
+model ContactMessage {
+  id      String   @id @default(cuid())
+  name    String
+  subject String?
+  data    Json
+  read    Boolean  @default(false)
+  date    DateTime @default(now())
+}
+
+model CareerApplication {
+  id     String   @id @default(cuid())
+  name   String
+  data   Json
+  status String   @default("new")
+  date   DateTime @default(now())
+}
+
+model Appointment {
+  id            String   @id @default(cuid())
+  name          String
+  preferredDate String?
+  data          Json
+  status        String   @default("pending")
+  date          DateTime @default(now())
+}
+
+model ReturnRequest {
+  id      String   @id @default(cuid())
+  name    String
+  orderId String
+  data    Json
+  status  String   @default("pending")
+  date    DateTime @default(now())
+}
+
+model SatisfactionSurvey {
+  id      String   @id @default(cuid())
+  rating  Int
+  orderId String
+  data    Json
+  date    DateTime @default(now())
+}
+
+model BoqMetadata {
+  id        String   @id @default(cuid())
+  fileName  String
+  sizeBytes Int
+  data      String   @db.Text
+  date      DateTime @default(now())
+}
+
+model Brand {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  imageUrl    String?
+  isGeneral   Boolean  @default(false)
+  products    Product[]
+}
+
+model Certificate {
+  id                String   @id @default(cuid())
+  certNumber        String
+  grantingAuthority String
+  validity          String?
+  scope             String?
+  isIso9001         Boolean  @default(false)
+  productId         String
+  product           Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+// ── Phase 2 New Models ──────────────────────────────────────────
+
+model TenderSupplyRequest {
+  id           String   @id @default(cuid())
+  projectName  String
+  owner        String
+  location     String
+  duration     String
+  supplyPeriod String
+  fileUrl      String?
+  contactInfo  Json
+  status       String   @default("pending")
+  date         DateTime @default(now())
+}
+
+model RestockAlert {
+  id             String   @id @default(cuid())
+  productId      String
+  productName    String
+  clientName     String
+  whatsappNumber String
+  isNotified     Boolean  @default(false)
+  date           DateTime @default(now())
+}
+
+model CaseStudy {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  status      String
+  owner       String
+  imageUrls   String[]
+  productIds  String[]
+  date        DateTime @default(now())
+}
+
+model Applicator {
+  id              String   @id @default(cuid())
+  name            String
+  systemSpecialty String
+  contactInfo     Json
+  certifications  String[]
+  date            DateTime @default(now())
+}
+
+model ToolWarranty {
+  id           String   @id @default(cuid())
+  serialNumber String   @unique
+  productId    String
+  productName  String
+  clientName   String
+  purchaseDate DateTime
+  date         DateTime @default(now())
+}
+
+model TechnicalDocument {
+  id        String   @id @default(cuid())
+  brandId   String?
+  productId String?
+  title     String
+  docType   String   // SDS or TDS
+  fileUrl   String
+  date      DateTime @default(now())
+}
+
+model SiteVisitRequest {
+  id              String   @id @default(cuid())
+  issueType       String
+  projectLocation String
+  city            String
+  preferredTime   String
+  imageUrls       String[]
+  status          String   @default("pending")
+  date            DateTime @default(now())
+}
+
+model Workshop {
+  id             String   @id @default(cuid())
+  title          String
+  instructor     String
+  date           DateTime
+  location       String
+  availableSeats Int
+}
+
+model WorkshopRegistration {
+  id              String   @id @default(cuid())
+  workshopId      String
+  participantName String
+  contactInfo     Json
+  date            DateTime @default(now())
+}
+
+model DeliveryZone {
+  id            String   @id @default(cuid())
+  city          String   @unique
+  estimatedDays String
+  fees          Float    @default(0)
+  conditions    String?
+}
+
+// ── Contractor billing (item 15) ─────────────────────────────────
+
+model Invoice {
+  id           String   @id @default(cuid())
+  number       String
+  contractorId String
+  amount       Float
+  description  String?
+  status       String   @default("unpaid") // unpaid, partial, paid
+  date         DateTime @default(now())
+}
+
+model Payment {
+  id           String   @id @default(cuid())
+  contractorId String
+  amount       Float
+  method       String?  // cash, transfer, cheque
+  note         String?
+  date         DateTime @default(now())
+}
+
+// ── Search analytics for weekly report (item 20) ─────────────────
+
+model SearchLog {
+  id         String   @id @default(cuid())
+  query      String
+  hasResults Boolean  @default(true)
+  date       DateTime @default(now())
+}

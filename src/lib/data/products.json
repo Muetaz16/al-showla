@@ -1,0 +1,810 @@
+[
+  {
+    "id": "wp-001",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    "priceBase": 185,
+    "inStock": true,
+    "isFeatured": true,
+    "isNew": false,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2022
+      }
+    ],
+    "nameAr": "سيكاتوب-107 سيل",
+    "nameEn": "Sikatop-107 Seal",
+    "descriptionAr": "مادة عازلة مائية جاهزة للاستخدام مكونة من مكونين، مثالية للحمامات والمناطق الرطبة.",
+    "descriptionEn": "Ready-to-use two-component waterproofing slurry, ideal for bathrooms and wet areas.",
+    "unit": "كيس 25 كغ / 25kg bag",
+    "specAr": [
+      "مقاومة عالية للضغط المائي",
+      "مرونة ممتازة",
+      "سهل التطبيق",
+      "آمن للأسطح"
+    ],
+    "specEn": [
+      "High water pressure resistance",
+      "Excellent flexibility",
+      "Easy application",
+      "Safe on surfaces"
+    ]
+  },
+  {
+    "id": "wp-002",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "https://images.unsplash.com/photo-1565793319886-04e3bfae58b8?w=600&q=80",
+    "priceBase": 95,
+    "inStock": true,
+    "isFeatured": false,
+    "isNew": true,
+    "rating": 4.6,
+    "reviewCount": 87,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      }
+    ],
+    "nameAr": "سيكافلكس-11 إف سي+",
+    "nameEn": "Sikaflex-11 FC+",
+    "descriptionAr": "مادة إحكام مرنة أحادية المكون تعتمد على البولي يوريثان، مناسبة لإحكام الوصلات والشقوق.",
+    "descriptionEn": "1-component polyurethane flexible sealant for sealing joints and cracks.",
+    "unit": "أنبوبة 300 مل / 300ml tube",
+    "specAr": [
+      "لا تتشقق",
+      "مقاومة للأشعة فوق البنفسجية",
+      "تطبيق في درجات حرارة متنوعة"
+    ],
+    "specEn": [
+      "Non-cracking",
+      "UV resistant",
+      "Application in various temperatures"
+    ]
+  },
+  {
+    "id": "wp-003",
+    "categoryId": "waterproof",
+    "brand": "Mapei",
+    "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    "priceBase": 145,
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 62,
+    "certificates": [
+      {
+        "nameAr": "شهادة LEED",
+        "nameEn": "LEED Certified",
+        "issuer": "USGBC",
+        "year": 2022
+      }
+    ],
+    "nameAr": "ماباي إيلاستوكولور",
+    "nameEn": "Mapei Elastocolor",
+    "descriptionAr": "طلاء مرن مقاوم للماء للأسطح الخارجية والمشققة.",
+    "descriptionEn": "Flexible waterproof coating for exterior and cracked surfaces.",
+    "unit": "دلو 20 لتر / 20L bucket",
+    "specAr": [
+      "مرونة ممتازة",
+      "مقاوم للعوامل الجوية",
+      "ألوان متعددة"
+    ],
+    "specEn": [
+      "Excellent elasticity",
+      "Weather resistant",
+      "Multiple colors"
+    ]
+  },
+  {
+    "id": "wp-004",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "priceBase": 220,
+    "inStock": false,
+    "rating": 4.9,
+    "reviewCount": 45,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة ISO 14001",
+        "nameEn": "ISO 14001",
+        "issuer": "TÜV Rheinland",
+        "year": 2022
+      }
+    ],
+    "nameAr": "سيكامباكت-150",
+    "nameEn": "Sikapack-150",
+    "descriptionAr": "مادة حقن خاصة للتسربات تحت ضغط المياه.",
+    "descriptionEn": "Special injection material for water leaks under pressure.",
+    "unit": "طقم 5 لتر / 5L kit",
+    "specAr": [
+      "تجمد سريع",
+      "مقاومة ضغط عالي",
+      "لأنظمة الصرف"
+    ],
+    "specEn": [
+      "Fast setting",
+      "High pressure resistance",
+      "For drainage systems"
+    ]
+  },
+  {
+    "id": "gy-001",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
+    "priceBase": 28,
+    "inStock": true,
+    "isFeatured": true,
+    "rating": 4.7,
+    "reviewCount": 210,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة مقاومة الحريق",
+        "nameEn": "Fire Resistance Certificate",
+        "issuer": "BSI",
+        "year": 2022
+      }
+    ],
+    "nameAr": "لوح جبس كناف W111",
+    "nameEn": "Knauf W111 Gypsum Board",
+    "descriptionAr": "لوح جبس قياسي عالي الجودة للجدران الداخلية والأسقف.",
+    "descriptionEn": "Standard high-quality gypsum board for interior walls and ceilings.",
+    "unit": "لوح 120×300 سم / Sheet 120×300cm",
+    "specAr": [
+      "سماكة 12.5 مم",
+      "وزن خفيف",
+      "سهل القطع والتركيب",
+      "صديق للبيئة"
+    ],
+    "specEn": [
+      "12.5mm thickness",
+      "Lightweight",
+      "Easy cutting & installation",
+      "Eco-friendly"
+    ]
+  },
+  {
+    "id": "gy-002",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
+    "priceBase": 38,
+    "inStock": true,
+    "isNew": true,
+    "rating": 4.8,
+    "reviewCount": 98,
+    "certificates": [
+      {
+        "nameAr": "شهادة مقاومة الرطوبة",
+        "nameEn": "Moisture Resistance",
+        "issuer": "BSI",
+        "year": 2023
+      }
+    ],
+    "nameAr": "لوح كناف المقاوم للرطوبة",
+    "nameEn": "Knauf Moisture Resistant Board",
+    "descriptionAr": "لوح جبس أخضر مقاوم للرطوبة، مثالي للحمامات والمطابخ.",
+    "descriptionEn": "Green moisture-resistant gypsum board, ideal for bathrooms and kitchens.",
+    "unit": "لوح 120×300 سم / Sheet 120×300cm",
+    "specAr": [
+      "سماكة 12.5 مم",
+      "مقاوم للبخار",
+      "لون أخضر مميز"
+    ],
+    "specEn": [
+      "12.5mm thickness",
+      "Vapor resistant",
+      "Distinctive green color"
+    ]
+  },
+  {
+    "id": "gy-003",
+    "categoryId": "gypsum",
+    "brand": "Saint-Gobain",
+    "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    "priceBase": 45,
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 67,
+    "certificates": [
+      {
+        "nameAr": "شهادة مقاومة الحريق F90",
+        "nameEn": "Fire Resistance F90",
+        "issuer": "BSI",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2022
+      }
+    ],
+    "nameAr": "ريجيبلاكس مقاوم للحريق",
+    "nameEn": "Rigiplac Fire Resistant",
+    "descriptionAr": "لوح جبس مقاوم للحريق لمدة 90 دقيقة، للمباني التجارية.",
+    "descriptionEn": "90-minute fire resistant gypsum board for commercial buildings.",
+    "unit": "لوح 120×300 سم / Sheet 120×300cm",
+    "specAr": [
+      "مقاوم للحريق 90 دقيقة",
+      "سماكة 15 مم",
+      "معتمد أوروبياً"
+    ],
+    "specEn": [
+      "90-min fire resistance",
+      "15mm thickness",
+      "European certified"
+    ]
+  },
+  {
+    "id": "sa-001",
+    "categoryId": "sanitary",
+    "brand": "Grohe",
+    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80",
+    "priceBase": 890,
+    "inStock": true,
+    "isFeatured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "certificates": [
+      {
+        "nameAr": "شهادة واترمارك",
+        "nameEn": "Watermark Certificate",
+        "issuer": "SAI Global",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      }
+    ],
+    "nameAr": "خلاط غروهي يوريو كروم",
+    "nameEn": "Grohe Eurio Chrome Mixer",
+    "descriptionAr": "خلاط حوض فاخر بتشطيب الكروم براق، تقنية ألمانية الصنع.",
+    "descriptionEn": "Premium basin mixer with shiny chrome finish, German engineering.",
+    "unit": "قطعة / Piece",
+    "specAr": [
+      "تقنية SilkMove®",
+      "توفير 50% من الماء",
+      "ضمان 5 سنوات",
+      "كروم لا يصدأ"
+    ],
+    "specEn": [
+      "SilkMove® technology",
+      "50% water saving",
+      "5-year warranty",
+      "Rustproof chrome"
+    ]
+  },
+  {
+    "id": "sa-002",
+    "categoryId": "sanitary",
+    "brand": "Roca",
+    "imageUrl": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80",
+    "priceBase": 420,
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 89,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "AENOR",
+        "year": 2023
+      }
+    ],
+    "nameAr": "مرحاض روكا غاب",
+    "nameEn": "Roca GAP WC",
+    "descriptionAr": "مرحاض معلق عصري بتصميم أوروبي وميزة التدفق المزدوج.",
+    "descriptionEn": "Modern wall-hung WC with European design and dual-flush feature.",
+    "unit": "طقم / Set",
+    "specAr": [
+      "تدفق مزدوج 3/6 لتر",
+      "تركيب معلق",
+      "تنظيف سهل",
+      "ضمان 10 سنوات"
+    ],
+    "specEn": [
+      "Dual flush 3/6L",
+      "Wall-hung",
+      "Easy cleaning",
+      "10-year warranty"
+    ]
+  },
+  {
+    "id": "sa-003",
+    "categoryId": "sanitary",
+    "brand": "Geberit",
+    "imageUrl": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&q=80",
+    "priceBase": 1250,
+    "inStock": true,
+    "isNew": true,
+    "rating": 5,
+    "reviewCount": 34,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة واترسنس",
+        "nameEn": "WaterSense",
+        "issuer": "EPA",
+        "year": 2022
+      }
+    ],
+    "nameAr": "خزان مدمج جيبريت",
+    "nameEn": "Geberit Concealed Cistern",
+    "descriptionAr": "خزان مدفون عالي الكفاءة مع لوحة تشغيل سيغما 01.",
+    "descriptionEn": "High-efficiency concealed cistern with Sigma 01 actuation plate.",
+    "unit": "طقم / Set",
+    "specAr": [
+      "ضجيج منخفض جداً",
+      "توفير 67% من الماء",
+      "تركيب احترافي",
+      "ضمان مدى الحياة"
+    ],
+    "specEn": [
+      "Very low noise",
+      "67% water saving",
+      "Professional installation",
+      "Lifetime warranty"
+    ]
+  },
+  {
+    "id": "pt-001",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80",
+    "priceBase": 1450,
+    "inStock": true,
+    "isFeatured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "certificates": [
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة السلامة UL",
+        "nameEn": "UL Safety",
+        "issuer": "Underwriters Laboratories",
+        "year": 2023
+      }
+    ],
+    "nameAr": "مطرقة حفر ديوالت 20V",
+    "nameEn": "DeWalt 20V Hammer Drill",
+    "descriptionAr": "مطرقة حفر لاسلكية بقوة 20 فولت مع خاصية الطرق، مثالية للبناء.",
+    "descriptionEn": "20V cordless hammer drill with hammering action, ideal for construction.",
+    "unit": "طقم / Kit",
+    "specAr": [
+      "عزم 60 نيوتن/متر",
+      "ضربات 35,000/دقيقة",
+      "بطارية 4 أمبير",
+      "حقيبة احترافية"
+    ],
+    "specEn": [
+      "60 Nm torque",
+      "35,000 BPM",
+      "4Ah battery",
+      "Professional carry case"
+    ]
+  },
+  {
+    "id": "pt-002",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=600&q=80",
+    "priceBase": 980,
+    "inStock": true,
+    "isNew": true,
+    "rating": 4.7,
+    "reviewCount": 178,
+    "certificates": [
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2023
+      }
+    ],
+    "nameAr": "منشار دائري ديوالت 185 مم",
+    "nameEn": "DeWalt 185mm Circular Saw",
+    "descriptionAr": "منشار دائري احترافي بقوة 1800 وات، دقة قطع عالية.",
+    "descriptionEn": "Professional 1800W circular saw with high cutting precision.",
+    "unit": "قطعة / Piece",
+    "specAr": [
+      "1800 وات",
+      "قطر شفرة 185 مم",
+      "عمق قطع 65 مم",
+      "حماية من الغبار"
+    ],
+    "specEn": [
+      "1800W",
+      "185mm blade",
+      "65mm cutting depth",
+      "Dust protection"
+    ]
+  },
+  {
+    "id": "pt-003",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "priceBase": 340,
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 245,
+    "certificates": [
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2022
+      }
+    ],
+    "nameAr": "مجموعة أدوات ستانلي 94 قطعة",
+    "nameEn": "Stanley 94-Piece Tool Set",
+    "descriptionAr": "طقم أدوات شامل في حقيبة متينة، مثالي للمقاولين.",
+    "descriptionEn": "Comprehensive tool set in a durable case, ideal for contractors.",
+    "unit": "طقم / Set",
+    "specAr": [
+      "94 قطعة",
+      "فولاذ كروم فاناديوم",
+      "حقيبة متينة",
+      "ضمان مدى الحياة"
+    ],
+    "specEn": [
+      "94 pieces",
+      "Chrome Vanadium steel",
+      "Durable case",
+      "Lifetime warranty"
+    ]
+  },
+  {
+    "id": "st-001",
+    "categoryId": "steel",
+    "brand": "Libyan Iron",
+    "imageUrl": "https://images.unsplash.com/photo-1565793319886-04e3bfae58b8?w=600&q=80",
+    "priceBase": 3800,
+    "inStock": true,
+    "isFeatured": true,
+    "rating": 4.6,
+    "reviewCount": 89,
+    "certificates": [
+      {
+        "nameAr": "شهادة ASTM A615",
+        "nameEn": "ASTM A615",
+        "issuer": "ASTM International",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2022
+      }
+    ],
+    "nameAr": "حديد تسليح 12 مم",
+    "nameEn": "12mm Rebar Steel",
+    "descriptionAr": "حديد تسليح عالي الجودة مطابق للمواصفات الدولية للبناء.",
+    "descriptionEn": "High-quality rebar steel conforming to international building standards.",
+    "unit": "طن / Ton",
+    "specAr": [
+      "قطر 12 مم",
+      "قوة خضوع 420 ميجاباسكال",
+      "شهادة ASTM",
+      "توريد بالطن"
+    ],
+    "specEn": [
+      "12mm diameter",
+      "420 MPa yield strength",
+      "ASTM certified",
+      "Per ton supply"
+    ]
+  },
+  {
+    "id": "st-002",
+    "categoryId": "steel",
+    "brand": "International Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    "priceBase": 850,
+    "inStock": true,
+    "rating": 4.4,
+    "reviewCount": 56,
+    "certificates": [
+      {
+        "nameAr": "شهادة EN 10025",
+        "nameEn": "EN 10025",
+        "issuer": "BSI",
+        "year": 2022
+      }
+    ],
+    "nameAr": "عارضة فولاذية IPE 200",
+    "nameEn": "IPE 200 Steel Beam",
+    "descriptionAr": "عارضة فولاذية على شكل حرف I للإنشاءات الهيكلية.",
+    "descriptionEn": "I-shaped steel beam for structural construction.",
+    "unit": "متر طولي / Linear meter",
+    "specAr": [
+      "ارتفاع 200 مم",
+      "فولاذ S235",
+      "قطع بالمقاس",
+      "مطلي بالطلاء الأولي"
+    ],
+    "specEn": [
+      "200mm height",
+      "S235 steel",
+      "Cut to size",
+      "Primer coated"
+    ]
+  },
+  {
+    "id": "fl-001",
+    "categoryId": "flooring",
+    "brand": "Mapei",
+    "imageUrl": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&q=80",
+    "priceBase": 62,
+    "inStock": true,
+    "isFeatured": true,
+    "isNew": true,
+    "rating": 4.8,
+    "reviewCount": 134,
+    "certificates": [
+      {
+        "nameAr": "شهادة LEED",
+        "nameEn": "LEED Certified",
+        "issuer": "USGBC",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة GreenGuard",
+        "nameEn": "GreenGuard Gold",
+        "issuer": "UL",
+        "year": 2023
+      }
+    ],
+    "nameAr": "بلاط إيبوكسي صناعي",
+    "nameEn": "Industrial Epoxy Flooring",
+    "descriptionAr": "طلاء أرضيات إيبوكسي للمستودعات والمصانع، متين وسهل التنظيف.",
+    "descriptionEn": "Epoxy floor coating for warehouses and factories, durable and easy to clean.",
+    "unit": "كيلو / Kg",
+    "specAr": [
+      "صلابة شور D 80",
+      "مقاوم للمواد الكيميائية",
+      "ألوان متعددة",
+      "غير انزلاقي"
+    ],
+    "specEn": [
+      "Shore D 80 hardness",
+      "Chemical resistant",
+      "Multiple colors",
+      "Non-slip"
+    ]
+  },
+  {
+    "id": "fl-002",
+    "categoryId": "flooring",
+    "brand": "Saint-Gobain",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "priceBase": 34,
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 78,
+    "certificates": [
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2022
+      }
+    ],
+    "nameAr": "بلاط بورسلان 60×60",
+    "nameEn": "Porcelain Tile 60x60",
+    "descriptionAr": "بلاط بورسلاني عالي الجودة مقاوم للانزلاق للأرضيات الخارجية.",
+    "descriptionEn": "High-quality anti-slip porcelain tile for exterior flooring.",
+    "unit": "متر مربع / m²",
+    "specAr": [
+      "سماكة 10 مم",
+      "مقاوم للانزلاق R11",
+      "مقاوم للصقيع",
+      "امتصاص منخفض للماء"
+    ],
+    "specEn": [
+      "10mm thickness",
+      "R11 slip resistance",
+      "Frost resistant",
+      "Low water absorption"
+    ]
+  },
+  {
+    "id": "ad-001",
+    "categoryId": "adhesives",
+    "brand": "Sika",
+    "imageUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
+    "priceBase": 48,
+    "inStock": true,
+    "isFeatured": true,
+    "rating": 4.7,
+    "reviewCount": 198,
+    "certificates": [
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2022
+      }
+    ],
+    "nameAr": "غراء البلاط سيكاسيراميك-202 بلاس",
+    "nameEn": "Sikaceram-202 Plus",
+    "descriptionAr": "مادة لصق بلاط مرنة ذات تعلق مرتفع للبلاط الكبير والحجر الطبيعي.",
+    "descriptionEn": "Flexible tile adhesive with high grab for large format tiles and natural stone.",
+    "unit": "كيس 25 كغ / 25kg bag",
+    "specAr": [
+      "مرن C2 TE",
+      "وقت تعديل 30 دقيقة",
+      "مناسب للحرارة المرتفعة",
+      "ألصق تعلق عالي"
+    ],
+    "specEn": [
+      "Flexible C2 TE",
+      "30-min adjustment time",
+      "Suitable for high heat",
+      "High bond"
+    ]
+  },
+  {
+    "id": "ad-002",
+    "categoryId": "adhesives",
+    "brand": "Mapei",
+    "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    "priceBase": 32,
+    "inStock": true,
+    "isNew": true,
+    "rating": 4.6,
+    "reviewCount": 112,
+    "certificates": [
+      {
+        "nameAr": "شهادة LEED",
+        "nameEn": "LEED Certified",
+        "issuer": "USGBC",
+        "year": 2022
+      }
+    ],
+    "nameAr": "ملاط فوجي ماباي ألتراكولور",
+    "nameEn": "Mapei Ultracolor Plus Grout",
+    "descriptionAr": "ملاط درزات عالي الأداء، مقاوم للعفن ومضاد للبكتيريا.",
+    "descriptionEn": "High-performance grout, mold resistant and antibacterial.",
+    "unit": "كيس 5 كغ / 5kg bag",
+    "specAr": [
+      "مقاوم للعفن",
+      "ضد البكتيريا",
+      "ألوان ثابتة",
+      "28 لوناً متاحاً"
+    ],
+    "specEn": [
+      "Mold resistant",
+      "Antibacterial",
+      "Color stable",
+      "28 colors available"
+    ]
+  },
+  {
+    "id": "in-001",
+    "categoryId": "insulation",
+    "brand": "Knauf",
+    "imageUrl": "https://images.unsplash.com/photo-1565793319886-04e3bfae58b8?w=600&q=80",
+    "priceBase": 55,
+    "inStock": true,
+    "isFeatured": true,
+    "rating": 4.7,
+    "reviewCount": 143,
+    "certificates": [
+      {
+        "nameAr": "شهادة Euroclass A1",
+        "nameEn": "Euroclass A1",
+        "issuer": "European Union",
+        "year": 2023
+      },
+      {
+        "nameAr": "شهادة ISO 9001",
+        "nameEn": "ISO 9001",
+        "issuer": "TÜV Rheinland",
+        "year": 2023
+      }
+    ],
+    "nameAr": "صوف صخري كناف 100 مم",
+    "nameEn": "Knauf 100mm Rock Wool",
+    "descriptionAr": "صوف صخري للعزل الحراري والصوتي في الجدران والأسقف.",
+    "descriptionEn": "Rock wool for thermal and acoustic insulation in walls and ceilings.",
+    "unit": "م² / m²",
+    "specAr": [
+      "سماكة 100 مم",
+      "مقاومة حرارية R=2.5",
+      "غير قابل للاشتعال",
+      "عازل صوتي 45 ديسيبل"
+    ],
+    "specEn": [
+      "100mm thickness",
+      "R=2.5 thermal resistance",
+      "Non-combustible",
+      "45dB sound insulation"
+    ]
+  },
+  {
+    "id": "in-002",
+    "categoryId": "insulation",
+    "brand": "Saint-Gobain",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "priceBase": 38,
+    "inStock": true,
+    "isNew": true,
+    "rating": 4.5,
+    "reviewCount": 76,
+    "certificates": [
+      {
+        "nameAr": "شهادة CE",
+        "nameEn": "CE Mark",
+        "issuer": "European Union",
+        "year": 2023
+      }
+    ],
+    "nameAr": "لوح XPS إكسترافور 50 مم",
+    "nameEn": "Extravör XPS 50mm Board",
+    "descriptionAr": "لوح بوليسترين مضغوط للعزل الحراري في الأرضيات والأسطح المعكوسة.",
+    "descriptionEn": "Extruded polystyrene board for floor and inverted roof insulation.",
+    "unit": "لوح 60×125 سم / Sheet 60×125cm",
+    "specAr": [
+      "لا يمتص الماء",
+      "مقاومة ضغط 300 كيلوباسكال",
+      "معامل حرارة 0.033",
+      "خفيف الوزن"
+    ],
+    "specEn": [
+      "No water absorption",
+      "300kPa compression",
+      "0.033 thermal conductivity",
+      "Lightweight"
+    ]
+  }
+]

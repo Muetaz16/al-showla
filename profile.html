@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Profile - Al Showla</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #f7f9fc;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      height: 296mm;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      background: white;
+      page-break-after: always;
+    }
+
+    /* Cover Page */
+    .cover-page {
+      background: linear-gradient(135deg, #001f4d 0%, #0051a2 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .cover-page::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 40%),
+                        radial-gradient(circle at 20% 80%, rgba(245,158,11,0.15) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .cover-logo {
+      font-size: 80px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      color: #fff;
+    }
+
+    .cover-logo span { color: #f59e0b; }
+
+    .cover-title {
+      font-size: 60px;
+      font-weight: 900;
+      margin: 0;
+      line-height: 1.2;
+    }
+    
+    .cover-subtitle {
+      font-size: 30px;
+      color: #cbd5e1;
+      margin-top: 20px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .cover-year {
+      position: absolute;
+      bottom: 60px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #f59e0b;
+      letter-spacing: 4px;
+    }
+
+    /* Standard Page Layout */
+    .header {
+      height: 120px;
+      background: #0051a2;
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      color: white;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 900;
+    }
+    .header .en-title {
+      margin-right: auto;
+      font-size: 24px;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    .content {
+      padding: 60px 50px;
+    }
+
+    .text-block {
+      margin-bottom: 40px;
+    }
+    .text-block h2 {
+      color: #0051a2;
+      font-size: 28px;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #f59e0b;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .text-block p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #334155;
+      text-align: justify;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .stat-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-right: 5px solid #f59e0b;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .stat-num {
+      font-size: 48px;
+      font-weight: 900;
+      color: #0051a2;
+      margin-bottom: 10px;
+    }
+    .stat-label {
+      font-size: 20px;
+      color: #64748b;
+      font-weight: 700;
+    }
+
+    /* Brands Page */
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .brand-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+    .brand-card h3 {
+      color: #001f4d;
+      font-size: 24px;
+      margin: 0;
+      font-weight: 900;
+    }
+    .brand-card p {
+      color: #f59e0b;
+      margin: 10px 0 0 0;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: #0f1c2e;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cover Page -->
+  <div class="page cover-page">
+    <div class="cover-logo">الشعلة <span>الرائدة</span></div>
+    <h1 class="cover-title">الملف التعريفي للشركة</h1>
+    <div class="cover-subtitle">COMPANY PROFILE</div>
+    <div class="cover-year">2026 - 2027</div>
+  </div>
+
+  <!-- Page 2: About Us -->
+  <div class="page">
+    <div class="header">
+      <h1>من نحن</h1>
+      <span class="en-title">About Us</span>
+    </div>
+    <div class="content">
+      <div class="text-block">
+        <h2>رؤيتنا</h2>
+        <p>
+          نطمح في الشعلة الرائدة إلى أن نكون الخيار الأول والوجهة الموثوقة لقطاع البناء والتشييد في ليبيا وشمال أفريقيا. نلتزم بتقديم حلول مبتكرة ومواد بناء متطورة تواكب أحدث المعايير العالمية، للمساهمة الفعالة في بناء مستقبل حضري مستدام.
+        </p>
+      </div>
+      <div class="text-block">
+        <h2>رسالتنا</h2>
+        <p>
+          توفير أجود مواد البناء والحلول الهندسية للسوق المحلي، مع التركيز على الجودة الاستثنائية وخدمة العملاء الفائقة. نحن نعمل بشغف لبناء شراكات طويلة الأمد مع كبرى العلامات التجارية العالمية لتلبية احتياجات عملائنا المتطورة بكل مهنية واحترافية.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-num">+20</div>
+          <div class="stat-label">عاماً من الخبرة</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">+14</div>
+          <div class="stat-label">علامة تجارية عالمية</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">+100</div>
+          <div class="stat-label">مشروع منجز بنجاح</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">دعم فني وخدمة عملاء</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>🌐 www.alshowla.com</span>
+      <span>📧 info@alshowla.com</span>
+      <span>📞 +218 94 802 0200</span>
+    </div>
+  </div>
+
+  <!-- Page 3: Our Partners -->
+  <div class="page">
+    <div class="header">
+      <h1>شركاء النجاح</h1>
+      <span class="en-title">Our Partners & Brands</span>
+    </div>
+    <div class="content">
+      <div class="text-block">
+        <h2>علامات تجارية نثق بها</h2>
+        <p>
+          نفخر في شركة الشعلة الرائدة بكوننا الوكيل والموزع المعتمد لنخبة من كبرى الشركات العالمية المتخصصة في مواد البناء والحلول الهندسية. هذه الشراكات تضمن حصول عملائنا على أعلى مستويات الجودة والموثوقية في كل مشروع.
+        </p>
+      </div>
+
+      <div class="brands-grid">
+        <div class="brand-card">
+          <h3>Sika</h3>
+          <p>كيماويات البناء</p>
+        </div>
+        <div class="brand-card">
+          <h3>Mapei</h3>
+          <p>المواد اللاصقة والعوازل</p>
+        </div>
+        <div class="brand-card">
+          <h3>Jotun</h3>
+          <p>الدهانات الصناعية</p>
+        </div>
+        <div class="brand-card">
+          <h3>Grohe</h3>
+          <p>التجهيزات الصحية</p>
+        </div>
+        <div class="brand-card">
+          <h3>Knauf</h3>
+          <p>أنظمة الجدران والأسقف</p>
+        </div>
+        <div class="brand-card">
+          <h3>Saint-Gobain</h3>
+          <p>الزجاج والمواد المتقدمة</p>
+        </div>
+        <div class="brand-card">
+          <h3>Libyan Iron & Steel</h3>
+          <p>الحديد والصلب</p>
+        </div>
+        <div class="brand-card">
+          <h3>Golden Metal</h3>
+          <p>الصناعات المعدنية</p>
+        </div>
+        <div class="brand-card">
+          <h3>Arab Cement</h3>
+          <p>الإسمنت ومواد البناء</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>🌐 www.alshowla.com</span>
+      <span>📧 info@alshowla.com</span>
+      <span>📞 +218 94 802 0200</span>
+    </div>
+  </div>
+
+</body>
+</html>

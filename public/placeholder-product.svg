@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#e8f2fc"/>
+  <g fill="#9db8d6" transform="translate(160,105)">
+    <rect x="0" y="20" width="80" height="60" rx="4" fill="none" stroke="#9db8d6" stroke-width="4"/>
+    <circle cx="24" cy="42" r="10"/>
+    <path d="M8 74 L34 52 L52 66 L72 44 L72 76 L8 76 Z"/>
+  </g>
+  <text x="200" y="220" font-family="Cairo, sans-serif" font-size="16" fill="#7c98bd" text-anchor="middle">لا تتوفر صورة</text>
+</svg>
