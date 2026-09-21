@@ -524,9 +524,10 @@ export default function Home() {
     { img: "https://alshowla.com/wp-content/uploads/2026/01/c1.jpg", name: t.cl5, sub: t.cl5s, tall: false },
   ];
 
-  const ticker = lang === "ar"
+  const baseTicker = lang === "ar"
     ? ["أنظمة حلول البناء والانشاء", "الأدوات والمعدات الصناعية", "أنظمة الجبس بورد", "بلاط السيراميك", "الديكور الداخلي والخارجي", "أنظمة التعرفية", "الأسمنت والحديد", "عزل حراري"]
     : ["Building & Construction Solutions", "Industrial Tools & Equipment", "Gypsum Board Systems", "Ceramic Tiles", "Interior & Exterior Decor", "Roofing Systems", "Cement & Steel", "Thermal Insulation"];
+  const ticker = [...baseTicker, ...baseTicker, ...baseTicker, ...baseTicker];
 
   return (
     <>

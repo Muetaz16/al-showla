@@ -212,7 +212,8 @@ h1.hh em { font-style: normal; color: var(--accent); }
 .ticker { background: var(--blue); padding: 11px 0; overflow: hidden; }
 /* Two identical tracks sit side-by-side; moving exactly one track width (-50% of the
    combined width) loops seamlessly with no visible stop, gap, or reset point. */
-.t-track { display: flex; width: max-content; flex-wrap: nowrap; animation: tkr 40s linear infinite; will-change: transform; }
+@keyframes tkr { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.t-track { display: flex; width: max-content; flex-wrap: nowrap; animation: tkr 100s linear infinite; will-change: transform; }
 .ticker:hover .t-track { animation-play-state: paused; }
 .t-inner { display: flex; flex-shrink: 0; flex-wrap: nowrap; }
 .ti {
@@ -222,8 +223,7 @@ h1.hh em { font-style: normal; color: var(--accent); }
 }
 [dir=rtl] .ti { letter-spacing: 0; text-transform: none; font-size: 13px; }
 .ti::after { content: '◆'; font-size: 6px; color: rgba(255,255,255,.45); }
-@keyframes tkr { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-[dir=rtl] .t-track { animation: tkr-rtl 25s linear infinite; }
+[dir=rtl] .t-track { animation: tkr-rtl 100s linear infinite; }
 @keyframes tkr-rtl { from { transform: translateX(0); } to { transform: translateX(50%); } }
 
 /* ── SECTION BASE ── */
