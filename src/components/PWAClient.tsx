@@ -63,17 +63,7 @@ export default function PWAClient() {
         </div>
       )}
 
-      {/* Install app button — only appears when the browser offers installation */}
-      {deferredPrompt && !installed && (
-        <button onClick={install} dir="rtl" style={{
-          position: "fixed", bottom: 16, insetInlineEnd: 16, zIndex: 9999,
-          background: "#0051a2", color: "#fff", border: "none",
-          padding: "10px 18px", borderRadius: 999, fontSize: 13, fontWeight: 800,
-          cursor: "pointer", boxShadow: "0 6px 20px rgba(0,81,162,.5)", fontFamily: "'Cairo', sans-serif",
-        }}>
-          📲 تثبيت التطبيق
-        </button>
-      )}
+
     </>
   );
 }
