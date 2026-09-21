@@ -31,7 +31,7 @@ export default function TrainingPage() {
 
     const res = await registerWorkshop(selectedId, fd.get("participantName") as string, contactInfo);
     if (res.ok) { setSuccess(true); }
-    else { setError(res.message || "تعذر التسجيل"); await load(); }
+    else { setError((res as any).message || "تعذر التسجيل"); await load(); }
     setLoading(false);
   };
 

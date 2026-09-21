@@ -29,7 +29,7 @@ export default function TendersPage() {
     if (boqFile) {
       const base64 = await readFileAsBase64(boqFile);
       const up = await saveBoqFile(base64, boqFile.name);
-      if (!up.ok) { setError(up.message); setLoading(false); return; }
+      if (!up.ok) { setError((up as any).message); setLoading(false); return; }
       fileUrl = up.refId;
     }
 

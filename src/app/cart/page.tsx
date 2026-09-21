@@ -320,7 +320,7 @@ export default function CartPage() {
       setCouponMessage(lang === "ar" ? `خصم ${res.discount}%` : `${res.discount}% off`);
     } else {
       setDiscountPercent(0);
-      setCouponMessage(res.message || (lang === "ar" ? "كود غير صالح" : "Invalid code"));
+      setCouponMessage((res as any).message || (lang === "ar" ? "كود غير صالح" : "Invalid code"));
     }
   };
 
