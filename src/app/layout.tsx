@@ -31,6 +31,10 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
   manifest: "/manifest.json",
+  icons: {
+    icon: "/icon-192.png",
+    apple: "/icon-192.png",
+  },
   appleWebApp: { capable: true, statusBarStyle: "default", title: "الشعلة الرائدة" },
   openGraph: {
     title: "AL-SHOWLA AL-RAEDA | مواد البناء والحلول الإنشائية",
