@@ -35,13 +35,24 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* overflow-x MUST be on <html> as well as <body>: on iOS Safari a horizontal
+   scroll set only on <body> leaks up to the document element, letting the page
+   pan sideways (revealing blank space / shifting the layout). Locking both —
+   plus width:100% and max-width:100% — makes horizontal panning impossible. */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
 body {
   background: var(--white);
   color: var(--text);
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
-  
+  width: 100%;
+  max-width: 100%;
+  position: relative;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -452,16 +463,19 @@ footer { background: var(--blue-deeper); }
 [dir=rtl] .ar { transform: translateX(-30px); }
 .av { opacity: 1 !important; transform: none !important; }
 
-/* Fail-safe: the scroll-reveal effect only hides content while the JS observer is
-   actually managing it (it adds `reveal-js` to <html> on mount). If that never
-   happens — JS disabled/crashed, a stale service worker, or a browser extension
-   interfering with hydration — content force-reveals after ~1s so the page is
-   NEVER left blank. On a normal load `reveal-js` is added within a few hundred ms,
-   well before this fires, so there is no flash and scroll animations stay intact. */
+/* Fail-safe reveal — UNIVERSAL, not gated on `reveal-js`.
+   The scroll-reveal effect hides content (.ao/.al/.ar are opacity:0) and the JS
+   observer reveals it (.av) as it scrolls into view. But on slow phones the
+   observer can run on stale nodes after hydration, get throttled in a background
+   tab, or never run at all (JS crash / stale service worker) — leaving parts of
+   the page permanently invisible ("half the page shows"). This rule guarantees
+   EVERY reveal element becomes fully visible after 2s no matter what happens to
+   the JS: the entrance animation still plays for content scrolled to in the first
+   couple of seconds, and nothing is ever left blank beyond that. `.av` (added by
+   the observer) always wins via !important, so revealed items are unaffected. */
 @keyframes reveal-failsafe { to { opacity: 1; transform: none; } }
-html:not(.reveal-js) .ao,
-html:not(.reveal-js) .al,
-html:not(.reveal-js) .ar { animation: reveal-failsafe .5s ease 1.5s forwards; }
+.ao, .al, .ar { animation: reveal-failsafe .6s ease 2s forwards; }
+.av { animation: none; }
 .d1 { transition-delay: .07s; } .d2 { transition-delay: .13s; } .d3 { transition-delay: .19s; }
 .d4 { transition-delay: .25s; } .d5 { transition-delay: .31s; } .d6 { transition-delay: .37s; }
 .d7 { transition-delay: .43s; } .d8 { transition-delay: .49s; } .d9 { transition-delay: .55s; }
