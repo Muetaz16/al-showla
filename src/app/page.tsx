@@ -298,14 +298,14 @@ export default function Home() {
   const MISSION_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Mision-scaled-e1768074828455.jpg";
 
   const products = [
-    { bg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600", tag: "Category 01", t: t.prod1, categoryId: "waterproof" },
-    { bg: "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600", tag: "Category 02", t: t.prod2, categoryId: "tools" },
-    { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", tag: "Category 03", t: t.prod3, categoryId: "gypsum" },
-    { bg: "/services/cat-ceramic.jpg", tag: "Category 04", t: t.prod4, categoryId: "sanitary" },
-    { bg: "/services/cat-decor.jpg", tag: "Category 05", t: t.prod5, categoryId: "flooring" },
-    { bg: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600", tag: "Category 06", t: t.prod6, categoryId: "adhesives" },
-    { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600", tag: "Category 07", t: t.prod7, categoryId: "steel" },
-    { bg: "/services/cat-all.jpg", tag: lang === "ar" ? "تصفّح" : "Browse", t: t.prodAll, categoryId: "" },
+    { bg: "/categories/cat-waterproof.jpg", tag: "Category 01", t: t.prod1, categoryId: "waterproof" },
+    { bg: "/categories/cat-tools.jpg", tag: "Category 02", t: t.prod2, categoryId: "tools" },
+    { bg: "/categories/cat-gypsum.jpg", tag: "Category 03", t: t.prod3, categoryId: "gypsum" },
+    { bg: "/categories/cat-sanitary.jpg", tag: "Category 04", t: t.prod4, categoryId: "sanitary" },
+    { bg: "/categories/cat-flooring.jpg", tag: "Category 05", t: t.prod5, categoryId: "flooring" },
+    { bg: "/categories/cat-adhesives.jpg", tag: "Category 06", t: t.prod6, categoryId: "adhesives" },
+    { bg: "/categories/cat-steel.jpg", tag: "Category 07", t: t.prod7, categoryId: "steel" },
+    { bg: "/categories/cat-all.jpg", tag: lang === "ar" ? "تصفّح" : "Browse", t: t.prodAll, categoryId: "" },
   ];
 
   const BRAND_DATA = [
