@@ -443,20 +443,6 @@ export default function CartPage() {
         @media(max-width:600px){.cart-table th:nth-child(3),.cart-table td:nth-child(3){display:none;}}
       `}</style>
 
-      {/* NAV */}
-      <div style={{ background: "#001f4d", padding: "0 5%", display: "flex", alignItems: "center", justifyContent: "space-between", height: 60, position: "sticky", top: 0, zIndex: 100 }}>
-        <a href="/products" style={{ color: "#fff", textDecoration: "none", fontSize: 13, fontWeight: 700 }}>{t.back}</a>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ color: "rgba(255,255,255,.6)", fontSize: 13 }}>
-            🛒 {getCartCount(items)} {t.items}
-          </span>
-          <button onClick={() => setLang(l => l === "ar" ? "en" : "ar")}
-            style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 14px", fontSize: 12, fontWeight: 800, cursor: "pointer" }}>
-            {lang === "ar" ? "EN" : "AR"}
-          </button>
-        </div>
-      </div>
-
       {/* HEADER */}
       <div style={{ background: "linear-gradient(135deg, #001f4d, #003578)", padding: "36px 5% 28px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>

@@ -8,7 +8,7 @@ import {
   type Currency, type Product,
 } from "@/lib/products";
 import { getProducts, getFavorites, toggleFavorite } from "@/app/actions";
-import { NAV } from "@/components/SiteChrome";
+import { SiteHeader } from "@/components/SiteChrome";
 import { RestockAlertModal } from "@/components/RestockAlertModal";
 import { logSearch, incrementProductView } from "@/app/cms-actions";
 import { addToCart, getCartCount, getCart } from "@/lib/cart";
@@ -1050,44 +1050,24 @@ export default function ProductsPage() {
         @media(max-width:600px) { .filter-bar { flex-direction: column; } }
       `}</style>
 
-      {/* ── TOP NAV BAR ── */}
-      <div style={{
-        position: "sticky", top: 0, zIndex: 200, background: "var(--blue-deeper)",
-        padding: "0 5%", display: "flex", alignItems: "center", justifyContent: "space-between",
-        height: 60, boxShadow: "0 2px 16px rgba(0,0,0,.25)",
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 2, overflowX: "auto", flex: 1, minWidth: 0 }}>
-          {NAV.map((n) => {
-            const gold = n.href === "/advisor";
-            return (
-              <Link key={n.href} href={n.href} style={{
-                color: gold ? "#f59e0b" : "rgba(255,255,255,.9)", textDecoration: "none",
-                fontSize: 13, fontWeight: gold ? 800 : 700, padding: "6px 8px", whiteSpace: "nowrap",
-              }}>
-                {gold ? "🔧 " : ""}{lang === "ar" ? n.ar : n.en}
-              </Link>
-            );
-          })}
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          {/* Lang */}
-          <button onClick={() => setLang(lang === "ar" ? "en" : "ar")} style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 14px", fontSize: 12, fontWeight: 800, cursor: "pointer" }}>
-            {lang === "ar" ? "EN" : "AR"}
-          </button>
-          {/* Dark */}
-          <button onClick={() => setDark(!dark)} style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 10px", fontSize: 16, cursor: "pointer" }}>
-            {dark ? "☀️" : "🌙"}
-          </button>
-          {/* Profile */}
-          <Link href="/profile" style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 14px", fontSize: 12, fontWeight: 800, textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
-            👤
-          </Link>
-          {/* Cart */}
-          <a href="/cart" style={{ background: cartCount > 0 ? "#f59e0b" : "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 14px", fontSize: 12, fontWeight: 800, cursor: "pointer", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
-            🛒 {cartCount > 0 ? cartCount : ""}
-          </a>
-        </div>
-      </div>
+      {/* ── UNIFIED TOP NAV BAR (same SiteHeader used on every page) + shop icons ── */}
+      <SiteHeader
+        lang={lang}
+        onToggleLang={() => setLang(lang === "ar" ? "en" : "ar")}
+        rightSlot={
+          <div style={{ display: "flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
+            <button onClick={() => setDark(!dark)} title="theme" style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 10px", fontSize: 16, cursor: "pointer", borderRadius: 8 }}>
+              {dark ? "☀️" : "🌙"}
+            </button>
+            <Link href="/profile" style={{ background: "rgba(255,255,255,.15)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8 }}>
+              👤
+            </Link>
+            <a href="/cart" style={{ background: cartCount > 0 ? "#f59e0b" : "rgba(255,255,255,.15)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8, whiteSpace: "nowrap" }}>
+              🛒 {cartCount > 0 ? cartCount : ""}
+            </a>
+          </div>
+        }
+      />
 
       <main style={{ background: "var(--off)", minHeight: "100vh", paddingBottom: compareList.length > 0 ? 80 : 0 }}>
         {/* ── HEADER ── */}

@@ -130,14 +130,6 @@ export default function CertificatesPage() {
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
       `}</style>
 
-      {/* TOP NAV */}
-      <div style={{ background: "var(--blue-deeper)", padding: "0 5%", display: "flex", alignItems: "center", justifyContent: "space-between", height: 60 }}>
-        <a href="/products" style={{ color: "#fff", textDecoration: "none", fontSize: 13, fontWeight: 700 }}>{t.back}</a>
-        <button onClick={() => setLang(l => l === "ar" ? "en" : "ar")} style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 14px", fontSize: 12, fontWeight: 800, cursor: "pointer" }}>
-          {lang === "ar" ? "EN" : "AR"}
-        </button>
-      </div>
-
       {/* HERO */}
       <div style={{ background: "linear-gradient(135deg, var(--blue-deeper), #003578)", padding: "48px 5% 36px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>

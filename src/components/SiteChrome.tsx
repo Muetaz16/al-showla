@@ -1,7 +1,9 @@
 "use client";
 
-// §25: shared Header/Footer so secondary pages present a consistent chrome.
-// Self-contained inline styles + absolute links (no dependency on page CSS).
+// §25: shared Header/Footer so EVERY page presents the exact same chrome.
+// Self-contained (scoped <style> + inline) so it never depends on page CSS.
+
+import { useState, type ReactNode } from "react";
 
 type Lang = "ar" | "en";
 
@@ -26,31 +28,62 @@ export const NAV: { href: string; ar: string; en: string }[] = [
 const NAVY = "#001f4d";
 const GOLD = "#c9a227";
 
-export function SiteHeader({ lang = "ar", onToggleLang }: { lang?: Lang; onToggleLang?: () => void }) {
+export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: Lang; onToggleLang?: () => void; rightSlot?: ReactNode }) {
   const isAr = lang === "ar";
+  const [open, setOpen] = useState(false);
   return (
-    <header dir={isAr ? "rtl" : "ltr"} style={{ background: NAVY, color: "#fff", fontFamily: "'Cairo', sans-serif" }}>
-      <div style={{ maxWidth: 1240, margin: "0 auto", padding: "0 5%", height: 60, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
-        <a href="/" style={{ color: "#fff", textDecoration: "none", fontWeight: 900, fontSize: 17, display: "flex", alignItems: "center", gap: 8, whiteSpace: "nowrap" }}>
-          <span style={{ color: GOLD }}>◆</span>
-          {isAr ? "الشعلة الرائدة" : "Al-Showla Al-Raeda"}
-        </a>
-        <nav style={{ display: "flex", gap: 2, alignItems: "center", flexWrap: "nowrap", justifyContent: "flex-end", overflowX: "auto", minWidth: 0 }}>
-          {NAV.map((n) => (
-            <a key={n.href} href={n.href}
-              style={{ color: "rgba(255,255,255,.85)", textDecoration: "none", fontSize: 13, fontWeight: 700, padding: "6px 8px", borderRadius: 8, whiteSpace: "nowrap" }}>
-              {isAr ? n.ar : n.en}
-            </a>
-          ))}
-          {onToggleLang && (
-            <button onClick={onToggleLang}
-              style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 14px", cursor: "pointer", fontWeight: 800, borderRadius: 8, marginInlineStart: 6 }}>
-              {isAr ? "EN" : "AR"}
+    <>
+      <style>{`
+        .sh-wrap { position: sticky; top: 0; z-index: 900; background: ${NAVY}; color: #fff; font-family: 'Cairo', sans-serif; box-shadow: 0 2px 14px rgba(0,0,0,.22); }
+        .sh-inner { max-width: 1300px; margin: 0 auto; padding: 0 5%; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        .sh-logo { color: #fff; text-decoration: none; font-weight: 900; font-size: 17px; display: flex; align-items: center; gap: 8px; white-space: nowrap; flex-shrink: 0; }
+        .sh-nav { display: flex; gap: 2px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+        .sh-nav a { color: rgba(255,255,255,.88); text-decoration: none; font-size: 13px; font-weight: 700; padding: 6px 8px; border-radius: 8px; white-space: nowrap; transition: color .2s; }
+        .sh-nav a:hover { color: ${GOLD}; }
+        .sh-lang { background: rgba(255,255,255,.15); border: none; color: #fff; padding: 6px 14px; cursor: pointer; font-weight: 800; border-radius: 8px; margin-inline-start: 6px; font-family: 'Cairo', sans-serif; }
+        .sh-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+        .sh-burger span { width: 24px; height: 2px; background: #fff; display: block; border-radius: 2px; }
+        .sh-mob { background: ${NAVY}; padding: 6px 5% 16px; border-top: 1px solid rgba(255,255,255,.1); display: flex; flex-direction: column; }
+        .sh-mob a { color: #fff; text-decoration: none; font-size: 15px; font-weight: 600; padding: 12px 4px; border-bottom: 1px solid rgba(255,255,255,.06); }
+        .sh-mob a:hover { color: ${GOLD}; }
+        @media (max-width: 1024px) { .sh-nav { display: none; } .sh-burger { display: flex; } }
+      `}</style>
+      <header className="sh-wrap" dir={isAr ? "rtl" : "ltr"}>
+        <div className="sh-inner">
+          <a href="/" className="sh-logo">
+            <span style={{ color: GOLD }}>◆</span>
+            {isAr ? "الشعلة الرائدة" : "Al-Showla Al-Raeda"}
+          </a>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, minWidth: 0 }}>
+            <nav className="sh-nav">
+              {NAV.map((n) => (
+                <a key={n.href} href={n.href}>{isAr ? n.ar : n.en}</a>
+              ))}
+              {onToggleLang && (
+                <button className="sh-lang" onClick={onToggleLang}>{isAr ? "EN" : "AR"}</button>
+              )}
+            </nav>
+            {rightSlot}
+            <button className="sh-burger" aria-label="menu" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
+              <span /><span /><span />
             </button>
-          )}
-        </nav>
-      </div>
-    </header>
+          </div>
+        </div>
+        {open && (
+          <div className="sh-mob" dir={isAr ? "rtl" : "ltr"}>
+            {NAV.map((n) => (
+              <a key={n.href} href={n.href} onClick={() => setOpen(false)}>{isAr ? n.ar : n.en}</a>
+            ))}
+            {onToggleLang && (
+              <button className="sh-lang" style={{ marginTop: 12, alignSelf: "flex-start" }}
+                onClick={() => { onToggleLang(); setOpen(false); }}>
+                {isAr ? "English" : "العربية"}
+              </button>
+            )}
+          </div>
+        )}
+      </header>
+    </>
   );
 }
 
