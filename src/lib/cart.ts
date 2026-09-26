@@ -60,7 +60,7 @@ export function clearCart(): void {
 
 export function getCartTotal(items: CartItem[], currency: Currency): number {
   const rates: Record<Currency, number> = { LYD: 1, USD: 0.21, EUR: 0.19 };
-  return items.reduce((sum, i) => sum + i.product.priceBase * i.quantity * rates[currency], 0);
+  return items.reduce((sum, i) => sum + (i.product.priceBase || 0) * i.quantity * rates[currency], 0);
 }
 
 export function getCartCount(items: CartItem[]): number {

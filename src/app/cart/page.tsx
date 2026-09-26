@@ -108,8 +108,6 @@ function generateQuoteHTML(
 
   const rows = items.map((item, i) => {
     const name = lang === "ar" ? item.product.nameAr : item.product.nameEn;
-    const unit = formatPrice(item.product.priceBase, currency);
-    const lineTotal = formatPrice(item.product.priceBase * item.quantity, currency);
     return `
       <tr style="border-bottom:1px solid #e2e8f0;">
         <td style="padding:10px 12px;color:#64748b;font-size:12px;">${i + 1}</td>
@@ -119,8 +117,6 @@ function generateQuoteHTML(
           ${item.notes ? `<br><em style="font-size:11px;color:#0051a2;">${item.notes}</em>` : ""}
         </td>
         <td style="padding:10px 12px;text-align:center;font-size:13px;font-weight:700;">${item.quantity}</td>
-        <td style="padding:10px 12px;text-align:center;font-size:13px;">${unit}</td>
-        <td style="padding:10px 12px;text-align:center;font-size:13px;font-weight:800;color:#0051a2;">${lineTotal}</td>
       </tr>`;
   }).join("");
 
@@ -165,13 +161,13 @@ function generateQuoteHTML(
       <p style="margin-top:3px;font-size:11px;color:#94a3b8;">+218 94 802 0200 · info@alshowla.com</p>
     </div>
     <div class="quote-meta">
-      <div class="qnum">${lang === "ar" ? "عرض سعر" : "QUOTATION"} #${quoteNum}</div>
+      <div class="qnum">${lang === "ar" ? "طلب عرض سعر" : "QUOTATION REQUEST"} #${quoteNum}</div>
       <div class="qdate">${lang === "ar" ? "التاريخ:" : "Date:"} ${today}</div>
     </div>
   </div>
 
   <div class="validity">
-    ⚠️ ${lang === "ar" ? "هذا العرض صالح لمدة 30 يوماً من تاريخ الإصدار. الأسعار قابلة للتغيير بعد انتهاء الصلاحية." : "This quotation is valid for 30 days from the issue date. Prices may change after expiry."}
+    ℹ️ ${lang === "ar" ? "هذه قائمة طلب عرض سعر. سيوافيكم فريق المبيعات بعرض السعر الرسمي بعد المراجعة." : "This is a quotation request. Our sales team will reply with the official pricing after review."}
   </div>
 
   <div class="info-grid">
@@ -198,8 +194,6 @@ function generateQuoteHTML(
         <th style="width:40px;">#</th>
         <th style="text-align:${lang === "ar" ? "right" : "left"};">${t.product}</th>
         <th style="width:70px;">${t.qty}</th>
-        <th style="width:110px;">${t.unitPrice}</th>
-        <th style="width:110px;">${t.total}</th>
       </tr>
     </thead>
     <tbody>${rows}</tbody>
@@ -207,16 +201,8 @@ function generateQuoteHTML(
 
   ${orderNotes ? `<div class="notes-box"><strong>${t.notes}:</strong> ${orderNotes}</div>` : ""}
 
-  <div class="total-box">
-    <div class="total-inner">
-      <div class="total-row"><span>${t.subtotal}:</span><span>${sym} ${total.toFixed(0)}</span></div>
-      <div class="total-row"><span>${t.vat}:</span><span>${sym} 0</span></div>
-      <div class="total-grand"><span>${t.grandTotal}:</span><span>${sym} ${total.toFixed(0)}</span></div>
-    </div>
-  </div>
-
   <div class="footer">
-    <p>${lang === "ar" ? "شكراً لتعاملكم مع الشعلة الرائدة · جميع الأسعار بالدينار الليبي ما لم يُذكر غير ذلك" : "Thank you for your business · All prices in LYD unless otherwise stated"}</p>
+    <p>${lang === "ar" ? "شكراً لتعاملكم مع الشعلة الرائدة" : "Thank you for your business"}</p>
     <p style="margin-top:4px;">www.alshowla.com · +218 94 802 0200</p>
   </div>
 </body>
@@ -348,13 +334,12 @@ export default function CartPage() {
   };
 
   const handleWhatsApp = () => {
-    const lines = items.map(i => `• ${lang === "ar" ? i.product.nameAr : i.product.nameEn} × ${i.quantity} = ${formatPrice(i.product.priceBase * i.quantity, currency)}`);
+    const lines = items.map(i => `• ${lang === "ar" ? i.product.nameAr : i.product.nameEn} — ${lang === "ar" ? "الكمية" : "Qty"}: ${i.quantity}`);
     const msg = [
-      lang === "ar" ? "🏗️ طلب جديد من الموقع الإلكتروني:" : "🏗️ New order from website:",
+      lang === "ar" ? "🏗️ طلب عرض سعر من الموقع الإلكتروني:" : "🏗️ Quotation request from website:",
       "",
       ...lines,
       "",
-      `${t.grandTotal}: ${sym} ${total.toFixed(0)}`,
       company ? `${t.companyName}: ${company}` : "",
       phone ? `${t.phone}: ${countryCode}${phone}` : "",
       orderNotes ? `${t.notes}: ${orderNotes}` : "",
@@ -468,19 +453,9 @@ export default function CartPage() {
           <div className="cart-layout" style={{ display: "flex", gap: 24, alignItems: "flex-start" }}>
             {/* ── LEFT: TABLE + NOTES ── */}
             <div style={{ flex: 1 }}>
-              {/* Currency selector */}
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-                <label style={{ fontSize: 12, fontWeight: 700, color: "var(--gray)" }}>{t.currency}:</label>
-                {(["LYD", "USD", "EUR"] as Currency[]).map(c => (
-                  <button key={c} onClick={() => setCurrency(c)}
-                    style={{
-                      padding: "6px 14px", border: `1.5px solid ${currency === c ? "var(--blue)" : "var(--gray-light)"}`,
-                      background: currency === c ? "var(--blue)" : "#fff", color: currency === c ? "#fff" : "var(--text2)",
-                      fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
-                    }}>
-                    {CURRENCY_SYMBOLS[c]} {c}
-                  </button>
-                ))}
+              {/* Quote-based catalog: prices are provided on request, not shown here */}
+              <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, background: "#eef5ff", border: "1px solid #cfe0fb", padding: "10px 14px", fontSize: 12, color: "var(--blue-dark)", fontWeight: 700 }}>
+                💬 {lang === "ar" ? "الأسعار تُقدَّم عند الطلب — أرسل قائمتك وسنوافيك بعرض السعر." : "Prices are provided on request — send your list and we'll reply with a quotation."}
               </div>
 
               {/* Table */}
@@ -490,8 +465,6 @@ export default function CartPage() {
                     <tr style={{ background: "#001f4d", color: "#fff" }}>
                       <th style={{ padding: "12px 14px", textAlign: lang === "ar" ? "right" : "left", fontWeight: 700, fontSize: 11 }}>{t.product}</th>
                       <th style={{ padding: "12px 14px", textAlign: "center", fontWeight: 700, fontSize: 11, width: 110 }}>{t.qty}</th>
-                      <th style={{ padding: "12px 14px", textAlign: "center", fontWeight: 700, fontSize: 11, width: 120 }}>{t.unitPrice}</th>
-                      <th style={{ padding: "12px 14px", textAlign: "center", fontWeight: 700, fontSize: 11, width: 120 }}>{t.total}</th>
                       <th style={{ padding: "12px 14px", width: 70 }} />
                     </tr>
                   </thead>
@@ -538,12 +511,6 @@ export default function CartPage() {
                               <button className="qty-btn" onClick={() => handleQty(item.product.id, item.quantity + 1)}>+</button>
                             </div>
                           </td>
-                          <td style={{ padding: "14px", textAlign: "center", color: "var(--text2)", fontSize: 13 }}>
-                            {formatPrice(item.product.priceBase, currency)}
-                          </td>
-                          <td style={{ padding: "14px", textAlign: "center", fontWeight: 800, fontSize: 14, color: "var(--blue)" }}>
-                            {formatPrice(item.product.priceBase * item.quantity, currency)}
-                          </td>
                           <td style={{ padding: "14px", textAlign: "center" }}>
                             <button onClick={() => handleRemove(item.product.id)}
                               style={{ background: "none", border: "1px solid #fee2e2", color: "#dc2626", cursor: "pointer", padding: "5px 9px", fontSize: 11, fontWeight: 700, fontFamily: "inherit", transition: "all .2s" }}
@@ -555,7 +522,7 @@ export default function CartPage() {
                         </tr>
                         {editNoteId === item.product.id && (
                           <tr key={`note-${item.product.id}`} style={{ background: "#f0f7ff" }}>
-                            <td colSpan={5} style={{ padding: "10px 14px" }}>
+                            <td colSpan={3} style={{ padding: "10px 14px" }}>
                               <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
                                 <input type="text" value={noteText} onChange={e => setNoteText(e.target.value)}
                                   placeholder={`${t.noteFor}: ${lang === "ar" ? item.product.nameAr : item.product.nameEn}`}
@@ -595,33 +562,22 @@ export default function CartPage() {
 
             {/* ── RIGHT: SUMMARY + FORM ── */}
             <div style={{ width: 320, flexShrink: 0 }}>
-              {/* Order Total */}
+              {/* Quote Summary (no prices) */}
               <div style={{ background: "#fff", border: "1.5px solid var(--gray-light)", padding: "22px", marginBottom: 16 }}>
                 <h3 style={{ fontSize: 14, fontWeight: 900, color: "var(--text)", margin: "0 0 16px", paddingBottom: 12, borderBottom: "2px solid var(--blue)" }}>
-                  {lang === "ar" ? "ملخص الطلب" : "Order Summary"}
+                  {lang === "ar" ? "ملخص طلب عرض السعر" : "Quotation Request Summary"}
                 </h3>
                 <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "var(--text2)", marginBottom: 8 }}>
-                  <span>{t.subtotal} ({items.length} {lang === "ar" ? "منتج" : "items"})</span>
-                  <span>{sym} {total.toFixed(0)}</span>
+                  <span>{lang === "ar" ? "عدد الأصناف" : "Line items"}</span>
+                  <span style={{ fontWeight: 800, color: "var(--text)" }}>{items.length}</span>
                 </div>
-                {discountPercent > 0 && (
-                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "#059669", marginBottom: 8 }}>
-                    <span>{lang === "ar" ? `خصم (${discountPercent}%)` : `Discount (${discountPercent}%)`}</span>
-                    <span>-{sym} {(total - discountedTotal).toFixed(0)}</span>
-                  </div>
-                )}
-                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "var(--text2)", marginBottom: 16 }}>
-                  <span>{t.vat}</span><span>{sym} 0</span>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "var(--text2)", marginBottom: 8 }}>
+                  <span>{lang === "ar" ? "إجمالي الكمية" : "Total quantity"}</span>
+                  <span style={{ fontWeight: 800, color: "var(--text)" }}>{getCartCount(items)}</span>
                 </div>
-                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 20, fontWeight: 900, color: "var(--blue)", borderTop: "2px solid var(--blue)", paddingTop: 12 }}>
-                  <span>{t.grandTotal}</span>
-                  <span>{sym} {discountedTotal.toFixed(0)}</span>
+                <div style={{ marginTop: 12, background: "#eef5ff", border: "1px solid #cfe0fb", padding: "10px 12px", fontSize: 12, color: "var(--blue-dark)", lineHeight: 1.7 }}>
+                  {lang === "ar" ? "أرسل الطلب وسيوافيك فريق المبيعات بعرض سعر رسمي خلال 24 ساعة." : "Submit your request and our sales team will send you an official quotation within 24 hours."}
                 </div>
-                <div style={{ marginTop: 14, display: "flex", gap: 6 }}>
-                  <input value={couponCode} onChange={e => setCouponCode(e.target.value)} placeholder={lang === "ar" ? "كود الخصم" : "Coupon code"} style={{ ...inpStyle, flex: 1, fontSize: 12 }} />
-                  <button type="button" onClick={handleApplyCoupon} style={{ padding: "8px 12px", background: "var(--blue)", color: "#fff", border: "none", cursor: "pointer", fontWeight: 700, fontSize: 11 }}>{lang === "ar" ? "تطبيق" : "Apply"}</button>
-                </div>
-                {couponMessage && <div style={{ fontSize: 11, color: discountPercent > 0 ? "#059669" : "#dc2626", marginTop: 6 }}>{couponMessage}</div>}
               </div>
 
               {/* BOQ Upload */}

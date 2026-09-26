@@ -954,8 +954,6 @@ export default function ProductsPage() {
     if (inStockOnly) result = result.filter((p) => (p.stockCount != null ? p.stockCount > 0 : p.inStock));
     if (searchQuery) result = searchProducts(result, searchQuery, lang);
     switch (sortBy) {
-      case "priceAsc":   return [...result].sort((a, b) => a.priceBase - b.priceBase);
-      case "priceDesc":  return [...result].sort((a, b) => b.priceBase - a.priceBase);
       case "rating":     return [...result].sort((a, b) => b.rating - a.rating);
       case "newest":     return [...result].filter(p => p.isNew).concat(result.filter(p => !p.isNew));
       default:           return result;
@@ -1018,8 +1016,6 @@ export default function ProductsPage() {
   const currencyOptions: Currency[] = ["LYD", "USD", "EUR"];
   const sortOptions = [
     { value: "default", label: t.sortDefault },
-    { value: "priceAsc", label: t.sortPriceAsc },
-    { value: "priceDesc", label: t.sortPriceDesc },
     { value: "rating", label: t.sortRating },
     { value: "newest", label: t.sortNewest },
   ];

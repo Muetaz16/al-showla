@@ -13,30 +13,10 @@ import { Product, PRODUCTS as INITIAL_PRODUCTS } from "@/lib/products";
 // ════════════════════════════════════════════════════════════════
 
 export async function getProducts(): Promise<Product[]> {
-  try {
-    const products = await prisma.product.findMany({
-      orderBy: { nameAr: 'asc' },
-      include: { certificates: true }
-    });
-    
-    if (products.length === 0) {
-      await seedProducts();
-      return INITIAL_PRODUCTS;
-    }
-    
-    return products.map((p: any) => ({
-      ...p,
-      brand: p.legacyBrand || "",
-      certificates: p.certificates.map((c: any) => ({
-        nameAr: c.scope || "",
-        nameEn: c.scope || "",
-        issuer: c.grantingAuthority,
-      })),
-    })) as unknown as Product[];
-  } catch (err) {
-    console.error("getProducts error:", err);
-    return INITIAL_PRODUCTS;
-  }
+  // Catalog is served from the static real-product list (src/lib/catalog-data.ts).
+  // These are the supplier's actual products with local images and no prices; the
+  // catalog is fixed content, so we bypass the DB to guarantee it shows everywhere.
+  return INITIAL_PRODUCTS;
 }
 
 async function seedProducts() {
@@ -45,6 +25,7 @@ async function seedProducts() {
     await prisma.product.create({
       data: {
         ...rest,
+        priceBase: rest.priceBase ?? 0,
         legacyBrand: brand,
         certificates: {
           create: certificates.map(c => ({
@@ -67,10 +48,12 @@ export async function addProduct(product: Product): Promise<boolean> {
       where: { id: product.id },
       update: {
         ...rest,
+        priceBase: rest.priceBase ?? 0,
         legacyBrand: brand,
       },
       create: {
         ...rest,
+        priceBase: rest.priceBase ?? 0,
         legacyBrand: brand,
         certificates: {
           create: certificates.map(c => ({
