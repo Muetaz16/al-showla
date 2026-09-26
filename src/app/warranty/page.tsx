@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { registerToolWarranty } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 export default function WarrantyPage() {
   const [loading, setLoading] = useState(false);
@@ -40,6 +41,7 @@ export default function WarrantyPage() {
 
   return (
     <div style={{ maxWidth: 500, margin: "40px auto", padding: 20 }}>
+      <SiteHeader />
       <h1 style={{ color: "var(--primary)" }}>تفعيل ضمان العدد الكهربائية</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         سجل أدواتك الكهربائية برقمها التسلسلي لضمان حقوقك ومتابعة الصيانة.
@@ -65,6 +67,7 @@ export default function WarrantyPage() {
           {loading ? "جاري التفعيل..." : "تفعيل الضمان"}
         </button>
       </form>
+      <SiteFooter />
     </div>
   );
 }

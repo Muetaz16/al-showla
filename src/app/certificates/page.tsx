@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { PRODUCTS, CATEGORIES, formatPrice, type Currency, type Product } from "@/lib/products";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Lang = "ar" | "en";
 
@@ -122,6 +123,7 @@ export default function CertificatesPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--off)", fontFamily: "'Cairo', sans-serif" }} dir={dir} lang={lang}>
+      <SiteHeader lang={lang} onToggleLang={() => setLang(l => l === "ar" ? "en" : "ar")} />
       <style>{`
         :root { --blue:#0051a2;--blue-dark:#003578;--blue-deeper:#001f4d;--blue-light:#e8f2fc;--accent:#f59e0b;--white:#fff;--off:#f7f9fc;--gray:#64748b;--gray-light:#e2e8f0;--text:#0f1c2e;--text2:#3d5473; }
         body { font-family: 'Cairo', sans-serif; }
@@ -258,6 +260,7 @@ export default function CertificatesPage() {
           </div>
         )}
       </div>
+      <SiteFooter lang={lang} />
     </div>
   );
 }

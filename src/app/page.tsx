@@ -15,7 +15,7 @@ const T = {
     clients: "Clients", partners: "Partners", contact: "Contact",
     orderNow: "Order Now",
     // Hero
-    heroTag: "Est. 2005 · Benghazi, Libya · International Quality",
+    heroTag: "Est. 2005 · Tobruk, Libya · International Quality",
     heroH1a: "Building Libya's Future with",
     heroH1b: "World-Class Materials",
     heroP: "Al-Showla Al-Raeda — a leading Libyan company specialized in the import and distribution of premium building materials and construction solutions since 2005, trusted by contractors, developers, and government institutions across Libya.",
@@ -45,8 +45,8 @@ const T = {
     val4t: "Sustainability", val4b: "Supporting environmentally friendly projects.",
     val5t: "Innovation", val5b: "Introducing the latest solutions to the market.",
     // CEO
-    ceoLbl: "Chairman's Message", ceoName: "Al Mahdi Al Awami",
-    ceoRole: "Chairman & Founder — Alshowla Alraeda", 
+    ceoLbl: "Chairman's Message", ceoName: "Al Mahdi Al Awamy",
+    ceoRole: "Chairman & Founder — Alshowla Alraeda",
     ceoQuote: "\"We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.\"",
     ceoBody1: "It is my pleasure to welcome you to the website of Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
     ceoBody2: "Building on this balance, we work to deliver integrated, high-quality solutions and to establish sustainable strategic partnerships that contribute to developing Libya's construction sector in line with the highest standards.",
@@ -56,7 +56,7 @@ const T = {
     servicesLbl: "What We Offer", servicesH2a: "Specialized", servicesH2b: "Services",
     svc1t: "Import & Distribution", svc1b: "Premium materials from certified global manufacturers delivered to your doorstep.",
     svc2t: "Technical Consultancy", svc2b: "Expert engineering advice for material selection and project planning.",
-    svc3t: "Exclusive Agency", svc3b: "Authorized agent for leading international brands in the Libyan market.",
+    svc3t: "High-Quality Materials", svc3b: "Genuine products with certified international specifications for durability and reliable performance.",
     svc4t: "24/7 Support", svc4b: "Round-the-clock after-sales service and technical support for all projects.",
     // Products
     productsLbl: "Our Catalog", productsH2a: "Quality", productsH2b: "Materials",
@@ -96,10 +96,10 @@ const T = {
   },
   ar: {
     home: "الرئيسية", company: "الشركة ▾", whoWeAre: "من نحن",
-    ceoMsg: "كلمة رئيس مجلس الإدارة", services: "خدماتنا", products: "منتجاتنا",
+    ceoMsg: " كلمة رئيس مجلس الإدارة  والمؤسس ", services: "خدماتنا", products: "منتجاتنا",
     clients: "عملاؤنا", partners: "شركاؤنا", contact: "اتصل بنا",
     orderNow: "اطلب الآن",
-    heroTag: "تأسست 2005 · بنغازي، ليبيا · جودة عالمية",
+    heroTag: "تأسست 2005 · طبرق، ليبيا · جودة عالمية",
     heroH1a: "نبني مستقبل ليبيا",
     heroH1b: "بمواد عالمية الجودة",
     heroP: "الشعلة الرائدة — شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005، موثوقة لدى المقاولين والمطورين والمؤسسات الحكومية في ليبيا.",
@@ -108,9 +108,9 @@ const T = {
     satisfiedClients: "عميل راضٍ", globalBrands: "علامة عالمية",
     whoWeAreLbl: "من نحن",
     aboutH2a: "حلول ذكية لـ", aboutH2b: "مشاريع أقوى",
-    aboutP1: "منذ انطلاقتها في 25 مايو 2005، أثبتت شركة الشعلة الرائدة لاستيراد مواد البناء مكانتها كإحدى أبرز الشركات الليبية المتخصصة في توفير مواد البناء والمواد الصحية عالية الجودة. وعلى مدى سنوات من العمل الجاد، نجحت الشركة في بناء سمعة قائمة على المصداقية، والتنوع، والالتزام بمعايير الجودة العالمية.",
+    aboutP1: "منذ انطلاقتها في 25 مايو 2005، أثبتت  الشعلة الرائدة لاستيراد مواد البناء مكانتها كإحدى أبرز الشركات الليبية المتخصصة في توفير مواد البناء والمواد الصحية عالية الجودة. وعلى مدى سنوات من العمل الجاد، نجحت الشركة في بناء سمعة قائمة على المصداقية، والتنوع، والالتزام بمعايير الجودة العالمية.",
     aboutP2: "وفي 22 سبتمبر 2021، دخلت الشركة مرحلة جديدة من مسيرتها عبر التحول إلى مستورد ووكيل حصري لعدد من كبرى العلامات التجارية العالمية، لتصبح حلقة وصل استراتيجية بين السوق الليبي والأسواق الدولية.",
-    aboutP3: "واليوم، تمثل الشعلة الرائدة أكثر من مجرد موزع، فهي شريك موثوق يقدم حلولاً مبتكرة ومتنوعة تدعم تطلعات المقاولين، والمطورين العقاريين، والجهات الحكومية، وتسهم في تشييد مشاريع حديثة ترتكز على الجودة والثقة والاستدامة.",
+    aboutP3: "واليوم، تمثل الشعلة الرائدة  شريك موثوق يقدم حلولاً مبتكرة ومتنوعة تدعم تطلعات المقاولين، والمطورين العقاريين، والجهات الحكومية، وتسهم في تشييد مشاريع حديثة ترتكز على الجودة والثقة والاستدامة.",
     downloadProfile: "تحميل الملف التعريفي", contactUs: "اتصل بنا",
     yearsOfTrust: "عاماً من الثقة",
     ourVision: "رؤيتنا", visionH: "رائدون محلياً،", visionHem: "متألقون إقليمياً",
@@ -125,7 +125,7 @@ const T = {
     val3t: "الجودة", val3b: "التزامنا الدائم بتقديم الأفضل دائماً.",
     val4t: "الاستدامة", val4b: "دعم المشاريع الصديقة للبيئة.",
     val5t: "الابتكار", val5b: "تقديم أحدث الحلول والمنتجات للسوق.",
-    ceoLbl: "كلمة رئيس مجلس الإدارة", ceoName: "المهدي العوامي",
+    ceoLbl: " كلمة رئيس مجلس الإدارة  والمؤسس ", ceoName: "المهدي العوامي",
     ceoRole: "رئيس مجلس الإدارة والمؤسس — الشعلة الرائدة",
     ceoQuote: "\"نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.\"",
     ceoBody1: "يسرّني أن أرحّب بكم في الموقع الإلكتروني لشركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
@@ -135,7 +135,7 @@ const T = {
     servicesLbl: "ما نقدمه", servicesH2a: "خدمات", servicesH2b: "متخصصة",
     svc1t: "استيراد وتوزيع", svc1b: "مواد متميزة من مصنّعين عالميين معتمدين تصل إلى موقعك مباشرة.",
     svc2t: "استشارات فنية", svc2b: "نصائح هندسية متخصصة لاختيار المواد وتخطيط المشاريع.",
-    svc3t: "وكالة حصرية", svc3b: "وكيل معتمد للعلامات التجارية الدولية الرائدة في السوق الليبية.",
+    svc3t: "مواد عالية الجودة", svc3b: "منتجات أصلية بمواصفات عالمية معتمدة تضمن المتانة والأداء الموثوق في كل مشروع.",
     svc4t: "دعم 24/7", svc4b: "خدمة ما بعد البيع والدعم الفني على مدار الساعة لجميع المشاريع.",
     productsLbl: "كتالوجنا", productsH2a: "مواد", productsH2b: "عالية الجودة",
     viewAll: "← عرض الكل",
@@ -254,7 +254,7 @@ export default function Home() {
   }, [lang, dir]);
 
   useEffect(() => {
-    getBanners().then((b) => { if (b[0]?.imageUrl) setHeroBanner(b[0].imageUrl); }).catch(() => {});
+    getBanners().then((b) => { if (b[0]?.imageUrl) setHeroBanner(b[0].imageUrl); }).catch(() => { });
   }, []);
 
   /* ── Form handler ── */
@@ -571,10 +571,15 @@ export default function Home() {
         <div className="nav-links">
           <a href="#home">{t.home}</a>
           <div className="nav-drop">
-            <a href="#about">{t.company}</a>
+            <a href="#about">{t.company} ▾</a>
             <div className="nav-drop-menu">
               <a href="#about">{t.whoWeAre}</a>
               <a href="#ceo">{t.ceoMsg}</a>
+              <a href="/case-studies">{lang === "ar" ? "المشاريع المنفذة" : "Projects"}</a>
+              <a href="/applicators">{lang === "ar" ? "المطبّقون المعتمدون" : "Applicators"}</a>
+              <a href="/training">{lang === "ar" ? "ورش التدريب" : "Training"}</a>
+              <a href="/blog">{lang === "ar" ? "المدونة" : "Blog"}</a>
+              <a href="/careers">{lang === "ar" ? "الوظائف" : "Careers"}</a>
             </div>
           </div>
           <a href="#services">{t.services}</a>
@@ -583,12 +588,16 @@ export default function Home() {
             <div className="nav-drop-menu">
               <a href="/products">{lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"}</a>
               <a href="/certificates">{lang === "ar" ? "شهادات الجودة" : "Quality Certificates"}</a>
+              <a href="/documents">{lang === "ar" ? "مكتبة الوثائق الفنية" : "Technical Documents"}</a>
+              <a href="/calculator">{lang === "ar" ? "حاسبة الكميات" : "Calculator"}</a>
+              <a href="/delivery">{lang === "ar" ? "مناطق التوصيل" : "Delivery Zones"}</a>
               <a href="/sample">{lang === "ar" ? "طلب عينة مجانية" : "Request Free Sample"}</a>
             </div>
           </div>
           <a href="#clients">{t.clients}</a>
           <a href="#partners">{t.partners}</a>
           <a href="#contact">{t.contact}</a>
+          <a href="/faq">{lang === "ar" ? "الأسئلة الشائعة" : "FAQ"}</a>
           <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>
             🔧 {lang === "ar" ? "المستشار الذكي" : "AI Advisor"}
           </a>
@@ -604,7 +613,7 @@ export default function Home() {
 
       {/* ── MOBILE NAV ── */}
       <div className={`mob-nav${mobOpen ? " open" : ""}`}>
-        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
+        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["/case-studies", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
           <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
         ))}
         <div className="mob-nav-divider" />
@@ -625,8 +634,8 @@ export default function Home() {
         <div className="hero-dots" />
         <div className="hero-inner">
           <div className="hero-left">
-            <div className="hero-tag ao">{t.heroTag}</div>
-            <h1 className="hh ao d1">
+            <div className="hero-tag ao" style={{ marginBottom: 14 }}>{t.heroTag}</div>
+            <h1 className="hh ao d1" style={{ marginTop: -6 }}>
               {t.heroH1a}<br />
               <em>{t.heroH1b}</em>
             </h1>
@@ -643,7 +652,7 @@ export default function Home() {
                 { t: "14", s: "", l: t.globalBrands },
               ].map((s, i) => (
                 <div className="hstat" key={i}>
-                  <div className="hstat-n" data-t={s.t} data-suffix={s.s}>{s.t + s.s}</div>
+                  <div className="hstat-n" dir="ltr" data-t={s.t} data-suffix={s.s}>{s.t + s.s}</div>
                   <div className="hstat-l">{s.l}</div>
                 </div>
               ))}
@@ -784,14 +793,13 @@ export default function Home() {
             <div className="ar">
               <div className="lbl">{t.ceoLbl}</div>
               <div className="ceo-name">{t.ceoName}</div>
-              <div className="ceo-role">{t.ceoRole}</div>
               <div className="ceo-quote">{t.ceoQuote}</div>
               <p className="ceo-body" style={{ marginBottom: 12 }}>{t.ceoBody1}</p>
               <p className="ceo-body">{t.ceoBody2}</p>
               <div className="ceo-kpis">
                 {[{ n: t.kpi1n, l: t.kpi1l }, { n: t.kpi2n, l: t.kpi2l }, { n: t.kpi3n, l: t.kpi3l }, { n: t.kpi4n, l: t.kpi4l }].map((k, i) => (
                   <div className="ceo-kpi" key={i}>
-                    <div className="ceo-kpi-n">{k.n}</div>
+                    <div className="ceo-kpi-n" dir="ltr">{k.n}</div>
                     <div className="ceo-kpi-l">{k.l}</div>
                   </div>
                 ))}
@@ -810,7 +818,7 @@ export default function Home() {
             {[
               { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800", ico: "📦", n: "01", t: t.svc1t, b: t.svc1b, descAr: "نقوم باستيراد وتوزيع أجود مواد البناء والمعدات من أفضل الشركات العالمية والمصانع المعتمدة لتصل إلى مواقع العمل في كافة أنحاء ليبيا. نضمن لك سلسلة إمداد مستقرة، أداءً عالي الجودة، وأسعاراً تنافسية تلبي احتياجات كافة المشاريع الكبرى والصغرى.", descEn: "We import and distribute the highest quality building materials and equipment from top global companies and certified factories to work sites across Libya. We guarantee a stable supply chain, high-quality performance, and competitive prices that meet the needs of all projects." },
               { bg: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800", ico: "🔧", n: "02", t: t.svc2t, b: t.svc2b, descAr: "فريقنا الهندسي المتخصص يقدم استشارات فنية متكاملة لاختيار المواد الأنسب لمشروعك، ووضع خطط التوريد الفعالة. نحن هنا لمساعدتك في تحقيق أعلى معايير الجودة وتوفير الوقت والتكاليف من خلال التخطيط السليم وتقديم الحلول الهندسية المبتكرة.", descEn: "Our specialized engineering team provides comprehensive technical consultations to select the most suitable materials for your project and develop effective supply plans. We are here to help you achieve the highest quality standards and save time and costs." },
-              { bg: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800", ico: "🌐", n: "03", t: t.svc3t, b: t.svc3b, descAr: "نفتخر بكوننا الوكيل الحصري والموزع المعتمد لعدد من كبرى العلامات التجارية العالمية في السوق الليبية. هذا يضمن لك الحصول على منتجات أصلية بضمان المصنع وتوفير الدعم الفني المباشر من الشركة الأم، مما يضمن كفاءة الأداء واستدامة المشاريع.", descEn: "We are proud to be the exclusive agent and authorized distributor for several major global brands in the Libyan market. This guarantees you original products with factory warranties and direct technical support from the parent company." },
+              { bg: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800", ico: "🌐", n: "03", t: t.svc3t, b: t.svc3b, descAr: "نوفّر مواد بناء ومستلزمات عالية الجودة مطابقة للمواصفات والمعايير العالمية، مصدرها مصانع وعلامات تجارية معتمدة. يخضع كل منتج لرقابة جودة دقيقة لضمان المتانة والأداء الموثوق وطول العمر الافتراضي، بما يلبّي متطلبات المشاريع الإنشائية الكبرى ويحقق أعلى درجات الأمان والاستدامة.", descEn: "We supply high-quality building materials and supplies that comply with international specifications and standards, sourced from certified factories and brands. Every product undergoes strict quality control to guarantee durability, reliable performance, and long service life — meeting the demands of major construction projects with the highest levels of safety and sustainability." },
               { bg: "/services/support-247.jpg", ico: "🕐", n: "04", t: t.svc4t, b: t.svc4b, descAr: "نلتزم بتقديم خدمة ما بعد البيع والدعم الفني على مدار الساعة لضمان استمرارية أعمالك دون توقف. فريق الدعم الفني وخدمة العملاء لدينا جاهز دائماً للرد على استفساراتك، وتوفير الحلول السريعة لأي تحديات قد تواجهها في الموقع.", descEn: "We are committed to providing round-the-clock after-sales service and technical support to ensure your business continuity without interruption. Our technical support and customer service team is always ready to answer your inquiries and offer quick solutions." },
             ].map((s, i) => (
               <div className="svc-card" key={i} onClick={() => setSelectedService(s)} style={{ cursor: "pointer" }}>
@@ -1178,7 +1186,7 @@ export default function Home() {
               <h2 className="c-h ao">{t.contactH} <em>{t.contactHem}</em></h2>
               <p className="c-p ao">{t.contactP}</p>
               {[
-                { ico: "📞", lbl: t.phoneLbl, val: <a href="tel:+218948020200">{t.phoneVal}</a> },
+                { ico: "📞", lbl: t.phoneLbl, val: <a href="tel:+218948020200" dir="ltr" style={{ unicodeBidi: "embed", display: "inline-block" }}>{t.phoneVal}</a> },
                 { ico: "✉️", lbl: t.emailLbl, val: <a href="mailto:info@alshowla.com">{t.emailVal}</a> },
                 { ico: "📍", lbl: t.addressLbl, val: <span>{t.addressVal}</span> },
                 { ico: "🕐", lbl: t.hoursLbl, val: <span>{t.hoursVal}</span> },
@@ -1195,7 +1203,7 @@ export default function Home() {
                 {[
                   ["WhatsApp", "https://wa.me/218948020200"],
                   ["Facebook", "https://www.facebook.com/ALSHOLA1500"],
-                  ["Instagram", "https://www.instagram.com/alshowlaalraeda"],
+                  ["Instagram", "https://www.instagram.com/alshola2024"],
                 ].map(([name, url]) => (
                   <a key={name} href={url} target="_blank" rel="noopener noreferrer" className="soc-a">{name}</a>
                 ))}
@@ -1276,7 +1284,7 @@ export default function Home() {
           <div>
             <div className="ft-col-h">{t.followUs}</div>
             <ul className="ft-links">
-              {[["WhatsApp", "https://wa.me/218948020200"], ["Facebook", "https://www.facebook.com/ALSHOLA1500"], ["Instagram", "https://www.instagram.com/alshowlaalraeda"]].map(([name, url]) => (
+              {[["WhatsApp", "https://wa.me/218948020200"], ["Facebook", "https://www.facebook.com/ALSHOLA1500"], ["Instagram", "https://www.instagram.com/alshola2024"]].map(([name, url]) => (
                 <li key={name}><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></li>
               ))}
             </ul>

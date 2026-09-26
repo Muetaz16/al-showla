@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { getDeliveryZones } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Zone = { id: string; city: string; estimatedDays: string; fees: number; conditions?: string | null };
 
@@ -21,6 +22,7 @@ export default function DeliveryZonesPage() {
 
   return (
     <div style={{ maxWidth: 800, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <SiteHeader />
       <h1 style={{ color: "var(--primary)", textAlign: "center", marginBottom: 10 }}>🚚 حاسبة مناطق التوصيل</h1>
       <p style={{ textAlign: "center", color: "var(--text-secondary)", marginBottom: 40 }}>
         اختر مدينتك لمعرفة توفر خدمة التوصيل والمدة التقريبية وأي شروط أو رسوم. تُدار بيانات المناطق من إدارة الشركة.
@@ -89,6 +91,7 @@ export default function DeliveryZonesPage() {
           </div>
         </div>
       </div>
+      <SiteFooter />
     </div>
   );
 }

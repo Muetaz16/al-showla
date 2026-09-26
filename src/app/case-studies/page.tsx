@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { getCaseStudies } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type CaseStudy = { id: string; title: string; description: string; status: string; owner: string; imageUrls: string[]; productIds: string[] };
 
@@ -16,6 +17,7 @@ export default function CaseStudiesPage() {
 
   return (
     <div style={{ maxWidth: 1100, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <SiteHeader />
       <div style={{ textAlign: "center", marginBottom: 40 }}>
         <h1 style={{ color: "var(--primary)" }}>🏗️ معرض المشاريع</h1>
         <p style={{ color: "var(--text-secondary)", fontSize: 16 }}>
@@ -80,6 +82,7 @@ export default function CaseStudiesPage() {
           </div>
         </div>
       )}
+      <SiteFooter />
     </div>
   );
 }

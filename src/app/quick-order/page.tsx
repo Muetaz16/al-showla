@@ -6,6 +6,7 @@ import * as XLSX from "xlsx";
 import { getProducts } from "@/app/actions";
 import { addToCart } from "@/lib/cart";
 import type { Product } from "@/lib/products";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Entry = { original: string; query: string; qty: number };
 type Row = { id: number; originalLine: string; extractedQty: number; extractedQuery: string; matchedProduct: Product | null };
@@ -94,6 +95,7 @@ export default function QuickOrderPage() {
 
   return (
     <div style={{ maxWidth: 900, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <SiteHeader />
       <h1 style={{ color: "var(--primary)", textAlign: "center", marginBottom: 10 }}>⚡ الطلب السريع بالأكواد</h1>
       <p style={{ textAlign: "center", color: "var(--text-secondary)", marginBottom: 30 }}>
         نظام لمسؤولي المشتريات: أدخل أكواد المنتجات والكميات مباشرة، أو ارفع ملف Excel / CSV لبناء قائمة طلب جاهزة.
@@ -167,6 +169,7 @@ export default function QuickOrderPage() {
           )}
         </div>
       </div>
+      <SiteFooter />
     </div>
   );
 }

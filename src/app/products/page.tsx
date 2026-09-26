@@ -4,10 +4,11 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import Link from "next/link";
 import {
   CATEGORIES, CURRENCY_RATES, CURRENCY_SYMBOLS,
-  formatPrice, searchProducts, filterProducts, unitLabel,
+  formatPrice, searchProducts, filterProducts, unitLabel, displayBrand,
   type Currency, type Product,
 } from "@/lib/products";
 import { getProducts, getFavorites, toggleFavorite } from "@/app/actions";
+import { NAV } from "@/components/SiteChrome";
 import { RestockAlertModal } from "@/components/RestockAlertModal";
 import { logSearch, incrementProductView } from "@/app/cms-actions";
 import { addToCart, getCartCount, getCart } from "@/lib/cart";
@@ -33,6 +34,7 @@ const T = {
     compareBtn: "قارن الآن",
     clearCompare: "إلغاء",
     compareMax: "يمكن مقارنة 3 منتجات كحد أقصى",
+    compareSameCat: "لا يمكن المقارنة إلا بين منتجات من نفس القسم",
     compareEmpty: "اختر منتجين على الأقل للمقارنة",
     currency: "العملة",
     sortBy: "ترتيب حسب",
@@ -80,6 +82,7 @@ const T = {
     compareBtn: "Compare Now",
     clearCompare: "Clear",
     compareMax: "Maximum 3 products can be compared",
+    compareSameCat: "You can only compare products from the same category",
     compareEmpty: "Select at least 2 products to compare",
     currency: "Currency",
     sortBy: "Sort by",
@@ -229,12 +232,14 @@ function ProductCard({
           }}
           onMouseEnter={(e) => { (e.target as HTMLElement).style.transform = "scale(1.06)"; }}
           onMouseLeave={(e) => { (e.target as HTMLElement).style.transform = "none"; }} />
-        {/* Brand overlay */}
-        <div style={{
-          position: "absolute", bottom: 8, insetInlineStart: 8,
-          background: "rgba(0,31,77,.85)", color: "#fff",
-          fontSize: 10, fontWeight: 800, padding: "3px 10px", letterSpacing: ".04em",
-        }}>{product.brand}</div>
+        {/* Brand overlay — hidden when the real manufacturer is unknown (no "General") */}
+        {displayBrand(product) && (
+          <div style={{
+            position: "absolute", bottom: 8, insetInlineStart: 8,
+            background: "rgba(0,31,77,.85)", color: "#fff",
+            fontSize: 10, fontWeight: 800, padding: "3px 10px", letterSpacing: ".04em",
+          }}>{displayBrand(product)}</div>
+        )}
       </div>
 
       {/* Content */}
@@ -580,7 +585,7 @@ function getDetailedSpecs(p: Product, lang: Lang): Record<string, string> {
   // ── Default fallback ──
   return {
     [isAr ? "الوحدة" : "Unit"]: unitLabel(p.unit, isAr ? "ar" : "en"),
-    [isAr ? "العلامة التجارية" : "Brand"]: p.brand,
+    [isAr ? "العلامة التجارية" : "Brand"]: displayBrand(p) || (isAr ? "—" : "—"),
     [isAr ? "معيار الجودة" : "Quality Standard"]: isAr ? "CE / ISO 9001" : "CE / ISO 9001",
     [isAr ? "الاستخدام" : "Usage"]: isAr ? "بناء وتشييد احترافي" : "Professional construction",
     [isAr ? "الضمان" : "Warranty"]: isAr ? "ضمان المصنع" : "Manufacturer warranty",
@@ -688,7 +693,7 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
                       {isAr ? p.nameAr : p.nameEn}
                     </div>
                     <div style={{ fontSize: 11, color: "#3b82f6", fontWeight: 700, marginBottom: 8 }}>
-                      {p.brand}
+                      {displayBrand(p)}
                     </div>
                     <button onClick={() => onRemove(p.id)} style={{
                       position: "absolute", top: 8, insetInlineEnd: 8,
@@ -884,6 +889,7 @@ export default function ProductsPage() {
   const [activeBrand, setActiveBrand] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("default");
+  const [inStockOnly, setInStockOnly] = useState(false);
   const [compareList, setCompareList] = useState<Product[]>([]);
   const [showCompare, setShowCompare] = useState(false);
   const [compareAlert, setCompareAlert] = useState("");
@@ -944,20 +950,24 @@ export default function ProductsPage() {
   // Filter + Search + Sort
   const displayedProducts = useMemo(() => {
     let result = filterProducts(allProducts, activeCategory);
-    if (activeBrand !== "all") result = result.filter((p) => p.brand === activeBrand);
+    if (activeBrand !== "all") result = result.filter((p) => displayBrand(p) === activeBrand);
+    if (inStockOnly) result = result.filter((p) => (p.stockCount != null ? p.stockCount > 0 : p.inStock));
     if (searchQuery) result = searchProducts(result, searchQuery, lang);
     switch (sortBy) {
+      case "priceAsc":   return [...result].sort((a, b) => a.priceBase - b.priceBase);
+      case "priceDesc":  return [...result].sort((a, b) => b.priceBase - a.priceBase);
       case "rating":     return [...result].sort((a, b) => b.rating - a.rating);
       case "newest":     return [...result].filter(p => p.isNew).concat(result.filter(p => !p.isNew));
       default:           return result;
     }
-  }, [allProducts, searchQuery, activeCategory, activeBrand, sortBy, lang]);
+  }, [allProducts, searchQuery, activeCategory, activeBrand, inStockOnly, sortBy, lang]);
 
   // Manufacturers (brands) available within the current category — powers the
-  // Section → Manufacturer → Products navigation.
+  // Section → Manufacturer → Products navigation. Uses the resolved brand so the
+  // "General" placeholder never appears as a selectable manufacturer.
   const brandsInCategory = useMemo(() => {
     const scoped = filterProducts(allProducts, activeCategory);
-    return Array.from(new Set(scoped.map((p) => p.brand).filter(Boolean))).sort();
+    return Array.from(new Set(scoped.map((p) => displayBrand(p)).filter(Boolean))).sort();
   }, [allProducts, activeCategory]);
 
   // Log searches (debounced) for the weekly report — flags no-result queries (item 20)
@@ -980,6 +990,10 @@ export default function ProductsPage() {
       setCompareList(compareList.filter(p => p.id !== product.id));
     } else if (compareList.length >= 3) {
       setCompareAlert(t.compareMax);
+      setTimeout(() => setCompareAlert(""), 3000);
+    } else if (compareList.length > 0 && compareList[0].categoryId !== product.categoryId) {
+      // Only products from the same category can be compared meaningfully.
+      setCompareAlert(t.compareSameCat);
       setTimeout(() => setCompareAlert(""), 3000);
     } else {
       setCompareList([...compareList, product]);
@@ -1004,6 +1018,8 @@ export default function ProductsPage() {
   const currencyOptions: Currency[] = ["LYD", "USD", "EUR"];
   const sortOptions = [
     { value: "default", label: t.sortDefault },
+    { value: "priceAsc", label: t.sortPriceAsc },
+    { value: "priceDesc", label: t.sortPriceDesc },
     { value: "rating", label: t.sortRating },
     { value: "newest", label: t.sortNewest },
   ];
@@ -1015,6 +1031,9 @@ export default function ProductsPage() {
         .cat-btn { background: var(--white); border: 1.5px solid var(--gray-light); padding: 9px 18px; font-family: 'Cairo', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; transition: all .25s; color: var(--text2); display: flex; align-items: center; gap: 6px; white-space: nowrap; }
         .cat-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
         .cat-btn:hover:not(.active) { background: var(--blue-light); color: var(--blue); border-color: var(--blue); }
+        .brand-btn { background: var(--white); border: 1.5px solid var(--gray-light); padding: 7px 14px; border-radius: 999px; font-family: 'Cairo', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; transition: all .25s; color: var(--text2); white-space: nowrap; }
+        .brand-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        .brand-btn:hover:not(.active) { background: #fff7ea; color: #b45309; border-color: var(--accent); }
         .pcard-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; background: var(--gray-light); }
         @media(max-width:1200px) { .pcard-grid { grid-template-columns: repeat(3, 1fr); } }
         @media(max-width:860px)  { .pcard-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -1037,13 +1056,18 @@ export default function ProductsPage() {
         padding: "0 5%", display: "flex", alignItems: "center", justifyContent: "space-between",
         height: 60, boxShadow: "0 2px 16px rgba(0,0,0,.25)",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <Link href="/" style={{ color: "#fff", textDecoration: "none", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>
-            {t.backToHome}
-          </Link>
-          <Link href="/advisor" style={{ color: "#f59e0b", textDecoration: "none", fontSize: 13, fontWeight: 800, display: "flex", alignItems: "center", gap: 4 }}>
-            🔧 {lang === "ar" ? "المستشار الذكي" : "AI Advisor"}
-          </Link>
+        <div style={{ display: "flex", alignItems: "center", gap: 2, overflowX: "auto", flex: 1, minWidth: 0 }}>
+          {NAV.map((n) => {
+            const gold = n.href === "/advisor";
+            return (
+              <Link key={n.href} href={n.href} style={{
+                color: gold ? "#f59e0b" : "rgba(255,255,255,.9)", textDecoration: "none",
+                fontSize: 13, fontWeight: gold ? 800 : 700, padding: "6px 8px", whiteSpace: "nowrap",
+              }}>
+                {gold ? "🔧 " : ""}{lang === "ar" ? n.ar : n.en}
+              </Link>
+            );
+          })}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           {/* Lang */}
@@ -1090,15 +1114,6 @@ export default function ProductsPage() {
               <span className="search-icon">🔍</span>
             </div>
 
-            {/* Manufacturer (brand) filter */}
-            <div className="top-ctrl">
-              <label>{lang === "ar" ? "الشركة المصنعة" : "Manufacturer"}:</label>
-              <select className="ctrl-select" value={activeBrand} onChange={(e) => setActiveBrand(e.target.value)}>
-                <option value="all">{lang === "ar" ? "كل الشركات" : "All"}</option>
-                {brandsInCategory.map((b) => <option key={b} value={b}>{b}</option>)}
-              </select>
-            </div>
-
             {/* Sort */}
             <div className="top-ctrl">
               <label>{t.sortBy}:</label>
@@ -1107,6 +1122,13 @@ export default function ProductsPage() {
               </select>
             </div>
 
+            {/* In-stock only filter */}
+            <label className="top-ctrl" style={{ display: "flex", alignItems: "center", gap: 6, cursor: "pointer", userSelect: "none" }}>
+              <input type="checkbox" checked={inStockOnly} onChange={(e) => setInStockOnly(e.target.checked)}
+                style={{ width: 16, height: 16, cursor: "pointer", accentColor: "var(--blue)" }} />
+              <span>{lang === "ar" ? "المتوفر فقط" : "In stock only"}</span>
+            </label>
+
             {/* Results count */}
             <div style={{ marginInlineStart: "auto", fontSize: 13, fontWeight: 700, color: "var(--gray)", whiteSpace: "nowrap" }}>
               {displayedProducts.length} {t.results}
@@ -1114,7 +1136,7 @@ export default function ProductsPage() {
           </div>
 
           {/* ── CATEGORIES ── */}
-          <div style={{ display: "flex", gap: 3, marginBottom: 28, overflowX: "auto", paddingBottom: 4 }}>
+          <div style={{ display: "flex", gap: 3, marginBottom: 12, overflowX: "auto", paddingBottom: 4 }}>
             {CATEGORIES.map(cat => (
               <button key={cat.id} className={`cat-btn${activeCategory === cat.id ? " active" : ""}`}
                 onClick={() => { setActiveCategory(cat.id); setActiveBrand("all"); }}>
@@ -1123,6 +1145,23 @@ export default function ProductsPage() {
               </button>
             ))}
           </div>
+
+          {/* ── MANUFACTURERS (each company as its own button, not a dropdown) ── */}
+          {brandsInCategory.length > 0 && (
+            <div style={{ display: "flex", gap: 8, marginBottom: 28, flexWrap: "wrap", alignItems: "center" }}>
+              <span style={{ fontSize: 12, fontWeight: 800, color: "var(--gray)", marginInlineEnd: 4 }}>
+                {lang === "ar" ? "الشركة المصنعة:" : "Manufacturer:"}
+              </span>
+              <button className={`brand-btn${activeBrand === "all" ? " active" : ""}`} onClick={() => setActiveBrand("all")}>
+                {lang === "ar" ? "كل الشركات" : "All Companies"}
+              </button>
+              {brandsInCategory.map((b) => (
+                <button key={b} className={`brand-btn${activeBrand === b ? " active" : ""}`} onClick={() => setActiveBrand(b)}>
+                  {b}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* ── COMPARE ALERT ── */}
           {compareAlert && (
@@ -1308,10 +1347,10 @@ function ProductModal({
 
             {/* Item 5: official product fields — only rendered when data exists */}
             <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 20 }}>
-              {product.brand && product.brand !== "General" && (
+              {displayBrand(product) && (
                 <div style={{ display: "flex", gap: 8, fontSize: 14 }}>
                   <span style={{ fontWeight: 700, color: "var(--primary)", minWidth: 120 }}>{t.brand}:</span>
-                  <span style={{ color: "var(--text-secondary)" }}>{product.brand}</span>
+                  <span style={{ color: "var(--text-secondary)" }}>{displayBrand(product)}</span>
                 </div>
               )}
               <div style={{ display: "flex", gap: 8, fontSize: 14 }}>

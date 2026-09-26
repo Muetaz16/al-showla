@@ -77,7 +77,7 @@ const ORG_JSONLD = {
   },
   sameAs: [
     "https://www.facebook.com/ALSHOLA1500",
-    "https://www.instagram.com/alshowlaalraeda",
+    "https://www.instagram.com/alshola2024",
   ],
 };
 

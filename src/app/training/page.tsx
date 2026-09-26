@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { registerWorkshop, getWorkshops } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Workshop = { id: string; title: string; instructor: string; date: string; location: string; availableSeats: number };
 
@@ -47,6 +48,7 @@ export default function TrainingPage() {
 
   return (
     <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }} dir="rtl">
+      <SiteHeader />
       <h1 style={{ color: "var(--primary)" }}>الورش التدريبية</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         سجل الآن في الورش التدريبية الاحترافية للتعرف على أحدث أنظمة البناء وتقنيات التنفيذ.
@@ -101,6 +103,7 @@ export default function TrainingPage() {
           </form>
         </>
       )}
+      <SiteFooter />
     </div>
   );
 }

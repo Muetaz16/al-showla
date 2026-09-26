@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitTenderSupply, saveBoqFile } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 const readFileAsBase64 = (file: File) =>
   new Promise<string>((resolve, reject) => {
@@ -67,6 +68,7 @@ export default function TendersPage() {
 
   return (
     <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }}>
+      <SiteHeader />
       <h1 style={{ color: "var(--primary)" }}>تسجيل التوريد للمشاريع والمناقصات</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         يرجى تعبئة بيانات المشروع ليتمكن فريقنا من تجهيز عرض السعر وجدول الكميات المناسب.
@@ -102,6 +104,7 @@ export default function TendersPage() {
           {loading ? "جاري الإرسال..." : "إرسال الطلب"}
         </button>
       </form>
+      <SiteFooter />
     </div>
   );
 }

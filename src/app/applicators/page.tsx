@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { getApplicators } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Applicator = { id: string; name: string; systemSpecialty: string; contactInfo: any; certifications: string[] };
 
@@ -20,6 +21,7 @@ export default function ApplicatorsPage() {
 
   return (
     <div style={{ maxWidth: 1000, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <SiteHeader />
       <div style={{ textAlign: "center", marginBottom: 30 }}>
         <h1 style={{ color: "var(--primary)" }}>👷 دليل المطبّقين المعتمدين</h1>
         <p style={{ color: "var(--text-secondary)", fontSize: 16 }}>
@@ -58,6 +60,7 @@ export default function ApplicatorsPage() {
           ))}
         </div>
       )}
+      <SiteFooter />
     </div>
   );
 }

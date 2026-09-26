@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { getTechnicalDocuments } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Doc = { id: string; title: string; docType: string; fileUrl: string; brandId?: string | null; productId?: string | null };
 
@@ -51,6 +52,7 @@ export default function TechnicalDocumentsPage() {
 
   return (
     <div style={{ maxWidth: 1000, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <SiteHeader />
       <div style={{ textAlign: "center", marginBottom: 40 }}>
         <h1 style={{ color: "var(--primary)" }}>📚 المكتبة الفنية</h1>
         <p style={{ color: "var(--text-secondary)", fontSize: 16 }}>
@@ -114,6 +116,7 @@ export default function TechnicalDocumentsPage() {
           )}
         </>
       )}
+      <SiteFooter />
     </div>
   );
 }

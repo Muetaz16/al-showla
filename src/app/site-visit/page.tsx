@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitSiteVisit } from "@/app/cms-actions";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 // Photos are read to compressed data URLs (max 4, ~250KB each) so they can be stored
 // without an external file service.
@@ -64,6 +65,7 @@ export default function SiteVisitPage() {
 
   return (
     <div style={{ maxWidth: 500, margin: "40px auto", padding: 20 }}>
+      <SiteHeader />
       <h1 style={{ color: "var(--primary)" }}>طلب زيارة موقع ميدانية</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         هل تواجه مشكلة فنية في موقعك؟ مهندسو الشعلة الرائدة مستعدون لتقديم الدعم الفني في الموقع.
@@ -108,6 +110,7 @@ export default function SiteVisitPage() {
           {loading ? "جاري الإرسال..." : "إرسال الطلب"}
         </button>
       </form>
+      <SiteFooter />
     </div>
   );
 }

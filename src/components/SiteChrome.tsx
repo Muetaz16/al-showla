@@ -5,14 +5,21 @@
 
 type Lang = "ar" | "en";
 
-const NAV: { href: string; ar: string; en: string }[] = [
+// Single source of truth for the full site menu — shown identically on every page.
+export const NAV: { href: string; ar: string; en: string }[] = [
   { href: "/", ar: "الرئيسية", en: "Home" },
   { href: "/products", ar: "المنتجات", en: "Products" },
   { href: "/advisor", ar: "المستشار الذكي", en: "AI Advisor" },
   { href: "/certificates", ar: "شهادات الجودة", en: "Certificates" },
+  { href: "/documents", ar: "مكتبة الوثائق", en: "Documents" },
+  { href: "/calculator", ar: "الحاسبة", en: "Calculator" },
+  { href: "/case-studies", ar: "المشاريع", en: "Projects" },
+  { href: "/applicators", ar: "المطبّقون", en: "Applicators" },
   { href: "/delivery", ar: "التوصيل", en: "Delivery" },
-  { href: "/faq", ar: "الأسئلة الشائعة", en: "FAQ" },
+  { href: "/training", ar: "التدريب", en: "Training" },
+  { href: "/blog", ar: "المدونة", en: "Blog" },
   { href: "/careers", ar: "الوظائف", en: "Careers" },
+  { href: "/faq", ar: "الأسئلة الشائعة", en: "FAQ" },
   { href: "/#contact", ar: "تواصل معنا", en: "Contact" },
 ];
 
@@ -28,10 +35,10 @@ export function SiteHeader({ lang = "ar", onToggleLang }: { lang?: Lang; onToggl
           <span style={{ color: GOLD }}>◆</span>
           {isAr ? "الشعلة الرائدة" : "Al-Showla Al-Raeda"}
         </a>
-        <nav style={{ display: "flex", gap: 4, alignItems: "center", flexWrap: "wrap", justifyContent: "flex-end" }}>
+        <nav style={{ display: "flex", gap: 2, alignItems: "center", flexWrap: "nowrap", justifyContent: "flex-end", overflowX: "auto", minWidth: 0 }}>
           {NAV.map((n) => (
             <a key={n.href} href={n.href}
-              style={{ color: "rgba(255,255,255,.85)", textDecoration: "none", fontSize: 13, fontWeight: 700, padding: "6px 10px", borderRadius: 8 }}>
+              style={{ color: "rgba(255,255,255,.85)", textDecoration: "none", fontSize: 13, fontWeight: 700, padding: "6px 8px", borderRadius: 8, whiteSpace: "nowrap" }}>
               {isAr ? n.ar : n.en}
             </a>
           ))}
@@ -83,7 +90,7 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
           <div style={colH}>{isAr ? "تابعنا" : "Follow Us"}</div>
           <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer" style={link}>WhatsApp</a>
           <a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer" style={link}>Facebook</a>
-          <a href="https://www.instagram.com/alshowlaalraeda" target="_blank" rel="noopener noreferrer" style={link}>Instagram</a>
+          <a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer" style={link}>Instagram</a>
         </div>
       </div>
       <div style={{ borderTop: "1px solid rgba(255,255,255,.1)", padding: "16px 5%", textAlign: "center", fontSize: 12, color: "rgba(255,255,255,.5)" }}>

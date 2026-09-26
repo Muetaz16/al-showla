@@ -65,6 +65,49 @@ export function unitLabel(unit: string | undefined, lang: "ar" | "en"): string {
   return latin || UNIT_EN_FALLBACK[arabic || ""] || arabic || unit;
 }
 
+// ── Central brand resolution (review §7: stop showing real products under
+//    the placeholder "General"). Many bulk-imported records were seeded with
+//    brand="General"; here we recover the real manufacturer from the product's
+//    name / code / spec text using an official-brand keyword map. When nothing
+//    matches we return "" so the UI simply hides the brand chip instead of
+//    printing "General" as if it were a real brand. Real brands pass through
+//    untouched. This is the single source of truth used by the catalog card,
+//    the detail modal, the compare table, and the manufacturer filter. ──
+const BRAND_PATTERNS: [string, RegExp][] = [
+  ["Sika", /sika|سيكا/i],
+  ["Mapei", /mapei|ماباي|مابي/i],
+  ["Knauf", /knauf|كناوف/i],
+  ["Saint-Gobain", /saint.?gobain|gyproc|جيبروك/i],
+  ["Grohe", /grohe|جروهي/i],
+  ["Roca", /roca|روكا/i],
+  ["Geberit", /geberit|جيبريت/i],
+  ["DeWalt", /dewalt|ديوالت|\bdw[- ]?\d/i],
+  ["Black+Decker", /black.?\+?.?decker|بلاك.?(اند|&).?ديكر/i],
+  ["Stanley", /stanley|ستانلي/i],
+  ["Deli", /\bdeli\b|ديلي|فيديا|\bdh-|\bdl\d/i],
+  ["Total", /\btotal\b|توتال/i],
+  ["Ingco", /ingco|إنجكو|انجكو/i],
+  ["Bosch", /bosch|بوش/i],
+  ["Makita", /makita|ماكيتا/i],
+  ["Hilti", /hilti|هيلتي/i],
+  ["Fischer", /fischer|فيشر/i],
+  ["Fosroc", /fosroc|فوسروك/i],
+  ["Weber", /weber|ويبر/i],
+];
+
+export function detectBrand(p: Pick<Product, "id" | "nameAr" | "nameEn" | "specAr" | "specEn">): string {
+  const hay = [p.id, p.nameAr, p.nameEn, ...(p.specAr || []), ...(p.specEn || [])].join(" ");
+  for (const [brand, re] of BRAND_PATTERNS) if (re.test(hay)) return brand;
+  return "";
+}
+
+// Brand to actually display: keep a genuine brand, otherwise try to recover one,
+// otherwise empty (so the UI shows nothing rather than the "General" placeholder).
+export function displayBrand(p: Product): string {
+  const real = p.brand && p.brand.trim() && p.brand.trim().toLowerCase() !== "general" ? p.brand.trim() : "";
+  return real || detectBrand(p);
+}
+
 export interface Category {
   id: string;
   icon: string;

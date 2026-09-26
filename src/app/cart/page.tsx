@@ -9,6 +9,7 @@ import { CURRENCY_SYMBOLS, formatPrice, unitLabel, type Currency } from "@/lib/p
 import { placeOrder } from "@/app/actions";
 import { validateCoupon, applyCouponUse, saveBoqFile, notifyQuoteGenerated } from "@/app/cms-actions";
 import { getContractorSession, type ContractorUser } from "@/lib/contractor-auth";
+import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Lang = "ar" | "en";
 
@@ -431,6 +432,7 @@ export default function CartPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--off)", fontFamily: "'Cairo', sans-serif" }} dir={dir} lang={lang}>
+      <SiteHeader lang={lang} onToggleLang={() => setLang(l => l === "ar" ? "en" : "ar")} />
       <style>{`
         :root{--blue:#0051a2;--blue-dark:#003578;--blue-deeper:#001f4d;--blue-light:#e8f2fc;--blue-soft:#d0e6f8;--accent:#f59e0b;--white:#fff;--off:#f7f9fc;--gray:#64748b;--gray-light:#e2e8f0;--text:#0f1c2e;--text2:#3d5473;}
         body{font-family:'Cairo',sans-serif;}
@@ -732,6 +734,7 @@ export default function CartPage() {
           </div>
         )}
       </div>
+      <SiteFooter lang={lang} />
     </div>
   );
 }
