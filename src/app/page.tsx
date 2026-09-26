@@ -635,9 +635,9 @@ export default function Home() {
         <div className="hero-inner">
           <div className="hero-left">
             <div className="hero-tag ao" style={{ marginBottom: 14 }}>{t.heroTag}</div>
-            <h1 className="hh ao d1" style={{ marginTop: -6 }}>
+            <h1 className="hh ao d1" style={{ marginTop: 6 }}>
               {t.heroH1a}<br />
-              <em>{t.heroH1b}</em>
+              <em style={{ display: "inline-block", marginTop: 10 }}>{t.heroH1b}</em>
             </h1>
             <p className="hero-p ao d2">{t.heroP}</p>
             <div className="hero-btns ao d3">
