@@ -6,7 +6,7 @@ import { PRODUCTS, CATEGORIES, searchProducts } from "@/lib/products";
 // GEMINI_API_KEY is set; otherwise falls back to a rule-based catalog
 // assistant so the page still works with no key / offline.
 
-const MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+const MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 
 type ChatMsg = { role: "user" | "assistant"; content: string };
 
