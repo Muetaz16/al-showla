@@ -51,8 +51,9 @@ export default function TechnicalDocumentsPage() {
   };
 
   return (
-    <div style={{ maxWidth: 1000, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <>
       <SiteHeader />
+    <div style={{ maxWidth: 1000, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
       <div style={{ textAlign: "center", marginBottom: 40 }}>
         <h1 style={{ color: "var(--primary)" }}>📚 المكتبة الفنية</h1>
         <p style={{ color: "var(--text-secondary)", fontSize: 16 }}>
@@ -116,7 +117,8 @@ export default function TechnicalDocumentsPage() {
           )}
         </>
       )}
-      <SiteFooter />
     </div>
+      <SiteFooter />
+      </>
   );
 }

@@ -67,8 +67,9 @@ export default function TendersPage() {
   }
 
   return (
-    <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }}>
+      <>
       <SiteHeader />
+    <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }}>
       <h1 style={{ color: "var(--primary)" }}>تسجيل التوريد للمشاريع والمناقصات</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         يرجى تعبئة بيانات المشروع ليتمكن فريقنا من تجهيز عرض السعر وجدول الكميات المناسب.
@@ -104,8 +105,9 @@ export default function TendersPage() {
           {loading ? "جاري الإرسال..." : "إرسال الطلب"}
         </button>
       </form>
-      <SiteFooter />
     </div>
+      <SiteFooter />
+      </>
   );
 }
 

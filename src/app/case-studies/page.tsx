@@ -16,8 +16,9 @@ export default function CaseStudiesPage() {
   }, []);
 
   return (
-    <div style={{ maxWidth: 1100, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <>
       <SiteHeader />
+    <div style={{ maxWidth: 1100, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
       <div style={{ textAlign: "center", marginBottom: 40 }}>
         <h1 style={{ color: "var(--primary)" }}>🏗️ معرض المشاريع</h1>
         <p style={{ color: "var(--text-secondary)", fontSize: 16 }}>
@@ -82,7 +83,8 @@ export default function CaseStudiesPage() {
           </div>
         </div>
       )}
-      <SiteFooter />
     </div>
+      <SiteFooter />
+      </>
   );
 }

@@ -64,8 +64,9 @@ export default function SiteVisitPage() {
   }
 
   return (
-    <div style={{ maxWidth: 500, margin: "40px auto", padding: 20 }}>
+      <>
       <SiteHeader />
+    <div style={{ maxWidth: 500, margin: "40px auto", padding: 20 }}>
       <h1 style={{ color: "var(--primary)" }}>طلب زيارة موقع ميدانية</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         هل تواجه مشكلة فنية في موقعك؟ مهندسو الشعلة الرائدة مستعدون لتقديم الدعم الفني في الموقع.
@@ -110,8 +111,9 @@ export default function SiteVisitPage() {
           {loading ? "جاري الإرسال..." : "إرسال الطلب"}
         </button>
       </form>
-      <SiteFooter />
     </div>
+      <SiteFooter />
+      </>
   );
 }
 

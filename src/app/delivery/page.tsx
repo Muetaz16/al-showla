@@ -21,8 +21,9 @@ export default function DeliveryZonesPage() {
   const selectedZone = zones.find((z) => z.city === selectedCity);
 
   return (
-    <div style={{ maxWidth: 800, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
+      <>
       <SiteHeader />
+    <div style={{ maxWidth: 800, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
       <h1 style={{ color: "var(--primary)", textAlign: "center", marginBottom: 10 }}>🚚 حاسبة مناطق التوصيل</h1>
       <p style={{ textAlign: "center", color: "var(--text-secondary)", marginBottom: 40 }}>
         اختر مدينتك لمعرفة توفر خدمة التوصيل والمدة التقريبية وأي شروط أو رسوم. تُدار بيانات المناطق من إدارة الشركة.
@@ -91,7 +92,8 @@ export default function DeliveryZonesPage() {
           </div>
         </div>
       </div>
-      <SiteFooter />
     </div>
+      <SiteFooter />
+      </>
   );
 }

@@ -47,8 +47,9 @@ export default function TrainingPage() {
   }
 
   return (
-    <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }} dir="rtl">
+    <>
       <SiteHeader />
+      <div style={{ maxWidth: 600, margin: "40px auto", padding: 20 }} dir="rtl">
       <h1 style={{ color: "var(--primary)" }}>الورش التدريبية</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
         سجل الآن في الورش التدريبية الاحترافية للتعرف على أحدث أنظمة البناء وتقنيات التنفيذ.
@@ -103,8 +104,9 @@ export default function TrainingPage() {
           </form>
         </>
       )}
+      </div>
       <SiteFooter />
-    </div>
+    </>
   );
 }
 
