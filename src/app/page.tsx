@@ -11,7 +11,7 @@ const T = {
   en: {
     // Nav
     home: "Home", company: "Company ▾", whoWeAre: "Who We Are",
-    ceoMsg: "CEO's Message", services: "Services", products: "Products",
+    ceoMsg: "Founder & Chairman's Message", services: "Services", products: "Products",
     clients: "Clients", partners: "Partners", contact: "Contact",
     orderNow: "Order Now",
     // Hero
@@ -45,7 +45,7 @@ const T = {
     val4t: "Sustainability", val4b: "Supporting environmentally friendly projects.",
     val5t: "Innovation", val5b: "Introducing the latest solutions to the market.",
     // CEO
-    ceoLbl: "Chairman's Message", ceoName: "Al Mahdi Al Awamy",
+    ceoLbl: "Founder & Chairman's Message", ceoName: "Al Mahdi Al Awamy",
     ceoRole: "Chairman & Founder — Alshowla Alraeda",
     ceoQuote: "\"We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.\"",
     ceoBody1: "It is my pleasure to welcome you to the website of Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
@@ -54,10 +54,10 @@ const T = {
     kpi3n: "14", kpi3l: "Global Brands", kpi4n: "20+", kpi4l: "Years Leading",
     // Services
     servicesLbl: "What We Offer", servicesH2a: "Specialized", servicesH2b: "Services",
-    svc1t: "Import & Distribution", svc1b: "Premium materials from certified global manufacturers delivered to your doorstep.",
-    svc2t: "Technical Consultancy", svc2b: "Expert engineering advice for material selection and project planning.",
-    svc3t: "High-Quality Materials", svc3b: "Genuine products with certified international specifications for durability and reliable performance.",
-    svc4t: "24/7 Support", svc4b: "Round-the-clock after-sales service and technical support for all projects.",
+    svc1t: "Technical Consultancy & Specialized Solutions", svc1b: "Understanding client needs, providing technical advice, and selecting and specifying the right materials, systems, and solutions for the various applications and requirements of the construction sector.",
+    svc2t: "Integrated Supply & Distribution", svc2b: "An integrated range of building materials and systems, construction chemicals, gypsum systems, and industrial tools and equipment — serving projects, contractors, companies, traders, and clients.",
+    svc3t: "Technical & Application Support", svc3b: "Technical support, training, samples, and trials — assisting clients and execution teams in the correct use and application of products and systems in cooperation with manufacturers.",
+    svc4t: "After-Sales & Continuous Support", svc4b: "Following up with clients after supply and sale, providing technical support, addressing feedback, and meeting later needs to ensure an integrated experience and a sustainable client relationship.",
     // Products
     productsLbl: "Our Catalog", productsH2a: "Quality", productsH2b: "Materials",
     viewAll: "View All →",
@@ -65,7 +65,7 @@ const T = {
     prod3: "Gypsum Board Systems", prod4: "Ceramic Tiles",
     prod5: "Interior & Exterior Decor", prod6: "Roofing Systems",
     prod7: "Cement & Steel", prod8: "Thermal Insulation", prodAll: "All Products",
-    brandsLbl: "Our Brands",
+    brandsLbl: "Global Partnerships",
     // Clients
     clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
     cl1: "Real Estate Developers", cl1s: "Premium materials for landmark projects",
@@ -74,7 +74,7 @@ const T = {
     cl4: "Major Contracting Companies", cl4s: "End-to-end material solutions",
     cl5: "Individuals & Private Projects", cl5s: "Quality materials for every home",
     // Partners
-    partnersLbl: "Our Partners", partnersH2a: "Global", partnersH2b: "Partnerships",
+    partnersLbl: "Our Brands", partnersH2a: "Our", partnersH2b: "Brands",
     // Contact
     contactLbl: "Get In Touch", contactH: "Let's Build", contactHem: "Together",
     contactP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
@@ -96,7 +96,7 @@ const T = {
   },
   ar: {
     home: "الرئيسية", company: "الشركة ▾", whoWeAre: "من نحن",
-    ceoMsg: " كلمة رئيس مجلس الإدارة  والمؤسس ", services: "خدماتنا", products: "منتجاتنا",
+    ceoMsg: " كلمة المؤسس ورئيس مجلس الإدارة ", services: "خدماتنا", products: "منتجاتنا",
     clients: "عملاؤنا", partners: "شركاؤنا", contact: "اتصل بنا",
     orderNow: "اطلب الآن",
     heroTag: "تأسست 2005 · طبرق، ليبيا · جودة عالمية",
@@ -125,7 +125,7 @@ const T = {
     val3t: "الجودة", val3b: "التزامنا الدائم بتقديم الأفضل دائماً.",
     val4t: "الاستدامة", val4b: "دعم المشاريع الصديقة للبيئة.",
     val5t: "الابتكار", val5b: "تقديم أحدث الحلول والمنتجات للسوق.",
-    ceoLbl: " كلمة رئيس مجلس الإدارة  والمؤسس ", ceoName: "المهدي العوامي",
+    ceoLbl: " كلمة المؤسس ورئيس مجلس الإدارة ", ceoName: "المهدي العوامي",
     ceoRole: "رئيس مجلس الإدارة والمؤسس — الشعلة الرائدة",
     ceoQuote: "\"نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.\"",
     ceoBody1: "يسرّني أن أرحّب بكم في الموقع الإلكتروني لشركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
@@ -133,24 +133,24 @@ const T = {
     kpi1n: "2005", kpi1l: "سنة التأسيس", kpi2n: "2021", kpi2l: "التوسع العالمي",
     kpi3n: "14", kpi3l: "علامة عالمية", kpi4n: "20+", kpi4l: "سنة ريادة",
     servicesLbl: "ما نقدمه", servicesH2a: "خدمات", servicesH2b: "متخصصة",
-    svc1t: "استيراد وتوزيع", svc1b: "مواد متميزة من مصنّعين عالميين معتمدين تصل إلى موقعك مباشرة.",
-    svc2t: "استشارات فنية", svc2b: "نصائح هندسية متخصصة لاختيار المواد وتخطيط المشاريع.",
-    svc3t: "مواد عالية الجودة", svc3b: "منتجات أصلية بمواصفات عالمية معتمدة تضمن المتانة والأداء الموثوق في كل مشروع.",
-    svc4t: "دعم 24/7", svc4b: "خدمة ما بعد البيع والدعم الفني على مدار الساعة لجميع المشاريع.",
+    svc1t: "الاستشارات الفنية والحلول المتخصصة", svc1b: "فهم احتياجات العملاء وتقديم المشورة الفنية واختيار وتوصيف المواد والأنظمة والحلول المناسبة لمختلف التطبيقات ومتطلبات قطاع البناء.",
+    svc2t: "التوريد والتوزيع المتكامل", svc2b: "توفير مجموعة متكاملة من مواد وأنظمة البناء والكيماويات الإنشائية وأنظمة الجبس والعدد والأدوات الصناعية، لخدمة المشاريع والمقاولين والشركات والتجار والعملاء.",
+    svc3t: "الدعم الفني والتطبيقي", svc3b: "تقديم الدعم الفني والتدريب والعينات والتجارب، ومساندة العملاء وفرق التنفيذ في الاستخدام والتطبيق الصحيح للمنتجات والأنظمة بالتعاون مع المصنّعين.",
+    svc4t: "خدمات ما بعد البيع والدعم المستمر", svc4b: "متابعة العملاء بعد التوريد والبيع، وتقديم الدعم الفني ومعالجة الملاحظات وتوفير الاحتياجات اللاحقة، لضمان تجربة متكاملة وعلاقة مستدامة مع العميل.",
     productsLbl: "كتالوجنا", productsH2a: "مواد", productsH2b: "عالية الجودة",
     viewAll: "← عرض الكل",
     prod1: "أنظمة حلول البناء والانشاء", prod2: "الأدوات والمعدات الصناعية",
     prod3: "أنظمة الجبس بورد", prod4: "بلاط السيراميك",
     prod5: "الديكور الداخلي والخارجي", prod6: "أنظمة التعرفية",
     prod7: "الأسمنت والحديد", prod8: "عزل حراري", prodAll: "جميع المنتجات",
-    brandsLbl: "علاماتنا التجارية",
+    brandsLbl: "شراكات عالمية",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
     cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
     cl2: "التجار وأصحاب الأعمال", cl2s: "سلسلة إمداد جملة موثوقة",
     cl3: "الحكومة والبنية التحتية", cl3s: "دعم المشاريع على النطاق الوطني",
     cl4: "شركات المقاولات الكبرى", cl4s: "حلول مواد متكاملة من البداية للنهاية",
     cl5: "الأفراد والمشاريع الخاصة", cl5s: "مواد جودة لكل منزل",
-    partnersLbl: "شركاؤنا", partnersH2a: "شراكات", partnersH2b: "عالمية",
+    partnersLbl: "علاماتنا التجارية", partnersH2a: "علاماتنا", partnersH2b: "التجارية",
     contactLbl: "تواصل معنا", contactH: "لنبني", contactHem: "معاً",
     contactP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
     phoneLbl: "الهاتف", emailLbl: "البريد الإلكتروني", addressLbl: "العنوان", hoursLbl: "ساعات العمل",
@@ -816,10 +816,10 @@ export default function Home() {
           <h2 className="sh shw ao">{t.servicesH2a} <em style={{ color: "var(--accent)" }}>{t.servicesH2b}</em></h2>
           <div className="svc-grid">
             {[
-              { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800", ico: "📦", n: "01", t: t.svc1t, b: t.svc1b, descAr: "نقوم باستيراد وتوزيع أجود مواد البناء والمعدات من أفضل الشركات العالمية والمصانع المعتمدة لتصل إلى مواقع العمل في كافة أنحاء ليبيا. نضمن لك سلسلة إمداد مستقرة، أداءً عالي الجودة، وأسعاراً تنافسية تلبي احتياجات كافة المشاريع الكبرى والصغرى.", descEn: "We import and distribute the highest quality building materials and equipment from top global companies and certified factories to work sites across Libya. We guarantee a stable supply chain, high-quality performance, and competitive prices that meet the needs of all projects." },
-              { bg: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800", ico: "🔧", n: "02", t: t.svc2t, b: t.svc2b, descAr: "فريقنا الهندسي المتخصص يقدم استشارات فنية متكاملة لاختيار المواد الأنسب لمشروعك، ووضع خطط التوريد الفعالة. نحن هنا لمساعدتك في تحقيق أعلى معايير الجودة وتوفير الوقت والتكاليف من خلال التخطيط السليم وتقديم الحلول الهندسية المبتكرة.", descEn: "Our specialized engineering team provides comprehensive technical consultations to select the most suitable materials for your project and develop effective supply plans. We are here to help you achieve the highest quality standards and save time and costs." },
-              { bg: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800", ico: "🌐", n: "03", t: t.svc3t, b: t.svc3b, descAr: "نوفّر مواد بناء ومستلزمات عالية الجودة مطابقة للمواصفات والمعايير العالمية، مصدرها مصانع وعلامات تجارية معتمدة. يخضع كل منتج لرقابة جودة دقيقة لضمان المتانة والأداء الموثوق وطول العمر الافتراضي، بما يلبّي متطلبات المشاريع الإنشائية الكبرى ويحقق أعلى درجات الأمان والاستدامة.", descEn: "We supply high-quality building materials and supplies that comply with international specifications and standards, sourced from certified factories and brands. Every product undergoes strict quality control to guarantee durability, reliable performance, and long service life — meeting the demands of major construction projects with the highest levels of safety and sustainability." },
-              { bg: "/services/support-247.jpg", ico: "🕐", n: "04", t: t.svc4t, b: t.svc4b, descAr: "نلتزم بتقديم خدمة ما بعد البيع والدعم الفني على مدار الساعة لضمان استمرارية أعمالك دون توقف. فريق الدعم الفني وخدمة العملاء لدينا جاهز دائماً للرد على استفساراتك، وتوفير الحلول السريعة لأي تحديات قد تواجهها في الموقع.", descEn: "We are committed to providing round-the-clock after-sales service and technical support to ensure your business continuity without interruption. Our technical support and customer service team is always ready to answer your inquiries and offer quick solutions." },
+              { bg: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800", ico: "🔧", n: "01", t: t.svc1t, b: t.svc1b, descAr: "فهم احتياجات العملاء وتقديم المشورة الفنية واختيار وتوصيف المواد والأنظمة والحلول المناسبة لمختلف التطبيقات ومتطلبات قطاع البناء، بالاعتماد على خبرة فنية متخصصة تضمن الاختيار الأمثل لكل مشروع.", descEn: "Understanding client needs and providing technical advice — selecting and specifying the right materials, systems, and solutions for the various applications and requirements of the construction sector, backed by specialized expertise that ensures the optimal choice for every project." },
+              { bg: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800", ico: "📦", n: "02", t: t.svc2t, b: t.svc2b, descAr: "توفير مجموعة متكاملة من مواد وأنظمة البناء والكيماويات الإنشائية وأنظمة الجبس والعدد والأدوات الصناعية، لخدمة المشاريع والمقاولين والشركات والتجار والعملاء، عبر سلسلة إمداد مستقرة وشبكة توزيع تغطي كافة أنحاء ليبيا.", descEn: "Providing an integrated range of building materials and systems, construction chemicals, gypsum systems, and industrial tools and equipment — serving projects, contractors, companies, traders, and clients through a stable supply chain and a distribution network covering all of Libya." },
+              { bg: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800", ico: "🛠️", n: "03", t: t.svc3t, b: t.svc3b, descAr: "تقديم الدعم الفني والتدريب والعينات والتجارب، ومساندة العملاء وفرق التنفيذ في الاستخدام والتطبيق الصحيح للمنتجات والأنظمة بالتعاون مع المصنّعين، لضمان أفضل النتائج على أرض الواقع.", descEn: "Providing technical support, training, samples, and trials, and assisting clients and execution teams in the correct use and application of products and systems in cooperation with manufacturers to ensure the best results on site." },
+              { bg: "/services/support-247.jpg", ico: "🤝", n: "04", t: t.svc4t, b: t.svc4b, descAr: "متابعة العملاء بعد التوريد والبيع، وتقديم الدعم الفني ومعالجة الملاحظات وتوفير الاحتياجات اللاحقة، لضمان تجربة متكاملة وعلاقة مستدامة مع العميل تقوم على الثقة والاستمرارية.", descEn: "Following up with clients after supply and sale, providing technical support, addressing feedback, and meeting subsequent needs to ensure an integrated experience and a sustainable client relationship built on trust and continuity." },
             ].map((s, i) => (
               <div className="svc-card" key={i} onClick={() => setSelectedService(s)} style={{ cursor: "pointer" }}>
                 <div className="svc-img" style={{ backgroundImage: `url(${s.bg})` }} />
@@ -1209,10 +1209,9 @@ export default function Home() {
                 ))}
               </div>
               <div className="ao" style={{ marginTop: 20, borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,.15)" }}>
-                {/* TODO(client): replace the query below with the exact branch pin / plus-code once provided */}
                 <iframe
                   title="موقع الشركة"
-                  src="https://maps.google.com/maps?q=Benghazi,Libya&z=12&output=embed"
+                  src="https://www.google.com/maps?q=32.0709114074707,20.06633186340332&z=17&hl=en&output=embed"
                   width="100%"
                   height="220"
                   style={{ border: 0 }}
@@ -1220,7 +1219,7 @@ export default function Home() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <a href="https://maps.google.com/maps?q=Benghazi,Libya" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.google.com/maps?q=32.0709114074707,20.06633186340332&z=17&hl=en" target="_blank" rel="noopener noreferrer"
                 className="ao" style={{ display: "inline-block", marginTop: 10, color: "var(--accent)", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
                 🗺️ {t.openMap}
               </a>
