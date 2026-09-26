@@ -1056,13 +1056,13 @@ export default function ProductsPage() {
         onToggleLang={() => setLang(lang === "ar" ? "en" : "ar")}
         rightSlot={
           <div style={{ display: "flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
-            <button onClick={() => setDark(!dark)} title="theme" style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "6px 10px", fontSize: 16, cursor: "pointer", borderRadius: 8 }}>
+            <button onClick={() => setDark(!dark)} title="theme" style={{ background: "var(--blue-light)", border: "none", color: "var(--blue)", padding: "6px 10px", fontSize: 16, cursor: "pointer", borderRadius: 8 }}>
               {dark ? "☀️" : "🌙"}
             </button>
-            <Link href="/profile" style={{ background: "rgba(255,255,255,.15)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8 }}>
+            <Link href="/profile" style={{ background: "var(--blue-light)", color: "var(--blue)", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8 }}>
               👤
             </Link>
-            <a href="/cart" style={{ background: cartCount > 0 ? "#f59e0b" : "rgba(255,255,255,.15)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8, whiteSpace: "nowrap" }}>
+            <a href="/cart" style={{ background: cartCount > 0 ? "#f59e0b" : "var(--blue)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8, whiteSpace: "nowrap" }}>
               🛒 {cartCount > 0 ? cartCount : ""}
             </a>
           </div>

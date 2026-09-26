@@ -25,109 +25,170 @@ export const NAV: { href: string; ar: string; en: string }[] = [
   { href: "/#contact", ar: "تواصل معنا", en: "Contact" },
 ];
 
-const NAVY = "#001f4d";
-const GOLD = "#c9a227";
+const LOGO = "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png";
 
+// SiteHeader / SiteFooter render the SAME chrome as the main page, by reusing the
+// homepage's global nav/footer CSS classes (defined in globals.css). Placed on
+// every secondary page so the whole site shares one look. Sticky (in-flow) so it
+// never overlaps page content, and section links use /#anchor to jump to the home
+// page's sections.
 export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: Lang; onToggleLang?: () => void; rightSlot?: ReactNode }) {
   const isAr = lang === "ar";
-  const [open, setOpen] = useState(false);
+  const [mobOpen, setMobOpen] = useState(false);
+  const L = (ar: string, en: string) => (isAr ? ar : en);
+  const mobLinks: [string, string][] = [
+    ["/", L("الرئيسية", "Home")],
+    ["/#about", L("من نحن", "Who We Are")],
+    ["/#ceo", L("كلمة رئيس مجلس الإدارة", "Chairman's Message")],
+    ["/#services", L("خدماتنا", "Services")],
+    ["/products", L("كتالوج المنتجات", "Products Catalog")],
+    ["/certificates", L("شهادات الجودة", "Certificates")],
+    ["/documents", L("مكتبة الوثائق", "Documents")],
+    ["/calculator", L("حاسبة الكميات", "Calculator")],
+    ["/case-studies", L("المشاريع", "Projects")],
+    ["/applicators", L("المطبّقون", "Applicators")],
+    ["/delivery", L("مناطق التوصيل", "Delivery")],
+    ["/training", L("ورش التدريب", "Training")],
+    ["/blog", L("المدونة", "Blog")],
+    ["/careers", L("الوظائف", "Careers")],
+    ["/faq", L("الأسئلة الشائعة", "FAQ")],
+    ["/#clients", L("عملاؤنا", "Clients")],
+    ["/#partners", L("شركاؤنا", "Partners")],
+    ["/#contact", L("اتصل بنا", "Contact")],
+  ];
   return (
     <>
-      <style>{`
-        .sh-wrap { position: sticky; top: 0; z-index: 900; background: ${NAVY}; color: #fff; font-family: 'Cairo', sans-serif; box-shadow: 0 2px 14px rgba(0,0,0,.22); }
-        .sh-inner { max-width: 1300px; margin: 0 auto; padding: 0 5%; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-        .sh-logo { color: #fff; text-decoration: none; font-weight: 900; font-size: 17px; display: flex; align-items: center; gap: 8px; white-space: nowrap; flex-shrink: 0; }
-        .sh-nav { display: flex; gap: 2px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
-        .sh-nav a { color: rgba(255,255,255,.88); text-decoration: none; font-size: 13px; font-weight: 700; padding: 6px 8px; border-radius: 8px; white-space: nowrap; transition: color .2s; }
-        .sh-nav a:hover { color: ${GOLD}; }
-        .sh-lang { background: rgba(255,255,255,.15); border: none; color: #fff; padding: 6px 14px; cursor: pointer; font-weight: 800; border-radius: 8px; margin-inline-start: 6px; font-family: 'Cairo', sans-serif; }
-        .sh-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
-        .sh-burger span { width: 24px; height: 2px; background: #fff; display: block; border-radius: 2px; }
-        .sh-mob { background: ${NAVY}; padding: 6px 5% 16px; border-top: 1px solid rgba(255,255,255,.1); display: flex; flex-direction: column; }
-        .sh-mob a { color: #fff; text-decoration: none; font-size: 15px; font-weight: 600; padding: 12px 4px; border-bottom: 1px solid rgba(255,255,255,.06); }
-        .sh-mob a:hover { color: ${GOLD}; }
-        @media (max-width: 1024px) { .sh-nav { display: none; } .sh-burger { display: flex; } }
-      `}</style>
-      <header className="sh-wrap" dir={isAr ? "rtl" : "ltr"}>
-        <div className="sh-inner">
-          <a href="/" className="sh-logo">
-            <span style={{ color: GOLD }}>◆</span>
-            {isAr ? "الشعلة الرائدة" : "Al-Showla Al-Raeda"}
-          </a>
-          <div style={{ display: "flex", alignItems: "center", gap: 6, minWidth: 0 }}>
-            <nav className="sh-nav">
-              {NAV.map((n) => (
-                <a key={n.href} href={n.href}>{isAr ? n.ar : n.en}</a>
-              ))}
-              {onToggleLang && (
-                <button className="sh-lang" onClick={onToggleLang}>{isAr ? "EN" : "AR"}</button>
-              )}
-            </nav>
-            {rightSlot}
-            <button className="sh-burger" aria-label="menu" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
-              <span /><span /><span />
+      <header
+        dir={isAr ? "rtl" : "ltr"}
+        style={{
+          position: "sticky", top: 0, zIndex: 999, height: 70,
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          padding: "0 5%", gap: 16, background: "var(--white)",
+          boxShadow: "0 1px 0 var(--gray-light), 0 4px 20px rgba(0,81,162,.06)",
+          fontFamily: "'Cairo', sans-serif",
+        }}
+      >
+        <a href="/" className="nav-logo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={LOGO} alt="Al-Showla Al-Raeda" style={{ height: 38 }}
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <div>
+            <div className="nav-logo-txt">{L("الشعلة الرائدة", "AL-SHOWLA AL-RAEDA")}</div>
+            <div className="nav-logo-sub">{L("مواد البناء والحلول الإنشائية", "Building Materials & Construction")}</div>
+          </div>
+        </a>
+        <div className="nav-links">
+          <a href="/">{L("الرئيسية", "Home")}</a>
+          <div className="nav-drop">
+            <a href="/#about">{L("الشركة", "Company")} ▾</a>
+            <div className="nav-drop-menu">
+              <a href="/#about">{L("من نحن", "Who We Are")}</a>
+              <a href="/#ceo">{L("كلمة رئيس مجلس الإدارة", "Chairman's Message")}</a>
+              <a href="/case-studies">{L("المشاريع المنفذة", "Projects")}</a>
+              <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators")}</a>
+              <a href="/training">{L("ورش التدريب", "Training")}</a>
+              <a href="/blog">{L("المدونة", "Blog")}</a>
+              <a href="/careers">{L("الوظائف", "Careers")}</a>
+            </div>
+          </div>
+          <a href="/#services">{L("خدماتنا", "Services")}</a>
+          <div className="nav-drop">
+            <a href="/products">{L("منتجاتنا", "Products")} ▾</a>
+            <div className="nav-drop-menu">
+              <a href="/products">{L("كتالوج المنتجات", "Products Catalog")}</a>
+              <a href="/certificates">{L("شهادات الجودة", "Certificates")}</a>
+              <a href="/documents">{L("مكتبة الوثائق الفنية", "Technical Documents")}</a>
+              <a href="/calculator">{L("حاسبة الكميات", "Calculator")}</a>
+              <a href="/delivery">{L("مناطق التوصيل", "Delivery Zones")}</a>
+              <a href="/sample">{L("طلب عينة مجانية", "Request Free Sample")}</a>
+            </div>
+          </div>
+          <a href="/#clients">{L("عملاؤنا", "Clients")}</a>
+          <a href="/#partners">{L("شركاؤنا", "Partners")}</a>
+          <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
+          <a href="/faq">{L("الأسئلة الشائعة", "FAQ")}</a>
+          <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
+          <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold" }}>{L("تسجيل المقاولين", "B2B Login")}</a>
+          {onToggleLang && (
+            <button onClick={onToggleLang} style={{ background: "var(--blue-light)", border: "none", color: "var(--blue)", padding: "6px 12px", cursor: "pointer", fontWeight: 800, borderRadius: 6, fontFamily: "'Cairo', sans-serif" }}>
+              {isAr ? "EN" : "AR"}
             </button>
+          )}
+          <a href="https://wa.me/218948020200" className="nav-cta" target="_blank" rel="noopener noreferrer">{L("اطلب الآن", "Order Now")}</a>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          {rightSlot}
+          <div className={`hamburger${mobOpen ? " open" : ""}`} onClick={() => setMobOpen(!mobOpen)}>
+            <span /><span /><span />
           </div>
         </div>
-        {open && (
-          <div className="sh-mob" dir={isAr ? "rtl" : "ltr"}>
-            {NAV.map((n) => (
-              <a key={n.href} href={n.href} onClick={() => setOpen(false)}>{isAr ? n.ar : n.en}</a>
-            ))}
-            {onToggleLang && (
-              <button className="sh-lang" style={{ marginTop: 12, alignSelf: "flex-start" }}
-                onClick={() => { onToggleLang(); setOpen(false); }}>
-                {isAr ? "English" : "العربية"}
-              </button>
-            )}
-          </div>
-        )}
       </header>
+
+      <div className={`mob-nav${mobOpen ? " open" : ""}`} dir={isAr ? "rtl" : "ltr"}>
+        {mobLinks.map(([href, label]) => (
+          <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
+        ))}
+        <a href="/advisor" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
+        <div className="mob-nav-divider" />
+        <a href="/contractor/login" onClick={() => setMobOpen(false)} style={{ color: "#fff" }}>{L("تسجيل المقاولين (B2B)", "B2B Login")}</a>
+        <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>{L("اطلب الآن عبر واتساب", "Order via WhatsApp")}</a>
+        {onToggleLang && (
+          <button onClick={() => { onToggleLang(); setMobOpen(false); }} style={{ marginTop: 14, background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "10px 22px", cursor: "pointer", fontWeight: 800, borderRadius: 8, fontFamily: "'Cairo', sans-serif" }}>
+            {isAr ? "English" : "العربية"}
+          </button>
+        )}
+      </div>
     </>
   );
 }
 
 export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
   const isAr = lang === "ar";
-  const colH: React.CSSProperties = { fontWeight: 800, fontSize: 14, marginBottom: 12, color: "#fff" };
-  const link: React.CSSProperties = { color: "rgba(255,255,255,.7)", textDecoration: "none", fontSize: 13, display: "block", marginBottom: 8 };
+  const L = (ar: string, en: string) => (isAr ? ar : en);
   return (
-    <footer dir={isAr ? "rtl" : "ltr"} style={{ background: NAVY, color: "#fff", fontFamily: "'Cairo', sans-serif", marginTop: 48 }}>
-      <div style={{ maxWidth: 1240, margin: "0 auto", padding: "40px 5% 20px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 32 }}>
-        <div>
-          <div style={{ fontWeight: 900, fontSize: 18, marginBottom: 12, display: "flex", alignItems: "center", gap: 8 }}>
-            <span style={{ color: GOLD }}>◆</span>
-            {isAr ? "الشعلة الرائدة" : "Al-Showla Al-Raeda"}
-          </div>
-          <p style={{ color: "rgba(255,255,255,.7)", fontSize: 13, lineHeight: 1.8, margin: 0 }}>
-            {isAr
-              ? "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005."
-              : "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005."}
-          </p>
+    <footer dir={isAr ? "rtl" : "ltr"}>
+      <div className="ft-top">
+        <div className="ft-brand">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={LOGO} alt="Al-Showla Al-Raeda"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <p>{L("شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
+            "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005.")}</p>
         </div>
         <div>
-          <div style={colH}>{isAr ? "روابط سريعة" : "Quick Links"}</div>
-          {NAV.map((n) => (
-            <a key={n.href} href={n.href} style={link}>{isAr ? n.ar : n.en}</a>
-          ))}
+          <div className="ft-col-h">{L("روابط سريعة", "Quick Links")}</div>
+          <ul className="ft-links">
+            {[["/", L("الرئيسية", "Home")], ["/#about", L("من نحن", "Who We Are")], ["/#ceo", L("كلمة الرئيس", "Chairman")], ["/products", L("المنتجات", "Products")], ["/#contact", L("اتصل بنا", "Contact")]].map(([href, label]) => (
+              <li key={href}><a href={href}>{label}</a></li>
+            ))}
+          </ul>
         </div>
         <div>
-          <div style={colH}>{isAr ? "تواصل معنا" : "Contact"}</div>
-          <a href="tel:+218948020200" style={link} dir="ltr">+218 94 802 0200</a>
-          <a href="mailto:info@alshowla.com" style={link}>info@alshowla.com</a>
-          <a href="https://maps.app.goo.gl/33C8%2B6CW" target="_blank" rel="noopener noreferrer" style={link}>
-            {isAr ? "33C8+6CW، الطريق الدائري الثالث، بنغازي" : "33C8+6CW, Third Ring Rd, Benghazi"}
-          </a>
+          <div className="ft-col-h">{L("خدماتنا", "Our Services")}</div>
+          <ul className="ft-links">
+            {[["/products", L("كتالوج المنتجات", "Catalog")], ["/documents", L("مكتبة الوثائق", "Documents")], ["/calculator", L("حاسبة الكميات", "Calculator")], ["/advisor", L("المستشار الذكي", "AI Advisor")]].map(([href, label]) => (
+              <li key={href}><a href={href}>{label}</a></li>
+            ))}
+          </ul>
         </div>
         <div>
-          <div style={colH}>{isAr ? "تابعنا" : "Follow Us"}</div>
-          <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer" style={link}>WhatsApp</a>
-          <a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer" style={link}>Facebook</a>
-          <a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer" style={link}>Instagram</a>
+          <div className="ft-col-h">{L("تواصل معنا", "Contact")}</div>
+          <ul className="ft-links">
+            <li><a href="tel:+218948020200" dir="ltr">+218 94 802 0200</a></li>
+            <li><a href="mailto:info@alshowla.com">info@alshowla.com</a></li>
+            <li><a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
         </div>
       </div>
-      <div style={{ borderTop: "1px solid rgba(255,255,255,.1)", padding: "16px 5%", textAlign: "center", fontSize: 12, color: "rgba(255,255,255,.5)" }}>
-        © {new Date().getFullYear()} {isAr ? "شركة الشعلة الرائدة لاستيراد مواد البناء — جميع الحقوق محفوظة" : "Al-Showla Al-Raeda for Importing Building Materials — All rights reserved"}
+      <div className="ft-bot">
+        <div className="ft-copy">© {new Date().getFullYear()} {L("شركة الشعلة الرائدة لاستيراد مواد البناء — جميع الحقوق محفوظة", "Al-Showla Al-Raeda for Importing Building Materials — All rights reserved")}</div>
+        <div className="ft-soc">
+          <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
       </div>
     </footer>
   );
