@@ -174,7 +174,7 @@ body {
   background-size: 38px 38px; pointer-events: none;
 }
 .hero-inner {
-  position: relative; z-index: 2; max-width: 1360px; margin: 0 auto; padding: 100px 5% 60px;
+  position: relative; z-index: 2; max-width: 1360px; margin: 0 auto; padding: 150px 5% 60px;
   display: grid; grid-template-columns: 1fr 440px; gap: 60px; align-items: center; min-height: 100vh;
 }
 .hero-left { padding: 20px 0; }
@@ -219,8 +219,8 @@ h1.hh em { font-style: normal; color: var(--accent); }
 .sline { width: 1px; height: 36px; background: linear-gradient(to bottom, rgba(255,255,255,.5), transparent); animation: sp 2s ease-in-out infinite; }
 @keyframes sp { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
 
-/* ── TICKER ── */
-.ticker { background: var(--blue); padding: 11px 0; overflow: hidden; }
+/* ── TICKER (pinned flush under the fixed 70px nav — no gap) ── */
+.ticker { background: var(--blue); padding: 11px 0; overflow: hidden; position: fixed; top: 70px; left: 0; right: 0; z-index: 900; }
 /* Two identical tracks sit side-by-side; moving exactly one track width (-50% of the
    combined width) loops seamlessly with no visible stop, gap, or reset point. */
 @keyframes tkr { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
@@ -229,7 +229,7 @@ h1.hh em { font-style: normal; color: var(--accent); }
    translate3d + backface-visibility force it onto its own compositor layer so it
    never stutters against layout repaints. */
 .t-track { display: flex; width: max-content; flex-wrap: nowrap; animation: tkr 80s linear infinite; will-change: transform; transform: translateZ(0); backface-visibility: hidden; }
-.ticker:hover .t-track { animation-play-state: paused; }
+/* Never pause — keep it moving continuously, even on hover. */
 .t-inner { display: flex; flex-shrink: 0; flex-wrap: nowrap; }
 .ti {
   font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
@@ -284,7 +284,7 @@ h2.shw { color: #fff; }
 
 /* vision/mission bento */
 .vm-bento { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; background: var(--gray-light); margin-top: 70px; }
-.vm-pane { position: relative; overflow: hidden; min-height: 280px; }
+.vm-pane { position: relative; overflow: hidden; height: 420px; }
 .vm-pane img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
 .vm-pane:hover img { transform: scale(1.04); }
 .vm-over {
@@ -493,7 +493,7 @@ footer { background: var(--blue-deeper); }
   .ft-top { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
 @media(max-width:900px) {
-  .hero-inner { grid-template-columns: 1fr; padding-top: 90px; }
+  .hero-inner { grid-template-columns: 1fr; padding-top: 140px; }
   .hero-right { display: none; }
   .about-grid, .ceo-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
   .cl-bento { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }

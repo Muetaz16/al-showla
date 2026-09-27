@@ -173,23 +173,6 @@ export default function AdminLoginPage() {
           </form>
 
           {/* Credentials hint — development only; never rendered in production build */}
-          {process.env.NODE_ENV !== "production" && (
-            <div className="hint-card">
-              <div style={{ fontSize: 10, fontWeight: 800, color: "rgba(255,255,255,.3)", marginBottom: 8, letterSpacing: ".1em" }}>
-                بيانات الدخول التجريبية (بيئة التطوير فقط)
-              </div>
-              {[
-                { role: "👑 Super Admin", user: "admin", pass: "admin1234" },
-                { role: "🧑‍💼 Manager", user: "manager", pass: "manager123" },
-                { role: "📦 Warehouse", user: "warehouse", pass: "store456" },
-              ].map(r => (
-                <div key={r.user} className="hint-row">
-                  <span className="hint-label">{r.role}</span>
-                  <span className="hint-val">{r.user} / {r.pass}</span>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Back to site */}

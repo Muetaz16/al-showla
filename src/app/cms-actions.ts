@@ -322,7 +322,7 @@ async function seedBlog() {
   const count = await prisma.blogPost.count();
   if (count === 0) {
     for (const item of BLOG_SEED) {
-      await prisma.blogPost.create({ data: item as any });
+      await prisma.blogPost.create({ data: { ...item, date: new Date(item.date) } as any });
     }
   }
 }

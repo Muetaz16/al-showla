@@ -61,10 +61,10 @@ const T = {
     // Products
     productsLbl: "Our Catalog", productsH2a: "Quality", productsH2b: "Materials",
     viewAll: "View All →",
-    prod1: "Building & Construction Solutions", prod2: "Industrial Tools & Equipment",
-    prod3: "Gypsum Board Systems", prod4: "Ceramic Tiles",
-    prod5: "Interior & Exterior Decor", prod6: "Roofing Systems",
-    prod7: "Cement & Steel", prod8: "Thermal Insulation", prodAll: "All Products",
+    prod1: "Construction Chemicals", prod2: "Rainwater Drainage Systems",
+    prod3: "Ceramic, Porcelain & Stone", prod4: "Flooring",
+    prod5: "Architectural Finishes & Solutions", prod6: "Steel, Cement & More",
+    prod7: "Industrial Tools & Equipment", prod8: "Thermal Insulation", prodAll: "All Products",
     brandsLbl: "Global Partnerships",
     // Clients
     clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
@@ -139,10 +139,10 @@ const T = {
     svc4t: "خدمات ما بعد البيع والدعم المستمر", svc4b: "متابعة العملاء بعد التوريد والبيع، وتقديم الدعم الفني ومعالجة الملاحظات وتوفير الاحتياجات اللاحقة، لضمان تجربة متكاملة وعلاقة مستدامة مع العميل.",
     productsLbl: "كتالوجنا", productsH2a: "مواد", productsH2b: "عالية الجودة",
     viewAll: "← عرض الكل",
-    prod1: "أنظمة حلول البناء والانشاء", prod2: "الأدوات والمعدات الصناعية",
-    prod3: "أنظمة الجبس بورد", prod4: "بلاط السيراميك",
-    prod5: "الديكور الداخلي والخارجي", prod6: "أنظمة التعرفية",
-    prod7: "الأسمنت والحديد", prod8: "عزل حراري", prodAll: "جميع المنتجات",
+    prod1: "كيماويات البناء", prod2: "أنظمة تصريف مياه الأمطار",
+    prod3: "السيراميك والبورسلين والأحجار", prod4: "الأرضيات",
+    prod5: "التشطيبات والحلول المعمارية", prod6: "الحديد والأسمنت وغيرها",
+    prod7: "الأدوات والمعدات الصناعية", prod8: "عزل حراري", prodAll: "جميع المنتجات",
     brandsLbl: "شراكات عالمية",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
     cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
@@ -295,7 +295,7 @@ export default function Home() {
   const LOGO = "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png";
   const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
   const VISION_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
-  const MISSION_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Mision-scaled-e1768074828455.jpg";
+  const MISSION_IMG = "/categories/cat-adhesives.jpg";
 
   const products = [
     { bg: "/categories/cat-waterproof.jpg", tag: "Category 01", t: t.prod1, categoryId: "waterproof" },
@@ -538,8 +538,8 @@ export default function Home() {
   ];
 
   const baseTicker = lang === "ar"
-    ? ["أنظمة حلول البناء والانشاء", "الأدوات والمعدات الصناعية", "أنظمة الجبس بورد", "بلاط السيراميك", "الديكور الداخلي والخارجي", "أنظمة التعرفية", "الأسمنت والحديد", "عزل حراري"]
-    : ["Building & Construction Solutions", "Industrial Tools & Equipment", "Gypsum Board Systems", "Ceramic Tiles", "Interior & Exterior Decor", "Roofing Systems", "Cement & Steel", "Thermal Insulation"];
+    ? ["كيماويات البناء", "أنظمة تصريف مياه الأمطار", "السيراميك والبورسلين والأحجار", "الأرضيات", "التشطيبات والحلول المعمارية", "الحديد والأسمنت وغيرها"]
+    : ["Construction Chemicals", "Rainwater Drainage Systems", "Ceramic, Porcelain & Stone", "Flooring", "Architectural Finishes & Solutions", "Steel, Cement & More"];
   const ticker = [...baseTicker, ...baseTicker, ...baseTicker, ...baseTicker];
 
   return (
@@ -624,6 +624,22 @@ export default function Home() {
           style={{ color: "var(--accent)" }} onClick={() => setMobOpen(false)}>{t.orderWhatsapp}</a>
       </div>
 
+      {/* ── TICKER (pinned directly under the menu) ── */}
+      <div className="ticker" aria-hidden="true">
+        <div className="t-track">
+          <div className="t-inner">
+            {ticker.map((item, i) => (
+              <span className="ti" key={`a${i}`}>{item}</span>
+            ))}
+          </div>
+          <div className="t-inner" aria-hidden="true">
+            {ticker.map((item, i) => (
+              <span className="ti" key={`b${i}`}>{item}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* ══════════════════ HERO ══════════════════ */}
       <section id="home">
         <div className="hero-photo">
@@ -689,22 +705,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TICKER ── */}
-      <div className="ticker" aria-hidden="true">
-        <div className="t-track">
-          <div className="t-inner">
-            {ticker.map((item, i) => (
-              <span className="ti" key={`a${i}`}>{item}</span>
-            ))}
-          </div>
-          <div className="t-inner" aria-hidden="true">
-            {ticker.map((item, i) => (
-              <span className="ti" key={`b${i}`}>{item}</span>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* ══════════════════ ABOUT ══════════════════ */}
       <section id="about" className="sec" style={{ background: "var(--white)" }}>
         <div className="con">
@@ -727,6 +727,12 @@ export default function Home() {
               <p className="sp" style={{ marginBottom: 14 }}>{t.aboutP2}</p>
               <p className="sp">{t.aboutP3}</p>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 24 }}>
+                <a href="/company-profile.pdf" target="_blank" rel="noopener noreferrer" download
+                  style={{ background: "var(--blue)", border: "2px solid var(--blue)", color: "#fff", padding: "11px 26px", fontSize: 13, fontWeight: 700, textDecoration: "none", cursor: "pointer", transition: "all .25s", display: "inline-flex", alignItems: "center", gap: 8 }}
+                  onMouseOver={(e) => { const el = e.currentTarget; el.style.background = "var(--blue-deeper, #001f4d)"; }}
+                  onMouseOut={(e) => { const el = e.currentTarget; el.style.background = "var(--blue)"; }}>
+                  ⬇ {t.downloadProfile}
+                </a>
                 <a href="#contact"
                   style={{ border: "2px solid var(--blue)", color: "var(--blue)", padding: "11px 26px", fontSize: 13, fontWeight: 700, textDecoration: "none", cursor: "pointer", transition: "all .25s" }}
                   onMouseOver={(e) => { const el = e.target as HTMLElement; el.style.background = "var(--blue)"; el.style.color = "#fff"; }}
@@ -1270,6 +1276,7 @@ export default function Home() {
               {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#contact", t.contact]].map(([href, label]) => (
                 <li key={href}><a href={href}>{label}</a></li>
               ))}
+              <li><a href="/company-profile.pdf" target="_blank" rel="noopener noreferrer">{t.downloadProfile}</a></li>
             </ul>
           </div>
           <div>

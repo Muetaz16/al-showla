@@ -778,30 +778,84 @@ export default function AdminDashboard() {
               {showAddForm && (
                 <form onSubmit={handleAddProduct} style={{ ...S.card, marginBottom:20 }}>
                   <h3 style={{ fontSize:14, fontWeight:800, color:"#fff", marginBottom:16 }}>➕ منتج جديد</h3>
-                  <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))", gap:12 }}>
-                    <div>
-                      <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 }}>اسم المنتج *</div>
-                      <input required value={newProduct.nameAr} onChange={e => setNewProduct({...newProduct, nameAr:e.target.value})} style={S.inp} placeholder="مثال: دهان واجهات" />
+                  {(() => {
+                    const lbl = { fontSize:10, fontWeight:700 as const, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 };
+                    const chip = (active:boolean) => ({
+                      padding:"7px 13px", borderRadius:20, fontSize:12, fontWeight:700 as const, cursor:"pointer",
+                      border: active ? "1px solid #3b82f6" : "1px solid rgba(255,255,255,.15)",
+                      background: active ? "rgba(59,130,246,.28)" : "transparent",
+                      color: active ? "#fff" : "rgba(255,255,255,.6)", transition:"all .15s",
+                    });
+                    const existingBrands = Array.from(new Set(inventory.map(p => p.brand).filter(b => b && b !== "General"))).sort();
+                    return (
+                  <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+                    <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))", gap:12 }}>
+                      <div>
+                        <div style={lbl}>اسم المنتج *</div>
+                        <input required value={newProduct.nameAr} onChange={e => setNewProduct({...newProduct, nameAr:e.target.value})} style={S.inp} placeholder="مثال: دهان واجهات" />
+                      </div>
+                      <div>
+                        <div style={lbl}>السعر (د.ل) *</div>
+                        <input required type="number" min="1" value={newProduct.priceBase} onChange={e => setNewProduct({...newProduct, priceBase:e.target.value})} style={S.inp} placeholder="مثال: 150" />
+                      </div>
                     </div>
+
+                    {/* Brand (company) — pick existing or type a new one */}
                     <div>
-                      <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 }}>العلامة التجارية *</div>
-                      <input required value={newProduct.brand} onChange={e => setNewProduct({...newProduct, brand:e.target.value})} style={S.inp} placeholder="مثال: Sika" />
+                      <div style={lbl}>العلامة التجارية (الشركة) *</div>
+                      {existingBrands.length > 0 && (
+                        <div style={{ display:"flex", flexWrap:"wrap", gap:8, marginBottom:8 }}>
+                          {existingBrands.map(b => (
+                            <button type="button" key={b} onClick={() => setNewProduct({...newProduct, brand:b})} style={chip(newProduct.brand === b)}>
+                              {newProduct.brand === b ? "☑" : "☐"} {b}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                      <input required value={newProduct.brand} onChange={e => setNewProduct({...newProduct, brand:e.target.value})} style={S.inp} placeholder="أو اكتب علامة جديدة — مثال: Sika" />
                     </div>
+
+                    {/* Category — checkboxes */}
                     <div>
-                      <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 }}>السعر (د.ل) *</div>
-                      <input required type="number" min="1" value={newProduct.priceBase} onChange={e => setNewProduct({...newProduct, priceBase:e.target.value})} style={S.inp} placeholder="مثال: 150" />
+                      <div style={lbl}>الفئة *</div>
+                      <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
+                        {CATEGORIES.filter(c => c.id !== "all").map(c => (
+                          <button type="button" key={c.id} onClick={() => setNewProduct({...newProduct, categoryId:c.id})} style={chip(newProduct.categoryId === c.id)}>
+                            {newProduct.categoryId === c.id ? "☑" : "☐"} {c.icon} {c.nameAr}
+                          </button>
+                        ))}
+                      </div>
                     </div>
+
+                    {/* Image — upload a file or paste a URL */}
                     <div>
-                      <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 }}>الفئة</div>
-                      <select value={newProduct.categoryId} onChange={e => setNewProduct({...newProduct, categoryId:e.target.value})} style={{ ...S.inp, cursor:"pointer" }}>
-                        {CATEGORIES.filter(c => c.id !== "all").map(c => <option key={c.id} value={c.id}>{c.icon} {c.nameAr}</option>)}
-                      </select>
-                    </div>
-                    <div style={{ gridColumn:"1/-1" }}>
-                      <div style={{ fontSize:10, fontWeight:700, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 }}>رابط الصورة (اختياري)</div>
-                      <input value={newProduct.imageUrl} onChange={e => setNewProduct({...newProduct, imageUrl:e.target.value})} style={S.inp} placeholder="https://..." />
+                      <div style={lbl}>صورة المنتج</div>
+                      <div style={{ display:"flex", alignItems:"center", gap:12, flexWrap:"wrap" }}>
+                        {newProduct.imageUrl ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={newProduct.imageUrl} alt="preview" style={{ width:64, height:64, objectFit:"cover", borderRadius:10, border:"1px solid rgba(255,255,255,.15)" }} />
+                        ) : (
+                          <div style={{ width:64, height:64, borderRadius:10, border:"1px dashed rgba(255,255,255,.2)", display:"flex", alignItems:"center", justifyContent:"center", color:"rgba(255,255,255,.3)", fontSize:22 }}>🖼️</div>
+                        )}
+                        <label className="action-btn" style={{ cursor:"pointer" }}>
+                          ⬆ رفع صورة
+                          <input type="file" accept="image/*" style={{ display:"none" }} onChange={e => {
+                            const f = e.target.files?.[0];
+                            if (!f) return;
+                            const reader = new FileReader();
+                            reader.onload = () => setNewProduct(p => ({ ...p, imageUrl: String(reader.result) }));
+                            reader.readAsDataURL(f);
+                          }} />
+                        </label>
+                        {newProduct.imageUrl && (
+                          <button type="button" onClick={() => setNewProduct(p => ({ ...p, imageUrl:"" }))} className="action-btn" style={{ fontSize:12 }}>✕ إزالة</button>
+                        )}
+                      </div>
+                      <input value={newProduct.imageUrl.startsWith("data:") ? "" : newProduct.imageUrl} onChange={e => setNewProduct({...newProduct, imageUrl:e.target.value})} style={{ ...S.inp, marginTop:8 }} placeholder="أو الصق رابط صورة https://..." />
                     </div>
                   </div>
+                    );
+                  })()}
                   <div style={{ marginTop:16, display:"flex", gap:8 }}>
                     <button type="submit" disabled={saving} className="action-btn primary" style={{ padding:"10px 24px", fontSize:13 }}>
                       {saving ? "⏳ جاري الحفظ..." : "💾 حفظ المنتج"}
