@@ -646,8 +646,12 @@ export default function Home() {
       {/* ══════════════════ HERO ══════════════════ */}
       <section id="home">
         <div className="hero-photo">
-          {/* Background video — falls back to the poster image if the video is missing/unsupported */}
-          <video className="hero-video" autoPlay muted loop playsInline preload="auto" poster={heroBanner || HERO_IMG}>
+          {/* Background video — autoplays, loops forever, no controls. Poster image is the fallback. */}
+          <video className="hero-video" autoPlay muted loop playsInline preload="auto"
+            controls={false} disablePictureInPicture poster={heroBanner || HERO_IMG}
+            ref={(el) => { if (el) { el.muted = true; el.play().catch(() => {}); } }}
+            onCanPlay={(e) => { e.currentTarget.muted = true; e.currentTarget.play().catch(() => {}); }}
+            onEnded={(e) => { e.currentTarget.currentTime = 0; e.currentTarget.play().catch(() => {}); }}>
             <source src="/hero.mp4" type="video/mp4" />
           </video>
         </div>

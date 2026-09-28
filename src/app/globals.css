@@ -173,8 +173,9 @@ body {
   background-image: radial-gradient(circle, rgba(255,255,255,.06) 1px, transparent 1px);
   background-size: 38px 38px; pointer-events: none;
 }
-/* Hero background video */
-.hero-video { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+/* Hero background video — non-interactive so no play/pause controls ever show */
+.hero-video { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; pointer-events: none; }
+.hero-video::-webkit-media-controls { display: none !important; }
 .hero-inner {
   position: relative; z-index: 2; max-width: 1360px; margin: 0 auto; padding: 150px 5% 60px;
   display: grid; grid-template-columns: 1fr 440px; gap: 60px; align-items: center; min-height: 100vh;
