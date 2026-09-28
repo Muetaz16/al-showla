@@ -220,15 +220,18 @@ export default function Home() {
   const countUp = useCallback(() => {
     if (countersRan) return;
     setCountersRan(true);
+    const DURATION = 3200; // ms — slower, cinematic count-up
     document.querySelectorAll<HTMLElement>(".hstat-n[data-t]").forEach((el) => {
       const target = parseInt(el.dataset.t || "0", 10);
-      let cur = 0;
-      const step = Math.ceil(target / 60);
-      const id = setInterval(() => {
-        cur = Math.min(cur + step, target);
-        el.textContent = cur + (el.dataset.suffix || "+");
-        if (cur >= target) clearInterval(id);
-      }, 25);
+      const suffix = el.dataset.suffix || "+";
+      const start = performance.now();
+      const tick = (now: number) => {
+        const p = Math.min((now - start) / DURATION, 1);
+        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic — fast start, gentle finish
+        el.textContent = Math.round(target * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
     });
   }, [countersRan]);
 
@@ -643,9 +646,10 @@ export default function Home() {
       {/* ══════════════════ HERO ══════════════════ */}
       <section id="home">
         <div className="hero-photo">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={heroBanner || HERO_IMG} alt="Al-Showla Al-Raeda hero"
-            onError={(e) => { (e.target as HTMLImageElement).parentElement!.style.background = "var(--blue-deeper)"; }} />
+          {/* Background video — falls back to the poster image if the video is missing/unsupported */}
+          <video className="hero-video" autoPlay muted loop playsInline preload="auto" poster={heroBanner || HERO_IMG}>
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="hero-dots" />
         <div className="hero-inner">
@@ -873,7 +877,7 @@ export default function Home() {
             <div className="lbl ao">{t.brandsLbl}</div>
             <div className="brands-g">
               {BRAND_DATA.map((b, i) => (
-                <div className="br-cell" key={i}>
+                <div className="br-cell" key={i} style={{ animationDelay: `${i * 0.07}s`, cursor: "pointer" }} onClick={() => setSelectedBrand(b)}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={b.url} alt={b.name}
                     onError={(e) => {

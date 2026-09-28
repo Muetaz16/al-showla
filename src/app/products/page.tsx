@@ -16,6 +16,19 @@ import { getSession } from "next-auth/react";
 
 type Lang = "ar" | "en";
 
+// Order-request icon (clipboard / quote form) — not a shopping cart. Used across the catalog.
+const CartIcon = ({ size = 16, color = "currentColor" }: { size?: number; color?: string }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8"
+    strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "-2px", flexShrink: 0 }} aria-hidden="true">
+    {/* clipboard body */}
+    <rect x="5" y="4.5" width="14" height="16.5" rx="2.4" />
+    {/* top clip */}
+    <rect x="8.5" y="2.8" width="7" height="3.4" rx="1.3" />
+    {/* request lines */}
+    <path d="M8.5 11h7" /><path d="M8.5 14.5h7" /><path d="M8.5 18h4.5" />
+  </svg>
+);
+
 const T = {
   ar: {
     title: "كتالوج المنتجات",
@@ -220,8 +233,9 @@ function ProductCard({
         </button>
       )}
 
-      {/* Image */}
-      <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "#f0f6fd" }}>
+      {/* Image — click to open details */}
+      <div onClick={() => onViewDetails(product)} title={t.viewDetail} className="pcard-img"
+        style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "#f0f6fd", cursor: "pointer" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={product.imageUrl || "/placeholder-product.svg"} alt={lang === "ar" ? product.nameAr : product.nameEn}
           loading="lazy" decoding="async"
@@ -240,6 +254,10 @@ function ProductCard({
             fontSize: 10, fontWeight: 800, padding: "3px 10px", letterSpacing: ".04em",
           }}>{displayBrand(product)}</div>
         )}
+        {/* hover hint: image is clickable */}
+        <div className="pcard-imgover">
+          <span>{t.viewDetail}</span>
+        </div>
       </div>
 
       {/* Content */}
@@ -291,8 +309,9 @@ function ProductCard({
                 color: "#fff", border: "none", padding: "10px 12px",
                 fontSize: 12, fontWeight: 700, cursor: "pointer",
                 transition: "all .25s", fontFamily: "inherit",
+                display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 6,
               }}>
-              {added ? "✓" : t.addToCart}
+              {added ? "✓" : <><CartIcon size={15} color="#fff" /> {t.addToCart}</>}
             </button>
           ) : (
             <button onClick={() => setShowRestock(true)}
@@ -859,12 +878,12 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
                 {products.map((p) => (
                   <td key={p.id} style={{ padding: "16px 14px", textAlign: "center", background: "#f0f7ff" }}>
                     <a href="#contact" onClick={onClose} style={{
-                      display: "inline-block", background: "linear-gradient(135deg, #0051a2, #003578)",
+                      display: "inline-flex", alignItems: "center", gap: 7, background: "linear-gradient(135deg, #0051a2, #003578)",
                       color: "#fff", padding: "12px 22px", fontSize: 13, fontWeight: 800,
                       textDecoration: "none", borderRadius: 10,
                       boxShadow: "0 4px 15px rgba(0,81,162,.35)",
                     }}>
-                      {isAr ? "🛒 اطلب عرض سعر" : "🛒 Request Quote"}
+                      <CartIcon size={16} color="#fff" /> {isAr ? "اطلب عرض سعر" : "Request Quote"}
                     </a>
                   </td>
                 ))}
@@ -1058,8 +1077,8 @@ export default function ProductsPage() {
             <Link href="/profile" style={{ background: "var(--blue-light)", color: "var(--blue)", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8 }}>
               👤
             </Link>
-            <a href="/cart" style={{ background: cartCount > 0 ? "#f59e0b" : "var(--blue)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8, whiteSpace: "nowrap" }}>
-              🛒 {cartCount > 0 ? cartCount : ""}
+            <a href="/cart" style={{ background: cartCount > 0 ? "#f59e0b" : "var(--blue)", color: "#fff", padding: "6px 12px", fontSize: 13, fontWeight: 800, textDecoration: "none", borderRadius: 8, whiteSpace: "nowrap", display: "inline-flex", alignItems: "center", gap: 6 }}>
+              <CartIcon size={17} color="#fff" /> {cartCount > 0 ? cartCount : ""}
             </a>
           </div>
         }

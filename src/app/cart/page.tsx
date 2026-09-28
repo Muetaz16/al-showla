@@ -13,6 +13,16 @@ import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Lang = "ar" | "en";
 
+// Order-request icon (clipboard / quote form) — not a shopping cart.
+const OrderIcon = ({ size = 22, color = "currentColor" }: { size?: number; color?: string }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.8"
+    strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "-3px", flexShrink: 0 }} aria-hidden="true">
+    <rect x="5" y="4.5" width="14" height="16.5" rx="2.4" />
+    <rect x="8.5" y="2.8" width="7" height="3.4" rx="1.3" />
+    <path d="M8.5 11h7" /><path d="M8.5 14.5h7" /><path d="M8.5 18h4.5" />
+  </svg>
+);
+
 const T = {
   ar: {
     title: "سلة الطلبات",
@@ -431,8 +441,8 @@ export default function CartPage() {
       {/* HEADER */}
       <div style={{ background: "linear-gradient(135deg, #001f4d, #003578)", padding: "36px 5% 28px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 900, color: "#fff", margin: "0 0 8px" }}>
-            🛒 {t.title}
+          <h1 style={{ fontSize: "clamp(1.5rem,3vw,2.2rem)", fontWeight: 900, color: "#fff", margin: "0 0 8px", display: "flex", alignItems: "center", gap: 10 }}>
+            <OrderIcon size={28} color="#fff" /> {t.title}
           </h1>
           <p style={{ color: "rgba(255,255,255,.6)", fontSize: 14, margin: 0 }}>{t.subtitle}</p>
         </div>
@@ -442,7 +452,7 @@ export default function CartPage() {
         {items.length === 0 ? (
           /* EMPTY STATE */
           <div style={{ background: "#fff", border: "1.5px solid var(--gray-light)", padding: "80px 40px", textAlign: "center" }}>
-            <div style={{ fontSize: 64, marginBottom: 16 }}>🛒</div>
+            <div style={{ marginBottom: 16, color: "var(--blue)" }}><OrderIcon size={72} color="var(--blue)" /></div>
             <h2 style={{ fontSize: 20, fontWeight: 900, color: "var(--text)", margin: "0 0 10px" }}>{t.empty}</h2>
             <p style={{ color: "var(--gray)", fontSize: 14, marginBottom: 24 }}>{t.emptySub}</p>
             <a href="/products" style={{ background: "var(--blue)", color: "#fff", padding: "13px 32px", fontSize: 14, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
