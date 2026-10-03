@@ -307,7 +307,8 @@ h2.shw { color: #fff; }
 .val-item { padding: 26px 18px; border-inline-end: 1px solid var(--gray-light); transition: background .3s; }
 .val-item:last-child { border-inline-end: none; }
 .val-item:hover { background: var(--blue-light); }
-.val-ico { font-size: 22px; margin-bottom: 9px; }
+.val-ico { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: var(--blue-light); color: var(--blue); margin-bottom: 12px; transition: background .3s, color .3s; }
+.val-item:hover .val-ico { background: var(--blue); color: #fff; }
 .val-t { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--blue); margin-bottom: 5px; }
 [dir=rtl] .val-t { text-transform: none; letter-spacing: 0; font-size: 13px; }
 .val-b { font-size: 12px; line-height: 1.7; color: var(--gray); }

@@ -53,7 +53,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/careers", L("الوظائف", "Careers")],
     ["/faq", L("الأسئلة الشائعة", "FAQ")],
     ["/#clients", L("عملاؤنا", "Clients")],
-    ["/#partners", L("شركاؤنا", "Partners")],
+    ["/#partners", L("علاماتنا", "Our Brands")],
     ["/#contact", L("اتصل بنا", "Contact")],
   ];
   return (
@@ -104,7 +104,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
             </div>
           </div>
           <a href="/#clients">{L("عملاؤنا", "Clients")}</a>
-          <a href="/#partners">{L("شركاؤنا", "Partners")}</a>
+          <a href="/#partners">{L("علاماتنا", "Our Brands")}</a>
           <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
           <a href="/faq">{L("الأسئلة الشائعة", "FAQ")}</a>
           <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
@@ -175,7 +175,7 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
           <div className="ft-col-h">{L("تواصل معنا", "Contact")}</div>
           <ul className="ft-links">
             <li><a href="tel:+218948020200" dir="ltr">+218 94 802 0200</a></li>
-            <li><a href="mailto:info@alshowla.com">info@alshowla.com</a></li>
+            <li><a href="mailto:sales@alshowla.com">sales@alshowla.com</a></li>
             <li><a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             <li><a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer">Instagram</a></li>

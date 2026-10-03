@@ -168,7 +168,7 @@ function generateQuoteHTML(
     <div class="logo-area">
       <h1>${lang === "ar" ? "الشعلة الرائدة" : "AL-SHOWLA AL-RAEDA"}</h1>
       <p>${lang === "ar" ? "مواد البناء والحلول الإنشائية · بنغازي، ليبيا" : "Building Materials & Construction · Benghazi, Libya"}</p>
-      <p style="margin-top:3px;font-size:11px;color:#94a3b8;">+218 94 802 0200 · info@alshowla.com</p>
+      <p style="margin-top:3px;font-size:11px;color:#94a3b8;">+218 94 802 0200 · sales@alshowla.com</p>
     </div>
     <div class="quote-meta">
       <div class="qnum">${lang === "ar" ? "طلب عرض سعر" : "QUOTATION REQUEST"} #${quoteNum}</div>
@@ -194,7 +194,7 @@ function generateQuoteHTML(
       <div class="info-row"><strong>${lang === "ar" ? "الشركة:" : "Company:"}</strong> ${lang === "ar" ? "شركة الشعلة الرائدة" : "Al-Showla Al-Raeda Co."}</div>
       <div class="info-row"><strong>${lang === "ar" ? "العنوان:" : "Address:"}</strong> ${lang === "ar" ? "بنغازي، ليبيا" : "Benghazi, Libya"}</div>
       <div class="info-row"><strong>${lang === "ar" ? "الهاتف:" : "Phone:"}</strong> +218 94 802 0200</div>
-      <div class="info-row"><strong>${lang === "ar" ? "البريد:" : "Email:"}</strong> info@alshowla.com</div>
+      <div class="info-row"><strong>${lang === "ar" ? "البريد:" : "Email:"}</strong> sales@alshowla.com</div>
     </div>
   </div>
 

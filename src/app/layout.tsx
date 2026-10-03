@@ -73,7 +73,7 @@ const ORG_JSONLD = {
     "@type": "ContactPoint",
     telephone: "+218-94-802-0200",
     contactType: "sales",
-    email: "info@alshowla.com",
+    email: "sales@alshowla.com",
   },
   sameAs: [
     "https://www.facebook.com/ALSHOLA1500",
