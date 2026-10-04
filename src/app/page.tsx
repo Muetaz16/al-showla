@@ -67,7 +67,7 @@ const T = {
     prod3: "Ceramic, Porcelain & Stone", prod4: "Flooring",
     prod5: "Architectural Finishes & Solutions", prod6: "Steel, Cement & More",
     prod7: "Industrial Tools & Equipment", prod8: "Thermal Insulation", prodAll: "All Products",
-    brandsLbl: "Our Brands",
+    brandsLbl: "Our Brands", brandsH2a: "Our", brandsH2b: "Brands",
     projectsLbl: "Our Projects", projectsH2a: "Featured", projectsH2b: "Projects", projectsSupply: "General Supplies",
     // Clients
     clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
@@ -146,7 +146,7 @@ const T = {
     prod3: "السيراميك والبورسلين والأحجار", prod4: "الأرضيات",
     prod5: "التشطيبات والحلول المعمارية", prod6: "الحديد والأسمنت وغيرها",
     prod7: "الأدوات والمعدات الصناعية", prod8: "عزل حراري", prodAll: "جميع المنتجات",
-    brandsLbl: "علاماتنا التجارية",
+    brandsLbl: "علاماتنا التجارية", brandsH2a: "علاماتنا", brandsH2b: "التجارية",
     projectsLbl: "مشاريعنا", projectsH2a: "أبرز", projectsH2b: "المشاريع", projectsSupply: "توريدات عامة",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
     cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
@@ -1145,6 +1145,53 @@ export default function Home() {
                 ) : (
                   <span>{lang === "ar" ? p.nameAr : p.nameEn}</span>
                 )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════ BRANDS ══════════════════ */}
+      <section id="brands" className="sec" style={{ background: "var(--white)" }}>
+        <div className="con">
+          <div className="lbl ao">{t.brandsLbl}</div>
+          <h2 className="sh ao">{t.brandsH2a} <em>{t.brandsH2b}</em></h2>
+          <div className="pg-grid">
+            {BRAND_DATA.map((b, i) => (
+              <div className="pg" key={i}
+                onClick={() => setSelectedBrand(b)}
+                title={b.name}
+                style={{ cursor: "pointer", position: "relative", transition: "all .3s", overflow: "hidden" }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
+                  (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(0,81,162,.15)";
+                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,81,162,.3)";
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.transform = "none";
+                  (e.currentTarget as HTMLElement).style.boxShadow = "none";
+                  (e.currentTarget as HTMLElement).style.borderColor = "";
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={b.url} alt={b.name}
+                  onError={(e) => {
+                    const el = e.target as HTMLImageElement;
+                    el.style.display = "none";
+                    const s = document.createElement("span");
+                    s.textContent = b.name;
+                    s.style.cssText = "font-size:12px;font-weight:800;color:var(--gray);opacity:.5;";
+                    el.parentElement?.appendChild(s);
+                  }} />
+                <div style={{
+                  position: "absolute", bottom: 0, left: 0, right: 0,
+                  background: "linear-gradient(to top, rgba(0,31,77,.8), transparent)",
+                  color: "#fff", fontSize: 10, fontWeight: 800, padding: "12px 6px 4px",
+                  opacity: 0, transition: "opacity .3s",
+                  textAlign: "center", letterSpacing: ".02em",
+                }} className="br-hover-label">
+                  {lang === "ar" ? "عرض التفاصيل" : "View Details"}
+                </div>
               </div>
             ))}
           </div>

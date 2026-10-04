@@ -89,9 +89,9 @@ const T = {
     ],
     catLbl: "كتالوجنا", catH: "أقسام", catHem: "المنتجات",
     cats: ["كيماويات البناء", "الأدوات والمعدات الصناعية", "أنظمة الجبس بورد", "السيراميك والبورسلين والأحجار", "الأرضيات والتشطيبات المعمارية", "أنظمة تصريف مياه الأمطار", "الحديد والأسمنت وغيرها", "العزل الحراري"],
-    brandsLbl: "علاماتنا التجارية", brandsH: "علاماتنا", brandsHem: "التجارية",
     projLbl: "مشاريعنا", projH: "أبرز", projHem: "المشاريع", projSupply: "توريدات عامة",
     partnersLbl: "شركاؤنا", partnersH: "", partnersHem: "شركاؤنا",
+    brandsLbl: "علاماتنا التجارية", brandsH: "علاماتنا", brandsHem: "التجارية",
     sectorsLbl: "من نخدم", sectorsH: "قطاعات", sectorsHem: "نعتمد عليها",
     sectors: [["المطورون العقاريون", "مواد متميزة للمشاريع الكبرى والمعالم العمرانية."], ["شركات المقاولات الكبرى", "حلول مواد متكاملة من البداية حتى التسليم."], ["الحكومة والبنية التحتية", "دعم المشاريع على النطاق الوطني بموثوقية عالية."], ["التجار وأصحاب الأعمال", "سلسلة إمداد جملة موثوقة ومستقرة."]],
     ctaH: "لنبني", ctaHem: "معًا", ctaP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
@@ -149,9 +149,9 @@ const T = {
     ],
     catLbl: "Our Catalog", catH: "Product", catHem: "Categories",
     cats: ["Construction Chemicals", "Industrial Tools & Equipment", "Gypsum Board Systems", "Ceramic, Porcelain & Stone", "Flooring & Architectural Finishes", "Rainwater Drainage Systems", "Steel, Cement & More", "Thermal Insulation"],
-    brandsLbl: "Our Brands", brandsH: "Our", brandsHem: "Brands",
     projLbl: "Our Projects", projH: "Featured", projHem: "Projects", projSupply: "General Supplies",
     partnersLbl: "Our Partners", partnersH: "Our", partnersHem: "Partners",
+    brandsLbl: "Our Brands", brandsH: "Our", brandsHem: "Brands",
     sectorsLbl: "Who We Serve", sectorsH: "Sectors That", sectorsHem: "Rely on Us",
     sectors: [["Real Estate Developers", "Premium materials for major projects and landmarks."], ["Major Contracting Companies", "Integrated material solutions from start to handover."], ["Government & Infrastructure", "Reliable support for national-scale projects."], ["Traders & Business Owners", "A reliable, stable wholesale supply chain."]],
     ctaH: "Let's Build", ctaHem: "Together", ctaP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
@@ -358,23 +358,8 @@ export default function CompanyProfilePage() {
           </div>
         </section>
 
-        {/* ── BRANDS ── */}
-        <section className="cp-sec cp-alt">
-          <div className="cp-wrap">
-            <SecHead lbl={t.brandsLbl} h={t.brandsH} em={t.brandsHem} />
-            <div className="cp-brands">
-              {BRANDS.map((b) => (
-                <div key={b.name} className="cp-logo" title={b.name}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={b.logo} alt={b.name} loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ── FEATURED PROJECTS ── */}
-        <section className="cp-sec">
+        <section className="cp-sec cp-alt">
           <div className="cp-wrap">
             <SecHead lbl={t.projLbl} h={t.projH} em={t.projHem} />
             <div className="cp-grid3">
@@ -400,7 +385,7 @@ export default function CompanyProfilePage() {
         </section>
 
         {/* ── PARTNERS ── */}
-        <section className="cp-sec cp-alt">
+        <section className="cp-sec">
           <div className="cp-wrap">
             <SecHead lbl={t.partnersLbl} h={t.partnersH} em={t.partnersHem} />
             <div className="cp-partners">
@@ -412,6 +397,21 @@ export default function CompanyProfilePage() {
                   ) : (
                     <span>{isAr ? p.nameAr : p.nameEn}</span>
                   )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── BRANDS ── */}
+        <section className="cp-sec cp-alt">
+          <div className="cp-wrap">
+            <SecHead lbl={t.brandsLbl} h={t.brandsH} em={t.brandsHem} />
+            <div className="cp-brands">
+              {BRANDS.map((b) => (
+                <div key={b.name} className="cp-logo" title={b.name}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={b.logo} alt={b.name} loading="lazy" />
                 </div>
               ))}
             </div>
