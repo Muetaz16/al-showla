@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PRODUCTS, CATEGORIES, unitLabel, type Product } from "@/lib/products";
 import { submitSampleRequest } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
@@ -86,6 +86,13 @@ export default function SampleRequestPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
   const [saving, setSaving] = useState(false);
+
+  // Coming from a product's "Request Sample" button: preselect it and skip to the details step
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get("product");
+    const p = id ? PRODUCTS.find(x => x.id === id) : undefined;
+    if (p) { setSelectedProduct(p); setStep(2); }
+  }, []);
 
   const t = T[lang];
   const dir = lang === "ar" ? "rtl" : "ltr";

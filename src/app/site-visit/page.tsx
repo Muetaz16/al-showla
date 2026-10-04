@@ -39,6 +39,9 @@ export default function SiteVisitPage() {
     setError("");
     const fd = new FormData(e.currentTarget);
     const data = {
+      name: fd.get("name") as string,
+      phone: fd.get("phone") as string,
+      email: fd.get("email") as string,
       issueType: fd.get("issueType") as string,
       projectLocation: fd.get("projectLocation") as string,
       city: fd.get("city") as string,
@@ -73,6 +76,10 @@ export default function SiteVisitPage() {
       </p>
 
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 15 }}>
+        <input name="name" placeholder="الاسم الكامل" required style={inputStyle} />
+        <input name="phone" type="tel" placeholder="رقم الهاتف" required dir="ltr" style={{ ...inputStyle, textAlign: "right" }} />
+        <input name="email" type="email" placeholder="البريد الإلكتروني (اختياري)" dir="ltr" style={{ ...inputStyle, textAlign: "right" }} />
+
         <select name="issueType" required style={inputStyle}>
           <option value="">-- اختر نوع المشكلة --</option>
           <option value="waterproofing">مشاكل تسربات المياه والعزل</option>

@@ -350,6 +350,9 @@ model TechnicalDocument {
 
 model SiteVisitRequest {
   id              String   @id @default(cuid())
+  name            String?
+  phone           String?
+  email           String?
   issueType       String
   projectLocation String
   city            String

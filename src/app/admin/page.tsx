@@ -1263,6 +1263,8 @@ export default function AdminDashboard() {
                               <strong style={{ color:"#3b82f6" }}>{item.id}</strong>
                               <span style={{ color:"rgba(255,255,255,.5)", marginRight:8 }}> — {item.name || item.projectName || item.productName || item.participantName || item.client || item.city || item.orderId || ""}</span>
                               {(item.whatsappNumber || item.serialNumber || item.preferredTime) && <span style={{ color:"rgba(255,255,255,.4)", marginRight:8 }}>{item.whatsappNumber || item.serialNumber || item.preferredTime}</span>}
+                              {(item.phone || item.data?.phone) && <span style={{ color:"rgba(255,255,255,.4)", marginRight:8 }} dir="ltr">📞 {item.phone || item.data.phone}</span>}
+                              {(item.email || item.data?.email) && <span style={{ color:"rgba(255,255,255,.4)", marginRight:8 }}>✉ {item.email || item.data.email}</span>}
                               {item.date && <span style={{ color:"rgba(255,255,255,.3)" }}>{new Date(item.date).toLocaleDateString("ar-LY")}</span>}
                               {item.data?.position && <span style={{ color:"rgba(255,255,255,.4)", marginRight:8 }}>· {item.data.position}{item.data.city ? " — " + item.data.city : ""}</span>}
                               {item.data?.cvFile && <a href={item.data.cvFile} download={item.data.cvName || "cv"} style={{ color:"#22d3ee", marginRight:8, textDecoration:"none", fontWeight:700 }}>⬇ السيرة الذاتية</a>}

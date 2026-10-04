@@ -391,12 +391,17 @@ async function seedBanners() {
 }
 
 export async function getBanners(): Promise<any[]> {
-  await seedBanners();
-  const banners = await prisma.banner.findMany({
-    where: { active: true },
-    orderBy: { order: 'asc' }
-  });
-  return banners;
+  try {
+    await seedBanners();
+    return await prisma.banner.findMany({
+      where: { active: true },
+      orderBy: { order: 'asc' }
+    });
+  } catch (e) {
+    // No DB (e.g. DATABASE_URL missing locally): serve the default banners instead of a 500
+    console.error(e);
+    return BANNER_SEED.filter((b: any) => b.active !== false);
+  }
 }
 
 export async function getAllBanners(): Promise<any[]> {
@@ -631,6 +636,9 @@ export async function submitSiteVisit(data: any): Promise<string | null> {
     await prisma.siteVisitRequest.create({
       data: {
         id,
+        name: data.name,
+        phone: data.phone,
+        email: data.email || null,
         issueType: data.issueType,
         projectLocation: data.projectLocation,
         city: data.city,
@@ -638,7 +646,7 @@ export async function submitSiteVisit(data: any): Promise<string | null> {
         imageUrls: Array.isArray(data.imageUrls) ? data.imageUrls.slice(0, 4) : [],
       }
     });
-    await notifyAdmin("طلب زيارة موقع ميدانية 👷", `مدينة ${data.city} — مرجع ${id}`);
+    await notifyAdmin("طلب زيارة موقع ميدانية 👷", `${data.name} (${data.phone}) — مدينة ${data.city} — مرجع ${id}`);
     return id;
   } catch (e) {
     console.error(e);

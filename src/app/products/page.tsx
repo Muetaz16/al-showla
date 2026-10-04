@@ -1270,7 +1270,6 @@ function ProductModal({
   const [reviews, setReviews] = useState<Review[]>([]);
   const [newReview, setNewReview] = useState({ rating: 5, comment: "" });
   const [loading, setLoading] = useState(false);
-  const [sampleRequested, setSampleRequested] = useState(false);
 
   useEffect(() => {
     getProductReviews(product.id).then(setReviews);
@@ -1298,11 +1297,6 @@ function ProductModal({
     setLoading(false);
   };
 
-  const handleRequestSample = () => {
-    if (!user) return alert(lang === "ar" ? "يجب تسجيل الدخول لطلب عينة" : "Please login to request sample");
-    setSampleRequested(true);
-    setTimeout(() => setSampleRequested(false), 3000);
-  };
 
   return (
     <div style={{
@@ -1394,16 +1388,16 @@ function ProductModal({
 
             <p style={{ fontSize: 11, color: "var(--gray)", marginBottom: 24, lineHeight: 1.6 }}>{t.dataNote}</p>
 
-            <button
-              onClick={handleRequestSample}
-              disabled={sampleRequested}
+            <a
+              href={`/sample?product=${encodeURIComponent(product.id)}`}
               style={{
-                width: "100%", padding: 15, background: sampleRequested ? "#059669" : "var(--accent)",
+                display: "block", textAlign: "center", boxSizing: "border-box", textDecoration: "none",
+                width: "100%", padding: 15, background: "var(--accent)",
                 color: "#fff", border: "none", borderRadius: 12, fontWeight: "bold",
                 fontSize: 16, cursor: "pointer", marginBottom: 15, fontFamily: "inherit"
               }}>
-              {sampleRequested ? "✓ تم إرسال طلب العينة بنجاح" : t.requestSample}
-            </button>
+              {t.requestSample}
+            </a>
 
             {/* Feature 1: Smart WhatsApp Button */}
             <a 

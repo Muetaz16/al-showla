@@ -53,7 +53,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/careers", L("الوظائف", "Careers")],
     ["/faq", L("الأسئلة الشائعة", "FAQ")],
     ["/#clients", L("عملاؤنا", "Clients")],
-    ["/#partners", L("علاماتنا", "Our Brands")],
+    ["/#partners", L("شركاؤنا", "Our Partners")],
     ["/#contact", L("اتصل بنا", "Contact")],
   ];
   return (
@@ -104,7 +104,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
             </div>
           </div>
           <a href="/#clients">{L("عملاؤنا", "Clients")}</a>
-          <a href="/#partners">{L("علاماتنا", "Our Brands")}</a>
+          <a href="/#partners">{L("شركاؤنا", "Our Partners")}</a>
           <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
           <a href="/faq">{L("الأسئلة الشائعة", "FAQ")}</a>
           <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>

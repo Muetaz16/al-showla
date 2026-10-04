@@ -13,7 +13,7 @@ const T = {
     // Nav
     home: "Home", company: "Company ▾", whoWeAre: "Who We Are",
     ceoMsg: "Founder & Chairman's Message", services: "Services", products: "Products",
-    clients: "Clients", partners: "Our Brands", contact: "Contact",
+    clients: "Clients", partners: "Our Partners", contact: "Contact",
     orderNow: "Order Now",
     // Hero
     heroTag: "Est. 2005 · Tobruk, Libya",
@@ -66,7 +66,7 @@ const T = {
     prod3: "Ceramic, Porcelain & Stone", prod4: "Flooring",
     prod5: "Architectural Finishes & Solutions", prod6: "Steel, Cement & More",
     prod7: "Industrial Tools & Equipment", prod8: "Thermal Insulation", prodAll: "All Products",
-    brandsLbl: "Our Brands",
+    brandsLbl: "Our Partners",
     // Clients
     clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
     cl1: "Real Estate Developers", cl1s: "Premium materials for landmark projects",
@@ -75,7 +75,7 @@ const T = {
     cl4: "Major Contracting Companies", cl4s: "End-to-end material solutions",
     cl5: "Individuals & Private Projects", cl5s: "Quality materials for every home",
     // Partners
-    partnersLbl: "Our Brands", partnersH2a: "Our", partnersH2b: "Brands",
+    partnersLbl: "Our Partners", partnersH2a: "Our", partnersH2b: "Partners",
     // Contact
     contactLbl: "Get In Touch", contactH: "Let's Build", contactHem: "Together",
     contactP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
@@ -98,7 +98,7 @@ const T = {
   ar: {
     home: "الرئيسية", company: "الشركة ▾", whoWeAre: "من نحن",
     ceoMsg: " كلمة المؤسس ورئيس مجلس الإدارة ", services: "خدماتنا", products: "منتجاتنا",
-    clients: "عملاؤنا", partners: "علاماتنا", contact: "اتصل بنا",
+    clients: "عملاؤنا", partners: "شركاؤنا", contact: "اتصل بنا",
     orderNow: "اطلب الآن",
     heroTag: "تأسست 2005 · طبرق، ليبيا",
     heroH1a: "نبني مستقبل ليبيا",
@@ -144,14 +144,14 @@ const T = {
     prod3: "السيراميك والبورسلين والأحجار", prod4: "الأرضيات",
     prod5: "التشطيبات والحلول المعمارية", prod6: "الحديد والأسمنت وغيرها",
     prod7: "الأدوات والمعدات الصناعية", prod8: "عزل حراري", prodAll: "جميع المنتجات",
-    brandsLbl: "علاماتنا التجارية",
+    brandsLbl: "شركاؤنا",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
     cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
     cl2: "التجار وأصحاب الأعمال", cl2s: "سلسلة إمداد جملة موثوقة",
     cl3: "الحكومة والبنية التحتية", cl3s: "دعم المشاريع على النطاق الوطني",
     cl4: "شركات المقاولات الكبرى", cl4s: "حلول مواد متكاملة من البداية للنهاية",
     cl5: "الأفراد والمشاريع الخاصة", cl5s: "مواد جودة لكل منزل",
-    partnersLbl: "علاماتنا التجارية", partnersH2a: "علاماتنا", partnersH2b: "التجارية",
+    partnersLbl: "شركاؤنا", partnersH2a: "", partnersH2b: "شركاؤنا",
     contactLbl: "تواصل معنا", contactH: "لنبني", contactHem: "معاً",
     contactP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
     phoneLbl: "الهاتف", emailLbl: "البريد الإلكتروني", addressLbl: "العنوان", hoursLbl: "ساعات العمل",
