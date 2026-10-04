@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // The old projects page was empty; projects now live in the homepage "Featured Projects" section.
+  async redirects() {
+    return [{ source: "/case-studies", destination: "/#projects", permanent: false }];
+  },
+
   async headers() {
     return [
       {

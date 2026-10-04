@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // authenticated routes are intentionally excluded from the sitemap.
   const pages = [
     "", "/products", "/certificates", "/sample", "/faq", "/blog",
-    "/calculator", "/careers",
+    "/calculator", "/careers", "/company-profile", "/delivery", "/applicators",
   ];
   return pages.map((path) => ({
     url: `${base}${path}`,
