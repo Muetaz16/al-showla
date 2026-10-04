@@ -57,6 +57,7 @@ const T = {
     sortRating: "التقييم",
     sortNewest: "الأحدث",
     certificates: "شهادات الجودة",
+    datasheet: "الداتا شيت (النشرة الفنية)",
     specs: "المواصفات",
     brand: "العلامة التجارية",
     price: "السعر",
@@ -105,6 +106,7 @@ const T = {
     sortRating: "Rating",
     sortNewest: "Newest",
     certificates: "Quality Certificates",
+    datasheet: "Technical Data Sheet",
     specs: "Specifications",
     brand: "Brand",
     price: "Price",
@@ -1364,6 +1366,14 @@ function ProductModal({
                   ))}
                 </ul>
               </div>
+            )}
+
+            {/* Official technical data sheet */}
+            {product.datasheetUrl && (
+              <a href={product.datasheetUrl} target="_blank" rel="noopener noreferrer"
+                style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 20, padding: 12, border: "1.5px solid var(--blue)", borderRadius: 12, color: "var(--blue)", fontWeight: 800, textDecoration: "none", fontSize: 14 }}>
+                📄 {t.datasheet} ↗
+              </a>
             )}
 
             {/* Linked quality certificates */}

@@ -46,6 +46,7 @@ export interface Product {
   unit: string;
   specAr: string[];
   specEn: string[];
+  datasheetUrl?: string; // official Technical Data Sheet (TDS) or product page
 }
 
 // §9: units are stored as "عربي / English". Show only the language-appropriate
