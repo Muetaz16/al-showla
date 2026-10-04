@@ -722,12 +722,21 @@ const DELIVERY_ZONE_SEED = [
   { id: "dz-sab", city: "سبها", estimatedDays: "5 - 7 أيام", fees: 0, conditions: "قد تُطبَّق رسوم شحن" },
 ];
 
+// Cities added at the client's request. Ensured on existing databases too (by unique city);
+// days/fees are placeholders until the client confirms — editable from the admin panel.
+const DELIVERY_ZONE_ADDED = [
+  { id: "dz-drn", city: "درنة", estimatedDays: "يُحدَّد عند الطلب", fees: 0, conditions: "يرجى التواصل مع المبيعات لتأكيد مدة ورسوم التوصيل" },
+  { id: "dz-bay", city: "البيضاء", estimatedDays: "يُحدَّد عند الطلب", fees: 0, conditions: "يرجى التواصل مع المبيعات لتأكيد مدة ورسوم التوصيل" },
+  { id: "dz-ajd", city: "اجدابيا", estimatedDays: "يُحدَّد عند الطلب", fees: 0, conditions: "يرجى التواصل مع المبيعات لتأكيد مدة ورسوم التوصيل" },
+];
+
 export async function getDeliveryZones(): Promise<any[]> {
   try {
     const count = await prisma.deliveryZone.count();
     if (count === 0) {
       for (const z of DELIVERY_ZONE_SEED) await prisma.deliveryZone.create({ data: z as any });
     }
+    await prisma.deliveryZone.createMany({ data: DELIVERY_ZONE_ADDED, skipDuplicates: true });
     return await prisma.deliveryZone.findMany({ orderBy: { city: 'asc' } });
   } catch {
     return [];
@@ -802,8 +811,18 @@ export async function deleteCaseStudy(id: string): Promise<boolean> {
 
 // ── Approved applicators directory (item 9) ──────────────────────
 
+// Certified applicators named by the client. Seeded once into an empty directory; details
+// (specialty, contact, certificates) to be completed from the admin panel when provided.
+const APPLICATOR_SEED = [
+  { id: "app-shield-emmar", name: "Shield Emmar", systemSpecialty: "مقاول تطبيق معتمد", contactInfo: {}, certifications: ["مقاول معتمد"] },
+  { id: "app-saleh-alawami", name: "صالح العوامي", systemSpecialty: "مقاول تطبيق معتمد", contactInfo: {}, certifications: ["مقاول معتمد"] },
+];
+
 export async function getApplicators(): Promise<any[]> {
   try {
+    if ((await prisma.applicator.count()) === 0) {
+      await prisma.applicator.createMany({ data: APPLICATOR_SEED, skipDuplicates: true });
+    }
     const list = await prisma.applicator.findMany({ orderBy: { date: 'desc' } });
     return list.map((a: any) => ({ ...a, date: a.date?.toISOString?.() ?? null }));
   } catch {
