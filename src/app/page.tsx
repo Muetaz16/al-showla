@@ -451,62 +451,62 @@ export default function Home() {
     {
       name: "Reform",
       url: "https://alshowla.com/wp-content/uploads/2026/01/REform.jpg",
-      country: lang === "ar" ? "🌍 منتجات متخصصة" : "🌍 Specialized Products",
-      founded: "—",
+      country: "",
+      founded: "",
       website: "#",
-      category: lang === "ar" ? "مواد البناء والتشطيب" : "Building & Finishing Materials",
-      descAr: "ريفورم علامة تجارية متخصصة في مواد البناء والتشطيب الداخلي والخارجي. توفر منتجات عالية الجودة للمقاولين والمطورين العقاريين تشمل مواد الديكور الداخلي والواجهات الخارجية والأرضيات.",
-      descEn: "Reform is a specialized brand in building and interior/exterior finishing materials. Provides high-quality products for contractors and real estate developers including interior décor, facade, and flooring materials.",
-      products: lang === "ar" ? ["مواد التشطيب الداخلي", "ديكور الواجهات", "أرضيات ولوازمها", "مواد العزل"] : ["Interior finishing materials", "Facade décor", "Flooring & accessories", "Insulation materials"],
-      certifications: ["ISO 9001", "CE Mark"],
+      category: "",
+      descAr: "",
+      descEn: "",
+      products: [] as string[],
+      certifications: [] as string[],
     },
     {
       name: "NCC",
       url: "https://alshowla.com/wp-content/uploads/2026/01/NCC.jpg",
-      country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
-      founded: "—",
+      country: "",
+      founded: "",
       website: "#",
-      category: lang === "ar" ? "مواد بناء وإنشاء" : "Building & Construction Materials",
-      descAr: "NCC شركة ليبية تعمل في مجال توريد مواد البناء والإنشاء. تدعم المشاريع الإنشائية في ليبيا بمنتجات تتوافق مع احتياجات السوق المحلية ومتطلبات البناء في المناخ الليبي.",
-      descEn: "NCC is a Libyan company working in the supply of building and construction materials. Supporting construction projects in Libya with products compatible with local market needs and Libyan climate building requirements.",
-      products: lang === "ar" ? ["مواد البناء", "مواد التشطيب", "لوازم الإنشاء"] : ["Building materials", "Finishing materials", "Construction supplies"],
-      certifications: ["Libyan Standards Authority"],
+      category: "",
+      descAr: "",
+      descEn: "",
+      products: [] as string[],
+      certifications: [] as string[],
     },
     {
       name: "الشركة الليبية للحديد والصلب",
       url: "/partners/libyan-iron-steel.jpg",
-      country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
-      founded: "—",
+      country: lang === "ar" ? "🇱🇾 ليبيا — مصراتة" : "🇱🇾 Libya — Misrata",
+      founded: "",
       website: "#",
       category: lang === "ar" ? "صناعة الحديد والصلب" : "Iron & Steel Industry",
-      descAr: "الشركة الليبية للحديد والصلب، إحدى أكبر الشركات في ليبيا وشمال أفريقيا، متخصصة في إنتاج منتجات الحديد والصلب بأنواعها المختلفة.",
-      descEn: "Libyan Iron and Steel Company (LISCO), one of the largest in Libya and North Africa, specialized in producing various iron and steel products.",
-      products: lang === "ar" ? ["حديد التسليح", "الصلب", "المنتجات المعدنية"] : ["Rebar", "Steel", "Metal Products"],
-      certifications: ["ISO 9001", "Libyan Standards Authority"],
+      descAr: "الشركة الليبية للحديد والصلب (LISCO) في مصراتة، من أكبر مصانع الحديد والصلب في ليبيا.",
+      descEn: "Libyan Iron and Steel Company (LISCO) in Misrata, one of the largest iron and steel producers in Libya.",
+      products: [] as string[],
+      certifications: [] as string[],
     },
     {
       name: "شركة جولدن متيل",
       url: "/partners/golden-metal.jpg",
-      country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
-      founded: "—",
+      country: "",
+      founded: "",
       website: "#",
       category: lang === "ar" ? "الصناعات المعدنية" : "Metal Industries",
-      descAr: "شركة جولدن متيل، متخصصة في توفير وتصنيع المنتجات المعدنية المتنوعة لتلبية احتياجات قطاع البناء والتشييد.",
-      descEn: "Golden Metal Company, specialized in providing and manufacturing various metal products to meet the needs of the construction sector.",
-      products: lang === "ar" ? ["المنتجات المعدنية", "الهياكل المعدنية"] : ["Metal Products", "Metal Structures"],
-      certifications: ["Libyan Standards Authority"],
+      descAr: "",
+      descEn: "",
+      products: [] as string[],
+      certifications: [] as string[],
     },
     {
       name: "الشركة العربية للأسمنت",
       url: "/partners/arabian-cement.jpg",
-      country: lang === "ar" ? "🇱🇾 ليبيا" : "🇱🇾 Libya",
-      founded: "—",
+      country: "",
+      founded: "",
       website: "#",
       category: lang === "ar" ? "صناعة الأسمنت" : "Cement Industry",
-      descAr: "الشركة العربية للأسمنت، من أبرز مصنعي الأسمنت في المنطقة، تقدم منتجات أسمنتية عالية الجودة لجميع أنواع المشاريع الإنشائية.",
-      descEn: "Arab Cement Company, one of the leading cement manufacturers in the region, providing high-quality cement products for all types of construction projects.",
-      products: lang === "ar" ? ["الأسمنت البورتلاندي", "الأسمنت المقاوم"] : ["Portland Cement", "Sulfate Resistant Cement"],
-      certifications: ["ISO 9001", "Libyan Standards Authority"],
+      descAr: "",
+      descEn: "",
+      products: [] as string[],
+      certifications: [] as string[],
     },
   ];
 
@@ -898,7 +898,7 @@ export default function Home() {
                     />
                     <div>
                       <div style={{ fontSize: 22, fontWeight: 900, color: "#fff" }}>{selectedBrand.name}</div>
-                      <div style={{ fontSize: 13, color: "rgba(255,255,255,.7)", marginTop: 2 }}>{selectedBrand.country}</div>
+                      {selectedBrand.country && <div style={{ fontSize: 13, color: "rgba(255,255,255,.7)", marginTop: 2 }}>{selectedBrand.country}</div>}
                     </div>
                   </div>
                   <button
@@ -916,19 +916,19 @@ export default function Home() {
                   {/* Info chips */}
                   <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 20 }}>
                     {[{
-                      icon: "🏭", label: lang === "ar" ? "تأسست" : "Founded", val: selectedBrand.founded
+                      icon: "🏭", label: lang === "ar" ? "تأسست" : "Founded", val: selectedBrand.founded, show: !!selectedBrand.founded && selectedBrand.founded !== "—"
                     }, {
-                      icon: "📦", label: lang === "ar" ? "التخصص" : "Category", val: selectedBrand.category
+                      icon: "📦", label: lang === "ar" ? "التخصص" : "Category", val: selectedBrand.category, show: !!selectedBrand.category
                     }, {
-                      icon: "🌐", label: lang === "ar" ? "الموقع" : "Website",
-                      val: selectedBrand.website !== "#" ? (
+                      icon: "🌐", label: lang === "ar" ? "الموقع" : "Website", show: !!selectedBrand.website && selectedBrand.website !== "#",
+                      val: (
                         <a href={selectedBrand.website} target="_blank" rel="noreferrer"
                           style={{ color: "#0051a2", fontWeight: 700, textDecoration: "none" }}
                         >
                           {lang === "ar" ? "زيارة الموقع ↗" : "Visit Website ↗"}
                         </a>
-                      ) : (lang === "ar" ? "غير متاح" : "N/A")
-                    }].map((chip, ci) => (
+                      )
+                    }].filter((chip) => chip.show).map((chip, ci) => (
                       <div key={ci} style={{
                         background: "#f0f6ff", border: "1px solid #d0e4fb",
                         borderRadius: 10, padding: "10px 14px", flex: "1 1 180px",
@@ -944,16 +944,16 @@ export default function Home() {
                   </div>
 
                   {/* Description */}
-                  <p style={{
+                  {(lang === "ar" ? selectedBrand.descAr : selectedBrand.descEn) && <p style={{
                     fontSize: 14, lineHeight: 1.85, color: "#374151",
                     background: "#f8faff", border: "1px solid #e0ecff",
                     borderRadius: 12, padding: "16px 18px", margin: "0 0 20px",
                   }}>
                     {lang === "ar" ? selectedBrand.descAr : selectedBrand.descEn}
-                  </p>
+                  </p>}
 
                   {/* Products */}
-                  <div style={{ marginBottom: 20 }}>
+                  {selectedBrand.products.length > 0 && <div style={{ marginBottom: 20 }}>
                     <div style={{ fontSize: 13, fontWeight: 900, color: "#0051a2", marginBottom: 10, letterSpacing: ".04em" }}>
                       📋 {lang === "ar" ? "المنتجات والخدمات المتاحة" : "Available Products & Services"}
                     </div>
@@ -969,10 +969,10 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                  </div>
+                  </div>}
 
                   {/* Certifications */}
-                  <div style={{ marginBottom: 24 }}>
+                  {selectedBrand.certifications.length > 0 && <div style={{ marginBottom: 24 }}>
                     <div style={{ fontSize: 13, fontWeight: 900, color: "#0051a2", marginBottom: 10, letterSpacing: ".04em" }}>
                       🏅 {lang === "ar" ? "شهادات الجودة" : "Quality Certifications"}
                     </div>
@@ -988,7 +988,7 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                  </div>
+                  </div>}
 
                   {/* CTA */}
                   <div style={{ display: "flex", gap: 10 }}>
