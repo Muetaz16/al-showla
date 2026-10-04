@@ -10,10 +10,9 @@ import {
   RefreshCw, MonitorSmartphone, Building2, HardHat, Landmark, Store, Phone, Mail,
   MapPin, Clock, Printer, Quote, Target, Eye,
 } from "lucide-react";
-import { getCaseStudies } from "@/app/cms-actions";
+import { PROJECTS, PARTNERS } from "@/lib/company-data";
 
 type Lang = "ar" | "en";
-type CaseStudy = { id: string; title: string; description: string; status: string; owner: string; imageUrls: string[] };
 
 const LOGO = "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png";
 const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
@@ -90,9 +89,9 @@ const T = {
     ],
     catLbl: "كتالوجنا", catH: "أقسام", catHem: "المنتجات",
     cats: ["كيماويات البناء", "الأدوات والمعدات الصناعية", "أنظمة الجبس بورد", "السيراميك والبورسلين والأحجار", "الأرضيات والتشطيبات المعمارية", "أنظمة تصريف مياه الأمطار", "الحديد والأسمنت وغيرها", "العزل الحراري"],
-    brandsLbl: "شركاؤنا", brandsH: "", brandsHem: "شركاؤنا",
-    projLbl: "مشاريعنا", projH: "مشاريع", projHem: "منفّذة",
-    projOwner: "الجهة المالكة",
+    brandsLbl: "علاماتنا التجارية", brandsH: "علاماتنا", brandsHem: "التجارية",
+    projLbl: "مشاريعنا", projH: "أبرز", projHem: "المشاريع", projSupply: "توريدات عامة",
+    partnersLbl: "شركاؤنا", partnersH: "", partnersHem: "شركاؤنا",
     sectorsLbl: "من نخدم", sectorsH: "قطاعات", sectorsHem: "نعتمد عليها",
     sectors: [["المطورون العقاريون", "مواد متميزة للمشاريع الكبرى والمعالم العمرانية."], ["شركات المقاولات الكبرى", "حلول مواد متكاملة من البداية حتى التسليم."], ["الحكومة والبنية التحتية", "دعم المشاريع على النطاق الوطني بموثوقية عالية."], ["التجار وأصحاب الأعمال", "سلسلة إمداد جملة موثوقة ومستقرة."]],
     ctaH: "لنبني", ctaHem: "معًا", ctaP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
@@ -150,9 +149,9 @@ const T = {
     ],
     catLbl: "Our Catalog", catH: "Product", catHem: "Categories",
     cats: ["Construction Chemicals", "Industrial Tools & Equipment", "Gypsum Board Systems", "Ceramic, Porcelain & Stone", "Flooring & Architectural Finishes", "Rainwater Drainage Systems", "Steel, Cement & More", "Thermal Insulation"],
-    brandsLbl: "Our Partners", brandsH: "Our", brandsHem: "Partners",
-    projLbl: "Our Projects", projH: "Completed", projHem: "Projects",
-    projOwner: "Owner",
+    brandsLbl: "Our Brands", brandsH: "Our", brandsHem: "Brands",
+    projLbl: "Our Projects", projH: "Featured", projHem: "Projects", projSupply: "General Supplies",
+    partnersLbl: "Our Partners", partnersH: "Our", partnersHem: "Partners",
     sectorsLbl: "Who We Serve", sectorsH: "Sectors That", sectorsHem: "Rely on Us",
     sectors: [["Real Estate Developers", "Premium materials for major projects and landmarks."], ["Major Contracting Companies", "Integrated material solutions from start to handover."], ["Government & Infrastructure", "Reliable support for national-scale projects."], ["Traders & Business Owners", "A reliable, stable wholesale supply chain."]],
     ctaH: "Let's Build", ctaHem: "Together", ctaP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
@@ -179,13 +178,11 @@ function SecHead({ lbl, h, em, light }: { lbl: string; h: string; em: string; li
 
 export default function CompanyProfilePage() {
   const [lang, setLang] = useState<Lang>("ar");
-  const [projects, setProjects] = useState<CaseStudy[]>([]);
   const t = T[lang];
   const isAr = lang === "ar";
 
   useEffect(() => {
     if (new URLSearchParams(window.location.search).get("lang") === "en") setLang("en");
-    getCaseStudies().then((d) => setProjects(d as CaseStudy[])).catch(() => {});
   }, []);
 
   return (
@@ -376,29 +373,53 @@ export default function CompanyProfilePage() {
           </div>
         </section>
 
-        {/* ── PROJECTS (managed from the admin panel → case studies) ── */}
-        {projects.length > 0 && (
-          <section className="cp-sec">
-            <div className="cp-wrap">
-              <SecHead lbl={t.projLbl} h={t.projH} em={t.projHem} />
-              <div className="cp-grid3">
-                {projects.map((p) => (
-                  <div key={p.id} className="cp-proj">
-                    <div className="cp-proj-img" style={{ backgroundImage: p.imageUrls[0] ? `url(${p.imageUrls[0]})` : undefined }} />
-                    <div className="cp-proj-body">
-                      {p.status && <span className="cp-proj-st">{p.status}</span>}
-                      <h3>{p.title}</h3>
-                      {p.owner && <div className="cp-proj-own">{t.projOwner}: {p.owner}</div>}
-                    </div>
-                  </div>
+        {/* ── FEATURED PROJECTS ── */}
+        <section className="cp-sec">
+          <div className="cp-wrap">
+            <SecHead lbl={t.projLbl} h={t.projH} em={t.projHem} />
+            <div className="cp-grid3">
+              {PROJECTS.filter((p) => p.group === "major").map((p, i) => (
+                <div key={i} className="cp-card">
+                  <div className="cp-ico cp-ico-blue"><Building2 size={22} /></div>
+                  <h3>{isAr ? p.titleAr : p.titleEn}</h3>
+                  {p.parties.length > 0 && (
+                    <ul className="cp-parties">{p.parties.map(([ar, en], j) => <li key={j}>{isAr ? ar : en}</li>)}</ul>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div className="cp-supply">
+              <div className="cp-supply-h"><Truck size={18} /> {t.projSupply}</div>
+              <div className="cp-supply-list">
+                {PROJECTS.filter((p) => p.group === "supply").map((p, i) => (
+                  <span key={i}>{isAr ? p.titleAr : p.titleEn}{p.parties[0] ? ` — ${isAr ? p.parties[0][0] : p.parties[0][1]}` : ""}</span>
                 ))}
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
+
+        {/* ── PARTNERS ── */}
+        <section className="cp-sec cp-alt">
+          <div className="cp-wrap">
+            <SecHead lbl={t.partnersLbl} h={t.partnersH} em={t.partnersHem} />
+            <div className="cp-partners">
+              {PARTNERS.map((p, i) => (
+                <div key={i} className="cp-partner">
+                  {p.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} loading="lazy" />
+                  ) : (
+                    <span>{isAr ? p.nameAr : p.nameEn}</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* ── SECTORS ── */}
-        <section className={`cp-sec${projects.length > 0 ? " cp-alt" : ""}`}>
+        <section className="cp-sec">
           <div className="cp-wrap">
             <SecHead lbl={t.sectorsLbl} h={t.sectorsH} em={t.sectorsHem} />
             <div className="cp-sectors">
@@ -528,12 +549,17 @@ const CSS = `
 .cp-logo:hover { box-shadow: 0 10px 24px rgba(0,31,77,.1); }
 .cp-logo img { max-width: 100%; max-height: 80px; object-fit: contain; }
 
-.cp-proj { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; }
-.cp-proj-img { height: 190px; background: #e2e8f0 center / cover; }
-.cp-proj-body { padding: 18px; }
-.cp-proj-st { font-size: 11px; font-weight: 800; color: #059669; background: #d1fae5; padding: 3px 8px; border-radius: 4px; }
-.cp-proj-body h3 { font-size: 17px; margin: 10px 0 6px; color: var(--blue-deeper, #001f4d); }
-.cp-proj-own { font-size: 13px; color: #64748b; }
+.cp-parties { list-style: none; margin: 10px 0 0; padding: 0; }
+.cp-parties li { font-size: 13px; color: #64748b; line-height: 1.8; padding-inline-start: 14px; position: relative; }
+.cp-parties li::before { content: ""; position: absolute; inset-inline-start: 0; top: .75em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent, #f59e0b); }
+.cp-supply { margin-top: 18px; background: linear-gradient(135deg, #001f4d, #0051a2); color: #fff; border-radius: 16px; padding: 20px 24px; }
+.cp-supply-h { display: flex; align-items: center; gap: 8px; font-weight: 800; color: var(--accent, #f59e0b); margin-bottom: 10px; }
+.cp-supply-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.cp-supply-list span { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); border-radius: 30px; padding: 6px 14px; font-size: 13px; }
+.cp-partners { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.cp-partner { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; min-height: 96px; padding: 12px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.cp-partner span { font-size: 13px; font-weight: 800; color: var(--blue-deeper, #001f4d); line-height: 1.6; }
+.cp-partner img { max-width: 100%; max-height: 64px; object-fit: contain; }
 
 .cp-sectors { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .cp-sector { min-height: 300px; border-radius: 18px; background-size: cover; background-position: center; color: #fff; padding: 22px; display: flex; flex-direction: column; justify-content: flex-end; }
@@ -555,7 +581,7 @@ const CSS = `
   .cp-timeline::before { display: none; }
   .cp-values { grid-template-columns: repeat(3, 1fr); }
   .cp-grid3 { grid-template-columns: repeat(2, 1fr); }
-  .cp-brands { grid-template-columns: repeat(4, 1fr); }
+  .cp-brands, .cp-partners { grid-template-columns: repeat(4, 1fr); }
   .cp-img-sub { inset-inline-start: 10px; }
   .cp-ceo-img { height: 320px; }
 }
@@ -563,7 +589,7 @@ const CSS = `
   .cp-sec { padding: 56px 0; }
   .cp-stats, .cp-values, .cp-grid3, .cp-timeline, .cp-sectors, .cp-contact { grid-template-columns: 1fr 1fr; }
   .cp-grid3, .cp-timeline, .cp-sectors, .cp-contact { grid-template-columns: 1fr; }
-  .cp-brands { grid-template-columns: repeat(3, 1fr); }
+  .cp-brands, .cp-partners { grid-template-columns: repeat(2, 1fr); }
   .cp-svc { flex-direction: column; }
   .cp-svc-img { width: 100%; }
   .cp-img-main { height: 280px; }
@@ -575,6 +601,6 @@ const CSS = `
   .cp-sec, .cp-cta { padding: 36px 0; break-inside: avoid-page; }
   .cp-hero { padding: 30px 0 40px; }
   .cp-hero-top { margin-bottom: 30px; }
-  .cp-card, .cp-value, .cp-svc, .cp-tl-card, .cp-sector, .cp-cat, .cp-logo, .cp-proj { break-inside: avoid; }
+  .cp-card, .cp-value, .cp-svc, .cp-tl-card, .cp-sector, .cp-cat, .cp-logo, .cp-partner { break-inside: avoid; }
 }
 `;

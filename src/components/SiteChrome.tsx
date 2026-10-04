@@ -15,7 +15,7 @@ export const NAV: { href: string; ar: string; en: string }[] = [
   { href: "/certificates", ar: "شهادات الجودة", en: "Certificates" },
   { href: "/documents", ar: "مكتبة الوثائق", en: "Documents" },
   { href: "/calculator", ar: "الحاسبة", en: "Calculator" },
-  { href: "/case-studies", ar: "المشاريع", en: "Projects" },
+  { href: "/#projects", ar: "المشاريع", en: "Projects" },
   { href: "/applicators", ar: "المطبّقون", en: "Applicators" },
   { href: "/delivery", ar: "التوصيل", en: "Delivery" },
   { href: "/training", ar: "التدريب", en: "Training" },
@@ -45,7 +45,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/certificates", L("شهادات الجودة", "Certificates")],
     ["/documents", L("مكتبة الوثائق", "Documents")],
     ["/calculator", L("حاسبة الكميات", "Calculator")],
-    ["/case-studies", L("المشاريع", "Projects")],
+    ["/#projects", L("المشاريع", "Projects")],
     ["/applicators", L("المطبّقون", "Applicators")],
     ["/delivery", L("مناطق التوصيل", "Delivery")],
     ["/training", L("ورش التدريب", "Training")],
@@ -84,7 +84,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
             <div className="nav-drop-menu">
               <a href="/#about">{L("من نحن", "Who We Are")}</a>
               <a href="/#ceo">{L("كلمة رئيس مجلس الإدارة", "Chairman's Message")}</a>
-              <a href="/case-studies">{L("المشاريع المنفذة", "Projects")}</a>
+              <a href="/#projects">{L("المشاريع المنفذة", "Projects")}</a>
               <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators")}</a>
               <a href="/training">{L("ورش التدريب", "Training")}</a>
               <a href="/blog">{L("المدونة", "Blog")}</a>

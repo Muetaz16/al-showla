@@ -66,6 +66,7 @@ const ORG_JSONLD = {
     "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "الطريق الدائري الثالث، الرحبة",
     addressLocality: "بنغازي",
     addressCountry: "LY",
   },

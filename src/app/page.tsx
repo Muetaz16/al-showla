@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners } from "@/app/cms-actions";
-import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb } from "lucide-react";
+import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
+import { PROJECTS, PARTNERS } from "@/lib/company-data";
 
 /* ─────────────────────────────────────────────
    TRANSLATIONS
@@ -66,7 +67,8 @@ const T = {
     prod3: "Ceramic, Porcelain & Stone", prod4: "Flooring",
     prod5: "Architectural Finishes & Solutions", prod6: "Steel, Cement & More",
     prod7: "Industrial Tools & Equipment", prod8: "Thermal Insulation", prodAll: "All Products",
-    brandsLbl: "Our Partners",
+    brandsLbl: "Our Brands",
+    projectsLbl: "Our Projects", projectsH2a: "Featured", projectsH2b: "Projects", projectsSupply: "General Supplies",
     // Clients
     clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
     cl1: "Real Estate Developers", cl1s: "Premium materials for landmark projects",
@@ -144,7 +146,8 @@ const T = {
     prod3: "السيراميك والبورسلين والأحجار", prod4: "الأرضيات",
     prod5: "التشطيبات والحلول المعمارية", prod6: "الحديد والأسمنت وغيرها",
     prod7: "الأدوات والمعدات الصناعية", prod8: "عزل حراري", prodAll: "جميع المنتجات",
-    brandsLbl: "شركاؤنا",
+    brandsLbl: "علاماتنا التجارية",
+    projectsLbl: "مشاريعنا", projectsH2a: "أبرز", projectsH2b: "المشاريع", projectsSupply: "توريدات عامة",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
     cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
     cl2: "التجار وأصحاب الأعمال", cl2s: "سلسلة إمداد جملة موثوقة",
@@ -551,7 +554,7 @@ export default function Home() {
             <div className="nav-drop-menu">
               <a href="#about">{t.whoWeAre}</a>
               <a href="#ceo">{t.ceoMsg}</a>
-              <a href="/case-studies">{lang === "ar" ? "المشاريع المنفذة" : "Projects"}</a>
+              <a href="#projects">{lang === "ar" ? "المشاريع المنفذة" : "Projects"}</a>
               <a href="/applicators">{lang === "ar" ? "المطبّقون المعتمدون" : "Applicators"}</a>
               <a href="/training">{lang === "ar" ? "ورش التدريب" : "Training"}</a>
               <a href="/blog">{lang === "ar" ? "المدونة" : "Blog"}</a>
@@ -589,7 +592,7 @@ export default function Home() {
 
       {/* ── MOBILE NAV ── */}
       <div className={`mob-nav${mobOpen ? " open" : ""}`}>
-        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["/case-studies", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
+        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["#projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
           <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
         ))}
         <div className="mob-nav-divider" />
@@ -1099,47 +1102,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ══════════════════ FEATURED PROJECTS ══════════════════ */}
+      <section id="projects" className="sec" style={{ background: "var(--white)" }}>
+        <div className="con">
+          <div className="lbl ao">{t.projectsLbl}</div>
+          <h2 className="sh ao">{t.projectsH2a} <em>{t.projectsH2b}</em></h2>
+          <div className="prj-grid">
+            {PROJECTS.filter((p) => p.group === "major").map((p, i) => (
+              <div className={`prj-card${p.parties.length > 2 ? " wide" : ""}`} key={i}>
+                <div className="prj-ico"><Building2 size={20} /></div>
+                <div className="prj-t">{lang === "ar" ? p.titleAr : p.titleEn}</div>
+                {p.parties.length > 0 && (
+                  <ul className="prj-parties">
+                    {p.parties.map(([ar, en], j) => <li key={j}>{lang === "ar" ? ar : en}</li>)}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="prj-supply">
+            <div className="prj-supply-h"><Truck size={18} /> {t.projectsSupply}</div>
+            <div className="prj-supply-list">
+              {PROJECTS.filter((p) => p.group === "supply").map((p, i) => (
+                <span key={i}>{lang === "ar" ? p.titleAr : p.titleEn}{p.parties[0] ? ` — ${lang === "ar" ? p.parties[0][0] : p.parties[0][1]}` : ""}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ══════════════════ PARTNERS ══════════════════ */}
-      <section id="partners" className="sec" style={{ background: "var(--white)" }}>
+      <section id="partners" className="sec" style={{ background: "var(--off)" }}>
         <div className="con">
           <div className="lbl ao">{t.partnersLbl}</div>
           <h2 className="sh ao">{t.partnersH2a} <em>{t.partnersH2b}</em></h2>
-          <div className="pg-grid">
-            {BRAND_DATA.map((b, i) => (
-              <div className="pg" key={i}
-                onClick={() => setSelectedBrand(b)}
-                title={b.name}
-                style={{ cursor: "pointer", position: "relative", transition: "all .3s", overflow: "hidden" }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
-                  (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(0,81,162,.15)";
-                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,81,162,.3)";
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.transform = "none";
-                  (e.currentTarget as HTMLElement).style.boxShadow = "none";
-                  (e.currentTarget as HTMLElement).style.borderColor = "";
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={b.url} alt={b.name}
-                  onError={(e) => {
-                    const el = e.target as HTMLImageElement;
-                    el.style.display = "none";
-                    const s = document.createElement("span");
-                    s.textContent = b.name;
-                    s.style.cssText = "font-size:12px;font-weight:800;color:var(--gray);opacity:.5;";
-                    el.parentElement?.appendChild(s);
-                  }} />
-                <div style={{
-                  position: "absolute", bottom: 0, left: 0, right: 0,
-                  background: "linear-gradient(to top, rgba(0,31,77,.8), transparent)",
-                  color: "#fff", fontSize: 10, fontWeight: 800, padding: "12px 6px 4px",
-                  opacity: 0, transition: "opacity .3s",
-                  textAlign: "center", letterSpacing: ".02em",
-                }} className="br-hover-label">
-                  {lang === "ar" ? "عرض التفاصيل" : "View Details"}
-                </div>
+          <div className="pt-grid">
+            {PARTNERS.map((p, i) => (
+              <div className="pt-card" key={i} title={lang === "ar" ? p.nameAr : p.nameEn}>
+                {p.logo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={p.logo} alt={lang === "ar" ? p.nameAr : p.nameEn} />
+                ) : (
+                  <span>{lang === "ar" ? p.nameAr : p.nameEn}</span>
+                )}
               </div>
             ))}
           </div>
@@ -1181,7 +1186,7 @@ export default function Home() {
               <div className="ao" style={{ marginTop: 20, borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,.15)" }}>
                 <iframe
                   title="موقع الشركة"
-                  src="https://www.google.com/maps?q=32.0709114074707,20.06633186340332&z=17&hl=en&output=embed"
+                  src="https://www.google.com/maps?q=32.0706196,20.0660936&z=17&hl=en&output=embed"
                   width="100%"
                   height="220"
                   style={{ border: 0 }}
@@ -1189,7 +1194,7 @@ export default function Home() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <a href="https://www.google.com/maps?q=32.0709114074707,20.06633186340332&z=17&hl=en" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.google.com/maps?cid=4761585801674542390" target="_blank" rel="noopener noreferrer"
                 className="ao" style={{ display: "inline-block", marginTop: 10, color: "var(--accent)", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
                 🗺️ {t.openMap}
               </a>
