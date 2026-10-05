@@ -96,7 +96,7 @@ const T = {
     sectors: [["المطورون العقاريون", "مواد متميزة للمشاريع الكبرى والمعالم العمرانية."], ["شركات المقاولات الكبرى", "حلول مواد متكاملة من البداية حتى التسليم."], ["الحكومة والبنية التحتية", "دعم المشاريع على النطاق الوطني بموثوقية عالية."], ["التجار وأصحاب الأعمال", "سلسلة إمداد جملة موثوقة ومستقرة."]],
     ctaH: "لنبني", ctaHem: "معًا", ctaP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
     phoneL: "الهاتف", emailL: "البريد الإلكتروني", addrL: "المقر الرئيسي", hoursL: "ساعات العمل",
-    addr: "33C8+6CW، الطريق الدائري الثالث، بنغازي، ليبيا", hours: "السبت – الخميس: 9:00 ص – 5:00 م",
+    addr: "33C8+6CW، الطريق الدائري الثالث، بنغازي، ليبيا", hours: "الأحد – الخميس: 8:00 ص – 5:00 م",
   },
   en: {
     badge: "COMPANY PROFILE · الملف التعريفي",
@@ -156,7 +156,7 @@ const T = {
     sectors: [["Real Estate Developers", "Premium materials for major projects and landmarks."], ["Major Contracting Companies", "Integrated material solutions from start to handover."], ["Government & Infrastructure", "Reliable support for national-scale projects."], ["Traders & Business Owners", "A reliable, stable wholesale supply chain."]],
     ctaH: "Let's Build", ctaHem: "Together", ctaP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
     phoneL: "Phone", emailL: "Email", addrL: "Headquarters", hoursL: "Working Hours",
-    addr: "33C8+6CW, Third Ring Road, Benghazi, Libya", hours: "Sat – Thu: 9:00 AM – 5:00 PM",
+    addr: "33C8+6CW, Third Ring Road, Benghazi, Libya", hours: "Sun – Thu: 8:00 AM – 5:00 PM",
   },
 };
 
