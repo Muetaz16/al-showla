@@ -43,8 +43,15 @@ export default function ApplicatorsPage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20 }}>
           {filtered.map((a) => (
             <div key={a.id} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 12, padding: 20 }}>
+              {a.contactInfo?.logo && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={a.contactInfo.logo} alt={a.name} loading="lazy" style={{ height: 90, maxWidth: "100%", objectFit: "contain", display: "block", marginBottom: 14 }} />
+              )}
               <h3 style={{ margin: "0 0 6px" }}>{a.name}</h3>
               <div style={{ fontSize: 13, color: "var(--blue)", fontWeight: 700, marginBottom: 10 }}>{a.systemSpecialty}</div>
+              {a.contactInfo?.description && (
+                <p style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.9, margin: "0 0 12px" }}>{a.contactInfo.description}</p>
+              )}
               {a.certifications?.length > 0 && (
                 <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
                   {a.certifications.map((c, i) => (
@@ -53,10 +60,16 @@ export default function ApplicatorsPage() {
                 </div>
               )}
               <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.9 }}>
-                {a.contactInfo?.phone && <div>📞 {a.contactInfo.phone}</div>}
+                {a.contactInfo?.phone && <div>📞 <a href={`tel:${a.contactInfo.phone.replace(/\D/g, "").replace(/^0/, "+218")}`} dir="ltr" style={{ color: "inherit" }}>{a.contactInfo.phone}</a></div>}
                 {a.contactInfo?.city && <div>📍 {a.contactInfo.city}</div>}
                 {a.contactInfo?.email && <div>✉️ {a.contactInfo.email}</div>}
               </div>
+              {(a.contactInfo?.facebook || a.contactInfo?.linkedin) && (
+                <div style={{ display: "flex", gap: 10, marginTop: 12 }}>
+                  {a.contactInfo.facebook && <a href={a.contactInfo.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, fontWeight: 700, color: "#1877f2", textDecoration: "none" }}>Facebook</a>}
+                  {a.contactInfo.linkedin && <a href={a.contactInfo.linkedin} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, fontWeight: 700, color: "#0a66c2", textDecoration: "none" }}>LinkedIn</a>}
+                </div>
+              )}
             </div>
           ))}
         </div>

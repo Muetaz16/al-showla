@@ -813,8 +813,21 @@ export async function deleteCaseStudy(id: string): Promise<boolean> {
 
 // Certified applicators named by the client. Seeded once into an empty directory; details
 // (specialty, contact, certificates) to be completed from the admin panel when provided.
+const SHIELD_ENMAA = {
+  name: "شيلد إنماء للمقاولات — Shield Enmaa",
+  systemSpecialty: "العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات",
+  contactInfo: {
+    logo: "/applicators/shield-enmaa.webp",
+    description: "شركة مشتركة مع Shield، إحدى شركات Dorra Group، تقدم شيلد إنماء للمقاولات حلول إنشائية متقدمة تشمل العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات، ومعتمدة كمنفذ من شركات عالمية مثل Sika وBASF وSaint-Gobain وProtan، وفق أعلى معايير الجودة وكفاءة التنفيذ.",
+    phone: "092-1559050",
+    facebook: "https://www.facebook.com/Shield.Enmaa",
+    linkedin: "https://www.linkedin.com/company/shield-enmaa",
+  },
+  certifications: ["منفذ معتمد من Sika", "BASF", "Saint-Gobain", "Protan"],
+};
+
 const APPLICATOR_SEED = [
-  { id: "app-shield-emmar", name: "Shield Emmar", systemSpecialty: "مقاول تطبيق معتمد", contactInfo: {}, certifications: ["مقاول معتمد"] },
+  { id: "app-shield-emmar", ...SHIELD_ENMAA },
   { id: "app-saleh-alawami", name: "صالح العوامي", systemSpecialty: "مقاول تطبيق معتمد", contactInfo: {}, certifications: ["مقاول معتمد"] },
 ];
 
@@ -823,6 +836,8 @@ export async function getApplicators(): Promise<any[]> {
     if ((await prisma.applicator.count()) === 0) {
       await prisma.applicator.createMany({ data: APPLICATOR_SEED, skipDuplicates: true });
     }
+    // One-time upgrade of the earlier placeholder row (only while it is still untouched)
+    await prisma.applicator.updateMany({ where: { id: "app-shield-emmar", name: "Shield Emmar" }, data: SHIELD_ENMAA });
     const list = await prisma.applicator.findMany({ orderBy: { date: 'desc' } });
     return list.map((a: any) => ({ ...a, date: a.date?.toISOString?.() ?? null }));
   } catch {
