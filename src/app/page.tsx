@@ -580,8 +580,8 @@ export default function Home() {
           <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>
             🔧 {lang === "ar" ? "المستشار الذكي" : "AI Advisor"}
           </a>
-          <a href="/contractor/login" style={{ color: "var(--primary)", fontWeight: "bold" }}>
-            {lang === "ar" ? "تسجيل المقاولين" : "B2B Login"}
+          <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold", border: "1.5px solid var(--blue)", borderRadius: 20, padding: "5px 14px" }}>
+            🏗️ {lang === "ar" ? "بوابة المقاولين" : "Contractor Portal"}
           </a>
           <a href="https://wa.me/218948020200" className="nav-cta" target="_blank" rel="noopener noreferrer">{t.orderNow}</a>
         </div>
@@ -597,7 +597,7 @@ export default function Home() {
         ))}
         <div className="mob-nav-divider" />
         <a href="/contractor/login" style={{ color: "var(--primary)" }} onClick={() => setMobOpen(false)}>
-          {lang === "ar" ? "تسجيل المقاولين (B2B)" : "B2B Login"}
+          🏗️ {lang === "ar" ? "بوابة المقاولين" : "Contractor Portal"}
         </a>
         <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer"
           style={{ color: "var(--accent)" }} onClick={() => setMobOpen(false)}>{t.orderWhatsapp}</a>
@@ -1195,6 +1195,25 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ══════════════════ CONTRACTOR PORTAL ══════════════════ */}
+      <section id="contractor-portal" style={{ background: "linear-gradient(135deg, #0051a2 0%, #001f4d 100%)", padding: "48px 0" }}>
+        <div className="con" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap" }}>
+          <div style={{ flex: "1 1 420px" }}>
+            <h2 style={{ color: "#fff", fontSize: 28, fontWeight: 900, margin: "0 0 10px" }}>
+              🏗️ {lang === "ar" ? "بوابة المقاولين" : "Contractor Portal"}
+            </h2>
+            <p style={{ color: "rgba(255,255,255,.75)", fontSize: 15, lineHeight: 1.8, margin: 0 }}>
+              {lang === "ar"
+                ? "للمقاولين والشركات: إدارة طلباتك، تتبع حالتها، والوصول إلى الكتالوج الكامل والتواصل المباشر مع فريق المبيعات."
+                : "For contractors and companies: manage your orders, track their status, browse the full catalog and reach our sales team directly."}
+            </p>
+          </div>
+          <a href="/contractor/login" style={{ background: "var(--accent)", color: "#fff", textDecoration: "none", padding: "14px 32px", borderRadius: 10, fontWeight: 800, fontSize: 16, whiteSpace: "nowrap" }}>
+            {lang === "ar" ? "دخول البوابة ←" : "Enter Portal →"}
+          </a>
         </div>
       </section>
 

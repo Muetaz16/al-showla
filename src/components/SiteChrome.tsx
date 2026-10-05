@@ -108,7 +108,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
           <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
           <a href="/faq">{L("الأسئلة الشائعة", "FAQ")}</a>
           <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
-          <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold" }}>{L("تسجيل المقاولين", "B2B Login")}</a>
+          <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold", border: "1.5px solid var(--blue)", borderRadius: 20, padding: "5px 14px" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal")}</a>
           {onToggleLang && (
             <button onClick={onToggleLang} style={{ background: "var(--blue-light)", border: "none", color: "var(--blue)", padding: "6px 12px", cursor: "pointer", fontWeight: 800, borderRadius: 6, fontFamily: "'Cairo', sans-serif" }}>
               {isAr ? "EN" : "AR"}
@@ -130,7 +130,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
         ))}
         <a href="/advisor" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
         <div className="mob-nav-divider" />
-        <a href="/contractor/login" onClick={() => setMobOpen(false)} style={{ color: "#fff" }}>{L("تسجيل المقاولين (B2B)", "B2B Login")}</a>
+        <a href="/contractor/login" onClick={() => setMobOpen(false)} style={{ color: "#fff" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal")}</a>
         <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>{L("اطلب الآن عبر واتساب", "Order via WhatsApp")}</a>
         {onToggleLang && (
           <button onClick={() => { onToggleLang(); setMobOpen(false); }} style={{ marginTop: 14, background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "10px 22px", cursor: "pointer", fontWeight: 800, borderRadius: 8, fontFamily: "'Cairo', sans-serif" }}>
