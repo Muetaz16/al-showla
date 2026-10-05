@@ -19,7 +19,7 @@ const T = {
     // Hero
     heroTag: "Est. 2005 · Tobruk, Libya",
     heroH1a: "Building Libya's Future with",
-    heroH1b: "World-Class Materials",
+    heroH1b: "Complete Building Solutions",
     heroP: "Al-Showla Al-Raeda — a leading Libyan company specialized in the import and distribution of premium building materials and construction solutions since 2005, trusted by contractors, developers, and government institutions across Libya.",
     discoverStory: "Discover Our Story", getQuote: "Get a Quote", scroll: "Scroll",
     yearsExp: "Years Experience", projectsDel: "Projects Delivered",
@@ -104,7 +104,7 @@ const T = {
     orderNow: "اطلب الآن",
     heroTag: "تأسست 2005 · طبرق، ليبيا",
     heroH1a: "نبني مستقبل ليبيا",
-    heroH1b: "بمواد عالمية الجودة",
+    heroH1b: "بحلول بناء متكاملة",
     heroP: "الشعلة الرائدة — شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005، موثوقة لدى المقاولين والمطورين والمؤسسات الحكومية في ليبيا.",
     discoverStory: "اكتشف قصتنا", getQuote: "احصل على عرض سعر", scroll: "انزل",
     yearsExp: "سنة خبرة", projectsDel: "مشروع منجز",

@@ -121,7 +121,7 @@ export const CATEGORIES: Category[] = [
   { id: "all",        icon: "🏗️",  nameAr: "الكل",              nameEn: "All" },
   { id: "waterproof", icon: "🏗️",  nameAr: "أنظمة حلول البناء والانشاء", nameEn: "Building Solutions" },
   { id: "tools",      icon: "🔧",  nameAr: "الأدوات والمعدات الصناعية",     nameEn: "Industrial Tools" },
-  { id: "gypsum",     icon: "🧱",  nameAr: "أنظمة الجبس بورد",        nameEn: "Gypsum Board" },
+  { id: "gypsum",     icon: "🧱",  nameAr: "أنظمة الجبس والأسقف",      nameEn: "Gypsum & Ceiling Systems" },
   { id: "sanitary",   icon: "🪟",  nameAr: "بلاط السيراميك",  nameEn: "Ceramic Tiles" },
   { id: "flooring",   icon: "🎨",  nameAr: "الديكور الداخلي والخارجي",      nameEn: "Interior & Exterior Decor" },
   { id: "adhesives",  icon: "🏠",  nameAr: "أنظمة التعرفية",  nameEn: "Roofing Systems" },

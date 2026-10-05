@@ -40,7 +40,7 @@ const BRANDS: { name: string; logo: string }[] = [
 const T = {
   ar: {
     badge: "الملف التعريفي · COMPANY PROFILE",
-    heroA: "نبني مستقبل ليبيا", heroB: "بمواد عالمية الجودة",
+    heroA: "نبني مستقبل ليبيا", heroB: "بحلول بناء متكاملة",
     heroP: "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005 — انطلقت من مدينة طبرق، واتخذت من بنغازي مقرًا رئيسيًا لها، لتكون حلقة الوصل الاستراتيجية بين السوق الليبي وكبرى العلامات العالمية.",
     print: "طباعة / حفظ PDF",
     stats: [["2005", "سنة التأسيس — طبرق"], ["20+", "عامًا من الثقة"], ["14", "علامة تجارية"], ["100+", "مشروع منجز"]],
@@ -88,7 +88,7 @@ const T = {
       ["خدمات ما بعد البيع والدعم المستمر", "متابعة العملاء بعد التوريد والبيع، وتقديم الدعم الفني ومعالجة الملاحظات وتوفير الاحتياجات اللاحقة، لضمان تجربة متكاملة وعلاقة مستدامة مع العميل."],
     ],
     catLbl: "كتالوجنا", catH: "أقسام", catHem: "المنتجات",
-    cats: ["كيماويات البناء", "الأدوات والمعدات الصناعية", "أنظمة الجبس بورد", "السيراميك والبورسلين والأحجار", "الأرضيات والتشطيبات المعمارية", "أنظمة تصريف مياه الأمطار", "الحديد والأسمنت وغيرها", "العزل الحراري"],
+    cats: ["كيماويات البناء", "الأدوات والمعدات الصناعية", "أنظمة الجبس والأسقف", "السيراميك والبورسلين والأحجار", "الأرضيات والتشطيبات المعمارية", "أنظمة تصريف مياه الأمطار", "الحديد والأسمنت وغيرها", "العزل الحراري"],
     projLbl: "مشاريعنا", projH: "أبرز", projHem: "المشاريع", projSupply: "توريدات عامة",
     partnersLbl: "شركاؤنا", partnersH: "", partnersHem: "شركاؤنا",
     brandsLbl: "علاماتنا التجارية", brandsH: "علاماتنا", brandsHem: "التجارية",
@@ -100,7 +100,7 @@ const T = {
   },
   en: {
     badge: "COMPANY PROFILE · الملف التعريفي",
-    heroA: "Building Libya's Future", heroB: "With World-Class Materials",
+    heroA: "Building Libya's Future", heroB: "With Complete Building Solutions",
     heroP: "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005 — founded in Tobruk and headquartered in Benghazi, the strategic link between the Libyan market and the world's leading brands.",
     print: "Print / Save PDF",
     stats: [["2005", "Founded — Tobruk"], ["20+", "Years of Trust"], ["14", "Brands"], ["100+", "Projects Delivered"]],
@@ -148,7 +148,7 @@ const T = {
       ["After-Sales & Continuous Support", "Following up with clients after supply and sale, providing technical support, addressing feedback, and meeting later needs to ensure an integrated experience and a lasting client relationship."],
     ],
     catLbl: "Our Catalog", catH: "Product", catHem: "Categories",
-    cats: ["Construction Chemicals", "Industrial Tools & Equipment", "Gypsum Board Systems", "Ceramic, Porcelain & Stone", "Flooring & Architectural Finishes", "Rainwater Drainage Systems", "Steel, Cement & More", "Thermal Insulation"],
+    cats: ["Construction Chemicals", "Industrial Tools & Equipment", "Gypsum & Ceiling Systems", "Ceramic, Porcelain & Stone", "Flooring & Architectural Finishes", "Rainwater Drainage Systems", "Steel, Cement & More", "Thermal Insulation"],
     projLbl: "Our Projects", projH: "Featured", projHem: "Projects", projSupply: "General Supplies",
     partnersLbl: "Our Partners", partnersH: "Our", partnersHem: "Partners",
     brandsLbl: "Our Brands", brandsH: "Our", brandsHem: "Brands",

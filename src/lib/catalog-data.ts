@@ -4654,7 +4654,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جيبروك إيزي فيل — معجون جبسي لفواصل ألواح الجبس",
     "nameEn": "Gyproc Easi-Fill — Gypsum Jointing Compound",
-    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس بورد. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس والأسقف. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Gyproc (Saint-Gobain) product in the Gypsum Board category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
@@ -4676,7 +4676,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جيبروك الممتاز 120 — معجون جبسي للتنعيم، 12 كغ",
     "nameEn": "Gyproc Almomtaz 120 — Gypsum Smoothing Putty, 12 kg",
-    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس بورد. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس والأسقف. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Gyproc (Saint-Gobain) product in the Gypsum Board category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
