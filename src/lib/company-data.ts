@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
   { titleAr: "توريدات عامة لمشاريع الجنوب", titleEn: "General supplies for southern projects", group: "supply", parties: [] },
 ];
 
-export type Partner = { nameAr: string; nameEn: string; logo?: string };
+export type Partner = { nameAr: string; nameEn: string; logo?: string; big?: boolean };
 
 // Final approved partners list. Add `logo: "/partners/<file>"` as each logo arrives —
 // cards without a logo show the company name instead.
@@ -56,7 +56,7 @@ export const PARTNERS: Partner[] = [
   { nameAr: "شركة اكانيميا", nameEn: "Akanimia" },
   { nameAr: "شركة البينة — مجموعة خليفة القابضة", nameEn: "Al-Bayyina — Khalifa Holding" },
   { nameAr: "شركة الترسانة — مجموعة خليفة القابضة", nameEn: "Al-Tersana — Khalifa Holding", logo: "/partners/al-tersana.webp" },
-  { nameAr: "شركة نيوم مصر", nameEn: "NEOM Egypt", logo: "/partners/neom-egypt.webp" },
+  { nameAr: "شركة نيوم مصر", nameEn: "NEOM Egypt", logo: "/partners/neom-egypt.webp", big: true },
   { nameAr: "الشركة الليبية التونسية", nameEn: "Libyan Tunisian Company (LTC)", logo: "/partners/ltc.webp" },
   { nameAr: "شركة B3 جروب", nameEn: "B3 Group", logo: "/partners/b3-group.webp" },
   { nameAr: "شركة ديزاين — مجموعة خليفة القابضة", nameEn: "Design — Khalifa Holding", logo: "/partners/design.webp" },
@@ -64,14 +64,14 @@ export const PARTNERS: Partner[] = [
   { nameAr: "شركة أهل الثقة — مجموعة الرائدة القابضة", nameEn: "Ahl Al-Thiqa — Al-Raeda Holding", logo: "/partners/ahl-al-thiqa.webp" },
   { nameAr: "شركة جسور العلى — مجموعة الرائدة القابضة", nameEn: "Jusoor Al-Ola — Al-Raeda Holding" },
   { nameAr: "شركة القمم العالية", nameEn: "Al-Qimam Al-Aliya" },
-  { nameAr: "شركة الفرات للإنشاءات والمقاولات العامة", nameEn: "Al-Furat Construction & General Contracting", logo: "/partners/al-furat.webp" },
+  { nameAr: "شركة الفرات للإنشاءات والمقاولات العامة", nameEn: "Al-Furat Construction & General Contracting", logo: "/partners/al-furat.webp", big: true },
   { nameAr: "شركة مراس للهندسة والإنشاءات", nameEn: "Meraas Engineering & Construction", logo: "/partners/meraas.webp" },
   { nameAr: "مجموعة خليفة القابضة", nameEn: "Khalifa Holding Group", logo: "/partners/khalifa-holding.webp" },
-  { nameAr: "شركة TGG التركية", nameEn: "TGG (Turkey)", logo: "/partners/tgg.webp" },
+  { nameAr: "شركة TGG التركية", nameEn: "TGG (Turkey)", logo: "/partners/tgg.webp", big: true },
   { nameAr: "شركة CEE المصرية", nameEn: "CEE (Egypt)" },
   { nameAr: "شركة SET Construction", nameEn: "SET Construction", logo: "/partners/set-construction.webp" },
-  { nameAr: "شركة Kapasite", nameEn: "Kapasite", logo: "/partners/kapasite.webp" },
-  { nameAr: "شركة وادي النيل للمقاولات والاستثمارات العقارية", nameEn: "Wadi El Nile Contracting & Real Estate", logo: "/partners/wadi-al-nil.webp" },
+  { nameAr: "شركة Kapasite", nameEn: "Kapasite", logo: "/partners/kapasite.webp", big: true },
+  { nameAr: "شركة وادي النيل للمقاولات والاستثمارات العقارية", nameEn: "Wadi El Nile Contracting & Real Estate", logo: "/partners/wadi-al-nil.webp", big: true },
   { nameAr: "شركة الرائدة القابضة", nameEn: "Al-Raeda Holding", logo: "/partners/al-raeda-holding.webp" },
   { nameAr: "شركة الوصيد العقارية", nameEn: "Al-Waseed Real Estate", logo: "/partners/al-waseed.webp" },
   { nameAr: "شركة طائر البجعة", nameEn: "Taer Al-Bajaa" },
@@ -79,5 +79,5 @@ export const PARTNERS: Partner[] = [
   { nameAr: "شركة الدار البيضاء", nameEn: "Al-Dar Al-Baida", logo: "/partners/al-dar-al-baida.webp" },
   { nameAr: "شركة إطار التعمير القابضة", nameEn: "Etar Al-Tameer Holding", logo: "/partners/itar-al-taamir.webp" },
   { nameAr: "شركة السعداء جروب المصرية", nameEn: "Al-Suadaa Group (Egypt)", logo: "/partners/al-suadaa.webp" },
-  { nameAr: "شركة المقاولون العرب", nameEn: "Arab Contractors", logo: "/partners/arab-contractors.webp" },
+  { nameAr: "شركة المقاولون العرب", nameEn: "Arab Contractors", logo: "/partners/arab-contractors.webp", big: true },
 ];

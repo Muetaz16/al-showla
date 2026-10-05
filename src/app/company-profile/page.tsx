@@ -31,7 +31,7 @@ const BRANDS: { name: string; logo: string }[] = [
   { name: "Black & Decker", logo: `${WP}/2026/01/B-DECKER.jpg` },
   { name: "Deli", logo: `${WP}/2026/01/DELI.jpg` },
   { name: "Reform", logo: `${WP}/2026/01/REform.jpg` },
-  { name: "NCC", logo: `${WP}/2026/01/NCC.jpg` },
+  { name: "NCC", logo: "/partners/ncc.webp" },
   { name: "الشركة الليبية للحديد والصلب", logo: "/partners/libyan-iron-steel.jpg" },
   { name: "شركة جولدن متيل", logo: "/partners/golden-metal.jpg" },
   { name: "الشركة العربية للأسمنت", logo: "/partners/arabian-cement.jpg" },
@@ -393,7 +393,7 @@ export default function CompanyProfilePage() {
                 <div key={i} className="cp-partner">
                   {p.logo ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} loading="lazy" />
+                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} loading="lazy" className={p.big ? "big" : undefined} />
                   ) : (
                     <span>{isAr ? p.nameAr : p.nameEn}</span>
                   )}
@@ -560,6 +560,7 @@ const CSS = `
 .cp-partner { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; min-height: 96px; padding: 12px; display: flex; align-items: center; justify-content: center; text-align: center; }
 .cp-partner span { font-size: 13px; font-weight: 800; color: var(--blue-deeper, #001f4d); line-height: 1.6; }
 .cp-partner img { max-width: 100%; max-height: 64px; object-fit: contain; }
+.cp-partner img.big { max-height: 88px; }
 
 .cp-sectors { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .cp-sector { min-height: 300px; border-radius: 18px; background-size: cover; background-position: center; color: #fff; padding: 22px; display: flex; flex-direction: column; justify-content: flex-end; }

@@ -462,13 +462,13 @@ export default function Home() {
     },
     {
       name: "NCC",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/NCC.jpg",
-      country: "",
+      url: "/partners/ncc.webp",
+      country: lang === "ar" ? "🇪🇬 مصر — بني سويف" : "🇪🇬 Egypt — Beni Suef",
       founded: "",
       website: "#",
-      category: "",
-      descAr: "",
-      descEn: "",
+      category: lang === "ar" ? "صناعة الأسمنت" : "Cement Industry",
+      descAr: "الشركة الوطنية للأسمنت — بني سويف (NCC)، شركة مصرية متخصصة في إنتاج الأسمنت.",
+      descEn: "National Company for Cement — Beni Suef (NCC), an Egyptian cement producer.",
       products: [] as string[],
       certifications: [] as string[],
     },
@@ -1141,7 +1141,7 @@ export default function Home() {
               <div className="pt-card" key={i} title={lang === "ar" ? p.nameAr : p.nameEn}>
                 {p.logo ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={p.logo} alt={lang === "ar" ? p.nameAr : p.nameEn} />
+                  <img src={p.logo} alt={lang === "ar" ? p.nameAr : p.nameEn} style={p.big ? { maxHeight: 78 } : undefined} />
                 ) : (
                   <span>{lang === "ar" ? p.nameAr : p.nameEn}</span>
                 )}
