@@ -34,8 +34,8 @@ const CONSUMPTION_RATES: Record<string, Rate> = {
   "master-008": { rate: 1.8, perMm: true },
 };
 
-// Default waste % per calculator category (client to confirm the insulation figure).
-const DEFAULT_WASTE: Record<string, number> = { chemicals: 10, gypsum: 10 };
+// Default waste % per calculator category (client: 0% for insulation / construction chemicals).
+const DEFAULT_WASTE: Record<string, number> = { chemicals: 0, gypsum: 10 };
 
 // Package size + unit parsed from names like "30كيلو", "12kg", "25لتر", "(400 ml)".
 function parsePackage(name: string): { size: number; liquid: boolean } | null {
