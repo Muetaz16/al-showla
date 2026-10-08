@@ -52,6 +52,24 @@ export default function ApplicatorsPage() {
               {a.contactInfo?.description && (
                 <p style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.9, margin: "0 0 12px" }}>{a.contactInfo.description}</p>
               )}
+              {a.contactInfo?.services?.length > 0 && (
+                <div style={{ marginBottom: 12 }}>
+                  <div style={{ fontSize: 12, fontWeight: 800, color: "var(--primary)", marginBottom: 6 }}>الخدمات</div>
+                  <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                    {a.contactInfo.services.map((s: string, i: number) => (
+                      <span key={i} style={{ fontSize: 11, background: "#e8f2fc", color: "#0051a2", padding: "3px 8px", borderRadius: 4, fontWeight: 700 }}>{s}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {a.contactInfo?.projects?.length > 0 && (
+                <div style={{ marginBottom: 12 }}>
+                  <div style={{ fontSize: 12, fontWeight: 800, color: "var(--primary)", marginBottom: 6 }}>من مشاريعها</div>
+                  <ul style={{ margin: 0, paddingInlineStart: 18, fontSize: 12, color: "var(--text-secondary)", lineHeight: 1.9 }}>
+                    {a.contactInfo.projects.map((p: string, i: number) => <li key={i}>{p}</li>)}
+                  </ul>
+                </div>
+              )}
               {a.certifications?.length > 0 && (
                 <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
                   {a.certifications.map((c, i) => (
@@ -60,12 +78,15 @@ export default function ApplicatorsPage() {
                 </div>
               )}
               <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.9 }}>
-                {a.contactInfo?.phone && <div>📞 <a href={`tel:${a.contactInfo.phone.replace(/\D/g, "").replace(/^0/, "+218")}`} dir="ltr" style={{ color: "inherit" }}>{a.contactInfo.phone}</a></div>}
+                {[a.contactInfo?.phone, a.contactInfo?.phone2].filter(Boolean).map((ph: string) => (
+                  <div key={ph}>📞 <a href={`tel:${ph.replace(/\D/g, "").replace(/^0/, "+218")}`} dir="ltr" style={{ color: "inherit" }}>{ph}</a></div>
+                ))}
                 {a.contactInfo?.city && <div>📍 {a.contactInfo.city}</div>}
-                {a.contactInfo?.email && <div>✉️ {a.contactInfo.email}</div>}
+                {a.contactInfo?.email && <div>✉️ <a href={`mailto:${a.contactInfo.email}`} style={{ color: "inherit" }}>{a.contactInfo.email}</a></div>}
               </div>
-              {(a.contactInfo?.facebook || a.contactInfo?.linkedin) && (
+              {(a.contactInfo?.facebook || a.contactInfo?.linkedin || a.contactInfo?.website) && (
                 <div style={{ display: "flex", gap: 10, marginTop: 12 }}>
+                  {a.contactInfo.website && <a href={a.contactInfo.website} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, fontWeight: 700, color: "var(--blue)", textDecoration: "none" }}>الموقع الإلكتروني ↗</a>}
                   {a.contactInfo.facebook && <a href={a.contactInfo.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, fontWeight: 700, color: "#1877f2", textDecoration: "none" }}>Facebook</a>}
                   {a.contactInfo.linkedin && <a href={a.contactInfo.linkedin} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, fontWeight: 700, color: "#0a66c2", textDecoration: "none" }}>LinkedIn</a>}
                 </div>

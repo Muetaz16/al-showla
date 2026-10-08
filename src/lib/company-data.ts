@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
   { titleAr: "مشروع خزانات سلوق", titleEn: "Suluq Water Tanks Project", group: "major", parties: [["SET Construction", "SET Construction"]] },
   { titleAr: "مشروع مستشفى الأطفال والولادة", titleEn: "Children's & Maternity Hospital", group: "major", parties: [["الشركة الليبية التونسية", "Libyan Tunisian Company (LTC)"]] },
   { titleAr: "مشروع ميناء بنغازي الجديد", titleEn: "New Benghazi Port Project", group: "major", parties: [["SET Construction", "SET Construction"]] },
-  { titleAr: "مشروع جامعة العرب", titleEn: "Arab University Project", group: "major", parties: [["شركة اكانيميا", "Akanimia"]] },
+  { titleAr: "مشروع جامعة العرب", titleEn: "Arab University Project", group: "major", parties: [["شركة اكانيميا", "Ankamena İnşaat"]] },
   { titleAr: "مشروع صيانة المصرف المركزي", titleEn: "Central Bank Maintenance Project", group: "major", parties: [] },
   { titleAr: "مشروع مجمع اللوتس", titleEn: "Lotus Complex Project", group: "major", parties: [["شركة B3 جروب", "B3 Group"]] },
   { titleAr: "محطات المعالجة — درنة", titleEn: "Treatment Plants — Derna", group: "major", parties: [["شركة CEE المصرية", "CEE (Egypt)"]] },
@@ -53,7 +53,7 @@ export type Partner = { nameAr: string; nameEn: string; logo?: string; big?: boo
 // cards without a logo show the company name instead.
 export const PARTNERS: Partner[] = [
   { nameAr: "شركة بن غاطي الإماراتية", nameEn: "Binghatti (UAE)", logo: "/partners/binghatti.webp" },
-  { nameAr: "شركة اكانيميا", nameEn: "Akanimia" },
+  { nameAr: "شركة اكانيميا", nameEn: "Ankamena İnşaat (Turkey)", logo: "/partners/ankamena.webp" },
   { nameAr: "شركة البينة — مجموعة خليفة القابضة", nameEn: "Al-Bayyina — Khalifa Holding" },
   { nameAr: "شركة الترسانة — مجموعة خليفة القابضة", nameEn: "Al-Tersana — Khalifa Holding", logo: "/partners/al-tersana.webp" },
   { nameAr: "شركة نيوم مصر", nameEn: "NEOM Egypt", logo: "/partners/neom-egypt.webp", big: true },

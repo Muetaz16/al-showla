@@ -12,7 +12,7 @@ import { PROJECTS, PARTNERS } from "@/lib/company-data";
 const T = {
   en: {
     // Nav
-    home: "Home", company: "Company ▾", whoWeAre: "Who We Are",
+    home: "Home", company: "Company", whoWeAre: "Who We Are",
     ceoMsg: "Founder & Chairman's Message", services: "Services", products: "Products",
     clients: "Clients", partners: "Our Partners", contact: "Contact",
     orderNow: "Order Now",
@@ -98,7 +98,7 @@ const T = {
     orderWhatsapp: "Order on WhatsApp",
   },
   ar: {
-    home: "الرئيسية", company: "الشركة ▾", whoWeAre: "من نحن",
+    home: "الرئيسية", company: "الشركة", whoWeAre: "من نحن",
     ceoMsg: " كلمة المؤسس ورئيس مجلس الإدارة ", services: "خدماتنا", products: "منتجاتنا",
     clients: "عملاؤنا", partners: "شركاؤنا", contact: "اتصل بنا",
     orderNow: "اطلب الآن",
@@ -559,6 +559,10 @@ export default function Home() {
               <a href="/training">{lang === "ar" ? "ورش التدريب" : "Training"}</a>
               <a href="/blog">{lang === "ar" ? "المدونة" : "Blog"}</a>
               <a href="/careers">{lang === "ar" ? "الوظائف" : "Careers"}</a>
+              {/* Shown here only on narrower laptop screens, where the top-level copies are hidden */}
+              <a href="#clients" className="nav-drop-sec">{t.clients}</a>
+              <a href="#partners" className="nav-drop-sec">{t.partners}</a>
+              <a href="/faq" className="nav-drop-sec">{lang === "ar" ? "الأسئلة الشائعة" : "FAQ"}</a>
             </div>
           </div>
           <a href="#services">{t.services}</a>
@@ -571,13 +575,14 @@ export default function Home() {
               <a href="/calculator">{lang === "ar" ? "حاسبة الكميات" : "Calculator"}</a>
               <a href="/delivery">{lang === "ar" ? "مناطق التوصيل" : "Delivery Zones"}</a>
               <a href="/sample">{lang === "ar" ? "طلب عينة مجانية" : "Request Free Sample"}</a>
+              <a href="/advisor" className="nav-drop-ter">🔧 {lang === "ar" ? "المستشار الذكي" : "AI Advisor"}</a>
             </div>
           </div>
-          <a href="#clients">{t.clients}</a>
-          <a href="#partners">{t.partners}</a>
+          <a href="#clients" className="nav-sec">{t.clients}</a>
+          <a href="#partners" className="nav-sec">{t.partners}</a>
           <a href="#contact">{t.contact}</a>
-          <a href="/faq">{lang === "ar" ? "الأسئلة الشائعة" : "FAQ"}</a>
-          <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>
+          <a href="/faq" className="nav-sec">{lang === "ar" ? "الأسئلة الشائعة" : "FAQ"}</a>
+          <a href="/advisor" className="nav-ter" style={{ color: "var(--accent)", fontWeight: "bold" }}>
             🔧 {lang === "ar" ? "المستشار الذكي" : "AI Advisor"}
           </a>
           <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold", border: "1.5px solid var(--blue)", borderRadius: 20, padding: "5px 14px" }}>

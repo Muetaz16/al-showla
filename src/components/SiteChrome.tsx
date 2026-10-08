@@ -63,7 +63,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
         style={{
           position: "sticky", top: 0, zIndex: 999, height: 70,
           display: "flex", alignItems: "center", justifyContent: "space-between",
-          padding: "0 5%", gap: 16, background: "var(--white)",
+          padding: "0 clamp(14px, 3vw, 5%)", gap: 16, background: "var(--white)",
           boxShadow: "0 1px 0 var(--gray-light), 0 4px 20px rgba(0,81,162,.06)",
           fontFamily: "'Cairo', sans-serif",
         }}
@@ -89,6 +89,9 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               <a href="/training">{L("ورش التدريب", "Training")}</a>
               <a href="/blog">{L("المدونة", "Blog")}</a>
               <a href="/careers">{L("الوظائف", "Careers")}</a>
+              <a href="/#clients" className="nav-drop-sec">{L("عملاؤنا", "Clients")}</a>
+              <a href="/#partners" className="nav-drop-sec">{L("شركاؤنا", "Our Partners")}</a>
+              <a href="/faq" className="nav-drop-sec">{L("الأسئلة الشائعة", "FAQ")}</a>
             </div>
           </div>
           <a href="/#services">{L("خدماتنا", "Services")}</a>
@@ -101,13 +104,14 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               <a href="/calculator">{L("حاسبة الكميات", "Calculator")}</a>
               <a href="/delivery">{L("مناطق التوصيل", "Delivery Zones")}</a>
               <a href="/sample">{L("طلب عينة مجانية", "Request Free Sample")}</a>
+              <a href="/advisor" className="nav-drop-ter">🔧 {L("المستشار الذكي", "AI Advisor")}</a>
             </div>
           </div>
-          <a href="/#clients">{L("عملاؤنا", "Clients")}</a>
-          <a href="/#partners">{L("شركاؤنا", "Our Partners")}</a>
+          <a href="/#clients" className="nav-sec">{L("عملاؤنا", "Clients")}</a>
+          <a href="/#partners" className="nav-sec">{L("شركاؤنا", "Our Partners")}</a>
           <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
-          <a href="/faq">{L("الأسئلة الشائعة", "FAQ")}</a>
-          <a href="/advisor" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
+          <a href="/faq" className="nav-sec">{L("الأسئلة الشائعة", "FAQ")}</a>
+          <a href="/advisor" className="nav-ter" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
           <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold", border: "1.5px solid var(--blue)", borderRadius: 20, padding: "5px 14px" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal")}</a>
           {onToggleLang && (
             <button onClick={onToggleLang} style={{ background: "var(--blue-light)", border: "none", color: "var(--blue)", padding: "6px 12px", cursor: "pointer", fontWeight: 800, borderRadius: 6, fontFamily: "'Cairo', sans-serif" }}>

@@ -153,7 +153,12 @@ body {
 }
 .mob-nav a:hover { color: var(--accent); background: rgba(255,255,255,0.05); transform: scale(1.02); }
 .mob-nav-divider { width: 50%; height: 1px; background: rgba(255,255,255,.1); margin: 8px 0; }
-@media(max-width:1280px) { .nav-links { display: none; } .hamburger { display: flex; } }
+/* Laptops: tighter menu so it fits; secondary links move into the "Company" dropdown */
+.nav-drop-menu a.nav-drop-sec, .nav-drop-menu a.nav-drop-ter { display: none; }
+@media(max-width:1440px) { .nav-links { gap: 11px; } [dir=rtl] .nav-links a { font-size: 12.5px; } .nav-cta { padding: 9px 16px; } }
+@media(max-width:1366px) { .nav-links .nav-sec { display: none; } .nav-drop-menu a.nav-drop-sec { display: block; } .nav-logo-sub { display: none; } }
+@media(max-width:1150px) { .nav-links .nav-ter { display: none; } .nav-drop-menu a.nav-drop-ter { display: block; } }
+@media(max-width:1023px) { .nav-links { display: none; } .hamburger { display: flex; } }
 @media(max-width:400px) { .nav-logo img { height: 32px; } .nav-logo-txt { font-size: 12px; } .mob-nav a { font-size: 1.1rem; padding: 8px; width: 90%; } }
 
 

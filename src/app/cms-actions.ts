@@ -818,8 +818,15 @@ const SHIELD_ENMAA = {
   systemSpecialty: "العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات",
   contactInfo: {
     logo: "/applicators/shield-enmaa.webp",
-    description: "شركة مشتركة مع Shield، إحدى شركات Dorra Group، تقدم شيلد إنماء للمقاولات حلول إنشائية متقدمة تشمل العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات، ومعتمدة كمنفذ من شركات عالمية مثل Sika وBASF وSaint-Gobain وProtan، وفق أعلى معايير الجودة وكفاءة التنفيذ.",
+    rev: 2, // bump when the seeded details change (see getApplicators)
+    description: "تحالف استراتيجي بين شيلد للمقاولات المتخصصة (إحدى شركات مجموعة درة Dorra Group) وإنماء الإعمار، الذراع التنفيذي لشركة الشعلة، يجمع الخبرة الهندسية المصرية مع قدرات التنفيذ الليبية في شمال أفريقيا. تقدم حلولاً إنشائية متقدمة تشمل العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات، ومعتمدة كمنفذ من شركات عالمية مثل Sika وBASF وSaint-Gobain وProtan.",
+    services: ["الأعمال المدنية والإنشائية", "العزل", "أنظمة الأرضيات", "أعمال التشطيبات", "حماية وترميم المنشآت", "الأنظمة الكهروميكانيكية (MEP)", "توريد مواد البناء", "البنية التحتية الخضراء وأنظمة الطاقة الشمسية"],
+    projects: ["جامعة بنغازي — كلية الاقتصاد وكلية الآداب", "جامعة بنغازي — مبنى كلية القانون", "جامعة بنغازي — كلية العلوم", "جامعة بنغازي — مبيت الطلبة"],
     phone: "092-1559050",
+    phone2: "092-5200070",
+    email: "info@shield-enmaa.com",
+    city: "بنغازي — الرحبة، الطريق السريع",
+    website: "https://shieldeg.com/shield-enmaa-contracting-co/",
     facebook: "https://www.facebook.com/Shield.Enmaa",
     linkedin: "https://www.linkedin.com/company/shield-enmaa",
   },
@@ -828,7 +835,6 @@ const SHIELD_ENMAA = {
 
 const APPLICATOR_SEED = [
   { id: "app-shield-emmar", ...SHIELD_ENMAA },
-  { id: "app-saleh-alawami", name: "صالح العوامي", systemSpecialty: "مقاول تطبيق معتمد", contactInfo: {}, certifications: ["مقاول معتمد"] },
 ];
 
 export async function getApplicators(): Promise<any[]> {
@@ -836,8 +842,13 @@ export async function getApplicators(): Promise<any[]> {
     if ((await prisma.applicator.count()) === 0) {
       await prisma.applicator.createMany({ data: APPLICATOR_SEED, skipDuplicates: true });
     }
-    // One-time upgrade of the earlier placeholder row (only while it is still untouched)
-    await prisma.applicator.updateMany({ where: { id: "app-shield-emmar", name: "Shield Emmar" }, data: SHIELD_ENMAA });
+    // Upgrade the seeded Shield Enmaa row to the latest details (skips rows already at this revision).
+    const shield = await prisma.applicator.findUnique({ where: { id: "app-shield-emmar" } });
+    if (shield && (shield.contactInfo as any)?.rev !== SHIELD_ENMAA.contactInfo.rev) {
+      await prisma.applicator.update({ where: { id: "app-shield-emmar" }, data: SHIELD_ENMAA });
+    }
+    // Removed at the client's request.
+    await prisma.applicator.deleteMany({ where: { id: "app-saleh-alawami", name: "صالح العوامي" } });
     const list = await prisma.applicator.findMany({ orderBy: { date: 'desc' } });
     return list.map((a: any) => ({ ...a, date: a.date?.toISOString?.() ?? null }));
   } catch {
