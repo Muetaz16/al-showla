@@ -9,8 +9,8 @@ type Lang = "ar" | "en";
 // Calculator flow requested by the client: category → brand → product.
 // Each calculator category maps to one or more catalog categoryIds.
 const CALC_CATEGORIES = [
-  { id: "chemicals", ar: "كيماويات البناء", en: "Construction Chemicals", catalogIds: ["waterproof"] },
-  { id: "gypsum", ar: "حلول الجبسبورد", en: "Gypsum Board Solutions", catalogIds: ["gypsum"] },
+  { id: "chemicals", ar: "الكيماويات وحلول البناء المتخصصة", en: "Specialized Construction Chemicals & Solutions", catalogIds: ["waterproof"] },
+  { id: "gypsum", ar: "أنظمة الجبس والأسقف والحوائط", en: "Gypsum, Ceiling & Wall Systems", catalogIds: ["gypsum"] },
 ];
 
 // Consumption rates from each product's official datasheet, keyed by catalog product id.

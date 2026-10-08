@@ -15,7 +15,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مصارف شرفات TWB — توب ويت",
     "nameEn": "TOPWET TWB — Balcony Outlets (family)",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -37,7 +37,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخرج تصريف سطح أحادي الجدار ممتد TWJ BZ للأسطح غير المعزولة — توب ويت",
     "nameEn": "TOPWET TWJ BZ — Extended Single-Wall Roof Outlet for Uninsulated (Cold) Roofs",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -59,7 +59,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخارج تصريف سطح أحادية الجدار ممتدة TWJ — توب ويت",
     "nameEn": "TOPWET TWJ — Extended Single-Wall Roof Outlets (family)",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -81,7 +81,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخارج تصريف لترميم الأسطح TW SAN — توب ويت",
     "nameEn": "TOPWET TW SAN — Refurbishment Roof Outlets (family)",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -103,7 +103,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخرج تصريف سطح أفقي TW 110 V بكُم PVC — توب ويت",
     "nameEn": "TOPWET TW 110 V PVC — Horizontal Roof Outlet DN100 with PVC Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -125,7 +125,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مصرف شرفة أفقي TWB 50 V بكُم STE — توب ويت",
     "nameEn": "TOPWET TWB 50 V STE — Horizontal Balcony Outlet DN50 with STE Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -147,7 +147,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "ملحق مصرف شرفة TWB TER STE بشبكة ستانلس ستيل — توب ويت",
     "nameEn": "TOPWET TWB TER STE — Balcony Attachment with Stainless Steel Grid",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -169,7 +169,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخرج جداري دائري (مزراب) TWC 75 بكُم بيتومين — توب ويت",
     "nameEn": "TOPWET TWC 75 BIT — Round Through-Wall Outlet (Gutter Spout) DN70 with Bitumen Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -191,7 +191,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخرج تصريف سطح رأسي مُدفّأ TWE 110 S بكُم بيتومين — توب ويت",
     "nameEn": "TOPWET TWE 110 S BIT — Heated Vertical Roof Outlet DN100 with Bitumen Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -213,7 +213,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخرج تصريف شامل أحادي الجدار TWJ UNI 50 بكُم بيتومين — توب ويت",
     "nameEn": "TOPWET TWJ UNI 50 BIT — Universal Single-Wall Outlet DN50 with Bitumen Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -235,7 +235,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "وصلة تمديد لمخارج السطح TWN v300 بكُم PVC — توب ويت",
     "nameEn": "TOPWET TWN v300 PVC — Extension for Roof Outlets (300 mm) with PVC Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -257,7 +257,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "قاعدة عبور حاجز البخار TWOD 110 بكُم بيتومين — توب ويت",
     "nameEn": "TOPWET TWOD 110 BIT — Vapour Barrier Penetration Base Plate with Bitumen Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -279,7 +279,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مخرج تهوية الصرف الصحي عبر السطح TWOP 110 بكُم PVC — توب ويت",
     "nameEn": "TOPWET TWOP 110 PVC — Sewerage Ventilation DN100 with PVC Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -301,7 +301,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "عبور كابلات عبر السطح TWP 75 بكُم بيتومين — توب ويت",
     "nameEn": "TOPWET TWP 75 BIT — Cable Entry DN70 with Bitumen Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -323,7 +323,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "وصلة تمديد لمصارف التراس TWTN v300 بكُم PVC — توب ويت",
     "nameEn": "TOPWET TWTN v300 PVC — Extension for Terrace Outlets (300 mm) with PVC Sleeve",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -345,7 +345,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "nameAr": "مصارف تراس TWT — توب ويت",
     "nameEn": "TOPWET TWT — Terrace Outlets (family)",
     "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine TOP WET product in the Roofing & Drainage category. Contact us for a quotation.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: TOP WET"
@@ -366,8 +366,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة فيديا 5 بوصة — DH-CQP125-E1",
     "nameEn": "Widia Cutting Disc 5\" (DH-CQP125-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-CQP125-E1",
@@ -389,8 +389,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة فيديا 7 بوصة — DH-CQP180-E1",
     "nameEn": "Widia Cutting Disc 7\" (DH-CQP180-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-CQP180-E1",
@@ -412,8 +412,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة فيديا 9 بوصة — DH-CQP230-E1",
     "nameEn": "Widia Cutting Disc 9\" (DH-CQP230-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-CQP230-E1",
@@ -435,8 +435,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة قص ماسية 5 بوصة — DH-SQP125-E1",
     "nameEn": "Diamond Cutting Disc 5\" (DH-SQP125-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-SQP125-E1",
@@ -458,8 +458,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة قص ماسية 9 بوصة — DH-SQP230-E1",
     "nameEn": "Diamond Cutting Disc 9\" (DH-SQP230-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-SQP230-E1",
@@ -481,8 +481,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة قص ماسية توربو 9 بوصة — DH-CQP230-E4",
     "nameEn": "Turbo Diamond Cutting Disc 9\" (DH-CQP230-E4)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-CQP230-E4",
@@ -504,8 +504,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة مسح خرسانة ماسية 4.5 بوصة — DH-JML115-E1",
     "nameEn": "Diamond Concrete Grinding Cup Wheel 4.5\" (DH-JML115-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-JML115-E1",
@@ -527,8 +527,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة مسح خرسانة ماسية 4.5 بوصة — DH-JML115-E2",
     "nameEn": "Diamond Concrete Grinding Cup Wheel 4.5\" (DH-JML115-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-JML115-E2",
@@ -550,8 +550,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة مسح خرسانة ماسية 5 بوصة — DH-JML125-E2",
     "nameEn": "Diamond Concrete Grinding Cup Wheel 5\" (DH-JML125-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-JML125-E2",
@@ -573,8 +573,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اسطوانة منشار دائري 185 ملم — DH-MJP185-E1",
     "nameEn": "Circular Saw Blade 185 mm (DH-MJP185-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MJP185-E1",
@@ -596,8 +596,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اكسسوارات صاروخ فورمات 10 قطع — DH-ZMT003",
     "nameEn": "Die Grinder Mounted Points Set 10 pcs (DH-ZMT003)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-ZMT003",
@@ -619,8 +619,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "اكسسوارات صاروخ فورمات 10 قطع — DH-ZMT007",
     "nameEn": "Die Grinder Mounted Points Set 10 pcs (DH-ZMT007)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-ZMT007",
@@ -642,8 +642,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بستولة طلاء مقلوبة 400 مل — DL-QPQ-990G",
     "nameEn": "Gravity-Feed Paint Spray Gun 400 ml (DL-QPQ-990G)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-QPQ-990G",
@@ -665,8 +665,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بستولة كهربائية 400 وات — DC090",
     "nameEn": "Electric Paint Sprayer 400W (DC090)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DC090",
@@ -688,8 +688,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بستولة كهربائية 500 وات — DC091",
     "nameEn": "Electric Paint Sprayer 500W (DC091)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DC091",
@@ -711,8 +711,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بكرة خرطوم مياه 15 متر — DL581143",
     "nameEn": "Garden Hose Reel 15 m (DL581143)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL581143",
@@ -734,8 +734,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بلاور هواء 500 وات — DL-GF03-E1",
     "nameEn": "Electric Air Blower 500W (DL-GF03-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-GF03-E1",
@@ -757,8 +757,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بلاور هواء شحن 20 فولت — DE820Z",
     "nameEn": "Cordless Blower 20V (DE820Z)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE820Z",
@@ -780,8 +780,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة 6×160 ملم — DH-Y06160",
     "nameEn": "SDS-Plus Concrete Drill Bit 6 x 160 mm (DH-Y06160)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-Y06160",
@@ -803,8 +803,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 10 ملم — DH-MHZ100-E1",
     "nameEn": "Steel Drill Bit 10 mm (DH-MHZ100-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ100-E1",
@@ -826,8 +826,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 10 ملم — DL16100G",
     "nameEn": "Steel Drill Bit 10 mm (DL16100G)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL16100G",
@@ -849,8 +849,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 2.5 ملم — DH-MHZ025-E1",
     "nameEn": "Steel Drill Bit 2.5 mm (DH-MHZ025-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ025-E1",
@@ -872,8 +872,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 3 ملم — DH-MHZ030-E1",
     "nameEn": "Steel Drill Bit 3 mm (DH-MHZ030-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ030-E1",
@@ -895,8 +895,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 4×160 ملم — DL16040G",
     "nameEn": "Steel Drill Bit 4 x 160 mm (DL16040G)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL16040G",
@@ -918,8 +918,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 4 ملم — DH-MHZ040-E1",
     "nameEn": "Steel Drill Bit 4 mm (DH-MHZ040-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ040-E1",
@@ -941,8 +941,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 5 ملم — DH-MHZ050-E1",
     "nameEn": "Steel Drill Bit 5 mm (DH-MHZ050-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ050-E1",
@@ -964,8 +964,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 6 ملم — DH-MHZ060-E1",
     "nameEn": "Steel Drill Bit 6 mm (DH-MHZ060-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ060-E1",
@@ -987,8 +987,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 6 ملم — DL16060G",
     "nameEn": "Steel Drill Bit 6 mm (DL16060G)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL16060G",
@@ -1010,8 +1010,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 8×160 ملم — DL16080G",
     "nameEn": "Steel Drill Bit 8 x 160 mm (DL16080G)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL16080G",
@@ -1033,8 +1033,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حديد 8 ملم — DH-MHZ080-E1",
     "nameEn": "Steel Drill Bit 8 mm (DH-MHZ080-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MHZ080-E1",
@@ -1056,8 +1056,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حفر خشب 32 ملم — DH-MKK032-E1",
     "nameEn": "Wood Hole Saw 32 mm (DH-MKK032-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MKK032-E1",
@@ -1079,8 +1079,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة حفر خشب 35 ملم — DH-MKK035-E1",
     "nameEn": "Wood Hole Saw 35 mm (DH-MKK035-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MKK035-E1",
@@ -1102,8 +1102,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرسانة 8×210 ملم — DH-Y08210-SDS",
     "nameEn": "SDS-Plus Concrete Drill Bit 8 x 210 mm (DH-Y08210-SDS)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-Y08210-SDS",
@@ -1125,8 +1125,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرسانة رباعية 8×110 ملم — DH-YCZ11008-E1-SDS",
     "nameEn": "SDS-Plus 4-Cutter Concrete Drill Bit 8 x 110 mm (DH-YCZ11008-E1-SDS)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-YCZ11008-E1-SDS",
@@ -1148,8 +1148,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرشوفة كباية 35 ملم — DH-SKK035-E1",
     "nameEn": "Hole Saw 35 mm (DH-SKK035-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-SKK035-E1",
@@ -1171,8 +1171,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرشوفة كباية 57 ملم — DH-SKK057-E1",
     "nameEn": "Hole Saw 57 mm (DH-SKK057-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-SKK057-E1",
@@ -1194,8 +1194,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة كسار راس أفطح 30×410×35 ملم — DH-YBZ40250-E1",
     "nameEn": "Flat Chisel 30 x 410 x 35 mm (DH-YBZ40250-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-YBZ40250-E1",
@@ -1217,8 +1217,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة ماسية 6 ملم — DH-CZZ006-E1",
     "nameEn": "Diamond Drill Bit 6 mm (DH-CZZ006-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-CZZ006-E1",
@@ -1240,8 +1240,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة هرمية — DH-JTZ012-E3",
     "nameEn": "Step Drill Bit (DH-JTZ012-E3)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-JTZ012-E3",
@@ -1263,8 +1263,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة 14×250×20 ملم — DH-YBZ20250-E1",
     "nameEn": "SDS-Plus Flat Chisel 14 x 250 x 20 mm (DH-YBZ20250-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-YBZ20250-E1",
@@ -1286,8 +1286,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة 14×250 ملم — DH-YJZ014-E1",
     "nameEn": "SDS-Plus Point Chisel 14 x 250 mm (DH-YJZ014-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-YJZ014-E1",
@@ -1309,8 +1309,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة 17×280×25 ملم — DH-HBZ25280-E1",
     "nameEn": "Hex Shank Flat Chisel 17 x 280 x 25 mm (DH-HBZ25280-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-HBZ25280-E1",
@@ -1332,8 +1332,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة 30×410×20 ملم — DH-HBZ35410-E1",
     "nameEn": "Hex Shank Flat Chisel 30 x 410 mm (DH-HBZ35410-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-HBZ35410-E1",
@@ -1355,8 +1355,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة 30×410 ملم — DH-HJZ030-E1",
     "nameEn": "Hex Shank Point Chisel 30 x 410 mm (DH-HJZ030-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-HJZ030-E1",
@@ -1378,8 +1378,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرسانة 12×160 ملم — DH-Y12160-SDS",
     "nameEn": "SDS-Plus Concrete Drill Bit 12 x 160 mm (DH-Y12160-SDS)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-Y12160-SDS",
@@ -1401,8 +1401,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرسانة 14×210 ملم — DH-Y14210-SDS",
     "nameEn": "SDS-Plus Concrete Drill Bit 14 x 210 mm (DH-Y14210-SDS)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-Y14210-SDS",
@@ -1424,8 +1424,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة خرسانة 16×210 ملم — DH-Y16210-SDS",
     "nameEn": "SDS-Plus Concrete Drill Bit 16 x 210 mm (DH-Y16210-SDS)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-Y16210-SDS",
@@ -1447,8 +1447,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة طاسة مكيف 65 ملم — DH-QKK065-E1",
     "nameEn": "Wall Core Bit for AC 65 mm (DH-QKK065-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-QKK065-E1",
@@ -1470,8 +1470,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة ماسية 20 ملم — DH-BKK200-E1",
     "nameEn": "Diamond Hole Saw 20 mm (DH-BKK200-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-BKK200-E1",
@@ -1493,8 +1493,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة ماسية 25 ملم — DH-BKK250-E1",
     "nameEn": "Diamond Hole Saw 25 mm (DH-BKK250-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-BKK250-E1",
@@ -1516,8 +1516,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة مثقاب 6×160 ملم — DH-Y061606",
     "nameEn": "SDS-Plus Drill Bit 6 x 160 mm (DH-Y061606)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -1537,8 +1537,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة هلتي دقاق 280 ملم — DH-HJZ017-E1",
     "nameEn": "Hex Shank Point Chisel 280 mm (DH-HJZ017-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -1558,8 +1558,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة هلتي 250 ملم — DH-YJZ14-E1",
     "nameEn": "SDS-Plus Point Chisel 250 mm (DH-YJZ14-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -1579,8 +1579,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة هلتي إزميل 280 ملم — DH-HBZ25280-E1",
     "nameEn": "Hex Shank Flat Chisel 280 mm (DH-HBZ25280-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -1600,8 +1600,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بونتة هلتي إزميل 250 ملم — DH-YBZ20250-E1",
     "nameEn": "SDS-Plus Flat Chisel 250 mm (DH-YBZ20250-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -1621,8 +1621,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة 5 بوصة بوز منحني — DL103204",
     "nameEn": "Bent Nose Pliers 5\" (DL103204)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL103204",
@@ -1644,8 +1644,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة 5 بوصة — DL103201",
     "nameEn": "Pliers 5\" (DL103201)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL103201",
@@ -1667,8 +1667,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة 8 بوصة — DL2008Z",
     "nameEn": "Pliers 8\" (DL2008Z)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2008Z",
@@ -1690,8 +1690,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة أمريكية سوداء 10 بوصة فك مستقيم — DL109010H",
     "nameEn": "Locking Pliers Straight Jaw 10\" (Black) (DL109010H)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL109010H",
@@ -1713,8 +1713,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة أمريكية 7 بوصة فك دائري — DL2001-7",
     "nameEn": "Locking Pliers Curved Jaw 7\" (DL2001-7)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2001-7",
@@ -1736,8 +1736,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة أمريكية سوداء 10 بوصة فك منحني — DL109110H",
     "nameEn": "Locking Pliers Curved Jaw 10\" (Black) (DL109110H)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL109110H",
@@ -1759,8 +1759,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة فك متحرك 6 بوصة — DL25506",
     "nameEn": "Slip Joint Pliers 6\" (DL25506)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL25506",
@@ -1782,8 +1782,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة فيرمو خارجي 7 بوصة — DL0344",
     "nameEn": "External Circlip Pliers 7\" (DL0344)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0344",
@@ -1805,8 +1805,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة فيرمو متعددة الرؤوس 6 بوصة — DL104506",
     "nameEn": "Circlip Pliers with Interchangeable Tips 6\" (DL104506)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL104506",
@@ -1828,8 +1828,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة قشارة أسلاك 0.5-6 ملم — DL2003",
     "nameEn": "Wire Stripper 0.5-6 mm (DL2003)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2003",
@@ -1851,8 +1851,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة قطاعة 6 بوصة — DL0204",
     "nameEn": "Diagonal Cutting Pliers 6\" (DL0204)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0204",
@@ -1874,8 +1874,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة قطع بلاستيك 4.5 بوصة — DL2705",
     "nameEn": "Plastic Flush Cutter 4.5\" (DL2705)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2705",
@@ -1897,8 +1897,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة قطع بلاستيك 6 بوصة — DL0306A",
     "nameEn": "Plastic Flush Cutter 6\" (DL0306A)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0306A",
@@ -1920,8 +1920,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة كبس نهاية كابل — DL2468",
     "nameEn": "Cable Lug Crimping Pliers (DL2468)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2468",
@@ -1943,8 +1943,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة كبس نهاية كابل — DL2468C",
     "nameEn": "Cable Lug Crimping Pliers (DL2468C)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2468C",
@@ -1966,8 +1966,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة كبس نهاية كابل — DL381008",
     "nameEn": "Cable Lug Crimping Pliers (DL381008)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL381008",
@@ -1989,8 +1989,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة كبس نهاية كابل — DL4971",
     "nameEn": "Cable Lug Crimping Pliers (DL4971)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL4971",
@@ -2012,8 +2012,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة كلاب 8 بوصة — DL111008",
     "nameEn": "Pincers 8\" (DL111008)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL111008",
@@ -2035,8 +2035,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة كلاب 9 بوصة — DL111009",
     "nameEn": "Pincers 9\" (DL111009)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL111009",
@@ -2058,8 +2058,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة متعددة الأغراض 8 بوصة — DL102008",
     "nameEn": "Multi-Purpose Pliers 8\" (DL102008)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL102008",
@@ -2081,8 +2081,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة متعددة الأغراض 8.5 بوصة — DL100008",
     "nameEn": "Multi-Purpose Pliers 8.5\" (DL100008)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL100008",
@@ -2104,8 +2104,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة متعددة الأغراض بوز طويل 9 بوصة — DL101008",
     "nameEn": "Multi-Purpose Long Nose Pliers 9\" (DL101008)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL101008",
@@ -2127,8 +2127,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة متعددة الأغراض قشارة 0.2-6 ملم — DL2018",
     "nameEn": "Multi-Purpose Wire Stripper 0.2-6 mm (DL2018)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2018",
@@ -2150,8 +2150,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة متعددة الأغراض قشارة 2.6-6 ملم — DL2607",
     "nameEn": "Multi-Purpose Wire Stripper 2.6-6 mm (DL2607)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2607",
@@ -2173,8 +2173,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة 7 بوصة — DL100107G",
     "nameEn": "Pliers 7\" (DL100107G)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL100107G",
@@ -2196,8 +2196,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة 7 بوصة — DL2007Z",
     "nameEn": "Pliers 7\" (DL2007Z)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2007Z",
@@ -2219,8 +2219,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة أمريكية 11 بوصة حرف C — EDL20011",
     "nameEn": "C-Clamp Locking Pliers 11\" (EDL20011)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: EDL20011",
@@ -2242,8 +2242,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة أمريكية بوز 9 بوصة — DL20015B",
     "nameEn": "Long Nose Locking Pliers 9\" (DL20015B)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL20015B",
@@ -2265,8 +2265,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة أمريكية مستقيمة 10 بوصة — DL109010",
     "nameEn": "Locking Pliers Straight Jaw 10\" (DL109010)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL109010",
@@ -2288,8 +2288,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة ببغاء 10 بوصة — DL2610",
     "nameEn": "Water Pump Pliers 10\" (DL2610)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2610",
@@ -2311,8 +2311,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة برشام 10.5 بوصة — DL236910",
     "nameEn": "Hand Riveter 10.5\" (DL236910)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL236910",
@@ -2334,8 +2334,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة بوز طويل 5 بوصة — DL103202",
     "nameEn": "Long Nose Pliers 5\" (DL103202)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL103202",
@@ -2357,8 +2357,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة بوز معكوف 7 بوصة — DL0343",
     "nameEn": "Bent Nose Pliers 7\" (DL0343)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0343",
@@ -2380,8 +2380,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة بوز 5 بوصة — DL20026",
     "nameEn": "Long Nose Pliers 5\" (DL20026)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL20026",
@@ -2403,8 +2403,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة بوز عادية 8 بوصة — DL2108",
     "nameEn": "Long Nose Pliers 8\" (DL2108)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2108",
@@ -2426,8 +2426,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة سن طويل 8 بوصة — DL2108",
     "nameEn": "Long Nose Pliers 8\" (DL2108)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2108",
@@ -2449,8 +2449,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة طويلة 6 بوصة — DL2106",
     "nameEn": "Long Nose Pliers 6\" (DL2106)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2106",
@@ -2472,8 +2472,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة عادية 6 بوصة — DL2006",
     "nameEn": "Combination Pliers 6\" (DL2006)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2006",
@@ -2495,8 +2495,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة عادية 7 بوصة — DL2007",
     "nameEn": "Combination Pliers 7\" (DL2007)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2007",
@@ -2518,8 +2518,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة عادية 8 بوصة — DL0005",
     "nameEn": "Combination Pliers 8\" (DL0005)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0005",
@@ -2541,8 +2541,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة فرنساوية 70 ملم — DL20015B",
     "nameEn": "Pliers 70 mm (DL20015B)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -2562,8 +2562,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة فيرمو 7 بوصة — DL0342",
     "nameEn": "Circlip Pliers 7\" (DL0342)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0342",
@@ -2585,8 +2585,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة قطاعة 5 بوصة — DL20025",
     "nameEn": "Diagonal Cutting Pliers 5\" (DL20025)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL20025",
@@ -2608,8 +2608,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة قطع 6 بوصة — DL2206",
     "nameEn": "Cutting Pliers 6\" (DL2206)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2206",
@@ -2631,8 +2631,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بينسة ملاقط — DL0343",
     "nameEn": "Pliers (DL0343)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL0343",
@@ -2654,8 +2654,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو حديد صناعي 16 ملم 1200 وات — DL-DZ16-E1",
     "nameEn": "Industrial Drill 16 mm 1200W (DL-DZ16-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-DZ16-E1",
@@ -2677,8 +2677,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو 10 ملم 370 وات — DL-DZ10-3E",
     "nameEn": "Electric Drill 10 mm 370W (DL-DZ10-3E)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-DZ10-3E",
@@ -2700,8 +2700,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو 10 ملم 500 وات — DE-DZ10-1E",
     "nameEn": "Electric Drill 10 mm 500W (DE-DZ10-1E)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-DZ10-1E",
@@ -2723,8 +2723,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو 13 ملم 1050 وات — DL-CZ13-E3",
     "nameEn": "Impact Drill 13 mm 1050W (DL-CZ13-E3)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-CZ13-E3",
@@ -2746,8 +2746,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو 13 ملم 820 وات — DL-CZ13-E6",
     "nameEn": "Impact Drill 13 mm 820W (DL-CZ13-E6)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-CZ13-E6",
@@ -2769,8 +2769,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو شحن 12 فولت — DL-DZ12-4A2",
     "nameEn": "Cordless Drill 12V (DL-DZ12-4A2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-DZ12-4A2",
@@ -2792,8 +2792,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو شحن 16 فولت — DE-CZ16-1D2",
     "nameEn": "Cordless Impact Drill 16V (DE-CZ16-1D2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-CZ16-1D2",
@@ -2815,8 +2815,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو شحن 20 فولت بطاريتين 2 أمبير — DC120",
     "nameEn": "Cordless Drill 20V with 2 x 2Ah Batteries (DC120)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DC120",
@@ -2838,8 +2838,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو شحن 20 فولت بطاريتين 2 أمبير — DE-CZ20-2D2",
     "nameEn": "Cordless Impact Drill 20V with 2 x 2Ah Batteries (DE-CZ20-2D2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-CZ20-2D2",
@@ -2861,8 +2861,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو شحن 20 فولت إمباكت 2 أمبير — DC150Z",
     "nameEn": "Cordless Impact Driver 20V 2Ah (DC150Z)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DC150Z",
@@ -2884,8 +2884,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو شحن 20 فولت إمباكت 2 أمبير — DE-QZ20-1D2",
     "nameEn": "Cordless Impact Driver 20V 2Ah (DE-QZ20-1D2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-QZ20-1D2",
@@ -2907,8 +2907,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو كسار 22 ملم 20 فولت 4 أمبير — DC300",
     "nameEn": "Cordless Rotary Hammer 22 mm 20V 4Ah (DC300)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DC300",
@@ -2930,8 +2930,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو نقش 130 وات — DL-DM03-E1",
     "nameEn": "Rotary Engraving Tool 130W (DL-DM03-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-DM03-E1",
@@ -2953,8 +2953,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو 13 ملم 650 وات — DL-CZ13-E5",
     "nameEn": "Impact Drill 13 mm 650W (DL-CZ13-E5)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-CZ13-E5",
@@ -2976,8 +2976,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جهاز رش مبيدات — DL581105A",
     "nameEn": "Pesticide Sprayer (DL581105A)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL581105A",
@@ -2999,8 +2999,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جهاز قياس جهد 12-250 فولت — DL8003",
     "nameEn": "Voltage Tester 12-250V (DL8003)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL8003",
@@ -3022,8 +3022,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جوانتي لحام 14 بوصة — DL-T1",
     "nameEn": "Welding Gloves 14\" (DL-T1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-T1",
@@ -3045,8 +3045,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جوانتي محبب مقاس L — DL521021L",
     "nameEn": "Grip Gloves Size L (DL521021L)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL521021L",
@@ -3068,8 +3068,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جوانتي محبب مقاس XL — DL521021XL",
     "nameEn": "Grip Gloves Size XL (DL521021XL)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL521021XL",
@@ -3091,8 +3091,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جوانتي مطاط مقاس XL — DL521031XL",
     "nameEn": "Rubber Gloves Size XL (DL521031XL)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL521031XL",
@@ -3114,8 +3114,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جوانتي مقاوم للقطع مقاس L — DL521043XL",
     "nameEn": "Cut-Resistant Gloves Size L (DL521043XL)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL521043XL",
@@ -3137,8 +3137,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حاملة ميزان ليزري 1.2 متر — DL4161-2",
     "nameEn": "Laser Level Tripod 1.2 m (DL4161-2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL4161-2",
@@ -3160,8 +3160,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حجر قص حديد 4.5 بوصة 1.2 ملم — DH-SZP115-E2",
     "nameEn": "Metal Cutting Disc 4.5\" x 1.2 mm (DH-SZP115-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-SZP115-E2",
@@ -3183,8 +3183,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حجر قص حديد 4.5 بوصة 3 ملم — DH-MGP115-E2",
     "nameEn": "Metal Cutting Disc 4.5\" x 3 mm (DH-MGP115-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-MGP115-E2",
@@ -3206,8 +3206,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حجر قص حديد 9 بوصة 1.6 ملم — DH-SZP230-E2",
     "nameEn": "Metal Cutting Disc 9\" x 1.6 mm (DH-SZP230-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-SZP230-E2",
@@ -3229,8 +3229,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حجر مسح حديد فلاب 4.5 بوصة — DH-BYP11580-E1",
     "nameEn": "Flap Disc 4.5\" (DH-BYP11580-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DH-BYP11580-E1",
@@ -3252,8 +3252,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حشوات أمواس فرش 18 ملم — DL-DB",
     "nameEn": "Utility Knife Blades 18 mm (DL-DB)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -3273,8 +3273,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حشوات مفك 6.3 ملم — DL253202",
     "nameEn": "Screwdriver Bits 6.3 mm (DL253202)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -3294,8 +3294,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حشوات مفك 6.3 ملم — DL6902",
     "nameEn": "Screwdriver Bits 6.3 mm (DL6902)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -3315,8 +3315,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حقيبة عدة قماش 16 بوصة — DL430016",
     "nameEn": "Fabric Tool Bag 16\" (DL430016)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL430016",
@@ -3338,8 +3338,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حقيبة عدة قماش 18 بوصة — DL430018",
     "nameEn": "Fabric Tool Bag 18\" (DL430018)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL430018",
@@ -3361,8 +3361,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حقيبة عدة محمولة قماش — DL430003",
     "nameEn": "Portable Fabric Tool Bag (DL430003)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL430003",
@@ -3384,8 +3384,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حقيبة عدة محمولة قماش 13 بوصة — DL430013",
     "nameEn": "Portable Fabric Tool Bag 13\" (DL430013)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL430013",
@@ -3407,8 +3407,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "خرامة جلد 9 بوصة — DL1919",
     "nameEn": "Leather Hole Punch 9\" (DL1919)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL1919",
@@ -3430,8 +3430,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "خرامة جلد 9 بوصة — DL1919C",
     "nameEn": "Leather Hole Punch 9\" (DL1919C)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL1919C",
@@ -3453,8 +3453,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "خرطوم 30 متر 1/2 بوصة — DL8072-30",
     "nameEn": "Hose 30 m 1/2\" (DL8072-30)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL8072-30",
@@ -3476,8 +3476,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "خلاط 1400 وات — DC176",
     "nameEn": "Electric Mixer 1400W (DC176)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DC176",
@@ -3499,8 +3499,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "خلاط 1800 وات زوجي — EDC177",
     "nameEn": "Double-Paddle Mixer 1800W (EDC177)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: EDC177",
@@ -3522,8 +3522,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "خوذة لحام — DL23950A",
     "nameEn": "Welding Helmet (DL23950A)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL23950A",
@@ -3545,8 +3545,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "دباسة يدوية 4-8 ملم — DL1313",
     "nameEn": "Manual Staple Gun 4-8 mm (DL1313)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL1313",
@@ -3568,8 +3568,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "راس تسخين بالغاز العادي — DL415130D",
     "nameEn": "Gas Torch Head (DL415130D)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL415130D",
@@ -3591,8 +3591,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "راس مشحمة يدوية — DL471002",
     "nameEn": "Grease Gun Head (DL471002)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL471002",
@@ -3614,8 +3614,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "رشاش ماء 360 درجة — DL581302",
     "nameEn": "360° Water Sprinkler (DL581302)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -3635,8 +3635,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "رشاش مياه أرضي 3/4 بوصة — DL581303",
     "nameEn": "Oscillating Garden Sprinkler 3/4\" (DL581303)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL581303",
@@ -3658,8 +3658,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة 35 سم — DL302350",
     "nameEn": "Try Square 35 cm (DL302350)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL302350",
@@ -3681,8 +3681,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة ديجيتال — DL304200",
     "nameEn": "Digital Angle Square (DL304200)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL304200",
@@ -3704,8 +3704,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة 30 سم — DL302300",
     "nameEn": "Try Square 30 cm (DL302300)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL302300",
@@ -3727,8 +3727,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة 50 سم — DL302500",
     "nameEn": "Try Square 50 cm (DL302500)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL302500",
@@ -3750,8 +3750,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سكينة معجون 3 بوصة — DL-HD3",
     "nameEn": "Putty Knife 3\" (DL-HD3)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-HD3",
@@ -3773,8 +3773,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سكينة معجون 4 بوصة — DL-HD4",
     "nameEn": "Putty Knife 4\" (DL-HD4)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-HD4",
@@ -3796,8 +3796,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سكينة معجون 5 بوصة — DL-HD5",
     "nameEn": "Putty Knife 5\" (DL-HD5)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-HD5",
@@ -3819,8 +3819,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سكينة معجون 6 بوصة — DL-HD6",
     "nameEn": "Putty Knife 6\" (DL-HD6)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-HD6",
@@ -3842,8 +3842,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سلم حديد ثلاث درجات — DL509013",
     "nameEn": "Steel Step Ladder 3 Steps (DL509013)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL509013",
@@ -3865,8 +3865,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سلم حديد درجتين — DL509012",
     "nameEn": "Steel Step Ladder 2 Steps (DL509012)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL509012",
@@ -3888,8 +3888,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شاكوش خلاعة 12 كجم — DL5002",
     "nameEn": "Demolition Sledgehammer 12 kg (DL5002)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL5002",
@@ -3911,8 +3911,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شاكوش طويل مقبض مطاط 3 كجم — DL447030",
     "nameEn": "Long-Handle Sledgehammer 3 kg (Rubber Grip) (DL447030)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL447030",
@@ -3934,8 +3934,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شاكوش مسمار مقبض خشب 500 جرام — DL5250",
     "nameEn": "Claw Hammer 500 g (Wooden Handle) (DL5250)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL5250",
@@ -3957,8 +3957,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شاكوش مسمار مقبض مطاط 27 ملم — DL5027Y",
     "nameEn": "Claw Hammer 27 mm (Rubber Grip) (DL5027Y)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL5027Y",
@@ -3980,8 +3980,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شنطة عدة 13 بوصة — DL430113",
     "nameEn": "Tool Bag 13\" (DL430113)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL430113",
@@ -4003,8 +4003,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شنطة عدة 16 بوصة — DL430116",
     "nameEn": "Tool Bag 16\" (DL430116)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL430116",
@@ -4026,8 +4026,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شنطة عدة 28 قطعة — DL1028J",
     "nameEn": "Tool Kit 28 pcs (DL1028J)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL1028J",
@@ -4049,8 +4049,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شنطة عدة بلاستيك غطاء أصفر 19 بوصة — DL-TC290",
     "nameEn": "Plastic Toolbox 19\" (Yellow Lid) (DL-TC290)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-TC290",
@@ -4072,8 +4072,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ 4.5 بوصة 900 وات — DL-JM115-E2",
     "nameEn": "Angle Grinder 4.5\" 900W (DL-JM115-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-JM115-E2",
@@ -4095,8 +4095,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ 5 بوصة 1100 وات — DL-JM125-E3",
     "nameEn": "Angle Grinder 5\" 1100W (DL-JM125-E3)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-JM125-E3",
@@ -4118,8 +4118,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ 5 بوصة 1200 وات — DL-JM125-E4",
     "nameEn": "Angle Grinder 5\" 1200W (DL-JM125-E4)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-JM125-E4",
@@ -4141,8 +4141,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ 7 بوصة 2000 وات — DE-JM180-1E",
     "nameEn": "Angle Grinder 7\" 2000W (DE-JM180-1E)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-JM180-1E",
@@ -4164,8 +4164,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ 9 بوصة 2200 وات — DE-JM230-E1",
     "nameEn": "Angle Grinder 9\" 2200W (DE-JM230-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-JM230-E1",
@@ -4187,8 +4187,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ جلخ 2400 وات — DL-JM230-E2",
     "nameEn": "Angle Grinder 9\" 2400W (DL-JM230-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -4208,8 +4208,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ شحن 20 فولت بطاريتين — DE-JM20-3D4",
     "nameEn": "Cordless Angle Grinder 4.5\" 20V with 2 x 4Ah Batteries (DE-JM20-3D4)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-JM20-3D4",
@@ -4231,8 +4231,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ شحن 4.5 بوصة 20 فولت 4 أمبير — DE-JM20-3D4",
     "nameEn": "Cordless Angle Grinder 4.5\" 20V 4Ah (DE-JM20-3D4)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DE-JM20-3D4",
@@ -4254,8 +4254,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ قص رخام 1250 وات — DL-YS110-E1",
     "nameEn": "Marble Cutter 1250W (DL-YS110-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -4275,8 +4275,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ لمعة 7 بوصة 1200 وات — DL-PG180-E1",
     "nameEn": "Polisher 7\" 1200W (DL-PG180-E1)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL-PG180-E1",
@@ -4298,8 +4298,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ لمعة 900 وات — DL-JM115-E2",
     "nameEn": "Polisher 900W (DL-JM115-E2)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Deli"
@@ -4319,8 +4319,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صندوق عدة بلاستيك 14 بوصة — DL432414",
     "nameEn": "Plastic Toolbox 14\" (DL432414)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL432414",
@@ -4342,8 +4342,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صندوق عدة بلاستيك 15 بوصة — DL432417",
     "nameEn": "Plastic Toolbox 15\" (DL432417)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL432417",
@@ -4365,8 +4365,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صندوق لقمة 32 قطعة — DL1032",
     "nameEn": "Socket Set 32 pcs (DL1032)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL1032",
@@ -4388,8 +4388,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صندوق لقمة 46 قطعة — DL1046",
     "nameEn": "Socket Set 46 pcs (DL1046)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL1046",
@@ -4411,8 +4411,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ضاغط هواء للسيارات 2 بستوني — DL8060",
     "nameEn": "Car Air Compressor Twin Cylinder (DL8060)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL8060",
@@ -4434,8 +4434,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ضاغط هواء للسيارات — DL8058",
     "nameEn": "Car Air Compressor (DL8058)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL8058",
@@ -4457,8 +4457,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "طاقم بينسات يد صفراء 3 قطع — DL2008-3",
     "nameEn": "Pliers Set 3 pcs (Yellow Handles) (DL2008-3)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL2008-3",
@@ -4480,8 +4480,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "طاقم مفاتيح ربط 8 قطع — DL130008A",
     "nameEn": "Wrench Set 8 pcs (DL130008A)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL130008A",
@@ -4503,8 +4503,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "طاقم مفكات 4 قطع — DL620004",
     "nameEn": "Screwdriver Set 4 pcs (DL620004)",
-    "descriptionAr": "منتج أصلي من Deli ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Deli product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: DL620004",
@@ -4526,8 +4526,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر أكري باست — أبيض",
     "nameEn": "Weber Acrypaste — White",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4547,8 +4547,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "الألماني (منتج ويبر غير محدد)",
     "nameEn": "Al Almany (unidentified Weber product)",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4568,8 +4568,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبركول فيكس 401 — لاصق بلاط إسمنتي (أبيض)",
     "nameEn": "webercol fix 401 — Cementitious Tile Adhesive (White)",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4590,8 +4590,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر روبة 414 GA — لون 2033",
     "nameEn": "Weber Grout 414 GA — Colour 2033",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4611,8 +4611,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر روبة 414 GA — 5 كغ، لون 2035",
     "nameEn": "Weber Grout 414 GA — 5 kg, Colour 2035",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4632,8 +4632,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبرفلور إيبوسيل بلس — برايمر إيبوكسي",
     "nameEn": "weberfloor eposil plus — Epoxy Sealing Primer",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4654,8 +4654,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جيبروك إيزي فيل — معجون جبسي لفواصل ألواح الجبس",
     "nameEn": "Gyproc Easi-Fill — Gypsum Jointing Compound",
-    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس والأسقف. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Gyproc (Saint-Gobain) product in the Gypsum Board category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Gyproc (Saint-Gobain) product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Gyproc"
@@ -4676,8 +4676,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جيبروك الممتاز 120 — معجون جبسي للتنعيم، 12 كغ",
     "nameEn": "Gyproc Almomtaz 120 — Gypsum Smoothing Putty, 12 kg",
-    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس والأسقف. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Gyproc (Saint-Gobain) product in the Gypsum Board category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Gyproc (سان جوبان) ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Gyproc (Saint-Gobain) product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Gyproc"
@@ -4698,8 +4698,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر إد 245 SBR — مادة لاتكس للربط والعزل",
     "nameEn": "weberad 245 SBR — SBR Latex Bonding & Waterproofing Additive",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4720,8 +4720,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر دراي 100 FX — عازل مائي إسمنتي مرن",
     "nameEn": "weberdry 100 FX — Flexible Cementitious Waterproofing",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4742,8 +4742,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر دراي 110 FX — عازل مائي إسمنتي مرن (رمادي)",
     "nameEn": "weberdry 110 FX — Flexible Cementitious Waterproofing (Grey)",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4764,8 +4764,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر ريب 331 TX — مونة ترميم ثيكسوتروبية غير قابلة للانكماش",
     "nameEn": "weberep 331 TX — Thixotropic Non-Shrink Repair Mortar",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4786,8 +4786,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبرتك 301 GA — جراوت إنشائي غير قابل للانكماش",
     "nameEn": "webertec 301 GA — Non-Shrink Structural Grout",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4808,8 +4808,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبرتك 302 HF — جراوت تأسيس عالي السيولة",
     "nameEn": "webertec 302 HF — High-Flow Expansive Bedding Grout",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4830,8 +4830,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر ريب 360 FFR — مونة ترميم وتشطيب ناعمة",
     "nameEn": "weberep 360 FFR — Fine Repair & Finishing Mortar",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4852,8 +4852,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبركول بلس — لاصق بلاط إسمنتي معدّل باللاتكس (أبيض)",
     "nameEn": "webercol plus — Latex-Modified Tile Adhesive (White)",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4874,8 +4874,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر دراي سويلبار — شريط مانع تسرب منتفخ، 10 م",
     "nameEn": "weberdry swellbar — Swelling Waterstop, 10 m",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -4896,8 +4896,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر بريس ADH 1414 (سيكادور ADH 1414) — رابط إيبوكسي للخرسانة",
     "nameEn": "MasterBrace ADH 1414 (now Sikadur ADH 1414) — Epoxy Bonding Agent",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -4918,8 +4918,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر كاست 140 — لاتكس SBR إضافة ورابط للمونة (25 لتر)",
     "nameEn": "MasterCast 140 — SBR Latex Admixture & Bonding Agent (25 L)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -4939,8 +4939,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر كاست 141M — لاتكس SBR إضافة ورابط للمونة (25 لتر)",
     "nameEn": "MasterCast 141M — SBR Latex Admixture & Bonding Agent (25 L)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -4960,8 +4960,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر إيماكو S 488 (سيكا إيماكو S 488) — مونة إصلاح إنشائية",
     "nameEn": "MasterEmaco S 488 (now SikaEmaco S 488) — Structural Repair Mortar",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -4982,8 +4982,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر إيماكو 8100 AP (سيكا إيماكو 8100 AP) — برايمر إيبوكسي غني بالزنك لحديد التسليح (1 كجم)",
     "nameEn": "MasterEmaco 8100 AP (now SikaEmaco-8100 AP) — Zinc-Rich Epoxy Primer for Rebar (1 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -5004,8 +5004,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر فلو 980 (سيكا جراوت 980) — جراوت خرساني دقيق عالي المقاومة (30 كجم)",
     "nameEn": "MasterFlow 980 (now SikaGrout-980) — High-Strength Cementitious Micro-Concrete Grout (30 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -5026,8 +5026,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر سيل 550 (سيكا توب 550 سيل) — طلاء عزل أسمنتي أكريليكي، رمادي (20 كجم)",
     "nameEn": "MasterSeal 550 (now SikaTop-550 Seal) — Acrylic Cementitious Waterproofing Coating, Grey (20 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -5048,8 +5048,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر سيل 550 (سيكا توب 550 سيل) — طلاء عزل أسمنتي أكريليكي، أبيض (20 كجم)",
     "nameEn": "MasterSeal 550 (now SikaTop-550 Seal) — Acrylic Cementitious Waterproofing Coating, White (20 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Master Builders"
@@ -5070,8 +5070,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر جوينت سيل PU — مانع تسرب بولي يوريثان للفواصل (رمادي)",
     "nameEn": "weber jointseal PU — Polyurethane Joint Sealant (Grey)",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -5092,8 +5092,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ويبر أنك 405 BFX — راتنج إيبوكسي لتثبيت حديد التسليح (400 مل)",
     "nameEn": "weberanc 405 BFX — Pure Epoxy Anchoring Resin (400 ml)",
-    "descriptionAr": "منتج أصلي من Weber ضمن فئة أنظمة حلول البناء والانشاء. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Weber product in the Building Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
       "العلامة التجارية: Weber"
@@ -5114,8 +5114,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بلاور هواء 530 وات — BDB530",
     "nameEn": "Air Blower 530W (BDB530)",
-    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Black+Decker product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Black+Decker product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Black+Decker"
@@ -5135,8 +5135,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ترابنو وكسار شحن 18 فولت 1.5 أمبير — BCD003C2K-GB",
     "nameEn": "Cordless Hammer Drill 18V 1.5Ah (BCD003C2K-GB)",
-    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Black+Decker product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Black+Decker product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: B&D-BCD003C22K-GB-18V-1.5AH",
@@ -5158,8 +5158,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سخان حراري 1750 وات — KX1650-B5",
     "nameEn": "Heat Gun 1750W (KX1650-B5)",
-    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Black+Decker product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Black+Decker product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Black+Decker"
@@ -5179,8 +5179,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ جلخ 2200 وات — BDGL2223",
     "nameEn": "Angle Grinder 2200W (BDGL2223)",
-    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Black+Decker product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Black+Decker product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Black+Decker"
@@ -5200,8 +5200,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صاروخ جلخ 820 وات — KG8215",
     "nameEn": "Angle Grinder 820W (KG8215)",
-    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Black+Decker product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Black+Decker product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Black+Decker"
@@ -5221,8 +5221,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "طقم بونتة 5 قطع — X56035",
     "nameEn": "Masonry Drill Bit Set 5 pcs (X56035)",
-    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Black+Decker product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Black+Decker ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Black+Decker product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: X56035",
@@ -5244,8 +5244,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "بيله على الراس — FMHT81509-0",
     "nameEn": "FatMax LED Head Lamp 200 lm (FMHT81509-0)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: FMHT81509-0",
@@ -5267,8 +5267,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "جهاز قياس ضغط الهواء رقمي — STHT80874-0",
     "nameEn": "Digital Tyre Pressure Gauge (STHT80874-0)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STHT80874-0",
@@ -5290,8 +5290,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "حشوة امواس فرش — 11-921",
     "nameEn": "Heavy-Duty Utility Knife Blades with Dispenser (11-921)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5311,8 +5311,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة 6 بوصة — E-46530",
     "nameEn": "Try Square 150 mm / 6\" (E-46530)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: E-46530",
@@ -5334,8 +5334,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة 8 بوصة — E-46532",
     "nameEn": "Try Square 200 mm / 8\" (E-46532)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: E-46532",
@@ -5357,8 +5357,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "زاوية علامة — 600-600-45",
     "nameEn": "Marking Square (600-600-45)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5378,8 +5378,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سلاح مبرد — 5-21-293",
     "nameEn": "Surform Replacement Blade 250 mm (5-21-293)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5399,8 +5399,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "سلاح منشار حديد — 1-15-842",
     "nameEn": "Hacksaw Blade 300 mm (1-15-842)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5420,8 +5420,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شاكوش بيضاوي 500 جرام — 54-191",
     "nameEn": "Ball-Pein Hammer 500 g (54-191)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5441,8 +5441,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شاكوش خلاعة — E-51-269",
     "nameEn": "Claw Hammer 370 g (E-51-269)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: E-51-269",
@@ -5464,8 +5464,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "شنطة مجرورة — 1-97-515",
     "nameEn": "Rolling Soft Tool Bag 18\" (1-97-515)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5485,8 +5485,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "صندوق عدة بالعجلات مقاوم للماء — FMST1-75761",
     "nameEn": "FatMax Waterproof Rolling Toolbox 28\" (FMST1-75761)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: FATMAX-FMST1-75761",
@@ -5508,8 +5508,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "طاقم مفكات دقيقة 6 قطع — STHT66052-8",
     "nameEn": "Precision Screwdriver Set 6 pcs (STHT66052-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5529,8 +5529,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "عربة عدة 7 أدراج — STST74306-8",
     "nameEn": "7-Drawer Roller Tool Cabinet 27\" (STST74306-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STST74306-8",
@@ -5552,8 +5552,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "علامة زواق 30 متر — 0-47-465",
     "nameEn": "PowerWinder Chalk Line Set 30 m (0-47-465)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5573,8 +5573,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "فارة تنعيم جبس — 5-21-122",
     "nameEn": "Surform Planer File 250 mm (5-21-122)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5594,8 +5594,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "فارة خشب يدوية رقم 6 — 1-12-006",
     "nameEn": "No. 6 Bailey Fore Plane (1-12-006)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: G12-006",
@@ -5617,8 +5617,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "قشاطة خشب — 5-21-103",
     "nameEn": "Surform Plane, Moulded Body (5-21-103)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5638,8 +5638,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "قشاطة زجاج — 0-28-590",
     "nameEn": "Window Scraper (0-28-590)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5659,8 +5659,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "قطاعة كوابل — 84-632",
     "nameEn": "Cable Cutter 32\" (84-632)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5680,8 +5680,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "قلم علامة حديد — 0-47-316",
     "nameEn": "Fine-Tip Permanent Marker, 2-pack (0-47-316)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5701,8 +5701,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "كلاب — 2-84-184",
     "nameEn": "End Cutting Pincers 225 mm (2-84-184)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5722,8 +5722,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "متر قياس 10 متر 25 ملم — STHT33463-8",
     "nameEn": "PowerLock Tape Measure 10 m x 25 mm (STHT33463-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STHT33463-8",
@@ -5745,8 +5745,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "متر قياس 8 متر — 0-30-657",
     "nameEn": "Tylon Tape Measure 8 m (0-30-657)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5766,8 +5766,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "متر قياس 5 متر — STHT30034-8",
     "nameEn": "Tape Measure 5 m (STHT30034-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5787,8 +5787,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "متر قياس فات ماكس 5 متر — XTHT0-33671",
     "nameEn": "FatMax Autolock Tape Measure 5 m (XTHT0-33671)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: XTHT0-33671",
@@ -5810,8 +5810,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "متر قياس فات ماكس 8 متر — XTHT0-33501",
     "nameEn": "FatMax Autolock Tape Measure 8 m (XTHT0-33501)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: XTHT0-33501",
@@ -5833,8 +5833,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "محطة عمل متنقلة فات ماكس — 1-94-210",
     "nameEn": "FatMax Mobile Work Station (1-94-210)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: FATMAX-1-94-210",
@@ -5856,8 +5856,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "مفك كهرباء فردي — 66-120",
     "nameEn": "Voltage Tester Screwdriver 100-500V (66-120)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5877,8 +5877,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "مقشطة نوافذ — 0-28-590",
     "nameEn": "Window Scraper (0-28-590)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5898,8 +5898,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "مقص لاميرة مستقيم — 2-14-563",
     "nameEn": "FatMax Aviation Snips, Straight Cut (2-14-563)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5919,8 +5919,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "منشار جبس — 0-20-556",
     "nameEn": "FatMax Plasterboard Jab Saw (0-20-556)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5940,8 +5940,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "منشار حديد يدوي 12 بوصة — 1-15-122",
     "nameEn": "Hacksaw 12\" / 300 mm (1-15-122)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -5961,8 +5961,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "منشار خشب 500 ملم — E-15471",
     "nameEn": "Hand Saw 500 mm / 20\" (E-15471)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: E-15471",
@@ -5984,8 +5984,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "منشار خشب 600 ملم — 15-473",
     "nameEn": "Hand Saw 600 mm / 24\" (15-473)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6005,8 +6005,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "منشار خشب يدوي 20 بوصة — 2-20-529",
     "nameEn": "FatMax Hand Saw 500 mm / 20\" (2-20-529)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6026,8 +6026,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "منشار خشب يدوي 550 ملم — 2-15-289",
     "nameEn": "FatMax Heavy-Duty Hand Saw 550 mm (2-15-289)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6047,8 +6047,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "موس فرش 18 ملم داينا جريب — 10-418",
     "nameEn": "DynaGrip Snap-Off Knife 18 mm (10-418)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6068,8 +6068,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "موس فرش 18 ملم — STHT10323-8",
     "nameEn": "Snap-Off Knife 18 mm (STHT10323-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6089,8 +6089,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "موس فرش بلاستيك 25 ملم — 0-10-425",
     "nameEn": "DynaGrip Snap-Off Knife 25 mm (0-10-425)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6110,8 +6110,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "موس فرش معدن — 10-099",
     "nameEn": "99E Retractable Utility Knife (10-099)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6131,8 +6131,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "موس فرش معدني — 10-099",
     "nameEn": "99E Retractable Utility Knife (10-099)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6152,8 +6152,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان 23 سم مغناطيسي — 43-511",
     "nameEn": "Magnetic Torpedo Level 23 cm (43-511)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6173,8 +6173,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان جيب صغير — 0-42-130",
     "nameEn": "Magnetic Pocket Level (0-42-130)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6194,8 +6194,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 40 سم 2 أعين — STHT1-43102",
     "nameEn": "Classic Box Level 40 cm, 2 Vials (STHT1-43102)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6215,8 +6215,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 40 سم مغناطيسي — STHT1-43110",
     "nameEn": "Classic Magnetic Box Level 40 cm (STHT1-43110)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6236,8 +6236,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 45 سم 3 أعين — 1-42-371",
     "nameEn": "Box Level 45 cm, 3 Vials (1-42-371)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6257,8 +6257,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 60 سم 2 أعين — STHT1-43103",
     "nameEn": "Classic Box Level 60 cm, 2 Vials (STHT1-43103)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6278,8 +6278,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 60 سم — 1-42-214",
     "nameEn": "Shock-Resistant Level 60 cm (1-42-214)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6299,8 +6299,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 60 سم مغناطيسي — STHT1-43111",
     "nameEn": "Classic Magnetic Box Level 60 cm (STHT1-43111)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6320,8 +6320,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 120 سم 2 أعين — 1-42-399",
     "nameEn": "Spirit Level 120 cm, 2 Vials (1-42-399)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "العلامة التجارية: Stanley"
@@ -6341,8 +6341,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 120 سم 2 أعين — STHT1-43106",
     "nameEn": "Classic Box Level 120 cm, 2 Vials (STHT1-43106)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STHT1-43106",
@@ -6364,8 +6364,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 200 سم — STHT43109-8",
     "nameEn": "Classic Box Level 200 cm (STHT43109-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STHT43109-8",
@@ -6387,8 +6387,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 23 سم مغناطيسي 3 أعين — STHT42465-8",
     "nameEn": "Magnetic Die-Cast Torpedo Level 23 cm, 3 Vials (STHT42465-8)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STHT42465-8",
@@ -6410,8 +6410,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ميزان مياه 30 سم — STHT42796",
     "nameEn": "Box Beam Level 30 cm (STHT42796)",
-    "descriptionAr": "منتج أصلي من Stanley ضمن فئة الأدوات والمعدات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Stanley product in the Industrial Tools category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
       "الكود: STHT42796",

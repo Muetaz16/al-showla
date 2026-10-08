@@ -119,13 +119,15 @@ export interface Category {
 
 export const CATEGORIES: Category[] = [
   { id: "all",        icon: "🏗️",  nameAr: "الكل",              nameEn: "All" },
-  { id: "waterproof", icon: "🏗️",  nameAr: "أنظمة حلول البناء والانشاء", nameEn: "Building Solutions" },
-  { id: "tools",      icon: "🔧",  nameAr: "الأدوات والمعدات الصناعية",     nameEn: "Industrial Tools" },
-  { id: "gypsum",     icon: "🧱",  nameAr: "أنظمة الجبس والأسقف",      nameEn: "Gypsum & Ceiling Systems" },
-  { id: "sanitary",   icon: "🪟",  nameAr: "بلاط السيراميك",  nameEn: "Ceramic Tiles" },
-  { id: "flooring",   icon: "🎨",  nameAr: "الديكور الداخلي والخارجي",      nameEn: "Interior & Exterior Decor" },
-  { id: "adhesives",  icon: "🏠",  nameAr: "أنظمة التعرفية",  nameEn: "Roofing Systems" },
-  { id: "steel",      icon: "⚙️",  nameAr: "الأسمنت والحديد",       nameEn: "Cement & Steel" },
+  // The 8 approved categories (client review report). Ids are kept for existing product data.
+  { id: "waterproof", icon: "🧪",  nameAr: "الكيماويات وحلول البناء المتخصصة", nameEn: "Specialized Construction Chemicals & Solutions" },
+  { id: "tools",      icon: "🔧",  nameAr: "المعدات والأدوات الصناعية", nameEn: "Industrial Equipment & Tools" },
+  { id: "gypsum",     icon: "🧱",  nameAr: "أنظمة الجبس والأسقف والحوائط", nameEn: "Gypsum, Ceiling & Wall Systems" },
+  { id: "steel",      icon: "⚙️",  nameAr: "مواد البناء الأساسية (الحديد والأسمنت وغيرها)", nameEn: "Basic Building Materials (Steel, Cement & More)" },
+  { id: "flooring",   icon: "🎨",  nameAr: "التشطيبات المعمارية وحلول الأرضيات", nameEn: "Architectural Finishes & Flooring Solutions" },
+  { id: "sanitary",   icon: "🪟",  nameAr: "السيراميك والبورسلين والأحجار", nameEn: "Ceramic, Porcelain & Stone" },
+  { id: "adhesives",  icon: "💧",  nameAr: "أنظمة تصريف مياه الأمطار", nameEn: "Rainwater Drainage Systems" },
+  { id: "sports",     icon: "🏟️",  nameAr: "البنية الرياضية والتشطيبات", nameEn: "Sports Infrastructure & Finishes" },
 ];
 
 // Catalog data lives in catalog-data.ts (auto-generated from supplier product images).

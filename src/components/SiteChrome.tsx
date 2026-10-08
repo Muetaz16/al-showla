@@ -52,8 +52,8 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/blog", L("المدونة", "Blog")],
     ["/careers", L("الوظائف", "Careers")],
     ["/faq", L("الأسئلة الشائعة", "FAQ")],
-    ["/#clients", L("عملاؤنا", "Clients")],
-    ["/#partners", L("شركاؤنا", "Our Partners")],
+    ["/#clients", L("من نخدم", "Who We Serve")],
+    ["/#partners", L("عملاؤنا", "Our Clients")],
     ["/#contact", L("اتصل بنا", "Contact")],
   ];
   return (
@@ -89,8 +89,8 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               <a href="/training">{L("ورش التدريب", "Training")}</a>
               <a href="/blog">{L("المدونة", "Blog")}</a>
               <a href="/careers">{L("الوظائف", "Careers")}</a>
-              <a href="/#clients" className="nav-drop-sec">{L("عملاؤنا", "Clients")}</a>
-              <a href="/#partners" className="nav-drop-sec">{L("شركاؤنا", "Our Partners")}</a>
+              <a href="/#clients" className="nav-drop-sec">{L("من نخدم", "Who We Serve")}</a>
+              <a href="/#partners" className="nav-drop-sec">{L("عملاؤنا", "Our Clients")}</a>
               <a href="/faq" className="nav-drop-sec">{L("الأسئلة الشائعة", "FAQ")}</a>
             </div>
           </div>
@@ -107,8 +107,8 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               <a href="/advisor" className="nav-drop-ter">🔧 {L("المستشار الذكي", "AI Advisor")}</a>
             </div>
           </div>
-          <a href="/#clients" className="nav-sec">{L("عملاؤنا", "Clients")}</a>
-          <a href="/#partners" className="nav-sec">{L("شركاؤنا", "Our Partners")}</a>
+          <a href="/#clients" className="nav-sec">{L("من نخدم", "Who We Serve")}</a>
+          <a href="/#partners" className="nav-sec">{L("عملاؤنا", "Our Clients")}</a>
           <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
           <a href="/faq" className="nav-sec">{L("الأسئلة الشائعة", "FAQ")}</a>
           <a href="/advisor" className="nav-ter" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>

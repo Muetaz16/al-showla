@@ -19,22 +19,24 @@ const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vi
 const WP = "https://alshowla.com/wp-content/uploads";
 
 const BRANDS: { name: string; logo: string }[] = [
-  { name: "Sika", logo: `${WP}/2026/01/Sika.jpg` },
-  { name: "AGT", logo: `${WP}/2026/01/AGT.jpg` },
-  { name: "DeWalt", logo: `${WP}/2026/01/DEWALT.jpg` },
-  { name: "Gyproc", logo: `${WP}/2026/01/GYPROC.jpg` },
-  { name: "Weber", logo: `${WP}/2026/04/weber.jpg` },
-  { name: "Top Wet", logo: `${WP}/2026/04/top-wet.jpg` },
   { name: "Saint-Gobain", logo: `${WP}/2026/01/Saint-Goban.jpg` },
-  { name: "Knauf", logo: `${WP}/2026/01/KNAUF.jpg` },
-  { name: "Stanley", logo: `${WP}/2026/01/Stanley.jpg` },
+  { name: "Weber", logo: `${WP}/2026/04/weber.jpg` },
+  { name: "Gyproc", logo: `${WP}/2026/01/GYPROC.jpg` },
+  { name: "Chryso", logo: "/brands/chryso.webp" },
+  { name: "GCP", logo: "/brands/gcp.webp" },
+  { name: "Fosroc", logo: "/brands/fosroc.webp" },
+  { name: "DeWalt", logo: `${WP}/2026/01/DEWALT.jpg` },
   { name: "Black & Decker", logo: `${WP}/2026/01/B-DECKER.jpg` },
+  { name: "Stanley", logo: `${WP}/2026/01/Stanley.jpg` },
+  { name: "Sika", logo: `${WP}/2026/01/Sika.jpg` },
+  { name: "Knauf", logo: `${WP}/2026/01/KNAUF.jpg` },
+  { name: "AGT", logo: `${WP}/2026/01/AGT.jpg` },
+  { name: "Top Wet", logo: `${WP}/2026/04/top-wet.jpg` },
   { name: "Deli", logo: `${WP}/2026/01/DELI.jpg` },
   { name: "Reform", logo: `${WP}/2026/01/REform.jpg` },
   { name: "NCC", logo: "/partners/ncc.webp" },
   { name: "الشركة الليبية للحديد والصلب", logo: "/partners/libyan-iron-steel.jpg" },
   { name: "شركة جولدن متيل", logo: "/partners/golden-metal.jpg" },
-  { name: "الشركة العربية للأسمنت", logo: "/partners/arabian-cement.jpg" },
 ];
 
 const T = {
@@ -43,7 +45,7 @@ const T = {
     heroA: "نبني مستقبل ليبيا", heroB: "بحلول بناء متكاملة",
     heroP: "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005 — انطلقت من مدينة طبرق، واتخذت من بنغازي مقرًا رئيسيًا لها، لتكون حلقة الوصل الاستراتيجية بين السوق الليبي وكبرى العلامات العالمية.",
     print: "طباعة / حفظ PDF",
-    stats: [["2005", "سنة التأسيس — طبرق"], ["20+", "عامًا من الثقة"], ["14", "علامة تجارية"], ["100+", "مشروع منجز"]],
+    stats: [["2005", "سنة التأسيس — طبرق"], ["20+", "عامًا من الثقة"], ["18", "علامة تجارية"], ["100+", "مشروع منجز"]],
     aboutLbl: "من نحن", aboutH: "حلول ذكية لـ", aboutHem: "مشاريع أقوى",
     aboutP: [
       "انطلقت الشعلة الرائدة لاستيراد مواد البناء من مدينة طبرق في 25 مايو 2005، وسرعان ما أثبتت مكانتها كإحدى أبرز الشركات الليبية المتخصصة في توفير مواد البناء والمواد الصحية عالية الجودة. وعلى مدى أكثر من عشرين عامًا من العمل الجاد، بنت الشركة سمعة راسخة قائمة على المصداقية، والتنوع، والالتزام بمعايير الجودة العالمية.",
@@ -52,8 +54,8 @@ const T = {
     ],
     journeyLbl: "مسيرتنا", journeyH: "محطات في", journeyHem: "رحلة النمو",
     journey: [
-      ["2005", "الانطلاقة من طبرق", "تأسيس الشعلة الرائدة لاستيراد مواد البناء في مدينة طبرق، وبناء قاعدة عملاء تقوم على الجودة والمصداقية في توريد مواد البناء والمواد الصحية."],
-      ["2005 — 2021", "ترسيخ الحضور في السوق الليبي", "توسع مطّرد في المنتجات والعملاء عبر أكثر من خمسة عشر عامًا، وبناء علاقات موثوقة مع المقاولين والتجار والجهات الحكومية."],
+      ["2005", "الانطلاقة من طبرق", "تأسيس الشعلة الرائدة لاستيراد مواد البناء في مدينة طبرق، وبناء قاعدة عملاء تقوم على الجودة والمصداقية في توريد مواد البناء."],
+      ["2005 — 2021", "ترسيخ الحضور في السوق الليبي", "توسع في المنتجات والعملاء عبر أكثر من خمسة عشر عامًا، وبناء علاقات موثوقة مع المقاولين والتجار والجهات الحكومية."],
       ["2021", "الوكالات الحصرية والتوسع العالمي", "التحول إلى مستورد ووكيل حصري لعدد من كبرى العلامات العالمية، لتصبح الشركة حلقة وصل استراتيجية بين السوق الليبي والأسواق الدولية."],
       ["اليوم", "المقر الرئيسي في بنغازي", "إدارة العمليات من بنغازي مع منظومة متكاملة من التوريد والدعم الفني وخدمات ما بعد البيع، وحضور رقمي عبر منصة إلكترونية حديثة."],
     ],
@@ -72,7 +74,7 @@ const T = {
       ["خدمات ما بعد البيع", "متابعة مستمرة بعد التوريد ومعالجة الملاحظات لضمان علاقة مستدامة مع العميل."],
       ["منصة إلكترونية حديثة", "كتالوج رقمي، حاسبة كميات، مكتبة وثائق فنية، ومستشار فني ذكي لخدمة العملاء على مدار الساعة."],
     ],
-    whyStats: [["2021", "بداية الوكالات الحصرية"], ["14", "علامة تجارية"], ["100%", "منتجات أصلية"], ["24/7", "حضور رقمي"]],
+    whyStats: [["2021", "بداية الوكالات الحصرية"], ["18", "علامة تجارية"], ["100%", "منتجات أصلية"], ["24/7", "حضور رقمي"]],
     ceoLbl: "كلمة المؤسس ورئيس مجلس الإدارة", ceoH: "رسالة", ceoHem: "القيادة",
     ceoQuote: "نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody: [
@@ -88,22 +90,22 @@ const T = {
       ["خدمات ما بعد البيع والدعم المستمر", "متابعة العملاء بعد التوريد والبيع، وتقديم الدعم الفني ومعالجة الملاحظات وتوفير الاحتياجات اللاحقة، لضمان تجربة متكاملة وعلاقة مستدامة مع العميل."],
     ],
     catLbl: "كتالوجنا", catH: "أقسام", catHem: "المنتجات",
-    cats: ["كيماويات البناء", "الأدوات والمعدات الصناعية", "أنظمة الجبس والأسقف", "السيراميك والبورسلين والأحجار", "الأرضيات والتشطيبات المعمارية", "أنظمة تصريف مياه الأمطار", "الحديد والأسمنت وغيرها", "العزل الحراري"],
+    cats: ["الكيماويات وحلول البناء المتخصصة", "المعدات والأدوات الصناعية", "أنظمة الجبس والأسقف والحوائط", "مواد البناء الأساسية (الحديد والأسمنت وغيرها)", "التشطيبات المعمارية وحلول الأرضيات", "السيراميك والبورسلين والأحجار", "أنظمة تصريف مياه الأمطار", "البنية الرياضية والتشطيبات"],
     projLbl: "مشاريعنا", projH: "أبرز", projHem: "المشاريع", projSupply: "توريدات عامة",
-    partnersLbl: "شركاؤنا", partnersH: "", partnersHem: "شركاؤنا",
+    partnersLbl: "عملاؤنا", partnersH: "", partnersHem: "عملاؤنا",
     brandsLbl: "علاماتنا التجارية", brandsH: "علاماتنا", brandsHem: "التجارية",
     sectorsLbl: "من نخدم", sectorsH: "قطاعات", sectorsHem: "نعتمد عليها",
     sectors: [["المطورون العقاريون", "مواد متميزة للمشاريع الكبرى والمعالم العمرانية."], ["شركات المقاولات الكبرى", "حلول مواد متكاملة من البداية حتى التسليم."], ["الحكومة والبنية التحتية", "دعم المشاريع على النطاق الوطني بموثوقية عالية."], ["التجار وأصحاب الأعمال", "سلسلة إمداد جملة موثوقة ومستقرة."]],
     ctaH: "لنبني", ctaHem: "معًا", ctaP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
     phoneL: "الهاتف", emailL: "البريد الإلكتروني", addrL: "المقر الرئيسي", hoursL: "ساعات العمل",
-    addr: "33C8+6CW، الطريق الدائري الثالث، بنغازي، ليبيا", hours: "الأحد – الخميس: 8:00 ص – 5:00 م",
+    addr: "33C8+6CW، الطريق الدائري الثالث، بنغازي، ليبيا", hours: "السبت – الخميس: 9:00 صباحاً حتى 6:00 مساءً",
   },
   en: {
     badge: "COMPANY PROFILE · الملف التعريفي",
     heroA: "Building Libya's Future", heroB: "With Complete Building Solutions",
     heroP: "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005 — founded in Tobruk and headquartered in Benghazi, the strategic link between the Libyan market and the world's leading brands.",
     print: "Print / Save PDF",
-    stats: [["2005", "Founded — Tobruk"], ["20+", "Years of Trust"], ["14", "Brands"], ["100+", "Projects Delivered"]],
+    stats: [["2005", "Founded — Tobruk"], ["20+", "Years of Trust"], ["18", "Brands"], ["100+", "Projects Delivered"]],
     aboutLbl: "Who We Are", aboutH: "Smart Solutions for", aboutHem: "Stronger Projects",
     aboutP: [
       "Al-Showla Al-Raeda for Importing Building Materials was founded in Tobruk on 25 May 2005, and quickly established itself as one of Libya's foremost companies specialized in providing high-quality building and sanitary materials. Over more than twenty years of dedicated work, the company has built a solid reputation founded on credibility, diversity, and commitment to international quality standards.",
@@ -112,8 +114,8 @@ const T = {
     ],
     journeyLbl: "Our Journey", journeyH: "Milestones in", journeyHem: "Our Growth",
     journey: [
-      ["2005", "The Beginning in Tobruk", "Al-Showla Al-Raeda for Importing Building Materials is founded in Tobruk, building a client base grounded in quality and credibility in supplying building and sanitary materials."],
-      ["2005 — 2021", "Establishing Our Presence in Libya", "Steady growth in products and clients over more than fifteen years, building trusted relationships with contractors, traders, and government entities."],
+      ["2005", "The Beginning in Tobruk", "Al-Showla Al-Raeda for Importing Building Materials is founded in Tobruk, building a client base grounded in quality and credibility in supplying building materials."],
+      ["2005 — 2021", "Establishing Our Presence in Libya", "Growth in products and clients over more than fifteen years, building trusted relationships with contractors, traders, and government entities."],
       ["2021", "Exclusive Agencies & Global Expansion", "Becoming an exclusive importer and agent for a number of major global brands — a strategic link between the Libyan market and international markets."],
       ["Today", "Headquartered in Benghazi", "Operations run from Benghazi with an integrated system of supply, technical support, and after-sales services, plus a digital presence through a modern online platform."],
     ],
@@ -132,7 +134,7 @@ const T = {
       ["After-Sales Services", "Continuous follow-up after supply and handling of feedback to ensure a lasting client relationship."],
       ["Modern Online Platform", "Digital catalog, quantity calculator, technical document library, and a smart technical advisor available around the clock."],
     ],
-    whyStats: [["2021", "Exclusive Agencies Since"], ["14", "Brands"], ["100%", "Genuine Products"], ["24/7", "Digital Presence"]],
+    whyStats: [["2021", "Exclusive Agencies Since"], ["18", "Brands"], ["100%", "Genuine Products"], ["24/7", "Digital Presence"]],
     ceoLbl: "Founder & Chairman's Message", ceoH: "A Message from", ceoHem: "Our Leadership",
     ceoQuote: "We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.",
     ceoBody: [
@@ -148,15 +150,15 @@ const T = {
       ["After-Sales & Continuous Support", "Following up with clients after supply and sale, providing technical support, addressing feedback, and meeting later needs to ensure an integrated experience and a lasting client relationship."],
     ],
     catLbl: "Our Catalog", catH: "Product", catHem: "Categories",
-    cats: ["Construction Chemicals", "Industrial Tools & Equipment", "Gypsum & Ceiling Systems", "Ceramic, Porcelain & Stone", "Flooring & Architectural Finishes", "Rainwater Drainage Systems", "Steel, Cement & More", "Thermal Insulation"],
+    cats: ["Specialized Construction Chemicals & Solutions", "Industrial Equipment & Tools", "Gypsum, Ceiling & Wall Systems", "Basic Building Materials (Steel, Cement & More)", "Architectural Finishes & Flooring Solutions", "Ceramic, Porcelain & Stone", "Rainwater Drainage Systems", "Sports Infrastructure & Finishes"],
     projLbl: "Our Projects", projH: "Featured", projHem: "Projects", projSupply: "General Supplies",
-    partnersLbl: "Our Partners", partnersH: "Our", partnersHem: "Partners",
+    partnersLbl: "Our Clients", partnersH: "Our", partnersHem: "Clients",
     brandsLbl: "Our Brands", brandsH: "Our", brandsHem: "Brands",
     sectorsLbl: "Who We Serve", sectorsH: "Sectors That", sectorsHem: "Rely on Us",
     sectors: [["Real Estate Developers", "Premium materials for major projects and landmarks."], ["Major Contracting Companies", "Integrated material solutions from start to handover."], ["Government & Infrastructure", "Reliable support for national-scale projects."], ["Traders & Business Owners", "A reliable, stable wholesale supply chain."]],
     ctaH: "Let's Build", ctaHem: "Together", ctaP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
     phoneL: "Phone", emailL: "Email", addrL: "Headquarters", hoursL: "Working Hours",
-    addr: "33C8+6CW, Third Ring Road, Benghazi, Libya", hours: "Sun – Thu: 8:00 AM – 5:00 PM",
+    addr: "33C8+6CW, Third Ring Road, Benghazi, Libya", hours: "Sat – Thu: 9:00 AM – 6:00 PM",
   },
 };
 
@@ -164,7 +166,7 @@ const VALUE_ICONS = [ClipboardCheck, Handshake, Award, Leaf, Lightbulb];
 const WHY_ICONS = [Award, ShieldCheck, Wrench, Truck, RefreshCw, MonitorSmartphone];
 const SECTOR_ICONS = [Building2, HardHat, Landmark, Store];
 const SECTOR_IMGS = [`${WP}/2026/01/c5.jpg`, `${WP}/2026/01/c2.jpg`, `${WP}/2026/01/constr.jpg`, `${WP}/2026/01/c3.jpg`];
-const CAT_IMGS = ["/categories/cat-waterproof.jpg", "/categories/cat-tools.jpg", "/categories/cat-gypsum.jpg", "/services/cat-ceramic.jpg", "/categories/cat-flooring.jpg", "/categories/cat-sanitary.jpg", "/categories/cat-steel.jpg", "/categories/cat-adhesives.jpg"];
+const CAT_IMGS = ["/categories/cat-waterproof.jpg", "/categories/cat-tools.jpg", "/categories/cat-gypsum.jpg", "/categories/cat-steel.jpg", "/categories/cat-flooring.jpg", "/services/cat-ceramic.jpg", "/categories/cat-sanitary.jpg", "/services/cat-decor.jpg"];
 const SVC_IMGS = ["/services/cat-all.jpg", "/categories/cat-all.jpg", "/services/support-247.jpg", "/services/cat-decor.jpg"];
 
 function SecHead({ lbl, h, em, light }: { lbl: string; h: string; em: string; light?: boolean }) {

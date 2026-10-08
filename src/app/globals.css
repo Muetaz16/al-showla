@@ -450,6 +450,11 @@ h2.shw { color: #fff; }
 @media (max-width: 1024px) { .prj-grid { grid-template-columns: repeat(2,1fr); } .pt-grid { grid-template-columns: repeat(4,1fr); } }
 @media (max-width: 600px) { .prj-grid { grid-template-columns: 1fr; } .prj-card.wide { grid-row: auto; } .pt-grid { grid-template-columns: repeat(2,1fr); } }
 
+/* Brands section: one grid per client-defined row */
+.pg-grid.brand-row { grid-template-columns: repeat(var(--cols), 1fr); margin-top: 0; border-top: none; }
+.pg-grid.brand-row.first { margin-top: 44px; border-top: 1px solid var(--gray-light); }
+@media (max-width: 900px) { .pg-grid.brand-row { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .pg-grid.brand-row { grid-template-columns: repeat(2, 1fr); } }
 .pg-grid { display: grid; grid-template-columns: repeat(7,1fr); border: 1px solid var(--gray-light); margin-top: 44px; }
 .pg { padding: 26px 8px; display: flex; align-items: center; justify-content: center; border-inline-end: 1px solid var(--gray-light); border-bottom: 1px solid var(--gray-light); transition: background .3s;  position: relative; overflow: hidden; }
 .pg::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .35s; }

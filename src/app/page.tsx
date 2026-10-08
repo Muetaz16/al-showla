@@ -14,7 +14,7 @@ const T = {
     // Nav
     home: "Home", company: "Company", whoWeAre: "Who We Are",
     ceoMsg: "Founder & Chairman's Message", services: "Services", products: "Products",
-    clients: "Clients", partners: "Our Partners", contact: "Contact",
+    clients: "Who We Serve", partners: "Our Clients", contact: "Contact",
     orderNow: "Order Now",
     // Hero
     heroTag: "Est. 2005 · Tobruk, Libya",
@@ -53,7 +53,7 @@ const T = {
     ceoBody1: "It is my pleasure to welcome you to the website of Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
     ceoBody2: "Building on this balance, we work to deliver integrated, high-quality solutions and to establish sustainable strategic partnerships that contribute to developing Libya's construction sector in line with the highest standards.",
     kpi1n: "2005", kpi1l: "Founded", kpi2n: "2021", kpi2l: "Global Expansion",
-    kpi3n: "14", kpi3l: "Brands", kpi4n: "20+", kpi4l: "Years Leading",
+    kpi3n: "18", kpi3l: "Brands", kpi4n: "20+", kpi4l: "Years Leading",
     // Services
     servicesLbl: "What We Offer", servicesH2a: "Specialized", servicesH2b: "Services",
     svc1t: "Technical Consultancy & Specialized Solutions", svc1b: "Understanding client needs, providing technical advice, and selecting and specifying the right materials, systems, and solutions for the various applications and requirements of the construction sector.",
@@ -63,10 +63,10 @@ const T = {
     // Products
     productsLbl: "Our Catalog", productsH2a: "Quality", productsH2b: "Materials",
     viewAll: "View All →",
-    prod1: "Construction Chemicals", prod2: "Rainwater Drainage Systems",
-    prod3: "Ceramic, Porcelain & Stone", prod4: "Flooring",
-    prod5: "Architectural Finishes & Solutions", prod6: "Steel, Cement & More",
-    prod7: "Industrial Tools & Equipment", prod8: "Thermal Insulation", prodAll: "All Products",
+    prod1: "Specialized Construction Chemicals & Solutions", prod2: "Industrial Equipment & Tools",
+    prod3: "Gypsum, Ceiling & Wall Systems", prod4: "Basic Building Materials (Steel, Cement & More)",
+    prod5: "Architectural Finishes & Flooring Solutions", prod6: "Ceramic, Porcelain & Stone",
+    prod7: "Rainwater Drainage Systems", prod8: "Sports Infrastructure & Finishes", prodAll: "All Products",
     brandsLbl: "Our Brands", brandsH2a: "Our", brandsH2b: "Brands",
     projectsLbl: "Our Projects", projectsH2a: "Featured", projectsH2b: "Projects", projectsSupply: "General Supplies",
     // Clients
@@ -77,14 +77,14 @@ const T = {
     cl4: "Major Contracting Companies", cl4s: "End-to-end material solutions",
     cl5: "Individuals & Private Projects", cl5s: "Quality materials for every home",
     // Partners
-    partnersLbl: "Our Partners", partnersH2a: "Our", partnersH2b: "Partners",
+    partnersLbl: "Our Clients", partnersH2a: "Our", partnersH2b: "Clients",
     // Contact
     contactLbl: "Get In Touch", contactH: "Let's Build", contactHem: "Together",
     contactP: "Ready to start your project? Our team is ready to provide you with the best building materials and technical consultation.",
     phoneLbl: "Phone", emailLbl: "Email", addressLbl: "Address", hoursLbl: "Working Hours",
     phoneVal: "+218 94 802 0200", emailVal: "sales@alshowla.com",
     addressVal: "33C8+6CW, Third Ring Rd, Benghazi",
-    hoursVal: "Sun – Thu: 8:00 AM – 5:00 PM",
+    hoursVal: "Sat – Thu: 9:00 AM – 6:00 PM",
     openMap: "Open in Google Maps",
     formContactOne: "Please provide a phone number or an email so we can reach you.",
     privacyNote: "By submitting this form you agree that your data will be used only to respond to your inquiry.",
@@ -100,7 +100,7 @@ const T = {
   ar: {
     home: "الرئيسية", company: "الشركة", whoWeAre: "من نحن",
     ceoMsg: " كلمة المؤسس ورئيس مجلس الإدارة ", services: "خدماتنا", products: "منتجاتنا",
-    clients: "عملاؤنا", partners: "شركاؤنا", contact: "اتصل بنا",
+    clients: "من نخدم", partners: "عملاؤنا", contact: "اتصل بنا",
     orderNow: "اطلب الآن",
     heroTag: "تأسست 2005 · طبرق، ليبيا",
     heroH1a: "نبني مستقبل ليبيا",
@@ -134,7 +134,7 @@ const T = {
     ceoBody1: "يسرّني أن أرحّب بكم في الموقع الإلكتروني لشركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody2: "وانطلاقًا من هذا التوازن، نعمل على تقديم حلول متكاملة عالية الجودة، وبناء شراكات استراتيجية مستدامة تُسهم في تطوير قطاع البناء في ليبيا وفق أعلى المعايير.",
     kpi1n: "2005", kpi1l: "سنة التأسيس", kpi2n: "2021", kpi2l: "التوسع العالمي",
-    kpi3n: "14", kpi3l: "علامة تجارية", kpi4n: "20+", kpi4l: "سنة ريادة",
+    kpi3n: "18", kpi3l: "علامة تجارية", kpi4n: "20+", kpi4l: "سنة ريادة",
     servicesLbl: "ما نقدمه", servicesH2a: "خدمات", servicesH2b: "متخصصة",
     svc1t: "الاستشارات الفنية والحلول المتخصصة", svc1b: "فهم احتياجات العملاء وتقديم المشورة الفنية واختيار وتوصيف المواد والأنظمة والحلول المناسبة لمختلف التطبيقات ومتطلبات قطاع البناء.",
     svc2t: "التوريد والتوزيع المتكامل", svc2b: "توفير مجموعة متكاملة من مواد وأنظمة البناء والكيماويات الإنشائية وأنظمة الجبس والعدد والأدوات الصناعية، لخدمة المشاريع والمقاولين والشركات والتجار والعملاء.",
@@ -142,10 +142,10 @@ const T = {
     svc4t: "خدمات ما بعد البيع والدعم المستمر", svc4b: "متابعة العملاء بعد التوريد والبيع، وتقديم الدعم الفني ومعالجة الملاحظات وتوفير الاحتياجات اللاحقة، لضمان تجربة متكاملة وعلاقة مستدامة مع العميل.",
     productsLbl: "كتالوجنا", productsH2a: "مواد", productsH2b: "عالية الجودة",
     viewAll: "← عرض الكل",
-    prod1: "كيماويات البناء", prod2: "أنظمة تصريف مياه الأمطار",
-    prod3: "السيراميك والبورسلين والأحجار", prod4: "الأرضيات",
-    prod5: "التشطيبات والحلول المعمارية", prod6: "الحديد والأسمنت وغيرها",
-    prod7: "الأدوات والمعدات الصناعية", prod8: "عزل حراري", prodAll: "جميع المنتجات",
+    prod1: "الكيماويات وحلول البناء المتخصصة", prod2: "المعدات والأدوات الصناعية",
+    prod3: "أنظمة الجبس والأسقف والحوائط", prod4: "مواد البناء الأساسية (الحديد والأسمنت وغيرها)",
+    prod5: "التشطيبات المعمارية وحلول الأرضيات", prod6: "السيراميك والبورسلين والأحجار",
+    prod7: "أنظمة تصريف مياه الأمطار", prod8: "البنية الرياضية والتشطيبات", prodAll: "جميع المنتجات",
     brandsLbl: "علاماتنا التجارية", brandsH2a: "علاماتنا", brandsH2b: "التجارية",
     projectsLbl: "مشاريعنا", projectsH2a: "أبرز", projectsH2b: "المشاريع", projectsSupply: "توريدات عامة",
     clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
@@ -154,13 +154,13 @@ const T = {
     cl3: "الحكومة والبنية التحتية", cl3s: "دعم المشاريع على النطاق الوطني",
     cl4: "شركات المقاولات الكبرى", cl4s: "حلول مواد متكاملة من البداية للنهاية",
     cl5: "الأفراد والمشاريع الخاصة", cl5s: "مواد جودة لكل منزل",
-    partnersLbl: "شركاؤنا", partnersH2a: "", partnersH2b: "شركاؤنا",
+    partnersLbl: "عملاؤنا", partnersH2a: "", partnersH2b: "عملاؤنا",
     contactLbl: "تواصل معنا", contactH: "لنبني", contactHem: "معاً",
     contactP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
     phoneLbl: "الهاتف", emailLbl: "البريد الإلكتروني", addressLbl: "العنوان", hoursLbl: "ساعات العمل",
     phoneVal: "+218 94 802 0200", emailVal: "sales@alshowla.com",
     addressVal: "33C8+6CW، الطريق الدائري الثالث، بنغازي",
-    hoursVal: "الأحد - الخميس: 8:00 ص - 5:00 م",
+    hoursVal: "السبت - الخميس: 9:00 صباحاً حتى 6:00 مساءً",
     openMap: "فتح في خرائط جوجل",
     formContactOne: "يرجى إدخال رقم هاتف أو بريد إلكتروني حتى نتمكن من التواصل معك.",
     privacyNote: "بإرسالك هذا النموذج فإنك توافق على استخدام بياناتك للرد على استفسارك فقط.",
@@ -308,61 +308,27 @@ export default function Home() {
     { bg: "/categories/cat-waterproof.jpg", tag: "Category 01", t: t.prod1, categoryId: "waterproof" },
     { bg: "/categories/cat-tools.jpg", tag: "Category 02", t: t.prod2, categoryId: "tools" },
     { bg: "/categories/cat-gypsum.jpg", tag: "Category 03", t: t.prod3, categoryId: "gypsum" },
-    { bg: "/categories/cat-sanitary.jpg", tag: "Category 04", t: t.prod4, categoryId: "sanitary" },
+    { bg: "/categories/cat-steel.jpg", tag: "Category 04", t: t.prod4, categoryId: "steel" },
     { bg: "/categories/cat-flooring.jpg", tag: "Category 05", t: t.prod5, categoryId: "flooring" },
-    { bg: "/categories/cat-adhesives.jpg", tag: "Category 06", t: t.prod6, categoryId: "adhesives" },
-    { bg: "/categories/cat-steel.jpg", tag: "Category 07", t: t.prod7, categoryId: "steel" },
-    { bg: "/categories/cat-all.jpg", tag: lang === "ar" ? "تصفّح" : "Browse", t: t.prodAll, categoryId: "" },
+    { bg: "/services/cat-ceramic.jpg", tag: "Category 06", t: t.prod6, categoryId: "sanitary" },
+    { bg: "/categories/cat-sanitary.jpg", tag: "Category 07", t: t.prod7, categoryId: "adhesives" },
+    { bg: "/services/cat-decor.jpg", tag: "Category 08", t: t.prod8, categoryId: "sports" },
   ];
 
+  // Brands section rows (client order): Saint-Gobain companies, then tools/chemicals majors, then the rest.
+  const BRAND_ROWS = [6, 5, 7];
   const BRAND_DATA = [
     {
-      name: "Sika",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/Sika.jpg",
-      country: lang === "ar" ? "🇨🇭 سويسرا" : "🇨🇭 Switzerland",
-      founded: "1910",
-      website: "https://www.sika.com",
-      category: lang === "ar" ? "مواد بناء كيميائية" : "Chemical Construction Products",
-      descAr: "سيكا شركة سويسرية رائدة عالمياً في مجال مواد البناء الكيميائية، متخصصة في أنظمة العزل المائي، المواد اللاصقة، مواد الحقن، وإضافات الخرسانة. تأسست عام 1910 في زيورخ وتعمل في أكثر من 100 دولة حول العالم.",
-      descEn: "Sika is a Swiss multinational company specializing in chemical construction products including waterproofing, adhesives, sealants, and concrete additives. Founded in 1910 in Zurich, it operates in 100+ countries.",
-      products: lang === "ar" ? ["أنظمة العزل المائي", "مواد لاصقة وحشوات", "مواد الحقن", "طلاءات وأرضيات", "إضافات الخرسانة"] : ["Waterproofing systems", "Adhesives & sealants", "Injection materials", "Coatings & flooring", "Concrete admixtures"],
+      name: "Saint-Gobain",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/Saint-Goban.jpg",
+      country: lang === "ar" ? "🇫🇷 فرنسا" : "🇫🇷 France",
+      founded: "1665",
+      website: "https://www.saint-gobain.com",
+      category: lang === "ar" ? "مواد البناء المتكاملة" : "Integrated Construction Materials",
+      descAr: "سان جوبان شركة فرنسية عريقة تأسست عام 1665 بأمر من الملك لويس الرابع عشر، وهي اليوم واحدة من أكبر مجموعات مواد البناء في العالم. يعمل بها أكثر من 160,000 موظف في 77 دولة. تختص في تصنيع الزجاج المسطح، العزل الحراري والصوتي، ألواح الجبس، والأرضيات.",
+      descEn: "Saint-Gobain is a French company founded in 1665 by order of King Louis XIV. Today it's one of the world's largest building materials groups with 160,000+ employees in 77 countries. Specializes in flat glass, insulation, gypsum boards, and flooring.",
+      products: lang === "ar" ? ["ألواح الجبس (Gyproc)", "عزل حراري وصوتي", "زجاج مسطح", "أرضيات (Weber)", "حلول الواجهات"] : ["Gypsum boards (Gyproc)", "Thermal & acoustic insulation", "Flat glass", "Flooring (Weber)", "Facade solutions"],
       certifications: ["ISO 9001", "ISO 14001", "CE Mark"],
-    },
-    {
-      name: "AGT",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/AGT.jpg",
-      country: lang === "ar" ? "🇹🇷 تركيا" : "🇹🇷 Turkey",
-      founded: "1984",
-      website: "https://www.agt.com.tr/en",
-      category: lang === "ar" ? "أرضيات لامينيت وألواح خشبية" : "Laminate Flooring & Wood Panels",
-      descAr: "AGT شركة تركية رائدة مقرها أنطاليا، متخصصة في تصنيع الأرضيات اللامينيت والألواح الخشبية (MDF) والبروفايلات ومكونات الأثاث. تأسست عام 1984 وتصدّر منتجاتها إلى أكثر من 100 دولة في خمس قارات.",
-      descEn: "AGT is a leading Turkish manufacturer based in Antalya, producing laminate flooring, wood-based panels (MDF), profiles, and furniture components. Founded in 1984, it exports to 100+ countries on five continents.",
-      products: lang === "ar" ? ["أرضيات لامينيت", "ألواح MDF", "بروفايلات ونعلات", "مكونات الأثاث"] : ["Laminate flooring", "MDF panels", "Profiles & skirting", "Furniture components"],
-      certifications: ["ISO 9001", "CE Mark", "E1 Emission Class", "PEFC Certified"],
-    },
-    {
-      name: "DeWalt",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/DEWALT.jpg",
-      country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
-      founded: "1924",
-      website: "https://www.dewalt.com",
-      category: lang === "ar" ? "أدوات كهربائية احترافية" : "Professional Power Tools",
-      descAr: "ديوالت علامة تجارية أمريكية مختصة في تصنيع الأدوات الكهربائية الاحترافية للبناء والتشييد. تأسست عام 1924 وهي جزء من مجموعة Stanley Black & Decker. تُعدّ أدواتها الأكثر موثوقية في مواقع البناء حول العالم مع ضمان 3 سنوات.",
-      descEn: "DeWalt is an American professional power tools brand founded in 1924, part of Stanley Black & Decker Group. Its tools are the most trusted on construction sites worldwide, offering a 3-year warranty.",
-      products: lang === "ar" ? ["مطارق حفر", "مناشير دائرية", "مثاقب لاسلكية", "زوايا طحن", "أدوات القياس الليزرية"] : ["Hammer drills", "Circular saws", "Cordless drills", "Angle grinders", "Laser measuring tools"],
-      certifications: ["CE Mark", "UL Safety", "ISO 9001", "CSA Certified"],
-    },
-    {
-      name: "Gyproc",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/GYPROC.jpg",
-      country: lang === "ar" ? "🇬🇧 المملكة المتحدة / مجموعة سان جوبان" : "🇬🇧 United Kingdom / Saint-Gobain Group",
-      founded: "1917",
-      website: "https://www.gyproc.eg",
-      category: lang === "ar" ? "ألواح الجبس والأسقف" : "Gypsum Board & Ceilings",
-      descAr: "جيبروك علامة تعود جذورها إلى شركة BPB البريطانية التي تأسست عام 1917، وأصبحت جزءاً من مجموعة سان جوبان الفرنسية منذ 2005. متخصصة في تصنيع ألواح الجبس والأنظمة الجافة للجدران الداخلية والأسقف. منتجاتها مثالية للتحكم في الصوت والعزل الحراري ومقاومة الحريق.",
-      descEn: "Gyproc traces its roots to the UK's BPB, founded in 1917, and has been part of the Saint-Gobain group since 2005. Specializing in gypsum board and dry wall systems for interior walls and ceilings with excellent acoustic, thermal and fire resistance properties.",
-      products: lang === "ar" ? ["ألواح جبس قياسية", "ألواح مقاومة للرطوبة", "ألواح مقاومة للحريق", "أسقف معلقة", "ملحقات التركيب"] : ["Standard gypsum boards", "Moisture resistant boards", "Fire resistant boards", "Suspended ceilings", "Installation accessories"],
-      certifications: ["ISO 9001", "CE Mark", "BSI Certified", "Fire Class A1"],
     },
     {
       name: "Weber",
@@ -377,27 +343,99 @@ export default function Home() {
       certifications: ["ISO 9001", "CE Mark", "ISO 14001"],
     },
     {
-      name: "Top Wet",
-      url: "https://alshowla.com/wp-content/uploads/2026/04/top-wet.jpg",
-      country: lang === "ar" ? "🇨🇿 التشيك" : "🇨🇿 Czech Republic",
-      founded: "—",
-      website: "https://topwet.com/en",
-      category: lang === "ar" ? "أنظمة تصريف مياه الأسطح والشرفات" : "Roof & Balcony Drainage Systems",
-      descAr: "توب ويت شركة تشيكية متخصصة في أنظمة تصريف مياه الأمطار للأسطح المسطحة والشرفات والتراسات، مع مخارج مزودة بأكمام عزل مدمجة (PVC، بيتومين، TPO) لضمان ربط محكم مع طبقة العزل المائي.",
-      descEn: "TOPWET is a Czech manufacturer of rainwater drainage systems for flat roofs, balconies and terraces, with outlets featuring integrated waterproofing sleeves (PVC, bitumen, TPO) for a tight connection to the waterproofing layer.",
-      products: lang === "ar" ? ["مخارج تصريف الأسطح", "مخارج الشرفات", "مخارج التراسات", "مخارج الترميم", "فتحات التهوية والملحقات"] : ["Roof outlets", "Balcony outlets", "Terrace outlets", "Refurbishment outlets", "Vents & accessories"],
-      certifications: ["CE Mark", "ISO 9001"],
+      name: "Gyproc",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/GYPROC.jpg",
+      country: lang === "ar" ? "🇬🇧 المملكة المتحدة / مجموعة سان جوبان" : "🇬🇧 United Kingdom / Saint-Gobain Group",
+      founded: "1917",
+      website: "https://www.gyproc.eg",
+      category: lang === "ar" ? "ألواح الجبس والأسقف" : "Gypsum Board & Ceilings",
+      descAr: "جيبروك علامة تعود جذورها إلى شركة BPB البريطانية التي تأسست عام 1917، وأصبحت جزءاً من مجموعة سان جوبان الفرنسية منذ 2005. متخصصة في تصنيع ألواح الجبس والأنظمة الجافة للجدران الداخلية والأسقف. منتجاتها مثالية للتحكم في الصوت والعزل الحراري ومقاومة الحريق.",
+      descEn: "Gyproc traces its roots to the UK's BPB, founded in 1917, and has been part of the Saint-Gobain group since 2005. Specializing in gypsum board and dry wall systems for interior walls and ceilings with excellent acoustic, thermal and fire resistance properties.",
+      products: lang === "ar" ? ["ألواح جبس قياسية", "ألواح مقاومة للرطوبة", "ألواح مقاومة للحريق", "أسقف معلقة", "ملحقات التركيب"] : ["Standard gypsum boards", "Moisture resistant boards", "Fire resistant boards", "Suspended ceilings", "Installation accessories"],
+      certifications: ["ISO 9001", "CE Mark", "BSI Certified", "Fire Class A1"],
     },
     {
-      name: "Saint-Gobain",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/Saint-Goban.jpg",
-      country: lang === "ar" ? "🇫🇷 فرنسا" : "🇫🇷 France",
-      founded: "1665",
-      website: "https://www.saint-gobain.com",
-      category: lang === "ar" ? "مواد البناء المتكاملة" : "Integrated Construction Materials",
-      descAr: "سان جوبان شركة فرنسية عريقة تأسست عام 1665 بأمر من الملك لويس الرابع عشر، وهي اليوم واحدة من أكبر مجموعات مواد البناء في العالم. يعمل بها أكثر من 160,000 موظف في 77 دولة. تختص في تصنيع الزجاج المسطح، العزل الحراري والصوتي، ألواح الجبس، والأرضيات.",
-      descEn: "Saint-Gobain is a French company founded in 1665 by order of King Louis XIV. Today it's one of the world's largest building materials groups with 160,000+ employees in 77 countries. Specializes in flat glass, insulation, gypsum boards, and flooring.",
-      products: lang === "ar" ? ["ألواح الجبس (Gyproc)", "عزل حراري وصوتي", "زجاج مسطح", "أرضيات (Weber)", "حلول الواجهات"] : ["Gypsum boards (Gyproc)", "Thermal & acoustic insulation", "Flat glass", "Flooring (Weber)", "Facade solutions"],
+      name: "Chryso",
+      url: "/brands/chryso.webp",
+      country: lang === "ar" ? "🇫🇷 فرنسا / مجموعة سان جوبان" : "🇫🇷 France / Saint-Gobain Group",
+      founded: "1942",
+      website: "https://www.chryso.com",
+      category: lang === "ar" ? "إضافات الخرسانة والأسمنت" : "Concrete Admixtures & Cement Additives",
+      descAr: "كريسو علامة فرنسية تأسست عام 1942 (باسم Chrysoleum) ومقرها كوربفوا قرب باريس، متخصصة في إضافات الخرسانة والأسمنت وحلول البناء المستدام، وأصبحت جزءاً من مجموعة سان جوبان منذ 2021.",
+      descEn: "Chryso is a French brand founded in 1942 (as Chrysoleum), headquartered in Courbevoie near Paris, specialised in concrete admixtures, cement additives and sustainable construction solutions. Part of the Saint-Gobain group since 2021.",
+      products: lang === "ar" ? ["إضافات الخرسانة", "إضافات الأسمنت", "حلول الخرسانة سابقة الصب", "حلول البناء المستدام"] : ["Concrete admixtures", "Cement additives", "Precast solutions", "Sustainable construction solutions"],
+      certifications: [] as string[],
+    },
+    {
+      name: "GCP",
+      url: "/brands/gcp.webp",
+      country: lang === "ar" ? "🇺🇸 الولايات المتحدة / مجموعة سان جوبان" : "🇺🇸 United States / Saint-Gobain Group",
+      founded: "",
+      website: "https://gcpat.com/en",
+      category: lang === "ar" ? "كيماويات البناء والعزل المائي" : "Construction Chemicals & Waterproofing",
+      descAr: "GCP Applied Technologies شركة أمريكية متخصصة في كيماويات البناء من إضافات الخرسانة والأسمنت وأنظمة العزل المائي للمباني، كانت تابعة لشركة W. R. Grace، وأصبحت جزءاً من مجموعة سان جوبان منذ 2022.",
+      descEn: "GCP Applied Technologies is an American construction-chemicals company — concrete and cement additives and building waterproofing systems — formerly part of W. R. Grace and part of the Saint-Gobain group since 2022.",
+      products: lang === "ar" ? ["إضافات الخرسانة", "إضافات الأسمنت", "أنظمة العزل المائي للمباني"] : ["Concrete admixtures", "Cement additives", "Building waterproofing systems"],
+      certifications: [] as string[],
+    },
+    {
+      name: "Fosroc",
+      url: "/brands/fosroc.webp",
+      country: lang === "ar" ? "🇬🇧 المملكة المتحدة / مجموعة سان جوبان" : "🇬🇧 United Kingdom / Saint-Gobain Group",
+      founded: "",
+      website: "https://www.fosroc.com",
+      category: lang === "ar" ? "كيماويات البناء" : "Construction Chemicals",
+      descAr: "فوسروك شركة بريطانية رائدة عالمياً في كيماويات البناء، تعمل في أكثر من 40 دولة ومقرها الحالي دبي، وأصبحت جزءاً من مجموعة سان جوبان منذ فبراير 2025.",
+      descEn: "Fosroc is a British world leader in construction chemicals, operating in 40+ countries and now headquartered in Dubai. Part of the Saint-Gobain group since February 2025.",
+      products: lang === "ar" ? ["مواد لاصقة", "إضافات الخرسانة", "إضافات الأسمنت", "إصلاح الخرسانة", "الجراوت والتثبيت", "الأرضيات الصناعية", "مواد سد الفواصل", "الطلاءات الواقية", "العزل المائي", "معالجة الأسطح"] : ["Adhesives", "Concrete admixtures", "Cement additives", "Concrete repair", "Grouts & anchors", "Industrial flooring", "Joint sealants", "Protective coatings", "Waterproofing", "Surface treatments"],
+      certifications: [] as string[],
+    },
+    {
+      name: "DeWalt",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/DEWALT.jpg",
+      country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
+      founded: "1924",
+      website: "https://www.dewalt.com",
+      category: lang === "ar" ? "أدوات كهربائية احترافية" : "Professional Power Tools",
+      descAr: "ديوالت علامة تجارية أمريكية مختصة في تصنيع الأدوات الكهربائية الاحترافية للبناء والتشييد. تأسست عام 1924 وهي جزء من مجموعة Stanley Black & Decker. تُعدّ أدواتها الأكثر موثوقية في مواقع البناء حول العالم مع ضمان 3 سنوات.",
+      descEn: "DeWalt is an American professional power tools brand founded in 1924, part of Stanley Black & Decker Group. Its tools are the most trusted on construction sites worldwide, offering a 3-year warranty.",
+      products: lang === "ar" ? ["مطارق حفر", "مناشير دائرية", "مثاقب لاسلكية", "زوايا طحن", "أدوات القياس الليزرية"] : ["Hammer drills", "Circular saws", "Cordless drills", "Angle grinders", "Laser measuring tools"],
+      certifications: ["CE Mark", "UL Safety", "ISO 9001", "CSA Certified"],
+    },
+    {
+      name: "Black & Decker",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/B-DECKER.jpg",
+      country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
+      founded: "1910",
+      website: "https://www.blackanddecker.com",
+      category: lang === "ar" ? "أدوات كهربائية ومنزلية" : "Power Tools & Home Products",
+      descAr: "بلاك آند ديكر علامة أمريكية تأسست عام 1910 ومن بين الأوائل في تصنيع الأدوات الكهربائية المحمولة باليد. تُقدّم منتجاتها حلولاً شاملة للمستهلكين والمهنيين في مجالات البناء والصناعة والمنزل. جزء من مجموعة Stanley Black & Decker.",
+      descEn: "Black & Decker is an American brand founded in 1910 and among the first to manufacture portable power tools. Offers comprehensive solutions for consumers and professionals in construction, industry, and home use.",
+      products: lang === "ar" ? ["مثاقب كهربائية", "مناشير", "زوايا طحن", "أدوات بطارية", "معدات الحديقة"] : ["Electric drills", "Saws", "Angle grinders", "Battery tools", "Garden equipment"],
+      certifications: ["CE Mark", "UL Safety", "ISO 9001", "CSA Certified"],
+    },
+    {
+      name: "Stanley",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/Stanley.jpg",
+      country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
+      founded: "1843",
+      website: "https://www.stanleytools.com",
+      category: lang === "ar" ? "أدوات يدوية وكهربائية" : "Hand Tools & Power Tools",
+      descAr: "ستانلي علامة أمريكية عريقة تأسست عام 1843 وهي جزء من مجموعة Stanley Black & Decker. تُصنَّف من بين أعرق وأوسع العلامات التجارية في مجال الأدوات حول العالم. تشمل منتجاتها مجموعات الأدوات اليدوية، أدوات القياس، أدوات النجارة، والأدوات الكهربائية الاحترافية.",
+      descEn: "Stanley is an American brand founded in 1843, part of the Stanley Black & Decker Group. It's one of the most trusted tool brands in the world, offering hand tools, measuring tools, woodworking tools, and professional power tools.",
+      products: lang === "ar" ? ["مجموعات الأدوات اليدوية", "أدوات القياس", "أدوات النجارة", "صناديق الأدوات", "أدوات اللحام"] : ["Hand tool sets", "Measuring tools", "Woodworking tools", "Tool storage", "Soldering tools"],
+      certifications: ["ISO 9001", "CE Mark", "ANSI Compliant"],
+    },
+    {
+      name: "Sika",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/Sika.jpg",
+      country: lang === "ar" ? "🇨🇭 سويسرا" : "🇨🇭 Switzerland",
+      founded: "1910",
+      website: "https://www.sika.com",
+      category: lang === "ar" ? "مواد بناء كيميائية" : "Chemical Construction Products",
+      descAr: "سيكا شركة سويسرية رائدة عالمياً في مجال مواد البناء الكيميائية، متخصصة في أنظمة العزل المائي، المواد اللاصقة، مواد الحقن، وإضافات الخرسانة. تأسست عام 1910 في زيورخ وتعمل في أكثر من 100 دولة حول العالم.",
+      descEn: "Sika is a Swiss multinational company specializing in chemical construction products including waterproofing, adhesives, sealants, and concrete additives. Founded in 1910 in Zurich, it operates in 100+ countries.",
+      products: lang === "ar" ? ["أنظمة العزل المائي", "مواد لاصقة وحشوات", "مواد الحقن", "طلاءات وأرضيات", "إضافات الخرسانة"] : ["Waterproofing systems", "Adhesives & sealants", "Injection materials", "Coatings & flooring", "Concrete admixtures"],
       certifications: ["ISO 9001", "ISO 14001", "CE Mark"],
     },
     {
@@ -413,28 +451,28 @@ export default function Home() {
       certifications: ["ISO 9001", "CE Mark", "Euroclass A1", "BSI Certified"],
     },
     {
-      name: "Stanley",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/Stanley.jpg",
-      country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
-      founded: "1843",
-      website: "https://www.stanleytools.com",
-      category: lang === "ar" ? "أدوات يدوية وكهربائية" : "Hand Tools & Power Tools",
-      descAr: "ستانلي علامة أمريكية عريقة تأسست عام 1843 وهي جزء من مجموعة Stanley Black & Decker. تُصنَّف من بين أعرق وأوسع العلامات التجارية في مجال الأدوات حول العالم. تشمل منتجاتها مجموعات الأدوات اليدوية، أدوات القياس، أدوات النجارة، والأدوات الكهربائية الاحترافية.",
-      descEn: "Stanley is an American brand founded in 1843, part of the Stanley Black & Decker Group. It's one of the most trusted tool brands in the world, offering hand tools, measuring tools, woodworking tools, and professional power tools.",
-      products: lang === "ar" ? ["مجموعات الأدوات اليدوية", "أدوات القياس", "أدوات النجارة", "صناديق الأدوات", "أدوات اللحام"] : ["Hand tool sets", "Measuring tools", "Woodworking tools", "Tool storage", "Soldering tools"],
-      certifications: ["ISO 9001", "CE Mark", "ANSI Compliant"],
+      name: "AGT",
+      url: "https://alshowla.com/wp-content/uploads/2026/01/AGT.jpg",
+      country: lang === "ar" ? "🇹🇷 تركيا" : "🇹🇷 Turkey",
+      founded: "1984",
+      website: "https://www.agt.com.tr/en",
+      category: lang === "ar" ? "أرضيات لامينيت وألواح خشبية" : "Laminate Flooring & Wood Panels",
+      descAr: "AGT شركة تركية رائدة مقرها أنطاليا، متخصصة في تصنيع الأرضيات اللامينيت والألواح الخشبية (MDF) والبروفايلات ومكونات الأثاث. تأسست عام 1984 وتصدّر منتجاتها إلى أكثر من 100 دولة في خمس قارات.",
+      descEn: "AGT is a leading Turkish manufacturer based in Antalya, producing laminate flooring, wood-based panels (MDF), profiles, and furniture components. Founded in 1984, it exports to 100+ countries on five continents.",
+      products: lang === "ar" ? ["أرضيات لامينيت", "ألواح MDF", "بروفايلات ونعلات", "مكونات الأثاث"] : ["Laminate flooring", "MDF panels", "Profiles & skirting", "Furniture components"],
+      certifications: ["ISO 9001", "CE Mark", "E1 Emission Class", "PEFC Certified"],
     },
     {
-      name: "Black & Decker",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/B-DECKER.jpg",
-      country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
-      founded: "1910",
-      website: "https://www.blackanddecker.com",
-      category: lang === "ar" ? "أدوات كهربائية ومنزلية" : "Power Tools & Home Products",
-      descAr: "بلاك آند ديكر علامة أمريكية تأسست عام 1910 ومن بين الأوائل في تصنيع الأدوات الكهربائية المحمولة باليد. تُقدّم منتجاتها حلولاً شاملة للمستهلكين والمهنيين في مجالات البناء والصناعة والمنزل. جزء من مجموعة Stanley Black & Decker.",
-      descEn: "Black & Decker is an American brand founded in 1910 and among the first to manufacture portable power tools. Offers comprehensive solutions for consumers and professionals in construction, industry, and home use.",
-      products: lang === "ar" ? ["مثاقب كهربائية", "مناشير", "زوايا طحن", "أدوات بطارية", "معدات الحديقة"] : ["Electric drills", "Saws", "Angle grinders", "Battery tools", "Garden equipment"],
-      certifications: ["CE Mark", "UL Safety", "ISO 9001", "CSA Certified"],
+      name: "Top Wet",
+      url: "https://alshowla.com/wp-content/uploads/2026/04/top-wet.jpg",
+      country: lang === "ar" ? "🇨🇿 التشيك" : "🇨🇿 Czech Republic",
+      founded: "—",
+      website: "https://topwet.com/en",
+      category: lang === "ar" ? "أنظمة تصريف مياه الأسطح والشرفات" : "Roof & Balcony Drainage Systems",
+      descAr: "توب ويت شركة تشيكية متخصصة في أنظمة تصريف مياه الأمطار للأسطح المسطحة والشرفات والتراسات، مع مخارج مزودة بأكمام عزل مدمجة (PVC، بيتومين، TPO) لضمان ربط محكم مع طبقة العزل المائي.",
+      descEn: "TOPWET is a Czech manufacturer of rainwater drainage systems for flat roofs, balconies and terraces, with outlets featuring integrated waterproofing sleeves (PVC, bitumen, TPO) for a tight connection to the waterproofing layer.",
+      products: lang === "ar" ? ["مخارج تصريف الأسطح", "مخارج الشرفات", "مخارج التراسات", "مخارج الترميم", "فتحات التهوية والملحقات"] : ["Roof outlets", "Balcony outlets", "Terrace outlets", "Refurbishment outlets", "Vents & accessories"],
+      certifications: ["CE Mark", "ISO 9001"],
     },
     {
       name: "Deli",
@@ -491,18 +529,6 @@ export default function Home() {
       founded: "",
       website: "#",
       category: lang === "ar" ? "الصناعات المعدنية" : "Metal Industries",
-      descAr: "",
-      descEn: "",
-      products: [] as string[],
-      certifications: [] as string[],
-    },
-    {
-      name: "الشركة العربية للأسمنت",
-      url: "/partners/arabian-cement.jpg",
-      country: "",
-      founded: "",
-      website: "#",
-      category: lang === "ar" ? "صناعة الأسمنت" : "Cement Industry",
       descAr: "",
       descEn: "",
       products: [] as string[],
@@ -637,7 +663,7 @@ export default function Home() {
               {[
                 { t: "20", s: "+", l: t.yearsExp },
                 { t: "100", s: "+", l: t.projectsDel },
-                { t: "14", s: "", l: t.globalBrands },
+                { t: "18", s: "", l: t.globalBrands },
               ].map((s, i) => (
                 <div className="hstat" key={i}>
                   <div className="hstat-n" dir="ltr" data-t={s.t} data-suffix={s.s}>{s.t + s.s}</div>
@@ -838,27 +864,6 @@ export default function Home() {
                 </div>
               </a>
             ))}
-          </div>
-
-          {/* Brands */}
-          <div style={{ marginTop: 48 }}>
-            <div className="lbl ao">{t.brandsLbl}</div>
-            <div className="brands-g">
-              {BRAND_DATA.map((b, i) => (
-                <div className="br-cell" key={i} style={{ animationDelay: `${i * 0.07}s`, cursor: "pointer" }} onClick={() => setSelectedBrand(b)}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={b.url} alt={b.name}
-                    onError={(e) => {
-                      const el = e.target as HTMLImageElement;
-                      el.style.display = "none";
-                      const span = document.createElement("span");
-                      span.textContent = b.name;
-                      span.style.cssText = "font-size:14px;font-weight:800;color:var(--gray);opacity:.5;";
-                      el.parentElement?.appendChild(span);
-                    }} />
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* ── Brand Popup Modal ── */}
@@ -1161,8 +1166,11 @@ export default function Home() {
         <div className="con">
           <div className="lbl ao">{t.brandsLbl}</div>
           <h2 className="sh ao">{t.brandsH2a} <em>{t.brandsH2b}</em></h2>
-          <div className="pg-grid">
-            {BRAND_DATA.map((b, i) => (
+          {BRAND_ROWS.map((size, ri) => {
+            const from = BRAND_ROWS.slice(0, ri).reduce((a, n) => a + n, 0);
+            return (
+          <div className={`pg-grid brand-row${ri === 0 ? " first" : ""}`} key={ri} style={{ ["--cols" as string]: size }}>
+            {BRAND_DATA.slice(from, from + size).map((b, i) => (
               <div className="pg" key={i}
                 onClick={() => setSelectedBrand(b)}
                 title={b.name}
@@ -1200,6 +1208,8 @@ export default function Home() {
               </div>
             ))}
           </div>
+            );
+          })}
         </div>
       </section>
 
@@ -1257,7 +1267,7 @@ export default function Home() {
               <div className="ao" style={{ marginTop: 20, borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,.15)" }}>
                 <iframe
                   title="موقع الشركة"
-                  src="https://www.google.com/maps?q=32.0706196,20.0660936&z=17&hl=en&output=embed"
+                  src="https://maps.google.com/maps?cid=4761585801674542390&hl=ar&z=17&output=embed"
                   width="100%"
                   height="220"
                   style={{ border: 0 }}
