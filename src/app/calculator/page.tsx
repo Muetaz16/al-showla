@@ -16,11 +16,13 @@ const CALC_CATEGORIES = [
 // Consumption rates from each product's official datasheet, keyed by catalog product id.
 // rate = kg per m² (or per m² per mm of thickness when perMm). min/max = datasheet range.
 // Products not listed here ask the user to enter the rate from the datasheet.
-type Rate = { rate: number; min?: number; max?: number; perMm?: boolean };
+type Rate = { rate: number; min?: number; max?: number; perMm?: boolean; liquid?: boolean; noteAr?: string; noteEn?: string };
 const CONSUMPTION_RATES: Record<string, Rate> = {
   "weber-003": { rate: 5, min: 3, max: 7 },        // webercol fix 401: 3–7 kg/m²
   "weber-006": { rate: 0.15 },                     // weberfloor eposil plus: 0.15 kg/m²
-  "weber-009": { rate: 3, min: 2, max: 4 },        // weberdry 110 FX: 2–4 kg/m²
+  "weber-002": { rate: 0.09, min: 0.083, max: 0.1, liquid: true, noteAr: "المعدل لطبقة واحدة — توصي النشرة الفنية بطبقتين", noteEn: "Rate is per coat — the datasheet recommends two coats" }, // AL ALMANY sealer: 10–12 m²/L per coat (Egypt TDS)
+  "weber-008": { rate: 1.7, min: 1.5, max: 1.9, perMm: true }, // weberdry 100 FX: 1.7±0.2 kg/m²/1 mm WFT (Egypt TDS)
+  "weber-009": { rate: 1.7, min: 1.6, max: 1.8, perMm: true }, // weberdry 110 FX: 1.7±0.1 kg/m²/1 mm WFT (Egypt TDS)
   "weber-010": { rate: 2, perMm: true },           // weberep 331 TX: 25 kg → 12.5 L
   "weber-011": { rate: 1.95, perMm: true },        // webertec 301: 25 kg → 12.5–13 L
   "weber-013": { rate: 1.3, perMm: true },         // weberep 360 FFR: 1.3 kg/m²/mm
@@ -28,7 +30,7 @@ const CONSUMPTION_RATES: Record<string, Rate> = {
   "weber-gyp-002": { rate: 0.28, min: 0.25, max: 0.31 }, // Gyproc Almomtaz 120: 3.2–4 m²/kg per coat
   "master-001": { rate: 0.43, min: 0.37, max: 0.5 },     // MasterBrace ADH 1414: 2–2.7 m²/kg
   "master-004": { rate: 1.85, perMm: true },       // MasterEmaco S 488: 1,850 kg/m³
-  "master-005": { rate: 0.275 },                   // MasterEmaco 8100 AP: 0.275 kg/m² @ 40 µm
+  "master-005": { rate: 0.275, noteAr: "لكل م² من سطح حديد التسليح، بسماكة 40 ميكرون", noteEn: "Per m² of rebar surface, at 40 micron DFT" },                   // MasterEmaco 8100 AP: 0.275 kg/m² @ 40 µm
   "master-006": { rate: 1.95, perMm: true },       // MasterFlow 980: 30 kg → 15.2–15.6 L
   "master-007": { rate: 1.8, perMm: true },        // MasterSeal 550: 1.8 kg/m² per mm
   "master-008": { rate: 1.8, perMm: true },
@@ -89,7 +91,8 @@ export default function CalculatorPage() {
   const brandProducts = useMemo(() => catProducts.filter((p) => p.brand === brand), [catProducts, brand]);
   const product = brandProducts.find((p) => p.id === productId);
   const parsed = product ? parsePackage(product.nameEn) || parsePackage(product.nameAr) : null;
-  const unit = parsed?.liquid ? t.l : t.kg;
+  const isLiquid = (product ? CONSUMPTION_RATES[product.id]?.liquid : undefined) ?? !!parsed?.liquid;
+  const unit = isLiquid ? t.l : t.kg;
   const pName = product ? (isAr ? product.nameAr : product.nameEn) : "";
 
   const rateInfo = product ? CONSUMPTION_RATES[product.id] : undefined;
@@ -118,7 +121,7 @@ export default function CalculatorPage() {
   };
 
   const quoteHref = `https://wa.me/218948020200?text=${encodeURIComponent(
-    `طلب عرض سعر — حاسبة الكميات:\nالقسم: ${cat?.ar ?? ""}\nالشركة: ${brand}\nالمنتج: ${product?.nameAr ?? ""}\nالمساحة: ${num} م²\nالكمية التقديرية: ${required.toFixed(1)} ${parsed?.liquid ? "لتر" : "كجم"} (شامل هالك ${wastePct}%)` +
+    `طلب عرض سعر — حاسبة الكميات:\nالقسم: ${cat?.ar ?? ""}\nالشركة: ${brand}\nالمنتج: ${product?.nameAr ?? ""}\nالمساحة: ${num} م²\nالكمية التقديرية: ${required.toFixed(1)} ${isLiquid ? "لتر" : "كجم"} (شامل هالك ${wastePct}%)` +
       (packages ? `\nعدد العبوات: ${packages}` : ""),
   )}`;
 
@@ -188,6 +191,9 @@ export default function CalculatorPage() {
                   <div style={{ fontSize: 11, color: "#94a3b8", marginTop: 4 }}>
                     {rateInfo?.min != null && rateInfo?.max != null ? `${t.sheetRange} ${rateInfo.min}–${rateInfo.max}` : t.rateHint}
                   </div>
+                  {(isAr ? rateInfo?.noteAr : rateInfo?.noteEn) && (
+                    <div style={{ fontSize: 11, color: "#b45309", marginTop: 4, fontWeight: 700 }}>⚠ {isAr ? rateInfo?.noteAr : rateInfo?.noteEn}</div>
+                  )}
                 </div>
                 {perMm && (
                   <div>
