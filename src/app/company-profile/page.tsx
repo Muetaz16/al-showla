@@ -19,24 +19,24 @@ const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vi
 const WP = "https://alshowla.com/wp-content/uploads";
 
 const BRANDS: { name: string; logo: string }[] = [
-  { name: "Saint-Gobain", logo: `${WP}/2026/01/Saint-Goban.jpg` },
-  { name: "Weber", logo: `${WP}/2026/04/weber.jpg` },
-  { name: "Gyproc", logo: `${WP}/2026/01/GYPROC.jpg` },
-  { name: "Chryso", logo: "/brands/chryso.webp" },
-  { name: "GCP", logo: "/brands/gcp.webp" },
-  { name: "Fosroc", logo: "/brands/fosroc.webp" },
-  { name: "DeWalt", logo: `${WP}/2026/01/DEWALT.jpg` },
-  { name: "Black & Decker", logo: `${WP}/2026/01/B-DECKER.jpg` },
-  { name: "Stanley", logo: `${WP}/2026/01/Stanley.jpg` },
-  { name: "Sika", logo: `${WP}/2026/01/Sika.jpg` },
-  { name: "Knauf", logo: `${WP}/2026/01/KNAUF.jpg` },
-  { name: "AGT", logo: `${WP}/2026/01/AGT.jpg` },
-  { name: "Top Wet", logo: `${WP}/2026/04/top-wet.jpg` },
-  { name: "Deli", logo: `${WP}/2026/01/DELI.jpg` },
-  { name: "Reform", logo: `${WP}/2026/01/REform.jpg` },
-  { name: "NCC", logo: "/partners/ncc.webp" },
-  { name: "الشركة الليبية للحديد والصلب", logo: "/partners/libyan-iron-steel.jpg" },
-  { name: "شركة جولدن متيل", logo: "/partners/golden-metal.jpg" },
+  { name: "Saint-Gobain", logo: "/brands/n/saint-gobain.webp" },
+  { name: "Weber", logo: "/brands/n/weber.webp" },
+  { name: "Gyproc", logo: "/brands/n/gyproc.webp" },
+  { name: "Chryso", logo: "/brands/n/chryso.webp" },
+  { name: "GCP", logo: "/brands/n/gcp.webp" },
+  { name: "Fosroc", logo: "/brands/n/fosroc.webp" },
+  { name: "DeWalt", logo: "/brands/n/dewalt.webp" },
+  { name: "Black & Decker", logo: "/brands/n/black-decker.webp" },
+  { name: "Stanley", logo: "/brands/n/stanley.webp" },
+  { name: "Sika", logo: "/brands/n/sika.webp" },
+  { name: "Knauf", logo: "/brands/n/knauf.webp" },
+  { name: "AGT", logo: "/brands/n/agt.webp" },
+  { name: "Top Wet", logo: "/brands/n/top-wet.webp" },
+  { name: "Deli", logo: "/brands/n/deli.webp" },
+  { name: "Reform", logo: "/brands/n/reform.webp" },
+  { name: "NCC", logo: "/brands/n/ncc.webp" },
+  { name: "الشركة الليبية للحديد والصلب", logo: "/brands/n/lisco.webp" },
+  { name: "شركة جولدن متيل", logo: "/brands/n/golden-metal.webp" },
 ];
 
 const T = {
@@ -395,7 +395,7 @@ export default function CompanyProfilePage() {
                 <div key={i} className="cp-partner">
                   {p.logo ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} loading="lazy" className={p.big ? "big" : undefined} />
+                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} loading="lazy" />
                   ) : (
                     <span>{isAr ? p.nameAr : p.nameEn}</span>
                   )}
@@ -549,7 +549,7 @@ const CSS = `
 .cp-brands { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
 .cp-logo { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; height: 110px; display: grid; place-items: center; padding: 12px; transition: box-shadow .25s; }
 .cp-logo:hover { box-shadow: 0 10px 24px rgba(0,31,77,.1); }
-.cp-logo img { max-width: 100%; max-height: 80px; object-fit: contain; }
+.cp-logo img { width: 100%; max-width: 180px; aspect-ratio: 2 / 1; height: auto; object-fit: contain; }
 
 .cp-parties { list-style: none; margin: 10px 0 0; padding: 0; }
 .cp-parties li { font-size: 13px; color: #64748b; line-height: 1.8; padding-inline-start: 14px; position: relative; }
@@ -561,8 +561,7 @@ const CSS = `
 .cp-partners { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
 .cp-partner { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; min-height: 96px; padding: 12px; display: flex; align-items: center; justify-content: center; text-align: center; }
 .cp-partner span { font-size: 13px; font-weight: 800; color: var(--blue-deeper, #001f4d); line-height: 1.6; }
-.cp-partner img { max-width: 100%; max-height: 64px; object-fit: contain; }
-.cp-partner img.big { max-height: 88px; }
+.cp-partner img { width: 100%; max-width: 150px; aspect-ratio: 3 / 2; height: auto; object-fit: contain; }
 
 .cp-sectors { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .cp-sector { min-height: 300px; border-radius: 18px; background-size: cover; background-position: center; color: #fff; padding: 22px; display: flex; flex-direction: column; justify-content: flex-end; }

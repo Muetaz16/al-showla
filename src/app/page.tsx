@@ -320,7 +320,7 @@ export default function Home() {
   const BRAND_DATA = [
     {
       name: "Saint-Gobain",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/Saint-Goban.jpg",
+      url: "/brands/n/saint-gobain.webp",
       country: lang === "ar" ? "🇫🇷 فرنسا" : "🇫🇷 France",
       founded: "1665",
       website: "https://www.saint-gobain.com",
@@ -332,7 +332,7 @@ export default function Home() {
     },
     {
       name: "Weber",
-      url: "https://alshowla.com/wp-content/uploads/2026/04/weber.jpg",
+      url: "/brands/n/weber.webp",
       country: lang === "ar" ? "🇫🇷 فرنسا / مجموعة سان جوبان" : "🇫🇷 France / Saint-Gobain Group",
       founded: "1900",
       website: "https://www.middleeast.weber",
@@ -344,7 +344,7 @@ export default function Home() {
     },
     {
       name: "Gyproc",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/GYPROC.jpg",
+      url: "/brands/n/gyproc.webp",
       country: lang === "ar" ? "🇬🇧 المملكة المتحدة / مجموعة سان جوبان" : "🇬🇧 United Kingdom / Saint-Gobain Group",
       founded: "1917",
       website: "https://www.gyproc.eg",
@@ -356,7 +356,7 @@ export default function Home() {
     },
     {
       name: "Chryso",
-      url: "/brands/chryso.webp",
+      url: "/brands/n/chryso.webp",
       country: lang === "ar" ? "🇫🇷 فرنسا / مجموعة سان جوبان" : "🇫🇷 France / Saint-Gobain Group",
       founded: "1942",
       website: "https://www.chryso.com",
@@ -368,7 +368,7 @@ export default function Home() {
     },
     {
       name: "GCP",
-      url: "/brands/gcp.webp",
+      url: "/brands/n/gcp.webp",
       country: lang === "ar" ? "🇺🇸 الولايات المتحدة / مجموعة سان جوبان" : "🇺🇸 United States / Saint-Gobain Group",
       founded: "",
       website: "https://gcpat.com/en",
@@ -380,7 +380,7 @@ export default function Home() {
     },
     {
       name: "Fosroc",
-      url: "/brands/fosroc.webp",
+      url: "/brands/n/fosroc.webp",
       country: lang === "ar" ? "🇬🇧 المملكة المتحدة / مجموعة سان جوبان" : "🇬🇧 United Kingdom / Saint-Gobain Group",
       founded: "",
       website: "https://www.fosroc.com",
@@ -392,7 +392,7 @@ export default function Home() {
     },
     {
       name: "DeWalt",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/DEWALT.jpg",
+      url: "/brands/n/dewalt.webp",
       country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
       founded: "1924",
       website: "https://www.dewalt.com",
@@ -404,7 +404,7 @@ export default function Home() {
     },
     {
       name: "Black & Decker",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/B-DECKER.jpg",
+      url: "/brands/n/black-decker.webp",
       country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
       founded: "1910",
       website: "https://www.blackanddecker.com",
@@ -416,7 +416,7 @@ export default function Home() {
     },
     {
       name: "Stanley",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/Stanley.jpg",
+      url: "/brands/n/stanley.webp",
       country: lang === "ar" ? "🇺🇸 الولايات المتحدة" : "🇺🇸 United States",
       founded: "1843",
       website: "https://www.stanleytools.com",
@@ -428,7 +428,7 @@ export default function Home() {
     },
     {
       name: "Sika",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/Sika.jpg",
+      url: "/brands/n/sika.webp",
       country: lang === "ar" ? "🇨🇭 سويسرا" : "🇨🇭 Switzerland",
       founded: "1910",
       website: "https://www.sika.com",
@@ -440,7 +440,7 @@ export default function Home() {
     },
     {
       name: "Knauf",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/KNAUF.jpg",
+      url: "/brands/n/knauf.webp",
       country: lang === "ar" ? "🇩🇪 ألمانيا" : "🇩🇪 Germany",
       founded: "1932",
       website: "https://www.knauf.com",
@@ -452,7 +452,7 @@ export default function Home() {
     },
     {
       name: "AGT",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/AGT.jpg",
+      url: "/brands/n/agt.webp",
       country: lang === "ar" ? "🇹🇷 تركيا" : "🇹🇷 Turkey",
       founded: "1984",
       website: "https://www.agt.com.tr/en",
@@ -464,7 +464,7 @@ export default function Home() {
     },
     {
       name: "Top Wet",
-      url: "https://alshowla.com/wp-content/uploads/2026/04/top-wet.jpg",
+      url: "/brands/n/top-wet.webp",
       country: lang === "ar" ? "🇨🇿 التشيك" : "🇨🇿 Czech Republic",
       founded: "—",
       website: "https://topwet.com/en",
@@ -476,7 +476,7 @@ export default function Home() {
     },
     {
       name: "Deli",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/DELI.jpg",
+      url: "/brands/n/deli.webp",
       country: lang === "ar" ? "🇨🇳 الصين" : "🇨🇳 China",
       founded: "1981",
       website: "https://www.deliworld.com",
@@ -488,7 +488,7 @@ export default function Home() {
     },
     {
       name: "Reform",
-      url: "https://alshowla.com/wp-content/uploads/2026/01/REform.jpg",
+      url: "/brands/n/reform.webp",
       country: "",
       founded: "",
       website: "#",
@@ -500,7 +500,7 @@ export default function Home() {
     },
     {
       name: "NCC",
-      url: "/partners/ncc.webp",
+      url: "/brands/n/ncc.webp",
       country: lang === "ar" ? "🇪🇬 مصر — بني سويف" : "🇪🇬 Egypt — Beni Suef",
       founded: "",
       website: "#",
@@ -512,7 +512,7 @@ export default function Home() {
     },
     {
       name: "الشركة الليبية للحديد والصلب",
-      url: "/partners/libyan-iron-steel.jpg",
+      url: "/brands/n/lisco.webp",
       country: lang === "ar" ? "🇱🇾 ليبيا — مصراتة" : "🇱🇾 Libya — Misrata",
       founded: "",
       website: "#",
@@ -524,7 +524,7 @@ export default function Home() {
     },
     {
       name: "شركة جولدن متيل",
-      url: "/partners/golden-metal.jpg",
+      url: "/brands/n/golden-metal.webp",
       country: "",
       founded: "",
       website: "#",
@@ -1151,7 +1151,7 @@ export default function Home() {
               <div className="pt-card" key={i} title={lang === "ar" ? p.nameAr : p.nameEn}>
                 {p.logo ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={p.logo} alt={lang === "ar" ? p.nameAr : p.nameEn} style={p.big ? { maxHeight: 78 } : undefined} />
+                  <img src={p.logo} alt={lang === "ar" ? p.nameAr : p.nameEn} style={{ width: "100%", maxWidth: 150, aspectRatio: "3 / 2", height: "auto", maxHeight: "none", objectFit: "contain" }} />
                 ) : (
                   <span>{lang === "ar" ? p.nameAr : p.nameEn}</span>
                 )}
@@ -1188,6 +1188,8 @@ export default function Home() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={b.url} alt={b.name}
+                  // Logos are pre-normalized to the same 2:1 canvas, so equal boxes = equal visual size
+                  style={{ width: "100%", maxWidth: 150, aspectRatio: "2 / 1", height: "auto", maxHeight: "none", objectFit: "contain", filter: "none" }}
                   onError={(e) => {
                     const el = e.target as HTMLImageElement;
                     el.style.display = "none";
