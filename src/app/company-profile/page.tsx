@@ -28,15 +28,15 @@ const BRANDS: { name: string; logo: string }[] = [
   { name: "DeWalt", logo: "/brands/n/dewalt.webp" },
   { name: "Black & Decker", logo: "/brands/n/black-decker.webp" },
   { name: "Stanley", logo: "/brands/n/stanley.webp" },
+  { name: "Deli", logo: "/brands/n/deli.webp" },
   { name: "Sika", logo: "/brands/n/sika.webp" },
   { name: "Knauf", logo: "/brands/n/knauf.webp" },
   { name: "AGT", logo: "/brands/n/agt.webp" },
   { name: "Top Wet", logo: "/brands/n/top-wet.webp" },
-  { name: "Deli", logo: "/brands/n/deli.webp" },
   { name: "Reform", logo: "/brands/n/reform.webp" },
-  { name: "NCC", logo: "/brands/n/ncc.webp" },
-  { name: "الشركة الليبية للحديد والصلب", logo: "/brands/n/lisco.webp" },
   { name: "شركة جولدن متيل", logo: "/brands/n/golden-metal.webp" },
+  { name: "شركة البينية للاستثمار", logo: "/brands/n/albayna.webp" },
+  { name: "NPC", logo: "/brands/n/npc.webp" },
 ];
 
 const T = {
