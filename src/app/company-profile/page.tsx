@@ -36,7 +36,7 @@ const BRANDS: { name: string; logo: string }[] = [
   { name: "Reform", logo: "/brands/n/reform.webp" },
   { name: "شركة جولدن متيل", logo: "/brands/n/golden-metal.webp" },
   { name: "شركة البينية للاستثمار", logo: "/brands/n/albayna.webp" },
-  { name: "NPC", logo: "/brands/n/npc.webp" },
+  { name: "الشركة الوطنية للأسمنت ببني سويف", logo: "/brands/n/ncc.webp" },
 ];
 
 const T = {

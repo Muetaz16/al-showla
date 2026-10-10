@@ -523,8 +523,8 @@ export default function Home() {
       certifications: [] as string[],
     },
     {
-      name: "NPC",
-      url: "/brands/n/npc.webp",
+      name: "الشركة الوطنية للأسمنت ببني سويف",
+      url: "/brands/n/ncc.webp",
       country: "",
       founded: "",
       website: "#",
