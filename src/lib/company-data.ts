@@ -68,7 +68,7 @@ export const PARTNERS: Partner[] = [
   { nameAr: "شركة مراس للهندسة والإنشاءات", nameEn: "Meraas Engineering & Construction", logo: "/partners/n/meraas.webp" },
   { nameAr: "مجموعة خليفة القابضة", nameEn: "Khalifa Holding Group", logo: "/partners/n/khalifa-holding.webp" },
   { nameAr: "شركة TGG التركية", nameEn: "TGG (Turkey)", logo: "/partners/n/tgg.webp" },
-  { nameAr: "شركة CEE المصرية", nameEn: "CEE (Egypt)" },
+  { nameAr: "شركة CEE المصرية", nameEn: "CEE (Egypt)", logo: "/partners/n/cee.webp" },
   { nameAr: "شركة SET Construction", nameEn: "SET Construction", logo: "/partners/n/set-construction.webp" },
   { nameAr: "شركة Kapasite", nameEn: "Kapasite", logo: "/partners/n/kapasite.webp" },
   { nameAr: "شركة وادي النيل للمقاولات والاستثمارات العقارية", nameEn: "Wadi El Nile Contracting & Real Estate", logo: "/partners/n/wadi-al-nil.webp" },
