@@ -14,7 +14,7 @@ import { PROJECTS, PARTNERS } from "@/lib/company-data";
 
 type Lang = "ar" | "en";
 
-const LOGO = "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png";
+const LOGO = "/logo-full.png"; // official logo (client artwork)
 const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
 const WP = "https://alshowla.com/wp-content/uploads";
 
@@ -75,13 +75,13 @@ const T = {
       ["منصة إلكترونية حديثة", "كتالوج رقمي، حاسبة كميات، مكتبة وثائق فنية، ومستشار فني ذكي لخدمة العملاء على مدار الساعة."],
     ],
     whyStats: [["2021", "بداية الوكالات الحصرية"], ["18", "علامة تجارية"], ["100%", "منتجات أصلية"], ["24/7", "حضور رقمي"]],
-    ceoLbl: "كلمة المؤسس ورئيس مجلس الإدارة", ceoH: "رسالة", ceoHem: "القيادة",
+    ceoLbl: "كلمة رئيس مجلس الإدارة", ceoH: "رسالة", ceoHem: "القيادة",
     ceoQuote: "نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody: [
       "يسرّني أن أرحّب بكم في شركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
       "وانطلاقًا من هذا التوازن، نعمل على تقديم حلول متكاملة عالية الجودة، وبناء شراكات استراتيجية مستدامة تُسهم في تطوير قطاع البناء في ليبيا وفق أعلى المعايير.",
     ],
-    ceoName: "المهدي العوامي", ceoRole: "رئيس مجلس الإدارة والمؤسس — الشعلة الرائدة",
+    ceoName: "المهدي العوامي", ceoRole: "رئيس مجلس الإدارة — الشعلة الرائدة",
     svcLbl: "ما نقدمه", svcH: "خدمات", svcHem: "متخصصة",
     services: [
       ["الاستشارات الفنية والحلول المتخصصة", "فهم احتياجات العملاء وتقديم المشورة الفنية واختيار وتوصيف المواد والأنظمة والحلول المناسبة لمختلف التطبيقات ومتطلبات قطاع البناء."],
@@ -135,13 +135,13 @@ const T = {
       ["Modern Online Platform", "Digital catalog, quantity calculator, technical document library, and a smart technical advisor available around the clock."],
     ],
     whyStats: [["2021", "Exclusive Agencies Since"], ["18", "Brands"], ["100%", "Genuine Products"], ["24/7", "Digital Presence"]],
-    ceoLbl: "Founder & Chairman's Message", ceoH: "A Message from", ceoHem: "Our Leadership",
+    ceoLbl: "Chairman's Message", ceoH: "A Message from", ceoHem: "Our Leadership",
     ceoQuote: "We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.",
     ceoBody: [
       "It is my pleasure to welcome you to Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
       "Building on this balance, we work to deliver integrated, high-quality solutions and to establish sustainable strategic partnerships that contribute to developing Libya's construction sector in line with the highest standards.",
     ],
-    ceoName: "Al Mahdi Al Awamy", ceoRole: "Chairman & Founder — Al-Showla Al-Raeda",
+    ceoName: "Al Mahdi Al Awamy", ceoRole: "Chairman of the Board — Al-Showla Al-Raeda",
     svcLbl: "What We Offer", svcH: "Specialized", svcHem: "Services",
     services: [
       ["Technical Consultancy & Specialized Solutions", "Understanding client needs, providing technical advice, and selecting and specifying the right materials, systems, and solutions for the various applications and requirements of the construction sector."],
@@ -198,11 +198,7 @@ export default function CompanyProfilePage() {
             <div className="cp-hero-top">
               <div className="cp-brand">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={LOGO} alt="" />
-                <div>
-                  <div className="cp-brand-n">الشعلة الرائدة</div>
-                  <div className="cp-brand-s">AL-SHOWLA AL-RAEDA</div>
-                </div>
+                <img src={LOGO} alt="الشعلة الرائدة — Alshowla Alraeda" />
               </div>
               <div className="cp-actions">
                 <div className="cp-lang">
@@ -395,7 +391,7 @@ export default function CompanyProfilePage() {
                 <div key={i} className="cp-partner">
                   {p.logo ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} loading="lazy" />
+                    <img src={p.logo} alt={isAr ? p.nameAr : p.nameEn} />
                   ) : (
                     <span>{isAr ? p.nameAr : p.nameEn}</span>
                   )}
@@ -413,7 +409,7 @@ export default function CompanyProfilePage() {
               {BRANDS.map((b) => (
                 <div key={b.name} className="cp-logo" title={b.name}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={b.logo} alt={b.name} loading="lazy" />
+                  <img src={b.logo} alt={b.name} />
                 </div>
               ))}
             </div>
@@ -473,7 +469,7 @@ const CSS = `
 .cp-hero { background-size: cover; background-position: center; color: #fff; padding: 40px 0 70px; }
 .cp-hero-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 70px; }
 .cp-brand { display: flex; align-items: center; gap: 14px; }
-.cp-brand img { width: 64px; height: 64px; background: #fff; border-radius: 16px; padding: 8px; }
+.cp-brand img { height: 132px; width: auto; background: #fff; border-radius: 18px; padding: 10px 16px; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
 .cp-brand-n { font-size: 24px; font-weight: 900; }
 .cp-brand-s { font-size: 11px; letter-spacing: 4px; opacity: .75; }
 .cp-actions { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -597,12 +593,33 @@ const CSS = `
   .cp-img-main { height: 280px; }
 }
 
+@page { size: A4; margin: 8mm; }
 @media print {
+  html, body { background: #fff !important; }
   header, footer, .mob-nav, .cp-actions { display: none !important; }
   .cp * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .cp-sec, .cp-cta { padding: 36px 0; break-inside: avoid-page; }
-  .cp-hero { padding: 30px 0 40px; }
-  .cp-hero-top { margin-bottom: 30px; }
-  .cp-card, .cp-value, .cp-svc, .cp-tl-card, .cp-sector, .cp-cat, .cp-logo, .cp-partner { break-inside: avoid; }
+  /* Print the desktop design scaled to the A4 page. The page is narrower than the
+     960px breakpoint, so the desktop grids are restored explicitly below. */
+  .cp { zoom: .66; }
+  .cp-split { grid-template-columns: 1.15fr 1fr; }
+  .cp-vm, .cp-svcs { grid-template-columns: 1fr 1fr; }
+  .cp-ceo { grid-template-columns: 280px 1fr; }
+  .cp-ceo-img { height: 340px; }
+  .cp-stats, .cp-timeline, .cp-sectors, .cp-contact, .cp-cats { grid-template-columns: repeat(4, 1fr); }
+  .cp-values { grid-template-columns: repeat(5, 1fr); }
+  .cp-grid3 { grid-template-columns: repeat(3, 1fr); }
+  .cp-brands, .cp-partners { grid-template-columns: repeat(6, 1fr); }
+  .cp-img-main { height: 360px; }
+  .cp-img-sub { inset-inline-start: -30px; }
+  .cp-sec, .cp-cta { padding: 30px 0; }
+  /* Cover = one full A4 page (page height / zoom) */
+  .cp-hero { min-height: calc(279mm / .66); padding: 50px 0; display: flex; flex-direction: column; justify-content: center; break-after: page; }
+  .cp-brand img { height: 170px; }
+  .cp-head, .cp-h2 { break-after: avoid; }
+  .cp-brands, .cp-partners, .cp-timeline, .cp-values, .cp-contact { break-inside: avoid; }
+  /* Keep each short section (title + content) on one page so titles never sit alone */
+  .cp-sec:has(.cp-ceo), .cp-sec:has(.cp-brands), .cp-sec:has(.cp-values), .cp-sec:has(.cp-timeline),
+  .cp-sec:has(.cp-vm), .cp-sec:has(.cp-sectors), .cp-sec:has(.cp-cats), .cp-sec:has(.cp-grid3) { break-inside: avoid; }
+  .cp-card, .cp-value, .cp-svc, .cp-tl-card, .cp-sector, .cp-cat, .cp-logo, .cp-partner, .cp-ceo, .cp-vm-card, .cp-img-stack { break-inside: avoid; }
 }
 `;

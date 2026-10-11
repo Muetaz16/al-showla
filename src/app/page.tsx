@@ -13,7 +13,7 @@ const T = {
   en: {
     // Nav
     home: "Home", company: "Company", whoWeAre: "Who We Are",
-    ceoMsg: "Founder & Chairman's Message", services: "Services", products: "Products",
+    ceoMsg: "Chairman's Message", services: "Services", products: "Products",
     clients: "Who We Serve", partners: "Our Clients", contact: "Contact",
     orderNow: "Order Now",
     // Hero
@@ -47,8 +47,8 @@ const T = {
     val4t: "Sustainability", val4b: "Supporting environmentally friendly projects.",
     val5t: "Innovation", val5b: "Introducing the latest solutions to the market.",
     // CEO
-    ceoLbl: "Founder & Chairman's Message", ceoName: "Al Mahdi Al Awamy",
-    ceoRole: "Chairman & Founder — Alshowla Alraeda",
+    ceoLbl: "Chairman's Message", ceoName: "Al Mahdi Al Awamy",
+    ceoRole: "Chairman of the Board — Alshowla Alraeda",
     ceoQuote: "\"We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.\"",
     ceoBody1: "It is my pleasure to welcome you to the website of Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
     ceoBody2: "Building on this balance, we work to deliver integrated, high-quality solutions and to establish sustainable strategic partnerships that contribute to developing Libya's construction sector in line with the highest standards.",
@@ -99,7 +99,7 @@ const T = {
   },
   ar: {
     home: "الرئيسية", company: "الشركة", whoWeAre: "من نحن",
-    ceoMsg: " كلمة المؤسس ورئيس مجلس الإدارة ", services: "خدماتنا", products: "منتجاتنا",
+    ceoMsg: " كلمة رئيس مجلس الإدارة ", services: "خدماتنا", products: "منتجاتنا",
     clients: "من نخدم", partners: "عملاؤنا", contact: "اتصل بنا",
     orderNow: "اطلب الآن",
     heroTag: "تأسست 2005 · طبرق، ليبيا",
@@ -128,8 +128,8 @@ const T = {
     val3t: "الجودة", val3b: "التزامنا الدائم بتقديم الأفضل دائماً.",
     val4t: "الاستدامة", val4b: "دعم المشاريع الصديقة للبيئة.",
     val5t: "الابتكار", val5b: "تقديم أحدث الحلول والمنتجات للسوق.",
-    ceoLbl: " كلمة المؤسس ورئيس مجلس الإدارة ", ceoName: "المهدي العوامي",
-    ceoRole: "رئيس مجلس الإدارة والمؤسس — الشعلة الرائدة",
+    ceoLbl: " كلمة رئيس مجلس الإدارة ", ceoName: "المهدي العوامي",
+    ceoRole: "رئيس مجلس الإدارة — الشعلة الرائدة",
     ceoQuote: "\"نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.\"",
     ceoBody1: "يسرّني أن أرحّب بكم في الموقع الإلكتروني لشركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody2: "وانطلاقًا من هذا التوازن، نعمل على تقديم حلول متكاملة عالية الجودة، وبناء شراكات استراتيجية مستدامة تُسهم في تطوير قطاع البناء في ليبيا وفق أعلى المعايير.",
