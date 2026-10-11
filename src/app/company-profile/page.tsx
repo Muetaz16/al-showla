@@ -35,7 +35,7 @@ const BRANDS: { name: string; logo: string }[] = [
   { name: "Top Wet", logo: "/brands/n/top-wet.webp" },
   { name: "Reform", logo: "/brands/n/reform.webp" },
   { name: "شركة جولدن متيل", logo: "/brands/n/golden-metal.webp" },
-  { name: "شركة البينية للاستثمار", logo: "/brands/n/albayna.webp" },
+  { name: "الشركة الليبية للحديد والصلب", logo: "/brands/n/lisco.webp" },
   { name: "الشركة الوطنية للأسمنت ببني سويف", logo: "/brands/n/ncc.webp" },
 ];
 

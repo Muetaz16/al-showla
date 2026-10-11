@@ -852,7 +852,8 @@ export async function getApplicators(): Promise<any[]> {
     const list = await prisma.applicator.findMany({ orderBy: { date: 'desc' } });
     return list.map((a: any) => ({ ...a, date: a.date?.toISOString?.() ?? null }));
   } catch {
-    return [];
+    // No DB (e.g. DATABASE_URL missing locally): show the built-in directory instead of an empty page
+    return APPLICATOR_SEED.map((a) => ({ ...a, date: null }));
   }
 }
 
