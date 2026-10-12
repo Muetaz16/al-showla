@@ -10,7 +10,7 @@ import {
   RefreshCw, MonitorSmartphone, Building2, HardHat, Landmark, Store, Phone, Mail,
   MapPin, Clock, Printer, Quote, Target, Eye,
 } from "lucide-react";
-import { PROJECTS, PARTNERS } from "@/lib/company-data";
+import { PROJECTS, PARTNERS, DEPARTMENTS, libyanPhone } from "@/lib/company-data";
 
 type Lang = "ar" | "en";
 
@@ -449,6 +449,18 @@ export default function CompanyProfilePage() {
               <div><MapPin size={20} /><span>{t.addrL}</span><b>{t.addr}</b></div>
               <div><Clock size={20} /><span>{t.hoursL}</span><b>{t.hours}</b></div>
             </div>
+            <div className="cp-depts">
+              {DEPARTMENTS.map((d) => {
+                const ph = libyanPhone(d.phone);
+                return (
+                  <div key={d.email}>
+                    <span>{isAr ? d.nameAr : d.nameEn}</span>
+                    <a href={`tel:${ph.tel}`} dir="ltr">{ph.display}</a>
+                    <a href={`mailto:${d.email}`}>{d.email}</a>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
       </main>
@@ -574,12 +586,17 @@ const CSS = `
 .cp-contact { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 30px; }
 .cp-contact > div { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
 .cp-contact svg { color: var(--accent, #f59e0b); }
+.cp-depts { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 14px; }
+.cp-depts > div { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.cp-depts span { font-size: 13px; color: var(--accent, #f59e0b); font-weight: 800; }
+.cp-depts a { color: #fff; font-size: 13px; text-decoration: none; }
 .cp-contact span { font-size: 13px; color: var(--accent, #f59e0b); font-weight: 800; }
 .cp-contact a, .cp-contact b { color: #fff; font-weight: 600; font-size: 15px; text-decoration: none; line-height: 1.7; }
 
 @media (max-width: 960px) {
   .cp-split, .cp-vm, .cp-svcs, .cp-ceo { grid-template-columns: 1fr; }
   .cp-timeline, .cp-sectors, .cp-contact, .cp-cats { grid-template-columns: repeat(2, 1fr); }
+  .cp-depts { grid-template-columns: repeat(2, 1fr); }
   .cp-timeline::before { display: none; }
   .cp-values { grid-template-columns: repeat(3, 1fr); }
   .cp-grid3 { grid-template-columns: repeat(2, 1fr); }

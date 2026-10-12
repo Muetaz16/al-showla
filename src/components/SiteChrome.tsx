@@ -183,6 +183,7 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
             <li><a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             <li><a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/alshowla-alraeda/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -192,6 +193,7 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
           <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://www.instagram.com/alshola2024" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/alshowla-alraeda/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </footer>

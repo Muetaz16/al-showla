@@ -82,3 +82,22 @@ export const PARTNERS: Partner[] = [
   { nameAr: "شركة القمم العالية القابضة", nameEn: "Al-Qimam Al-Aliya Holding", logo: "/partners/n/al-qimam-al-aliya.webp" },
   { nameAr: "شركة الوصيد العقارية", nameEn: "Al-Waseed Real Estate", logo: "/partners/n/al-waseed.webp" },
 ];
+
+export const LINKEDIN_URL = "https://www.linkedin.com/company/alshowla-alraeda/";
+
+export type Department = { nameAr: string; nameEn: string; phone: string; email: string };
+
+// Main department contacts (provided by the client). Phones are local Libyan numbers.
+export const DEPARTMENTS: Department[] = [
+  { nameAr: "رئيس مجلس الإدارة", nameEn: "Chairman of the Board", phone: "0915008600", email: "ceo@alshowla.com" },
+  { nameAr: "الإدارة المالية", nameEn: "Finance", phone: "0927630846", email: "acct@alshowla.com" },
+  { nameAr: "إدارة المشتريات", nameEn: "Procurement", phone: "0925200060", email: "ops@alshowla.com" },
+  { nameAr: "إدارة المبيعات", nameEn: "Sales", phone: "0948020200", email: "sales@alshowla.com" },
+  { nameAr: "إدارة التسويق", nameEn: "Marketing", phone: "0927426635", email: "om@alshowla.com" },
+];
+
+/** 0915008600 -> { tel: "+218915008600", display: "+218 91 500 8600" } */
+export function libyanPhone(local: string) {
+  const d = local.replace(/\D/g, "").replace(/^0/, "");
+  return { tel: "+218" + d, display: `+218 ${d.slice(0, 2)} ${d.slice(2, 5)} ${d.slice(5)}` };
+}

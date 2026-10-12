@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners } from "@/app/cms-actions";
 import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
-import { PROJECTS, PARTNERS } from "@/lib/company-data";
+import { PROJECTS, PARTNERS, DEPARTMENTS, LINKEDIN_URL, libyanPhone } from "@/lib/company-data";
 
 /* ─────────────────────────────────────────────
    TRANSLATIONS
@@ -1305,11 +1305,28 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+              {/* Department contacts */}
+              <div className="ao" style={{ marginTop: 22 }}>
+                <div className="ci-lbl" style={{ marginBottom: 10 }}>{lang === "ar" ? "التواصل مع الإدارات" : "Department Contacts"}</div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 10 }}>
+                  {DEPARTMENTS.map((d) => {
+                    const ph = libyanPhone(d.phone);
+                    return (
+                      <div key={d.email} style={{ background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 10, padding: "12px 14px" }}>
+                        <div style={{ color: "var(--accent)", fontWeight: 800, fontSize: 14, marginBottom: 6 }}>{lang === "ar" ? d.nameAr : d.nameEn}</div>
+                        <a href={`tel:${ph.tel}`} dir="ltr" style={{ display: "block", color: "#fff", fontSize: 13, textDecoration: "none", unicodeBidi: "embed" }}>📞 {ph.display}</a>
+                        <a href={`mailto:${d.email}`} style={{ display: "block", color: "rgba(255,255,255,.8)", fontSize: 13, textDecoration: "none" }}>✉️ {d.email}</a>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
               <div className="soc-row">
                 {[
                   ["WhatsApp", "https://wa.me/218948020200"],
                   ["Facebook", "https://www.facebook.com/ALSHOLA1500"],
                   ["Instagram", "https://www.instagram.com/alshola2024"],
+                  ["LinkedIn", LINKEDIN_URL],
                 ].map(([name, url]) => (
                   <a key={name} href={url} target="_blank" rel="noopener noreferrer" className="soc-a">{name}</a>
                 ))}
@@ -1390,7 +1407,7 @@ export default function Home() {
           <div>
             <div className="ft-col-h">{t.followUs}</div>
             <ul className="ft-links">
-              {[["WhatsApp", "https://wa.me/218948020200"], ["Facebook", "https://www.facebook.com/ALSHOLA1500"], ["Instagram", "https://www.instagram.com/alshola2024"]].map(([name, url]) => (
+              {[["WhatsApp", "https://wa.me/218948020200"], ["Facebook", "https://www.facebook.com/ALSHOLA1500"], ["Instagram", "https://www.instagram.com/alshola2024"], ["LinkedIn", LINKEDIN_URL]].map(([name, url]) => (
                 <li key={name}><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></li>
               ))}
             </ul>
@@ -1401,6 +1418,7 @@ export default function Home() {
           <div className="ft-soc">
             <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </footer>
