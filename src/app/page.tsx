@@ -26,7 +26,7 @@ const T = {
     satisfiedClients: "Satisfied Clients", globalBrands: "Brands",
     // About
     whoWeAreLbl: "Who We Are",
-    aboutH2a: "Smart Solutions for", aboutH2b: "Stronger Projects",
+    aboutH2a: "Integrated Solutions", aboutH2b: "for More Efficient Projects",
     aboutP1: "Since its launch on 25 May 2005, Al-Showla Al-Raeda for Importing Building Materials has established itself as one of Libya's foremost companies specialized in providing high-quality building and sanitary materials. Over years of dedicated work, the company has built a reputation founded on credibility, diversity, and commitment to international quality standards.",
     aboutP2: "On 22 September 2021, the company entered a new phase of its journey by becoming an exclusive importer and agent for a number of major global brands, becoming a strategic link between the Libyan market and international markets.",
     aboutP3: "Today, Al-Showla Al-Raeda represents more than just a distributor; it is a trusted partner offering innovative, diverse solutions that support the aspirations of contractors, real-estate developers, and government entities, and contribute to building modern projects grounded in quality, trust, and sustainability.",
@@ -43,7 +43,7 @@ const T = {
     // Values
     val1t: "Commitment", val1b: "Fulfilling all contracts and deadlines with integrity.",
     val2t: "Trust", val2b: "Building long-term, reliable partnerships.",
-    val3t: "Quality", val3b: "Our constant commitment to deliver the very best.",
+    val3t: "Quality", val3b: "Commitment to quality standards in our products and services.",
     val4t: "Sustainability", val4b: "Supporting environmentally friendly projects.",
     val5t: "Innovation", val5b: "Introducing the latest solutions to the market.",
     // CEO
@@ -52,7 +52,7 @@ const T = {
     ceoQuote: "\"We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.\"",
     ceoBody1: "It is my pleasure to welcome you to the website of Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
     ceoBody2: "Building on this balance, we work to deliver integrated, high-quality solutions and to establish sustainable strategic partnerships that contribute to developing Libya's construction sector in line with the highest standards.",
-    kpi1n: "2005", kpi1l: "Founded", kpi2n: "2021", kpi2l: "Global Expansion",
+    kpi1n: "2005", kpi1l: "Founded", kpi2n: "2021", kpi2l: "Import & International Partnerships Growth",
     kpi3n: "22", kpi3l: "Brands", kpi4n: "20+", kpi4l: "Years Leading",
     // Services
     servicesLbl: "What We Offer", servicesH2a: "Specialized", servicesH2b: "Services",
@@ -68,14 +68,14 @@ const T = {
     prod5: "Architectural Finishes & Flooring Solutions", prod6: "Ceramic, Porcelain & Stone",
     prod7: "Rainwater Drainage Systems", prod8: "Sports Infrastructure & Finishes", prodAll: "All Products",
     brandsLbl: "Our Brands", brandsH2a: "Our", brandsH2b: "Brands",
-    projectsLbl: "Our Projects", projectsH2a: "Featured", projectsH2b: "Projects", projectsSupply: "General Supplies",
+    projectsLbl: "Projects We Are Proud to Have Contributed To", projectsH2a: "Featured", projectsH2b: "Projects", projectsSupply: "General Supplies",
     // Clients
-    clientsLbl: "Who We Serve", clientsH2a: "Trusted by", clientsH2b: "Libya's Builders",
-    cl1: "Real Estate Developers", cl1s: "Premium materials for landmark projects",
-    cl2: "Traders & Business Owners", cl2s: "Reliable wholesale supply chain",
+    clientsLbl: "Who We Serve", clientsH2a: "A Trusted Partner", clientsH2b: "for Libya's Construction Sector",
+    cl1: "Real Estate Developers", cl1s: "Specialized supply solutions for major projects",
+    cl2: "Traders & Business Owners", cl2s: "Reliable supply and distribution for wholesale",
     cl3: "Government & Infrastructure", cl3s: "National-scale project support",
-    cl4: "Major Contracting Companies", cl4s: "End-to-end material solutions",
-    cl5: "Individuals & Private Projects", cl5s: "Quality materials for every home",
+    cl4: "Major Contracting Companies", cl4s: "Integrated materials and construction systems",
+    cl5: "Individuals & Private Projects", cl5s: "High-quality materials for every building need",
     // Partners
     partnersLbl: "Our Clients", partnersH2a: "Our", partnersH2b: "Clients",
     // Contact
@@ -94,7 +94,7 @@ const T = {
     // Footer
     footerDesc: "A leading Libyan company specialized in the import and distribution of high-quality building and sanitary materials since 2005.",
     quickLinks: "Quick Links", ourServices: "Our Services", followUs: "Follow Us",
-    copyright: "© 2025 AL-SHOWLA AL-RAEDA. All Rights Reserved.",
+    copyright: `© ${new Date().getFullYear()} AL-SHOWLA AL-RAEDA. All Rights Reserved.`,
     orderWhatsapp: "Order on WhatsApp",
   },
   ar: {
@@ -105,15 +105,15 @@ const T = {
     heroTag: "تأسست 2005 · طبرق، ليبيا",
     heroH1a: "نبني مستقبل ليبيا",
     heroH1b: "بحلول بناء متكاملة",
-    heroP: "الشعلة الرائدة — شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005، موثوقة لدى المقاولين والمطورين والمؤسسات الحكومية في ليبيا.",
+    heroP: "الشعلة الرائدة — شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005، موثوقة لدى المقاولين والمطورين والمؤسسات الحكومية في ليبيا.",
     discoverStory: "اكتشف قصتنا", getQuote: "احصل على عرض سعر", scroll: "انزل",
     yearsExp: "سنة خبرة", projectsDel: "مشروع منجز",
     satisfiedClients: "عميل راضٍ", globalBrands: "علامة تجارية",
     whoWeAreLbl: "من نحن",
-    aboutH2a: "حلول ذكية لـ", aboutH2b: "مشاريع أقوى",
-    aboutP1: "منذ انطلاقتها في 25 مايو 2005، أثبتت  الشعلة الرائدة لاستيراد مواد البناء مكانتها كإحدى أبرز الشركات الليبية المتخصصة في توفير مواد البناء والمواد الصحية عالية الجودة. وعلى مدى سنوات من العمل الجاد، نجحت الشركة في بناء سمعة قائمة على المصداقية، والتنوع، والالتزام بمعايير الجودة العالمية.",
+    aboutH2a: "حلول متكاملة", aboutH2b: "لمشاريع أكثر كفاءة",
+    aboutP1: "منذ انطلاقتها في 25 مايو 2005، رسّخت شركة الشعلة الرائدة لاستيراد مواد البناء مكانتها كإحدى الشركات الليبية البارزة في مجال استيراد وتوزيع مواد البناء وتقديم الحلول الإنشائية المتكاملة وفق أعلى معايير الجودة.",
     aboutP2: "وفي 22 سبتمبر 2021، دخلت الشركة مرحلة جديدة من مسيرتها عبر التحول إلى مستورد ووكيل حصري لعدد من كبرى العلامات التجارية العالمية، لتصبح حلقة وصل استراتيجية بين السوق الليبي والأسواق الدولية.",
-    aboutP3: "واليوم، تمثل الشعلة الرائدة  شريك موثوق يقدم حلولاً مبتكرة ومتنوعة تدعم تطلعات المقاولين، والمطورين العقاريين، والجهات الحكومية، وتسهم في تشييد مشاريع حديثة ترتكز على الجودة والثقة والاستدامة.",
+    aboutP3: "واليوم، تمثل الشعلة الرائدة شريكاً موثوقاً به يقدم حلولاً مبتكرة ومتنوعة تدعم تطلعات المقاولين، والمطورين العقاريين، والجهات الحكومية، وتسهم في تشييد مشاريع حديثة ترتكز على الجودة والثقة والاستدامة.",
     downloadProfile: "الملف التعريفي", contactUs: "اتصل بنا",
     yearsOfTrust: "عاماً من الثقة",
     ourVision: "رؤيتنا", visionH: "رائدون محلياً،", visionHem: "متألقون إقليمياً",
@@ -125,7 +125,7 @@ const T = {
     missionLi4: "الالتزام بالاستدامة والشفافية في جميع العمليات",
     val1t: "الالتزام", val1b: "الوفاء بجميع العقود والمواعيد بنزاهة.",
     val2t: "الثقة", val2b: "بناء شراكات موثوقة وطويلة الأمد.",
-    val3t: "الجودة", val3b: "التزامنا الدائم بتقديم الأفضل دائماً.",
+    val3t: "الجودة", val3b: "الالتزام بمعايير الجودة في المنتجات والخدمات.",
     val4t: "الاستدامة", val4b: "دعم المشاريع الصديقة للبيئة.",
     val5t: "الابتكار", val5b: "تقديم أحدث الحلول والمنتجات للسوق.",
     ceoLbl: " كلمة رئيس مجلس الإدارة ", ceoName: "المهدي العوامي",
@@ -133,7 +133,7 @@ const T = {
     ceoQuote: "\"نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.\"",
     ceoBody1: "يسرّني أن أرحّب بكم في الموقع الإلكتروني لشركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody2: "وانطلاقًا من هذا التوازن، نعمل على تقديم حلول متكاملة عالية الجودة، وبناء شراكات استراتيجية مستدامة تُسهم في تطوير قطاع البناء في ليبيا وفق أعلى المعايير.",
-    kpi1n: "2005", kpi1l: "سنة التأسيس", kpi2n: "2021", kpi2l: "التوسع العالمي",
+    kpi1n: "2005", kpi1l: "سنة التأسيس", kpi2n: "2021", kpi2l: "التوسع في الاستيراد والشراكات الدولية",
     kpi3n: "22", kpi3l: "علامة تجارية", kpi4n: "20+", kpi4l: "سنة ريادة",
     servicesLbl: "ما نقدمه", servicesH2a: "خدمات", servicesH2b: "متخصصة",
     svc1t: "الاستشارات الفنية والحلول المتخصصة", svc1b: "فهم احتياجات العملاء وتقديم المشورة الفنية واختيار وتوصيف المواد والأنظمة والحلول المناسبة لمختلف التطبيقات ومتطلبات قطاع البناء.",
@@ -147,13 +147,13 @@ const T = {
     prod5: "التشطيبات المعمارية وحلول الأرضيات", prod6: "السيراميك والبورسلين والأحجار",
     prod7: "أنظمة تصريف مياه الأمطار", prod8: "البنية الرياضية والتشطيبات", prodAll: "جميع المنتجات",
     brandsLbl: "علاماتنا التجارية", brandsH2a: "علاماتنا", brandsH2b: "التجارية",
-    projectsLbl: "مشاريعنا", projectsH2a: "أبرز", projectsH2b: "المشاريع", projectsSupply: "توريدات عامة",
-    clientsLbl: "من نخدم", clientsH2a: "موثوق به من قِبل", clientsH2b: "مقاولي ليبيا",
-    cl1: "المطورون العقاريون", cl1s: "مواد متميزة للمشاريع الكبرى",
-    cl2: "التجار وأصحاب الأعمال", cl2s: "سلسلة إمداد جملة موثوقة",
+    projectsLbl: "مشاريع نفخر بالمساهمة فيها", projectsH2a: "أبرز", projectsH2b: "المشاريع", projectsSupply: "توريدات عامة",
+    clientsLbl: "من نخدم", clientsH2a: "شريك موثوق", clientsH2b: "لقطاع البناء في ليبيا",
+    cl1: "المطورون العقاريون", cl1s: "حلول توريد متخصصة للمشاريع الكبرى",
+    cl2: "التجار وأصحاب الأعمال", cl2s: "حلول توريد وتوزيع موثوقة لقطاع الجملة",
     cl3: "الحكومة والبنية التحتية", cl3s: "دعم المشاريع على النطاق الوطني",
-    cl4: "شركات المقاولات الكبرى", cl4s: "حلول مواد متكاملة من البداية للنهاية",
-    cl5: "الأفراد والمشاريع الخاصة", cl5s: "مواد جودة لكل منزل",
+    cl4: "شركات المقاولات الكبرى", cl4s: "حلول متكاملة للمواد والأنظمة الإنشائية",
+    cl5: "الأفراد والمشاريع الخاصة", cl5s: "مواد عالية الجودة لمختلف احتياجات البناء",
     partnersLbl: "عملاؤنا", partnersH2a: "", partnersH2b: "عملاؤنا",
     contactLbl: "تواصل معنا", contactH: "لنبني", contactHem: "معاً",
     contactP: "هل أنت مستعد لبدء مشروعك؟ فريقنا جاهز لتزويدك بأفضل مواد البناء والاستشارات الفنية.",
@@ -167,9 +167,9 @@ const T = {
     formName: "الاسم الكامل", formEmail: "البريد الإلكتروني", formPhone: "رقم الهاتف",
     formSubject: "الموضوع", formMsg: "رسالتك", formSend: "إرسال الرسالة",
     formSuccess: "✓ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.",
-    footerDesc: "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
+    footerDesc: "شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
     quickLinks: "روابط سريعة", ourServices: "خدماتنا", followUs: "تابعنا",
-    copyright: "© 2025 الشعلة الرائدة. جميع الحقوق محفوظة.",
+    copyright: `© ${new Date().getFullYear()} الشعلة الرائدة. جميع الحقوق محفوظة.`,
     orderWhatsapp: "اطلب عبر واتساب",
   },
 };
@@ -614,7 +614,7 @@ export default function Home() {
       <nav id="nav" className={navSolid ? "solid" : ""}>
         <a href="#home" className="nav-logo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO} alt="Al-Showla Al-Raeda Logo" style={{ height: 38 }}
+          <img src={LOGO} alt="Al-Showla Al-Raeda Logo" style={{ height: 64 }}
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <div>
             <div className="nav-logo-txt">{lang === "ar" ? "الشعلة الرائدة" : "AL-SHOWLA AL-RAEDA"}</div>

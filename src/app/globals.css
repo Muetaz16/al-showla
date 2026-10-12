@@ -99,8 +99,8 @@ body {
 }
 .dark #nav.solid { background: rgba(10,15,30,.97); }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
-.nav-logo img { height: 42px; display: block; }
-.nav-logo-txt { font-weight: 800; font-size: 14px; letter-spacing: .03em; color: var(--blue-dark); line-height: 1.2; }
+.nav-logo img { height: 64px; display: block; }
+.nav-logo-txt { font-weight: 800; font-size: 16px; letter-spacing: .03em; color: var(--blue-dark); line-height: 1.2; }
 .nav-logo-sub { font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--blue-mid); }
 [dir=rtl] .nav-logo-sub { letter-spacing: 0; text-transform: none; font-size: 11px; }
 .nav-links { display: flex; align-items: center; gap: 14px; flex-wrap: nowrap; }

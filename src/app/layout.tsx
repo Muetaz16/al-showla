@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | الشعلة الرائدة",
   },
   description:
-    "الشعلة الرائدة — شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005. AL-Showla Al-Raeda, a leading Libyan company specialized in building materials since 2005.",
+    "الشعلة الرائدة — شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005. AL-Showla Al-Raeda, a leading Libyan company specialized in building materials since 2005.",
   keywords: [
     "مواد البناء", "ليبيا", "بنغازي", "الشعلة الرائدة", "مواد إنشائية",
     "building materials", "Libya", "Benghazi", "construction",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   appleWebApp: { capable: true, statusBarStyle: "default", title: "الشعلة الرائدة" },
   openGraph: {
     title: "AL-SHOWLA AL-RAEDA | مواد البناء والحلول الإنشائية",
-    description: "شركة ليبية رائدة في مواد البناء منذ 2005",
+    description: "شركة ليبية متخصصة في مواد البناء منذ 2005",
     siteName: "AL-SHOWLA AL-RAEDA",
     url: SITE_URL,
     locale: "ar_LY",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AL-SHOWLA AL-RAEDA | مواد البناء والحلول الإنشائية",
-    description: "شركة ليبية رائدة في مواد البناء منذ 2005",
+    description: "شركة ليبية متخصصة في مواد البناء منذ 2005",
     images: [OG_IMAGE],
   },
 };
@@ -63,7 +63,7 @@ const ORG_JSONLD = {
   logo: "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png",
   foundingDate: "2005-05-25",
   description:
-    "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
+    "شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "الطريق الدائري الثالث، الرحبة",

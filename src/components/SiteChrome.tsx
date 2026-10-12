@@ -70,7 +70,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
       >
         <a href="/" className="nav-logo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO} alt="Al-Showla Al-Raeda" style={{ height: 38 }}
+          <img src={LOGO} alt="Al-Showla Al-Raeda" style={{ height: 64 }}
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <div>
             <div className="nav-logo-txt">{L("الشعلة الرائدة", "AL-SHOWLA AL-RAEDA")}</div>
@@ -156,7 +156,7 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={LOGO} alt="Al-Showla Al-Raeda"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
-          <p>{L("شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
+          <p>{L("شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
             "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005.")}</p>
         </div>
         <div>
