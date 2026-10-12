@@ -53,7 +53,7 @@ const T = {
     ceoBody1: "It is my pleasure to welcome you to the website of Al-Showla Al-Raeda for Importing Building Materials — a company built on solid expertise spanning more than twenty years, which today continues its journey with a renewed spirit that combines the authenticity of the founding generation with the ambition of the new generation.",
     ceoBody2: "Building on this balance, we work to deliver integrated, high-quality solutions and to establish sustainable strategic partnerships that contribute to developing Libya's construction sector in line with the highest standards.",
     kpi1n: "2005", kpi1l: "Founded", kpi2n: "2021", kpi2l: "Global Expansion",
-    kpi3n: "18", kpi3l: "Brands", kpi4n: "20+", kpi4l: "Years Leading",
+    kpi3n: "22", kpi3l: "Brands", kpi4n: "20+", kpi4l: "Years Leading",
     // Services
     servicesLbl: "What We Offer", servicesH2a: "Specialized", servicesH2b: "Services",
     svc1t: "Technical Consultancy & Specialized Solutions", svc1b: "Understanding client needs, providing technical advice, and selecting and specifying the right materials, systems, and solutions for the various applications and requirements of the construction sector.",
@@ -134,7 +134,7 @@ const T = {
     ceoBody1: "يسرّني أن أرحّب بكم في الموقع الإلكتروني لشركة الشعلة الرائدة لاستيراد مواد البناء، وهي شركة تأسست على خبرة راسخة تمتد لأكثر من عشرين عامًا، وتواصل اليوم مسيرتها بروحٍ متجددة تجمع بين أصالة الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody2: "وانطلاقًا من هذا التوازن، نعمل على تقديم حلول متكاملة عالية الجودة، وبناء شراكات استراتيجية مستدامة تُسهم في تطوير قطاع البناء في ليبيا وفق أعلى المعايير.",
     kpi1n: "2005", kpi1l: "سنة التأسيس", kpi2n: "2021", kpi2l: "التوسع العالمي",
-    kpi3n: "18", kpi3l: "علامة تجارية", kpi4n: "20+", kpi4l: "سنة ريادة",
+    kpi3n: "22", kpi3l: "علامة تجارية", kpi4n: "20+", kpi4l: "سنة ريادة",
     servicesLbl: "ما نقدمه", servicesH2a: "خدمات", servicesH2b: "متخصصة",
     svc1t: "الاستشارات الفنية والحلول المتخصصة", svc1b: "فهم احتياجات العملاء وتقديم المشورة الفنية واختيار وتوصيف المواد والأنظمة والحلول المناسبة لمختلف التطبيقات ومتطلبات قطاع البناء.",
     svc2t: "التوريد والتوزيع المتكامل", svc2b: "توفير مجموعة متكاملة من مواد وأنظمة البناء والكيماويات الإنشائية وأنظمة الجبس والعدد والأدوات الصناعية، لخدمة المشاريع والمقاولين والشركات والتجار والعملاء.",
@@ -316,7 +316,7 @@ export default function Home() {
   ];
 
   // Brands section rows (client order): Saint-Gobain companies, then tools/chemicals majors, then the rest.
-  const BRAND_ROWS = [6, 6, 6];
+  const BRAND_ROWS = [6, 6, 6, 4];
   const BRAND_DATA = [
     {
       name: "Saint-Gobain",
@@ -534,6 +534,54 @@ export default function Home() {
       products: lang === "ar" ? ["أسمنت بورتلاندي Type II (ASTM C-150)", "أسمنت العسكري — بني سويف", "أسمنت الفرسان", "أسمنت أهل مصر", "أسمنت السهم — عبوة 25 كجم (قريباً)"] : ["Portland Cement Type II (ASTM C-150)", "El Askry Cement — Beni Suef", "Al-Forsan Cement", "Ahl Masr Cement", "Al-Sahm Cement — 25 kg bag (coming soon)"],
       certifications: [] as string[],
     },
+    {
+      name: "Dekonil",
+      url: "/brands/n/dekonil.webp",
+      country: lang === "ar" ? "🇹🇷 تركيا — إسطنبول" : "🇹🇷 Turkey — Istanbul",
+      founded: "",
+      website: "https://www.dekonil.com/en",
+      category: lang === "ar" ? "الديكور الداخلي والخارجي" : "Interior & Exterior Decoration",
+      descAr: "ديكونيل (Dekonil) شركة تركية مقرها إسطنبول، ولها مقر عالمي في ألمانيا (Deconil Decoration GmbH)، متخصصة في حلول ديكور الجدران والأسقف والأرضيات والواجهات الخارجية وورق الجدران.",
+      descEn: "Dekonil is a Turkish company based in Istanbul, with a global headquarters in Germany (Deconil Decoration GmbH), specializing in wall, ceiling, floor, exterior decoration and wallpaper solutions.",
+      products: lang === "ar" ? ["ألواح وديكورات الجدران", "ديكورات الأسقف", "أرضيات SPC", "الديك المركّب (Composite Decking)", "تكسيات اللمبري المركّبة", "ألواح الجدران EPS", "الفواصل الديكورية", "ورق الجدران"] : ["Wall panels & decor", "Ceiling decor", "SPC flooring", "Composite decking", "Composite cladding (lambri)", "EPS wall panels", "Decorative separators", "Wallpaper"],
+      certifications: [] as string[],
+    },
+    {
+      name: "Asteknik",
+      url: "/brands/n/asteknik.webp",
+      country: lang === "ar" ? "🇹🇷 تركيا — إسطنبول" : "🇹🇷 Turkey — Istanbul",
+      founded: "",
+      website: "https://www.asprodesign.com/",
+      category: lang === "ar" ? "فواصل التمدد والبروفيلات" : "Expansion Joints & Profiles",
+      descAr: "أستكنيك للهندسة (Asteknik — ASPRODESIGN) شركة تركية مقرها إسطنبول، تُصنّع أنظمة وبروفيلات فواصل التمدد وبروفيلات الديكور وأنظمة حماية الجدران وأنظمة سجاد المداخل، وتُصدّر منتجاتها إلى أكثر من 60 دولة.",
+      descEn: "Asteknik Engineering (ASPRODESIGN) is a Turkish company based in Istanbul that manufactures expansion joint systems and profiles, decoration profiles, wall protection systems and entrance matting systems, exported to more than 60 countries.",
+      products: lang === "ar" ? ["بروفيلات فواصل التمدد (ASPROFIL)", "بروفيلات الديكور (ASDEKOR)", "أنظمة حماية الجدران (ASBAND)", "أنظمة سجاد المداخل (ASMAT)"] : ["Expansion joint profiles (ASPROFIL)", "Decoration profiles (ASDEKOR)", "Wall protection systems (ASBAND)", "Entrance matting systems (ASMAT)"],
+      certifications: [] as string[],
+    },
+    {
+      name: "BAUMEES",
+      url: "/brands/n/baumees.webp",
+      country: lang === "ar" ? "🇹🇷 تركيا — إسطنبول" : "🇹🇷 Turkey — Istanbul",
+      founded: "",
+      website: "https://www.baumees.com.tr/",
+      category: lang === "ar" ? "كيماويات البناء وأشرطة العزل" : "Construction Chemicals & Waterproofing Bands",
+      descAr: "باوميس (Baumees Yapı Kimyasalları) شركة تركية لكيماويات البناء مقرها إسطنبول، متخصصة في أشرطة العزل المائي للفواصل الخرسانية، ومنها شريط BAUMEZ TPE المنتفخ لفواصل الصب والفواصل الإنشائية — بعرض 5×20 ملم (لفة 20 م) و10×20 ملم (لفة 10 م).",
+      descEn: "Baumees (Baumees Yapı Kimyasalları) is an Istanbul-based Turkish construction chemicals company specializing in waterproofing bands for concrete joints, including the BAUMEZ TPE swell tape for cold and construction joints — 5×20 mm (20 m roll) and 10×20 mm (10 m roll).",
+      products: lang === "ar" ? ["شريط TPE المنتفخ (BAUMEZ TPE)", "شريط البنتونايت المنتفخ", "شريط فواصل التمدد", "شريط PVC لمنع تسرب المياه (Waterstop)", "شريط الزوايا (Pah Bant)", "شريط البيوتيل (BAU-BAND)", "مونة Baumez EPD", "إضافات Baumez Admix"] : ["TPE swell tape (BAUMEZ TPE)", "Bentonite swell band", "Expansion joint band", "PVC waterstop", "Corner sealing band (Pah Bant)", "Butyl band (BAU-BAND)", "Baumez EPD mortar", "Baumez Admix"],
+      certifications: [] as string[],
+    },
+    {
+      name: "DALSAN",
+      url: "/brands/n/dalsan.webp",
+      country: lang === "ar" ? "🇹🇷 تركيا" : "🇹🇷 Turkey",
+      founded: "1932",
+      website: "https://dalsan.com.tr/",
+      category: lang === "ar" ? "ألواح الجبس والجص" : "Gypsum Boards & Plasters",
+      descAr: "دالسان (Dalsan Alçı) شركة تركية تأسست عام 1932، من أبرز منتجي الجبس وألواح الجبس في تركيا. ومنذ عام 2023 تعمل أنشطة الجبس لدى دالسان وريجيبس (Rigips التابعة لمجموعة سان جوبان) تحت كيان واحد هو Dalsan Alçı.",
+      descEn: "Dalsan (Dalsan Alçı) is a Turkish company founded in 1932 and one of Turkey's leading plaster and plasterboard producers. Since 2023, the plaster activities of Dalsan and Rigips (Saint-Gobain) have operated as a single entity, Dalsan Alçı.",
+      products: lang === "ar" ? ["ألواح الجبس", "ألواح الجبس المقاومة للحريق", "الجص والمونة", "ألواح التكسية الخارجية", "الهياكل المعدنية للجبس"] : ["Plasterboards", "Fire-resistant boards", "Plasters & mortars", "Exterior sheathing boards", "Steel framing"],
+      certifications: [] as string[],
+    },
   ];
 
   const brands = BRAND_DATA;
@@ -663,7 +711,7 @@ export default function Home() {
               {[
                 { t: "20", s: "+", l: t.yearsExp },
                 { t: "100", s: "+", l: t.projectsDel },
-                { t: "18", s: "", l: t.globalBrands },
+                { t: "22", s: "", l: t.globalBrands },
               ].map((s, i) => (
                 <div className="hstat" key={i}>
                   <div className="hstat-n" dir="ltr" data-t={s.t} data-suffix={s.s}>{s.t + s.s}</div>

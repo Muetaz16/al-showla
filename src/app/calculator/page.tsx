@@ -36,6 +36,15 @@ const CONSUMPTION_RATES: Record<string, Rate> = {
   "master-008": { rate: 1.8, perMm: true },
 };
 
+// Pack size for products whose name doesn't carry it (used to pre-fill "package size").
+// Only confirmed values: the client's original product names, or the Egypt datasheets they supply from.
+const PACKAGE_SIZES: Record<string, { size: number; liquid?: boolean }> = {
+  "master-001": { size: 5 },   // MasterBrace ADH 1414 — client's product list: 5 kg
+  "master-004": { size: 30 },  // MasterEmaco S 488 — client's product list: 30 kg
+  "weber-010": { size: 25 },   // weberep 331 TX — Egypt TDS: 25 kg bag
+  "weber-014": { size: 25 },   // webercol plus — Egypt pack: 25 kg
+};
+
 // Default waste % per calculator category (client: 0% for insulation / construction chemicals).
 const DEFAULT_WASTE: Record<string, number> = { chemicals: 0, gypsum: 10 };
 
@@ -90,7 +99,7 @@ export default function CalculatorPage() {
   const brands = useMemo(() => [...new Set(catProducts.map((p) => p.brand))].sort(), [catProducts]);
   const brandProducts = useMemo(() => catProducts.filter((p) => p.brand === brand), [catProducts, brand]);
   const product = brandProducts.find((p) => p.id === productId);
-  const parsed = product ? parsePackage(product.nameEn) || parsePackage(product.nameAr) : null;
+  const parsed = product ? parsePackage(product.nameEn) || parsePackage(product.nameAr) || PACKAGE_SIZES[product.id] || null : null;
   const isLiquid = (product ? CONSUMPTION_RATES[product.id]?.liquid : undefined) ?? !!parsed?.liquid;
   const unit = isLiquid ? t.l : t.kg;
   const pName = product ? (isAr ? product.nameAr : product.nameEn) : "";
@@ -116,7 +125,7 @@ export default function CalculatorPage() {
     const r = CONSUMPTION_RATES[id];
     setRate(r ? String(r.rate) : "");
     setThickness(r?.perMm ? "1" : "");
-    const pk = p ? parsePackage(p.nameEn) || parsePackage(p.nameAr) : null;
+    const pk = p ? parsePackage(p.nameEn) || parsePackage(p.nameAr) || PACKAGE_SIZES[id] || null : null;
     setPkg(pk ? String(pk.size) : "");
   };
 

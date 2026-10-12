@@ -37,6 +37,10 @@ const BRANDS: { name: string; logo: string }[] = [
   { name: "شركة جولدن متيل", logo: "/brands/n/golden-metal.webp" },
   { name: "الشركة الليبية للحديد والصلب", logo: "/brands/n/lisco.webp" },
   { name: "الشركة الوطنية للأسمنت ببني سويف", logo: "/brands/n/ncc.webp" },
+  { name: "Dekonil", logo: "/brands/n/dekonil.webp" },
+  { name: "Asteknik", logo: "/brands/n/asteknik.webp" },
+  { name: "BAUMEES", logo: "/brands/n/baumees.webp" },
+  { name: "DALSAN", logo: "/brands/n/dalsan.webp" },
 ];
 
 const T = {
@@ -45,7 +49,7 @@ const T = {
     heroA: "نبني مستقبل ليبيا", heroB: "بحلول بناء متكاملة",
     heroP: "شركة ليبية رائدة متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005 — انطلقت من مدينة طبرق، واتخذت من بنغازي مقرًا رئيسيًا لها، لتكون حلقة الوصل الاستراتيجية بين السوق الليبي وكبرى العلامات العالمية.",
     print: "طباعة / حفظ PDF",
-    stats: [["2005", "سنة التأسيس — طبرق"], ["20+", "عامًا من الثقة"], ["18", "علامة تجارية"], ["100+", "مشروع منجز"]],
+    stats: [["2005", "سنة التأسيس — طبرق"], ["20+", "عامًا من الثقة"], ["22", "علامة تجارية"], ["100+", "مشروع منجز"]],
     aboutLbl: "من نحن", aboutH: "حلول ذكية لـ", aboutHem: "مشاريع أقوى",
     aboutP: [
       "انطلقت الشعلة الرائدة لاستيراد مواد البناء من مدينة طبرق في 25 مايو 2005، وسرعان ما أثبتت مكانتها كإحدى أبرز الشركات الليبية المتخصصة في توفير مواد البناء والمواد الصحية عالية الجودة. وعلى مدى أكثر من عشرين عامًا من العمل الجاد، بنت الشركة سمعة راسخة قائمة على المصداقية، والتنوع، والالتزام بمعايير الجودة العالمية.",
@@ -74,7 +78,7 @@ const T = {
       ["خدمات ما بعد البيع", "متابعة مستمرة بعد التوريد ومعالجة الملاحظات لضمان علاقة مستدامة مع العميل."],
       ["منصة إلكترونية حديثة", "كتالوج رقمي، حاسبة كميات، مكتبة وثائق فنية، ومستشار فني ذكي لخدمة العملاء على مدار الساعة."],
     ],
-    whyStats: [["2021", "بداية الوكالات الحصرية"], ["18", "علامة تجارية"], ["100%", "منتجات أصلية"], ["24/7", "حضور رقمي"]],
+    whyStats: [["2021", "بداية الوكالات الحصرية"], ["22", "علامة تجارية"], ["100%", "منتجات أصلية"], ["24/7", "حضور رقمي"]],
     ceoLbl: "كلمة رئيس مجلس الإدارة", ceoH: "رسالة", ceoHem: "القيادة",
     ceoQuote: "نواصل مسيرتنا برؤية متجددة تجمع بين إرث الجيل المؤسس وطموح الجيل الجديد.",
     ceoBody: [
@@ -105,7 +109,7 @@ const T = {
     heroA: "Building Libya's Future", heroB: "With Complete Building Solutions",
     heroP: "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005 — founded in Tobruk and headquartered in Benghazi, the strategic link between the Libyan market and the world's leading brands.",
     print: "Print / Save PDF",
-    stats: [["2005", "Founded — Tobruk"], ["20+", "Years of Trust"], ["18", "Brands"], ["100+", "Projects Delivered"]],
+    stats: [["2005", "Founded — Tobruk"], ["20+", "Years of Trust"], ["22", "Brands"], ["100+", "Projects Delivered"]],
     aboutLbl: "Who We Are", aboutH: "Smart Solutions for", aboutHem: "Stronger Projects",
     aboutP: [
       "Al-Showla Al-Raeda for Importing Building Materials was founded in Tobruk on 25 May 2005, and quickly established itself as one of Libya's foremost companies specialized in providing high-quality building and sanitary materials. Over more than twenty years of dedicated work, the company has built a solid reputation founded on credibility, diversity, and commitment to international quality standards.",
@@ -134,7 +138,7 @@ const T = {
       ["After-Sales Services", "Continuous follow-up after supply and handling of feedback to ensure a lasting client relationship."],
       ["Modern Online Platform", "Digital catalog, quantity calculator, technical document library, and a smart technical advisor available around the clock."],
     ],
-    whyStats: [["2021", "Exclusive Agencies Since"], ["18", "Brands"], ["100%", "Genuine Products"], ["24/7", "Digital Presence"]],
+    whyStats: [["2021", "Exclusive Agencies Since"], ["22", "Brands"], ["100%", "Genuine Products"], ["24/7", "Digital Presence"]],
     ceoLbl: "Chairman's Message", ceoH: "A Message from", ceoHem: "Our Leadership",
     ceoQuote: "We continue our journey with a renewed vision that brings together the legacy of the founding generation and the ambition of the new generation.",
     ceoBody: [
