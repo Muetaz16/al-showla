@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners } from "@/app/cms-actions";
 import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
-import { PROJECTS, PARTNERS, DEPARTMENTS, LINKEDIN_URL, libyanPhone } from "@/lib/company-data";
+import { PROJECTS, PARTNERS, DEPARTMENTS, LINKEDIN_URL, libyanPhone, deptPeople } from "@/lib/company-data";
 
 /* ─────────────────────────────────────────────
    TRANSLATIONS
@@ -21,7 +21,7 @@ const T = {
     heroH1a: "Building Libya's Future with",
     heroH1b: "Complete Building Solutions",
     heroP: "Al-Showla Al-Raeda — a leading Libyan company specialized in the import and distribution of premium building materials and construction solutions since 2005, trusted by contractors, developers, and government institutions across Libya.",
-    discoverStory: "Discover Our Story", getQuote: "Get a Quote", scroll: "Scroll",
+    discoverStory: "Discover Our Story", getQuote: "Get a Quote",
     yearsExp: "Years Experience", projectsDel: "Projects Delivered",
     satisfiedClients: "Satisfied Clients", globalBrands: "Brands",
     // About
@@ -106,7 +106,7 @@ const T = {
     heroH1a: "نبني مستقبل ليبيا",
     heroH1b: "بحلول بناء متكاملة",
     heroP: "الشعلة الرائدة — شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ عام 2005، موثوقة لدى المقاولين والمطورين والمؤسسات الحكومية في ليبيا.",
-    discoverStory: "اكتشف قصتنا", getQuote: "احصل على عرض سعر", scroll: "انزل",
+    discoverStory: "اكتشف قصتنا", getQuote: "احصل على عرض سعر",
     yearsExp: "سنة خبرة", projectsDel: "مشروع منجز",
     satisfiedClients: "عميل راضٍ", globalBrands: "علامة تجارية",
     whoWeAreLbl: "من نحن",
@@ -628,6 +628,7 @@ export default function Home() {
             <div className="nav-drop-menu">
               <a href="#about">{t.whoWeAre}</a>
               <a href="#ceo">{t.ceoMsg}</a>
+              <a href="/departments">{lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"}</a>
               <a href="#projects">{lang === "ar" ? "المشاريع المنفذة" : "Projects"}</a>
               <a href="/applicators">{lang === "ar" ? "المطبّقون المعتمدون" : "Applicators"}</a>
               <a href="/training">{lang === "ar" ? "ورش التدريب" : "Training"}</a>
@@ -671,7 +672,7 @@ export default function Home() {
 
       {/* ── MOBILE NAV ── */}
       <div className={`mob-nav${mobOpen ? " open" : ""}`}>
-        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["#projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
+        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["/departments", lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["#projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
           <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
         ))}
         <div className="mob-nav-divider" />
@@ -747,7 +748,6 @@ export default function Home() {
         </div>
         <div className="hero-scroll">
           <div className="sline" />
-          <span>{t.scroll}</span>
         </div>
       </section>
 
@@ -1313,7 +1313,8 @@ export default function Home() {
                     const ph = libyanPhone(d.phone);
                     return (
                       <div key={d.email} style={{ background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 10, padding: "12px 14px" }}>
-                        <div style={{ color: "var(--accent)", fontWeight: 800, fontSize: 14, marginBottom: 6 }}>{lang === "ar" ? d.nameAr : d.nameEn}</div>
+                        <div style={{ color: "var(--accent)", fontWeight: 800, fontSize: 14, marginBottom: 4 }}>{lang === "ar" ? d.nameAr : d.nameEn}</div>
+                        <div style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 6 }}>{deptPeople(d, lang === "ar").join(lang === "ar" ? "، " : ", ")}</div>
                         <a href={`tel:${ph.tel}`} dir="ltr" style={{ display: "block", color: "#fff", fontSize: 13, textDecoration: "none", unicodeBidi: "embed" }}>📞 {ph.display}</a>
                         <a href={`mailto:${d.email}`} style={{ display: "block", color: "rgba(255,255,255,.8)", fontSize: 13, textDecoration: "none" }}>✉️ {d.email}</a>
                       </div>
@@ -1390,7 +1391,7 @@ export default function Home() {
           <div>
             <div className="ft-col-h">{t.quickLinks}</div>
             <ul className="ft-links">
-              {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["#contact", t.contact]].map(([href, label]) => (
+              {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["/departments", lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"], ["#contact", t.contact]].map(([href, label]) => (
                 <li key={href}><a href={href}>{label}</a></li>
               ))}
               <li><a href={lang === "en" ? "/company-profile?lang=en" : "/company-profile"} target="_blank" rel="noopener noreferrer">{t.downloadProfile}</a></li>

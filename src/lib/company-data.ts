@@ -85,18 +85,24 @@ export const PARTNERS: Partner[] = [
 
 export const LINKEDIN_URL = "https://www.linkedin.com/company/alshowla-alraeda/";
 
-export type Department = { nameAr: string; nameEn: string; phone: string; email: string };
+export type Department = { nameAr: string; nameEn: string; peopleAr: string[]; peopleEn?: string[]; phone: string; email: string };
 
-// Main department contacts (provided by the client). Phones are local Libyan numbers.
+// Main department contacts and the people responsible (provided by the client).
+// peopleEn is only filled where the English spelling is confirmed; otherwise the Arabic name is shown.
 export const DEPARTMENTS: Department[] = [
-  { nameAr: "رئيس مجلس الإدارة", nameEn: "Chairman of the Board", phone: "0915008600", email: "ceo@alshowla.com" },
-  { nameAr: "الإدارة المالية", nameEn: "Finance", phone: "0927630846", email: "acct@alshowla.com" },
-  { nameAr: "إدارة المشتريات", nameEn: "Procurement", phone: "0925200060", email: "ops@alshowla.com" },
-  { nameAr: "إدارة المبيعات", nameEn: "Sales", phone: "0948020200", email: "sales@alshowla.com" },
-  { nameAr: "إدارة التسويق", nameEn: "Marketing", phone: "0927426635", email: "om@alshowla.com" },
+  { nameAr: "رئيس مجلس الإدارة", nameEn: "Chairman of the Board", peopleAr: ["م. المهدي العوامي"], peopleEn: ["Eng. Al Mahdi Al Awamy"], phone: "0915008600", email: "ceo@alshowla.com" },
+  { nameAr: "الإدارة المالية", nameEn: "Finance", peopleAr: ["فاطمة الشريدي"], phone: "0927630846", email: "acct@alshowla.com" },
+  { nameAr: "إدارة المشتريات", nameEn: "Procurement", peopleAr: ["عائشة التومي"], phone: "0925200060", email: "ops@alshowla.com" },
+  { nameAr: "إدارة المبيعات", nameEn: "Sales", peopleAr: ["م. بسمة القطعاني", "م. دانة درفيل"], phone: "0948020200", email: "sales@alshowla.com" },
+  { nameAr: "إدارة التسويق", nameEn: "Marketing", peopleAr: ["م. الزبير البركي"], phone: "0927426635", email: "om@alshowla.com" },
 ];
 
 /** 0915008600 -> { tel: "+218915008600", display: "+218 91 500 8600" } */
+// Names to show for a department in the current language (Arabic fallback when no confirmed English spelling).
+export function deptPeople(d: Department, isAr: boolean): string[] {
+  return isAr ? d.peopleAr : d.peopleEn ?? d.peopleAr;
+}
+
 export function libyanPhone(local: string) {
   const d = local.replace(/\D/g, "").replace(/^0/, "");
   return { tel: "+218" + d, display: `+218 ${d.slice(0, 2)} ${d.slice(2, 5)} ${d.slice(5)}` };

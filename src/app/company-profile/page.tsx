@@ -10,7 +10,7 @@ import {
   RefreshCw, MonitorSmartphone, Building2, HardHat, Landmark, Store, Phone, Mail,
   MapPin, Clock, Printer, Quote, Target, Eye,
 } from "lucide-react";
-import { PROJECTS, PARTNERS, DEPARTMENTS, libyanPhone } from "@/lib/company-data";
+import { PROJECTS, PARTNERS, DEPARTMENTS, libyanPhone, deptPeople } from "@/lib/company-data";
 
 type Lang = "ar" | "en";
 
@@ -455,6 +455,7 @@ export default function CompanyProfilePage() {
                 return (
                   <div key={d.email}>
                     <span>{isAr ? d.nameAr : d.nameEn}</span>
+                    <b>{deptPeople(d, isAr).join(isAr ? "، " : ", ")}</b>
                     <a href={`tel:${ph.tel}`} dir="ltr">{ph.display}</a>
                     <a href={`mailto:${d.email}`}>{d.email}</a>
                   </div>
