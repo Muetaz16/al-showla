@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useLang } from "@/lib/useLang";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Lang = "ar" | "en";
@@ -44,7 +45,7 @@ const T = {
 };
 
 export default function AdvisorPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);

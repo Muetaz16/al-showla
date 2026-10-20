@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useLang } from "@/lib/useLang";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { PRODUCTS } from "@/lib/products";
 
@@ -62,9 +63,9 @@ const T = {
   ar: { title: "حاسبة كميات مواد البناء", subtitle: "اختر القسم ثم الشركة ثم المنتج، وأدخل المساحة لمعرفة الكمية وعدد العبوات",
     category: "القسم", brand: "الشركة", product: "المنتج", choose: "-- اختر --",
     area: "المساحة (م²)", rate: "معدل الاستهلاك", waste: "نسبة الهالك %", pkg: "حجم العبوة",
-    rateHint: "من الداتا شيت الخاصة بالمنتج", fromSheet: "حسب الداتا شيت", sheetRange: "حسب الداتا شيت:",
-    thickness: "السماكة (ملم)", perMm: "لكل م² لكل 1 ملم", datasheet: "📄 الداتا شيت",
-    needRate: "أدخل معدل الاستهلاك من الداتا شيت لإكمال الحساب.",
+    rateHint: "من النشرة الفنية الخاصة بالمنتج", fromSheet: "حسب النشرة الفنية", sheetRange: "حسب النشرة الفنية:",
+    thickness: "السماكة (ملم)", perMm: "لكل م² لكل 1 ملم", datasheet: "📄 النشرة الفنية",
+    needRate: "أدخل معدل الاستهلاك من النشرة الفنية لإكمال الحساب.",
     needed: "الكمية المطلوبة", packages: "عدد العبوات", viewProduct: "عرض المنتج",
     note: "النتائج تقديرية وتعتمد على المعطيات المدخلة، ولا تغني عن مراجعة القسم الفني والاعتماد الهندسي.",
     quote: "💬 تحويل النتيجة إلى طلب عرض سعر", browse: "تصفح المنتجات",
@@ -82,7 +83,7 @@ const T = {
 };
 
 export default function CalculatorPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [catId, setCatId] = useState("");
   const [brand, setBrand] = useState("");
   const [productId, setProductId] = useState("");

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useLang } from "@/lib/useLang";
 import { PRODUCTS, CATEGORIES, unitLabel, type Product } from "@/lib/products";
 import { submitSampleRequest } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
@@ -77,7 +78,7 @@ const T = {
 };
 
 export default function SampleRequestPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [searchQ, setSearchQ] = useState("");

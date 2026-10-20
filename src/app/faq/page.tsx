@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLang } from "@/lib/useLang";
 import { getFaqItems } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Lang = "ar" | "en";
 
 export default function FaqPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [items, setItems] = useState<any[]>([]);
   const [open, setOpen] = useState<string | null>(null);
 

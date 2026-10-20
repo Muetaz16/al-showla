@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
+import { useLang } from "@/lib/useLang";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners } from "@/app/cms-actions";
 import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
@@ -179,7 +180,7 @@ type Lang = "en" | "ar";
    MAIN PAGE COMPONENT
 ───────────────────────────────────────────── */
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [dark, setDark] = useState(false);
   const [navSolid, setNavSolid] = useState(true);
   const [mobOpen, setMobOpen] = useState(false);

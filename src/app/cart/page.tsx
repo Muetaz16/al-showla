@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { useLang } from "@/lib/useLang";
 import {
   getCart, removeFromCart, updateQuantity, clearCart, getCartTotal, getCartCount,
   type CartItem,
@@ -221,7 +222,7 @@ function generateQuoteHTML(
 
 // ── MAIN CART PAGE ──
 export default function CartPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [currency, setCurrency] = useState<Currency>("LYD");
   const [items, setItems] = useState<CartItem[]>([]);
   const [orderNotes, setOrderNotes] = useState("");

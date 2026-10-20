@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLang } from "@/lib/useLang";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 type Lang = "ar" | "en";
@@ -173,7 +174,7 @@ function fmtDate(d: string, lang: Lang) {
 }
 
 export default function CertificatesPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [search, setSearch] = useState("");
   const [filterIssuer, setFilterIssuer] = useState("all");
   const [filterBrand, setFilterBrand] = useState("all");

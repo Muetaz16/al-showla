@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useRef } from "react";
+import { useLang } from "@/lib/useLang";
 import Link from "next/link";
 import {
   CATEGORIES, CURRENCY_RATES, CURRENCY_SYMBOLS,
@@ -57,7 +58,8 @@ const T = {
     sortRating: "التقييم",
     sortNewest: "الأحدث",
     certificates: "شهادات الجودة",
-    datasheet: "الداتا شيت (النشرة الفنية)",
+    datasheet: "النشرة الفنية",
+    datasheetReq: "اطلب النشرة الفنية",
     specs: "المواصفات",
     brand: "العلامة التجارية",
     price: "السعر",
@@ -107,6 +109,7 @@ const T = {
     sortNewest: "Newest",
     certificates: "Quality Certificates",
     datasheet: "Technical Data Sheet",
+    datasheetReq: "Request Technical Data Sheet",
     specs: "Specifications",
     brand: "Brand",
     price: "Price",
@@ -904,7 +907,7 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
 export default function ProductsPage() {
   const [mounted, setMounted] = useState(false);
   const [currency, setCurrency] = useState<Currency>("LYD");
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [activeCategory, setActiveCategory] = useState("all");
   const [activeBrand, setActiveBrand] = useState("all");
@@ -1368,11 +1371,17 @@ function ProductModal({
               </div>
             )}
 
-            {/* Official technical data sheet */}
-            {product.datasheetUrl && (
+            {/* Official technical data sheet — real link if we have it, else request it */}
+            {product.datasheetUrl ? (
               <a href={product.datasheetUrl} target="_blank" rel="noopener noreferrer"
                 style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 20, padding: 12, border: "1.5px solid var(--blue)", borderRadius: 12, color: "var(--blue)", fontWeight: 800, textDecoration: "none", fontSize: 14 }}>
                 📄 {t.datasheet} ↗
+              </a>
+            ) : (
+              <a href={`https://wa.me/218948020200?text=${encodeURIComponent((lang === "ar" ? "أرغب في النشرة الفنية للمنتج: " : "I'd like the technical data sheet for: ") + (lang === "ar" ? product.nameAr : product.nameEn) + " [" + product.id + "]")}`}
+                target="_blank" rel="noopener noreferrer"
+                style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, marginBottom: 20, padding: 12, border: "1.5px dashed var(--gray)", borderRadius: 12, color: "var(--gray)", fontWeight: 800, textDecoration: "none", fontSize: 14 }}>
+                📄 {t.datasheetReq} ↗
               </a>
             )}
 

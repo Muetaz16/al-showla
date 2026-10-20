@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLang } from "@/lib/useLang";
 import { getBlogPosts } from "@/app/cms-actions";
 import Link from "next/link";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
@@ -8,7 +9,7 @@ import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 type Lang = "ar" | "en";
 
 export default function BlogPage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const [posts, setPosts] = useState<any[]>([]);
 
   useEffect(() => { getBlogPosts().then(setPosts); }, []);

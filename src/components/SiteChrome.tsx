@@ -40,7 +40,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/", L("الرئيسية", "Home")],
     ["/#about", L("من نحن", "Who We Are")],
     ["/#ceo", L("كلمة رئيس مجلس الإدارة", "Chairman's Message")],
-    ["/departments", L("إدارات الشركة والتواصل", "Departments & Contacts")],
+    ["/departments", L("الهيكل التنظيمي", "Organizational Structure")],
     ["/#services", L("خدماتنا", "Services")],
     ["/products", L("كتالوج المنتجات", "Products Catalog")],
     ["/certificates", L("شهادات الجودة", "Certificates")],
@@ -85,7 +85,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
             <div className="nav-drop-menu">
               <a href="/#about">{L("من نحن", "Who We Are")}</a>
               <a href="/#ceo">{L("كلمة رئيس مجلس الإدارة", "Chairman's Message")}</a>
-              <a href="/departments">{L("إدارات الشركة والتواصل", "Departments & Contacts")}</a>
+              <a href="/departments">{L("الهيكل التنظيمي", "Organizational Structure")}</a>
               <a href="/#projects">{L("المشاريع المنفذة", "Projects")}</a>
               <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators")}</a>
               <a href="/training">{L("ورش التدريب", "Training")}</a>

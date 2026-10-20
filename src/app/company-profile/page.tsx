@@ -5,12 +5,13 @@
 // browser's print dialog with the print styles below.
 
 import { useEffect, useState } from "react";
+import { useLang } from "@/lib/useLang";
 import {
   ClipboardCheck, Handshake, Leaf, Lightbulb, Award, ShieldCheck, Wrench, Truck,
   RefreshCw, MonitorSmartphone, Building2, HardHat, Landmark, Store, Phone, Mail,
   MapPin, Clock, Printer, Quote, Target, Eye,
 } from "lucide-react";
-import { PROJECTS, PARTNERS, DEPARTMENTS, libyanPhone, deptPeople } from "@/lib/company-data";
+import { PROJECTS, PARTNERS } from "@/lib/company-data";
 
 type Lang = "ar" | "en";
 
@@ -183,7 +184,7 @@ function SecHead({ lbl, h, em, light }: { lbl: string; h: string; em: string; li
 }
 
 export default function CompanyProfilePage() {
-  const [lang, setLang] = useState<Lang>("ar");
+  const [lang, setLang] = useLang();
   const t = T[lang];
   const isAr = lang === "ar";
 
@@ -449,19 +450,13 @@ export default function CompanyProfilePage() {
               <div><MapPin size={20} /><span>{t.addrL}</span><b>{t.addr}</b></div>
               <div><Clock size={20} /><span>{t.hoursL}</span><b>{t.hours}</b></div>
             </div>
-            <div className="cp-depts">
-              {DEPARTMENTS.map((d) => {
-                const ph = libyanPhone(d.phone);
-                return (
-                  <div key={d.email}>
-                    <span>{isAr ? d.nameAr : d.nameEn}</span>
-                    <b>{deptPeople(d, isAr).join(isAr ? "، " : ", ")}</b>
-                    <a href={`tel:${ph.tel}`} dir="ltr">{ph.display}</a>
-                    <a href={`mailto:${d.email}`}>{d.email}</a>
-                  </div>
-                );
-              })}
-            </div>
+            <a href="/departments" style={{
+              display: "inline-flex", alignItems: "center", gap: 10, marginTop: 8,
+              background: "#f59e0b", color: "#0a1f44", fontWeight: 900, fontSize: 15,
+              padding: "14px 30px", borderRadius: 40, textDecoration: "none",
+            }}>
+              {isAr ? "الهيكل التنظيمي وإدارات الشركة ←" : "Company Structure & Departments →"}
+            </a>
           </div>
         </section>
       </main>
@@ -571,7 +566,7 @@ const CSS = `
 .cp-supply-h { display: flex; align-items: center; gap: 8px; font-weight: 800; color: var(--accent, #f59e0b); margin-bottom: 10px; }
 .cp-supply-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .cp-supply-list span { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); border-radius: 30px; padding: 6px 14px; font-size: 13px; }
-.cp-partners { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.cp-partners { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
 .cp-partner { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; min-height: 96px; padding: 12px; display: flex; align-items: center; justify-content: center; text-align: center; }
 .cp-partner span { font-size: 13px; font-weight: 800; color: var(--blue-deeper, #001f4d); line-height: 1.6; }
 .cp-partner img { width: 100%; max-width: 150px; aspect-ratio: 3 / 2; height: auto; object-fit: contain; }
@@ -619,6 +614,8 @@ const CSS = `
 @media print {
   html, body { background: #fff !important; }
   header, footer, .mob-nav, .cp-actions { display: none !important; }
+  /* Navigation button is a dead link in a printed PDF — hide it */
+  .cp a[href="/departments"] { display: none !important; }
   .cp * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   /* Print the desktop design scaled to the A4 page. The page is narrower than the
      960px breakpoint, so the desktop grids are restored explicitly below. */
@@ -630,7 +627,8 @@ const CSS = `
   .cp-stats, .cp-timeline, .cp-sectors, .cp-contact, .cp-cats { grid-template-columns: repeat(4, 1fr); }
   .cp-values { grid-template-columns: repeat(5, 1fr); }
   .cp-grid3 { grid-template-columns: repeat(3, 1fr); }
-  .cp-brands, .cp-partners { grid-template-columns: repeat(6, 1fr); }
+  .cp-brands { grid-template-columns: repeat(6, 1fr); }
+  .cp-partners { grid-template-columns: repeat(7, 1fr); }
   .cp-img-main { height: 360px; }
   .cp-img-sub { inset-inline-start: -30px; }
   .cp-sec, .cp-cta { padding: 30px 0; }

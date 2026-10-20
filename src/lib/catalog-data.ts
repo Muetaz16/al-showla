@@ -4888,7 +4888,7 @@ export const CATALOG_PRODUCTS: Product[] = [
   {
     "id": "master-001",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-001.jpeg",
     "inStock": true,
     "rating": 5,
@@ -4896,21 +4896,21 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر بريس ADH 1414 (سيكادور ADH 1414) — رابط إيبوكسي للخرسانة",
     "nameEn": "MasterBrace ADH 1414 (now Sikadur ADH 1414) — Epoxy Bonding Agent",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ],
     "datasheetUrl": "https://gcc.sika.com/dms/getdocument.get/55a447dc-4138-433a-9935-77be04b4a42a_gcc/pds-sikadur-adh-1414.pdf"
   },
   {
     "id": "master-002",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-002.jpeg",
     "inStock": true,
     "rating": 5,
@@ -4918,20 +4918,20 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر كاست 140 — لاتكس SBR إضافة ورابط للمونة (25 لتر)",
     "nameEn": "MasterCast 140 — SBR Latex Admixture & Bonding Agent (25 L)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ]
   },
   {
     "id": "master-003",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-003.jpg",
     "inStock": true,
     "rating": 5,
@@ -4939,20 +4939,20 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر كاست 141M — لاتكس SBR إضافة ورابط للمونة (25 لتر)",
     "nameEn": "MasterCast 141M — SBR Latex Admixture & Bonding Agent (25 L)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ]
   },
   {
     "id": "master-004",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-004.jpeg",
     "inStock": true,
     "rating": 5,
@@ -4960,21 +4960,21 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر إيماكو S 488 (سيكا إيماكو S 488) — مونة إصلاح إنشائية",
     "nameEn": "MasterEmaco S 488 (now SikaEmaco S 488) — Structural Repair Mortar",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ],
     "datasheetUrl": "https://egy.sika.com/dms/getdocument.get/7db2d3f2-b688-4566-9727-2b0d05755293/sikaemaco-s-488.pdf"
   },
   {
     "id": "master-005",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-005.jpeg",
     "inStock": true,
     "rating": 5,
@@ -4982,21 +4982,21 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر إيماكو 8100 AP (سيكا إيماكو 8100 AP) — برايمر إيبوكسي غني بالزنك لحديد التسليح (1 كجم)",
     "nameEn": "MasterEmaco 8100 AP (now SikaEmaco-8100 AP) — Zinc-Rich Epoxy Primer for Rebar (1 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ],
     "datasheetUrl": "https://egy.sika.com/dam/dms/eg01/h/sikaemaco-8100-ap.pdf"
   },
   {
     "id": "master-006",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-006.jpg",
     "inStock": true,
     "rating": 5,
@@ -5004,21 +5004,21 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر فلو 980 (سيكا جراوت 980) — جراوت خرساني دقيق عالي المقاومة (30 كجم)",
     "nameEn": "MasterFlow 980 (now SikaGrout-980) — High-Strength Cementitious Micro-Concrete Grout (30 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ],
     "datasheetUrl": "https://egy.sika.com/dms/getdocument.get/e3e51ad3-91c9-4839-b6e5-b2e68367bb63/sikagrout-980.pdf"
   },
   {
     "id": "master-007",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-007.png",
     "inStock": true,
     "rating": 5,
@@ -5026,21 +5026,21 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر سيل 550 (سيكا توب 550 سيل) — طلاء عزل أسمنتي أكريليكي، رمادي (20 كجم)",
     "nameEn": "MasterSeal 550 (now SikaTop-550 Seal) — Acrylic Cementitious Waterproofing Coating, Grey (20 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ],
     "datasheetUrl": "https://gcc.sika.com/dam/dms/gcc/r/pds-sikatop-550seal.pdf"
   },
   {
     "id": "master-008",
     "categoryId": "waterproof",
-    "brand": "Master Builders",
+    "brand": "Sika",
     "imageUrl": "/catalog/master-008.jpeg",
     "inStock": true,
     "rating": 5,
@@ -5048,14 +5048,14 @@ export const CATALOG_PRODUCTS: Product[] = [
     "certificates": [],
     "nameAr": "ماستر سيل 550 (سيكا توب 550 سيل) — طلاء عزل أسمنتي أكريليكي، أبيض (20 كجم)",
     "nameEn": "MasterSeal 550 (now SikaTop-550 Seal) — Acrylic Cementitious Waterproofing Coating, White (20 kg)",
-    "descriptionAr": "منتج أصلي من Master Builders ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
-    "descriptionEn": "Genuine Master Builders product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
     "specAr": [
-      "العلامة التجارية: Master Builders"
+      "العلامة التجارية: Sika"
     ],
     "specEn": [
-      "Brand: Master Builders"
+      "Brand: Sika"
     ],
     "datasheetUrl": "https://gcc.sika.com/dam/dms/gcc/r/pds-sikatop-550seal.pdf"
   },
