@@ -634,6 +634,7 @@ export default function Home() {
               <a href="/applicators">{lang === "ar" ? "المطبّقون المعتمدون" : "Applicators"}</a>
               <a href="/training">{lang === "ar" ? "ورش التدريب" : "Training"}</a>
               <a href="/blog">{lang === "ar" ? "المدونة" : "Blog"}</a>
+              <a href="/podcast">{lang === "ar" ? "بودكاست ميدماك" : "Midmak Podcast"}</a>
               <a href="/careers">{lang === "ar" ? "الوظائف" : "Careers"}</a>
               {/* Shown here only on narrower laptop screens, where the top-level copies are hidden */}
               <a href="#clients" className="nav-drop-sec">{t.clients}</a>
@@ -673,7 +674,7 @@ export default function Home() {
 
       {/* ── MOBILE NAV ── */}
       <div className={`mob-nav${mobOpen ? " open" : ""}`}>
-        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["/departments", lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["#projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
+        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["/departments", lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["#projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/podcast", lang === "ar" ? "بودكاست ميدماك" : "Midmak Podcast"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
           <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
         ))}
         <div className="mob-nav-divider" />

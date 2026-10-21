@@ -240,11 +240,11 @@ function ProductCard({
 
       {/* Image — click to open details */}
       <div onClick={() => onViewDetails(product)} title={t.viewDetail} className="pcard-img"
-        style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "#f0f6fd", cursor: "pointer" }}>
+        style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "#fff", cursor: "pointer" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={product.imageUrl || "/placeholder-product.svg"} alt={lang === "ar" ? product.nameAr : product.nameEn}
           loading="lazy" decoding="async"
-          style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform .5s" }}
+          style={{ width: "100%", height: "100%", objectFit: "contain", padding: 8, boxSizing: "border-box", background: "#fff", transition: "transform .5s" }}
           onError={(e) => {
             const img = e.target as HTMLImageElement;
             if (img.src.indexOf("/placeholder-product.svg") === -1) img.src = "/placeholder-product.svg";
@@ -330,7 +330,7 @@ function ProductCard({
           )}
           <a
             href={`https://wa.me/218948020200?text=${encodeURIComponent(`مرحباً، أود الاستفسار عن المنتج:\nالاسم: ${product.nameAr}\nالكود: ${product.id}\nالرابط: ${typeof window !== "undefined" ? window.location.origin + "/products" : ""}`)}`}
-            target="_blank" rel="noopener noreferrer" title="طلب عبر واتساب" aria-label="طلب عبر واتساب"
+            target="_blank" rel="noopener noreferrer" title={lang === "ar" ? "طلب عبر واتساب" : "Order via WhatsApp"} aria-label={lang === "ar" ? "طلب عبر واتساب" : "Order via WhatsApp"}
             style={{
               display: "flex", alignItems: "center", justifyContent: "center",
               padding: "10px 12px", background: "#25D366", color: "#fff",
@@ -1288,7 +1288,7 @@ function ProductModal({
     const rev: Review = {
       productId: product.id,
       userId: user.uid || user.phoneNumber!,
-      userName: user.phoneNumber || "مستخدم مسجل",
+      userName: user.phoneNumber || (lang === "ar" ? "مستخدم مسجل" : "Registered user"),
       rating: newReview.rating,
       comment: newReview.comment,
       date: new Date().toISOString()
@@ -1327,7 +1327,7 @@ function ProductModal({
             <img src={product.imageUrl || "/placeholder-product.svg"} alt=""
               loading="lazy" decoding="async"
               onError={(e) => { const img = e.currentTarget; if (img.src !== window.location.origin + "/placeholder-product.svg") img.src = "/placeholder-product.svg"; }}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              style={{ width: "100%", height: "100%", maxHeight: 520, objectFit: "contain", background: "#fff", padding: 16, boxSizing: "border-box" }} />
           </div>
 
           {/* Product Info */}
@@ -1429,7 +1429,7 @@ function ProductModal({
                 color: "#fff", textDecoration: "none", borderRadius: 12, fontWeight: "bold",
                 fontSize: 16, cursor: "pointer", marginBottom: 30, fontFamily: "inherit"
               }}>
-              <span style={{ fontSize: 20 }}>💬</span> تواصل عبر واتساب
+              <span style={{ fontSize: 20 }}>💬</span> {lang === "ar" ? "تواصل عبر واتساب" : "Contact via WhatsApp"}
             </a>
 
             {/* Item 5 / Section 16: separate quote-request and technical-consultation paths */}
@@ -1449,34 +1449,34 @@ function ProductModal({
 
             <hr style={{ border: "none", borderTop: "1px solid var(--border)", margin: "30px 0" }} />
 
-            <h3 style={{ marginBottom: 20 }}>التقييمات والمراجعات ({reviews.length})</h3>
+            <h3 style={{ marginBottom: 20 }}>{lang === "ar" ? "التقييمات والمراجعات" : "Ratings & Reviews"} ({reviews.length})</h3>
             
             {/* Add Review Form */}
             {user ? (
               <form onSubmit={handleSubmitReview} style={{ marginBottom: 30, padding: 20, background: "var(--bg)", borderRadius: 12 }}>
                 <div style={{ marginBottom: 10 }}>
-                  <label style={{ display: "block", marginBottom: 5 }}>التقييم:</label>
+                  <label style={{ display: "block", marginBottom: 5 }}>{lang === "ar" ? "التقييم:" : "Rating:"}</label>
                   <select value={newReview.rating} onChange={e => setNewReview({...newReview, rating: Number(e.target.value)})} style={{ padding: 8, borderRadius: 6, border: "1px solid var(--border)", background: "var(--surface)", color: "var(--text)" }}>
-                    <option value="5">⭐⭐⭐⭐⭐ ممتاز</option>
-                    <option value="4">⭐⭐⭐⭐ جيد جداً</option>
-                    <option value="3">⭐⭐⭐ جيد</option>
-                    <option value="2">⭐⭐ مقبول</option>
-                    <option value="1">⭐ ضعيف</option>
+                    <option value="5">⭐⭐⭐⭐⭐ {lang === "ar" ? "ممتاز" : "Excellent"}</option>
+                    <option value="4">⭐⭐⭐⭐ {lang === "ar" ? "جيد جداً" : "Very good"}</option>
+                    <option value="3">⭐⭐⭐ {lang === "ar" ? "جيد" : "Good"}</option>
+                    <option value="2">⭐⭐ {lang === "ar" ? "مقبول" : "Fair"}</option>
+                    <option value="1">⭐ {lang === "ar" ? "ضعيف" : "Poor"}</option>
                   </select>
                 </div>
                 <textarea 
                   value={newReview.comment} onChange={e => setNewReview({...newReview, comment: e.target.value})}
-                  placeholder="اكتب تجربتك مع هذا المنتج..."
+                  placeholder={lang === "ar" ? "اكتب تجربتك مع هذا المنتج..." : "Share your experience with this product..."}
                   style={{ width: "100%", padding: 10, borderRadius: 8, border: "1px solid var(--border)", background: "var(--surface)", color: "var(--text)", minHeight: 80, marginBottom: 10, fontFamily: "inherit" }}
                   required
                 />
                 <button type="submit" disabled={loading} style={{ background: "var(--blue)", color: "#fff", border: "none", padding: "8px 20px", borderRadius: 6, cursor: "pointer", fontWeight: "bold", fontFamily: "inherit" }}>
-                  {loading ? "جاري الإرسال..." : "إضافة التقييم"}
+                  {loading ? (lang === "ar" ? "جاري الإرسال..." : "Sending...") : (lang === "ar" ? "إضافة التقييم" : "Add review")}
                 </button>
               </form>
             ) : (
               <div style={{ padding: 15, background: "var(--bg)", borderRadius: 8, marginBottom: 20, textAlign: "center", color: "var(--text-secondary)" }}>
-                قم بتسجيل الدخول لتتمكن من إضافة تقييم للمنتج.
+                {lang === "ar" ? "قم بتسجيل الدخول لتتمكن من إضافة تقييم للمنتج." : "Log in to add a review for this product."}
               </div>
             )}
 
@@ -1492,7 +1492,7 @@ function ProductModal({
                   <div style={{ fontSize: 11, color: "var(--gray)", marginTop: 5 }}>{new Date(r.date).toLocaleDateString()}</div>
                 </div>
               ))}
-              {reviews.length === 0 && <div style={{ color: "var(--gray)", textAlign: "center", padding: 20 }}>لا توجد تقييمات بعد. كن أول من يقيّم!</div>}
+              {reviews.length === 0 && <div style={{ color: "var(--gray)", textAlign: "center", padding: 20 }}>{lang === "ar" ? "لا توجد تقييمات بعد. كن أول من يقيّم!" : "No reviews yet. Be the first to review!"}</div>}
             </div>
 
           </div>

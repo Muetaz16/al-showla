@@ -56,6 +56,9 @@ const UNIT_EN_FALLBACK: Record<string, string> = {
   "طقم": "Set",
   "كيلو": "Kg",
   "طن": "Ton",
+  "عبوة": "Pack",
+  "لفة": "Roll",
+  "متر": "Meter",
 };
 export function unitLabel(unit: string | undefined, lang: "ar" | "en"): string {
   if (!unit) return "";

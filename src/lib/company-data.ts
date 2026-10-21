@@ -85,16 +85,16 @@ export const PARTNERS: Partner[] = [
 
 export const LINKEDIN_URL = "https://www.linkedin.com/company/alshowla-alraeda/";
 
-export type Department = { nameAr: string; nameEn: string; peopleAr: string[]; peopleEn?: string[]; phone: string; email: string };
+export type Department = { nameAr: string; nameEn: string; peopleAr: string[]; peopleEn?: string[]; photos?: (string | undefined)[]; phone: string; email: string };
 
 // Main department contacts and the people responsible (provided by the client).
-// peopleEn is only filled where the English spelling is confirmed; otherwise the Arabic name is shown.
+// peopleEn: English spellings (shown when the site is in English). photos: optional portrait per person (/team/<file>), same order as peopleAr.
 export const DEPARTMENTS: Department[] = [
   { nameAr: "رئيس مجلس الإدارة", nameEn: "Chairman of the Board", peopleAr: ["م. المهدي العوامي"], peopleEn: ["Eng. Al Mahdi Al Awamy"], phone: "0915008600", email: "ceo@alshowla.com" },
-  { nameAr: "الإدارة المالية", nameEn: "Finance", peopleAr: ["فاطمة الشريدي"], phone: "0927630846", email: "acct@alshowla.com" },
-  { nameAr: "إدارة المشتريات", nameEn: "Procurement", peopleAr: ["عائشة التومي"], phone: "0925200060", email: "ops@alshowla.com" },
-  { nameAr: "إدارة المبيعات", nameEn: "Sales", peopleAr: ["م. بسمة القطعاني", "م. دانة درفيل"], phone: "0948020200", email: "sales@alshowla.com" },
-  { nameAr: "إدارة التسويق", nameEn: "Marketing", peopleAr: ["م. الزبير البركي"], phone: "0927426635", email: "om@alshowla.com" },
+  { nameAr: "الإدارة المالية", nameEn: "Finance", peopleAr: ["فاطمة الشريدي"], peopleEn: ["Fatima Al-Sharidi"], phone: "0927630846", email: "acct@alshowla.com" },
+  { nameAr: "إدارة المشتريات", nameEn: "Procurement", peopleAr: ["عائشة التومي"], peopleEn: ["Aisha Al-Toumi"], phone: "0925200060", email: "ops@alshowla.com" },
+  { nameAr: "إدارة المبيعات", nameEn: "Sales", peopleAr: ["م. بسمة القطعاني", "م. دانا الدرفيلي"], peopleEn: ["Eng. Basma Al-Gattani", "Eng. Dana Al-Derfeli"], phone: "0948020200", email: "sales@alshowla.com" },
+  { nameAr: "إدارة التسويق", nameEn: "Marketing", peopleAr: ["م. الزبير البركي"], peopleEn: ["Eng. Al-Zubair Al-Barki"], phone: "0927426635", email: "om@alshowla.com" },
 ];
 
 /** 0915008600 -> { tel: "+218915008600", display: "+218 91 500 8600" } */
@@ -107,3 +107,8 @@ export function libyanPhone(local: string) {
   const d = local.replace(/\D/g, "").replace(/^0/, "");
   return { tel: "+218" + d, display: `+218 ${d.slice(0, 2)} ${d.slice(2, 5)} ${d.slice(5)}` };
 }
+
+// ── Podcast "ميدماك" (Midmak) ──
+// Add episodes here: url = YouTube / Spotify / other link. Newest first.
+export type PodcastEpisode = { titleAr: string; titleEn: string; url: string; date?: string; guestAr?: string; guestEn?: string };
+export const PODCAST_EPISODES: PodcastEpisode[] = [];
