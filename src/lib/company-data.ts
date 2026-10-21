@@ -107,8 +107,3 @@ export function libyanPhone(local: string) {
   const d = local.replace(/\D/g, "").replace(/^0/, "");
   return { tel: "+218" + d, display: `+218 ${d.slice(0, 2)} ${d.slice(2, 5)} ${d.slice(5)}` };
 }
-
-// ── Podcast "ميدماك" (Midmak) ──
-// Add episodes here: url = YouTube / Spotify / other link. Newest first.
-export type PodcastEpisode = { titleAr: string; titleEn: string; url: string; date?: string; guestAr?: string; guestEn?: string };
-export const PODCAST_EPISODES: PodcastEpisode[] = [];

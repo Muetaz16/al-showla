@@ -20,7 +20,7 @@ export const NAV: { href: string; ar: string; en: string }[] = [
   { href: "/delivery", ar: "التوصيل", en: "Delivery" },
   { href: "/training", ar: "التدريب", en: "Training" },
   { href: "/blog", ar: "المدونة", en: "Blog" },
-  { href: "/podcast", ar: "بودكاست ميدماك", en: "Midmak Podcast" },
+  { href: "/midmak", ar: "ميدماك", en: "Midmak" },
   { href: "/careers", ar: "الوظائف", en: "Careers" },
   { href: "/faq", ar: "الأسئلة الشائعة", en: "FAQ" },
   { href: "/#contact", ar: "تواصل معنا", en: "Contact" },
@@ -52,7 +52,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/delivery", L("مناطق التوصيل", "Delivery")],
     ["/training", L("ورش التدريب", "Training")],
     ["/blog", L("المدونة", "Blog")],
-    ["/podcast", L("بودكاست ميدماك", "Midmak Podcast")],
+    ["/midmak", L("ميدماك", "Midmak")],
     ["/careers", L("الوظائف", "Careers")],
     ["/faq", L("الأسئلة الشائعة", "FAQ")],
     ["/#clients", L("من نخدم", "Who We Serve")],
@@ -92,7 +92,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators")}</a>
               <a href="/training">{L("ورش التدريب", "Training")}</a>
               <a href="/blog">{L("المدونة", "Blog")}</a>
-              <a href="/podcast">{L("بودكاست ميدماك", "Midmak Podcast")}</a>
+              <a href="/midmak">{L("ميدماك", "Midmak")}</a>
               <a href="/careers">{L("الوظائف", "Careers")}</a>
               <a href="/#clients" className="nav-drop-sec">{L("من نخدم", "Who We Serve")}</a>
               <a href="/#partners" className="nav-drop-sec">{L("عملاؤنا", "Our Clients")}</a>

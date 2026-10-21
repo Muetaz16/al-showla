@@ -4,8 +4,9 @@
 // Team-card layout requested by the client: one portrait card per person (photo, name,
 // department, phone, email). People without a photo yet show their initials.
 
+import { useState } from "react";
 import { useLang } from "@/lib/useLang";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, ChevronDown } from "lucide-react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { DEPARTMENTS, deptPeople, libyanPhone } from "@/lib/company-data";
 
@@ -26,6 +27,7 @@ function initials(name: string) {
 export default function DepartmentsPage() {
   const [lang, setLang] = useLang();
   const isAr = lang === "ar";
+  const [open, setOpen] = useState<string | null>(null);
 
   // One card per person, chairman first.
   const people = DEPARTMENTS.flatMap((d, di) =>
@@ -60,27 +62,35 @@ export default function DepartmentsPage() {
         </div>
 
         <div className="team">
-          {people.map((p) => (
-            <article key={p.name} className={`tm${p.head ? " tm-head" : ""}`}>
-              <div className="tm-band" />
-              <div className="tm-avatar">
-                {p.photo ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={p.photo} alt={p.name} />
-                ) : (
-                  <span className="tm-ini">{initials(p.name).map((ch, i) => <b key={i}>{ch}</b>)}</span>
-                )}
-              </div>
-              <div className="tm-body">
-                <h2>{p.name}</h2>
-                <div className="tm-dept">{p.dept}</div>
-                <div className="tm-contacts">
-                  <a href={`tel:${p.phone.tel}`} className="tm-c"><Phone size={14} /> <span dir="ltr">{p.phone.display}</span></a>
-                  <a href={`mailto:${p.email}`} className="tm-c"><Mail size={14} /> <span>{p.email}</span></a>
+          {people.map((p) => {
+            const isOpen = open === p.name;
+            return (
+              <article key={p.name} className={`tm${p.head ? " tm-head" : ""}${isOpen ? " open" : ""}`}>
+                <button type="button" className="tm-hit" onClick={() => setOpen(isOpen ? null : p.name)} aria-expanded={isOpen}>
+                  <div className="tm-photo">
+                    {p.photo ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={p.photo} alt={p.name} />
+                    ) : (
+                      <span className="tm-ini">{initials(p.name).map((ch, i) => <b key={i}>{ch}</b>)}</span>
+                    )}
+                  </div>
+                  <div className="tm-body">
+                    <h2>{p.name}</h2>
+                    <div className="tm-dept">{p.dept}</div>
+                  </div>
+                </button>
+                <div className="tm-info" hidden={!isOpen}>
+                  <a href={`tel:${p.phone.tel}`} className="tm-c"><Phone size={15} /> <span dir="ltr">{p.phone.display}</span></a>
+                  <a href={`mailto:${p.email}`} className="tm-c"><Mail size={15} /> <span>{p.email}</span></a>
                 </div>
-              </div>
-            </article>
-          ))}
+                <button type="button" className="tm-bar" onClick={() => setOpen(isOpen ? null : p.name)}
+                  aria-label={isOpen ? (isAr ? "إخفاء البيانات" : "Hide details") : (isAr ? "عرض البيانات" : "Show details")}>
+                  <ChevronDown size={20} />
+                </button>
+              </article>
+            );
+          })}
         </div>
 
         <div style={{ height: 60 }} />
@@ -89,24 +99,28 @@ export default function DepartmentsPage() {
       <SiteFooter lang={lang} />
 
       <style>{`
-        .team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 40px; }
-        .tm { position: relative; background: #fff; border-radius: 20px; overflow: hidden; border: 1px solid #e6edf6; box-shadow: 0 8px 26px rgba(0,31,77,.07); text-align: center; transition: transform .25s, box-shadow .25s; }
-        .tm:hover { transform: translateY(-5px); box-shadow: 0 18px 42px rgba(0,31,77,.14); }
-        .tm-band { height: 92px; background: linear-gradient(120deg, #0a1f44 0%, #0051a2 70%, #1d6fd1 100%); }
-        .tm-head .tm-band { background: linear-gradient(120deg, #0a1f44 0%, #0051a2 55%, #f59e0b 140%); }
-        .tm-avatar { width: 116px; height: 116px; margin: -58px auto 0; border-radius: 50%; border: 5px solid #fff; box-shadow: 0 8px 22px rgba(0,31,77,.18); overflow: hidden; background: linear-gradient(145deg, #e8f1fc, #cfe1f6); display: flex; align-items: center; justify-content: center; position: relative; }
-        .tm-head .tm-avatar { border-color: #f59e0b; }
-        .tm-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-        .tm-ini { display: flex; gap: 6px; font-size: 34px; font-weight: 900; color: #0051a2; }
+        .team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 40px; align-items: start; }
+        .tm { background: #fff; border-radius: 6px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 10px 28px rgba(0,31,77,.08); transition: box-shadow .25s, transform .25s; }
+        .tm:hover, .tm.open { box-shadow: 0 18px 44px rgba(0,31,77,.16); transform: translateY(-3px); }
+        .tm-hit { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: pointer; text-align: start; font: inherit; color: inherit; }
+        .tm-photo { aspect-ratio: 1 / 1; background: linear-gradient(160deg, #e9f1fb, #c9dcf3); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .tm-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .5s; }
+        .tm:hover .tm-photo img { transform: scale(1.03); }
+        .tm-ini { display: flex; gap: 10px; font-size: 50px; font-weight: 900; color: #0051a2; opacity: .55; }
         .tm-ini b { font-weight: 900; }
-        .tm-body { padding: 14px 22px 22px; }
-        .tm-body h2 { font-size: 18px; font-weight: 900; color: #0a1f44; margin: 6px 0 6px; }
-        .tm-dept { display: inline-block; font-size: 12.5px; font-weight: 800; color: #0051a2; background: #eef5fd; padding: 4px 14px; border-radius: 999px; }
-        .tm-head .tm-dept { color: #b45309; background: #fff4e0; }
-        .tm-contacts { margin-top: 16px; padding-top: 14px; border-top: 1px dashed #e2e8f0; display: flex; flex-direction: column; gap: 6px; }
-        .tm-c { display: flex; align-items: center; justify-content: center; gap: 8px; color: #475569; text-decoration: none; font-size: 13px; }
+        .tm-body { padding: 18px 22px 16px; }
+        .tm-body h2 { font-size: 19px; font-weight: 800; color: #0a1f44; margin: 0 0 4px; }
+        .tm-dept { font-size: 14px; font-weight: 800; font-style: italic; color: #0051a2; }
+        .tm-head .tm-dept { color: #b45309; }
+        .tm-info { padding: 4px 22px 18px; display: flex; flex-direction: column; gap: 8px; border-top: 1px dashed #e2e8f0; padding-top: 14px; }
+        .tm-info[hidden] { display: none; }
+        .tm-c { display: flex; align-items: center; gap: 9px; color: #334155; text-decoration: none; font-size: 14px; }
         .tm-c svg { color: #f59e0b; flex-shrink: 0; }
         .tm-c:hover { color: #0051a2; }
+        .tm-bar { display: flex; width: 100%; align-items: center; justify-content: center; height: 38px; border: 0; cursor: pointer; background: #0a3a78; color: #fff; }
+        .tm-head .tm-bar { background: #b45309; }
+        .tm-bar svg { transition: transform .25s; }
+        .tm.open .tm-bar svg { transform: rotate(180deg); }
         @media (max-width: 900px) { .team { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 560px) { .team { grid-template-columns: 1fr; max-width: 380px; margin-inline: auto; } }
       `}</style>
