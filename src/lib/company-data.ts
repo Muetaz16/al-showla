@@ -91,10 +91,10 @@ export type Department = { nameAr: string; nameEn: string; peopleAr: string[]; p
 // peopleEn: English spellings (shown when the site is in English). photos: optional portrait per person (/team/<file>), same order as peopleAr.
 export const DEPARTMENTS: Department[] = [
   { nameAr: "رئيس مجلس الإدارة", nameEn: "Chairman of the Board", peopleAr: ["م. المهدي العوامي"], peopleEn: ["Eng. Al Mahdi Al Awamy"], phone: "0915008600", email: "ceo@alshowla.com" },
-  { nameAr: "الإدارة المالية", nameEn: "Finance", peopleAr: ["فاطمة الشريدي"], peopleEn: ["Fatima Al-Sharidi"], phone: "0927630846", email: "acct@alshowla.com" },
-  { nameAr: "إدارة المشتريات", nameEn: "Procurement", peopleAr: ["عائشة التومي"], peopleEn: ["Aisha Al-Toumi"], phone: "0925200060", email: "ops@alshowla.com" },
-  { nameAr: "إدارة المبيعات", nameEn: "Sales", peopleAr: ["م. بسمة القطعاني", "م. دانا الدرفيلي"], peopleEn: ["Eng. Basma Al-Gattani", "Eng. Dana Al-Derfeli"], phone: "0948020200", email: "sales@alshowla.com" },
   { nameAr: "إدارة التسويق", nameEn: "Marketing", peopleAr: ["م. الزبير البركي"], peopleEn: ["Eng. Al-Zubair Al-Barki"], phone: "0927426635", email: "om@alshowla.com" },
+  { nameAr: "إدارة المشتريات", nameEn: "Procurement", peopleAr: ["عائشة التومي"], peopleEn: ["Aisha Al-Toumi"], phone: "0925200060", email: "ops@alshowla.com" },
+  { nameAr: "الإدارة المالية", nameEn: "Finance", peopleAr: ["فاطمة الشريدي"], peopleEn: ["Fatima Al-Sharidi"], phone: "0927630846", email: "acct@alshowla.com" },
+  { nameAr: "إدارة المبيعات", nameEn: "Sales", peopleAr: ["م. بسمة القطعاني", "م. دانا الدرفيلي"], peopleEn: ["Eng. Basma Al-Gattani", "Eng. Dana Al-Derfeli"], phone: "0948020200", email: "sales@alshowla.com" },
 ];
 
 /** 0915008600 -> { tel: "+218915008600", display: "+218 91 500 8600" } */
