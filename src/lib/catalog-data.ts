@@ -4894,8 +4894,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر بريس ADH 1414 (سيكادور ADH 1414) — رابط إيبوكسي للخرسانة",
-    "nameEn": "MasterBrace ADH 1414 (now Sikadur ADH 1414) — Epoxy Bonding Agent",
+    "nameAr": "لاصق إيبوكسي‏ – ‏Sika‏ – ‏Sikadur ADH 1414‏ – ‏5 كيلو‏",
+    "nameEn": "Epoxy Adhesive – Sika – Sikadur ADH 1414 – 5 kg",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -4916,8 +4916,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر كاست 140 — لاتكس SBR إضافة ورابط للمونة (25 لتر)",
-    "nameEn": "MasterCast 140 — SBR Latex Admixture & Bonding Agent (25 L)",
+    "nameAr": "إضافات خرسانية‏ – ‏Sika‏ – ‏SikaPaver-140‏ – ‏25 لتر‏",
+    "nameEn": "Paver Concrete Admixture – Sika – SikaPaver-140 – 25 L",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -4937,8 +4937,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر كاست 141M — لاتكس SBR إضافة ورابط للمونة (25 لتر)",
-    "nameEn": "MasterCast 141M — SBR Latex Admixture & Bonding Agent (25 L)",
+    "nameAr": "مادة ربط لاتكس‏ – ‏Sika‏ – ‏SikaLatex-141M‏ – ‏25 لتر‏",
+    "nameEn": "Latex Bonding Additive – Sika – SikaLatex-141M – 25 L",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -4958,8 +4958,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر إيماكو S 488 (سيكا إيماكو S 488) — مونة إصلاح إنشائية",
-    "nameEn": "MasterEmaco S 488 (now SikaEmaco S 488) — Structural Repair Mortar",
+    "nameAr": "مونة إصلاح خرسانة‏ – ‏Sika‏ – ‏SikaEmaco S 488‏ – ‏30 كيلو‏",
+    "nameEn": "Concrete Repair Mortar – Sika – SikaEmaco S 488 – 30 kg",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -4980,8 +4980,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر إيماكو 8100 AP (سيكا إيماكو 8100 AP) — برايمر إيبوكسي غني بالزنك لحديد التسليح (1 كجم)",
-    "nameEn": "MasterEmaco 8100 AP (now SikaEmaco-8100 AP) — Zinc-Rich Epoxy Primer for Rebar (1 kg)",
+    "nameAr": "برايمر حديد‏ – ‏Sika‏ – ‏SikaEmaco 8100‏ – ‏1 كيلو‏",
+    "nameEn": "Rebar Primer – Sika – SikaEmaco 8100 – 1 kg",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -5002,8 +5002,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر فلو 980 (سيكا جراوت 980) — جراوت خرساني دقيق عالي المقاومة (30 كجم)",
-    "nameEn": "MasterFlow 980 (now SikaGrout-980) — High-Strength Cementitious Micro-Concrete Grout (30 kg)",
+    "nameAr": "مونة جراوت‏ – ‏Sika‏ – ‏Sika Grout-980‏ – ‏30 كيلو‏",
+    "nameEn": "Grout – Sika – Sika Grout-980 – 30 kg",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -5024,8 +5024,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر سيل 550 (سيكا توب 550 سيل) — طلاء عزل أسمنتي أكريليكي، رمادي (20 كجم)",
-    "nameEn": "MasterSeal 550 (now SikaTop-550 Seal) — Acrylic Cementitious Waterproofing Coating, Grey (20 kg)",
+    "nameAr": "عازل مائي أسمنتي رمادي‏ – ‏Sika‏ – ‏SikaTop Seal-550‏ – ‏20 كيلو‏",
+    "nameEn": "Cementitious Waterproofing Grey – Sika – SikaTop Seal-550 – 20 kg",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -5046,8 +5046,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ماستر سيل 550 (سيكا توب 550 سيل) — طلاء عزل أسمنتي أكريليكي، أبيض (20 كجم)",
-    "nameEn": "MasterSeal 550 (now SikaTop-550 Seal) — Acrylic Cementitious Waterproofing Coating, White (20 kg)",
+    "nameAr": "عازل مائي أسمنتي أبيض‏ – ‏Sika‏ – ‏SikaTop Seal-550‏ – ‏20 كيلو‏",
+    "nameEn": "Cementitious Waterproofing White – Sika – SikaTop Seal-550 – 20 kg",
     "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
     "unit": "عبوة",
@@ -5058,6 +5058,164 @@ export const CATALOG_PRODUCTS: Product[] = [
       "Brand: Sika"
     ],
     "datasheetUrl": "https://gcc.sika.com/dam/dms/gcc/r/pds-sikatop-550seal.pdf"
+  },
+  {
+    "id": "sika-001",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لفائف عزل مائي‏ – ‏Sika‏ – ‏SikaShield E57‏ – ‏4 مم‏",
+    "nameEn": "Waterproofing Membrane – Sika – SikaShield E57 – 4 mm",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "لفة",
+    "specAr": [
+      "غشاء بيتوميني معدّل SBS مقوّى بالبوليستر",
+      "السماكة: 4 مم",
+      "التركيب بالتسخين (Torch-on)",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "SBS-modified bitumen membrane, polyester reinforced",
+      "Thickness: 4 mm",
+      "Torch-on application",
+      "Brand: Sika"
+    ],
+    "datasheetUrl": "https://egy.sika.com/dms/getdocument.get/7e12e312-1d22-4323-b920-24202baa0690/sikashield-e57-peeg4mm.pdf"
+  },
+  {
+    "id": "sika-002",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طلاء عزل بيتوميني‏ – ‏Sika‏ – ‏Igolflex-155 EG‏",
+    "nameEn": "Bituminous Coating – Sika – Igolflex-155 EG",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "مستحلب بيتومين مطاطي خالٍ من المذيبات",
+      "لعزل الرطوبة للخرسانة تحت منسوب الأرض",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Solvent-free rubber-bitumen emulsion",
+      "Damp-proofing of concrete below grade",
+      "Brand: Sika"
+    ],
+    "datasheetUrl": "https://egy.sika.com/dms/getdocument.get/83002204-35c6-4d36-b109-01c9fe9ce2cc/sika-igolflex-155eg.pdf"
+  },
+  {
+    "id": "sika-003",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/catalog/sika-009.png",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط مانع لتسرب المياه‏ – ‏Sika‏ – ‏Waterbar AR EG‏",
+    "nameEn": "Waterstop – Sika – Waterbar AR EG",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "لفة",
+    "specAr": [
+      "شريط خارجي من PVC لفواصل الصب في الخرسانة المانعة للتسرب",
+      "قابل للحام في الموقع",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "External PVC-P waterbar for construction joints in watertight concrete",
+      "Site-weldable",
+      "Brand: Sika"
+    ],
+    "datasheetUrl": "https://egy.sika.com/dam/dms/eg01/i/sika-waterbar-areg.pdf"
+  },
+  {
+    "id": "sika-004",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لاصق إيبوكسي‏ – ‏Sika‏ – ‏Sikadur ADH 2200‏ – ‏5 كيلو‏",
+    "nameEn": "Epoxy Adhesive – Sika – Sikadur ADH 2200 – 5 kg",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "مونة إيبوكسي عالية المقاومة للتثبيت والإصلاح",
+      "العبوة: 5 كيلو",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "High-strength epoxy bedding and repair mortar",
+      "Pack: 5 kg",
+      "Brand: Sika"
+    ],
+    "datasheetUrl": "https://egy.sika.com/dam/dms/eg01/g/sikadur-adh-2200.pdf"
+  },
+  {
+    "id": "sika-005",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/catalog/sika-010.png",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وصلة تحكم‏ – ‏Sika‏ – ‏Sikaplan WP Control Socket‏ – ‏مقاس 6‏",
+    "nameEn": "Control Socket – Sika – Sikaplan WP Control Socket – Size 6",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "فلنجة PVC-P بوصلة خرطوم 6 مم تُلحم على أغشية Sikaplan WP",
+      "لكشف التسرب والحقن بالراتنج",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "PVC-P flange with 6 mm hose socket, welded to Sikaplan WP membranes",
+      "For leak detection and resin injection",
+      "Brand: Sika"
+    ],
+    "datasheetUrl": "https://gcc.sika.com/dam/dms/gcc/b/sikaplan_wp_controlsocket6.pdf"
+  },
+  {
+    "id": "sika-006",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غشاء عزل‏ – ‏Sika‏ – ‏Sikaplan WP1100-15 HL‏ – ‏1.5 مم‏",
+    "nameEn": "Waterproofing Membrane – Sika – Sikaplan WP1100-15 HL – 1.5 mm",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "لفة",
+    "specAr": [
+      "غشاء PVC-P مرن بسماكة 1.5 مم مع طبقة إشارة",
+      "لعزل الأقبية والأنفاق والمنشآت تحت الأرض",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "1.5 mm flexible PVC-P membrane with signal layer",
+      "For basements, tunnels and underground structures",
+      "Brand: Sika"
+    ],
+    "datasheetUrl": "https://deu.sika.com/content/dam/dms/deaddconst01/c/sikaplan_wp_1100-15hl.pdf"
   },
   {
     "id": "weber-016",
@@ -6420,6 +6578,9279 @@ export const CATALOG_PRODUCTS: Product[] = [
     "specEn": [
       "Code: STHT42796",
       "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "sika-x001",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فاصل تمدد‏ – ‏Wabo‏ – ‏Flex 5201-200‏",
+    "nameEn": "Flex Expansion Joint – Wabo – Flex 5201-200",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Flex 5201-200",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Code: Flex 5201-200",
+      "Brand: Sika"
+    ]
+  },
+  {
+    "id": "sika-x002",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فاصل تمدد‏ – ‏Wabo‏ – ‏MasterFlex 5247-050‏",
+    "nameEn": "MasterFlex Expansion Joint – Wabo – MasterFlex 5247-050",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: MasterFlex 5247-050",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Code: MasterFlex 5247-050",
+      "Brand: Sika"
+    ]
+  },
+  {
+    "id": "sika-x003",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فاصل تمدد‏ – ‏Wabo‏ – ‏MasterFlex 5603-100‏",
+    "nameEn": "MasterFlex Expansion Joint – Wabo – MasterFlex 5603-100",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: MasterFlex 5603-100",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Code: MasterFlex 5603-100",
+      "Brand: Sika"
+    ]
+  },
+  {
+    "id": "sika-x004",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غطاء فاصل تمدد‏ – ‏Wabo‏ – ‏MasterFlex 5603-100-C‏",
+    "nameEn": "MasterFlex Expansion Joint Cover – Wabo – MasterFlex 5603-100-C",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: MasterFlex 5603-100-C",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Code: MasterFlex 5603-100-C",
+      "Brand: Sika"
+    ]
+  },
+  {
+    "id": "sika-x005",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غطاء فاصل تمدد‏ – ‏Wabo‏ – ‏Flex 5201-200-C‏",
+    "nameEn": "Flex Expansion Joint Cover – Wabo – Flex 5201-200-C",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Flex 5201-200-C",
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Code: Flex 5201-200-C",
+      "Brand: Sika"
+    ]
+  },
+  {
+    "id": "sika-x006",
+    "categoryId": "waterproof",
+    "brand": "Sika",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غشاء فاصل تمدد‏ – ‏Wabo‏ – ‏Flex Membrane‏",
+    "nameEn": "Flex Expansion Joint Membrane – Wabo – Flex Membrane",
+    "descriptionAr": "منتج أصلي من Sika ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Sika product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Sika"
+    ],
+    "specEn": [
+      "Brand: Sika"
+    ]
+  },
+  {
+    "id": "weber-x001",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "معجون حوائط‏ – ‏Weber‏ – ‏Dry Putty 101‏ – ‏25 كيلو‏",
+    "nameEn": "Wall Putty – Weber – Dry Putty 101 – Color 5555 – 25 kg",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Dry Putty 101",
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Code: Dry Putty 101",
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x002",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "دهان إيبوكسي رمادي (A+B)‏ – ‏Weber‏ – ‏FI Epocoat 7040‏ – ‏20 كيلو‏",
+    "nameEn": "Epoxy Coating Grey (A+B) – Weber – FI Epocoat 7040 – 20 kg",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: FI Epocoat 7040",
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Code: FI Epocoat 7040",
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x003",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "عازل مائي إيبوكسي‏ – ‏Weber‏ – ‏Weberdry Epo PW‏ – ‏20 كيلو‏",
+    "nameEn": "Epoxy Waterproofing – Weber – Weberdry Epo PW – 20 kg",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x004",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "معجون حوائط‏ – ‏Weber‏ – ‏Dry Putty 105 (25)كيلو‏",
+    "nameEn": "Wall Putty – Weber – Dry Putty 105",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Dry Putty 105",
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Code: Dry Putty 105",
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x005",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مادة ربط SBR‏ – ‏Weber‏ – ‏Dry Bond 565 (20) لتر‏",
+    "nameEn": "SBR Bonding Agent – Weber – Dry Bond 565",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Dry Bond 565",
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Code: Dry Bond 565",
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x006",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسدس المثبت الكيميائي‏ – ‏Weber‏ – ‏Weberanc 405‏",
+    "nameEn": "Chemical Anchor Gun – Weber – Weberanc 405",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Weberanc 405",
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Code: Weberanc 405",
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x007",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مانع تسرب سيليكوني‏ – ‏Weber‏ – ‏Webersilicone FS‏",
+    "nameEn": "Silicone Sealant – Weber – Webersilicone FS",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x008",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لاصق بلاط مرن رمادي‏ – ‏Weber‏ – ‏Webercol Flex‏",
+    "nameEn": "Flexible Tile Adhesive Grey – Weber – Webercol Flex",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "weber-x009",
+    "categoryId": "waterproof",
+    "brand": "Weber",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "سيلنت خرسانة‏ – ‏Weber‏ – ‏Weberad Cure Y20‏",
+    "nameEn": "Concrete Curing Compound – Weber – Weberad Cure Y20",
+    "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Weberad Cure Y20",
+      "العلامة التجارية: Weber"
+    ],
+    "specEn": [
+      "Code: Weberad Cure Y20",
+      "Brand: Weber"
+    ]
+  },
+  {
+    "id": "rokal-x001",
+    "categoryId": "waterproof",
+    "brand": "Rokal",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طلاء أساس (برايمر) مائي‏ – ‏Rokal‏ – ‏Rock Prime WB‏",
+    "nameEn": "Water-Based Primer – Rokal – Rock Prime WB",
+    "descriptionAr": "منتج أصلي من Rokal ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Rokal product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Rokal"
+    ],
+    "specEn": [
+      "Brand: Rokal"
+    ]
+  },
+  {
+    "id": "rokal-x002",
+    "categoryId": "waterproof",
+    "brand": "Rokal",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ألواح عزل فوم زرقاء‏ – ‏Rokal‏",
+    "nameEn": "Blue Foam – Rokal",
+    "descriptionAr": "منتج أصلي من Rokal ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Rokal product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Rokal"
+    ],
+    "specEn": [
+      "Brand: Rokal"
+    ]
+  },
+  {
+    "id": "rokal-x003",
+    "categoryId": "waterproof",
+    "brand": "Rokal",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "رول عزل أملس‏ – ‏Rokal‏",
+    "nameEn": "Smooth Membrane Roll – Rokal",
+    "descriptionAr": "منتج أصلي من Rokal ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Rokal product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Rokal"
+    ],
+    "specEn": [
+      "Brand: Rokal"
+    ]
+  },
+  {
+    "id": "fosroc-x001",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "عازل مائي‏ – ‏Fosroc‏ – ‏Nitoproof A30‏",
+    "nameEn": "Waterproofing Coating – Fosroc – Nitoproof A30",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Nitoproof A30",
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Code: Nitoproof A30",
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x002",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة إيبوكسي‏ – ‏Fosroc‏ – ‏Nitomortar FCE‏",
+    "nameEn": "Epoxy Mortar – Fosroc – Nitomortar FCE",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x003",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "برايمر غني بالزنك‏ – ‏Fosroc‏ – ‏Nitoprime Zincrich‏",
+    "nameEn": "Zinc-Rich Primer – Fosroc – Nitoprime Zincrich",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x004",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "إضافات جراوت‏ – ‏Fosroc‏ – ‏Cebex 100‏",
+    "nameEn": "Grout Admixture – Fosroc – Cebex 100",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Cebex 100",
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Code: Cebex 100",
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x005",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة حقن للكابلات‏ – ‏Fosroc‏ – ‏Cebex Cable Grout‏",
+    "nameEn": "Cable Grout – Fosroc – Cebex Cable Grout",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x006",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة جراوت‏ – ‏Fosroc‏ – ‏Conbextra MCG‏",
+    "nameEn": "Grout – Fosroc – Conbextra MCG",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x007",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة جراوت إيبوكسية‏ – ‏Fosroc‏ – ‏Conbextra EP150‏",
+    "nameEn": "Epoxy Grout – Fosroc – Conbextra EP150",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Conbextra EP150",
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Code: Conbextra EP150",
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "fosroc-x008",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لاصق إيبوكسي‏ – ‏Fosroc‏ – ‏Nitobond EP‏",
+    "nameEn": "Epoxy Bonding Agent – Fosroc – Nitobond EP",
+    "descriptionAr": "منتج أصلي من Fosroc ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "stanley-x001",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جهاز قياس مسافات‏ – ‏Stanley‏ – ‏AL24 160-77-1‏",
+    "nameEn": "Distance Measurer – Stanley – AL24 160-77-1",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: AL24 160-77-1",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: AL24 160-77-1",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x002",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شفرة مبرد‏ – ‏Stanley‏ – ‏293-21-5‏",
+    "nameEn": "File Blade – Stanley – 293-21-5",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x003",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شفرة منشار معادن‏ – ‏Stanley‏ – ‏842-15-1‏",
+    "nameEn": "Hacksaw Blade – Stanley – 842-15-1",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x004",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم خيط تخطيط بالطباشير‏ – ‏Stanley‏ – ‏443-47-0‏ – ‏30 متر‏",
+    "nameEn": "Chalk Line Set – Stanley – 443-47-0 – 30 m",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x005",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "خيط تخطيط بالطباشير‏ – ‏Stanley‏ – ‏465-47-0‏",
+    "nameEn": "Chalk Line – Stanley – 465-47-0",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x006",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسحاج ألواح الجبس‏ – ‏Stanley‏ – ‏122-21-5‏",
+    "nameEn": "Drywall Rasp Plane – Stanley – 122-21-5",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x007",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطاعة كوابل‏ – ‏Stanley‏ – ‏632-84‏",
+    "nameEn": "Cable Cutter – Stanley – 632-84",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x008",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مكشطة زجاج‏ – ‏Stanley‏ – ‏590-28-0‏",
+    "nameEn": "Window Scraper – Stanley – 590-28-0",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x009",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار معادن يدوي‏ – ‏Stanley‏ – ‏122-15-1‏ – ‏12 بوصة‏",
+    "nameEn": "Hand Hacksaw – Stanley – 122-15-1 – 12 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x010",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار خشب يدوي‏ – ‏Stanley‏ – ‏529-20-2‏ – ‏20 بوصة‏",
+    "nameEn": "Hand Wood Saw – Stanley – 529-20-2 – 20 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x011",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار خشب يدوي‏ – ‏Stanley‏ – ‏289-15-2‏ – ‏550 مم‏",
+    "nameEn": "Hand Wood Saw – Stanley – 289-15-2 – 550 mm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x012",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "سكين قاطع Dynagrip‏ – ‏Stanley‏ – ‏8-10418‏ – ‏18 مم‏",
+    "nameEn": "Dynagrip Utility Knife – Stanley – 8-10418 – 18 mm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x013",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "سكين قاطع معدني‏ – ‏Stanley‏ – ‏099-10‏",
+    "nameEn": "Metal Utility Knife – Stanley – 099-10",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x014",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان تسوية مغناطيسي‏ – ‏Stanley‏ – ‏43110‏ – ‏40 سم‏",
+    "nameEn": "Magnetic Spirit Level – Stanley – 43110 – 40 cm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x015",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان تسوية‏ – ‏Stanley‏ – ‏214-42-1‏ – ‏60 سم‏",
+    "nameEn": "Spirit Level – Stanley – 214-42-1 – 60 cm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "dewalt-x001",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة هدم‏ – ‏DeWalt‏ – ‏D25881K-B5‏ – ‏10 كيلو‏",
+    "nameEn": "Demolition Hammer – DeWalt – D25881K-B5 – 10 kg",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25881K-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25881K-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x002",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD777P1-GB‏ – ‏18 فولت 5 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD777P1-GB – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD777P1-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD777P1-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x003",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD791P2-GB‏ – ‏18 فولت 2 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD791P2-GB – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD791P2-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD791P2-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x004",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان ليزر‏ – ‏DeWalt‏ – ‏DCE089DIG-QW‏ – ‏12 فولت‏",
+    "nameEn": "Laser Level – DeWalt – DCE089DIG-QW – 12V",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCE089DIG-QW",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCE089DIG-QW",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x005",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF900P2T-GB‏ – ‏18 فولت 5 أمبير‏",
+    "nameEn": "Cordless Impact Wrench – DeWalt – DCF900P2T-GB – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF900P2T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF900P2T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x006",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة طاولة‏ – ‏DeWalt‏ – ‏DW752R-B5‏ – ‏6 بوصات‏",
+    "nameEn": "Bench Grinder – DeWalt – DW752R-B5 – 6 Inch",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW752R-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW752R-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x007",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة صنفرة مدارية‏ – ‏DeWalt‏ – ‏DWE6423-B5‏ – ‏5 بوصات 280 وات‏",
+    "nameEn": "Random Orbit Sander – DeWalt – DWE6423-B5 – 5 Inch 280W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE6423-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE6423-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x008",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بطارية‏ – ‏DeWalt‏ – ‏DCB127-XJ‏ – ‏12 فولت‏",
+    "nameEn": "Battery – DeWalt – DCB127-XJ – 12V",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCB127-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCB127-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x009",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بطارية‏ – ‏DeWalt‏ – ‏DCB184-XJ‏ – ‏18 فولت 5 أمبير‏",
+    "nameEn": "Battery – DeWalt – DCB184-XJ – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCB184-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCB184-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x010",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بطارية‏ – ‏DeWalt‏ – ‏DCB183-XJ‏ – ‏18 فولت 2 أمبير‏",
+    "nameEn": "Battery – DeWalt – DCB183-XJ – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCB183-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCB183-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x011",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منفاخ هواء‏ – ‏DeWalt‏ – ‏DWB800-B5‏ – ‏800 وات‏",
+    "nameEn": "Air Blower – DeWalt – DWB800-B5 – 800W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWB800-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWB800-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x012",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4938-QZ‏ – ‏8 مم‏",
+    "nameEn": "Cobalt Metal Drill Bit – DeWalt – DT4938-QZ – 8 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT4938-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT4938-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x013",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD709D2T-GB‏ – ‏18 فولت 2 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD709D2T-GB – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD709D2T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD709D2T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x014",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD710D2-B5‏ – ‏12 فولت 2 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD710D2-B5 – 12V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD710D2-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD710D2-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x015",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD796D2-GB‏ – ‏18 فولت 2 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD796D2-GB – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD796D2-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD796D2-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x016",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صدمي لاسلكي 3 سرعات‏ – ‏DeWalt‏ – ‏DCF887D2-GB‏ – ‏18 فولت 2 أمبير‏",
+    "nameEn": "3-Speed Cordless Impact Driver – DeWalt – DCF887D2-GB – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF887D2-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF887D2-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x017",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF887M1-GB‏ – ‏18 فولت 4 أمبير‏",
+    "nameEn": "Cordless Impact Driver – DeWalt – DCF887M1-GB – 18V 4Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF887M1-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF887M1-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x018",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD708D1T-GB‏ – ‏18 فولت 2 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD708D1T-GB – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD708D1T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD708D1T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x019",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة لاسلكية‏ – ‏DeWalt‏ – ‏DCH033M1-GB‏ – ‏2 كيلو 18 فولت 22 مم‏",
+    "nameEn": "Cordless Rotary Hammer – DeWalt – DCH033M1-GB – 2 kg 18V 22 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCH033M1-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCH033M1-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x020",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة‏ – ‏DeWalt‏ – ‏D25733K-B5‏ – ‏8 كيلو‏",
+    "nameEn": "Rotary Hammer – DeWalt – D25733K-B5 – 8 kg",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25733K-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25733K-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x021",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة‏ – ‏DeWalt‏ – ‏D25133KW-B5‏ – ‏800 وات 26 مم‏",
+    "nameEn": "Rotary Hammer – DeWalt – D25133KW-B5 – 800W 26 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25133KW-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25133KW-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x022",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي متعدد الرؤوس‏ – ‏DeWalt‏ – ‏DCD703L2T-GB‏ – ‏12 فولت 3 أمبير‏",
+    "nameEn": "Multi-Head Cordless Drill – DeWalt – DCD703L2T-GB – 12V 3Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD703L2T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD703L2T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x023",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شاحن بطاريات‏ – ‏DeWalt‏ – ‏DCB1104-GB‏",
+    "nameEn": "Battery Charger – DeWalt – DCB1104-GB",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCB1104-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCB1104-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x024",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص قطع‏ – ‏DeWalt‏ – ‏DWA4525IA-AE‏ – ‏9 بوصات 3 مم‏",
+    "nameEn": "Cutting Disc – DeWalt – DWA4525IA-AE – 9 Inch 3 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWA4525IA-AE",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWA4525IA-AE",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x025",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص قطع‏ – ‏DeWalt‏ – ‏DWA8062SIA‏ – ‏4.5 بوصة‏",
+    "nameEn": "Cutting Disc – DeWalt – DWA8062SIA – 4.5 Inch",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWA8062SIA",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWA8062SIA",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x026",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص قطع معادن‏ – ‏DeWalt‏ – ‏DWA8011RIA-AE‏ – ‏14 بوصة‏",
+    "nameEn": "Metal Cutting Disc – DeWalt – DWA8011RIA-AE – 14 Inch",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWA8011RIA-AE",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWA8011RIA-AE",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x027",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص قطع‏ – ‏DeWalt‏ – ‏DWA8434IA-AE‏ – ‏4.5 بوصة 3 مم‏",
+    "nameEn": "Cutting Disc – DeWalt – DWA8434IA-AE – 4.5 Inch 3 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWA8434IA-AE",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWA8434IA-AE",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x028",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص تجليخ‏ – ‏DeWalt‏ – ‏DW4547AIA-AE‏ – ‏7 بوصات‏ – ‏180×6×22.2 مم‏",
+    "nameEn": "Grinding Disc – DeWalt – DW4547AIA-AE – 7 Inch – 180×6×22.2 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW4547AIA-AE",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW4547AIA-AE",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x029",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة ظهر للعدة‏ – ‏DeWalt‏ – ‏DWST81690-1‏",
+    "nameEn": "Tool Backpack – DeWalt – DWST81690-1",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWST81690-1",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWST81690-1",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x030",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE4257-QS‏ – ‏5 بوصات 1500 وات‏",
+    "nameEn": "Angle Grinder – DeWalt – DWE4257-QS – 5 Inch 1500W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE4257-QS",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE4257-QS",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x031",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏D28730‏ – ‏2300 وات‏",
+    "nameEn": "Grinder – DeWalt – D28730 – 2300W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D28730",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D28730",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x032",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE4010‏ – ‏750 وات‏",
+    "nameEn": "Angle Grinder – DeWalt – DWE4010 – 750W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE4010",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE4010",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x033",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم كماشات احترافي بحركة مزدوجة‏ – ‏DeWalt‏ – ‏DWHT0-70485‏ – ‏3 قطع‏",
+    "nameEn": "Professional Compound-Action Pliers Set – DeWalt – DWHT0-70485 – 3 Pcs",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWHT0-70485",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWHT0-70485",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x034",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم رؤوس مفك‏ – ‏DeWalt‏ – ‏DT7969-QZ‏ – ‏32 قطعة‏",
+    "nameEn": "Screwdriver Bit Set – DeWalt – DT7969-QZ – 32 Pcs",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT7969-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT7969-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x035",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة طاولة‏ – ‏DeWalt‏ – ‏DW752R‏ – ‏373 وات‏",
+    "nameEn": "Bench Grinder – DeWalt – DW752R – 373W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW752R",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW752R",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x036",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جهاز قياس مسافات ليزري‏ – ‏DeWalt‏ – ‏DWHT77100-XJ‏ – ‏30 متر‏",
+    "nameEn": "Laser Distance Measurer – DeWalt – DWHT77100-XJ – 30 m",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWHT77100-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWHT77100-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x037",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جهاز قياس مسافات ليزري‏ – ‏DeWalt‏ – ‏DW03050-XJ‏ – ‏50 متر‏",
+    "nameEn": "Laser Distance Measurer – DeWalt – DW03050-XJ – 50 m",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW03050-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW03050-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x038",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة لاسلكية‏ – ‏DeWalt‏ – ‏DCH133M1-GB‏ – ‏18 فولت‏",
+    "nameEn": "Cordless Rotary Hammer – DeWalt – DCH133M1-GB – 18V",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCH133M1-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCH133M1-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x039",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب كهربائي‏ – ‏DeWalt‏ – ‏DW268‏ – ‏685 وات‏",
+    "nameEn": "Drill – DeWalt – DW268 – 685W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW268",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW268",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x040",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF921P2T-GB‏ – ‏18 فولت 5 أمبير‏",
+    "nameEn": "Cordless Impact Wrench – DeWalt – DCF921P2T-GB – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF921P2T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF921P2T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x041",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF891P2T-GB‏ – ‏18 فولت 5 أمبير‏",
+    "nameEn": "Cordless Impact Wrench – DeWalt – DCF891P2T-GB – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF891P2T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF891P2T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x042",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار منحنيات‏ – ‏DeWalt‏ – ‏DW331K‏ – ‏710 وات‏",
+    "nameEn": "Jigsaw – DeWalt – DW331K – 710W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW331K",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW331K",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x043",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار دائري‏ – ‏DeWalt‏ – ‏DWE5615-GB‏ – ‏7.25 بوصة 1500 وات‏",
+    "nameEn": "Circular Saw – DeWalt – DWE5615-GB – 7.25 Inch 1500W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE5615-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE5615-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x044",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار زوايا‏ – ‏DeWalt‏ – ‏DW714-B5‏ – ‏10 بوصات‏",
+    "nameEn": "Mitre Saw – DeWalt – DW714-B5 – 10 Inch",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW714-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW714-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x045",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار قطع معادن‏ – ‏DeWalt‏ – ‏D28730-B5‏ – ‏355 مم 2300 وات‏",
+    "nameEn": "Metal Chop Saw – DeWalt – D28730-B5 – 355 mm 2300W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D28730-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D28730-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x046",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان تسوية‏ – ‏DeWalt‏ – ‏DWHT0-43224‏ – ‏60 سم‏",
+    "nameEn": "Spirit Level – DeWalt – DWHT0-43224 – 60 cm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWHT0-43224",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWHT0-43224",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x047",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان ليزر بخط أحمر‏ – ‏DeWalt‏ – ‏DW088K-XJ‏",
+    "nameEn": "Red Line Laser Level – DeWalt – DW088K-XJ",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW088K-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW088K-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "deli-x001",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "الاسم‏",
+    "nameEn": "Name",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x002",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار ثقوب كأسي‏ – ‏Deli‏ – ‏DH-SKK029-E1‏ – ‏29 مم‏",
+    "nameEn": "Hole Saw – Deli – DH-SKK029-E1 – 29 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-SKK029-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-SKK029-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x003",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار ثقوب كأسي‏ – ‏Deli‏ – ‏DH-SKK038-E1‏ – ‏38 مم‏",
+    "nameEn": "Hole Saw – Deli – DH-SKK038-E1 – 38 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-SKK038-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-SKK038-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x004",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار ثقوب كأسي‏ – ‏Deli‏ – ‏DH-SKK068-E1‏ – ‏68 مم‏",
+    "nameEn": "Hole Saw – Deli – DH-SKK068-E1 – 68 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-SKK068-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-SKK068-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x005",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة توجيه لمنشار الثقوب‏ – ‏Deli‏ – ‏DH-SKZ002-E1‏",
+    "nameEn": "Hole Saw Pilot Drill – Deli – DH-SKZ002-E1",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-SKZ002-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-SKZ002-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x006",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب زجاج‏ – ‏Deli‏ – ‏DH-CZZ012-E1‏ – ‏12 مم‏",
+    "nameEn": "Glass Drill Bit – Deli – DH-CZZ012-E1 – 12 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-CZZ012-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-CZZ012-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x007",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب زجاج‏ – ‏Deli‏ – ‏DH-CZZ008-E1‏ – ‏8 مم‏",
+    "nameEn": "Glass Drill Bit – Deli – DH-CZZ008-E1 – 8 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-CZZ008-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-CZZ008-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x008",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS‏ – ‏Deli‏ – ‏DH-Y12160‏ – ‏12×160 مم‏",
+    "nameEn": "SDS Concrete Drill Bit – Deli – DH-Y12160 – 12×160 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-Y12160",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-Y12160",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x009",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS‏ – ‏Deli‏ – ‏DH-Y16210‏ – ‏16×210 مم‏",
+    "nameEn": "SDS Concrete Drill Bit – Deli – DH-Y16210 – 16×210 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-Y16210",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-Y16210",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x010",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "كماشة قفل بالسلسلة‏ – ‏Deli‏ – ‏DL20018‏",
+    "nameEn": "Chain Locking Pliers – Deli – DL20018",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL20018",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL20018",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x011",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقشرة أسلاك 3 في 1‏ – ‏Deli‏ – ‏DL2017‏ – ‏6 مم‏",
+    "nameEn": "3-in-1 Wire Stripper – Deli – DL2017 – 6 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2017",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2017",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x012",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص تجليخ خرسانة ماسي‏ – ‏Deli‏ – ‏DH-JML150-E1‏ – ‏6 بوصات‏",
+    "nameEn": "Diamond Concrete Grinding Disc – Deli – DH-JML150-E1 – 6 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-JML150-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-JML150-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x013",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص صنفرة شرائحي (فلاب)‏ – ‏Deli‏ – ‏DH-BYP11560-E1‏ – ‏4.5 بوصة‏",
+    "nameEn": "Flap Disc – Deli – DH-BYP11560-E1 – 4.5 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-BYP11560-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-BYP11560-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x014",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص تجليخ خرسانة ماسي‏ – ‏Deli‏ – ‏DH-JML125-E1‏ – ‏5 بوصات‏",
+    "nameEn": "Diamond Concrete Grinding Disc – Deli – DH-JML125-E1 – 5 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-JML125-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-JML125-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x015",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة عدة مفتوحة‏ – ‏Deli‏ – ‏DL586111‏ – ‏16 بوصة‏",
+    "nameEn": "Open Tool Tote – Deli – DL586111 – 16 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL586111",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL586111",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x016",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "رأس مفك‏ – ‏Deli‏ – ‏DL251103‏ – ‏3×50 مم‏",
+    "nameEn": "Screwdriver Bit – Deli – DL251103 – 3×50 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL251103",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL251103",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x017",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "رأس مفك‏ – ‏Deli‏ – ‏DL251104‏ – ‏4×50 مم‏",
+    "nameEn": "Screwdriver Bit – Deli – DL251104 – 4×50 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL251104",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL251104",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x018",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "رأس مفك‏ – ‏Deli‏ – ‏DL251306‏ – ‏6×50 مم‏",
+    "nameEn": "Screwdriver Bit – Deli – DL251306 – 6×50 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL251306",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL251306",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x019",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار قطع معادن‏ – ‏Deli‏ – ‏DL-XQ355-E1‏ – ‏14 بوصة 2300 وات‏",
+    "nameEn": "Metal Chop Saw – Deli – DL-XQ355-E1 – 14 Inch 2300W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-XQ355-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-XQ355-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x020",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن) قابلة للطي‏ – ‏Deli‏ – ‏DL3598‏ – ‏1.5-8 مم‏",
+    "nameEn": "Folding Hex Key Set – Deli – DL3598 – 1.5-8 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3598",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3598",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x021",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن)‏ – ‏Deli‏ – ‏DL3080‏ – ‏8 قطع 1.5-6 مم‏",
+    "nameEn": "Hex Key Set – Deli – DL3080 – 8 Pcs 1.5-6 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3080",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3080",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x022",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن) طويلة سوداء‏ – ‏Deli‏ – ‏DL230708G‏ – ‏9 قطع 1.5-10 مم‏",
+    "nameEn": "Long Black Hex Key Set – Deli – DL230708G – 9 Pcs 1.5-10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL230708G",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL230708G",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x023",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح نجمية (توركس) طويلة سوداء‏ – ‏Deli‏ – ‏DL230707G‏ – ‏9 قطع T10-T50‏",
+    "nameEn": "Long Black Torx Key Set – Deli – DL230707G – 9 Pcs T10-T50",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL230707G",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL230707G",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x024",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن) طويلة‏ – ‏Deli‏ – ‏DL3089‏ – ‏1.5-10 مم‏",
+    "nameEn": "Long Hex Key Set – Deli – DL3089 – 1.5-10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3089",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3089",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x025",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن) طويلة‏ – ‏Deli‏ – ‏DL3590‏ – ‏1.5-10 مم‏",
+    "nameEn": "Long Hex Key Set – Deli – DL3590 – 1.5-10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3590",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3590",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x026",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن) طويلة‏ – ‏Deli‏ – ‏DL232209H‏ – ‏9 قطع 1.5-10 مم‏",
+    "nameEn": "Long Hex Key Set – Deli – DL232209H – 9 Pcs 1.5-10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL232209H",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL232209H",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x027",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح سداسية (ألن) طويلة بالبوصة‏ – ‏Deli‏ – ‏DL3091‏ – ‏1/16-3/8 بوصة‏",
+    "nameEn": "Long Hex Key Set Inch – Deli – DL3091 – 1/16-3/8 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3091",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3091",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x028",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم ريش ثقب معادن‏ – ‏Deli‏ – ‏DH-MHZ025-ED1‏ – ‏25 قطعة 1-9 مم‏",
+    "nameEn": "Metal Drill Bit Set – Deli – DH-MHZ025-ED1 – 25 Pcs 1-9 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-MHZ025-ED1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-MHZ025-ED1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x029",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم ريش ثقب خشب‏ – ‏Deli‏ – ‏DH-MGZ005-ED1‏ – ‏5 قطع 4-10 مم‏",
+    "nameEn": "Wood Drill Bit Set – Deli – DH-MGZ005-ED1 – 5 Pcs 4-10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-MGZ005-ED1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-MGZ005-ED1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x030",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم كماشات احترافي‏ – ‏Deli‏ – ‏DL2008Z-3‏ – ‏3 قطع‏",
+    "nameEn": "Professional Pliers Set – Deli – DL2008Z-3 – 3 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2008Z-3",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2008Z-3",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x031",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مثقاب لاسلكي‏ – ‏Deli‏ – ‏DL-DZ12-6A2‏ – ‏12 فولت‏",
+    "nameEn": "Cordless Drill Kit – Deli – DL-DZ12-6A2 – 12V",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-DZ12-6A2",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-DZ12-6A2",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x032",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم رؤوس مفك صليبية‏ – ‏Deli‏ – ‏DL252202‏ – ‏10 قطع‏",
+    "nameEn": "Phillips Screwdriver Bit Set – Deli – DL252202 – 10 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL252202",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL252202",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x033",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم رؤوس مفك مزدوجة الطرف‏ – ‏Deli‏ – ‏DL252065‏ – ‏10 قطع‏",
+    "nameEn": "Double-Ended Screwdriver Bit Set – Deli – DL252065 – 10 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL252065",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL252065",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x034",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم رؤوس مفك مزدوجة الطرف‏ – ‏Deli‏ – ‏DL254110‏ – ‏10 قطع‏",
+    "nameEn": "Double-Ended Screwdriver Bit Set – Deli – DL254110 – 10 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL254110",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL254110",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x035",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم رؤوس مفك مزدوجة الطرف‏ – ‏Deli‏ – ‏DL6903‏ – ‏10 قطع‏",
+    "nameEn": "Double-Ended Screwdriver Bit Set – Deli – DL6903 – 10 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6903",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6903",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x036",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم رؤوس مفك‏ – ‏Deli‏ – ‏DL250039‏ – ‏39 قطعة‏",
+    "nameEn": "Screwdriver Bit Set – Deli – DL250039 – 39 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL250039",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL250039",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x037",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم خيط تخطيط بالطباشير‏ – ‏Deli‏ – ‏DL25‏ – ‏30 متر‏",
+    "nameEn": "Chalk Line Set – Deli – DL25 – 30 m",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL25",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL25",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x038",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم لقم مفاتيح للإطارات مقاس 1/2 بوصة‏ – ‏Deli‏ – ‏DL2003Q‏ – ‏3 قطع‏",
+    "nameEn": "1/2\" Wheel Socket Set – Deli – DL2003Q – 3 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2003Q",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2003Q",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x039",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مبارد بمقبض أسود‏ – ‏Deli‏ – ‏DL2140‏ – ‏10 قطع 140 مم‏",
+    "nameEn": "File Set Black Handle – Deli – DL2140 – 10 Pcs 140 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2140",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2140",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x040",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مبارد بمقبض‏ – ‏Deli‏ – ‏DL2141‏ – ‏6 قطع 140 مم‏",
+    "nameEn": "File Set with Handle – Deli – DL2141 – 6 Pcs 140 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2141",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2141",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x041",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مبارد بمقبض‏ – ‏Deli‏ – ‏DL2161‏ – ‏6 قطع 160 مم‏",
+    "nameEn": "File Set with Handle – Deli – DL2161 – 6 Pcs 160 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2161",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2161",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x042",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مبارد بمقبض‏ – ‏Deli‏ – ‏DL2181‏ – ‏6 قطع 180 مم‏",
+    "nameEn": "File Set with Handle – Deli – DL2181 – 6 Pcs 180 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2181",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2181",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x043",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفاتيح مشتركة‏ – ‏Deli‏ – ‏DL130014A‏ – ‏14 قطعة‏",
+    "nameEn": "Combination Wrench Set – Deli – DL130014A – 14 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL130014A",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL130014A",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x044",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL240006‏ – ‏6 قطع‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL240006 – 6 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL240006",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL240006",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x045",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفك بسقاطة‏ – ‏Deli‏ – ‏DL3565‏ – ‏65 قطعة‏",
+    "nameEn": "Ratchet Screwdriver Set – Deli – DL3565 – 65 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3565",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3565",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x046",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات مسطحة وصليبية‏ – ‏Deli‏ – ‏DL260002B‏ – ‏2 قطعة‏",
+    "nameEn": "Flat & Phillips Screwdriver Set – Deli – DL260002B – 2 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL260002B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL260002B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x047",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات مسطحة وصليبية‏ – ‏Deli‏ – ‏DL620002‏ – ‏2 قطعة‏",
+    "nameEn": "Flat & Phillips Screwdriver Set – Deli – DL620002 – 2 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL620002",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL620002",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x048",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات براغي‏ – ‏Deli‏ – ‏DL1129‏ – ‏29 قطعة‏",
+    "nameEn": "Screwdriver Set – Deli – DL1129 – 29 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL1129",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL1129",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x049",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL1021D‏ – ‏21 قطعة‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL1021D – 21 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL1021D",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL1021D",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x050",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL260021‏ – ‏21 قطعة‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL260021 – 21 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL260021",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL260021",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x051",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL1130‏ – ‏30 قطعة‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL1130 – 30 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL1130",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL1130",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x052",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL1045D‏ – ‏45 قطعة‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL1045D – 45 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL1045D",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL1045D",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x053",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL3545‏ – ‏45 قطعة‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL3545 – 45 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3545",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3545",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x054",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL3206A‏ – ‏6 قطع‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL3206A – 6 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3206A",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3206A",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x055",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL3575‏ – ‏75 قطعة‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL3575 – 75 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3575",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3575",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x056",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات دقيقة‏ – ‏Deli‏ – ‏DL241007‏ – ‏7 قطع‏",
+    "nameEn": "Precision Screwdriver Set – Deli – DL241007 – 7 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL241007",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL241007",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x057",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفك مع رؤوس أسود‏ – ‏Deli‏ – ‏DL251203‏ – ‏39 قطعة‏",
+    "nameEn": "Screwdriver & Bit Set Black – Deli – DL251203 – 39 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL251203",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL251203",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x058",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مفكات متعددة الاستخدامات‏ – ‏Deli‏ – ‏DL260007‏ – ‏7 قطع‏",
+    "nameEn": "Multi-Purpose Screwdriver Set – Deli – DL260007 – 7 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL260007",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL260007",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x059",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم مقصات تقليم‏ – ‏Deli‏ – ‏DL580003‏ – ‏3 قطع‏",
+    "nameEn": "Garden Pruning Shears Set – Deli – DL580003 – 3 Pcs",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL580003",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL580003",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x060",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غطاء تلميع لجلاخة الزاوية‏ – ‏Deli‏ – ‏DH-YML180-E1‏ – ‏7 بوصات‏",
+    "nameEn": "Polishing Bonnet – Deli – DH-YML180-E1 – 7 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-YML180-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-YML180-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x061",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فرشاة سلكية كأسية‏ – ‏Deli‏ – ‏DH-GSS100-E1‏ – ‏4 بوصات‏",
+    "nameEn": "Cup Wire Brush – Deli – DH-GSS100-E1 – 4 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-GSS100-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-GSS100-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x062",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فرشاة سلكية كأسية‏ – ‏Deli‏ – ‏DH-GSS125-E1‏ – ‏5 بوصات‏",
+    "nameEn": "Cup Wire Brush – Deli – DH-GSS125-E1 – 5 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-GSS125-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-GSS125-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x063",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فرشاة كأسية‏ – ‏Deli‏ – ‏DH-GSS125-E2‏ – ‏5 بوصات‏",
+    "nameEn": "Cup Brush – Deli – DH-GSS125-E2 – 5 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-GSS125-E2",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-GSS125-E2",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x064",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فرشاة كأسية‏ – ‏Deli‏ – ‏DH-GSS050-E3‏ – ‏50 مم‏",
+    "nameEn": "Cup Brush – Deli – DH-GSS050-E3 – 50 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-GSS050-E3",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-GSS050-E3",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x065",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فرشاة كأسية‏ – ‏Deli‏ – ‏DH-GSS075-E3‏ – ‏75 مم‏",
+    "nameEn": "Cup Brush – Deli – DH-GSS075-E3 – 75 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-GSS075-E3",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-GSS075-E3",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x066",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقشرة أسلاك متعددة الوظائف (27 وظيفة)‏ – ‏Deli‏ – ‏DL383014‏ – ‏8 بوصات‏",
+    "nameEn": "27-Function Wire Stripper – Deli – DL383014 – 8 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL383014",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL383014",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x067",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فرشاة سلكية قلمية‏ – ‏Deli‏ – ‏DH-GSS025-E6‏ – ‏25 مم‏",
+    "nameEn": "End Wire Brush – Deli – DH-GSS025-E6 – 25 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-GSS025-E6",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-GSS025-E6",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x068",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ملزمة على شكل F‏ – ‏Deli‏ – ‏DL110525-F‏ – ‏50×250 مم‏",
+    "nameEn": "F-Clamp – Deli – DL110525-F – 50×250 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL110525-F",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL110525-F",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x069",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "كاوية لحام قصدير‏ – ‏Deli‏ – ‏DL88100‏ – ‏100 وات‏",
+    "nameEn": "Soldering Iron – Deli – DL88100 – 100W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL88100",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL88100",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x070",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "كاوية لحام قصدير‏ – ‏Deli‏ – ‏DL8830‏ – ‏30 وات‏",
+    "nameEn": "Soldering Iron – Deli – DL8830 – 30W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL8830",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL8830",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x071",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "كاوية لحام قصدير‏ – ‏Deli‏ – ‏DL8840‏ – ‏40 وات‏",
+    "nameEn": "Soldering Iron – Deli – DL8840 – 40W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL8840",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL8840",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x072",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "كاوية لحام قصدير‏ – ‏Deli‏ – ‏DL8860‏ – ‏60 وات‏",
+    "nameEn": "Soldering Iron – Deli – DL8860 – 60W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL8860",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL8860",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x073",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة‏ – ‏Deli‏ – ‏DL-DC26-E1‏ – ‏2 كيلو 800 وات 26 مم‏",
+    "nameEn": "Rotary Hammer – Deli – DL-DC26-E1 – 2 kg 800W 26 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-DC26-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-DC26-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x074",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة هدم‏ – ‏Deli‏ – ‏DL-DG15-E1‏ – ‏16 كيلو 1900 وات‏",
+    "nameEn": "Demolition Hammer – Deli – DL-DG15-E1 – 16 kg 1900W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-DG15-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-DG15-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x075",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لقمة مفتاح‏ – ‏Deli‏ – ‏DL4810‏ – ‏10 مم‏",
+    "nameEn": "Drill Socket – Deli – DL4810 – 10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL4810",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL4810",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x076",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لقمة مفتاح‏ – ‏Deli‏ – ‏DL4808‏ – ‏8 مم‏",
+    "nameEn": "Drill Socket – Deli – DL4808 – 8 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL4808",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL4808",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x077",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة‏ – ‏Deli‏ – ‏DL447010‏ – ‏1 كيلو‏",
+    "nameEn": "Mallet – Deli – DL447010 – 1 kg",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL447010",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL447010",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x078",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏DL9010B‏ – ‏10 متر 25 مم‏",
+    "nameEn": "Tape Measure – Deli – DL9010B – 10 m 25 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL9010B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL9010B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x079",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏DL9003B‏ – ‏3 متر 16 مم‏",
+    "nameEn": "Tape Measure – Deli – DL9003B – 3 m 16 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL9003B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL9003B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x080",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏HT8316‏ – ‏3 متر 16 مم‏",
+    "nameEn": "Tape Measure – Deli – HT8316 – 3 m 16 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: HT8316",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: HT8316",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x081",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏DL3796‏ – ‏5 متر 19 مم‏",
+    "nameEn": "Tape Measure – Deli – DL3796 – 5 m 19 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3796",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3796",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x082",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏DL9005B‏ – ‏5 متر 19 مم‏",
+    "nameEn": "Tape Measure – Deli – DL9005B – 5 m 19 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL9005B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL9005B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x083",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏H8005A‏ – ‏5 متر 19 مم‏",
+    "nameEn": "Tape Measure – Deli – H8005A – 5 m 19 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: H8005A",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: H8005A",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x084",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏HT8519Y‏ – ‏5 متر 19 مم‏",
+    "nameEn": "Tape Measure – Deli – HT8519Y – 5 m 19 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: HT8519Y",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: HT8519Y",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x085",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏DL9025B‏ – ‏5 متر 25 مم‏",
+    "nameEn": "Tape Measure – Deli – DL9025B – 5 m 25 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL9025B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL9025B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x086",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس‏ – ‏Deli‏ – ‏DL3798Y‏ – ‏7.5 متر 25 مم‏",
+    "nameEn": "Tape Measure – Deli – DL3798Y – 7.5 m 25 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3798Y",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3798Y",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x087",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جهاز قياس مسافات ليزري‏ – ‏Deli‏ – ‏DL4168‏ – ‏40 متر‏",
+    "nameEn": "Laser Distance Measurer – Deli – DL4168 – 40 m",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL4168",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL4168",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x088",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جهاز قياس مسافات ليزري‏ – ‏Deli‏ – ‏DL4170‏ – ‏80 متر‏",
+    "nameEn": "Laser Distance Measurer – Deli – DL4170 – 80 m",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL4170",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL4170",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x089",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية نجارة قائمة‏ – ‏Deli‏ – ‏DL7300Y‏ – ‏300 مم‏",
+    "nameEn": "Carpenter Square – Deli – DL7300Y – 300 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL7300Y",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL7300Y",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x090",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "إزميل خشب‏ – ‏Deli‏ – ‏DL6238‏ – ‏10 مم‏",
+    "nameEn": "Wood Chisel – Deli – DL6238 – 10 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6238",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6238",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x091",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "إزميل خشب‏ – ‏Deli‏ – ‏DL6258‏ – ‏16 مم‏",
+    "nameEn": "Wood Chisel – Deli – DL6258 – 16 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6258",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6258",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x092",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "إزميل خشب‏ – ‏Deli‏ – ‏DL6234‏ – ‏19 مم‏",
+    "nameEn": "Wood Chisel – Deli – DL6234 – 19 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6234",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6234",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x093",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "إزميل خشب‏ – ‏Deli‏ – ‏DL6201‏ – ‏25 مم‏",
+    "nameEn": "Wood Chisel – Deli – DL6201 – 25 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6201",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6201",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x094",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسدس سيليكون‏ – ‏Deli‏ – ‏DL2370A‏ – ‏10 بوصات‏",
+    "nameEn": "Caulking Gun – Deli – DL2370A – 10 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2370A",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2370A",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x095",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسدس سيليكون‏ – ‏Deli‏ – ‏DL2360‏ – ‏9 بوصات‏",
+    "nameEn": "Caulking Gun – Deli – DL2360 – 9 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2360",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2360",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x096",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏Deli‏ – ‏DE231‏ – ‏20 فولت 500 نيوتن‏",
+    "nameEn": "Cordless Impact Wrench – Deli – DE231 – 20V 500 Nm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DE231",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DE231",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x097",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏Deli‏ – ‏DC230‏ – ‏20 فولت 320 نيوتن‏",
+    "nameEn": "Cordless Impact Wrench – Deli – DC230 – 20V 320 Nm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DC230",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DC230",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x098",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏Deli‏ – ‏DE-BS20-1D2‏ – ‏20 فولت 350 نيوتن‏",
+    "nameEn": "Cordless Impact Wrench – Deli – DE-BS20-1D2 – 20V 350 Nm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DE-BS20-1D2",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DE-BS20-1D2",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x099",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي هوائي‏ – ‏Deli‏ – ‏DL-QDB21-850‏ – ‏1/2 بوصة‏",
+    "nameEn": "Pneumatic Impact Wrench – Deli – DL-QDB21-850 – 1/2 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-QDB21-850",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-QDB21-850",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x100",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسدس رش مياه بمقبض صغير‏ – ‏Deli‏ – ‏DL8758‏",
+    "nameEn": "Water Spray Gun Small Handle – Deli – DL8758",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL8758",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL8758",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x101",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مشبك زنبركي‏ – ‏Deli‏ – ‏DL110004‏ – ‏4 بوصات‏",
+    "nameEn": "Spring Clamp – Deli – DL110004 – 4 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL110004",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL110004",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x102",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة‏ – ‏Deli‏ – ‏DL447010‏ – ‏1 كيلو‏",
+    "nameEn": "Hammer – Deli – DL447010 – 1 kg",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL447010",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL447010",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x103",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة مطاطية‏ – ‏Deli‏ – ‏DL5616‏ – ‏16 أونصة‏",
+    "nameEn": "Mallet – Deli – DL5616 – 16 oz",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL5616",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL5616",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x104",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح مواسير‏ – ‏Deli‏ – ‏DL2508‏ – ‏8 بوصات‏",
+    "nameEn": "Pipe Wrench – Deli – DL2508 – 8 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2508",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2508",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x105",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح قابل للضبط‏ – ‏Deli‏ – ‏DL2518‏ – ‏18 بوصة‏",
+    "nameEn": "Adjustable Wrench – Deli – DL2518 – 18 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2518",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2518",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x106",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح مواسير‏ – ‏Deli‏ – ‏DL2510‏ – ‏10 بوصات‏",
+    "nameEn": "Pipe Wrench – Deli – DL2510 – 10 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2510",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2510",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x107",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح مواسير‏ – ‏Deli‏ – ‏DL2512‏ – ‏12 بوصة‏",
+    "nameEn": "Pipe Wrench – Deli – DL2512 – 12 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2512",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2512",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x108",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح مواسير‏ – ‏Deli‏ – ‏DL2514‏ – ‏14 بوصة‏",
+    "nameEn": "Pipe Wrench – Deli – DL2514 – 14 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2514",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2514",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x109",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح قابل للضبط‏ – ‏Deli‏ – ‏DL30108‏ – ‏8 بوصات‏",
+    "nameEn": "Adjustable Wrench – Deli – DL30108 – 8 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL30108",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL30108",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x110",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح فلتر الزيت بالسلسلة‏ – ‏Deli‏ – ‏DL7409‏",
+    "nameEn": "Chain Oil Filter Wrench – Deli – DL7409",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL7409",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL7409",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x111",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح فلتر الزيت بالحزام‏ – ‏Deli‏ – ‏DL7309‏",
+    "nameEn": "Strap Oil Filter Wrench – Deli – DL7309",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL7309",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL7309",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x112",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح فلتر الزيت‏ – ‏Deli‏ – ‏DL7400B‏",
+    "nameEn": "Oil Filter Wrench – Deli – DL7400B",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL7400B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL7400B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x113",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة تفريز (راوتر)‏ – ‏Deli‏ – ‏DL-MX12-E1‏ – ‏12 مم 1600 وات‏",
+    "nameEn": "Router – Deli – DL-MX12-E1 – 12 mm 1600W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-MX12-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-MX12-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x114",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة تفريز (راوتر)‏ – ‏Deli‏ – ‏DE-XB550-1E‏ – ‏6 مم 550 وات‏",
+    "nameEn": "Trimmer Router – Deli – DE-XB550-1E – 6 mm 550W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DE-XB550-1E",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DE-XB550-1E",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x115",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك قصير‏ – ‏Deli‏ – ‏DL260206‏ – ‏6×1‏",
+    "nameEn": "Stubby Screwdriver – Deli – DL260206 – 6×1",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL260206",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL260206",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x116",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك قصير‏ – ‏Deli‏ – ‏DL636009‏ – ‏9×1‏",
+    "nameEn": "Stubby Screwdriver – Deli – DL636009 – 9×1",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL636009",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL636009",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x117",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي‏ – ‏Deli‏ – ‏DL3455‏ – ‏PH0 150 مم‏",
+    "nameEn": "Phillips Screwdriver – Deli – DL3455 – PH0 150 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3455",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL3455",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x118",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي‏ – ‏Deli‏ – ‏DL623100‏ – ‏PH1 100 مم‏",
+    "nameEn": "Phillips Screwdriver – Deli – DL623100 – PH1 100 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL623100",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL623100",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x119",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي‏ – ‏Deli‏ – ‏DL635100‏ – ‏PH1 100 مم‏",
+    "nameEn": "Phillips Screwdriver – Deli – DL635100 – PH1 100 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL635100",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL635100",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x120",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي أصفر‏ – ‏Deli‏ – ‏DL625075T‏ – ‏PH0 75 مم‏",
+    "nameEn": "Phillips Screwdriver Yellow – Deli – DL625075T – PH0 75 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL625075T",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL625075T",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x121",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي أصفر‏ – ‏Deli‏ – ‏DL625100T‏ – ‏PH1 100 مم‏",
+    "nameEn": "Phillips Screwdriver Yellow – Deli – DL625100T – PH1 100 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL625100T",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL625100T",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x122",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي أصفر‏ – ‏Deli‏ – ‏DL626038T‏ – ‏PH2 38 مم‏",
+    "nameEn": "Phillips Screwdriver Yellow – Deli – DL626038T – PH2 38 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL626038T",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL626038T",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x123",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي أصفر‏ – ‏Deli‏ – ‏DL626125‏ – ‏PH2 125 مم‏",
+    "nameEn": "Phillips Screwdriver Yellow – Deli – DL626125 – PH2 125 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL626125",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL626125",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x124",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صليبي أصفر‏ – ‏Deli‏ – ‏DL628200T‏ – ‏PH3 200 مم‏",
+    "nameEn": "Phillips Screwdriver Yellow – Deli – DL628200T – PH3 200 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL628200T",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL628200T",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x125",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك براغي لاسلكي‏ – ‏Deli‏ – ‏DL-DP04-E2B1‏ – ‏3.6 فولت‏",
+    "nameEn": "Cordless Screwdriver – Deli – DL-DP04-E2B1 – 3.6V",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-DP04-E2B1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-DP04-E2B1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x126",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك براغي قصير‏ – ‏Deli‏ – ‏DL626010‏",
+    "nameEn": "Stubby Screwdriver – Deli – DL626010",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL626010",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL626010",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x127",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك مسطح‏ – ‏Deli‏ – ‏DL6260381‏ – ‏6×38 مم‏",
+    "nameEn": "Flat Screwdriver – Deli – DL6260381 – 6×38 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6260381",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6260381",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x128",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك مسطح أصفر‏ – ‏Deli‏ – ‏DL6230751‏ – ‏3×75 مم‏",
+    "nameEn": "Flat Screwdriver Yellow – Deli – DL6230751 – 3×75 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6230751",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6230751",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x129",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك مسطح أصفر‏ – ‏Deli‏ – ‏DL6252001‏ – ‏5×200 مم‏",
+    "nameEn": "Flat Screwdriver Yellow – Deli – DL6252001 – 5×200 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6252001",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6252001",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x130",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك مسطح أصفر‏ – ‏Deli‏ – ‏DL6282001T‏ – ‏8×200 مم‏",
+    "nameEn": "Flat Screwdriver Yellow – Deli – DL6282001T – 8×200 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL6282001T",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL6282001T",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x131",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مكشطة زجاج‏ – ‏Deli‏ – ‏DL4723C‏ – ‏145 مم‏",
+    "nameEn": "Window Scraper – Deli – DL4723C – 145 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL4723C",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL4723C",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x132",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة أنابيب‏ – ‏Deli‏ – ‏DL2504‏ – ‏32 مم‏",
+    "nameEn": "Pipe Cutter – Deli – DL2504 – 32 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2504",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2504",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x133",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة أنابيب‏ – ‏Deli‏ – ‏DL350033‏ – ‏33 مم‏",
+    "nameEn": "Pipe Cutter – Deli – DL350033 – 33 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL350033",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL350033",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x134",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة أنابيب‏ – ‏Deli‏ – ‏DL2507‏ – ‏42 مم‏",
+    "nameEn": "Pipe Cutter – Deli – DL2507 – 42 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2507",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2507",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x135",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة أنابيب‏ – ‏Deli‏ – ‏DL350042‏ – ‏42 مم‏",
+    "nameEn": "Pipe Cutter – Deli – DL350042 – 42 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL350042",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL350042",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x136",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة بلاط‏ – ‏Deli‏ – ‏DL354060‏",
+    "nameEn": "Tile Cutter – Deli – DL354060",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL354060",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL354060",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x137",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقص صاج للقص اليساري‏ – ‏Deli‏ – ‏DL20031‏ – ‏10 بوصات‏",
+    "nameEn": "Left Cut Aviation Snips – Deli – DL20031 – 10 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL20031",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL20031",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x138",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقص صاج للقص المستقيم‏ – ‏Deli‏ – ‏DL20030‏",
+    "nameEn": "Straight Cut Aviation Snips – Deli – DL20030",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL20030",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL20030",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x139",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقص معادن‏ – ‏Deli‏ – ‏DL25910‏ – ‏10 بوصات‏",
+    "nameEn": "Metal Shears – Deli – DL25910 – 10 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL25910",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL25910",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x140",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقياس ضغط الإطارات يدوي‏ – ‏Deli‏ – ‏DL8530‏",
+    "nameEn": "Manual Tire Pressure Gauge – Deli – DL8530",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL8530",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL8530",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x141",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة تفريز (راوتر)‏ – ‏Deli‏ – ‏DL-XB06-E1‏ – ‏6 مم 550 وات‏",
+    "nameEn": "Trimmer Router – Deli – DL-XB06-E1 – 6 mm 550W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-XB06-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-XB06-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x142",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة لحام مواسير PPR‏ – ‏Deli‏ – ‏DL82032‏ – ‏20-25-32 مم‏",
+    "nameEn": "PPR Pipe Welding Machine – Deli – DL82032 – 20-25-32 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL82032",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL82032",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x143",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة لحام محمولة‏ – ‏Deli‏ – ‏DL-ZX7-120-E1‏ – ‏120 أمبير‏",
+    "nameEn": "Portable Welding Machine – Deli – DL-ZX7-120-E1 – 120A",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-ZX7-120-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-ZX7-120-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x144",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "آلة لحام محمولة‏ – ‏Deli‏ – ‏DL-ZX7-160-E1‏ – ‏160 أمبير‏",
+    "nameEn": "Portable Welding Machine – Deli – DL-ZX7-160-E1 – 160A",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-ZX7-160-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-ZX7-160-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x145",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسطرين بناء‏ – ‏Deli‏ – ‏DL509208‏ – ‏8 بوصات‏",
+    "nameEn": "Bricklaying Trowel – Deli – DL509208 – 8 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL509208",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL509208",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x146",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مالج مسنن للاصق‏ – ‏Deli‏ – ‏DL509310‏ – ‏100×230 مم‏",
+    "nameEn": "Notched Trowel – Deli – DL509310 – 100×230 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL509310",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL509310",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x147",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مالج لياسة‏ – ‏Deli‏ – ‏DL509309‏ – ‏100×230 مم‏",
+    "nameEn": "Plastering Trowel – Deli – DL509309 – 100×230 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL509309",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL509309",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x148",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار منحنيات‏ – ‏Deli‏ – ‏DL-XJ80-E1‏ – ‏600 وات‏",
+    "nameEn": "Jigsaw – Deli – DL-XJ80-E1 – 600W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-XJ80-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-XJ80-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x149",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار جنزير لاسلكي‏ – ‏Deli‏ – ‏EDG105‏ – ‏8 بوصات 20 فولت‏",
+    "nameEn": "Cordless Chainsaw – Deli – EDG105 – 8 Inch 20V",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: EDG105",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: EDG105",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x150",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار معادن يدوي‏ – ‏Deli‏ – ‏DL353712‏ – ‏300 مم‏",
+    "nameEn": "Hacksaw – Deli – DL353712 – 300 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL353712",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL353712",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x151",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار دائري شحن‏ – ‏Deli‏ – ‏DC552Z‏ – ‏185 مم 20 فولت‏",
+    "nameEn": "Cordless Circular Saw – Deli – DC552Z – 185 mm 20V",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DC552Z",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DC552Z",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x152",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار رخام دائري‏ – ‏Deli‏ – ‏DE-YS110-1E‏ – ‏110 مم 1300 وات‏",
+    "nameEn": "Marble Circular Saw – Deli – DE-YS110-1E – 110 mm 1300W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DE-YS110-1E",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DE-YS110-1E",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x153",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار جنزير يعمل بالبنزين‏ – ‏Deli‏ – ‏DL585020‏ – ‏58 سي سي‏",
+    "nameEn": "Petrol Chainsaw – Deli – DL585020 – 58cc",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL585020",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL585020",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x154",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار جنزير كهربائي‏ – ‏Deli‏ – ‏DL-LJ405-E1‏ – ‏1600 وات‏",
+    "nameEn": "Electric Chainsaw – Deli – DL-LJ405-E1 – 1600W",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL-LJ405-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL-LJ405-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x155",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار معادن يدوي‏ – ‏Deli‏ – ‏DL353212‏ – ‏12 بوصة‏",
+    "nameEn": "Hacksaw – Deli – DL353212 – 12 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL353212",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL353212",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x156",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار معادن يدوي‏ – ‏Deli‏ – ‏DL353712‏ – ‏12 بوصة‏",
+    "nameEn": "Hacksaw – Deli – DL353712 – 12 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL353712",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL353712",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x157",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة زجاج ماسية‏ – ‏Deli‏ – ‏DL2701‏ – ‏3-12 مم‏",
+    "nameEn": "Diamond Glass Cutter – Deli – DL2701 – 3-12 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2701",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2701",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x158",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قاطعة زجاج بمقبض بلاستيكي‏ – ‏Deli‏ – ‏DL2700‏ – ‏3-12 مم‏",
+    "nameEn": "Glass Cutter Plastic Handle – Deli – DL2700 – 3-12 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL2700",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL2700",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x159",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "سكين قاطع عريض‏ – ‏Deli‏ – ‏DL0035‏ – ‏25 مم‏",
+    "nameEn": "Heavy Duty Utility Knife – Deli – DL0035 – 25 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL0035",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL0035",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x160",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شاقول بناء بالخيط‏ – ‏Deli‏ – ‏DL22‏ – ‏6 متر‏",
+    "nameEn": "Plumb Bob with Line – Deli – DL22 – 6 m",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL22",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL22",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x161",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان ليزر 1.5 خط‏ – ‏Deli‏ – ‏DL332302‏",
+    "nameEn": "1.5 Line Laser Level – Deli – DL332302",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL332302",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL332302",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x162",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان تسوية بثلاث فقاعات‏ – ‏Deli‏ – ‏DL7001000B‏ – ‏1 متر‏",
+    "nameEn": "Spirit Level 3 Vials – Deli – DL7001000B – 1 m",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL7001000B",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL7001000B",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x163",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان تسوية بثلاث فقاعات‏ – ‏Deli‏ – ‏DL290230‏ – ‏23 سم‏",
+    "nameEn": "Spirit Level 3 Vials – Deli – DL290230 – 23 cm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL290230",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL290230",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x164",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وصلة خرطوم بصمام إيقاف المياه‏ – ‏Deli‏ – ‏DL8793‏ – ‏1/2 بوصة‏",
+    "nameEn": "Hose Connector with Water Stop – Deli – DL8793 – 1/2 Inch",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL8793",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL8793",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x165",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وصلة رؤوس مفك‏ – ‏Deli‏ – ‏DL106002‏",
+    "nameEn": "Bit Holder Extension – Deli – DL106002",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL106002",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DL106002",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "deli-x166",
+    "categoryId": "tools",
+    "brand": "Deli",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار ثقوب كأسي‏ – ‏Deli‏ – ‏DH-SKK022-E1‏ – ‏22 مم‏",
+    "nameEn": "Hole Saw – Deli – DH-SKK022-E1 – 22 mm",
+    "descriptionAr": "منتج أصلي من Deli ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Deli product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DH-SKK022-E1",
+      "العلامة التجارية: Deli"
+    ],
+    "specEn": [
+      "Code: DH-SKK022-E1",
+      "Brand: Deli"
+    ]
+  },
+  {
+    "id": "knauf-x001",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏علاقة مباشرة‏ – ‏60/27‏",
+    "nameEn": "Knauf – Direct Hanger – 60/27",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x002",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏قائم معدني CW‏ – ‏5 سم‏",
+    "nameEn": "Knauf – CW Stud Profile – 5 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x003",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏مجرى معدني أفقي UW‏ – ‏5 سم‏ – ‏4 متر‏",
+    "nameEn": "Knauf – UW Runner Profile – 5 cm –4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x004",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏لوح جبس أبيض‏ – ‏2.4 متر‏",
+    "nameEn": "Knauf – White Gypsum Board – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x005",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏لوح جبس أبيض‏ – ‏3 متر‏",
+    "nameEn": "Knauf – White Gypsum Board – 3 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x006",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏لوح جبس أخضر جزائري الصنع‏ – ‏3 متر‏",
+    "nameEn": "Knauf – Green Gypsum Board (Algerian) – 3 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x007",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏لوح جبس أخضر‏ – ‏2.4 متر‏",
+    "nameEn": "Knauf – Green Gypsum Board – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x008",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏لوح جبس أزرق‏ – ‏Gardex‏",
+    "nameEn": "Knauf – Blue Gypsum Board – Gardex",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x009",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏قناة CD‏ – ‏0.6 مم‏ – ‏4 متر‏",
+    "nameEn": "Knauf – CD Channel Profile – 0.6 mm – 4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x010",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏مجرى UD‏ – ‏0.6 مم‏ – ‏3 متر‏",
+    "nameEn": "Knauf – UD Runner Profile – 0.6 mm – 3 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x011",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏تل تيش‏ – ‏1.5 متر‏",
+    "nameEn": "Knauf – Hanging Wire – 1.5 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x012",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏مجرى UW‏ – ‏5 سم‏ – ‏4 متر‏",
+    "nameEn": "Knauf – UW Runner Profile – 5 cm – 4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x013",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏علاقة بقفل لمقطع CD‏",
+    "nameEn": "Knauf – Hanger with Lock for CD Profile",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x014",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏صوف صخري‏ – ‏Mineral Plus‏ – ‏600×120 مم‏",
+    "nameEn": "Knauf – Rock Wool – Mineral Plus – 600×120 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x015",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏CD‏ – ‏60/27‏",
+    "nameEn": "Knauf – CD Profile Connector – 60/27",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x016",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏معجون جبس‏",
+    "nameEn": "Knauf – Gypsum Filler",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x017",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏وصلة مزدوجة‏ – ‏100 قطعة‏",
+    "nameEn": "Knauf – Double Connector – 100 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 100 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 100 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x018",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏صوف معدني عازل للصوت والحرارة‏",
+    "nameEn": "Knauf – Mineral Wool Sound & Thermal Insulation",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x019",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏مسمار أسود‏ – ‏2.5‏",
+    "nameEn": "Knauf – Black Drywall Screw – 2.5",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x020",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏مشبك سقف‏ – ‏1000 قطعة‏",
+    "nameEn": "Knauf – Ceiling Clips – 1000 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 1000 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 1000 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x021",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏ركاب نونيوس‏ – ‏100 قطعة‏",
+    "nameEn": "Knauf – Nonius Stirrup – 100 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 100 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 100 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x022",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏مسمار علاقة نونيوس‏ – ‏100 قطعة‏",
+    "nameEn": "Knauf – Nonius Hanger Pin – 100 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 100 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 100 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x023",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏الجزء العلوي لعلاقة نونيوس‏ – ‏20 سم‏ – ‏50 قطعة‏",
+    "nameEn": "Knauf – Nonius Hanger Upper Part – 20 cm – 50 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 50 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 50 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x024",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Knauf‏ – ‏الجزء العلوي لعلاقة نونيوس‏ – ‏60 سم‏ – ‏50 قطعة‏",
+    "nameEn": "Knauf – Nonius Hanger Upper Part – 60 cm – 50 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 50 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 50 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x025",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قائم معدني‏ – ‏7 سم‏",
+    "nameEn": "Metal Stud – 7 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x026",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقطع أوميغا عريض‏ – ‏8 سم‏ – ‏0.5 مم‏",
+    "nameEn": "Wide Omega Profile – 8 cm – 0.5 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x027",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "BAZOOKA‏ – ‏مسمار‏ – ‏3.5‏",
+    "nameEn": "BAZOOKA – Screw – 3.5",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x028",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية بيضاء للسقف المعلق‏ – ‏0.5 مم‏",
+    "nameEn": "White Suspended Ceiling Wall Angle – 0.5 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x029",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قضيب ملولب مجلفن‏ – ‏6 مم‏",
+    "nameEn": "Zinc-Plated Threaded Rod – 6 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x030",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Gyproc‏ – ‏معجون جبس‏ – ‏Easi-Fill‏ – ‏12.5 كيلو‏",
+    "nameEn": "Gyproc – Gypsum Joint Filler – Easi-Fill – 12.5 kg",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x031",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Gyproc‏ – ‏معجون جبس الممتاز‏ – ‏Gypfine 120‏ – ‏12 كيلو‏",
+    "nameEn": "Gyproc – Gypsum Filler Al Momtaz – Gypfine 120 – 12 kg",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Gypfine 120",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: Gypfine 120",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x032",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بلاطة سقف معلق معدنية‏",
+    "nameEn": "Metal Ceiling Tile",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x033",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "FRIULSIDER‏ – ‏خابور تثبيت‏ – ‏100 قطعة‏",
+    "nameEn": "FRIULSIDER – Italian Wall Anchor – 100 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 100 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 100 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x034",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ETACO‏ – ‏خابور تثبيت‏ – ‏250 قطعة‏",
+    "nameEn": "ETACO – Wall Anchor – 250 Pcs",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 250 Pcs",
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Code: 250 Pcs",
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x035",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية F‏",
+    "nameEn": "F Shadow Angle Profile",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x036",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "PATTA‏ – ‏مسمار تك‏ – ‏1 سم‏",
+    "nameEn": "PATTA – Tek Screw – 1 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x037",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ملحق تثبيت V‏",
+    "nameEn": "V Accessory",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x038",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أوميغا‏ – ‏3.5 متر‏",
+    "nameEn": "Omega Profile – 3.5 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x039",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أوميغا‏ – ‏8 سم‏ – ‏0.4 مم‏",
+    "nameEn": "Omega Profile – 8 cm – 0.4 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x040",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لوح جبس أبيض جزائري (جيبلاك)‏ – ‏2.4 متر‏",
+    "nameEn": "White Gypsum Board Gyplac (Algerian) – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x041",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لوح جبس أبيض مصري (Das Blank)‏ – ‏2.4 متر‏",
+    "nameEn": "White Gypsum Board Das Blank (Egyptian) – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x042",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لوح جبس أحمر جزائري‏ – ‏2.4 متر‏",
+    "nameEn": "Red Gypsum Board Black (Algerian) – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x043",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لوح جبس أبيض مصري (جيبورد)‏ – ‏2.4 متر‏",
+    "nameEn": "White Gypsum Board Gypboard (Egyptian) – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x044",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جسر سقف معلق‏ – ‏120 سم‏",
+    "nameEn": "Suspended Ceiling Tee – 120 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x045",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جسر سقف معلق‏ – ‏360 سم‏",
+    "nameEn": "Suspended Ceiling Tee – 360 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x046",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جسر سقف معلق‏ – ‏60 سم‏",
+    "nameEn": "Suspended Ceiling Tee – 60 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x047",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقطع معدني C‏ – ‏0.4 مم‏",
+    "nameEn": "C Profile – 0.4 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x048",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقطع معدني C‏ – ‏0.5 مم‏",
+    "nameEn": "C Profile – 0.5 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x049",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مجرى معدني أفقي‏ – ‏7 سم‏",
+    "nameEn": "Metal Runner Track – 7 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x050",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "خابور تثبيت (فيشر)‏",
+    "nameEn": "Wall Plug",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x051",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية ظل على شكل W‏",
+    "nameEn": "W Shadow Angle Profile",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x052",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية مجلفنة‏ – ‏سماكة 0.5 مم‏",
+    "nameEn": "Galvanized Angle – 0.5 mm Thick",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x053",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية حماية مثقبة‏ – ‏0.4 مم‏",
+    "nameEn": "Perforated Corner Bead – 0.4 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x054",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية حماية مثقبة‏ – ‏0.5 مم‏",
+    "nameEn": "Perforated Corner Bead – 0.5 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x055",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية مخرمة‏",
+    "nameEn": "Perforated Angle Bead",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x056",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية مجلفنة‏ – ‏3.5 متر‏",
+    "nameEn": "Galvanized Angle – 3.5 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x057",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Bordex‏ – ‏لياسة خارجية (ستوكو)‏",
+    "nameEn": "Bordex – Exterior Stucco",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x058",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Bordex‏ – ‏شبك تقوية خارجي أسود‏",
+    "nameEn": "Bordex – Black Exterior Mesh",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x059",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "صامولة‏ – ‏6 مم‏",
+    "nameEn": "Nut – 6 mm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x060",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فتحة صيانة‏ – ‏50×50 سم‏",
+    "nameEn": "Access Panel – 50×50 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x061",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فتحة صيانة‏ – ‏30×30 سم‏",
+    "nameEn": "Access Panel – 30×30 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x062",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فتحة صيانة‏ – ‏40×40 سم‏",
+    "nameEn": "Access Panel – 40×40 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x063",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فتحة صيانة‏ – ‏80×80 سم‏",
+    "nameEn": "Access Panel – 80×80 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x064",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "فتحة صيانة تركية الصنع‏ – ‏60×60 سم‏",
+    "nameEn": "Turkish Access Panel – 60×60 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x065",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "Bordex‏ – ‏لوح ألياف (فايبر بورد)‏ – ‏2.4 متر‏",
+    "nameEn": "Bordex – Fiber Board – 2.4 m",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x066",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "PATTA‏ – ‏مسمار‏ – ‏3.5‏",
+    "nameEn": "PATTA – Screw – 3.5",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x067",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسمار أسود‏ – ‏2.5‏",
+    "nameEn": "Black Drywall Screw – 2.5",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x068",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسمار أسود برأس مثقاب‏ – ‏3.5‏",
+    "nameEn": "Black Self-Drilling Screw – 3.5",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x069",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسمار ساس أصفر‏",
+    "nameEn": "Yellow SAS Screw",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x070",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسمار للصاج‏ – ‏1.5 سم‏",
+    "nameEn": "Self-Tapping Sheet Metal Screw – 1.5 cm",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x071",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسمار مجلفن للصاج‏ – ‏2.5‏",
+    "nameEn": "Galvanized Self-Tapping Sheet Metal Screw – 2.5",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x072",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مقطع معدني‏",
+    "nameEn": "Metal Profile",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "knauf-x073",
+    "categoryId": "gypsum",
+    "brand": "Knauf",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية حماية U‏",
+    "nameEn": "U Edge Protection Bead",
+    "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Knauf"
+    ],
+    "specEn": [
+      "Brand: Knauf"
+    ]
+  },
+  {
+    "id": "topwet-x001",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وصلة صرف مع مادة تشحيم‏ – ‏TopWet‏ – ‏TW SAN TES 75 S‏",
+    "nameEn": "Drain Fitting with Lubrication – TopWet – TW SAN TES 75 S",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: TW SAN TES 75 S",
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Code: TW SAN TES 75 S",
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x002",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "سلة تصفية‏ – ‏TopWet‏ – ‏TWS C‏ – ‏25×15×20 سم‏",
+    "nameEn": "Strainer Basket – TopWet – TWS C – 25×15×20 cm",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x003",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مصرف أرضي متكامل بغطاء تصفية‏ – ‏TopWet‏ – ‏TWJ UNI 75 BIT‏",
+    "nameEn": "Complete Floor Drain with Round Grate – TopWet – TWJ UNI 75 BIT",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: TWJ UNI 75 BIT",
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Code: TWJ UNI 75 BIT",
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x004",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مصرف سطح عمودي بطوق عزل‏ – ‏TopWet‏ – ‏BIT‏",
+    "nameEn": "Vertical Roof Outlet with Sealing Collar – TopWet – BIT",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x005",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مصرف سطح عمودي بطوق عزل‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Vertical Roof Outlet with Sealing Collar – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x006",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مصرف سطح أفقي‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Horizontal Roof Outlet with Sealing Collar – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x007",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مزراب دائري بطوق عزل‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Round Spout with Sealing Collar – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x008",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مزراب دائري بطوق عزل‏ – ‏TopWet‏ – ‏FPO‏",
+    "nameEn": "Round Spout with Sealing Collar – TopWet – FPO",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x009",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مدخنة تهوية للسطح‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Roof Ventilation Chimney with Sealing Collar – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x010",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ماسورة تهوية لشبكة الصرف‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Drainage Vent Pipe with Sealing Collar – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x011",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ماسورة تهوية لشبكة الصرف‏ – ‏TopWet‏ – ‏FPO‏",
+    "nameEn": "Drainage Vent Pipe with Sealing Collar – TopWet – FPO",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x012",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منفذ كوابل بطوق عزل‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Cable Entry with Sealing Collar – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x013",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منفذ كوابل بطوق عزل‏ – ‏TopWet‏ – ‏FPO‏",
+    "nameEn": "Cable Entry with Sealing Collar – TopWet – FPO",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x014",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعة مشكّلة دائرية مغلقة‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Closed Circular Formed Fitting – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x015",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طوق عزل لفتحة دائرية‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Sealing Collar for Round Hole – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x016",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعة مشكّلة مغلقة لمنفذ الكوابل‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Closed Formed Fitting for Cable Entry – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x017",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعة مخروطية‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Conical Fitting – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "topwet-x018",
+    "categoryId": "adhesives",
+    "brand": "TOP WET",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعة منفاخية‏ – ‏TopWet‏ – ‏PVC‏",
+    "nameEn": "Bellows Type Fitting – TopWet – PVC",
+    "descriptionAr": "منتج أصلي من TOP WET ضمن فئة أنظمة تصريف مياه الأمطار. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine TOP WET product in the Rainwater Drainage Systems category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: TOP WET"
+    ],
+    "specEn": [
+      "Brand: TOP WET"
+    ]
+  },
+  {
+    "id": "agt-x001",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وزرة أرضية خشبية‏ – ‏AGT‏ – ‏SPR-5000-E‏ – ‏2.4 متر‏",
+    "nameEn": "Wood Skirting – AGT – SPR-5000-E – 2.4 m",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: SPR-5000-E",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: SPR-5000-E",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "item-x001",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غطاء فاصل تمدد‏ – ‏5603-100-C‏",
+    "nameEn": "Expansion Joint Cover – 5603-100-C",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 5603-100-C"
+    ],
+    "specEn": [
+      "Code: 5603-100-C"
+    ]
+  },
+  {
+    "id": "item-x002",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعة سقف لفاصل التمدد‏ – ‏5603-100-C‏",
+    "nameEn": "Ceiling Expansion Joint Piece – 5603-100-C",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 5603-100-C"
+    ],
+    "specEn": [
+      "Code: 5603-100-C"
+    ]
+  },
+  {
+    "id": "agt-x002",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Line‏ – ‏AGT‏ – ‏Talya V (508)‏",
+    "nameEn": "Natura Line Laminate Flooring – AGT – Talya V (508)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x003",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Line‏ – ‏AGT‏ – ‏Ilgaz M. V (507)‏",
+    "nameEn": "Natura Line Laminate Flooring – AGT – Ilgaz M. V (507)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x004",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Line‏ – ‏AGT‏ – ‏Meric V (506)‏",
+    "nameEn": "Natura Line Laminate Flooring – AGT – Meric V (506)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x005",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Line‏ – ‏AGT‏ – ‏Tuna (505)‏",
+    "nameEn": "Natura Line Laminate Flooring – AGT – Tuna (505)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Tuna (505)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Tuna (505)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x006",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Select‏ – ‏AGT‏ – ‏Olimpos Mese NSLC (208)‏",
+    "nameEn": "Natura Select Laminate Flooring – AGT – Olimpos Mese NSLC (208)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Olimpos Mese NSLC (208)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Olimpos Mese NSLC (208)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x007",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Select‏ – ‏AGT‏ – ‏Samara (400)‏",
+    "nameEn": "Natura Select Laminate Flooring – AGT – Samara (400)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Samara (400)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Samara (400)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x008",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Bella Neo‏ – ‏AGT‏ – ‏Defne (108)‏",
+    "nameEn": "Bella Neo Laminate Flooring – AGT – Defne (108)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Defne (108)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Defne (108)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x009",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Bella Neo‏ – ‏AGT‏ – ‏Gardenya (109)‏",
+    "nameEn": "Bella Neo Laminate Flooring – AGT – Gardenya (109)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Gardenya (109)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Gardenya (109)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x010",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Select‏ – ‏AGT‏ – ‏Mese N.SLC (204)‏",
+    "nameEn": "Natura Select Laminate Flooring – AGT – Mese N.SLC (204)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Mese N.SLC (204)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Mese N.SLC (204)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x011",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Select‏ – ‏AGT‏ – ‏Siraz Mese (200)‏",
+    "nameEn": "Natura Select Laminate Flooring – AGT – Siraz Mese (200)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Siraz Mese (200)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Siraz Mese (200)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "agt-x012",
+    "categoryId": "flooring",
+    "brand": "AGT",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Natura Select (عينة)‏ – ‏AGT‏ – ‏Siraz Mese (200)‏",
+    "nameEn": "Natura Select Laminate Flooring (Sample) – AGT – Siraz Mese (200)",
+    "descriptionAr": "منتج أصلي من AGT ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine AGT product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Siraz Mese (200)",
+      "العلامة التجارية: AGT"
+    ],
+    "specEn": [
+      "Code: Siraz Mese (200)",
+      "Brand: AGT"
+    ]
+  },
+  {
+    "id": "dekonil-x001",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وزرة أرضية‏ – ‏Dekonil‏ – ‏DL120-KA‏",
+    "nameEn": "Skirting Board – Dekonil – DL120-KA",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-KA",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-KA",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x002",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وزرة أرضية‏ – ‏Dekonil‏ – ‏DL210-CMKM‏",
+    "nameEn": "Skirting Board – Dekonil – DL210-CMKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL210-CMKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL210-CMKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x003",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وزرة أرضية‏ – ‏Dekonil‏ – ‏DL120-ANT‏",
+    "nameEn": "Skirting Board – Dekonil – DL120-ANT",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-ANT",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-ANT",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x004",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "وزرة أرضية‏ – ‏Dekonil‏ – ‏DL120-CKM‏",
+    "nameEn": "Skirting Board – Dekonil – DL120-CKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-CKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-CKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "item-x003",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه Slate Crema‏ – ‏Slate Crema Full‏ – ‏120×20 سم‏",
+    "nameEn": "Slate Crema Flooring – Slate Crema Full – 120×20 cm",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [],
+    "specEn": []
+  },
+  {
+    "id": "item-x004",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "أرضيات باركيه محلية الصنع‏ – ‏PS2120352H03‏ – ‏120×20 سم‏",
+    "nameEn": "Libyan Flooring – PS2120352H03 – 120×20 cm",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: PS2120352H03"
+    ],
+    "specEn": [
+      "Code: PS2120352H03"
+    ]
+  },
+  {
+    "id": "item-x005",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "عشب صناعي ديكور أخضر‏ – ‏Decoration 5/32 1500/390/90‏ – ‏8 مم‏",
+    "nameEn": "Artificial Grass Decoration Green – Decoration 5/32 1500/390/90 – 8 mm",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Decoration 5/32 1500/390/90"
+    ],
+    "specEn": [
+      "Code: Decoration 5/32 1500/390/90"
+    ]
+  },
+  {
+    "id": "item-x006",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "عشب صناعي ديكور أحمر‏ – ‏Decoration 5/32 1600/390/90‏ – ‏8 مم‏",
+    "nameEn": "Artificial Grass Decoration Red – Decoration 5/32 1600/390/90 – 8 mm",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Decoration 5/32 1600/390/90"
+    ],
+    "specEn": [
+      "Code: Decoration 5/32 1600/390/90"
+    ]
+  },
+  {
+    "id": "item-x007",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "عشب صناعي ديكور أخضر‏ – ‏Decoration 5/32 1600/390/90‏ – ‏10 مم‏",
+    "nameEn": "Artificial Grass Decoration Green – Decoration 5/32 1600/390/90 – 10 mm",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: Decoration 5/32 1600/390/90"
+    ],
+    "specEn": [
+      "Code: Decoration 5/32 1600/390/90"
+    ]
+  },
+  {
+    "id": "item-x008",
+    "categoryId": "flooring",
+    "brand": "General",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "عشب صناعي Elegant Soft‏ – ‏ElegantSoft 3/8 (089) 8900/190/165‏ – ‏20 مم‏",
+    "nameEn": "Artificial Grass Elegant Soft – ElegantSoft 3/8 (089) 8900/190/165 – 20 mm",
+    "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: ElegantSoft 3/8 (089) 8900/190/165"
+    ],
+    "specEn": [
+      "Code: ElegantSoft 3/8 (089) 8900/190/165"
+    ]
+  },
+  {
+    "id": "dekonil-x005",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-C‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-C",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-C",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-C",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x006",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DD6020-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DD6020-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DD6020-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DD6020-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x007",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DDB04 (4020-D2)‏",
+    "nameEn": "Wood Alternative – DEKONIL – DDB04 (4020-D2)",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DDB04 (4020-D2)",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DDB04 (4020-D2)",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x008",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DE-115-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DE-115-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DE-115-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DE-115-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x009",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-11‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-11",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-11",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-11",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x010",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-AA‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-AA",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-AA",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-AA",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x011",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-AAKM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-AAKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-AAKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-AAKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x012",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-AG‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-AG",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-AG",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-AG",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x013",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-AGKM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-AGKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-AGKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-AGKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x014",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-ANTKM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-ANTKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-ANTKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-ANTKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x015",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-CM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-CM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x016",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-CMKM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-CMKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-CMKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-CMKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x017",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x018",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-D2KM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-D2KM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-D2KM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-D2KM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x019",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-KB‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-KB",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-KB",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-KB",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x020",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-KKM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-KKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-KKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-KKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x021",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL120-S‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL120-S",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL120-S",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL120-S",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x022",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL210-ANT‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL210-ANT",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL210-ANT",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL210-ANT",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x023",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL210-ANTKM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL210-ANTKM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL210-ANTKM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL210-ANTKM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x024",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL210-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL210-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL210-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL210-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x025",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL210-D2KM‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL210-D2KM",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL210-D2KM",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL210-D2KM",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x026",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DL210-DW‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL210-DW",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL210-DW",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL210-DW",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x027",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل خشب‏ – ‏DEKONIL‏ – ‏DR10030-D2 10cm‏",
+    "nameEn": "Wood Alternative – DEKONIL – DR10030-D2 10cm",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DR10030-D2 10cm",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DR10030-D2 10cm",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "panastone-x001",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏بيج بيلجيك‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Bilecik Beige",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x002",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏كالاكاتا أبيض‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Calacatta",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x003",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏كرارا أسود‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Carrara Black",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x004",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏رمادي آيسبرغ‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Icebrg Grey",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x005",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏أسود فاتح‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Light Black",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x006",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏رمادي مارموري‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Marmori Grey",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x007",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏عسلي ميلي‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Miele Bal",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x008",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2440×2.80 مم‏ – ‏بيج وردي‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2440×2.80 mm – Rosa Beige",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x009",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏ألكسندر‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Alexander",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x010",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏أسود وأبيض‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Black White",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x011",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏دراغون‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Dragon",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x012",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏إمبرادور فاتح‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Emperador Light",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x013",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏أونيكس أخضر‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Onyx Green",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x014",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏أحمر روسو ليفانتو‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Rosso Levanto",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "panastone-x015",
+    "categoryId": "flooring",
+    "brand": "PANASTONE",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بديل رخام PVC‏ – ‏PANASTONE‏ – ‏1220×2800×2.80 مم‏ – ‏أخضر فيردي إنديا‏",
+    "nameEn": "PVC Marble Wall Panel – PANASTONE – 1220×2800×2.80 mm – Verde India",
+    "descriptionAr": "منتج أصلي من PANASTONE ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine PANASTONE product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "العلامة التجارية: PANASTONE"
+    ],
+    "specEn": [
+      "Brand: PANASTONE"
+    ]
+  },
+  {
+    "id": "dekonil-x028",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه‏ – ‏DEKONIL‏ – ‏D4010-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – D4010-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D4010-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: D4010-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x029",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه– DEKONIL‏ – ‏DD4020-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DD4020-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DD4020-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DD4020-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x030",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه‏ – ‏DEKONIL‏ – ‏DB7020-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DB7020-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DB7020-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DB7020-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x031",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه– DEKONIL‏ – ‏DR10020-D2 20cm‏",
+    "nameEn": "Wood Alternative – DEKONIL – DR10020-D2 20cm",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DR10020-D2 20cm",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DR10020-D2 20cm",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x032",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه‏ – ‏DEKONIL‏ – ‏DDK3020-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DDK3020-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DDK3020-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DDK3020-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x033",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه‏ – ‏DEKONIL‏ – ‏DL3010-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DL3010-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DL3010-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DL3010-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x034",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه‏ – ‏DEKONIL‏ – ‏D2515-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – D2515-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D2515-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: D2515-D2",
+      "Brand: Dekonil"
+    ]
+  },
+  {
+    "id": "dekonil-x035",
+    "categoryId": "flooring",
+    "brand": "Dekonil",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قطعه– DEKONIL‏ – ‏DD2010-D2‏",
+    "nameEn": "Wood Alternative – DEKONIL – DD2010-D2",
+    "descriptionAr": "منتج أصلي من Dekonil ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Dekonil product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DD2010-D2",
+      "العلامة التجارية: Dekonil"
+    ],
+    "specEn": [
+      "Code: DD2010-D2",
+      "Brand: Dekonil"
     ]
   }
 ];
