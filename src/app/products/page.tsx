@@ -905,9 +905,9 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
 //  MAIN CATALOG PAGE
 // ──────────────────────────────────────────────────────
 // Manufacturer order per category, as set by the client.
-// waterproof = "الكيماويات وحلول البناء المتخصصة". JSP and Göçmen products are still to be added.
+// waterproof = "الكيماويات وحلول البناء المتخصصة". GCP was listed as JSP before.
 const BRAND_ORDER: Record<string, string[]> = {
-  waterproof: ["Weber", "Fosroc", "JSP", "Göçmen", "Sika", "Rokal"],
+  waterproof: ["Weber", "Fosroc", "GCP", "Sika", "Rokal", "Göçmen"],
   tools: ["DeWalt", "Stanley", "Deli", "Black+Decker"],
 };
 

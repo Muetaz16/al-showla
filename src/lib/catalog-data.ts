@@ -6988,7 +6988,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "id": "fosroc-x001",
     "categoryId": "waterproof",
     "brand": "Fosroc",
-    "imageUrl": "/placeholder-product.svg",
+    "imageUrl": "/catalog/fosroc-x001.webp",
     "inStock": true,
     "rating": 5,
     "reviewCount": 0,
@@ -7011,7 +7011,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "id": "fosroc-x002",
     "categoryId": "waterproof",
     "brand": "Fosroc",
-    "imageUrl": "/placeholder-product.svg",
+    "imageUrl": "/catalog/fosroc-x002.webp",
     "inStock": true,
     "rating": 5,
     "reviewCount": 0,
@@ -7053,7 +7053,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "id": "fosroc-x004",
     "categoryId": "waterproof",
     "brand": "Fosroc",
-    "imageUrl": "/placeholder-product.svg",
+    "imageUrl": "/catalog/fosroc-x004.webp",
     "inStock": true,
     "rating": 5,
     "reviewCount": 0,
@@ -7076,7 +7076,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "id": "fosroc-x005",
     "categoryId": "waterproof",
     "brand": "Fosroc",
-    "imageUrl": "/placeholder-product.svg",
+    "imageUrl": "/catalog/fosroc-x005.webp",
     "inStock": true,
     "rating": 5,
     "reviewCount": 0,
@@ -7118,7 +7118,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "id": "fosroc-x007",
     "categoryId": "waterproof",
     "brand": "Fosroc",
-    "imageUrl": "/placeholder-product.svg",
+    "imageUrl": "/catalog/fosroc-x007.webp",
     "inStock": true,
     "rating": 5,
     "reviewCount": 0,
@@ -7156,6 +7156,171 @@ export const CATALOG_PRODUCTS: Product[] = [
     ],
     "specEn": [
       "Brand: Fosroc"
+    ]
+  },
+  {
+    "id": "gcp-x001",
+    "categoryId": "waterproof",
+    "brand": "GCP",
+    "imageUrl": "/catalog/gcp-x001.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غشاء عزل مائي‏ – ‏GCP‏ – ‏Preprufe 100S‏ – ‏رول",
+    "nameEn": "Pre-Applied Waterproofing Membrane – GCP – Preprufe 100S – Roll",
+    "descriptionAr": "منتج أصلي من GCP Applied Technologies (Saint-Gobain) ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine GCP Applied Technologies (Saint-Gobain) product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "رول",
+    "specAr": [
+      "الكود: Preprufe 100S",
+      "العلامة التجارية: GCP"
+    ],
+    "specEn": [
+      "Code: Preprufe 100S",
+      "Brand: GCP"
+    ]
+  },
+  {
+    "id": "gcp-x002",
+    "categoryId": "waterproof",
+    "brand": "GCP",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط لاصق مزدوج الوجه‏ – ‏GCP‏ – ‏PV 100 Tape‏ – ‏80 مم × 20 متر",
+    "nameEn": "Double-Sided Waterproofing Tape – GCP – PV 100 Tape – 80 mm x 20 m",
+    "descriptionAr": "منتج أصلي من GCP Applied Technologies (Saint-Gobain) ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine GCP Applied Technologies (Saint-Gobain) product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "رول",
+    "specAr": [
+      "الكود: PV 100 Tape",
+      "العلامة التجارية: GCP"
+    ],
+    "specEn": [
+      "Code: PV 100 Tape",
+      "Brand: GCP"
+    ]
+  },
+  {
+    "id": "gcp-x003",
+    "categoryId": "waterproof",
+    "brand": "GCP",
+    "imageUrl": "/catalog/gcp-x003.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "غشاء عزل سائل (A+B)‏ – ‏GCP‏ – ‏Bituthene LM‏ – ‏5.7 لتر",
+    "nameEn": "Liquid Membrane (A+B) – GCP – Bituthene LM – 5.7 L",
+    "descriptionAr": "منتج أصلي من GCP Applied Technologies (Saint-Gobain) ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine GCP Applied Technologies (Saint-Gobain) product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Bituthene LM",
+      "العلامة التجارية: GCP"
+    ],
+    "specEn": [
+      "Code: Bituthene LM",
+      "Brand: GCP"
+    ]
+  },
+  {
+    "id": "gcp-x004",
+    "categoryId": "waterproof",
+    "brand": "GCP",
+    "imageUrl": "/catalog/gcp-x004.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "برايمر بيتوميني‏ – ‏GCP‏ – ‏Bituthene Primer B1‏ – ‏25 لتر",
+    "nameEn": "Bituminous Primer – GCP – Bituthene Primer B1 – 25 L",
+    "descriptionAr": "منتج أصلي من GCP Applied Technologies (Saint-Gobain) ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine GCP Applied Technologies (Saint-Gobain) product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "الكود: Bituthene Primer B1",
+      "العلامة التجارية: GCP"
+    ],
+    "specEn": [
+      "Code: Bituthene Primer B1",
+      "Brand: GCP"
+    ]
+  },
+  {
+    "id": "gcp-x005",
+    "categoryId": "waterproof",
+    "brand": "GCP",
+    "imageUrl": "/catalog/gcp-x005.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "لفائف عزل مائي ذاتية اللصق‏ – ‏GCP‏ – ‏Bituthene 3000 HC‏ – ‏1 × 20 متر",
+    "nameEn": "Self-Adhesive Waterproofing Membrane – GCP – Bituthene 3000 HC – 1 x 20 m",
+    "descriptionAr": "منتج أصلي من GCP Applied Technologies (Saint-Gobain) ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine GCP Applied Technologies (Saint-Gobain) product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "رول",
+    "specAr": [
+      "الكود: Bituthene 3000 HC",
+      "العلامة التجارية: GCP"
+    ],
+    "specEn": [
+      "Code: Bituthene 3000 HC",
+      "Brand: GCP"
+    ]
+  },
+  {
+    "id": "gcp-x006",
+    "categoryId": "waterproof",
+    "brand": "GCP",
+    "imageUrl": "/catalog/gcp-x006.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط منتفخ مانع للتسرب (مياه مالحة)‏ – ‏GCP‏ – ‏Bentorub Salt",
+    "nameEn": "Hydrophilic Waterstop (Salt Water) – GCP – Bentorub Salt",
+    "descriptionAr": "منتج أصلي من GCP Applied Technologies (Saint-Gobain) ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine GCP Applied Technologies (Saint-Gobain) product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
+    "unit": "رول",
+    "specAr": [
+      "الكود: Bentorub Salt",
+      "العلامة التجارية: GCP"
+    ],
+    "specEn": [
+      "Code: Bentorub Salt",
+      "Brand: GCP"
+    ]
+  },
+  {
+    "id": "gocmen-x001",
+    "categoryId": "waterproof",
+    "brand": "Göçmen",
+    "imageUrl": "/catalog/gocmen-x001.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مادة ترقيع الأسفلت البارد‏ – ‏Göçmen",
+    "nameEn": "Cold Asphalt Patching Material – Göçmen",
+    "descriptionAr": "مادة أسفلت جاهزة للاستخدام على البارد لترقيع وإصلاح الحفر والتشققات في الطرق والساحات. منتج أصلي من Göçmen Asfalt Yol. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Ready-to-use cold-applied asphalt for patching potholes and cracks in roads and yards. Genuine Göçmen Asfalt Yol product. Contact us for a quotation.",
+    "unit": "كيس",
+    "specAr": [
+      "العلامة التجارية: Göçmen",
+      "الاستخدام: ترقيع حفر وتشققات الأسفلت",
+      "التطبيق: على البارد بدون تسخين",
+      "الشهادات: ISO 9001، ISO 14001"
+    ],
+    "specEn": [
+      "Brand: Göçmen",
+      "Use: patching asphalt potholes and cracks",
+      "Application: cold, no heating required",
+      "Certifications: ISO 9001, ISO 14001"
     ]
   },
   {
