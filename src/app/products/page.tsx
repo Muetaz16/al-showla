@@ -904,6 +904,12 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
 // ──────────────────────────────────────────────────────
 //  MAIN CATALOG PAGE
 // ──────────────────────────────────────────────────────
+// Manufacturer order per category, as set by the client.
+// waterproof = "الكيماويات وحلول البناء المتخصصة". JSP products are still to be added.
+const BRAND_ORDER: Record<string, string[]> = {
+  waterproof: ["Weber", "Fosroc", "JSP", "Sika", "Rokal"],
+};
+
 export default function ProductsPage() {
   const [mounted, setMounted] = useState(false);
   const [currency, setCurrency] = useState<Currency>("LYD");
@@ -989,8 +995,21 @@ export default function ProductsPage() {
   // "General" placeholder never appears as a selectable manufacturer.
   const brandsInCategory = useMemo(() => {
     const scoped = filterProducts(allProducts, activeCategory);
-    return Array.from(new Set(scoped.map((p) => displayBrand(p)).filter(Boolean))).sort();
+    const found = Array.from(new Set(scoped.map((p) => displayBrand(p)).filter(Boolean))).sort();
+    // Client-set order for a category; listed companies show even before their products are added.
+    const order = BRAND_ORDER[activeCategory];
+    if (!order) return found;
+    return [...order, ...found.filter((b) => !order.includes(b))];
   }, [allProducts, activeCategory]);
+
+  // Category tabs: categories with products keep their order, empty ones move to the end,
+  // and "Basic Building Materials" (steel) is always the last tab (client request).
+  const orderedCategories = useMemo(() => {
+    const has = (id: string) => id === "all" || allProducts.some((p) => p.categoryId === id);
+    const rest = CATEGORIES.filter((c) => c.id !== "steel");
+    const steel = CATEGORIES.filter((c) => c.id === "steel");
+    return [...rest.filter((c) => has(c.id)), ...rest.filter((c) => !has(c.id)), ...steel];
+  }, [allProducts]);
 
   // Log searches (debounced) for the weekly report — flags no-result queries (item 20)
   useEffect(() => {
@@ -1137,7 +1156,7 @@ export default function ProductsPage() {
 
           {/* ── CATEGORIES ── */}
           <div style={{ display: "flex", gap: 3, marginBottom: 12, overflowX: "auto", paddingBottom: 4 }}>
-            {CATEGORIES.map(cat => (
+            {orderedCategories.map(cat => (
               <button key={cat.id} className={`cat-btn${activeCategory === cat.id ? " active" : ""}`}
                 onClick={() => { setActiveCategory(cat.id); setActiveBrand("all"); }}>
                 <span>{cat.icon}</span>
