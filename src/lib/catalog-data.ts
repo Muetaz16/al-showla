@@ -5836,15 +5836,17 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "قلم علامة حديد — 0-47-316",
-    "nameEn": "Fine-Tip Permanent Marker, 2-pack (0-47-316)",
+    "nameAr": "قلم تعليم رفيع‏ – ‏Stanley‏ – ‏0-47-316‏ – ‏2 قطعة",
+    "nameEn": "Fine Tip Marker – Stanley – 0-47-316 – 2 Pcs",
     "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
+      "الكود: 0-47-316",
       "العلامة التجارية: Stanley"
     ],
     "specEn": [
+      "Code: 0-47-316",
       "Brand: Stanley"
     ]
   },
@@ -5878,8 +5880,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "متر قياس 10 متر 25 ملم — STHT33463-8",
-    "nameEn": "PowerLock Tape Measure 10 m x 25 mm (STHT33463-8)",
+    "nameAr": "شريط قياس‏ – ‏Stanley‏ – ‏STHT33463-8‏ – ‏10 متر 25 مم",
+    "nameEn": "Tape Measure – Stanley – STHT33463-8 – 10 m 25 mm",
     "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -5989,17 +5991,17 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "محطة عمل متنقلة فات ماكس — 1-94-210",
-    "nameEn": "FatMax Mobile Work Station (1-94-210)",
+    "nameAr": "محطة عمل متنقلة FatMax‏ – ‏Stanley‏ – ‏1-94-210",
+    "nameEn": "FatMax Cantilever Mobile Workstation – Stanley – 1-94-210",
     "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
-      "الكود: FATMAX-1-94-210",
+      "الكود: 1-94-210",
       "العلامة التجارية: Stanley"
     ],
     "specEn": [
-      "Code: FATMAX-1-94-210",
+      "Code: 1-94-210",
       "Brand: Stanley"
     ]
   },
@@ -6054,15 +6056,17 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مقص لاميرة مستقيم — 2-14-563",
-    "nameEn": "FatMax Aviation Snips, Straight Cut (2-14-563)",
+    "nameAr": "مقص صاج مستقيم‏ – ‏Stanley‏ – ‏2-14-563",
+    "nameEn": "Straight Cut Aviation Snips – Stanley – 2-14-563",
     "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
+      "الكود: 2-14-563",
       "العلامة التجارية: Stanley"
     ],
     "specEn": [
+      "Code: 2-14-563",
       "Brand: Stanley"
     ]
   },
@@ -7472,6 +7476,351 @@ export const CATALOG_PRODUCTS: Product[] = [
     ]
   },
   {
+    "id": "stanley-x016",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x016.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "شريط قياس فايبر‏ – ‏Stanley‏ – ‏2-34-777‏ – ‏100 متر",
+    "nameEn": "Fibreglass Tape Measure – Stanley – 2-34-777 – 100 m",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 2-34-777",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: 2-34-777",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x017",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "سكين قاطع‏ – ‏Stanley‏ – ‏STHT10500-0‏ – ‏18 مم",
+    "nameEn": "Snap-Off Utility Knife – Stanley – STHT10500-0 – 18 mm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: STHT10500-0",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: STHT10500-0",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x018",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان تسوية بثلاث فقاعات‏ – ‏Stanley‏ – ‏STHT42798‏ – ‏60 سم",
+    "nameEn": "Spirit Level 3 Vials – Stanley – STHT42798 – 60 cm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: STHT42798",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: STHT42798",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x019",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x019.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بودرة طباشير تخطيط حمراء‏ – ‏Stanley‏ – ‏1-47-404‏ – ‏115 جرام",
+    "nameEn": "Red Chalk Powder – Stanley – 1-47-404 – 115 g",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 1-47-404",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: 1-47-404",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x020",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x020.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Plus‏ – ‏Stanley‏ – ‏STA54012‏ – ‏‪6×110‬ مم",
+    "nameEn": "SDS-Plus Masonry Drill Bit – Stanley – STA54012 – 6×110 mm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: STA54012",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: STA54012",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x021",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x021.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "زاوية قياس قائمة‏ – ‏Stanley‏ – ‏E-46536‏ – ‏30 سم",
+    "nameEn": "Try Square – Stanley – E-46536 – 30 cm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: E-46536",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: E-46536",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x022",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x022.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة عدة FatMax‏ – ‏Stanley‏ – ‏1-93-950‏ – ‏18 بوصة",
+    "nameEn": "FatMax Tool Bag – Stanley – 1-93-950 – 18 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 1-93-950",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: 1-93-950",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x023",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x023.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قشارة أسلاك أوتوماتيكية FatMax‏ – ‏Stanley‏ – ‏FMHT0-96230‏ – ‏6 مم",
+    "nameEn": "FatMax Automatic Wire Stripper – Stanley – FMHT0-96230 – 6 mm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: FMHT0-96230",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: FMHT0-96230",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x024",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة عدة قماش مفتوحة‏ – ‏Stanley‏ – ‏STST516126‏ – ‏16 بوصة",
+    "nameEn": "Open Mouth Tool Bag – Stanley – STST516126 – 16 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: STST516126",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: STST516126",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x025",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x025.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة عدة FatMax متعددة الفتحات‏ – ‏Stanley‏ – ‏FMST1-73607‏ – ‏17 بوصة",
+    "nameEn": "FatMax Multi-Access Tool Bag – Stanley – FMST1-73607 – 17 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: FMST1-73607",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: FMST1-73607",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x026",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x026.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة عدة FatMax صلبة‏ – ‏Stanley‏ – ‏FMST1-70749‏ – ‏20 بوصة",
+    "nameEn": "FatMax Rigid Tool Bag – Stanley – FMST1-70749 – 20 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: FMST1-70749",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: FMST1-70749",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x027",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x027.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حقيبة عدة FatMax مفتوحة‏ – ‏Stanley‏ – ‏1-93-951‏ – ‏18 بوصة",
+    "nameEn": "FatMax Open Tote Tool Bag – Stanley – 1-93-951 – 18 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 1-93-951",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: 1-93-951",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x028",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x028.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم أزاميل خشب مع حجر سن‏ – ‏Stanley‏ – ‏0-16-130‏ – ‏6-12-18-25 مم",
+    "nameEn": "Wood Chisel Set with Oil Stone – Stanley – 0-16-130 – 6-12-18-25 mm",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 0-16-130",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: 0-16-130",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x029",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مسدس برشام‏ – ‏Stanley‏ – ‏STHT69646-8‏ – ‏3 رؤوس",
+    "nameEn": "Riveter – Stanley – STHT69646-8 – 3 Nozzles",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: STHT69646-8",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: STHT69646-8",
+      "Brand: Stanley"
+    ]
+  },
+  {
+    "id": "stanley-x030",
+    "categoryId": "tools",
+    "brand": "Stanley",
+    "imageUrl": "/catalog/stanley-x030.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "محول رؤوس مفك مغناطيسي‏ – ‏Stanley‏ – ‏1-68-732‏ – ‏1/4 بوصة",
+    "nameEn": "Magnetic Bit Holder – Stanley – 1-68-732 – 1/4 Inch",
+    "descriptionAr": "منتج أصلي من Stanley ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Stanley product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: 1-68-732",
+      "العلامة التجارية: Stanley"
+    ],
+    "specEn": [
+      "Code: 1-68-732",
+      "Brand: Stanley"
+    ]
+  },
+  {
     "id": "dewalt-x001",
     "categoryId": "tools",
     "brand": "DeWalt",
@@ -7480,7 +7829,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مطرقة هدم‏ – ‏DeWalt‏ – ‏D25881K-B5‏ – ‏10 كيلو‏",
+    "nameAr": "مطرقة هدم‏ – ‏DeWalt‏ – ‏D25881K-B5‏ – ‏10 كيلو",
     "nameEn": "Demolition Hammer – DeWalt – D25881K-B5 – 10 kg",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -7526,8 +7875,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD791P2-GB‏ – ‏18 فولت 2 أمبير‏",
-    "nameEn": "Cordless Drill – DeWalt – DCD791P2-GB – 18V 2Ah",
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD791P2-GB‏ – ‏18 فولت 5 أمبير",
+    "nameEn": "Cordless Drill – DeWalt – DCD791P2-GB – 18V 5Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -7572,7 +7921,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF900P2T-GB‏ – ‏18 فولت 5 أمبير‏",
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF900P2T-GB‏ – ‏18 فولت 5 أمبير",
     "nameEn": "Cordless Impact Wrench – DeWalt – DCF900P2T-GB – 18V 5Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -7664,7 +8013,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "بطارية‏ – ‏DeWalt‏ – ‏DCB184-XJ‏ – ‏18 فولت 5 أمبير‏",
+    "nameAr": "بطارية‏ – ‏DeWalt‏ – ‏DCB184-XJ‏ – ‏18 فولت 5 أمبير",
     "nameEn": "Battery – DeWalt – DCB184-XJ – 18V 5Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -7733,7 +8082,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4938-QZ‏ – ‏8 مم‏",
+    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4938-QZ‏ – ‏8 مم",
     "nameEn": "Cobalt Metal Drill Bit – DeWalt – DT4938-QZ – 8 mm",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -7756,7 +8105,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD709D2T-GB‏ – ‏18 فولت 2 أمبير‏",
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD709D2T-GB‏ – ‏18 فولت 2 أمبير",
     "nameEn": "Cordless Drill – DeWalt – DCD709D2T-GB – 18V 2Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -7802,17 +8151,17 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD796D2-GB‏ – ‏18 فولت 2 أمبير‏",
-    "nameEn": "Cordless Drill – DeWalt – DCD796D2-GB – 18V 2Ah",
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD796D2-QW‏ – ‏18 فولت 2 أمبير",
+    "nameEn": "Cordless Drill – DeWalt – DCD796D2-QW – 18V 2Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
-      "الكود: DCD796D2-GB",
+      "الكود: DCD796D2-QW",
       "العلامة التجارية: DeWalt"
     ],
     "specEn": [
-      "Code: DCD796D2-GB",
+      "Code: DCD796D2-QW",
       "Brand: DeWalt"
     ]
   },
@@ -7825,17 +8174,17 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مفك صدمي لاسلكي 3 سرعات‏ – ‏DeWalt‏ – ‏DCF887D2-GB‏ – ‏18 فولت 2 أمبير‏",
-    "nameEn": "3-Speed Cordless Impact Driver – DeWalt – DCF887D2-GB – 18V 2Ah",
+    "nameAr": "مفك صدمي لاسلكي 3 سرعات‏ – ‏DeWalt‏ – ‏DCF887D2-QW‏ – ‏18 فولت 2 أمبير",
+    "nameEn": "3-Speed Cordless Impact Driver – DeWalt – DCF887D2-QW – 18V 2Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
-      "الكود: DCF887D2-GB",
+      "الكود: DCF887D2-QW",
       "العلامة التجارية: DeWalt"
     ],
     "specEn": [
-      "Code: DCF887D2-GB",
+      "Code: DCF887D2-QW",
       "Brand: DeWalt"
     ]
   },
@@ -7917,8 +8266,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مطرقة دوارة‏ – ‏DeWalt‏ – ‏D25733K-B5‏ – ‏8 كيلو‏",
-    "nameEn": "Rotary Hammer – DeWalt – D25733K-B5 – 8 kg",
+    "nameAr": "مطرقة دوارة‏ – ‏DeWalt‏ – ‏D25733K-B5‏ – ‏8 كيلو 48 مم",
+    "nameEn": "Rotary Hammer – DeWalt – D25733K-B5 – 8 kg 48 mm",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -7986,7 +8335,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "شاحن بطاريات‏ – ‏DeWalt‏ – ‏DCB1104-GB‏",
+    "nameAr": "شاحن بطاريات‏ – ‏DeWalt‏ – ‏DCB1104-GB",
     "nameEn": "Battery Charger – DeWalt – DCB1104-GB",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -8124,7 +8473,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "حقيبة ظهر للعدة‏ – ‏DeWalt‏ – ‏DWST81690-1‏",
+    "nameAr": "حقيبة ظهر للعدة‏ – ‏DeWalt‏ – ‏DWST81690-1",
     "nameEn": "Tool Backpack – DeWalt – DWST81690-1",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -8331,7 +8680,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مطرقة دوارة لاسلكية‏ – ‏DeWalt‏ – ‏DCH133M1-GB‏ – ‏18 فولت‏",
+    "nameAr": "مطرقة دوارة لاسلكية‏ – ‏DeWalt‏ – ‏DCH133M1-GB‏ – ‏18 فولت",
     "nameEn": "Cordless Rotary Hammer – DeWalt – DCH133M1-GB – 18V",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -8377,7 +8726,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF921P2T-GB‏ – ‏18 فولت 5 أمبير‏",
+    "nameAr": "مفتاح صدمي لاسلكي‏ – ‏DeWalt‏ – ‏DCF921P2T-GB‏ – ‏18 فولت 5 أمبير",
     "nameEn": "Cordless Impact Wrench – DeWalt – DCF921P2T-GB – 18V 5Ah",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -8492,7 +8841,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "منشار قطع معادن‏ – ‏DeWalt‏ – ‏D28730-B5‏ – ‏355 مم 2300 وات‏",
+    "nameAr": "منشار قطع معادن‏ – ‏DeWalt‏ – ‏D28730-B5‏ – ‏355 مم 2300 وات",
     "nameEn": "Metal Chop Saw – DeWalt – D28730-B5 – 355 mm 2300W",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -8538,7 +8887,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ميزان ليزر بخط أحمر‏ – ‏DeWalt‏ – ‏DW088K-XJ‏",
+    "nameAr": "ميزان ليزر بخط أحمر‏ – ‏DeWalt‏ – ‏DW088K-XJ",
     "nameEn": "Red Line Laser Level – DeWalt – DW088K-XJ",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -12461,8 +12810,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "Knauf‏ – ‏لوح جبس أخضر جزائري الصنع‏ – ‏3 متر‏",
-    "nameEn": "Knauf – Green Gypsum Board (Algerian) – 3 m",
+    "nameAr": "Knauf‏ – ‏لوح جبس أخضر‏ – ‏3 متر‏",
+    "nameEn": "Knauf – Green Gypsum Board – 3 m",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -13043,7 +13392,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "reviewCount": 0,
     "certificates": [],
     "nameAr": "FRIULSIDER‏ – ‏خابور تثبيت‏ – ‏100 قطعة‏",
-    "nameEn": "FRIULSIDER – Italian Wall Anchor – 100 Pcs",
+    "nameEn": "FRIULSIDER – Wall Anchor – 100 Pcs",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -13193,8 +13542,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "لوح جبس أبيض جزائري (جيبلاك)‏ – ‏2.4 متر‏",
-    "nameEn": "White Gypsum Board Gyplac (Algerian) – 2.4 m",
+    "nameAr": "لوح جبس أبيض (جيبلاك)‏ – ‏2.4 متر‏",
+    "nameEn": "White Gypsum Board Gyplac – 2.4 m",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -13214,8 +13563,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "لوح جبس أبيض مصري (Das Blank)‏ – ‏2.4 متر‏",
-    "nameEn": "White Gypsum Board Das Blank (Egyptian) – 2.4 m",
+    "nameAr": "لوح جبس أبيض (Das Blank)‏ – ‏2.4 متر‏",
+    "nameEn": "White Gypsum Board Das Blank – 2.4 m",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -13235,8 +13584,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "لوح جبس أحمر جزائري‏ – ‏2.4 متر‏",
-    "nameEn": "Red Gypsum Board Black (Algerian) – 2.4 m",
+    "nameAr": "لوح جبس أحمر‏ – ‏2.4 متر‏",
+    "nameEn": "Red Gypsum Board Black – 2.4 m",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -13256,8 +13605,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "لوح جبس أبيض مصري (جيبورد)‏ – ‏2.4 متر‏",
-    "nameEn": "White Gypsum Board Gypboard (Egyptian) – 2.4 m",
+    "nameAr": "لوح جبس أبيض (جيبورد)‏ – ‏2.4 متر‏",
+    "nameEn": "White Gypsum Board Gypboard – 2.4 m",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -13697,8 +14046,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "فتحة صيانة تركية الصنع‏ – ‏60×60 سم‏",
-    "nameEn": "Turkish Access Panel – 60×60 cm",
+    "nameAr": "فتحة صيانة‏ – ‏60×60 سم‏",
+    "nameEn": "Access Panel – 60×60 cm",
     "descriptionAr": "منتج أصلي من Knauf ضمن فئة أنظمة الجبس والأسقف والحوائط. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Knauf product in the Gypsum, Ceiling & Wall Systems category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -14710,8 +15059,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "أرضيات باركيه محلية الصنع‏ – ‏PS2120352H03‏ – ‏120×20 سم‏",
-    "nameEn": "Libyan Flooring – PS2120352H03 – 120×20 cm",
+    "nameAr": "أرضيات باركيه‏ – ‏PS2120352H03‏ – ‏120×20 سم‏",
+    "nameEn": "Parquet Flooring – PS2120352H03 – 120×20 cm",
     "descriptionAr": "منتج أصلي ضمن فئة التشطيبات المعمارية وحلول الأرضيات. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine product in the Architectural Finishes & Flooring Solutions category. Contact us for a quotation.",
     "unit": "قطعة",
@@ -15910,7 +16259,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "مطرقة دوارة مع ظرف إضافي‏ – ‏DeWalt‏ – ‏D25144K-QS‏ – ‏2 كيلو 900 وات 28 مم‏",
+    "nameAr": "مطرقة دوارة مع ظرف إضافي‏ – ‏DeWalt‏ – ‏D25144K-QS‏ – ‏2 كيلو 900 وات 28 مم",
     "nameEn": "Rotary Hammer with Extra Chuck – DeWalt – D25144K-QS – 2 kg 900W 28 mm",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -15933,7 +16282,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "حامل ثلاثي لميزان الليزر‏ – ‏DeWalt‏ – ‏DE0881T-XJ‏",
+    "nameAr": "حامل ثلاثي لميزان الليزر‏ – ‏DeWalt‏ – ‏DE0881T-XJ",
     "nameEn": "Laser Level Tripod – DeWalt – DE0881T-XJ",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -16002,7 +16351,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE492-B5‏ – ‏230 مم 2200 وات‏",
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE492-B5‏ – ‏230 مم 2200 وات",
     "nameEn": "Angle Grinder – DeWalt – DWE492-B5 – 230 mm 2200W",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
@@ -16025,17 +16374,17 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE493‏ – ‏2200 وات‏",
-    "nameEn": "Angle Grinder – DeWalt – DWE493 – 2200W",
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE493-B5‏ – ‏180 مم 2200 وات",
+    "nameEn": "Angle Grinder – DeWalt – DWE493-B5 – 180 mm 2200W",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
-      "الكود: DWE493",
+      "الكود: DWE493-B5",
       "العلامة التجارية: DeWalt"
     ],
     "specEn": [
-      "Code: DWE493",
+      "Code: DWE493-B5",
       "Brand: DeWalt"
     ]
   },
@@ -16043,7 +16392,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "id": "dewalt-x057",
     "categoryId": "tools",
     "brand": "DeWalt",
-    "imageUrl": "/placeholder-product.svg",
+    "imageUrl": "/catalog/dewalt-x057.webp",
     "inStock": true,
     "rating": 5,
     "reviewCount": 0,
@@ -16117,17 +16466,799 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "منشار دائري‏ – ‏DeWalt‏ – ‏D23700‏ – ‏86 مم 1750 وات‏",
-    "nameEn": "Circular Saw – DeWalt – D23700 – 86 mm 1750W",
+    "nameAr": "منشار دائري‏ – ‏DeWalt‏ – ‏D23700-B5‏ – ‏86 مم 1750 وات",
+    "nameEn": "Circular Saw – DeWalt – D23700-B5 – 86 mm 1750W",
     "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
     "unit": "قطعة",
     "specAr": [
-      "الكود: D23700",
+      "الكود: D23700-B5",
       "العلامة التجارية: DeWalt"
     ],
     "specEn": [
-      "Code: D23700",
+      "Code: D23700-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x061",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x061.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بطارية FlexVolt‏ – ‏DeWalt‏ – ‏DCB547-XJ‏ – ‏54 فولت 9 أمبير",
+    "nameEn": "FlexVolt Battery – DeWalt – DCB547-XJ – 54V 9Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCB547-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCB547-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x062",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x062.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صدمي لاسلكي 3 سرعات بدون بطارية‏ – ‏DeWalt‏ – ‏DCF887NT-XJ‏ – ‏18 فولت",
+    "nameEn": "3-Speed Cordless Impact Driver (Bare) – DeWalt – DCF887NT-XJ – 18V",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF887NT-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF887NT-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x063",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x063.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Plus‏ – ‏DeWalt‏ – ‏DW00703-AE‏ – ‏‪6×95×160‬ مم",
+    "nameEn": "SDS-Plus Drill Bit – DeWalt – DW00703-AE – 6×95×160 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW00703-AE",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW00703-AE",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x064",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x064.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE4579-QS‏ – ‏230 مم 2600 وات",
+    "nameEn": "Angle Grinder – DeWalt – DWE4579-QS – 230 mm 2600W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE4579-QS",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE4579-QS",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x065",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص قطع معادن INOX‏ – ‏DeWalt‏ – ‏DX17927-XJ‏ – ‏4.5 بوصة‏ – ‏‪115×3×22.2‬ مم",
+    "nameEn": "INOX Metal Cutting Disc – DeWalt – DX17927-XJ – 4.5 Inch – 115×3×22.2 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DX17927-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DX17927-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x066",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x066.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "طقم خيط تخطيط بالطباشير مع طباشير أحمر‏ – ‏DeWalt‏ – ‏DWHT47408-0",
+    "nameEn": "Chalk Line Set with Red Chalk – DeWalt – DWHT47408-0",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWHT47408-0",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWHT47408-0",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x067",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x067.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة تكسير SDS-Max‏ – ‏DeWalt‏ – ‏D25810K-B5‏ – ‏5 كيلو 1050 وات",
+    "nameEn": "SDS-Max Chipping Hammer – DeWalt – D25810K-B5 – 5 kg 1050W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25810K-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25810K-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x068",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص تجليخ معادن INOX‏ – ‏DeWalt‏ – ‏DX17981-XJ‏ – ‏9 بوصات‏ – ‏‪230×6×22.2‬ مم",
+    "nameEn": "INOX Metal Grinding Disc – DeWalt – DX17981-XJ – 9 Inch – 230×6×22.2 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DX17981-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DX17981-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x069",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "قرص قطع معادن INOX‏ – ‏DeWalt‏ – ‏DX17722-XJ‏ – ‏9 بوصات 1.9 مم",
+    "nameEn": "Extreme INOX Metal Cutting Disc – DeWalt – DX17722-XJ – 9 Inch 1.9 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DX17722-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DX17722-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x070",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x070.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "بطارية FlexVolt‏ – ‏DeWalt‏ – ‏DCB546-XJ‏ – ‏54 فولت 6 أمبير",
+    "nameEn": "FlexVolt Battery – DeWalt – DCB546-XJ – 54V 6Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCB546-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCB546-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x071",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفتاح صدمي لاسلكي 1/2 بوصة‏ – ‏DeWalt‏ – ‏DCF892P2T-QW‏ – ‏18 فولت 5 أمبير",
+    "nameEn": "1/2 Inch Cordless Impact Wrench – DeWalt – DCF892P2T-QW – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF892P2T-QW",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF892P2T-QW",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x072",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD799D2T-GB‏ – ‏18 فولت 2 أمبير 74 نيوتن",
+    "nameEn": "Cordless Hammer Drill – DeWalt – DCD799D2T-GB – 18V 2Ah 74Nm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD799D2T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD799D2T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x073",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة مستقيمة‏ – ‏DeWalt‏ – ‏DWE4997-QS‏ – ‏1300 وات",
+    "nameEn": "Die Grinder – DeWalt – DWE4997-QS – 1300W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE4997-QS",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE4997-QS",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x074",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار دائري مع شفرة إضافية‏ – ‏DeWalt‏ – ‏DWE5615B-GB‏ – ‏7.25 بوصة 1500 وات",
+    "nameEn": "Circular Saw with Extra Blade – DeWalt – DWE5615B-GB – 7.25 Inch 1500W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE5615B-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE5615B-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x075",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة‏ – ‏DeWalt‏ – ‏D25133K-B5‏ – ‏800 وات 26 مم",
+    "nameEn": "Rotary Hammer – DeWalt – D25133K-B5 – 800W 26 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25133K-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25133K-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x076",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x076.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ميزان ليزر 5 نقاط‏ – ‏DeWalt‏ – ‏DCLE14251GB-XJ",
+    "nameEn": "5-Spot Cross Line Laser Level – DeWalt – DCLE14251GB-XJ",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCLE14251GB-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCLE14251GB-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x077",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x077.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4933-QZ‏ – ‏6 مم",
+    "nameEn": "Cobalt Metal Drill Bit – DeWalt – DT4933-QZ – 6 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT4933-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT4933-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x078",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x078.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4929-QZ‏ – ‏5 مم",
+    "nameEn": "Cobalt Metal Drill Bit – DeWalt – DT4929-QZ – 5 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT4929-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT4929-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x079",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x079.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4947-QZ‏ – ‏12 مم",
+    "nameEn": "Cobalt Metal Drill Bit – DeWalt – DT4947-QZ – 12 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT4947-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT4947-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x080",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x080.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب معادن كوبالت‏ – ‏DeWalt‏ – ‏DT4942-QZ‏ – ‏10 مم",
+    "nameEn": "Cobalt Metal Drill Bit – DeWalt – DT4942-QZ – 10 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT4942-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT4942-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x081",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x081.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي بمقبض‏ – ‏DeWalt‏ – ‏DCD996P2-B5‏ – ‏18 فولت 5 أمبير",
+    "nameEn": "Cordless Hammer Drill – DeWalt – DCD996P2-B5 – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD996P2-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD996P2-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x082",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي متعدد الرؤوس بدون بطارية‏ – ‏DeWalt‏ – ‏DCD803NT-XJ‏ – ‏18 فولت 90 نيوتن",
+    "nameEn": "Multi-Head Cordless Drill (Bare) – DeWalt – DCD803NT-XJ – 18V 90Nm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD803NT-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD803NT-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x083",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x083.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Plus‏ – ‏DeWalt‏ – ‏DT9587-QZ‏ – ‏‪18×200‬ مم",
+    "nameEn": "SDS-Plus Drill Bit – DeWalt – DT9587-QZ – 18×200 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT9587-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT9587-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x084",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x084.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "إزميل مسطح‏ – ‏DeWalt‏ – ‏DT6802-QZ‏ – ‏250 مم",
+    "nameEn": "Flat Chisel – DeWalt – DT6802-QZ – 250 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT6802-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT6802-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x085",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x085.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Plus رباعية‏ – ‏DeWalt‏ – ‏DT8914-QZ‏ – ‏‪6×210×150‬ مم",
+    "nameEn": "SDS-Plus 4-Cutter Drill Bit – DeWalt – DT8914-QZ – 6×210×150 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT8914-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT8914-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x086",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x086.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Plus رباعية‏ – ‏DeWalt‏ – ‏DT8915-QZ‏ – ‏‪6×260×200‬ مم",
+    "nameEn": "SDS-Plus 4-Cutter Drill Bit – DeWalt – DT8915-QZ – 6×260×200 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT8915-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT8915-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x087",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x087.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Max رباعية‏ – ‏DeWalt‏ – ‏DT9420-QZ‏ – ‏‪22×540‬ مم",
+    "nameEn": "SDS-Max 4-Cutter Drill Bit – DeWalt – DT9420-QZ – 22×540 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT9420-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT9420-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x088",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x088.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب خرسانة SDS-Plus رباعية‏ – ‏DeWalt‏ – ‏DT8913-QZ‏ – ‏‪6×160×100‬ مم",
+    "nameEn": "SDS-Plus 4-Cutter Drill Bit – DeWalt – DT8913-QZ – 6×160×100 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT8913-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT8913-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x089",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x089.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جهاز قياس مسافات ليزري‏ – ‏DeWalt‏ – ‏DW055PL-XJ‏ – ‏16 متر",
+    "nameEn": "Laser Distance Measurer – DeWalt – DW055PL-XJ – 16 m",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW055PL-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW055PL-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x090",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب كهربائي صناعي بسرعتين‏ – ‏DeWalt‏ – ‏D21570K-QS‏ – ‏16 مم 1300 وات",
+    "nameEn": "2-Speed Electric Drill – DeWalt – D21570K-QS – 16 mm 1300W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D21570K-QS",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D21570K-QS",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x091",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x091.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "رأس مفك فيليبس PH2‏ – ‏DeWalt‏ – ‏DT7246-QZ‏ – ‏50 مم 5 قطع",
+    "nameEn": "Phillips PH2 Torsion Bit – DeWalt – DT7246-QZ – 50 mm 5 Pcs",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DT7246-QZ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DT7246-QZ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x092",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي مع طقم إكسسوارات 100 قطعة‏ – ‏DeWalt‏ – ‏DCD776D2TMEA-GB‏ – ‏18 فولت 2 أمبير",
+    "nameEn": "Cordless Hammer Drill with 100 Pcs Accessory Kit – DeWalt – DCD776D2TMEA-GB – 18V 2Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD776D2TMEA-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD776D2TMEA-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x093",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/catalog/dewalt-x093.webp",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي McLaren‏ – ‏DeWalt‏ – ‏DCD85MM1T-GB‏ – ‏18 فولت 4 أمبير",
+    "nameEn": "McLaren Cordless Hammer Drill – DeWalt – DCD85MM1T-GB – 18V 4Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD85MM1T-GB",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD85MM1T-GB",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x094",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مفك صدمي لاسلكي 3 سرعات‏ – ‏DeWalt‏ – ‏DCF887P2-QW‏ – ‏18 فولت 5 أمبير",
+    "nameEn": "3-Speed Cordless Impact Driver – DeWalt – DCF887P2-QW – 18V 5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCF887P2-QW",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCF887P2-QW",
       "Brand: DeWalt"
     ]
   }
