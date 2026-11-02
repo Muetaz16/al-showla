@@ -9,7 +9,7 @@ type Msg = { role: "user" | "assistant"; content: string; products?: { id: strin
 
 const T = {
   ar: {
-    title: "المستشار الفني الذكي",
+    title: "مستشار الشعلة الرائدة الذكي",
     subtitle: "اسأل عن الأنظمة والمنتجات المناسبة لمشروعك — مبني على كتالوج الشعلة الرائدة.",
     disclaimer: "المعلومات إرشادية ومبنية على الكتالوج؛ للاعتماد النهائي يرجى التأكد مع فريق المبيعات أو أوراق البيانات الفنية (TDS).",
     placeholder: "اكتب سؤالك الفني هنا...",
@@ -23,10 +23,10 @@ const T = {
       "منتج لتشطيب الأرضيات",
       "مادة لاصقة للسيراميك الخارجي",
     ],
-    greeting: "مرحباً! أنا المستشار الفني للشعلة الرائدة. صف لي مشروعك أو المشكلة وسأقترح المنتج والنظام المناسب.",
+    greeting: "مرحباً! أنا مستشار شركة الشعلة الرائدة. أساعدك في منتجات الشركة وخدماتها — صف لي مشروعك أو المشكلة وسأقترح المنتج والنظام المناسب.",
   },
   en: {
-    title: "AI Technical Advisor",
+    title: "Al-Showla Al-Raeda AI Advisor",
     subtitle: "Ask about the right systems and products for your project — grounded in the Al-Showla catalog.",
     disclaimer: "Guidance is catalog-based; for final selection confirm with the sales team or the technical datasheets (TDS).",
     placeholder: "Type your technical question here...",
@@ -40,7 +40,7 @@ const T = {
       "A product for floor finishing",
       "Adhesive for exterior ceramic",
     ],
-    greeting: "Hello! I'm Al-Showla's technical advisor. Describe your project or problem and I'll suggest the right product and system.",
+    greeting: "Hello! I'm the Al-Showla Al-Raeda advisor. I can help with our products and services — describe your project or problem and I'll suggest the right product and system.",
   },
 };
 
