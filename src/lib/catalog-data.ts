@@ -15831,5 +15831,304 @@ export const CATALOG_PRODUCTS: Product[] = [
       "Code: DD2010-D2",
       "Brand: Dekonil"
     ]
+  },
+  {
+    "id": "dewalt-x048",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "ريشة ثقب‏ – ‏DeWalt‏ – ‏DW00702‏ – ‏6×50×110 مم‏",
+    "nameEn": "Drill Bit – DeWalt – DW00702 – 6×50×110 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DW00702",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DW00702",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x049",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب كهربائي‏ – ‏DeWalt‏ – ‏D024K-B5‏ – ‏13 مم 650 وات‏",
+    "nameEn": "Electric Drill – DeWalt – D024K-B5 – 13 mm 650W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D024K-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D024K-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x050",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب لاسلكي‏ – ‏DeWalt‏ – ‏DCD776S2-B5‏ – ‏18 فولت 1.5 أمبير‏",
+    "nameEn": "Cordless Drill – DeWalt – DCD776S2-B5 – 18V 1.5Ah",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DCD776S2-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DCD776S2-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x051",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة مع ظرف إضافي‏ – ‏DeWalt‏ – ‏D25144K-QS‏ – ‏2 كيلو 900 وات 28 مم‏",
+    "nameEn": "Rotary Hammer with Extra Chuck – DeWalt – D25144K-QS – 2 kg 900W 28 mm",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25144K-QS",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25144K-QS",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x052",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "حامل ثلاثي لميزان الليزر‏ – ‏DeWalt‏ – ‏DE0881T-XJ‏",
+    "nameEn": "Laser Level Tripod – DeWalt – DE0881T-XJ",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DE0881T-XJ",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DE0881T-XJ",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x053",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE4212-B5‏ – ‏4.5 بوصة 1200 وات‏",
+    "nameEn": "Angle Grinder – DeWalt – DWE4212-B5 – 4.5 Inch 1200W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE4212-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE4212-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x054",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE4120T-B5‏ – ‏4.5 بوصة 900 وات‏",
+    "nameEn": "Angle Grinder – DeWalt – DWE4120T-B5 – 4.5 Inch 900W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE4120T-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE4120T-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x055",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE492-B5‏ – ‏230 مم 2200 وات‏",
+    "nameEn": "Angle Grinder – DeWalt – DWE492-B5 – 230 mm 2200W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE492-B5",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE492-B5",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x056",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جلاخة زاوية‏ – ‏DeWalt‏ – ‏DWE493‏ – ‏2200 وات‏",
+    "nameEn": "Angle Grinder – DeWalt – DWE493 – 2200W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE493",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE493",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x057",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مطرقة دوارة‏ – ‏DeWalt‏ – ‏D25481K‏ – ‏5 كيلو 1100 وات‏",
+    "nameEn": "Rotary Hammer – DeWalt – D25481K – 5 kg 1100W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D25481K",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D25481K",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x058",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مثقاب صدمي‏ – ‏DeWalt‏ – ‏DWD024K‏ – ‏650 وات‏",
+    "nameEn": "Impact Drill – DeWalt – DWD024K – 650W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWD024K",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWD024K",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x059",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار منحنيات‏ – ‏DeWalt‏ – ‏DWE349‏ – ‏650 وات‏",
+    "nameEn": "Jigsaw – DeWalt – DWE349 – 650W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: DWE349",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: DWE349",
+      "Brand: DeWalt"
+    ]
+  },
+  {
+    "id": "dewalt-x060",
+    "categoryId": "tools",
+    "brand": "DeWalt",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "منشار دائري‏ – ‏DeWalt‏ – ‏D23700‏ – ‏86 مم 1750 وات‏",
+    "nameEn": "Circular Saw – DeWalt – D23700 – 86 mm 1750W",
+    "descriptionAr": "منتج أصلي من DeWalt ضمن فئة المعدات والأدوات الصناعية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine DeWalt product in the Industrial Equipment & Tools category. Contact us for a quotation.",
+    "unit": "قطعة",
+    "specAr": [
+      "الكود: D23700",
+      "العلامة التجارية: DeWalt"
+    ],
+    "specEn": [
+      "Code: D23700",
+      "Brand: DeWalt"
+    ]
   }
 ];
