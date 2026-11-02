@@ -46,6 +46,12 @@ export function useLang(): [Lang, (l: LangSetter) => void] {
     };
   }, []);
 
+  // Keep <html lang/dir> in step with the chosen language on every page.
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  }, [lang]);
+
   const setLang = useCallback((l: LangSetter) => {
     setLangState((prev) => {
       const next = typeof l === "function" ? l(prev) : l;

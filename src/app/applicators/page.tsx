@@ -3,10 +3,14 @@
 import { useState, useEffect } from "react";
 import { getApplicators } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
+import { useLang } from "@/lib/useLang";
 
 type Applicator = { id: string; name: string; systemSpecialty: string; contactInfo: any; certifications: string[] };
 
 export default function ApplicatorsPage() {
+  const [lang, setLang] = useLang();
+  const isAr = lang === "ar";
+  const tx = (ar: string, en: string) => (isAr ? ar : en);
   const [items, setItems] = useState<Applicator[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,22 +21,22 @@ export default function ApplicatorsPage() {
 
   return (
     <>
-      <SiteHeader />
-      <main className="ap" dir="rtl">
+      <SiteHeader lang={lang} onToggleLang={() => setLang(l => l === "ar" ? "en" : "ar")} />
+      <main className="ap" dir={isAr ? "rtl" : "ltr"}>
         {/* ── Header banner ── */}
         <section className="ap-hero">
           <div className="ap-wrap">
-            <h1>دليل المطبّقين المعتمدين</h1>
-            <p>شركات التطبيق المعتمدة والأنظمة التي تتخصص فيها وبيانات التواصل معها.</p>
+            <h1>{tx("دليل المطبّقين المعتمدين", "Certified Applicators Directory")}</h1>
+            <p>{tx("شركات التطبيق المعتمدة والأنظمة التي تتخصص فيها وبيانات التواصل معها.", "Certified application companies, the systems they specialise in and how to contact them.")}</p>
           </div>
         </section>
 
         <div className="ap-wrap ap-list">
           {loading ? (
-            <div className="ap-empty">جارٍ التحميل...</div>
+            <div className="ap-empty">{tx("جارٍ التحميل...", "Loading...")}</div>
           ) : items.length === 0 ? (
             <div className="ap-empty">
-              لم تُضف شركات تطبيق بعد. يُدار الدليل من لوحة الإدارة.
+              {tx("لم تُضف شركات تطبيق بعد. يُدار الدليل من لوحة الإدارة.", "No applicators added yet.")}
             </div>
           ) : (
             items.map((a) => {
@@ -55,7 +59,7 @@ export default function ApplicatorsPage() {
                     </div>
                     {(c.website || c.facebook || c.linkedin) && (
                       <div className="ap-links">
-                        {c.website && <a href={c.website} target="_blank" rel="noopener noreferrer">الموقع ↗</a>}
+                        {c.website && <a href={c.website} target="_blank" rel="noopener noreferrer">{tx("الموقع ↗", "Website ↗")}</a>}
                         {c.facebook && <a href={c.facebook} target="_blank" rel="noopener noreferrer" className="fb">Facebook</a>}
                         {c.linkedin && <a href={c.linkedin} target="_blank" rel="noopener noreferrer" className="li">LinkedIn</a>}
                       </div>
@@ -70,7 +74,7 @@ export default function ApplicatorsPage() {
 
                     {c.services?.length > 0 && (
                       <div className="ap-block">
-                        <h3>الخدمات</h3>
+                        <h3>{tx("الخدمات", "Services")}</h3>
                         <div className="ap-chips">
                           {c.services.map((s: string, i: number) => <span key={i}>{s}</span>)}
                         </div>
@@ -79,7 +83,7 @@ export default function ApplicatorsPage() {
 
                     {c.projects?.length > 0 && (
                       <div className="ap-block">
-                        <h3>من مشاريعها</h3>
+                        <h3>{tx("من مشاريعها", "Selected projects")}</h3>
                         <ul className="ap-projects">
                           {c.projects.map((p: string, i: number) => <li key={i}>{p}</li>)}
                         </ul>
@@ -88,7 +92,7 @@ export default function ApplicatorsPage() {
 
                     {a.certifications?.length > 0 && (
                       <div className="ap-block">
-                        <h3>الاعتمادات</h3>
+                        <h3>{tx("الاعتمادات", "Certifications")}</h3>
                         <div className="ap-chips gold">
                           {a.certifications.map((x, i) => <span key={i}>{x}</span>)}
                         </div>
@@ -101,7 +105,7 @@ export default function ApplicatorsPage() {
           )}
         </div>
       </main>
-      <SiteFooter />
+      <SiteFooter lang={lang} />
       <style>{CSS}</style>
     </>
   );

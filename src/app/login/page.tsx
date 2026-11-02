@@ -5,8 +5,12 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { registerUser } from "@/app/auth-actions";
+import { useLang } from "@/lib/useLang";
 
 export default function Login() {
+  const [lang] = useLang();
+  const isAr = lang === "ar";
+  const tx = (ar: string, en: string) => (isAr ? ar : en);
   const [emailMode, setEmailMode] = useState<"login" | "register">("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,7 +39,7 @@ export default function Login() {
       });
 
       if (result?.error) {
-        setError("البريد الإلكتروني أو كلمة المرور غير صحيحة.");
+        setError(tx("البريد الإلكتروني أو كلمة المرور غير صحيحة.", "Incorrect email or password."));
       } else {
         router.push("/profile");
       }
@@ -47,7 +51,7 @@ export default function Login() {
   };
 
   return (
-    <div className="login-wrapper">
+    <div className="login-wrapper" dir={isAr ? "rtl" : "ltr"}>
       <style>{`
         .login-wrapper {
           min-height: 100vh;
@@ -88,7 +92,7 @@ export default function Login() {
           box-shadow: 0 20px 40px rgba(0,0,0,0.08);
           border: 1px solid var(--border);
         }
-        .input-group { margin-bottom: 20px; text-align: right; }
+        .input-group { margin-bottom: 20px; text-align: start; }
         .input-group label { display: block; margin-bottom: 8px; font-size: 0.95rem; font-weight: 700; color: var(--text); }
         .input-field {
           width: 100%; padding: 14px 16px; border-radius: 12px;
@@ -115,21 +119,21 @@ export default function Login() {
       `}</style>
 
       <div className="login-image">
-        <h1>الشعلة الرائدة</h1>
-        <p>بوابة المقاولين والشركات للوصول السريع لكتالوج المنتجات، طلبات عروض الأسعار، وتتبع الشحنات بكل سهولة وموثوقية.</p>
-        <Link href="/" style={{ color: "#fff", marginTop: 40, textDecoration: "underline" }}>العودة للموقع</Link>
+        <h1>{tx("الشعلة الرائدة", "Al-Showla Al-Raeda")}</h1>
+        <p>{tx("بوابة المقاولين والشركات للوصول السريع لكتالوج المنتجات، طلبات عروض الأسعار، وتتبع الشحنات بكل سهولة وموثوقية.", "The portal for contractors and companies: quick access to the product catalog, quotation requests and shipment tracking.")}</p>
+        <Link href="/" style={{ color: "#fff", marginTop: 40, textDecoration: "underline" }}>{tx("العودة للموقع", "Back to site")}</Link>
       </div>
 
       <div className="login-form-container">
         <div className="login-card">
-          <h2 style={{ textAlign: "center", marginBottom: 10, fontSize: "1.8rem", color: "var(--text)" }}>أهلاً بك 👋</h2>
-          <p style={{ textAlign: "center", marginBottom: 30, color: "var(--text-secondary)" }}>قم بتسجيل الدخول للوصول لحسابك</p>
+          <h2 style={{ textAlign: "center", marginBottom: 10, fontSize: "1.8rem", color: "var(--text)" }}>{tx("أهلاً بك 👋", "Welcome 👋")}</h2>
+          <p style={{ textAlign: "center", marginBottom: 30, color: "var(--text-secondary)" }}>{tx("قم بتسجيل الدخول للوصول لحسابك", "Sign in to access your account")}</p>
 
           {error && <div className="error-msg">{error}</div>}
 
           <form onSubmit={handleEmailAuth}>
             <div className="input-group">
-              <label>البريد الإلكتروني</label>
+              <label>{tx("البريد الإلكتروني", "Email")}</label>
               <input 
                 type="email" 
                 value={email} onChange={e => setEmail(e.target.value)}
@@ -138,7 +142,7 @@ export default function Login() {
               />
             </div>
             <div className="input-group">
-              <label>كلمة المرور</label>
+              <label>{tx("كلمة المرور", "Password")}</label>
               <input 
                 type="password" 
                 value={password} onChange={e => setPassword(e.target.value)}
@@ -147,23 +151,23 @@ export default function Login() {
               />
             </div>
             <button type="submit" className="submit-btn" disabled={loading}>
-              {loading ? "جاري المعالجة..." : (emailMode === "login" ? "تسجيل الدخول" : "إنشاء حساب جديد")}
+              {loading ? tx("جاري المعالجة...", "Processing...") : (emailMode === "login" ? tx("تسجيل الدخول", "Sign in") : tx("إنشاء حساب جديد", "Create account"))}
             </button>
             
             <div className="toggle-mode">
-              {emailMode === "login" ? "ليس لديك حساب؟ " : "لديك حساب بالفعل؟ "}
+              {emailMode === "login" ? tx("ليس لديك حساب؟ ", "Don't have an account? ") : tx("لديك حساب بالفعل؟ ", "Already have an account? ")}
               <span onClick={() => setEmailMode(emailMode === "login" ? "register" : "login")}>
-                {emailMode === "login" ? "سجل الآن" : "سجل الدخول"}
+                {emailMode === "login" ? tx("سجل الآن", "Sign up") : tx("سجل الدخول", "Sign in")}
               </span>
             </div>
 
             <div style={{ marginTop: 24, padding: 16, background: "var(--blue-light, #e8f2fc)", borderRadius: 12, border: "1px solid rgba(0,81,162,0.2)", textAlign: "center" }}>
-              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--primary)", marginBottom: 8 }}>👷 هل أنت مقاول؟</div>
+              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--primary)", marginBottom: 8 }}>{tx("👷 هل أنت مقاول؟", "👷 Are you a contractor?")}</div>
               <p style={{ fontSize: 12, color: "var(--text-secondary)", marginBottom: 12, lineHeight: 1.6 }}>
-                حسابات المقاولين تُسجَّل من بوابة منفصلة.
+                {tx("حسابات المقاولين تُسجَّل من بوابة منفصلة.", "Contractor accounts are registered through a separate portal.")}
               </p>
               <Link href="/contractor/login" style={{ display: "inline-block", padding: "10px 20px", background: "var(--primary)", color: "#fff", borderRadius: 10, textDecoration: "none", fontWeight: 800, fontSize: 13 }}>
-                دخول بوابة المقاولين →
+                {tx("دخول بوابة المقاولين ←", "Contractor portal →")}
               </Link>
             </div>
           </form>

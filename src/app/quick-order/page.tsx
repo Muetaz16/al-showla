@@ -7,12 +7,16 @@ import { getProducts } from "@/app/actions";
 import { addToCart } from "@/lib/cart";
 import type { Product } from "@/lib/products";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
+import { useLang } from "@/lib/useLang";
 
 type Entry = { original: string; query: string; qty: number };
 type Row = { id: number; originalLine: string; extractedQty: number; extractedQuery: string; matchedProduct: Product | null };
 
 export default function QuickOrderPage() {
   const router = useRouter();
+  const [lang, setLang] = useLang();
+  const isAr = lang === "ar";
+  const tx = (ar: string, en: string) => (isAr ? ar : en);
   const [text, setText] = useState("");
   const [products, setProducts] = useState<Product[]>([]);
   const [parsedItems, setParsedItems] = useState<Row[]>([]);
@@ -73,7 +77,7 @@ export default function QuickOrderPage() {
       setParsedItems(entries.map((e, i) => matchEntry(list, e, i)));
     } catch (err) {
       console.error(err);
-      alert("تعذر قراءة الملف. تأكد أنه ملف Excel (.xlsx) أو CSV صالح.");
+      alert(tx("تعذر قراءة الملف. تأكد أنه ملف Excel (.xlsx) أو CSV صالح.", "Couldn't read the file. Make sure it's a valid Excel (.xlsx) or CSV file."));
     }
     setLoading(false);
   };
@@ -95,59 +99,59 @@ export default function QuickOrderPage() {
 
   return (
       <>
-      <SiteHeader />
-    <div style={{ maxWidth: 900, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir="rtl">
-      <h1 style={{ color: "var(--primary)", textAlign: "center", marginBottom: 10 }}>⚡ الطلب السريع بالأكواد</h1>
+      <SiteHeader lang={lang} onToggleLang={() => setLang(l => l === "ar" ? "en" : "ar")} />
+    <div style={{ maxWidth: 900, margin: "40px auto", padding: 20, fontFamily: "'Cairo', sans-serif" }} dir={isAr ? "rtl" : "ltr"}>
+      <h1 style={{ color: "var(--primary)", textAlign: "center", marginBottom: 10 }}>⚡ {tx("الطلب السريع بالأكواد", "Quick Order by Code")}</h1>
       <p style={{ textAlign: "center", color: "var(--text-secondary)", marginBottom: 30 }}>
-        نظام لمسؤولي المشتريات: أدخل أكواد المنتجات والكميات مباشرة، أو ارفع ملف Excel / CSV لبناء قائمة طلب جاهزة.
+        {tx("نظام لمسؤولي المشتريات: أدخل أكواد المنتجات والكميات مباشرة، أو ارفع ملف Excel / CSV لبناء قائمة طلب جاهزة.", "For procurement officers: enter product codes and quantities directly, or upload an Excel / CSV file to build a ready order list.")}
       </p>
 
       <div style={{ display: "flex", gap: 30, flexWrap: "wrap" }}>
         {/* Input area */}
         <div style={{ flex: "1 1 350px", display: "flex", flexDirection: "column" }}>
-          <h3 style={{ marginTop: 0 }}>الإدخال اليدوي:</h3>
+          <h3 style={{ marginTop: 0 }}>{tx("الإدخال اليدوي:", "Manual entry:")}</h3>
           <p style={{ fontSize: 13, color: "var(--gray)", marginBottom: 10 }}>
-            صيغ مدعومة: <code>100x SIKA-107</code> · <code>P-01 50</code> · <code>20 مطرقة ديوالت</code>
+            {tx("صيغ مدعومة:", "Supported formats:")} <code>100x SIKA-107</code> · <code>P-01 50</code> · <code>{tx("20 مطرقة ديوالت", "20 DeWalt hammer")}</code>
           </p>
-          <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder="الصق طلباتك هنا..."
+          <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder={tx("الصق طلباتك هنا...", "Paste your order here...")}
             style={{ minHeight: 220, padding: 15, borderRadius: 8, border: "1px solid var(--border)", fontFamily: "monospace", fontSize: 14 }} />
           <button onClick={handleParseText} disabled={loading || text.trim() === ""}
             style={{ marginTop: 12, padding: 12, background: "var(--blue)", color: "#fff", border: "none", borderRadius: 8, fontWeight: "bold", cursor: "pointer" }}>
-            {loading ? "جاري التحليل..." : "تحليل النص 🔍"}
+            {loading ? tx("جاري التحليل...", "Analyzing...") : tx("تحليل النص 🔍", "Analyze text 🔍")}
           </button>
 
           <div style={{ marginTop: 20, padding: 16, border: "1px dashed var(--border)", borderRadius: 8, textAlign: "center" }}>
-            <div style={{ fontWeight: 700, marginBottom: 8 }}>أو ارفع ملف Excel / CSV</div>
+            <div style={{ fontWeight: 700, marginBottom: 8 }}>{tx("أو ارفع ملف Excel / CSV", "Or upload an Excel / CSV file")}</div>
             <input type="file" accept=".xlsx,.xls,.csv" onChange={(e) => handleFile(e.target.files?.[0] || null)} />
             {fileName && <div style={{ fontSize: 12, color: "var(--gray)", marginTop: 6 }}>📎 {fileName}</div>}
-            <div style={{ fontSize: 11, color: "var(--gray)", marginTop: 8 }}>الصيغة: عمود للكود/الاسم وعمود للكمية.</div>
+            <div style={{ fontSize: 11, color: "var(--gray)", marginTop: 8 }}>{tx("الصيغة: عمود للكود/الاسم وعمود للكمية.", "Format: one column for code/name and one for quantity.")}</div>
           </div>
         </div>
 
         {/* Results area */}
         <div style={{ flex: "1 1 400px" }}>
-          <h3 style={{ marginTop: 0 }}>نتائج التحليل {parsedItems.length > 0 && `(${matchedCount}/${parsedItems.length})`}:</h3>
+          <h3 style={{ marginTop: 0 }}>{tx("نتائج التحليل", "Results")} {parsedItems.length > 0 && `(${matchedCount}/${parsedItems.length})`}:</h3>
 
           {parsedItems.length === 0 ? (
             <div style={{ background: "var(--surface)", border: "1px dashed var(--border)", borderRadius: 8, padding: 40, textAlign: "center", color: "var(--gray)" }}>
-              أدخل الطلبات أو ارفع ملفاً ثم اعرض النتائج هنا.
+              {tx("أدخل الطلبات أو ارفع ملفاً ثم اعرض النتائج هنا.", "Enter items or upload a file to see the results here.")}
             </div>
           ) : (
             <div>
               <div style={{ maxHeight: 380, overflowY: "auto", paddingInlineEnd: 10 }}>
                 {parsedItems.map((item) => (
                   <div key={item.id} style={{ padding: 15, marginBottom: 10, borderRadius: 8, border: `1px solid ${item.matchedProduct ? "#10b981" : "#ef4444"}`, background: item.matchedProduct ? "#f0fdf4" : "#fef2f2" }}>
-                    <div style={{ fontSize: 12, color: "var(--gray)", marginBottom: 5 }}>النص الأصلي: &quot;{item.originalLine}&quot;</div>
+                    <div style={{ fontSize: 12, color: "var(--gray)", marginBottom: 5 }}>{tx("النص الأصلي:", "Original:")} &quot;{item.originalLine}&quot;</div>
                     {item.matchedProduct ? (
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         <div>
-                          <strong>{item.matchedProduct.nameAr}</strong>
-                          <div style={{ fontSize: 12, color: "var(--text-secondary)" }}>الكود: {item.matchedProduct.id}</div>
+                          <strong>{isAr ? item.matchedProduct.nameAr : item.matchedProduct.nameEn}</strong>
+                          <div style={{ fontSize: 12, color: "var(--text-secondary)" }}>{tx("الكود:", "Code:")} {item.matchedProduct.id}</div>
                         </div>
-                        <div style={{ background: "#10b981", color: "#fff", padding: "4px 10px", borderRadius: 20, fontSize: 14, fontWeight: "bold" }}>الكمية: {item.extractedQty}</div>
+                        <div style={{ background: "#10b981", color: "#fff", padding: "4px 10px", borderRadius: 20, fontSize: 14, fontWeight: "bold" }}>{tx("الكمية:", "Qty:")} {item.extractedQty}</div>
                       </div>
                     ) : (
-                      <div style={{ color: "#ef4444", fontSize: 14, fontWeight: "bold" }}>❌ لم يتم التعرف على: &quot;{item.extractedQuery}&quot;</div>
+                      <div style={{ color: "#ef4444", fontSize: 14, fontWeight: "bold" }}>❌ {tx("لم يتم التعرف على:", "Not recognized:")} &quot;{item.extractedQuery}&quot;</div>
                     )}
                   </div>
                 ))}
@@ -157,21 +161,21 @@ export default function QuickOrderPage() {
                 <div style={{ display: "flex", gap: 10, marginTop: 16, flexWrap: "wrap" }}>
                   <button onClick={() => handleAddToCart(false)} disabled={adding}
                     style={{ flex: 1, padding: 14, background: "var(--surface)", color: "var(--primary)", border: "1.5px solid var(--blue)", borderRadius: 8, fontWeight: "bold", fontSize: 15, cursor: "pointer" }}>
-                    🛒 إضافة للسلة
+                    🛒 {tx("إضافة للسلة", "Add to cart")}
                   </button>
                   <button onClick={() => handleAddToCart(true)} disabled={adding}
                     style={{ flex: 1, padding: 14, background: "var(--accent)", color: "#fff", border: "none", borderRadius: 8, fontWeight: "bold", fontSize: 15, cursor: "pointer" }}>
-                    {adding ? "..." : "بناء الطلب ومتابعة ←"}
+                    {adding ? "..." : tx("بناء الطلب ومتابعة ←", "Build order & continue →")}
                   </button>
                 </div>
               )}
-              {added && <div style={{ marginTop: 10, color: "#059669", fontSize: 13, fontWeight: 700 }}>✅ تمت إضافة {matchedCount} منتج إلى السلة.</div>}
+              {added && <div style={{ marginTop: 10, color: "#059669", fontSize: 13, fontWeight: 700 }}>✅ {tx(`تمت إضافة ${matchedCount} منتج إلى السلة.`, `${matchedCount} products added to cart.`)}</div>}
             </div>
           )}
         </div>
       </div>
     </div>
-      <SiteFooter />
+      <SiteFooter lang={lang} />
       </>
   );
 }

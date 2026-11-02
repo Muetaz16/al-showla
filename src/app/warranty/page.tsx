@@ -3,8 +3,12 @@
 import { useState } from "react";
 import { registerToolWarranty } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
+import { useLang } from "@/lib/useLang";
 
 export default function WarrantyPage() {
+  const [lang, setLang] = useLang();
+  const isAr = lang === "ar";
+  const tx = (ar: string, en: string) => (isAr ? ar : en);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [refId, setRefId] = useState("");
@@ -24,38 +28,38 @@ export default function WarrantyPage() {
     );
 
     if (res) { setRefId(res); setSuccess(true); }
-    else setError("الرقم التسلسلي غير صحيح أو مسجل مسبقاً.");
+    else setError(tx("الرقم التسلسلي غير صحيح أو مسجل مسبقاً.", "The serial number is invalid or already registered."));
     setLoading(false);
   };
 
   if (success) {
     return (
-      <div style={{ textAlign: "center", padding: "100px 20px" }} dir="rtl">
-        <h2>✅ تم تفعيل الضمان بنجاح</h2>
-        <p>الآن عدتك الكهربائية تحت حماية الشعلة الرائدة.</p>
-        <p style={{ marginTop: 12 }}>رقم التسجيل المرجعي: <strong style={{ color: "var(--accent)", fontFamily: "monospace" }}>{refId}</strong></p>
-        <a href="/" style={{ color: "var(--blue)" }}>العودة للرئيسية</a>
+      <div style={{ textAlign: "center", padding: "100px 20px" }} dir={isAr ? "rtl" : "ltr"}>
+        <h2>✅ {tx("تم تفعيل الضمان بنجاح", "Warranty activated successfully")}</h2>
+        <p>{tx("الآن عدتك الكهربائية تحت حماية الشعلة الرائدة.", "Your power tool is now protected by Al-Showla Al-Raeda.")}</p>
+        <p style={{ marginTop: 12 }}>{tx("رقم التسجيل المرجعي:", "Registration reference:")} <strong style={{ color: "var(--accent)", fontFamily: "monospace" }}>{refId}</strong></p>
+        <a href="/" style={{ color: "var(--blue)" }}>{tx("العودة للرئيسية", "Back to home")}</a>
       </div>
     );
   }
 
   return (
       <>
-      <SiteHeader />
-    <div style={{ maxWidth: 500, margin: "40px auto", padding: 20 }}>
-      <h1 style={{ color: "var(--primary)" }}>تفعيل ضمان العدد الكهربائية</h1>
+      <SiteHeader lang={lang} onToggleLang={() => setLang(l => l === "ar" ? "en" : "ar")} />
+    <div dir={isAr ? "rtl" : "ltr"} style={{ maxWidth: 500, margin: "40px auto", padding: 20 }}>
+      <h1 style={{ color: "var(--primary)" }}>{tx("تفعيل ضمان العدد الكهربائية", "Power Tool Warranty Activation")}</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: 30 }}>
-        سجل أدواتك الكهربائية برقمها التسلسلي لضمان حقوقك ومتابعة الصيانة.
+        {tx("سجل أدواتك الكهربائية برقمها التسلسلي لضمان حقوقك ومتابعة الصيانة.", "Register your power tools by serial number to secure your warranty and track maintenance.")}
       </p>
 
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 15 }}>
-        <input name="clientName" placeholder="الاسم الرباعي" required style={inputStyle} />
-        <input name="productName" placeholder="اسم أو موديل العدة (مثال: منشار ديوالت)" required style={inputStyle} />
-        <input name="productId" placeholder="كود المنتج (اختياري)" style={inputStyle} />
-        <input name="serialNumber" placeholder="الرقم التسلسلي (S/N) الموجود على العدة" required style={inputStyle} />
-        
+        <input name="clientName" placeholder={tx("الاسم الرباعي", "Full name")} required style={inputStyle} />
+        <input name="productName" placeholder={tx("اسم أو موديل العدة (مثال: منشار ديوالت)", "Tool name or model (e.g. DeWalt saw)")} required style={inputStyle} />
+        <input name="productId" placeholder={tx("كود المنتج (اختياري)", "Product code (optional)")} style={inputStyle} />
+        <input name="serialNumber" placeholder={tx("الرقم التسلسلي (S/N) الموجود على العدة", "Serial number (S/N) on the tool")} required style={inputStyle} />
+
         <div>
-          <label style={{ fontSize: 13, color: "var(--gray)", display: "block", marginBottom: 5 }}>تاريخ الشراء:</label>
+          <label style={{ fontSize: 13, color: "var(--gray)", display: "block", marginBottom: 5 }}>{tx("تاريخ الشراء:", "Purchase date:")}</label>
           <input name="purchaseDate" type="date" required style={{...inputStyle, width: "100%"}} />
         </div>
 
@@ -65,11 +69,11 @@ export default function WarrantyPage() {
           background: "var(--accent)", color: "#fff", padding: 15, borderRadius: 8,
           border: "none", fontSize: 16, fontWeight: "bold", cursor: "pointer", marginTop: 15
         }}>
-          {loading ? "جاري التفعيل..." : "تفعيل الضمان"}
+          {loading ? tx("جاري التفعيل...", "Activating...") : tx("تفعيل الضمان", "Activate warranty")}
         </button>
       </form>
     </div>
-      <SiteFooter />
+      <SiteFooter lang={lang} />
       </>
   );
 }
