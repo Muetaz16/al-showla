@@ -4773,7 +4773,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "specEn": [
       "Brand: Weber"
     ],
-    "datasheetUrl": "https://www.middleeast.weber/files/sodamco/2019-03/weberep%20331%20TX%20(UAE).pdf"
+    "datasheetUrl": "/datasheets/weberep-331-tx.pdf"
   },
   {
     "id": "weber-011",
@@ -5259,7 +5259,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "specEn": [
       "Brand: Weber"
     ],
-    "datasheetUrl": "https://www.middleeast.weber/files/sodamco/2021-06/TDS_weberanc_405_BFX.pdf"
+    "datasheetUrl": "/datasheets/weberanc-405-bfx.pdf"
   },
   {
     "id": "bd-001",
@@ -6919,7 +6919,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     "specEn": [
       "Code: Weberad Cure Y20",
       "Brand: Weber"
-    ]
+    ],
+    "datasheetUrl": "/datasheets/weberad-cure-y20.pdf"
   },
   {
     "id": "rokal-x001",
@@ -7047,7 +7048,8 @@ export const CATALOG_PRODUCTS: Product[] = [
     ],
     "specEn": [
       "Brand: Fosroc"
-    ]
+    ],
+    "datasheetUrl": "/datasheets/fosroc-nitoprime-zincrich.pdf"
   },
   {
     "id": "fosroc-x004",
@@ -7156,7 +7158,184 @@ export const CATALOG_PRODUCTS: Product[] = [
     ],
     "specEn": [
       "Brand: Fosroc"
-    ]
+    ],
+    "datasheetUrl": "/datasheets/fosroc-nitobond-ep.pdf"
+  },
+  {
+    "id": "fosroc-x009",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مركب معالجة الخرسانة‏ – ‏Fosroc‏ – ‏Concure WB200‏",
+    "nameEn": "Concrete Curing Compound – Fosroc – Concure WB200",
+    "descriptionAr": "منتج أصلي من Fosroc — مركب معالجة مائي من مستحلب بوليمري. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Water-based polymer emulsion curing compound. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-concure-wb200.pdf"
+  },
+  {
+    "id": "fosroc-x010",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جراوت تثبيت إيبوكسي‏ – ‏Fosroc‏ – ‏Lokfix EP‏",
+    "nameEn": "Epoxy Anchoring Grout – Fosroc – Lokfix EP",
+    "descriptionAr": "منتج أصلي من Fosroc — جراوت تثبيت من راتنج الإيبوكسي عالي المقاومة. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — High-strength thixotropic epoxy resin anchoring grout. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-lokfix-ep.pdf"
+  },
+  {
+    "id": "fosroc-x011",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "راتنج حقن إيبوكسي‏ – ‏Fosroc‏ – ‏Nitofill EPLV‏",
+    "nameEn": "Epoxy Injection Resin – Fosroc – Nitofill EPLV",
+    "descriptionAr": "منتج أصلي من Fosroc — نظام راتنج إيبوكسي منخفض اللزوجة لحقن الشقوق. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Low-viscosity epoxy injection resin system. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-nitofill-eplv.pdf"
+  },
+  {
+    "id": "fosroc-x012",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة إصلاح خرسانة‏ – ‏Fosroc‏ – ‏Renderoc 20‏",
+    "nameEn": "Concrete Repair Mortar – Fosroc – Renderoc 20",
+    "descriptionAr": "منتج أصلي من Fosroc — مونة إصلاح أسمنتية متعددة الاستخدامات. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Multi-purpose cementitious repair mortar. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-renderoc-20.pdf"
+  },
+  {
+    "id": "fosroc-x013",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة إصلاح مقواة بالألياف‏ – ‏Fosroc‏ – ‏Renderoc 20F‏",
+    "nameEn": "Fibre-Reinforced Repair Mortar – Fosroc – Renderoc 20F",
+    "descriptionAr": "منتج أصلي من Fosroc — مونة إصلاح أسمنتية معدلة بالبوليمر ومقواة بالألياف. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Fibre-reinforced polymer-modified cementitious repair mortar. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-renderoc-20f.pdf"
+  },
+  {
+    "id": "fosroc-x014",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "مونة إصلاح عالية المقاومة‏ – ‏Fosroc‏ – ‏Renderoc HSXtra‏",
+    "nameEn": "High-Strength Repair Mortar – Fosroc – Renderoc HSXtra",
+    "descriptionAr": "منتج أصلي من Fosroc — مونة إصلاح أسمنتية معدلة بالبوليمر مع التحكم في الانكماش. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Shrinkage-controlled, polymer-modified cementitious repair mortar. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-renderoc-hsxtra.pdf"
+  },
+  {
+    "id": "fosroc-x015",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "خرسانة دقيقة انسيابية‏ – ‏Fosroc‏ – ‏Renderoc LA‏",
+    "nameEn": "Flowable Micro-Concrete – Fosroc – Renderoc LA",
+    "descriptionAr": "منتج أصلي من Fosroc — خرسانة دقيقة انسيابية أحادية المكون منخفضة القلوية. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Single-component free-flowing low-alkali micro-concrete. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-renderoc-la.pdf"
+  },
+  {
+    "id": "fosroc-x016",
+    "categoryId": "waterproof",
+    "brand": "Fosroc",
+    "imageUrl": "/placeholder-product.svg",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0,
+    "certificates": [],
+    "nameAr": "جراوت خرسانة دقيقة‏ – ‏Fosroc‏ – ‏Renderoc LA EG‏",
+    "nameEn": "Micro-Concrete Grout – Fosroc – Renderoc LA EG",
+    "descriptionAr": "منتج أصلي من Fosroc — جراوت خرسانة دقيقة أسمنتي انسيابي غير قابل للانكماش. للاستفسار وطلب عرض سعر تواصل معنا.",
+    "descriptionEn": "Genuine Fosroc product — Cementitious flowable non-shrink micro-concrete grout. Contact us for a quotation.",
+    "unit": "عبوة",
+    "specAr": [
+      "العلامة التجارية: Fosroc"
+    ],
+    "specEn": [
+      "Brand: Fosroc"
+    ],
+    "datasheetUrl": "/datasheets/fosroc-renderoc-la-eg.pdf"
   },
   {
     "id": "gcp-x001",
