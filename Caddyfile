@@ -1,0 +1,6 @@
+# Automatic HTTPS (Let's Encrypt) reverse proxy.
+# Change the domain to your real one. DNS must point to this VPS first.
+vps.shola.ly {
+    reverse_proxy app:3000
+    encode gzip
+}
