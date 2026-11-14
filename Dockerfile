@@ -6,6 +6,9 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN apt-get update && apt-get install -y --no-install-recommends openssl ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY package*.json ./
+# puppeteer is a dev-only tool that is never imported at runtime — skip its
+# Chrome download so the image stays small and the install doesn't fail.
+ENV PUPPETEER_SKIP_DOWNLOAD=true
 RUN npm ci
 
 COPY . .
