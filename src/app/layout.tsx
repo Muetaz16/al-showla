@@ -13,7 +13,7 @@ const cairo = Cairo({
 });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://alshowla.com";
-const OG_IMAGE = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
+const OG_IMAGE = "/site/Copy-of-Our-Vision-scaled.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -60,7 +60,7 @@ const ORG_JSONLD = {
   name: "الشعلة الرائدة لاستيراد مواد البناء",
   alternateName: "AL-SHOWLA AL-RAEDA",
   url: SITE_URL,
-  logo: "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png",
+  logo: `${SITE_URL}/site/cropped-ICON-270x270.png`,
   foundingDate: "2005-05-25",
   description:
     "شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",

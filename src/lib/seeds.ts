@@ -12,7 +12,7 @@ export const BLOG_SEED = [
 ];
 
 export const BANNER_SEED = [
-  { id: "banner-1", titleAr: "مواد بناء عالمية", titleEn: "World-Class Materials", subtitleAr: "جودة معتمدة منذ 2005", subtitleEn: "Certified quality since 2005", imageUrl: "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg", link: "/products", active: true, order: 1 },
+  { id: "banner-1", titleAr: "مواد بناء عالمية", titleEn: "World-Class Materials", subtitleAr: "جودة معتمدة منذ 2005", subtitleEn: "Certified quality since 2005", imageUrl: "/site/Copy-of-Our-Vision-scaled.jpg", link: "/products", active: true, order: 1 },
 ];
 
 export const SALES_STAFF = ["sales1", "sales2", "sales3"];

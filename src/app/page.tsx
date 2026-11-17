@@ -300,9 +300,9 @@ export default function Home() {
     }
   };
 
-  const LOGO = "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png";
-  const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
-  const VISION_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
+  const LOGO = "/site/cropped-ICON-270x270.png";
+  const HERO_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
+  const VISION_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
   const MISSION_IMG = "/categories/cat-adhesives.jpg";
 
   const products = [
@@ -588,11 +588,11 @@ export default function Home() {
   const brands = BRAND_DATA;
 
   const clients = [
-    { img: "https://alshowla.com/wp-content/uploads/2026/01/c5.jpg", name: t.cl1, sub: t.cl1s, tall: true },
-    { img: "https://alshowla.com/wp-content/uploads/2026/01/c3.jpg", name: t.cl2, sub: t.cl2s, tall: false },
-    { img: "https://alshowla.com/wp-content/uploads/2026/01/constr.jpg", name: t.cl3, sub: t.cl3s, tall: false },
-    { img: "https://alshowla.com/wp-content/uploads/2026/01/c2.jpg", name: t.cl4, sub: t.cl4s, tall: false },
-    { img: "https://alshowla.com/wp-content/uploads/2026/01/c1.jpg", name: t.cl5, sub: t.cl5s, tall: false },
+    { img: "/site/c5.jpg", name: t.cl1, sub: t.cl1s, tall: true },
+    { img: "/site/c3.jpg", name: t.cl2, sub: t.cl2s, tall: false },
+    { img: "/site/constr.jpg", name: t.cl3, sub: t.cl3s, tall: false },
+    { img: "/site/c2.jpg", name: t.cl4, sub: t.cl4s, tall: false },
+    { img: "/site/c1.jpg", name: t.cl5, sub: t.cl5s, tall: false },
   ];
 
 

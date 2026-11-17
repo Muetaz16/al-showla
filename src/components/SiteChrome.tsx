@@ -26,7 +26,7 @@ export const NAV: { href: string; ar: string; en: string }[] = [
   { href: "/#contact", ar: "تواصل معنا", en: "Contact" },
 ];
 
-const LOGO = "https://alshowla.com/wp-content/uploads/2025/12/cropped-ICON-270x270.png";
+const LOGO = "/site/cropped-ICON-270x270.png";
 
 // SiteHeader / SiteFooter render the SAME chrome as the main page, by reusing the
 // homepage's global nav/footer CSS classes (defined in globals.css). Placed on

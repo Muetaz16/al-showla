@@ -16,8 +16,8 @@ import { PROJECTS, PARTNERS } from "@/lib/company-data";
 type Lang = "ar" | "en";
 
 const LOGO = "/logo-full.png"; // official logo (client artwork)
-const HERO_IMG = "https://alshowla.com/wp-content/uploads/2026/01/Copy-of-Our-Vision-scaled.jpg";
-const WP = "https://alshowla.com/wp-content/uploads";
+const HERO_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
+const WP = "/site"; // old WordPress uploads, now served locally
 
 const BRANDS: { name: string; logo: string }[] = [
   { name: "Saint-Gobain", logo: "/brands/n/saint-gobain.webp" },
@@ -170,7 +170,7 @@ const T = {
 const VALUE_ICONS = [ClipboardCheck, Handshake, Award, Leaf, Lightbulb];
 const WHY_ICONS = [Award, ShieldCheck, Wrench, Truck, RefreshCw, MonitorSmartphone];
 const SECTOR_ICONS = [Building2, HardHat, Landmark, Store];
-const SECTOR_IMGS = [`${WP}/2026/01/c5.jpg`, `${WP}/2026/01/c2.jpg`, `${WP}/2026/01/constr.jpg`, `${WP}/2026/01/c3.jpg`];
+const SECTOR_IMGS = [`${WP}/c5.jpg`, `${WP}/c2.jpg`, `${WP}/constr.jpg`, `${WP}/c3.jpg`];
 const CAT_IMGS = ["/categories/cat-waterproof.jpg", "/categories/cat-tools.jpg", "/categories/cat-gypsum.jpg", "/categories/cat-steel.jpg", "/categories/cat-flooring.jpg", "/services/cat-ceramic.jpg", "/categories/cat-sanitary.jpg", "/services/cat-decor.jpg"];
 const SVC_IMGS = ["/services/cat-all.jpg", "/categories/cat-all.jpg", "/services/support-247.jpg", "/services/cat-decor.jpg"];
 
