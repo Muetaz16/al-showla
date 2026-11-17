@@ -20,6 +20,9 @@ export interface AdminUser {
 export async function login(username: string, password: string): Promise<AdminUser | null> {
   const user = await adminLogin(username, password); // server-side bcrypt check
   if (user && typeof window !== "undefined") {
+    // Stamp with the BROWSER clock so the 8-hour session check can't be thrown off
+    // by any difference between the server's clock and the user's device.
+    user.loginAt = Date.now();
     localStorage.setItem(AUTH_KEY, JSON.stringify(user));
   }
   return user;
