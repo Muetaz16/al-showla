@@ -12,70 +12,141 @@ import { Product, PRODUCTS as INITIAL_PRODUCTS } from "@/lib/products";
 //  PRODUCTS
 // ════════════════════════════════════════════════════════════════
 
+// The catalog is a STATIC base (src/lib/catalog-data.ts) overlaid with admin
+// edits/additions stored in Postgres. A DB row for an existing id overrides that
+// product's editable fields; a DB row with a new id is an added product; a row
+// with isHidden=true removes it from view. If the DB is ever unavailable we fall
+// back to the pure static catalog, so the site can never break.
+
+// Map a DB product row back onto the public Product shape (used for admin-added items).
+function dbToProduct(db: any): Product {
+  return {
+    id: db.id,
+    categoryId: db.categoryId,
+    brand: db.legacyBrand || "",
+    imageUrl: db.imageUrl,
+    priceBase: db.priceBase ?? 0,
+    wholesalePrice: db.wholesalePrice ?? undefined,
+    inStock: db.inStock,
+    stockCount: db.stockCount ?? undefined,
+    minStockCount: db.minStockCount ?? undefined,
+    isNew: db.isNew,
+    isFeatured: db.isFeatured,
+    rating: db.rating ?? 0,
+    reviewCount: db.reviewCount ?? 0,
+    certificates: (db.certificates || []).map((c: any) => ({
+      nameAr: c.scope || "", nameEn: c.scope || "", issuer: c.grantingAuthority,
+    })),
+    nameAr: db.nameAr,
+    nameEn: db.nameEn,
+    descriptionAr: db.descriptionAr || "",
+    descriptionEn: db.descriptionEn || "",
+    unit: db.unit || "",
+    specAr: db.specAr || [],
+    specEn: db.specEn || [],
+    datasheetUrl: db.datasheetUrl ?? undefined,
+  };
+}
+
+// Overlay an admin DB edit on top of a static product (keeps static fields the
+// admin can't edit, e.g. certificates, when the DB doesn't override them).
+function mergeProduct(s: Product, db: any): Product {
+  return {
+    ...s,
+    categoryId: db.categoryId ?? s.categoryId,
+    brand: db.legacyBrand ?? s.brand,
+    imageUrl: db.imageUrl || s.imageUrl,
+    priceBase: db.priceBase ?? s.priceBase,
+    wholesalePrice: db.wholesalePrice ?? s.wholesalePrice,
+    inStock: db.inStock,
+    stockCount: db.stockCount ?? s.stockCount,
+    minStockCount: db.minStockCount ?? s.minStockCount,
+    isNew: db.isNew,
+    isFeatured: db.isFeatured,
+    nameAr: db.nameAr || s.nameAr,
+    nameEn: db.nameEn || s.nameEn,
+    descriptionAr: db.descriptionAr ?? s.descriptionAr,
+    descriptionEn: db.descriptionEn ?? s.descriptionEn,
+    unit: db.unit || s.unit,
+    specAr: db.specAr && db.specAr.length ? db.specAr : s.specAr,
+    specEn: db.specEn && db.specEn.length ? db.specEn : s.specEn,
+    datasheetUrl: db.datasheetUrl ?? s.datasheetUrl,
+  };
+}
+
 export async function getProducts(): Promise<Product[]> {
-  // Catalog is served from the static real-product list (src/lib/catalog-data.ts).
-  // These are the supplier's actual products with local images and no prices; the
-  // catalog is fixed content, so we bypass the DB to guarantee it shows everywhere.
-  return INITIAL_PRODUCTS;
-}
-
-async function seedProducts() {
-  for (const p of INITIAL_PRODUCTS) {
-    const { brand, certificates, ...rest } = p;
-    await prisma.product.create({
-      data: {
-        ...rest,
-        priceBase: rest.priceBase ?? 0,
-        legacyBrand: brand,
-        certificates: {
-          create: certificates.map(c => ({
-            certNumber: "N/A",
-            grantingAuthority: c.issuer || "Unknown",
-            isIso9001: c.nameEn.includes("ISO 9001"),
-            scope: c.nameEn,
-          }))
-        }
+  try {
+    const rows = await prisma.product.findMany({ include: { certificates: true } });
+    if (!rows.length) return INITIAL_PRODUCTS; // nothing edited yet → pure static
+    const byId = new Map<string, any>(rows.map((r) => [r.id, r]));
+    const out: Product[] = [];
+    for (const s of INITIAL_PRODUCTS) {
+      const db = byId.get(s.id);
+      if (db) {
+        byId.delete(s.id);
+        if (db.isHidden) continue; // admin-removed
+        out.push(mergeProduct(s, db));
+      } else {
+        out.push(s);
       }
-    });
+    }
+    // Remaining DB rows are admin-added products (ids not in the static catalog)
+    for (const db of byId.values()) {
+      if (!db.isHidden) out.push(dbToProduct(db));
+    }
+    return out;
+  } catch (e) {
+    console.error("getProducts: DB unavailable, serving static catalog", e);
+    return INITIAL_PRODUCTS;
   }
-  console.log(`✅ Seeded ${INITIAL_PRODUCTS.length} products to PostgreSQL`);
 }
 
+// Add a NEW product or EDIT an existing one (static or DB). Upserts the override row.
 export async function addProduct(product: Product): Promise<boolean> {
   try {
     const { brand, certificates, ...rest } = product;
+    const base = { ...rest, priceBase: rest.priceBase ?? 0, legacyBrand: brand, isHidden: false };
     await prisma.product.upsert({
       where: { id: product.id },
-      update: {
-        ...rest,
-        priceBase: rest.priceBase ?? 0,
-        legacyBrand: brand,
-      },
+      update: base,
       create: {
-        ...rest,
-        priceBase: rest.priceBase ?? 0,
-        legacyBrand: brand,
+        ...base,
         certificates: {
-          create: certificates.map(c => ({
+          create: (certificates || []).map((c) => ({
             certNumber: "N/A",
             grantingAuthority: c.issuer || "Unknown",
             isIso9001: c.nameEn.includes("ISO 9001"),
             scope: c.nameEn,
-          }))
-        }
-      }
+          })),
+        },
+      },
     });
     return true;
   } catch (e) {
-    console.error(e);
+    console.error("addProduct error:", e);
     return false;
   }
 }
 
+// Alias so the intent is clear from the admin edit form.
+export async function updateProduct(product: Product): Promise<boolean> {
+  return addProduct(product);
+}
+
+// Soft-delete: hide the product from the catalog (works for static items too, which
+// have no DB row yet — we create a hidden row from the static definition).
 export async function deleteProduct(id: string): Promise<boolean> {
   try {
-    await prisma.product.delete({
-      where: { id }
+    const existing = await prisma.product.findUnique({ where: { id } });
+    if (existing) {
+      await prisma.product.update({ where: { id }, data: { isHidden: true } });
+      return true;
+    }
+    const s = INITIAL_PRODUCTS.find((p) => p.id === id);
+    if (!s) return false;
+    const { brand, certificates, ...rest } = s; // eslint-disable-line @typescript-eslint/no-unused-vars
+    await prisma.product.create({
+      data: { ...rest, priceBase: rest.priceBase ?? 0, legacyBrand: brand, isHidden: true },
     });
     return true;
   } catch (err) {
@@ -359,7 +430,10 @@ export async function addProductReview(review: Review): Promise<boolean> {
 
 export async function getRealUsers(): Promise<any[]> {
   try {
-    const users = await prisma.user.findMany();
+    // Only real customers — exclude admin accounts (superadmin/admin/sub).
+    const users = await prisma.user.findMany({
+      where: { NOT: { role: { in: ["superadmin", "admin", "sub"] } } },
+    });
     return users.map(user => ({
       uid: user.id,
       email: user.email || "-",

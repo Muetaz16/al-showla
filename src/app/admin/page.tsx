@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { getSession, logout, canAccess, type AdminUser } from "@/lib/auth";
 import { getProducts, getOrders, addProduct, updateOrderStatus as updateOrderAPI, deleteProduct, getRealUsers, getLogs, addLog, AuditLog, getAdminNotifications } from "@/app/actions";
+import { listAdminUsers, createAdminUser, changeAdminPassword, deleteAdminUser } from "@/app/admin-actions";
 import {
   updateProductStockCount, getSubmissions, getFaqItems, saveFaqItem, deleteFaqItem,
   getBlogPosts, saveBlogPost, deleteBlogPost, getAllBanners, saveBanner, createCoupon, getCoupons,
@@ -57,8 +58,12 @@ export default function AdminDashboard() {
   // Modals / forms
   const [selectedOrder, setSelectedOrder] = useState<any | null>(null);
   const [showAddForm,   setShowAddForm]   = useState(false);
-  const [newProduct,    setNewProduct]    = useState({ nameAr: "", brand: "", priceBase: "", imageUrl: "", categoryId: "waterproof" });
+  const [newProduct,    setNewProduct]    = useState({ nameAr: "", nameEn: "", brand: "", priceBase: "", imageUrl: "", categoryId: "waterproof" });
+  const [editId,        setEditId]        = useState<string | null>(null);   // null = adding, id = editing
+  const [editBase,      setEditBase]      = useState<Product | null>(null);  // full product being edited (preserves fields the form doesn't show)
   const [saving,        setSaving]        = useState(false);
+  const [adminUsers,    setAdminUsers]    = useState<{ username: string; role: string; name: string }[]>([]);
+  const [newUser,       setNewUser]       = useState({ username: "", name: "", password: "", role: "sub" as "superadmin" | "admin" | "sub" });
   const [toast,         setToast]         = useState<string | null>(null);
   const [contentSection, setContentSection] = useState<"submissions" | "faq" | "blog" | "banners" | "coupons" | "workshops" | "delivery" | "documents" | "cases" | "applicators" | "billing">("submissions");
   const [submissions, setSubmissions] = useState<Record<string, any[]>>({});
@@ -193,34 +198,102 @@ export default function AdminDashboard() {
   };
 
 
+  const openEditProduct = (p: Product) => {
+    setEditId(p.id);
+    setEditBase(p);
+    setNewProduct({
+      nameAr: p.nameAr || "",
+      nameEn: p.nameEn || "",
+      brand: p.brand || "",
+      priceBase: p.priceBase != null ? String(p.priceBase) : "",
+      imageUrl: p.imageUrl || "",
+      categoryId: p.categoryId || "waterproof",
+    });
+    setShowAddForm(true);
+  };
+
+  const resetProductForm = () => {
+    setShowAddForm(false);
+    setEditId(null);
+    setEditBase(null);
+    setNewProduct({ nameAr: "", nameEn: "", brand: "", priceBase: "", imageUrl: "", categoryId: "waterproof" });
+  };
+
   const handleAddProduct = async (e: React.FormEvent) => {
     e.preventDefault();
     setSaving(true);
+    const editing = editId && editBase;
+    // When editing, start from the existing product so fields the form doesn't show
+    // (description, specs, datasheet, rating…) are preserved; override the edited ones.
     const p: Product = {
-      id: "PROD-" + Math.floor(Math.random() * 90000 + 10000),
+      ...(editing ? editBase! : {
+        rating: 5, reviewCount: 0, certificates: [],
+        descriptionAr: "", descriptionEn: "", unit: "قطعة", specAr: [], specEn: [],
+      } as Partial<Product>),
+      id: editing ? editId! : "PROD-" + Math.floor(Math.random() * 90000 + 10000),
       categoryId: newProduct.categoryId,
       brand: newProduct.brand,
       imageUrl: newProduct.imageUrl || "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600",
       priceBase: Number(newProduct.priceBase),
-      inStock: true, rating: 5, reviewCount: 0, certificates: [],
-      nameAr: newProduct.nameAr, nameEn: newProduct.nameAr,
-      descriptionAr: "", descriptionEn: "", unit: "قطعة", specAr: [], specEn: [],
-    };
-    await addProduct(p);
-    setInventory(prev => [...prev, p]);
-    addLog({ user: user?.username || "unknown", action: `إضافة منتج جديد ${p.id}`, type: "product" });
-    setNewProduct({ nameAr: "", brand: "", priceBase: "", imageUrl: "", categoryId: "waterproof" });
-    setShowAddForm(false);
+      inStock: editing ? editBase!.inStock : true,
+      nameAr: newProduct.nameAr,
+      nameEn: newProduct.nameEn || newProduct.nameAr,
+    } as Product;
+
+    const ok = await addProduct(p);
+    if (!ok) { setSaving(false); showToast("⚠️ تعذّر الحفظ — تحقق من الاتصال"); return; }
+    setInventory(prev => editing ? prev.map(x => x.id === p.id ? p : x) : [...prev, p]);
+    addLog({ user: user?.username || "unknown", action: `${editing ? "تعديل" : "إضافة"} منتج ${p.id}`, type: "product" });
+    resetProductForm();
     setSaving(false);
-    showToast("✅ تم إضافة المنتج بنجاح");
+    showToast(editing ? "✅ تم تعديل المنتج" : "✅ تم إضافة المنتج بنجاح");
   };
 
   const handleDeleteProduct = async (id: string) => {
     if (!confirm("هل أنت متأكد من حذف هذا المنتج؟")) return;
-    await deleteProduct(id);
+    const ok = await deleteProduct(id);
+    if (!ok) { showToast("⚠️ تعذّر الحذف"); return; }
     setInventory(prev => prev.filter(p => p.id !== id));
     addLog({ user: user?.username || "unknown", action: `حذف منتج ${id}`, type: "product" });
     showToast("🗑️ تم حذف المنتج");
+  };
+
+  // ── Admin user management ──
+  const loadAdminUsers = () => listAdminUsers().then(setAdminUsers).catch(() => {});
+  useEffect(() => { loadAdminUsers(); }, []);
+
+  const handleCreateUser = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!user) return;
+    const r = await createAdminUser(user.role, newUser.username, newUser.password, newUser.role, newUser.name);
+    if (r.ok) {
+      showToast("✅ تم إنشاء المستخدم");
+      addLog({ user: user.username, action: `إنشاء مستخدم ${newUser.username} (${newUser.role})`, type: "user" });
+      setNewUser({ username: "", name: "", password: "", role: "sub" });
+      loadAdminUsers();
+    } else showToast("⚠️ " + r.error);
+  };
+
+  const handleChangePassword = async (username: string) => {
+    if (!user) return;
+    const np = prompt(`كلمة المرور الجديدة لـ "${username}" (6 أحرف على الأقل):`);
+    if (!np) return;
+    const r = await changeAdminPassword(user.role, user.username, username, np);
+    if (r.ok) {
+      showToast("✅ تم تغيير كلمة المرور");
+      addLog({ user: user.username, action: `تغيير كلمة مرور ${username}`, type: "user" });
+    } else showToast("⚠️ " + r.error);
+  };
+
+  const handleDeleteUser = async (username: string) => {
+    if (!user) return;
+    if (!confirm(`حذف المستخدم "${username}"؟`)) return;
+    const r = await deleteAdminUser(user.role, user.username, username);
+    if (r.ok) {
+      showToast("🗑️ تم حذف المستخدم");
+      addLog({ user: user.username, action: `حذف مستخدم ${username}`, type: "user" });
+      loadAdminUsers();
+    } else showToast("⚠️ " + r.error);
   };
 
   const exportOrdersPDF = () => {
@@ -268,9 +341,11 @@ export default function AdminDashboard() {
     const p = inventory.find(i => i.id === productId);
     if (!p) return;
     const newCount = Math.max(0, (p.stockCount ?? 50) + delta);
-    const ok = await updateProductStockCount(productId, newCount);
+    const updated = { ...p, stockCount: newCount, inStock: newCount > 0 };
+    // Use the product upsert so stock persists for static-catalog items too (which have no DB row yet).
+    const ok = await addProduct(updated);
     if (ok) {
-      setInventory(inv => inv.map(i => i.id === productId ? { ...i, stockCount: newCount, inStock: newCount > 0 } : i));
+      setInventory(inv => inv.map(i => i.id === productId ? updated : i));
       showToast("✅ تم تحديث المخزون");
     }
   };
@@ -765,7 +840,7 @@ export default function AdminDashboard() {
                   <input value={searchProd} onChange={e => setSearchProd(e.target.value)} placeholder="🔍 بحث في المنتجات..." style={{ ...S.inp, maxWidth:280 }} />
                 </div>
                 <div style={{ display:"flex", gap:8 }}>
-                  <button onClick={() => setShowAddForm(!showAddForm)} className="action-btn primary">
+                  <button onClick={() => { const open = showAddForm; resetProductForm(); if (!open) setShowAddForm(true); }} className="action-btn primary">
                     {showAddForm ? "✕ إغلاق" : "➕ إضافة منتج جديد"}
                   </button>
                   <a href="/products" target="_blank" className="action-btn" style={{ textDecoration:"none", display:"inline-flex", alignItems:"center", gap:4 }}>
@@ -777,7 +852,7 @@ export default function AdminDashboard() {
               {/* Add Product Form */}
               {showAddForm && (
                 <form onSubmit={handleAddProduct} style={{ ...S.card, marginBottom:20 }}>
-                  <h3 style={{ fontSize:14, fontWeight:800, color:"#fff", marginBottom:16 }}>➕ منتج جديد</h3>
+                  <h3 style={{ fontSize:14, fontWeight:800, color:"#fff", marginBottom:16 }}>{editId ? "✏️ تعديل المنتج" : "➕ منتج جديد"}</h3>
                   {(() => {
                     const lbl = { fontSize:10, fontWeight:700 as const, color:"rgba(255,255,255,.4)", letterSpacing:".08em", marginBottom:6 };
                     const chip = (active:boolean) => ({
@@ -791,8 +866,12 @@ export default function AdminDashboard() {
                   <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
                     <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))", gap:12 }}>
                       <div>
-                        <div style={lbl}>اسم المنتج *</div>
+                        <div style={lbl}>اسم المنتج (عربي) *</div>
                         <input required value={newProduct.nameAr} onChange={e => setNewProduct({...newProduct, nameAr:e.target.value})} style={S.inp} placeholder="مثال: دهان واجهات" />
+                      </div>
+                      <div>
+                        <div style={lbl}>اسم المنتج (إنجليزي)</div>
+                        <input value={newProduct.nameEn} onChange={e => setNewProduct({...newProduct, nameEn:e.target.value})} style={S.inp} placeholder="e.g. Facade Paint" />
                       </div>
                       <div>
                         <div style={lbl}>السعر (د.ل) *</div>
@@ -858,9 +937,9 @@ export default function AdminDashboard() {
                   })()}
                   <div style={{ marginTop:16, display:"flex", gap:8 }}>
                     <button type="submit" disabled={saving} className="action-btn primary" style={{ padding:"10px 24px", fontSize:13 }}>
-                      {saving ? "⏳ جاري الحفظ..." : "💾 حفظ المنتج"}
+                      {saving ? "⏳ جاري الحفظ..." : (editId ? "💾 حفظ التعديل" : "💾 حفظ المنتج")}
                     </button>
-                    <button type="button" onClick={() => setShowAddForm(false)} className="action-btn">إلغاء</button>
+                    <button type="button" onClick={resetProductForm} className="action-btn">إلغاء</button>
                   </div>
                 </form>
               )}
@@ -880,6 +959,7 @@ export default function AdminDashboard() {
                           <span className="badge" style={{ background: p.inStock ? "rgba(16,185,129,.12)" : "rgba(239,68,68,.12)", color: p.inStock ? "#10b981" : "#ef4444" }}>
                             {p.inStock ? "متوفر" : "نفد"}
                           </span>
+                          <button className="action-btn" onClick={() => openEditProduct(p)} style={{ padding:"3px 8px", fontSize:10 }}>✏️</button>
                           <button className="action-btn danger" onClick={() => handleDeleteProduct(p.id)} style={{ padding:"3px 8px", fontSize:10 }}>🗑️</button>
                         </div>
                       </div>
@@ -1583,19 +1663,33 @@ export default function AdminDashboard() {
 
               <div style={S.card}>
                 <h3 style={{ fontSize:14, fontWeight:800, color:"#fff", marginBottom:16 }}>🔐 إدارة المستخدمين</h3>
-                {[
-                  { user:"admin",     role:"Super Admin 👑", status:"فعّال" },
-                  { user:"manager",   role:"Admin 🧑‍💼",      status:"فعّال" },
-                  { user:"warehouse", role:"Sub Admin 📦",   status:"فعّال" },
-                ].map((u, i) => (
-                  <div key={i} style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding:"10px 0", borderBottom:"1px solid rgba(255,255,255,.04)" }}>
+
+                {/* Create new admin user */}
+                <form onSubmit={handleCreateUser} style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(150px,1fr))", gap:10, marginBottom:18, paddingBottom:18, borderBottom:"1px solid rgba(255,255,255,.08)" }}>
+                  <input required value={newUser.username} onChange={e => setNewUser({...newUser, username:e.target.value})} style={S.inp} placeholder="اسم المستخدم" />
+                  <input value={newUser.name} onChange={e => setNewUser({...newUser, name:e.target.value})} style={S.inp} placeholder="الاسم المعروض" />
+                  <input required type="text" value={newUser.password} onChange={e => setNewUser({...newUser, password:e.target.value})} style={S.inp} placeholder="كلمة المرور (6+)" />
+                  <select value={newUser.role} onChange={e => setNewUser({...newUser, role:e.target.value as "superadmin"|"admin"|"sub"})} style={{ ...S.inp, cursor:"pointer" }}>
+                    <option value="sub">موظف (منتجات وطلبات)</option>
+                    <option value="admin">مدير (كل شيء عدا الإعدادات)</option>
+                    <option value="superadmin">مدير عام (كل الصلاحيات)</option>
+                  </select>
+                  <button type="submit" className="action-btn primary" style={{ gridColumn:"1/-1", justifySelf:"start", padding:"8px 20px" }}>➕ إنشاء مستخدم</button>
+                </form>
+
+                {/* Existing users */}
+                {adminUsers.length === 0 && <div style={{ fontSize:12, color:"rgba(255,255,255,.35)" }}>جارٍ التحميل…</div>}
+                {adminUsers.map((u) => (
+                  <div key={u.username} style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding:"10px 0", borderBottom:"1px solid rgba(255,255,255,.04)" }}>
                     <div>
-                      <div style={{ fontSize:13, fontWeight:700, color:"#fff" }}>{u.user}</div>
-                      <div style={{ fontSize:11, color:"rgba(255,255,255,.35)" }}>{u.role}</div>
+                      <div style={{ fontSize:13, fontWeight:700, color:"#fff" }}>{u.username} {u.username === user?.username && <span style={{ fontSize:10, color:"#3b82f6" }}>(أنت)</span>}</div>
+                      <div style={{ fontSize:11, color:"rgba(255,255,255,.35)" }}>{u.name} · {u.role === "superadmin" ? "مدير عام 👑" : u.role === "admin" ? "مدير 🧑‍💼" : "موظف 📦"}</div>
                     </div>
-                    <div style={{ display:"flex", alignItems:"center", gap:8 }}>
-                      <span className="badge" style={{ background:"rgba(16,185,129,.12)", color:"#10b981" }}>{u.status}</span>
-                      <button className="action-btn" onClick={() => showToast("⚙️ قريباً: تعديل المستخدمين")}>تعديل</button>
+                    <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+                      <button className="action-btn" onClick={() => handleChangePassword(u.username)} style={{ fontSize:11 }}>🔑 كلمة المرور</button>
+                      {u.username !== user?.username && (
+                        <button className="action-btn danger" onClick={() => handleDeleteUser(u.username)} style={{ fontSize:11 }}>🗑️</button>
+                      )}
                     </div>
                   </div>
                 ))}

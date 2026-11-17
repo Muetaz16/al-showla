@@ -23,7 +23,7 @@ export default function AdminLoginPage() {
     setError("");
     setLoading(true);
     await new Promise(r => setTimeout(r, 800)); // UX delay
-    const user = login(username, password);
+    const user = await login(username, password);
     if (user) {
       router.replace("/admin");
     } else {

@@ -1,6 +1,10 @@
 // ─────────────────────────────────────────────
-//  Auth utilities — client-side session
+//  Auth utilities — admin session
+//  Credentials are validated SERVER-SIDE against the DB (see admin-actions.ts);
+//  the resulting session is kept in localStorage for the dashboard UI.
 // ─────────────────────────────────────────────
+
+import { adminLogin } from "@/app/admin-actions";
 
 const AUTH_KEY = "alshowla_admin_auth";
 
@@ -13,48 +17,9 @@ export interface AdminUser {
   loginAt: number;
 }
 
-// ── Hardcoded admin accounts ──
-const ACCOUNTS: Record<string, { password: string; user: AdminUser }> = {
-  admin: {
-    password: "admin1234",
-    user: {
-      username: "admin",
-      role: "superadmin",
-      name: "System Administrator",
-      nameAr: "مدير النظام",
-      avatar: "👑",
-      loginAt: 0,
-    },
-  },
-  manager: {
-    password: "manager123",
-    user: {
-      username: "manager",
-      role: "admin",
-      name: "Sales Manager",
-      nameAr: "مدير المبيعات",
-      avatar: "🧑‍💼",
-      loginAt: 0,
-    },
-  },
-  warehouse: {
-    password: "store456",
-    user: {
-      username: "warehouse",
-      role: "sub",
-      name: "Warehouse Staff",
-      nameAr: "موظف المستودع",
-      avatar: "📦",
-      loginAt: 0,
-    },
-  },
-};
-
-export function login(username: string, password: string): AdminUser | null {
-  const acc = ACCOUNTS[username.toLowerCase()];
-  if (!acc || acc.password !== password) return null;
-  const user: AdminUser = { ...acc.user, loginAt: Date.now() };
-  if (typeof window !== "undefined") {
+export async function login(username: string, password: string): Promise<AdminUser | null> {
+  const user = await adminLogin(username, password); // server-side bcrypt check
+  if (user && typeof window !== "undefined") {
     localStorage.setItem(AUTH_KEY, JSON.stringify(user));
   }
   return user;
