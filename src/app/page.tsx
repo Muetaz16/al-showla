@@ -775,9 +775,9 @@ export default function Home() {
 
       {/* ══════════════════ HERO ══════════════════ */}
       <section id="home">
-        <div className="hero-photo">
-          {/* Background video — autoplays, loops forever, no controls. Poster image is the fallback. */}
-          <video className="hero-video" autoPlay muted loop playsInline preload="auto"
+        <div className="hero-photo" style={{ backgroundImage: `url(${heroBanner || HERO_IMG})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+          {/* Background video (desktop only — hidden on phones for performance; the bg image is the fallback). */}
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata"
             controls={false} disablePictureInPicture poster={heroBanner || HERO_IMG}
             ref={(el) => { if (el) { el.muted = true; el.play().catch(() => {}); } }}
             onCanPlay={(e) => { e.currentTarget.muted = true; e.currentTarget.play().catch(() => {}); }}

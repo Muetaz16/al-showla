@@ -615,3 +615,13 @@ footer { background: var(--blue-deeper); }
   .ft-top { padding: 0 8px; }
   .about-imgbox { min-height: 220px; }
 }
+
+/* ── Mobile performance: the hero video + backdrop blurs cause jank on phones ── */
+@media(max-width:768px) {
+  /* Autoplay video is the biggest lag source on phones — show the static hero image instead */
+  .hero-video { display: none !important; }
+  /* backdrop-filter: blur repaints every scroll frame and is very expensive on mobile GPUs */
+  #nav.solid, .dark #nav.solid, .mob-nav, .hero-tag, [style*="backdrop-filter"] { backdrop-filter: none !important; }
+  /* Pause the decorative scroll-indicator pulse */
+  .sline { animation: none !important; }
+}
