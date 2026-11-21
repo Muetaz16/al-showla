@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { submitRestockAlert } from "@/app/cms-actions";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 // §6: proper "notify me when available" popup — replaces the old prompt() calls.
 export function RestockAlertModal({

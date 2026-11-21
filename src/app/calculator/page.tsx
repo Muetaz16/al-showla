@@ -5,7 +5,7 @@ import { useLang } from "@/lib/useLang";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 import { PRODUCTS } from "@/lib/products";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 // Calculator flow requested by the client: category → brand → product.
 // Each calculator category maps to one or more catalog categoryIds.
@@ -92,7 +92,7 @@ export default function CalculatorPage() {
   const [rate, setRate] = useState("");
   const [pkg, setPkg] = useState("");
   const [thickness, setThickness] = useState("");
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const isAr = lang === "ar";
 
   const cat = CALC_CATEGORIES.find((c) => c.id === catId);

@@ -6,7 +6,7 @@ import { getBlogPosts } from "@/app/cms-actions";
 import Link from "next/link";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 export default function BlogPage() {
   const [lang, setLang] = useLang();

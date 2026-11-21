@@ -60,7 +60,7 @@ const UNIT_EN_FALLBACK: Record<string, string> = {
   "لفة": "Roll",
   "متر": "Meter",
 };
-export function unitLabel(unit: string | undefined, lang: "ar" | "en"): string {
+export function unitLabel(unit: string | undefined, lang: "ar" | "en" | "tr"): string {
   if (!unit) return "";
   const parts = unit.split("/").map((s) => s.trim()).filter(Boolean);
   const arabic = parts.find((p) => /[؀-ۿ]/.test(p));
@@ -136,7 +136,7 @@ export const CATEGORIES: Category[] = [
 // Catalog data lives in catalog-data.ts (auto-generated from supplier product images).
 export { CATALOG_PRODUCTS as PRODUCTS } from "./catalog-data";
 
-export function searchProducts(products: Product[], query: string, lang: "ar" | "en"): Product[] {
+export function searchProducts(products: Product[], query: string, lang: "ar" | "en" | "tr"): Product[] {
   if (!query || !query.trim()) return products;
   const lower = query.trim().toLowerCase();
 

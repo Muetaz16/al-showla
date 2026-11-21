@@ -5,7 +5,7 @@ import { useLang } from "@/lib/useLang";
 import { getFaqItems } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 export default function FaqPage() {
   const [lang, setLang] = useLang();

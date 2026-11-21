@@ -192,7 +192,7 @@ export default function Home() {
   const [selectedService, setSelectedService] = useState<any>(null);
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   /* ── Scroll ── */
@@ -603,6 +603,7 @@ export default function Home() {
         <div className="ctrl-group">
           <button className={`lang-opt${lang === "ar" ? " active" : ""}`} onClick={() => setLang("ar")}>AR</button>
           <button className={`lang-opt${lang === "en" ? " active" : ""}`} onClick={() => setLang("en")}>EN</button>
+          <button className={`lang-opt${lang === "tr" ? " active" : ""}`} onClick={() => setLang("tr")}>TR</button>
         </div>
         <div className="ctrl-group" style={{ marginTop: 4 }}>
           <button className="dark-btn" onClick={() => setDark(!dark)} title={dark ? "Light mode" : "Dark mode"}>

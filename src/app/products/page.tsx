@@ -15,7 +15,7 @@ import { logSearch, incrementProductView } from "@/app/cms-actions";
 import { addToCart, getCartCount, getCart } from "@/lib/cart";
 import { getSession } from "next-auth/react";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 // Order-request icon (clipboard / quote form) — not a shopping cart. Used across the catalog.
 const CartIcon = ({ size = 16, color = "currentColor" }: { size?: number; color?: string }) => (
@@ -141,7 +141,7 @@ function StarRating({ rating, count, lang }: { rating: number; count: number; la
           <span key={s} style={{ color: s <= Math.round(rating) ? "#f59e0b" : "#e2e8f0", fontSize: 13 }}>★</span>
         ))}
       </div>
-      <span style={{ fontSize: 11, color: "var(--gray)" }}>({count} {T[lang].reviews})</span>
+      <span style={{ fontSize: 11, color: "var(--gray)" }}>({count} {(T[lang as "ar" | "en"] ?? T.en).reviews})</span>
     </div>
   );
 }
@@ -171,7 +171,7 @@ function ProductCard({
   isFavorite?: boolean; onToggleFavorite?: (p: Product) => void;
   onViewDetails: (p: Product) => void;
 }) {
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const [showCerts, setShowCerts] = useState(false);
   const [added, setAdded] = useState(false);
   const [showRestock, setShowRestock] = useState(false);
@@ -623,7 +623,7 @@ function CompareModal({ products, lang, currency, onClose, onRemove }: {
   products: Product[]; lang: Lang; currency: Currency;
   onClose: () => void; onRemove: (id: string) => void;
 }) {
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const isAr = lang === "ar";
 
   // Build a unified list of all spec keys across all products
@@ -931,7 +931,7 @@ export default function ProductsPage() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const searchRef = useRef<HTMLInputElement>(null);
 
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   useEffect(() => {
@@ -1293,7 +1293,7 @@ function ProductModal({
 }: { 
   product: Product; lang: Lang; currency: Currency; user: any | null; onClose: () => void;
 }) {
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const [reviews, setReviews] = useState<Review[]>([]);
   const [newReview, setNewReview] = useState({ rating: 5, comment: "" });
   const [loading, setLoading] = useState(false);

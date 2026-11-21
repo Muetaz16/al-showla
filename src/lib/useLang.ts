@@ -7,16 +7,23 @@ import { useState, useEffect, useCallback } from "react";
 // mounted page/component, so switching AR/EN on one page keeps that choice
 // everywhere (fixes the language resetting when navigating between pages).
 
-export type Lang = "ar" | "en";
+export type Lang = "ar" | "en" | "tr";
 
 const KEY = "ui-lang";
 const EVENT = "ui-lang-change";
+
+// Ordered list used by the language switcher (AR → EN → TR).
+export const LANGS: { code: Lang; label: string }[] = [
+  { code: "ar", label: "ع" },
+  { code: "en", label: "EN" },
+  { code: "tr", label: "TR" },
+];
 
 export function getStoredLang(): Lang {
   if (typeof window === "undefined") return "ar";
   try {
     const v = window.localStorage.getItem(KEY);
-    if (v === "en" || v === "ar") return v;
+    if (v === "en" || v === "ar" || v === "tr") return v;
   } catch {}
   return "ar";
 }

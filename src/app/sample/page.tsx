@@ -6,7 +6,7 @@ import { PRODUCTS, CATEGORIES, unitLabel, type Product } from "@/lib/products";
 import { submitSampleRequest } from "@/app/cms-actions";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 const T = {
   ar: {
@@ -95,7 +95,7 @@ export default function SampleRequestPage() {
     if (p) { setSelectedProduct(p); setStep(2); }
   }, []);
 
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   const filteredProducts = PRODUCTS.filter((p) => {

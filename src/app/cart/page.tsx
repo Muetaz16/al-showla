@@ -12,7 +12,7 @@ import { validateCoupon, applyCouponUse, saveBoqFile, notifyQuoteGenerated } fro
 import { getContractorSession, type ContractorUser } from "@/lib/contractor-auth";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 // Order-request icon (clipboard / quote form) — not a shopping cart.
 const OrderIcon = ({ size = 22, color = "currentColor" }: { size?: number; color?: string }) => (
@@ -110,7 +110,7 @@ function generateQuoteHTML(
   items: CartItem[], currency: Currency, lang: Lang,
   company: string, contact: string, phone: string, project: string, address: string, orderNotes: string
 ): string {
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const dir = lang === "ar" ? "rtl" : "ltr";
   const today = new Date().toLocaleDateString(lang === "ar" ? "ar-LY" : "en-GB");
   const quoteNum = `QT-${Date.now().toString().slice(-6)}`;
@@ -245,7 +245,7 @@ export default function CartPage() {
   const [contractor, setContractor] = useState<ContractorUser | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const dir = lang === "ar" ? "rtl" : "ltr";
   const total = getCartTotal(items, currency);
   const discountedTotal = total * (1 - discountPercent / 100);

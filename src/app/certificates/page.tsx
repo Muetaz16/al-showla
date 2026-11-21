@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLang } from "@/lib/useLang";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 type Kind = "system" | "product";
 
 const T = {
@@ -188,7 +188,7 @@ export default function CertificatesPage() {
   const [filterBrand, setFilterBrand] = useState("all");
   const [filterType, setFilterType] = useState<"all" | Kind>("all");
 
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   const filtered = CERTS.filter((c) => {

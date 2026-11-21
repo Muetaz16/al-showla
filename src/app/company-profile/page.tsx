@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { PROJECTS, PARTNERS } from "@/lib/company-data";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 
 const LOGO = "/logo-full.png"; // official logo (client artwork)
 const HERO_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
@@ -185,7 +185,7 @@ function SecHead({ lbl, h, em, light }: { lbl: string; h: string; em: string; li
 
 export default function CompanyProfilePage() {
   const [lang, setLang] = useLang();
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const isAr = lang === "ar";
 
   useEffect(() => {

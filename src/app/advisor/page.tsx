@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLang } from "@/lib/useLang";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
-type Lang = "ar" | "en";
+type Lang = "ar" | "en" | "tr";
 type Msg = { role: "user" | "assistant"; content: string; products?: { id: string; nameAr: string; nameEn: string }[] };
 
 const T = {
@@ -50,7 +50,7 @@ export default function AdvisorPage() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const t = T[lang];
+  const t = T[lang as "ar" | "en"] ?? T.en;
   const isAr = lang === "ar";
 
   useEffect(() => {

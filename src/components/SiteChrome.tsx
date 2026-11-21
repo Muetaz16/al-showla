@@ -4,8 +4,7 @@
 // Self-contained (scoped <style> + inline) so it never depends on page CSS.
 
 import { useState, type ReactNode } from "react";
-
-type Lang = "ar" | "en";
+import { setStoredLang, LANGS, type Lang } from "@/lib/useLang";
 
 // Single source of truth for the full site menu — shown identically on every page.
 export const NAV: { href: string; ar: string; en: string }[] = [
@@ -36,28 +35,28 @@ const LOGO = "/site/cropped-ICON-270x270.png";
 export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: Lang; onToggleLang?: () => void; rightSlot?: ReactNode }) {
   const isAr = lang === "ar";
   const [mobOpen, setMobOpen] = useState(false);
-  const L = (ar: string, en: string) => (isAr ? ar : en);
+  const L = (ar: string, en: string, tr?: string) => (lang === "ar" ? ar : lang === "tr" ? (tr ?? en) : en);
   const mobLinks: [string, string][] = [
-    ["/", L("الرئيسية", "Home")],
-    ["/#about", L("من نحن", "Who We Are")],
-    ["/#ceo", L("كلمة رئيس مجلس الإدارة", "Chairman's Message")],
-    ["/departments", L("الهيكل التنظيمي", "Organizational Structure")],
-    ["/#services", L("خدماتنا", "Services")],
-    ["/products", L("كتالوج المنتجات", "Products Catalog")],
-    ["/certificates", L("شهادات الجودة", "Certificates")],
-    ["/documents", L("مكتبة الوثائق", "Documents")],
-    ["/calculator", L("حاسبة الكميات", "Calculator")],
-    ["/#projects", L("المشاريع", "Projects")],
-    ["/applicators", L("المطبّقون", "Applicators")],
-    ["/delivery", L("مناطق التوصيل", "Delivery")],
-    ["/training", L("ورش التدريب", "Training")],
-    ["/blog", L("المدونة", "Blog")],
-    ["/midmak", L("ميدماك", "Midmak")],
-    ["/careers", L("الوظائف", "Careers")],
-    ["/faq", L("الأسئلة الشائعة", "FAQ")],
-    ["/#clients", L("من نخدم", "Who We Serve")],
-    ["/#partners", L("عملاؤنا", "Our Clients")],
-    ["/#contact", L("اتصل بنا", "Contact")],
+    ["/", L("الرئيسية", "Home", "Ana Sayfa")],
+    ["/#about", L("من نحن", "Who We Are", "Hakkımızda")],
+    ["/#ceo", L("كلمة رئيس مجلس الإدارة", "Chairman's Message", "Başkanın Mesajı")],
+    ["/departments", L("الهيكل التنظيمي", "Organizational Structure", "Organizasyon Yapısı")],
+    ["/#services", L("خدماتنا", "Services", "Hizmetler")],
+    ["/products", L("كتالوج المنتجات", "Products Catalog", "Ürün Kataloğu")],
+    ["/certificates", L("شهادات الجودة", "Certificates", "Sertifikalar")],
+    ["/documents", L("مكتبة الوثائق", "Documents", "Belgeler")],
+    ["/calculator", L("حاسبة الكميات", "Calculator", "Hesaplayıcı")],
+    ["/#projects", L("المشاريع", "Projects", "Projeler")],
+    ["/applicators", L("المطبّقون", "Applicators", "Uygulayıcılar")],
+    ["/delivery", L("مناطق التوصيل", "Delivery", "Teslimat")],
+    ["/training", L("ورش التدريب", "Training", "Eğitim")],
+    ["/blog", L("المدونة", "Blog", "Blog")],
+    ["/midmak", L("ميدماك", "Midmak", "Midmak")],
+    ["/careers", L("الوظائف", "Careers", "Kariyer")],
+    ["/faq", L("الأسئلة الشائعة", "FAQ", "SSS")],
+    ["/#clients", L("من نخدم", "Who We Serve", "Kime Hizmet Veriyoruz")],
+    ["/#partners", L("عملاؤنا", "Our Clients", "Müşterilerimiz")],
+    ["/#contact", L("اتصل بنا", "Contact", "İletişim")],
   ];
   return (
     <>
@@ -81,49 +80,52 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
           </div>
         </a>
         <div className="nav-links">
-          <a href="/">{L("الرئيسية", "Home")}</a>
+          <a href="/">{L("الرئيسية", "Home", "Ana Sayfa")}</a>
           <div className="nav-drop">
-            <a href="/#about">{L("الشركة", "Company")} ▾</a>
+            <a href="/#about">{L("الشركة", "Company", "Şirket")} ▾</a>
             <div className="nav-drop-menu">
-              <a href="/#about">{L("من نحن", "Who We Are")}</a>
-              <a href="/#ceo">{L("كلمة رئيس مجلس الإدارة", "Chairman's Message")}</a>
-              <a href="/departments">{L("الهيكل التنظيمي", "Organizational Structure")}</a>
-              <a href="/#projects">{L("المشاريع المنفذة", "Projects")}</a>
-              <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators")}</a>
-              <a href="/training">{L("ورش التدريب", "Training")}</a>
-              <a href="/blog">{L("المدونة", "Blog")}</a>
-              <a href="/midmak">{L("ميدماك", "Midmak")}</a>
-              <a href="/careers">{L("الوظائف", "Careers")}</a>
-              <a href="/#clients" className="nav-drop-sec">{L("من نخدم", "Who We Serve")}</a>
-              <a href="/#partners" className="nav-drop-sec">{L("عملاؤنا", "Our Clients")}</a>
-              <a href="/faq" className="nav-drop-sec">{L("الأسئلة الشائعة", "FAQ")}</a>
+              <a href="/#about">{L("من نحن", "Who We Are", "Hakkımızda")}</a>
+              <a href="/#ceo">{L("كلمة رئيس مجلس الإدارة", "Chairman's Message", "Başkanın Mesajı")}</a>
+              <a href="/departments">{L("الهيكل التنظيمي", "Organizational Structure", "Organizasyon Yapısı")}</a>
+              <a href="/#projects">{L("المشاريع المنفذة", "Projects", "Projeler")}</a>
+              <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators", "Onaylı Uygulayıcılar")}</a>
+              <a href="/training">{L("ورش التدريب", "Training", "Eğitim")}</a>
+              <a href="/blog">{L("المدونة", "Blog", "Blog")}</a>
+              <a href="/midmak">{L("ميدماك", "Midmak", "Midmak")}</a>
+              <a href="/careers">{L("الوظائف", "Careers", "Kariyer")}</a>
+              <a href="/#clients" className="nav-drop-sec">{L("من نخدم", "Who We Serve", "Kime Hizmet Veriyoruz")}</a>
+              <a href="/#partners" className="nav-drop-sec">{L("عملاؤنا", "Our Clients", "Müşterilerimiz")}</a>
+              <a href="/faq" className="nav-drop-sec">{L("الأسئلة الشائعة", "FAQ", "SSS")}</a>
             </div>
           </div>
-          <a href="/#services">{L("خدماتنا", "Services")}</a>
+          <a href="/#services">{L("خدماتنا", "Services", "Hizmetler")}</a>
           <div className="nav-drop">
-            <a href="/products">{L("منتجاتنا", "Products")} ▾</a>
+            <a href="/products">{L("منتجاتنا", "Products", "Ürünler")} ▾</a>
             <div className="nav-drop-menu">
-              <a href="/products">{L("كتالوج المنتجات", "Products Catalog")}</a>
-              <a href="/certificates">{L("شهادات الجودة", "Certificates")}</a>
-              <a href="/documents">{L("مكتبة الوثائق الفنية", "Technical Documents")}</a>
-              <a href="/calculator">{L("حاسبة الكميات", "Calculator")}</a>
-              <a href="/delivery">{L("مناطق التوصيل", "Delivery Zones")}</a>
-              <a href="/sample">{L("طلب عينة مجانية", "Request Free Sample")}</a>
-              <a href="/advisor" className="nav-drop-ter">🔧 {L("المستشار الذكي", "AI Advisor")}</a>
+              <a href="/products">{L("كتالوج المنتجات", "Products Catalog", "Ürün Kataloğu")}</a>
+              <a href="/certificates">{L("شهادات الجودة", "Certificates", "Kalite Sertifikaları")}</a>
+              <a href="/documents">{L("مكتبة الوثائق الفنية", "Technical Documents", "Teknik Belgeler")}</a>
+              <a href="/calculator">{L("حاسبة الكميات", "Calculator", "Miktar Hesaplayıcı")}</a>
+              <a href="/delivery">{L("مناطق التوصيل", "Delivery Zones", "Teslimat Bölgeleri")}</a>
+              <a href="/sample">{L("طلب عينة مجانية", "Request Free Sample", "Ücretsiz Numune")}</a>
+              <a href="/advisor" className="nav-drop-ter">🔧 {L("المستشار الذكي", "AI Advisor", "Akıllı Danışman")}</a>
             </div>
           </div>
-          <a href="/#clients" className="nav-sec">{L("من نخدم", "Who We Serve")}</a>
-          <a href="/#partners" className="nav-sec">{L("عملاؤنا", "Our Clients")}</a>
-          <a href="/#contact">{L("اتصل بنا", "Contact")}</a>
-          <a href="/faq" className="nav-sec">{L("الأسئلة الشائعة", "FAQ")}</a>
-          <a href="/advisor" className="nav-ter" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
-          <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold", border: "1.5px solid var(--blue)", borderRadius: 20, padding: "5px 14px" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal")}</a>
-          {onToggleLang && (
-            <button onClick={onToggleLang} style={{ background: "var(--blue-light)", border: "none", color: "var(--blue)", padding: "6px 12px", cursor: "pointer", fontWeight: 800, borderRadius: 6, fontFamily: "'Cairo', sans-serif" }}>
-              {isAr ? "EN" : "AR"}
-            </button>
-          )}
-          <a href="https://wa.me/218948020200" className="nav-cta" target="_blank" rel="noopener noreferrer">{L("اطلب الآن", "Order Now")}</a>
+          <a href="/#clients" className="nav-sec">{L("من نخدم", "Who We Serve", "Kime Hizmet Veriyoruz")}</a>
+          <a href="/#partners" className="nav-sec">{L("عملاؤنا", "Our Clients", "Müşterilerimiz")}</a>
+          <a href="/#contact">{L("اتصل بنا", "Contact", "İletişim")}</a>
+          <a href="/faq" className="nav-sec">{L("الأسئلة الشائعة", "FAQ", "SSS")}</a>
+          <a href="/advisor" className="nav-ter" style={{ color: "var(--accent)", fontWeight: "bold" }}>🔧 {L("المستشار الذكي", "AI Advisor", "Akıllı Danışman")}</a>
+          <a href="/contractor/login" style={{ color: "var(--blue)", fontWeight: "bold", border: "1.5px solid var(--blue)", borderRadius: 20, padding: "5px 14px" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal", "Müteahhit Portalı")}</a>
+          <div style={{ display: "flex", gap: 2, background: "var(--blue-light)", borderRadius: 7, padding: 2 }}>
+            {LANGS.map(({ code, label }) => (
+              <button key={code} onClick={() => setStoredLang(code)}
+                style={{ background: lang === code ? "var(--blue)" : "transparent", color: lang === code ? "#fff" : "var(--blue)", border: "none", padding: "5px 9px", cursor: "pointer", fontWeight: 800, borderRadius: 5, fontFamily: "'Cairo', sans-serif", fontSize: 12.5, lineHeight: 1 }}>
+                {label}
+              </button>
+            ))}
+          </div>
+          <a href="https://wa.me/218948020200" className="nav-cta" target="_blank" rel="noopener noreferrer">{L("اطلب الآن", "Order Now", "Hemen Sipariş")}</a>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           {rightSlot}
@@ -137,15 +139,18 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
         {mobLinks.map(([href, label]) => (
           <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
         ))}
-        <a href="/advisor" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>🔧 {L("المستشار الذكي", "AI Advisor")}</a>
+        <a href="/advisor" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>🔧 {L("المستشار الذكي", "AI Advisor", "Akıllı Danışman")}</a>
         <div className="mob-nav-divider" />
-        <a href="/contractor/login" onClick={() => setMobOpen(false)} style={{ color: "#fff" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal")}</a>
-        <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>{L("اطلب الآن عبر واتساب", "Order via WhatsApp")}</a>
-        {onToggleLang && (
-          <button onClick={() => { onToggleLang(); setMobOpen(false); }} style={{ marginTop: 14, background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "10px 22px", cursor: "pointer", fontWeight: 800, borderRadius: 8, fontFamily: "'Cairo', sans-serif" }}>
-            {isAr ? "English" : "العربية"}
-          </button>
-        )}
+        <a href="/contractor/login" onClick={() => setMobOpen(false)} style={{ color: "#fff" }}>🏗️ {L("بوابة المقاولين", "Contractor Portal", "Müteahhit Portalı")}</a>
+        <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer" onClick={() => setMobOpen(false)} style={{ color: "var(--accent)" }}>{L("اطلب الآن عبر واتساب", "Order via WhatsApp", "WhatsApp ile Sipariş")}</a>
+        <div style={{ display: "flex", gap: 6, marginTop: 14, justifyContent: "center" }}>
+          {LANGS.map(({ code, label }) => (
+            <button key={code} onClick={() => { setStoredLang(code); setMobOpen(false); }}
+              style={{ background: lang === code ? "var(--accent)" : "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "10px 20px", cursor: "pointer", fontWeight: 800, borderRadius: 8, fontFamily: "'Cairo', sans-serif" }}>
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
     </>
   );
@@ -153,7 +158,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
 
 export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
   const isAr = lang === "ar";
-  const L = (ar: string, en: string) => (isAr ? ar : en);
+  const L = (ar: string, en: string, tr?: string) => (lang === "ar" ? ar : lang === "tr" ? (tr ?? en) : en);
   return (
     <footer dir={isAr ? "rtl" : "ltr"}>
       <div className="ft-top">
@@ -162,26 +167,27 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
           <img src={LOGO} alt="Al-Showla Al-Raeda"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <p>{L("شركة ليبية متخصصة في استيراد وتوزيع مواد البناء والمستلزمات الصحية عالية الجودة منذ 2005.",
-            "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005.")}</p>
+            "A leading Libyan company specialized in importing and distributing high-quality building and sanitary materials since 2005.",
+            "2005'ten bu yana yüksek kaliteli yapı ve sıhhi malzemelerin ithalat ve dağıtımında uzmanlaşmış öncü bir Libya şirketi.")}</p>
         </div>
         <div>
-          <div className="ft-col-h">{L("روابط سريعة", "Quick Links")}</div>
+          <div className="ft-col-h">{L("روابط سريعة", "Quick Links", "Hızlı Bağlantılar")}</div>
           <ul className="ft-links">
-            {[["/", L("الرئيسية", "Home")], ["/#about", L("من نحن", "Who We Are")], ["/#ceo", L("كلمة الرئيس", "Chairman")], ["/products", L("المنتجات", "Products")], ["/#contact", L("اتصل بنا", "Contact")]].map(([href, label]) => (
+            {[["/", L("الرئيسية", "Home", "Ana Sayfa")], ["/#about", L("من نحن", "Who We Are", "Hakkımızda")], ["/#ceo", L("كلمة الرئيس", "Chairman", "Başkan")], ["/products", L("المنتجات", "Products", "Ürünler")], ["/#contact", L("اتصل بنا", "Contact", "İletişim")]].map(([href, label]) => (
               <li key={href}><a href={href}>{label}</a></li>
             ))}
           </ul>
         </div>
         <div>
-          <div className="ft-col-h">{L("خدماتنا", "Our Services")}</div>
+          <div className="ft-col-h">{L("خدماتنا", "Our Services", "Hizmetlerimiz")}</div>
           <ul className="ft-links">
-            {[["/products", L("كتالوج المنتجات", "Catalog")], ["/documents", L("مكتبة الوثائق", "Documents")], ["/calculator", L("حاسبة الكميات", "Calculator")], ["/advisor", L("المستشار الذكي", "AI Advisor")]].map(([href, label]) => (
+            {[["/products", L("كتالوج المنتجات", "Catalog", "Katalog")], ["/documents", L("مكتبة الوثائق", "Documents", "Belgeler")], ["/calculator", L("حاسبة الكميات", "Calculator", "Hesaplayıcı")], ["/advisor", L("المستشار الذكي", "AI Advisor", "Akıllı Danışman")]].map(([href, label]) => (
               <li key={href}><a href={href}>{label}</a></li>
             ))}
           </ul>
         </div>
         <div>
-          <div className="ft-col-h">{L("تواصل معنا", "Contact")}</div>
+          <div className="ft-col-h">{L("تواصل معنا", "Contact", "İletişim")}</div>
           <ul className="ft-links">
             <li><a href="tel:+218948020200" dir="ltr">+218 94 802 0200</a></li>
             <li><a href="mailto:sales@alshowla.com">sales@alshowla.com</a></li>
@@ -193,7 +199,7 @@ export function SiteFooter({ lang = "ar" }: { lang?: Lang }) {
         </div>
       </div>
       <div className="ft-bot">
-        <div className="ft-copy">© {new Date().getFullYear()} {L("شركة الشعلة الرائدة لاستيراد مواد البناء — جميع الحقوق محفوظة", "Al-Showla Al-Raeda for Importing Building Materials — All rights reserved")}</div>
+        <div className="ft-copy">© {new Date().getFullYear()} {L("شركة الشعلة الرائدة لاستيراد مواد البناء — جميع الحقوق محفوظة", "Al-Showla Al-Raeda for Importing Building Materials — All rights reserved", "Al-Showla Al-Raeda Yapı Malzemeleri İthalat — Tüm hakları saklıdır")}</div>
         <div className="ft-soc">
           <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="https://www.facebook.com/ALSHOLA1500" target="_blank" rel="noopener noreferrer">Facebook</a>
