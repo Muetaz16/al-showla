@@ -48,12 +48,19 @@ export default function ContractorLogin() {
         .btn-login:disabled { opacity: 0.7; cursor: not-allowed; }
         .demo-tag { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); border-radius: 8px; padding: 10px 14px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
         .demo-tag:hover { background: rgba(59,130,246,0.2); }
+        .login-grid { display: grid; grid-template-columns: 1fr 1fr; }
+        @media (max-width: 760px) {
+          .login-grid { grid-template-columns: 1fr; max-width: 440px !important; }
+          .login-brand { padding: 30px 26px !important; }
+          .login-brand h1 { font-size: 26px !important; }
+          .login-form { padding: 34px 26px !important; }
+        }
       `}</style>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", maxWidth: 900, width: "100%", gap: 0, borderRadius: 24, overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.7)" }}>
+      <div className="login-grid" style={{ maxWidth: 900, width: "100%", gap: 0, borderRadius: 24, overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.7)" }}>
 
         {/* Left Panel - Branding */}
-        <div style={{ background: "linear-gradient(135deg, #0051a2 0%, #001f4d 100%)", padding: 52, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+        <div className="login-brand" style={{ background: "linear-gradient(135deg, #0051a2 0%, #001f4d 100%)", padding: 52, display: "flex", flexDirection: "column", justifyContent: "space-between", gap: 28 }}>
           <div>
             <img src="/site/cropped-ICON-270x270.png" alt="الشعلة الرائدة" style={{ height: 76, width: "auto", marginBottom: 16, display: "block" }} />
             <h1 style={{ fontSize: 32, fontWeight: 900, color: "#fff", lineHeight: 1.3, marginBottom: 12 }}>الشعلة الرائدة</h1>
@@ -80,7 +87,7 @@ export default function ContractorLogin() {
         </div>
 
         {/* Right Panel - Login Form */}
-        <div className="login-card" style={{ background: "rgba(10,18,35,0.97)", backdropFilter: "blur(20px)", padding: 52, display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <div className="login-card login-form" style={{ background: "rgba(10,18,35,0.97)", backdropFilter: "blur(20px)", padding: 52, display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <h2 style={{ fontSize: 24, fontWeight: 900, color: "#fff", marginBottom: 6 }}>تسجيل الدخول 👋</h2>
           <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 36 }}>أدخل بياناتك للوصول لبوابتك</p>
 
