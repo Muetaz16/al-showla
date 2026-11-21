@@ -199,16 +199,16 @@ function ProductCard({
       }}
       onMouseLeave={(e) => {
         (e.currentTarget as HTMLElement).style.transform = "none";
-        (e.currentTarget as HTMLElement).style.boxShadow = "none";
+        (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 12px rgba(15,28,46,.06)";
       }}
     >
       {/* Badges */}
       <div style={{ position: "absolute", top: 10, insetInlineStart: 10, zIndex: 3, display: "flex", flexDirection: "column", gap: 4 }}>
         {product.isNew && (
-          <span style={{ background: "#10b981", color: "#fff", fontSize: 9, fontWeight: 800, padding: "3px 8px", letterSpacing: ".06em" }}>{t.newTag}</span>
+          <span style={{ background: "#10b981", color: "#fff", fontSize: 9, fontWeight: 800, padding: "3px 8px", letterSpacing: ".06em", borderRadius: 5 }}>{t.newTag}</span>
         )}
         {product.isFeatured && (
-          <span style={{ background: "#f59e0b", color: "#fff", fontSize: 9, fontWeight: 800, padding: "3px 8px", letterSpacing: ".06em" }}>{t.featured}</span>
+          <span style={{ background: "#f59e0b", color: "#fff", fontSize: 9, fontWeight: 800, padding: "3px 8px", letterSpacing: ".06em", borderRadius: 5 }}>{t.featured}</span>
         )}
       </div>
       {/* Stock badge */}
@@ -217,7 +217,7 @@ function ProductCard({
           background: available ? "rgba(16,185,129,.12)" : "rgba(239,68,68,.12)",
           color: available ? "#059669" : "#dc2626",
           border: `1px solid ${available ? "#059669" : "#dc2626"}`,
-          fontSize: 9, fontWeight: 800, padding: "3px 8px",
+          fontSize: 9, fontWeight: 800, padding: "3px 8px", borderRadius: 5,
         }}>{available ? t.inStock : t.outOfStock}</span>
       </div>
 
@@ -256,7 +256,7 @@ function ProductCard({
           <div style={{
             position: "absolute", bottom: 8, insetInlineStart: 8,
             background: "rgba(0,31,77,.85)", color: "#fff",
-            fontSize: 10, fontWeight: 800, padding: "3px 10px", letterSpacing: ".04em",
+            fontSize: 10, fontWeight: 800, padding: "3px 10px", letterSpacing: ".04em", borderRadius: 5,
           }}>{displayBrand(product)}</div>
         )}
         {/* hover hint: image is clickable */}
@@ -1074,7 +1074,9 @@ export default function ProductsPage() {
         .brand-btn { background: var(--white); border: 1.5px solid var(--gray-light); padding: 7px 14px; border-radius: 999px; font-family: 'Cairo', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; transition: all .25s; color: var(--text2); white-space: nowrap; }
         .brand-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
         .brand-btn:hover:not(.active) { background: #fff7ea; color: #b45309; border-color: var(--accent); }
-        .pcard-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; background: var(--gray-light); }
+        .pcard-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; background: transparent; }
+        .pcard { border-radius: 14px; box-shadow: 0 2px 12px rgba(15,28,46,.06); }
+        .pcard button, .pcard a[href] { border-radius: 9px; }
         @media(max-width:1200px) { .pcard-grid { grid-template-columns: repeat(3, 1fr); } }
         @media(max-width:860px)  { .pcard-grid { grid-template-columns: repeat(2, 1fr); } }
         @media(max-width:500px)  { .pcard-grid { grid-template-columns: 1fr; } }

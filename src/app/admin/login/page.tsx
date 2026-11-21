@@ -83,8 +83,8 @@ export default function AdminLoginPage() {
             width: 72, height: 72, background: "linear-gradient(135deg, #0051a2, #001f4d)",
             border: "2px solid rgba(255,255,255,.15)", borderRadius: 16,
             display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: 32, margin: "0 auto 16px", boxShadow: "0 8px 32px rgba(0,81,162,.4)",
-          }}>🔥</div>
+            fontSize: 32, margin: "0 auto 16px", boxShadow: "0 8px 32px rgba(0,81,162,.4)", overflow: "hidden", padding: 10,
+          }}><img src="/site/cropped-ICON-270x270.png" alt="الشعلة الرائدة" style={{ width: "100%", height: "100%", objectFit: "contain" }} /></div>
           <h1 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 4 }}>الشعلة الرائدة</h1>
           <p style={{ fontSize: 12, color: "rgba(255,255,255,.4)", letterSpacing: ".1em" }}>ADMIN PORTAL</p>
         </div>
