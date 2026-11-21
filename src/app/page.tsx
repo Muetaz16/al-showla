@@ -1386,6 +1386,7 @@ export default function Home() {
                 { ico: "✉️", lbl: t.emailLbl, val: <a href="mailto:sales@alshowla.com">{t.emailVal}</a> },
                 { ico: "📍", lbl: t.addressLbl, val: <span>{t.addressVal}</span> },
                 { ico: "🕐", lbl: t.hoursLbl, val: <span>{t.hoursVal}</span> },
+                { ico: "👤", lbl: (lang === "ar" ? "شريك مؤسس وعضو مجلس الإدارة" : lang === "tr" ? "Kurucu Ortak ve Yönetim Kurulu Üyesi" : "Founding Partner & Board Member"), val: <span>{lang === "ar" ? "صالح العوامي" : "Saleh Al-Awamy"}</span> },
               ].map((c, i) => (
                 <div className="ci ao" key={i}>
                   <div className="ci-ico">{c.ico}</div>
@@ -1395,14 +1396,6 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-              {/* Executive management — Shield Enmaa */}
-              <div className="ao" style={{ marginTop: 22 }}>
-                <div className="ci-lbl" style={{ marginBottom: 10 }}>{lang === "ar" ? "الإدارة التنفيذية" : "Executive Management"}</div>
-                <div style={{ background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 10, padding: "14px 16px", maxWidth: 340 }}>
-                  <div style={{ color: "#fff", fontWeight: 800, fontSize: 15, marginBottom: 4 }}>{lang === "ar" ? "صالح العوامي" : "Saleh Al-Awamy"}</div>
-                  <div style={{ color: "var(--accent)", fontWeight: 700, fontSize: 13 }}>{lang === "ar" ? "المدير العام — شركة شيلد إنماء" : "General Manager — Shield Enmaa"}</div>
-                </div>
-              </div>
               <div className="soc-row">
                 {[
                   ["WhatsApp", "https://wa.me/218948020200"],
