@@ -42,6 +42,12 @@ export default function ApplicatorsPage() {
             items.map((a) => {
               const c = a.contactInfo || {};
               const phones: string[] = [c.phone, c.phone2].filter(Boolean);
+              const name = isAr ? a.name : (c.nameEn || a.name);
+              const spec = isAr ? a.systemSpecialty : (c.systemSpecialtyEn || a.systemSpecialty);
+              const desc = isAr ? c.description : (c.descriptionEn || c.description);
+              const services: string[] = (isAr ? c.services : (c.servicesEn || c.services)) || [];
+              const projects: string[] = (isAr ? c.projects : (c.projectsEn || c.projects)) || [];
+              const certs: string[] = (isAr ? a.certifications : (c.certificationsEn || a.certifications)) || [];
               return (
                 <article key={a.id} className="ap-card">
                   {/* Logo + contact panel */}
@@ -68,33 +74,33 @@ export default function ApplicatorsPage() {
 
                   {/* Details */}
                   <div className="ap-body">
-                    <h2>{a.name}</h2>
-                    {a.systemSpecialty && <div className="ap-spec">{a.systemSpecialty}</div>}
-                    {c.description && <p className="ap-desc">{c.description}</p>}
+                    <h2>{name}</h2>
+                    {spec && <div className="ap-spec">{spec}</div>}
+                    {desc && <p className="ap-desc">{desc}</p>}
 
-                    {c.services?.length > 0 && (
+                    {services.length > 0 && (
                       <div className="ap-block">
                         <h3>{tx("الخدمات", "Services")}</h3>
                         <div className="ap-chips">
-                          {c.services.map((s: string, i: number) => <span key={i}>{s}</span>)}
+                          {services.map((s: string, i: number) => <span key={i}>{s}</span>)}
                         </div>
                       </div>
                     )}
 
-                    {c.projects?.length > 0 && (
+                    {projects.length > 0 && (
                       <div className="ap-block">
                         <h3>{tx("من مشاريعها", "Selected projects")}</h3>
                         <ul className="ap-projects">
-                          {c.projects.map((p: string, i: number) => <li key={i}>{p}</li>)}
+                          {projects.map((p: string, i: number) => <li key={i}>{p}</li>)}
                         </ul>
                       </div>
                     )}
 
-                    {a.certifications?.length > 0 && (
+                    {certs.length > 0 && (
                       <div className="ap-block">
                         <h3>{tx("الاعتمادات", "Certifications")}</h3>
                         <div className="ap-chips gold">
-                          {a.certifications.map((x, i) => <span key={i}>{x}</span>)}
+                          {certs.map((x, i) => <span key={i}>{x}</span>)}
                         </div>
                       </div>
                     )}

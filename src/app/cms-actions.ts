@@ -818,10 +818,17 @@ const SHIELD_ENMAA = {
   systemSpecialty: "العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات",
   contactInfo: {
     logo: "/applicators/shield-enmaa.webp",
-    rev: 2, // bump when the seeded details change (see getApplicators)
+    rev: 3, // bump when the seeded details change (see getApplicators)
     description: "تحالف استراتيجي بين شيلد للمقاولات المتخصصة (إحدى شركات مجموعة درة Dorra Group) وإنماء الإعمار، الذراع التنفيذي لشركة الشعلة، يجمع الخبرة الهندسية المصرية مع قدرات التنفيذ الليبية في شمال أفريقيا. تقدم حلولاً إنشائية متقدمة تشمل العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات، ومعتمدة كمنفذ من شركات عالمية مثل Sika وBASF وSaint-Gobain وProtan.",
     services: ["الأعمال المدنية والإنشائية", "العزل", "أنظمة الأرضيات", "أعمال التشطيبات", "حماية وترميم المنشآت", "الأنظمة الكهروميكانيكية (MEP)", "توريد مواد البناء", "البنية التحتية الخضراء وأنظمة الطاقة الشمسية"],
     projects: ["جامعة بنغازي — كلية الاقتصاد وكلية الآداب", "جامعة بنغازي — مبنى كلية القانون", "جامعة بنغازي — كلية العلوم", "جامعة بنغازي — مبيت الطلبة"],
+    // English versions (shown when the site language is EN)
+    nameEn: "Shield Enmaa Contracting",
+    systemSpecialtyEn: "Waterproofing, expansion joints, flooring, restoration & finishes",
+    descriptionEn: "A strategic alliance between Shield for Specialized Contracting (a Dorra Group company) and Enmaa Al-Emaar — the execution arm of Al-Showla — combining Egyptian engineering expertise with Libyan execution capability across North Africa. It delivers advanced construction solutions including waterproofing, expansion joints, flooring, restoration and finishes, and is an approved applicator for global manufacturers such as Sika, BASF, Saint-Gobain and Protan.",
+    servicesEn: ["Civil & structural works", "Waterproofing", "Flooring systems", "Finishing works", "Structure protection & restoration", "Electromechanical systems (MEP)", "Building materials supply", "Green infrastructure & solar energy systems"],
+    projectsEn: ["University of Benghazi — Faculty of Economics & Faculty of Arts", "University of Benghazi — Faculty of Law building", "University of Benghazi — Faculty of Science", "University of Benghazi — Student housing"],
+    certificationsEn: ["Sika-approved applicator", "BASF", "Saint-Gobain", "Protan"],
     phone: "092-1559050",
     phone2: "092-5200070",
     email: "info@shield-enmaa.com",

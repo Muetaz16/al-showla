@@ -55,7 +55,7 @@ export default function ContractorLogin() {
         {/* Left Panel - Branding */}
         <div style={{ background: "linear-gradient(135deg, #0051a2 0%, #001f4d 100%)", padding: 52, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
           <div>
-            <div style={{ fontSize: 48, marginBottom: 16 }}>🔥</div>
+            <img src="/site/cropped-ICON-270x270.png" alt="الشعلة الرائدة" style={{ height: 76, width: "auto", marginBottom: 16, display: "block" }} />
             <h1 style={{ fontSize: 32, fontWeight: 900, color: "#fff", lineHeight: 1.3, marginBottom: 12 }}>الشعلة الرائدة</h1>
             <p style={{ fontSize: 15, color: "rgba(255,255,255,0.7)", lineHeight: 1.7 }}>
               بوابة المقاولين والشركات<br />

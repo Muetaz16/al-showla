@@ -173,6 +173,14 @@ function fmtDate(d: string, lang: Lang) {
   } catch { return d; }
 }
 
+function brandLogo(brand: string): string | null {
+  const b = brand.toLowerCase();
+  if (b.includes("sika")) return "/brands/n/sika.webp";
+  if (b.includes("weber")) return "/brands/n/weber.webp";
+  if (b.includes("gypsum") || b.includes("saint-gobain")) return "/brands/n/saint-gobain.webp";
+  return null;
+}
+
 export default function CertificatesPage() {
   const [lang, setLang] = useLang();
   const [search, setSearch] = useState("");
@@ -263,13 +271,20 @@ export default function CertificatesPage() {
             </div>
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 16 }}>
-              {filtered.map((c) => (
-                <div key={c.id} style={{ background: "var(--white)", border: "1px solid var(--gray-light)", borderRadius: 14, padding: 20, display: "flex", flexDirection: "column", gap: 14, transition: "box-shadow .25s, transform .25s" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 10px 36px rgba(0,81,162,.14)"; e.currentTarget.style.transform = "translateY(-3px)"; }}
+              {filtered.map((c) => { const logo = brandLogo(c.brand); return (
+                <div key={c.id} style={{ position: "relative", background: "var(--white)", border: "1px solid var(--gray-light)", borderTop: "3px solid var(--accent)", borderRadius: 14, padding: 20, display: "flex", flexDirection: "column", gap: 14, transition: "box-shadow .25s, transform .25s" }}
+                  onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 14px 40px rgba(0,81,162,.16)"; e.currentTarget.style.transform = "translateY(-3px)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}>
                   {/* Header */}
                   <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
-                    <div style={{ width: 46, height: 46, background: "linear-gradient(135deg, var(--blue-light), var(--blue-soft))", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, flexShrink: 0, borderRadius: 10 }}>🏅</div>
+                    {logo ? (
+                      <div style={{ width: 54, height: 54, background: "#fff", border: "1px solid var(--gray-light)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, padding: 7, boxShadow: "0 2px 10px rgba(0,0,0,.06)" }}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={logo} alt={c.brand} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} />
+                      </div>
+                    ) : (
+                      <div style={{ width: 54, height: 54, background: "linear-gradient(135deg, #fbbf24, #f59e0b)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 26, flexShrink: 0, borderRadius: 12, boxShadow: "0 4px 14px rgba(245,158,11,.35)" }}>🏅</div>
+                    )}
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <div style={{ fontWeight: 800, fontSize: 14.5, color: "var(--text)", lineHeight: 1.35, marginBottom: 5 }}>
                         {lang === "ar" ? c.nameAr : c.nameEn}
@@ -279,9 +294,14 @@ export default function CertificatesPage() {
                     <span style={{ background: "var(--blue-light)", color: "var(--blue)", fontSize: 12, fontWeight: 800, padding: "4px 10px", borderRadius: 6, flexShrink: 0 }}>{c.year}</span>
                   </div>
 
-                  <span style={{ alignSelf: "flex-start", fontSize: 10.5, fontWeight: 800, padding: "3px 10px", borderRadius: 6, background: c.kind === "system" ? "#eef2ff" : "#ecfdf5", color: c.kind === "system" ? "#4338ca" : "#047857" }}>
-                    {c.kind === "system" ? t.typeSystem : t.typeProduct}
-                  </span>
+                  <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                    <span style={{ fontSize: 10.5, fontWeight: 800, padding: "3px 10px", borderRadius: 6, background: c.kind === "system" ? "#eef2ff" : "#ecfdf5", color: c.kind === "system" ? "#4338ca" : "#047857" }}>
+                      {c.kind === "system" ? t.typeSystem : t.typeProduct}
+                    </span>
+                    <span style={{ fontSize: 10.5, fontWeight: 800, padding: "3px 10px", borderRadius: 6, background: "#fef3c7", color: "#b45309", display: "inline-flex", alignItems: "center", gap: 4 }}>
+                      🛡️ {lang === "ar" ? "موثّقة" : "Verified"}
+                    </span>
+                  </div>
 
                   <div style={{ height: 1, background: "var(--gray-light)" }} />
 
@@ -307,7 +327,7 @@ export default function CertificatesPage() {
                   {/* Actions */}
                   <div style={{ display: "flex", gap: 8, marginTop: "auto" }}>
                     <a href={c.fileUrl} target="_blank" rel="noopener noreferrer"
-                      style={{ flex: 1, background: "var(--blue)", color: "#fff", textDecoration: "none", textAlign: "center", padding: "10px 12px", fontSize: 12.5, fontWeight: 800, borderRadius: 8 }}>
+                      style={{ flex: 1, background: "linear-gradient(135deg, #0051a2, #003578)", color: "#fff", textDecoration: "none", textAlign: "center", padding: "11px 12px", fontSize: 12.5, fontWeight: 800, borderRadius: 8, boxShadow: "0 4px 14px rgba(0,81,162,.3)" }}>
                       📄 {t.download}
                     </a>
                     {c.verifyUrl && (
@@ -318,7 +338,7 @@ export default function CertificatesPage() {
                     )}
                   </div>
                 </div>
-              ))}
+              ); })}
             </div>
           )}
         </div>

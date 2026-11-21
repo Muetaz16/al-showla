@@ -5,7 +5,7 @@ import { useLang } from "@/lib/useLang";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners } from "@/app/cms-actions";
 import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
-import { PROJECTS, PARTNERS, DEPARTMENTS, LINKEDIN_URL, libyanPhone, deptPeople } from "@/lib/company-data";
+import { PROJECTS, PARTNERS, LINKEDIN_URL } from "@/lib/company-data";
 
 /* ─────────────────────────────────────────────
    TRANSLATIONS
@@ -1307,21 +1307,12 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-              {/* Department contacts */}
+              {/* Executive management — Shield Enmaa */}
               <div className="ao" style={{ marginTop: 22 }}>
-                <div className="ci-lbl" style={{ marginBottom: 10 }}>{lang === "ar" ? "التواصل مع الإدارات" : "Department Contacts"}</div>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 10 }}>
-                  {DEPARTMENTS.map((d) => {
-                    const ph = libyanPhone(d.phone);
-                    return (
-                      <div key={d.email} style={{ background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 10, padding: "12px 14px" }}>
-                        <div style={{ color: "var(--accent)", fontWeight: 800, fontSize: 14, marginBottom: 4 }}>{lang === "ar" ? d.nameAr : d.nameEn}</div>
-                        <div style={{ color: "#fff", fontWeight: 700, fontSize: 13, marginBottom: 6 }}>{deptPeople(d, lang === "ar").join(lang === "ar" ? "، " : ", ")}</div>
-                        <a href={`tel:${ph.tel}`} dir="ltr" style={{ display: "block", color: "#fff", fontSize: 13, textDecoration: "none", unicodeBidi: "embed" }}>📞 {ph.display}</a>
-                        <a href={`mailto:${d.email}`} style={{ display: "block", color: "rgba(255,255,255,.8)", fontSize: 13, textDecoration: "none" }}>✉️ {d.email}</a>
-                      </div>
-                    );
-                  })}
+                <div className="ci-lbl" style={{ marginBottom: 10 }}>{lang === "ar" ? "الإدارة التنفيذية" : "Executive Management"}</div>
+                <div style={{ background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.12)", borderRadius: 10, padding: "14px 16px", maxWidth: 340 }}>
+                  <div style={{ color: "#fff", fontWeight: 800, fontSize: 15, marginBottom: 4 }}>{lang === "ar" ? "صالح العوامي" : "Saleh Al-Awamy"}</div>
+                  <div style={{ color: "var(--accent)", fontWeight: 700, fontSize: 13 }}>{lang === "ar" ? "المدير العام — شركة شيلد إنماء" : "General Manager — Shield Enmaa"}</div>
                 </div>
               </div>
               <div className="soc-row">
