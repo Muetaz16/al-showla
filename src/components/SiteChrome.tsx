@@ -72,7 +72,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
       >
         <a href="/" className="nav-logo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO} alt="Al-Showla Al-Raeda" style={{ height: 64 }}
+          <img src={LOGO} alt="Al-Showla Al-Raeda" className="nav-logo-img"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <div>
             <div className="nav-logo-txt">{L("الشعلة الرائدة", "AL-SHOWLA AL-RAEDA")}</div>

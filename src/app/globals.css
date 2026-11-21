@@ -159,7 +159,8 @@ body {
 @media(max-width:1366px) { .nav-links .nav-sec { display: none; } .nav-drop-menu a.nav-drop-sec { display: block; } .nav-logo-sub { display: none; } }
 @media(max-width:1150px) { .nav-links .nav-ter { display: none; } .nav-drop-menu a.nav-drop-ter { display: block; } }
 @media(max-width:1023px) { .nav-links { display: none; } .hamburger { display: flex; } }
-@media(max-width:400px) { .nav-logo img { height: 32px; } .nav-logo-txt { font-size: 12px; } .mob-nav a { font-size: 1.1rem; padding: 8px; width: 90%; } }
+@media(max-width:600px) { .nav-logo img, .nav-logo-img { height: 48px; } .nav-logo-txt { font-size: 14px; } #nav, header { gap: 10px; } }
+@media(max-width:400px) { .nav-logo img, .nav-logo-img { height: 40px; } .nav-logo-txt { font-size: 12px; } .mob-nav a { font-size: 1.1rem; padding: 8px; width: 90%; } }
 
 
 /* ── HERO ── */

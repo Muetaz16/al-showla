@@ -703,7 +703,7 @@ export default function Home() {
       <nav id="nav" className={navSolid ? "solid" : ""}>
         <a href="#home" className="nav-logo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO} alt="Al-Showla Al-Raeda Logo" style={{ height: 64 }}
+          <img src={LOGO} alt="Al-Showla Al-Raeda Logo"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <div>
             <div className="nav-logo-txt">{lang === "ar" ? "الشعلة الرائدة" : "AL-SHOWLA AL-RAEDA"}</div>
