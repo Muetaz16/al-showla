@@ -815,29 +815,58 @@ export async function deleteCaseStudy(id: string): Promise<boolean> {
 // (specialty, contact, certificates) to be completed from the admin panel when provided.
 const SHIELD_ENMAA = {
   name: "شيلد إنماء للمقاولات — Shield Enmaa",
-  systemSpecialty: "العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات",
+  systemSpecialty: "العزل، فواصل التمدد، الأرضيات، التشطيبات، والحماية والترميم",
   contactInfo: {
     logo: "/applicators/shield-enmaa.webp",
-    rev: 3, // bump when the seeded details change (see getApplicators)
-    description: "تحالف استراتيجي بين شيلد للمقاولات المتخصصة (إحدى شركات مجموعة درة Dorra Group) وإنماء الإعمار، الذراع التنفيذي لشركة الشعلة، يجمع الخبرة الهندسية المصرية مع قدرات التنفيذ الليبية في شمال أفريقيا. تقدم حلولاً إنشائية متقدمة تشمل العزل، فواصل التمدد، الأرضيات، الترميم، والتشطيبات، ومعتمدة كمنفذ من شركات عالمية مثل Sika وBASF وSaint-Gobain وProtan.",
-    services: ["الأعمال المدنية والإنشائية", "العزل", "أنظمة الأرضيات", "أعمال التشطيبات", "حماية وترميم المنشآت", "الأنظمة الكهروميكانيكية (MEP)", "توريد مواد البناء", "البنية التحتية الخضراء وأنظمة الطاقة الشمسية"],
-    projects: ["جامعة بنغازي — كلية الاقتصاد وكلية الآداب", "جامعة بنغازي — مبنى كلية القانون", "جامعة بنغازي — كلية العلوم", "جامعة بنغازي — مبيت الطلبة"],
-    // English versions (shown when the site language is EN)
+    rev: 4, // bump when the seeded details change (see getApplicators)
+    description: "شيلد إنماء شركة متخصصة في تنفيذ الأعمال التخصصية داخل المشاريع، تأسست بتحالف استراتيجي بين شيلد للمقاولات التخصصية في مصر (إحدى شركات مجموعة درة Dorra Group) وشركة إنماء الإعمار في ليبيا، الذراع التنفيذي لشركة الشعلة. نفّذت الشركة أكثر من 286 ألف متر مربع من الأعمال داخل ليبيا، وهي منفذ معتمد لدى Master Builders Solutions وWeber (Saint-Gobain) وProtan وPenetron وSika.",
+    // أرقام الأعمال
+    stats: [
+      ["286,830 م²", "إجمالي الأعمال المنفذة"],
+      ["146,997 م²", "أعمال تحت التنفيذ"],
+      ["241,245 م²", "أنظمة العزل المائي"],
+      ["124,685 م²", "الجبس بورد والشي بورد"],
+      ["67,897 م²", "البلاط والتشطيبات"],
+      ["6,462 م.ط", "فواصل التمدد"],
+    ],
+    statsNote: "أرقام البنود تشمل المنفذ وتحت التنفيذ، ومجموعها 433,827 م².",
+    // نطاق الأعمال
+    scopeIntro: "تعمل شيلد إنماء في تنفيذ الأعمال التخصصية داخل المشاريع، خصوصاً في مجالات العزل، أنظمة الأرضيات، التشطيبات، والحماية والترميم، مع القدرة على تغطية باقي أعمال المشروع من خلال شركائها.",
+    scope: [
+      ["أعمال العزل", "عزل مائي، حراري، وصوتي باستخدام أنظمة مثل البيتومين، EPDM، PVC، TPO، البولي يوريا، والأنظمة الإسمنتية، بالإضافة إلى أعمال الحقن ومعالجة التسربات."],
+      ["فواصل التمدد", "تنفيذ ومعالجة الفواصل باستخدام أنظمة السيلانت والبولي يوريثان أو القطاعات الجاهزة المعدنية أو المطاطية، وإعادة تشكيل الفواصل وأنظمة الغلق."],
+      ["أنظمة الأرضيات والحماية", "أعمال تشطيب الأرضيات (إيبوكسي، بولي يوريثان، بولي يوريثان أسمنتي، ميكرو سمنت، أنظمة تسوية ذاتية)، تشطيب أرضيات خرسانية، بلاط، رخام، جرانيت."],
+      ["أعمال التشطيبات", "جبس بورد، شي بورد، أعمال الديكور، عناصر الواجهات الخفيفة (EPS)، بلاط، وحجر طبيعي وصناعي."],
+      ["الحماية والترميم والتدعيم", "معالجة الشروخ، تدعيم إنشائي، زرع الأشاير، شوت كريت، كربون فايبر، ومعالجة الخرسانة."],
+    ],
+    // من مشاريعها
+    projectsDetailed: [
+      { name: "أبراج بنغازي (أبراج النسيم) — جليانة", client: "TGG", items: ["عزل الأساسات بممبرين Ravago STOPERproof المسبق التطبيق: 128,000 م² (جارٍ)", "عزل الأسطح بنظام PVC: 20,152 م²", "عزل دورات المياه: 6,000 م² (جارٍ)", "عزل خزان المياه: 859 م²", "عزل خزان الحريق: 505 م²", "عزل الأحواض: 1,500 م² (جارٍ)", "معالجة الاختراقات في الخزانات"] },
+      { name: "كلية العلوم — جامعة بنغازي", client: "الفرات للمقاولات العامة", items: ["جبس بورد: 90,000 م²", "تشطيبات بورسلين وبازلت: 32,850 م²", "عزل مائي ممبرين: 22,270 م²", "فواصل تمدد: 530 م.ط"] },
+      { name: "بيوت الطلبة — جامعة بنغازي", client: "إطار التعمير القابضة", items: ["بلاط: 35,000 م²", "عزل مائي ممبرين: 25,000 م²", "عزل أسمنتي: 15,400 م²", "فواصل تمدد: 4,300 م.ط"] },
+      { name: "كلية القانون — جامعة بنغازي", client: "الوصيد العقارية", items: ["تشطيب قاعات المحاضرات والقبة الفلكية وألواح الجبس: 26,700 م²", "فواصل تمدد: 1,600 م.ط"] },
+      { name: "المحطة البخارية — درنة", client: "CCC", items: ["عزل بيتوميني للأساسات", "عزل بشرائح بيتومينية", "عزل PVC بنظام Compartment System", "إجمالي الكميات: 7,100 م² (جارٍ)"] },
+      { name: "سطح كلية الهندسة — جامعة بنغازي", client: "Penetron", items: ["نظام عزل مائي PVC مع ألواح XPS: 2,469 م² (جارٍ)"] },
+      { name: "مصنع الحديد والصلب", client: "Penetron", items: ["أعمال ترميم: 11,373 نقطة", "عزل الأساسات: 237 م²"] },
+      { name: "مشروع 20 ألف وحدة سكنية — القوارشة", client: "الوطنية الرائدة القابضة", items: ["أسقف معلقة من الجبس بورد (كناوف)", "إجمالي العقد: 2,450 م² مسطحات، 1,139 م.ط أعمال طولية (جارٍ)"] },
+      { name: "خزان مياه — جهة أمنية", client: "أهل الثقة للمقاولات (إحدى شركات الوطنية الرائدة القابضة)", items: ["دهان عازل مقاوم للبكتيريا: 475 م²"] },
+      { name: "جهة أمنية", client: "الوصيد للهندسة والإنشاءات", items: ["أسقف معلقة من الجبس بورد: 1,409 م²، 992 م.ط"] },
+      { name: "مشاريع متعددة", client: "مراس للهندسة والإنشاءات", items: ["عزل أسطح خرسانية وأسطح ساندوتش بانل بالبولي يوريثان: 2,794 م²", "عزل مائي ممبرين: 308 م²", "عزل مائي لحمام سباحة: 300 م²", "معالجات عزل للفواصل ومناطق الركوب: 1,607 م.ط", "معالجة اختراقات مسامير التثبيت: 1,190 نقطة"] },
+    ],
+    projectsNote: "إضافة إلى مشاريع أخرى في العزل والتشطيبات لجهات عامة وخاصة.",
+    // English (shown in EN mode where available)
     nameEn: "Shield Enmaa Contracting",
-    systemSpecialtyEn: "Waterproofing, expansion joints, flooring, restoration & finishes",
-    descriptionEn: "A strategic alliance between Shield for Specialized Contracting (a Dorra Group company) and Enmaa Al-Emaar — the execution arm of Al-Showla — combining Egyptian engineering expertise with Libyan execution capability across North Africa. It delivers advanced construction solutions including waterproofing, expansion joints, flooring, restoration and finishes, and is an approved applicator for global manufacturers such as Sika, BASF, Saint-Gobain and Protan.",
-    servicesEn: ["Civil & structural works", "Waterproofing", "Flooring systems", "Finishing works", "Structure protection & restoration", "Electromechanical systems (MEP)", "Building materials supply", "Green infrastructure & solar energy systems"],
-    projectsEn: ["University of Benghazi — Faculty of Economics & Faculty of Arts", "University of Benghazi — Faculty of Law building", "University of Benghazi — Faculty of Science", "University of Benghazi — Student housing"],
-    certificationsEn: ["Sika-approved applicator", "BASF", "Saint-Gobain", "Protan"],
-    phone: "092-1559050",
-    phone2: "092-5200070",
+    systemSpecialtyEn: "Waterproofing, expansion joints, flooring, finishes, protection & restoration",
+    descriptionEn: "Shield Enmaa is a specialist contractor executing specialised works inside projects, formed through a strategic alliance between Shield for Specialized Contracting in Egypt (a Dorra Group company) and Enmaa Al-Emaar in Libya — the execution arm of Al-Showla. The company has delivered over 286,000 m² of works in Libya and is a certified applicator for Master Builders Solutions, Weber (Saint-Gobain), Protan, Penetron and Sika.",
+    phone: "092-5200070",
+    phone2: "092-2556125",
     email: "info@shield-enmaa.com",
-    city: "بنغازي — الرحبة، الطريق السريع",
+    city: "بنغازي — منطقة الرحبة، الطريق الدائري الثالث",
     website: "https://shieldeg.com/shield-enmaa-contracting-co/",
     facebook: "https://www.facebook.com/Shield.Enmaa",
     linkedin: "https://www.linkedin.com/company/shield-enmaa",
   },
-  certifications: ["منفذ معتمد من Sika", "BASF", "Saint-Gobain", "Protan"],
+  certifications: ["Master Builders Solutions", "Weber (Saint-Gobain)", "Sika", "Protan", "Penetron", "Prokem", "BituNil", "BASF Construction Chemicals"],
 };
 
 const APPLICATOR_SEED = [

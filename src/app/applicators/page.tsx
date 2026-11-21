@@ -78,7 +78,37 @@ export default function ApplicatorsPage() {
                     {spec && <div className="ap-spec">{spec}</div>}
                     {desc && <p className="ap-desc">{desc}</p>}
 
-                    {services.length > 0 && (
+                    {/* أرقام الأعمال — work figures */}
+                    {Array.isArray(c.stats) && c.stats.length > 0 && (
+                      <div className="ap-block">
+                        <h3>{tx("أرقام الأعمال", "Work in numbers")}</h3>
+                        <div className="ap-stats">
+                          {c.stats.map((s: string[], i: number) => (
+                            <div className="ap-stat" key={i}>
+                              <div className="ap-stat-n">{s[0]}</div>
+                              <div className="ap-stat-l">{s[1]}</div>
+                            </div>
+                          ))}
+                        </div>
+                        {c.statsNote && <p className="ap-note">{c.statsNote}</p>}
+                      </div>
+                    )}
+
+                    {/* نطاق الأعمال — scope of work */}
+                    {Array.isArray(c.scope) && c.scope.length > 0 ? (
+                      <div className="ap-block">
+                        <h3>{tx("نطاق الأعمال", "Scope of work")}</h3>
+                        {c.scopeIntro && <p className="ap-desc" style={{ margin: "0 0 12px" }}>{c.scopeIntro}</p>}
+                        <div className="ap-scope">
+                          {c.scope.map((s: string[], i: number) => (
+                            <div className="ap-scope-item" key={i}>
+                              <h4>{s[0]}</h4>
+                              <p>{s[1]}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ) : services.length > 0 && (
                       <div className="ap-block">
                         <h3>{tx("الخدمات", "Services")}</h3>
                         <div className="ap-chips">
@@ -87,7 +117,22 @@ export default function ApplicatorsPage() {
                       </div>
                     )}
 
-                    {projects.length > 0 && (
+                    {/* من مشاريعها — projects */}
+                    {Array.isArray(c.projectsDetailed) && c.projectsDetailed.length > 0 ? (
+                      <div className="ap-block">
+                        <h3>{tx("من مشاريعها", "Selected projects")}</h3>
+                        <div className="ap-projgrid">
+                          {c.projectsDetailed.map((p: any, i: number) => (
+                            <div className="ap-proj" key={i}>
+                              <div className="ap-proj-name">{p.name}</div>
+                              {p.client && <div className="ap-proj-client">{tx("العميل", "Client")}: {p.client}</div>}
+                              {Array.isArray(p.items) && <ul>{p.items.map((it: string, j: number) => <li key={j}>{it}</li>)}</ul>}
+                            </div>
+                          ))}
+                        </div>
+                        {c.projectsNote && <p className="ap-note">{c.projectsNote}</p>}
+                      </div>
+                    ) : projects.length > 0 && (
                       <div className="ap-block">
                         <h3>{tx("من مشاريعها", "Selected projects")}</h3>
                         <ul className="ap-projects">
@@ -98,7 +143,7 @@ export default function ApplicatorsPage() {
 
                     {certs.length > 0 && (
                       <div className="ap-block">
-                        <h3>{tx("الاعتمادات", "Certifications")}</h3>
+                        <h3>{tx("منفذ معتمد (Certified Applicator) من", "Certified Applicator for")}</h3>
                         <div className="ap-chips gold">
                           {certs.map((x, i) => <span key={i}>{x}</span>)}
                         </div>
@@ -147,6 +192,26 @@ const CSS = `
 .ap-chips span { font-size: 13px; font-weight: 700; background: #e8f2fc; color: #0051a2; padding: 6px 12px; border-radius: 8px; }
 .ap-chips.gold span { background: #fef3c7; color: #b45309; }
 .ap-projects { margin: 0; padding-inline-start: 18px; columns: 2; column-gap: 28px; font-size: 14px; line-height: 2; color: #475569; }
+.ap-note { font-size: 12.5px; color: #64748b; margin: 10px 0 0; }
+
+/* Work figures */
+.ap-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.ap-stat { background: #f1f6fc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 10px; text-align: center; }
+.ap-stat-n { font-size: 1.1rem; font-weight: 900; color: var(--blue-deeper, #001f4d); }
+.ap-stat-l { font-size: 12px; color: #64748b; font-weight: 700; margin-top: 4px; }
+
+/* Scope of work */
+.ap-scope { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ap-scope-item { background: #f1f6fc; border-radius: 12px; padding: 14px 16px; }
+.ap-scope-item h4 { margin: 0 0 6px; font-size: 14px; font-weight: 900; color: #0051a2; }
+.ap-scope-item p { margin: 0; font-size: 13px; line-height: 1.85; color: #475569; }
+
+/* Detailed projects */
+.ap-projgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ap-proj { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 16px; }
+.ap-proj-name { font-weight: 900; color: var(--blue-deeper, #001f4d); font-size: 14px; }
+.ap-proj-client { font-size: 12px; font-weight: 800; color: #0051a2; margin: 3px 0 8px; }
+.ap-proj ul { margin: 0; padding-inline-start: 18px; font-size: 12.5px; line-height: 1.9; color: #475569; }
 
 @media (max-width: 820px) {
   .ap-card { grid-template-columns: 1fr; }
@@ -154,5 +219,7 @@ const CSS = `
   .ap-logo { height: 180px; }
   .ap-body { padding: 24px 20px; }
   .ap-projects { columns: 1; }
+  .ap-stats { grid-template-columns: repeat(2, 1fr); }
+  .ap-scope, .ap-projgrid { grid-template-columns: 1fr; }
 }
 `;
