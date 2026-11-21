@@ -42,6 +42,23 @@ const T = {
     ],
     greeting: "Hello! I'm the Al-Showla Al-Raeda advisor. I can help with our products and services — describe your project or problem and I'll suggest the right product and system.",
   },
+  tr: {
+    title: "Al-Showla Al-Raeda Akıllı Danışman",
+    subtitle: "Projeniz için doğru sistem ve ürünleri sorun — Al-Showla kataloğuna dayalıdır.",
+    disclaimer: "Bilgiler kataloğa dayalı yönlendirmedir; nihai seçim için satış ekibiyle veya teknik föylerle (TDS) teyit edin.",
+    placeholder: "Teknik sorunuzu buraya yazın...",
+    send: "Gönder",
+    quickLinks: "Önerilen ürünler:",
+    suggestions: [
+      "Banyo su yalıtımı için ne uygundur?",
+      "Su basıncı altındaki bir sızıntıyı onaracak malzemeye ihtiyacım var",
+      "Alçıpan sistemleri arasındaki fark nedir?",
+      "Fayans için uygun kesme aletleri",
+      "Zemin kaplaması için bir ürün",
+      "Dış cephe seramiği için yapıştırıcı",
+    ],
+    greeting: "Merhaba! Ben Al-Showla Al-Raeda danışmanıyım. Ürünlerimiz ve hizmetlerimiz konusunda yardımcı olabilirim — projenizi veya sorununuzu anlatın, size uygun ürünü ve sistemi önereyim.",
+  },
 };
 
 export default function AdvisorPage() {

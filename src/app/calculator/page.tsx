@@ -80,6 +80,16 @@ const T = {
     note: "Results are approximate, based on the entered data, and do not replace technical-department review and engineering approval.",
     quote: "💬 Convert result to a quote request", browse: "Browse Products",
     perM2: "per m²", kg: "kg", l: "L" },
+  tr: { title: "Yapı Malzemeleri Hesaplayıcı", subtitle: "Kategoriyi, ardından markayı ve ürünü seçin; miktarı ve paket sayısını öğrenmek için alanı girin",
+    category: "Kategori", brand: "Marka", product: "Ürün", choose: "-- Seçin --",
+    area: "Alan (m²)", rate: "Tüketim oranı", waste: "Fire %", pkg: "Paket boyutu",
+    rateHint: "ürün teknik föyünden", fromSheet: "teknik föye göre", sheetRange: "Teknik föy:",
+    thickness: "Kalınlık (mm)", perMm: "m² başına / 1 mm", datasheet: "📄 Teknik Föy",
+    needRate: "Hesaplamayı tamamlamak için tüketim oranını teknik föyden girin.",
+    needed: "Gerekli miktar", packages: "Paket sayısı", viewProduct: "Ürünü görüntüle",
+    note: "Sonuçlar tahminidir, girilen verilere dayanır ve teknik departman incelemesi ile mühendislik onayının yerine geçmez.",
+    quote: "💬 Sonucu fiyat teklifi talebine dönüştür", browse: "Ürünlere Göz At",
+    perM2: "m² başına", kg: "kg", l: "L" },
 };
 
 export default function CalculatorPage() {
