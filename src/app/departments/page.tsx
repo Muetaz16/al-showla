@@ -69,8 +69,17 @@ export default function DepartmentsPage() {
                 <button type="button" className="tm-hit" onClick={() => setOpen(isOpen ? null : p.name)} aria-expanded={isOpen}>
                   <div className="tm-photo">
                     {p.photo ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={p.photo} alt={p.name} />
+                      <>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={p.photo} alt={p.name}
+                          onError={(e) => {
+                            const img = e.currentTarget;
+                            img.style.display = "none";
+                            const sib = img.nextElementSibling as HTMLElement | null;
+                            if (sib) sib.style.display = "";
+                          }} />
+                        <span className="tm-ini" style={{ display: "none" }}>{initials(p.name).map((ch, i) => <b key={i}>{ch}</b>)}</span>
+                      </>
                     ) : (
                       <span className="tm-ini">{initials(p.name).map((ch, i) => <b key={i}>{ch}</b>)}</span>
                     )}
