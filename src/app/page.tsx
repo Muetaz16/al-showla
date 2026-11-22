@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useLang } from "@/lib/useLang";
+import { useDark } from "@/lib/useDark";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners } from "@/app/cms-actions";
 import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
@@ -268,7 +269,7 @@ type Lang = "en" | "ar";
 ───────────────────────────────────────────── */
 export default function Home() {
   const [lang, setLang] = useLang();
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useDark();
   const [navSolid, setNavSolid] = useState(true);
   const [mobOpen, setMobOpen] = useState(false);
   const [formSent, setFormSent] = useState(false);
@@ -336,11 +337,6 @@ export default function Home() {
     obs.observe(hero);
     return () => obs.disconnect();
   }, [countUp]);
-
-  /* ── Dark mode ── */
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
 
   /* ── Language / dir ── */
   useEffect(() => {

@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useLang } from "@/lib/useLang";
+import { useDark } from "@/lib/useDark";
 import Link from "next/link";
 import {
   CATEGORIES, CURRENCY_RATES, CURRENCY_SYMBOLS,
@@ -974,7 +975,7 @@ export default function ProductsPage() {
   const [compareList, setCompareList] = useState<Product[]>([]);
   const [showCompare, setShowCompare] = useState(false);
   const [compareAlert, setCompareAlert] = useState("");
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useDark();
   const [cartCount, setCartCount] = useState(0);
   const [user, setUser] = useState<any | null>(null);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -1016,9 +1017,6 @@ export default function ProductsPage() {
     document.documentElement.dir = dir;
   }, [lang, dir]);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
 
   // Update cart count
   useEffect(() => {

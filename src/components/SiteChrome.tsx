@@ -5,6 +5,7 @@
 
 import { useState, type ReactNode } from "react";
 import { setStoredLang, LANGS, type Lang } from "@/lib/useLang";
+import { useDark } from "@/lib/useDark";
 
 // Single source of truth for the full site menu — shown identically on every page.
 export const NAV: { href: string; ar: string; en: string }[] = [
@@ -35,6 +36,7 @@ const LOGO = "/site/cropped-ICON-270x270.png";
 export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: Lang; onToggleLang?: () => void; rightSlot?: ReactNode }) {
   const isAr = lang === "ar";
   const [mobOpen, setMobOpen] = useState(false);
+  const [dark, setDark] = useDark();
   const L = (ar: string, en: string, tr?: string) => (lang === "ar" ? ar : lang === "tr" ? (tr ?? en) : en);
   const mobLinks: [string, string][] = [
     ["/", L("الرئيسية", "Home", "Ana Sayfa")],
@@ -125,6 +127,10 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               </button>
             ))}
           </div>
+          <button onClick={() => setDark(!dark)} title={dark ? "Light" : "Dark"} aria-label="Theme"
+            style={{ background: "var(--blue-light)", border: "none", color: "var(--blue)", padding: "6px 10px", cursor: "pointer", borderRadius: 7, fontSize: 15, lineHeight: 1 }}>
+            {dark ? "☀️" : "🌙"}
+          </button>
           <a href="https://wa.me/218948020200" className="nav-cta" target="_blank" rel="noopener noreferrer">{L("اطلب الآن", "Order Now", "Hemen Sipariş")}</a>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -150,6 +156,10 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               {label}
             </button>
           ))}
+          <button onClick={() => setDark(!dark)} aria-label="Theme"
+            style={{ background: "rgba(255,255,255,.15)", border: "none", color: "#fff", padding: "10px 16px", cursor: "pointer", borderRadius: 8, fontSize: 16 }}>
+            {dark ? "☀️" : "🌙"}
+          </button>
         </div>
       </div>
     </>

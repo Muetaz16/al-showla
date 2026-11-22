@@ -94,6 +94,13 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
+        {/* Apply the saved theme before first paint so dark mode persists across
+            pages with no flash of the light theme. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem('ui-dark')==='1')document.documentElement.classList.add('dark')}catch(e){}`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
