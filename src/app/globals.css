@@ -81,13 +81,13 @@ body {
 .dark-btn { font-size: 16px; padding: 9px 10px; border-top: 1px solid var(--gray-light); }
 .dark-btn:hover { background: var(--blue-light); }
 @media(max-width:860px) {
-  /* Sit just below the header (not floating over the hero stats) */
-  .side-controls { top: 80px; bottom: auto; left: 10px; right: auto; transform: none; flex-direction: row; }
-  [dir=rtl] .side-controls { left: auto; right: 10px; }
-  .ctrl-group { flex-direction: row; border-radius: 22px; }
-  .lang-opt { padding: 7px 10px; font-size: 10px; }
-  .dark-btn { border-top: none; border-left: 1px solid var(--gray-light); padding: 7px 10px; font-size: 14px; }
+  /* On phones the language/theme switcher lives inside the hamburger menu (.mob-lang) */
+  .side-controls { display: none; }
 }
+.mob-lang { display: flex; gap: 8px; margin-top: 14px; justify-content: center; flex-wrap: wrap; }
+.mob-lang button { background: rgba(255,255,255,.12); border: none; color: #fff; padding: 9px 16px; border-radius: 8px; font-weight: 800; font-family: 'Cairo', sans-serif; font-size: 13px; cursor: pointer; }
+.mob-lang button.active { background: #0051a2; }
+.mob-lang .mob-dark { font-size: 15px; padding: 9px 12px; }
 
 /* ── NAV ── */
 #nav {

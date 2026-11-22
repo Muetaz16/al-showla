@@ -771,6 +771,13 @@ export default function Home() {
         </a>
         <a href="https://wa.me/218948020200" target="_blank" rel="noopener noreferrer"
           style={{ color: "var(--accent)" }} onClick={() => setMobOpen(false)}>{t.orderWhatsapp}</a>
+        <div className="mob-nav-divider" />
+        <div className="mob-lang">
+          {(["ar", "en", "tr"] as const).map((code) => (
+            <button key={code} className={lang === code ? "active" : ""} onClick={() => setLang(code)}>{code.toUpperCase()}</button>
+          ))}
+          <button className="mob-dark" onClick={() => setDark(!dark)} aria-label="Theme">{dark ? "☀️" : "🌙"}</button>
+        </div>
       </div>
 
       {/* ══════════════════ HERO ══════════════════ */}
