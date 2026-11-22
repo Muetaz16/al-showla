@@ -350,6 +350,17 @@ model TechnicalDocument {
   date      DateTime @default(now())
 }
 
+// Services / showcase videos (YouTube) — managed from the admin dashboard
+model SiteVideo {
+  id        String   @id @default(cuid())
+  titleAr   String
+  titleEn   String?
+  youtubeUrl String
+  active    Boolean  @default(true)
+  order     Int      @default(0)
+  date      DateTime @default(now())
+}
+
 model SiteVisitRequest {
   id              String   @id @default(cuid())
   name            String?

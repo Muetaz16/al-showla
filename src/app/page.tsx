@@ -4,7 +4,8 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { useLang } from "@/lib/useLang";
 import { useDark } from "@/lib/useDark";
 import { submitContactMessage } from "@/app/cms-actions";
-import { getBanners } from "@/app/cms-actions";
+import { getBanners, getSiteVideos } from "@/app/cms-actions";
+import { youtubeId } from "@/lib/site-videos";
 import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
 import { PROJECTS, PARTNERS, LINKEDIN_URL } from "@/lib/company-data";
 
@@ -275,6 +276,8 @@ export default function Home() {
   const [formSent, setFormSent] = useState(false);
   const [formError, setFormError] = useState("");
   const [heroBanner, setHeroBanner] = useState<string | null>(null);
+  const [videos, setVideos] = useState<{ id: string; titleAr: string; titleEn?: string | null; youtubeUrl: string }[]>([]);
+  const [playVideo, setPlayVideo] = useState<string | null>(null);
   const [countersRan, setCountersRan] = useState(false);
   const [selectedBrand, setSelectedBrand] = useState<any>(null);
   const [selectedService, setSelectedService] = useState<any>(null);
@@ -346,6 +349,7 @@ export default function Home() {
 
   useEffect(() => {
     getBanners().then((b) => { if (b[0]?.imageUrl) setHeroBanner(b[0].imageUrl); }).catch(() => { });
+    getSiteVideos().then((v) => setVideos((v || []).filter((x: any) => youtubeId(x.youtubeUrl)))).catch(() => { });
   }, []);
 
   /* ── Form handler ── */
@@ -979,6 +983,30 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* ── Showcase videos (YouTube, admin-managed) ── */}
+          {videos.length > 0 && (
+            <div className="svc-videos">
+              <h3 className="svc-videos-h">
+                {lang === "ar" ? "أعمالنا بالفيديو" : lang === "tr" ? "Videolarla Çalışmalarımız" : "Our Work in Video"}
+              </h3>
+              <div className="svc-video-grid">
+                {videos.map((v) => {
+                  const vid = youtubeId(v.youtubeUrl);
+                  if (!vid) return null;
+                  const title = lang === "ar" ? v.titleAr : (v.titleEn || v.titleAr);
+                  return (
+                    <div key={v.id} className="svc-video-card" onClick={() => setPlayVideo(vid)}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={`https://img.youtube.com/vi/${vid}/hqdefault.jpg`} alt={title} loading="lazy" />
+                      <div className="svc-video-play">▶</div>
+                      <div className="svc-video-t">{title}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -1224,6 +1252,21 @@ export default function Home() {
                     {lang === "ar" ? "تواصل معنا للاستفسار" : "Contact us for inquiries"}
                   </a>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* ── Video player modal ── */}
+          {playVideo && (
+            <div onClick={() => setPlayVideo(null)}
+              style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,.9)", zIndex: 10000, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}>
+              <div style={{ position: "relative", width: "min(960px, 100%)", aspectRatio: "16 / 9" }} onClick={(e) => e.stopPropagation()}>
+                <button onClick={() => setPlayVideo(null)} aria-label="Close"
+                  style={{ position: "absolute", top: -42, insetInlineEnd: 0, background: "transparent", border: "none", color: "#fff", fontSize: 30, cursor: "pointer", lineHeight: 1 }}>×</button>
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${playVideo}?autoplay=1&rel=0`}
+                  title="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+                  style={{ width: "100%", height: "100%", border: "none", borderRadius: 10 }} />
               </div>
             </div>
           )}

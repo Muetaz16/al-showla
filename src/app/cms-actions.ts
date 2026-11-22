@@ -2,6 +2,8 @@
 
 import { prisma } from "@/lib/prisma";
 import { FAQ_SEED, BLOG_SEED, BANNER_SEED } from "@/lib/seeds";
+import { TECHNICAL_DOCS } from "@/lib/technical-docs";
+import { SITE_VIDEOS } from "@/lib/site-videos";
 import { addLog, addNotification } from "@/app/actions";
 
 async function notifyAdmin(title: string, body: string) {
@@ -768,12 +770,63 @@ export async function deleteDeliveryZone(id: string): Promise<boolean> {
 // ── Technical documents (TDS/SDS library) ────────────────────────
 
 export async function getTechnicalDocuments(): Promise<any[]> {
+  // Static library (manufacturer TDS/SDS supplied by the company) is the base.
+  // Admin-added documents (DB) are merged on top and override by id.
+  const base = TECHNICAL_DOCS.map((d) => ({ ...d, date: null }));
   try {
     const list = await prisma.technicalDocument.findMany({ orderBy: { title: 'asc' } });
-    return list.map((d: any) => ({ ...d, date: d.date?.toISOString?.() ?? null }));
+    const db = list.map((d: any) => ({ ...d, date: d.date?.toISOString?.() ?? null }));
+    const ids = new Set(db.map((d: any) => d.id));
+    return [...db, ...base.filter((d) => !ids.has(d.id))];
   } catch {
-    return [];
+    return base;
   }
+}
+
+// ── Services / showcase videos (YouTube) ─────────────────────────
+
+export async function getSiteVideos(): Promise<any[]> {
+  const base = SITE_VIDEOS.map((v) => ({ ...v, active: v.active ?? true, order: v.order ?? 0, date: null }));
+  try {
+    const list = await prisma.siteVideo.findMany({ where: { active: true }, orderBy: [{ order: "asc" }, { date: "desc" }] });
+    const db = list.map((v: any) => ({ ...v, date: v.date?.toISOString?.() ?? null }));
+    if (db.length) return db;
+    return base.filter((v) => v.active);
+  } catch {
+    return base.filter((v) => v.active);
+  }
+}
+
+// Admin view: all videos incl. inactive
+export async function getAllSiteVideos(): Promise<any[]> {
+  try {
+    const list = await prisma.siteVideo.findMany({ orderBy: [{ order: "asc" }, { date: "desc" }] });
+    return list.map((v: any) => ({ ...v, date: v.date?.toISOString?.() ?? null }));
+  } catch {
+    return SITE_VIDEOS.map((v) => ({ ...v, date: null }));
+  }
+}
+
+export async function saveSiteVideo(v: Record<string, unknown>): Promise<boolean> {
+  try {
+    const id = String(v.id || "vid-" + Date.now());
+    const payload = {
+      titleAr: String(v.titleAr || ""),
+      titleEn: v.titleEn ? String(v.titleEn) : null,
+      youtubeUrl: String(v.youtubeUrl || ""),
+      active: v.active === undefined ? true : Boolean(v.active),
+      order: Number(v.order || 0),
+    };
+    if (!payload.titleAr || !payload.youtubeUrl) return false;
+    await prisma.siteVideo.upsert({ where: { id }, update: payload, create: { id, ...payload } });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function deleteSiteVideo(id: string): Promise<boolean> {
+  try { await prisma.siteVideo.delete({ where: { id } }); return true; } catch { return false; }
 }
 
 // ── Case Studies (item 8) ────────────────────────────────────────

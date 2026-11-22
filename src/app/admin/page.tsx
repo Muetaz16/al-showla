@@ -13,6 +13,7 @@ import {
   getDeliveryZones, saveDeliveryZone, deleteDeliveryZone,
   getTechnicalDocuments, saveTechnicalDocument, deleteTechnicalDocument,
   getCaseStudies, saveCaseStudy, deleteCaseStudy,
+  getAllSiteVideos, saveSiteVideo, deleteSiteVideo,
   getApplicators, saveApplicator, deleteApplicator,
   createInvoice, createPayment,
 } from "@/app/cms-actions";
@@ -65,7 +66,7 @@ export default function AdminDashboard() {
   const [adminUsers,    setAdminUsers]    = useState<{ username: string; role: string; name: string }[]>([]);
   const [newUser,       setNewUser]       = useState({ username: "", name: "", password: "", role: "sub" as "superadmin" | "admin" | "sub" });
   const [toast,         setToast]         = useState<string | null>(null);
-  const [contentSection, setContentSection] = useState<"submissions" | "faq" | "blog" | "banners" | "coupons" | "workshops" | "delivery" | "documents" | "cases" | "applicators" | "billing">("submissions");
+  const [contentSection, setContentSection] = useState<"submissions" | "faq" | "blog" | "banners" | "coupons" | "workshops" | "delivery" | "documents" | "cases" | "videos" | "applicators" | "billing">("submissions");
   const [submissions, setSubmissions] = useState<Record<string, any[]>>({});
   const [faqItems, setFaqItems] = useState<any[]>([]);
   const [blogPosts, setBlogPosts] = useState<any[]>([]);
@@ -80,6 +81,8 @@ export default function AdminDashboard() {
   const [newDoc, setNewDoc] = useState({ title: "", docType: "TDS", fileUrl: "", brandId: "" });
   const [caseStudies, setCaseStudies] = useState<any[]>([]);
   const [newCase, setNewCase] = useState({ title: "", owner: "", status: "منجز", description: "", imageUrls: "", productIds: "" });
+  const [videos, setVideos] = useState<any[]>([]);
+  const [newVideo, setNewVideo] = useState({ titleAr: "", titleEn: "", youtubeUrl: "", order: "0" });
   const [applicators, setApplicators] = useState<any[]>([]);
   const [newApp, setNewApp] = useState({ name: "", systemSpecialty: "", phone: "", city: "", certifications: "" });
   const contractorsList = getAllContractors();
@@ -118,6 +121,7 @@ export default function AdminDashboard() {
     getDeliveryZones().then(setDeliveryZones);
     getTechnicalDocuments().then(setDocuments);
     getCaseStudies().then(setCaseStudies);
+    getAllSiteVideos().then(setVideos);
     getApplicators().then(setApplicators);
   }, []);
 
@@ -1309,6 +1313,7 @@ export default function AdminDashboard() {
                   ["delivery", "🚚 مناطق التوصيل"],
                   ["documents", "📄 مكتبة الوثائق"],
                   ["cases", "🏗️ معرض المشاريع"],
+                  ["videos", "🎬 فيديوهات الخدمات"],
                   ["applicators", "👷 المطبّقون المعتمدون"],
                   ["billing", "🧾 فواتير ومدفوعات المقاولين"],
                 ] as const).map(([k, lbl]) => (
@@ -1552,6 +1557,41 @@ export default function AdminDashboard() {
                         <div style={{ fontSize:12, color:"rgba(255,255,255,.5)", marginTop:4 }}>{c.status} · {c.owner || "—"}</div>
                       </div>
                       <button className="action-btn danger" onClick={async () => { await deleteCaseStudy(c.id); reload(); showToast("🗑️ تم الحذف"); }}>حذف</button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {contentSection === "videos" && (
+                <div>
+                  <div style={{ ...S.card, marginBottom:20 }}>
+                    <h3 style={{ fontSize:14, fontWeight:800, color:"#fff", marginBottom:4 }}>إضافة فيديو (يوتيوب)</h3>
+                    <p style={{ fontSize:12, color:"rgba(255,255,255,.5)", marginBottom:12 }}>الصق رابط يوتيوب كامل (watch أو youtu.be أو shorts). يظهر الفيديو في قسم «خدماتنا» بالصفحة الرئيسية.</p>
+                    <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
+                      <input style={S.inp} placeholder="عنوان الفيديو (عربي)" value={newVideo.titleAr} onChange={e => setNewVideo(p => ({ ...p, titleAr: e.target.value }))} />
+                      <input style={S.inp} placeholder="Video title (English) — اختياري" value={newVideo.titleEn} onChange={e => setNewVideo(p => ({ ...p, titleEn: e.target.value }))} />
+                      <input style={{ ...S.inp, gridColumn:"1/-1" }} placeholder="رابط يوتيوب (https://www.youtube.com/watch?v=...)" value={newVideo.youtubeUrl} onChange={e => setNewVideo(p => ({ ...p, youtubeUrl: e.target.value }))} />
+                      <input style={S.inp} type="number" placeholder="الترتيب (0 = الأول)" value={newVideo.order} onChange={e => setNewVideo(p => ({ ...p, order: e.target.value }))} />
+                    </div>
+                    <button className="action-btn primary" style={{ marginTop:12 }} onClick={async () => {
+                      if (!newVideo.titleAr || !newVideo.youtubeUrl) { showToast("⚠️ العنوان والرابط مطلوبان"); return; }
+                      const ok = await saveSiteVideo({ titleAr: newVideo.titleAr, titleEn: newVideo.titleEn, youtubeUrl: newVideo.youtubeUrl, order: Number(newVideo.order || 0), active: true });
+                      if (!ok) { showToast("⚠️ تعذّر الحفظ — تحقق من الرابط"); return; }
+                      setNewVideo({ titleAr:"", titleEn:"", youtubeUrl:"", order:"0" });
+                      reload(); showToast("✅ تمت إضافة الفيديو");
+                    }}>إضافة الفيديو</button>
+                  </div>
+                  {videos.length === 0 && <div style={{ color:"rgba(255,255,255,.5)", fontSize:13 }}>لا توجد فيديوهات بعد.</div>}
+                  {videos.map(v => (
+                    <div key={v.id} style={{ ...S.card, marginBottom:12, display:"flex", justifyContent:"space-between", alignItems:"center", gap:12 }}>
+                      <div style={{ minWidth:0 }}>
+                        <div style={{ fontWeight:800, color:"#fff" }}>{v.titleAr}{!v.active && <span style={{ color:"#f59e0b", fontSize:11, marginInlineStart:8 }}>(مخفي)</span>}</div>
+                        <div style={{ fontSize:12, color:"rgba(255,255,255,.5)", marginTop:4, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{v.youtubeUrl}</div>
+                      </div>
+                      <div style={{ display:"flex", gap:8, flexShrink:0 }}>
+                        <button className="action-btn" onClick={async () => { await saveSiteVideo({ ...v, active: !v.active }); reload(); }}>{v.active ? "إخفاء" : "إظهار"}</button>
+                        <button className="action-btn danger" onClick={async () => { await deleteSiteVideo(v.id); reload(); showToast("🗑️ تم الحذف"); }}>حذف</button>
+                      </div>
                     </div>
                   ))}
                 </div>

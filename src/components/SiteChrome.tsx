@@ -48,7 +48,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
     ["/certificates", L("شهادات الجودة", "Certificates", "Sertifikalar")],
     ["/documents", L("مكتبة الوثائق", "Documents", "Belgeler")],
     ["/calculator", L("حاسبة الكميات", "Calculator", "Hesaplayıcı")],
-    ["/#projects", L("المشاريع", "Projects", "Projeler")],
+    ["/projects", L("المشاريع المنفذة", "Completed Projects", "Tamamlanan Projeler")],
     ["/applicators", L("المطبّقون", "Applicators", "Uygulayıcılar")],
     ["/delivery", L("مناطق التوصيل", "Delivery", "Teslimat")],
     ["/training", L("ورش التدريب", "Training", "Eğitim")],
@@ -89,7 +89,7 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
               <a href="/#about">{L("من نحن", "Who We Are", "Hakkımızda")}</a>
               <a href="/#ceo">{L("كلمة رئيس مجلس الإدارة", "Chairman's Message", "Başkanın Mesajı")}</a>
               <a href="/departments">{L("الهيكل التنظيمي", "Organizational Structure", "Organizasyon Yapısı")}</a>
-              <a href="/#projects">{L("المشاريع المنفذة", "Projects", "Projeler")}</a>
+              <a href="/projects">{L("المشاريع المنفذة", "Completed Projects", "Tamamlanan Projeler")}</a>
               <a href="/applicators">{L("المطبّقون المعتمدون", "Applicators", "Onaylı Uygulayıcılar")}</a>
               <a href="/training">{L("ورش التدريب", "Training", "Eğitim")}</a>
               <a href="/blog">{L("المدونة", "Blog", "Blog")}</a>

@@ -362,6 +362,19 @@ h2.shw { color: #fff; }
 .svc-bar { position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background: var(--accent); transition: width .5s ease; }
 .svc-card:hover .svc-bar { width: 100%; }
 
+/* ── Services showcase videos (YouTube) ── */
+.svc-videos { margin-top: 48px; }
+.svc-videos-h { color: #fff; font-size: clamp(18px, 3vw, 24px); font-weight: 900; margin: 0 0 22px; text-align: center; }
+.svc-video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+.svc-video-card { position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; aspect-ratio: 16 / 9; background: #000; box-shadow: 0 6px 22px rgba(0,0,0,.3); }
+.svc-video-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease, opacity .3s; }
+.svc-video-card:hover img { transform: scale(1.06); opacity: .8; }
+.svc-video-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(217,30,24,.92); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 22px; padding-inline-start: 4px; box-shadow: 0 4px 16px rgba(0,0,0,.4); transition: transform .3s; }
+.svc-video-card:hover .svc-video-play { transform: translate(-50%,-50%) scale(1.12); }
+.svc-video-t { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 14px 12px; background: linear-gradient(to top, rgba(0,0,0,.85), transparent); color: #fff; font-size: 14px; font-weight: 700; }
+@media (max-width: 768px) { .svc-video-grid { grid-template-columns: 1fr 1fr; gap: 10px; } .svc-video-play { width: 44px; height: 44px; font-size: 17px; } .svc-video-t { font-size: 12px; padding: 20px 10px 9px; } }
+@media (max-width: 440px) { .svc-video-grid { grid-template-columns: 1fr; } }
+
 /* ── PRODUCTS ── */
 .prod-hd { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 44px; gap: 28px; flex-wrap: wrap; }
 .prod-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 3px; background: var(--gray-light); }
