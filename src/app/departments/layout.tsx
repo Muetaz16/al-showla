@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "الهيكل التنظيمي | الشعلة الرائدة",
+  alternates: { canonical: "/departments" },
   description: "الهيكل التنظيمي لشركة الشعلة الرائدة لاستيراد مواد البناء وبيانات التواصل مع كل إدارة: رئيس مجلس الإدارة، المالية، المشتريات، المبيعات، والتسويق.",
 };
 

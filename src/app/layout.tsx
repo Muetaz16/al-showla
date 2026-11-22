@@ -29,7 +29,12 @@ export const metadata: Metadata = {
     "سيكا", "كناف", "Sika", "Knauf", "جبس", "عزل مائي",
   ],
   robots: { index: true, follow: true },
-  alternates: { canonical: "/" },
+  // No forced site-wide canonical: a root "/" canonical would wrongly point every
+  // page at the homepage. Each page self-canonicalizes to its own URL.
+  verification: {
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } : {}),
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ? { other: { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION } } : {}),
+  },
   manifest: "/manifest.json",
   icons: {
     icon: "/icon-192.png",

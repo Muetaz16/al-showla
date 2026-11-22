@@ -5,8 +5,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Public, indexable pages only. Login / cart / chat and other transactional or
   // authenticated routes are intentionally excluded from the sitemap.
   const pages = [
-    "", "/products", "/certificates", "/sample", "/faq", "/blog",
-    "/calculator", "/careers", "/company-profile", "/departments", "/midmak", "/delivery", "/applicators",
+    "", "/products", "/certificates", "/documents", "/sample", "/faq", "/blog",
+    "/calculator", "/advisor", "/training", "/careers", "/company-profile",
+    "/departments", "/midmak", "/delivery", "/applicators",
   ];
   return pages.map((path) => ({
     url: `${base}${path}`,

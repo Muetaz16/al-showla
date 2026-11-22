@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "الملف التعريفي | الشعلة الرائدة — Company Profile",
+  alternates: { canonical: "/company-profile" },
   description: "الملف التعريفي لشركة الشعلة الرائدة لاستيراد مواد البناء: من نحن، مسيرتنا، رؤيتنا ورسالتنا، قيمنا، خدماتنا، عملاؤنا ومشاريعنا.",
 };
 
