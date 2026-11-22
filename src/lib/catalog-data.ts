@@ -4545,7 +4545,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     "rating": 5,
     "reviewCount": 0,
     "certificates": [],
-    "nameAr": "ويبر الألماني (AL ALMANY) — سيلر أكريليك للأسطح المسامية",
+    "nameAr": "ويبر الألماني — سيلر أكريليك للأسطح المسامية",
     "nameEn": "weber AL ALMANY — Acrylic Copolymer Sealer for Porous Substrates",
     "descriptionAr": "منتج أصلي من Weber ضمن فئة الكيماويات وحلول البناء المتخصصة. للاستفسار وطلب عرض سعر تواصل معنا.",
     "descriptionEn": "Genuine Weber product in the Specialized Construction Chemicals & Solutions category. Contact us for a quotation.",
