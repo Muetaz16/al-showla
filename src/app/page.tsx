@@ -1386,7 +1386,6 @@ export default function Home() {
                 { ico: "✉️", lbl: t.emailLbl, val: <a href="mailto:sales@alshowla.com">{t.emailVal}</a> },
                 { ico: "📍", lbl: t.addressLbl, val: <span>{t.addressVal}</span> },
                 { ico: "🕐", lbl: t.hoursLbl, val: <span>{t.hoursVal}</span> },
-                { ico: "👤", lbl: (lang === "ar" ? "شريك مؤسس وعضو مجلس الإدارة" : lang === "tr" ? "Kurucu Ortak ve Yönetim Kurulu Üyesi" : "Founding Partner & Board Member"), val: <span>{lang === "ar" ? "صالح العوامي" : "Saleh Al-Awamy"}</span> },
               ].map((c, i) => (
                 <div className="ci ao" key={i}>
                   <div className="ci-ico">{c.ico}</div>
