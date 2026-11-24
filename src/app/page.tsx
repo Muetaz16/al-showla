@@ -388,6 +388,7 @@ export default function Home() {
   };
 
   const LOGO = "/site/cropped-ICON-270x270.png";
+  const FULL_LOGO = "/logo-full.png"; // complete brand lockup (icon + wordmark) for the header
   const HERO_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
   const VISION_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
   const MISSION_IMG = "/categories/cat-adhesives.jpg";
@@ -701,14 +702,10 @@ export default function Home() {
 
       {/* ── NAV ── */}
       <nav id="nav" className={navSolid ? "solid" : ""}>
-        <a href="#home" className="nav-logo">
+        <a href="#home" className="nav-logo nav-logo-brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO} alt="Al-Showla Al-Raeda Logo"
+          <img src={FULL_LOGO} alt="Al-Showla Al-Raeda" className="nav-logo-full"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
-          <div>
-            <div className="nav-logo-txt">{lang === "ar" ? "الشعلة الرائدة" : "AL-SHOWLA AL-RAEDA"}</div>
-            <div className="nav-logo-sub">{lang === "ar" ? "مواد البناء والحلول الإنشائية" : "Building Materials & Construction"}</div>
-          </div>
         </a>
         <div className="nav-links">
           <a href="#home">{t.home}</a>

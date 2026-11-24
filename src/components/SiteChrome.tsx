@@ -27,6 +27,7 @@ export const NAV: { href: string; ar: string; en: string }[] = [
 ];
 
 const LOGO = "/site/cropped-ICON-270x270.png";
+const FULL_LOGO = "/logo-full.png"; // complete brand lockup (icon + wordmark) for the header
 
 // SiteHeader / SiteFooter render the SAME chrome as the main page, by reusing the
 // homepage's global nav/footer CSS classes (defined in globals.css). Placed on
@@ -72,14 +73,10 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
           fontFamily: "'Cairo', sans-serif",
         }}
       >
-        <a href="/" className="nav-logo">
+        <a href="/" className="nav-logo nav-logo-brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={LOGO} alt="Al-Showla Al-Raeda" className="nav-logo-img"
+          <img src={FULL_LOGO} alt="Al-Showla Al-Raeda" className="nav-logo-full"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
-          <div>
-            <div className="nav-logo-txt">{L("الشعلة الرائدة", "AL-SHOWLA AL-RAEDA")}</div>
-            <div className="nav-logo-sub">{L("مواد البناء والحلول الإنشائية", "Building Materials & Construction")}</div>
-          </div>
         </a>
         <div className="nav-links">
           <a href="/">{L("الرئيسية", "Home", "Ana Sayfa")}</a>
