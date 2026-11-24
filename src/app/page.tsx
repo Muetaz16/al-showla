@@ -6,8 +6,8 @@ import { useDark } from "@/lib/useDark";
 import { submitContactMessage } from "@/app/cms-actions";
 import { getBanners, getSiteVideos } from "@/app/cms-actions";
 import { youtubeId } from "@/lib/site-videos";
-import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb, Building2, Truck } from "lucide-react";
-import { PROJECTS, PARTNERS, LINKEDIN_URL } from "@/lib/company-data";
+import { ClipboardCheck, Handshake, Award, Leaf, Lightbulb } from "lucide-react";
+import { PARTNERS, LINKEDIN_URL } from "@/lib/company-data";
 
 /* ─────────────────────────────────────────────
    TRANSLATIONS
@@ -715,7 +715,7 @@ export default function Home() {
               <a href="#about">{t.whoWeAre}</a>
               <a href="#ceo">{t.ceoMsg}</a>
               <a href="/departments">{lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"}</a>
-              <a href="#projects">{lang === "ar" ? "المشاريع المنفذة" : "Projects"}</a>
+              <a href="/projects">{lang === "ar" ? "المشاريع المنفذة" : "Projects"}</a>
               <a href="/applicators">{lang === "ar" ? "المطبّقون المعتمدون" : "Applicators"}</a>
               <a href="/training">{lang === "ar" ? "ورش التدريب" : "Training"}</a>
               <a href="/blog">{lang === "ar" ? "المدونة" : "Blog"}</a>
@@ -759,7 +759,7 @@ export default function Home() {
 
       {/* ── MOBILE NAV ── */}
       <div className={`mob-nav${mobOpen ? " open" : ""}`}>
-        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["/departments", lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["#projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/midmak", lang === "ar" ? "ميدماك" : "Midmak"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
+        {[["#home", t.home], ["#about", t.whoWeAre], ["#ceo", t.ceoMsg], ["/departments", lang === "ar" ? "إدارات الشركة والتواصل" : "Departments & Contacts"], ["#services", t.services], ["/products", lang === "ar" ? "كتالوج المنتجات" : "Products Catalog"], ["/advisor", lang === "ar" ? "المستشار الذكي" : "AI Advisor"], ["/certificates", lang === "ar" ? "شهادات الجودة" : "Quality Certificates"], ["/documents", lang === "ar" ? "مكتبة الوثائق" : "Documents"], ["/calculator", lang === "ar" ? "حاسبة الكميات" : "Calculator"], ["/projects", lang === "ar" ? "المشاريع" : "Projects"], ["/applicators", lang === "ar" ? "المطبّقون" : "Applicators"], ["/delivery", lang === "ar" ? "مناطق التوصيل" : "Delivery"], ["/training", lang === "ar" ? "ورش التدريب" : "Training"], ["/sample", lang === "ar" ? "طلب عينة" : "Request Sample"], ["/faq", lang === "ar" ? "الأسئلة الشائعة" : "FAQ"], ["/blog", lang === "ar" ? "المدونة" : "Blog"], ["/midmak", lang === "ar" ? "ميدماك" : "Midmak"], ["/careers", lang === "ar" ? "الوظائف" : "Careers"], ["#clients", t.clients], ["#partners", t.partners], ["#contact", t.contact]].map(([href, label]) => (
           <a key={href} href={href} onClick={() => setMobOpen(false)}>{label}</a>
         ))}
         <div className="mob-nav-divider" />
@@ -1293,34 +1293,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════════════════ FEATURED PROJECTS ══════════════════ */}
-      <section id="projects" className="sec" style={{ background: "var(--white)" }}>
-        <div className="con">
-          <div className="lbl ao">{t.projectsLbl}</div>
-          <h2 className="sh ao">{t.projectsH2a} <em>{t.projectsH2b}</em></h2>
-          <div className="prj-grid">
-            {PROJECTS.filter((p) => p.group === "major").map((p, i) => (
-              <div className={`prj-card${p.parties.length > 2 ? " wide" : ""}`} key={i}>
-                <div className="prj-ico"><Building2 size={20} /></div>
-                <div className="prj-t">{lang === "ar" ? p.titleAr : p.titleEn}</div>
-                {p.parties.length > 0 && (
-                  <ul className="prj-parties">
-                    {p.parties.map(([ar, en], j) => <li key={j}>{lang === "ar" ? ar : en}</li>)}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="prj-supply">
-            <div className="prj-supply-h"><Truck size={18} /> {t.projectsSupply}</div>
-            <div className="prj-supply-list">
-              {PROJECTS.filter((p) => p.group === "supply").map((p, i) => (
-                <span key={i}>{lang === "ar" ? p.titleAr : p.titleEn}{p.parties[0] ? ` — ${lang === "ar" ? p.parties[0][0] : p.parties[0][1]}` : ""}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Featured projects now live on the dedicated /projects page (removed from the homepage). */}
 
       {/* ══════════════════ PARTNERS ══════════════════ */}
       <section id="partners" className="sec" style={{ background: "var(--off)" }}>
