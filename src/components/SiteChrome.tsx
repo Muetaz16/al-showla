@@ -27,7 +27,7 @@ export const NAV: { href: string; ar: string; en: string }[] = [
 ];
 
 const LOGO = "/site/cropped-ICON-270x270.png";
-const FULL_LOGO = "/logo-full.png"; // complete brand lockup (icon + wordmark) for the header
+const FULL_LOGO = "/logo-horizontal.png"; // complete horizontal brand lockup for the header
 
 // SiteHeader / SiteFooter render the SAME chrome as the main page, by reusing the
 // homepage's global nav/footer CSS classes (defined in globals.css). Placed on
@@ -68,8 +68,8 @@ export function SiteHeader({ lang = "ar", onToggleLang, rightSlot }: { lang?: La
         style={{
           position: "sticky", top: 0, zIndex: 999, height: 70,
           display: "flex", alignItems: "center", justifyContent: "space-between",
-          padding: "0 clamp(14px, 3vw, 5%)", gap: 16, background: "var(--white)",
-          boxShadow: "0 1px 0 var(--gray-light), 0 4px 20px rgba(0,81,162,.06)",
+          padding: "0 clamp(14px, 3vw, 5%)", gap: 16, background: "rgba(255,255,255,.97)",
+          boxShadow: "0 1px 0 rgba(0,81,162,.1), 0 4px 20px rgba(0,81,162,.06)",
           fontFamily: "'Cairo', sans-serif",
         }}
       >

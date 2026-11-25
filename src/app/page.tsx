@@ -388,7 +388,7 @@ export default function Home() {
   };
 
   const LOGO = "/site/cropped-ICON-270x270.png";
-  const FULL_LOGO = "/logo-full.png"; // complete brand lockup (icon + wordmark) for the header
+  const FULL_LOGO = "/logo-horizontal.png"; // complete horizontal brand lockup for the header
   const HERO_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
   const VISION_IMG = "/site/Copy-of-Our-Vision-scaled.jpg";
   const MISSION_IMG = "/categories/cat-adhesives.jpg";
