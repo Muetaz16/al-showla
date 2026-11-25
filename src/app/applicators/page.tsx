@@ -10,7 +10,9 @@ type Applicator = { id: string; name: string; systemSpecialty: string; contactIn
 export default function ApplicatorsPage() {
   const [lang, setLang] = useLang();
   const isAr = lang === "ar";
-  const tx = (ar: string, en: string) => (isAr ? ar : en);
+  const tx = (ar: string, en: string, tr?: string) => (lang === "ar" ? ar : lang === "tr" ? (tr ?? en) : en);
+  // Pick the language-appropriate value: Arabic → English → Turkish, with graceful fallback.
+  const pick = <T,>(ar: T, en?: T, tr?: T): T => (lang === "ar" ? ar : lang === "tr" ? ((tr ?? en ?? ar) as T) : ((en ?? ar) as T));
   const [items, setItems] = useState<Applicator[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -26,28 +28,36 @@ export default function ApplicatorsPage() {
         {/* ── Header banner ── */}
         <section className="ap-hero">
           <div className="ap-wrap">
-            <h1>{tx("دليل المطبّقين المعتمدين", "Certified Applicators Directory")}</h1>
-            <p>{tx("شركات التطبيق المعتمدة والأنظمة التي تتخصص فيها وبيانات التواصل معها.", "Certified application companies, the systems they specialise in and how to contact them.")}</p>
+            <h1>{tx("دليل المطبّقين المعتمدين", "Certified Applicators Directory", "Onaylı Uygulayıcılar Dizini")}</h1>
+            <p>{tx("شركات التطبيق المعتمدة والأنظمة التي تتخصص فيها وبيانات التواصل معها.", "Certified application companies, the systems they specialise in and how to contact them.", "Onaylı uygulama şirketleri, uzmanlaştıkları sistemler ve iletişim bilgileri.")}</p>
           </div>
         </section>
 
         <div className="ap-wrap ap-list">
           {loading ? (
-            <div className="ap-empty">{tx("جارٍ التحميل...", "Loading...")}</div>
+            <div className="ap-empty">{tx("جارٍ التحميل...", "Loading...", "Yükleniyor...")}</div>
           ) : items.length === 0 ? (
             <div className="ap-empty">
-              {tx("لم تُضف شركات تطبيق بعد. يُدار الدليل من لوحة الإدارة.", "No applicators added yet.")}
+              {tx("لم تُضف شركات تطبيق بعد. يُدار الدليل من لوحة الإدارة.", "No applicators added yet.", "Henüz uygulayıcı eklenmedi.")}
             </div>
           ) : (
             items.map((a) => {
               const c = a.contactInfo || {};
               const phones: string[] = [c.phone, c.phone2].filter(Boolean);
-              const name = isAr ? a.name : (c.nameEn || a.name);
-              const spec = isAr ? a.systemSpecialty : (c.systemSpecialtyEn || a.systemSpecialty);
-              const desc = isAr ? c.description : (c.descriptionEn || c.description);
-              const services: string[] = (isAr ? c.services : (c.servicesEn || c.services)) || [];
-              const projects: string[] = (isAr ? c.projects : (c.projectsEn || c.projects)) || [];
-              const certs: string[] = (isAr ? a.certifications : (c.certificationsEn || a.certifications)) || [];
+              const name = pick<string>(a.name, c.nameEn, c.nameTr);
+              const spec = pick<string>(a.systemSpecialty, c.systemSpecialtyEn, c.systemSpecialtyTr);
+              const desc = pick<string>(c.description, c.descriptionEn, c.descriptionTr);
+              const services: string[] = pick<string[]>(c.services, c.servicesEn, c.servicesTr) || [];
+              const projects: string[] = pick<string[]>(c.projects, c.projectsEn, c.projectsTr) || [];
+              const certs: string[] = pick<string[]>(a.certifications, c.certificationsEn, c.certificationsTr) || [];
+              // Detailed, fully-translated sections (fall back AR → EN → TR)
+              const city: string = pick<string>(c.city, c.cityEn, c.cityTr);
+              const stats: string[][] = pick<string[][]>(c.stats, c.statsEn, c.statsTr) || [];
+              const statsNote: string = pick<string>(c.statsNote, c.statsNoteEn, c.statsNoteTr);
+              const scopeIntro: string = pick<string>(c.scopeIntro, c.scopeIntroEn, c.scopeIntroTr);
+              const scope: string[][] = pick<string[][]>(c.scope, c.scopeEn, c.scopeTr) || [];
+              const projectsDetailed: any[] = pick<any[]>(c.projectsDetailed, c.projectsDetailedEn, c.projectsDetailedTr) || [];
+              const projectsNote: string = pick<string>(c.projectsNote, c.projectsNoteEn, c.projectsNoteTr);
               return (
                 <article key={a.id} className="ap-card">
                   {/* Logo + contact panel */}
@@ -61,7 +71,7 @@ export default function ApplicatorsPage() {
                         <a key={ph} href={`tel:${ph.replace(/\D/g, "").replace(/^0/, "+218")}`} dir="ltr">📞 {ph}</a>
                       ))}
                       {c.email && <a href={`mailto:${c.email}`}>✉️ {c.email}</a>}
-                      {c.city && <span>📍 {c.city}</span>}
+                      {city && <span>📍 {city}</span>}
                     </div>
                     {(c.website || c.facebook || c.linkedin) && (
                       <div className="ap-links">
@@ -79,28 +89,28 @@ export default function ApplicatorsPage() {
                     {desc && <p className="ap-desc">{desc}</p>}
 
                     {/* أرقام الأعمال — work figures */}
-                    {Array.isArray(c.stats) && c.stats.length > 0 && (
+                    {stats.length > 0 && (
                       <div className="ap-block">
-                        <h3>{tx("أرقام الأعمال", "Work in numbers")}</h3>
+                        <h3>{tx("أرقام الأعمال", "Work in numbers", "Rakamlarla işler")}</h3>
                         <div className="ap-stats">
-                          {c.stats.map((s: string[], i: number) => (
+                          {stats.map((s: string[], i: number) => (
                             <div className="ap-stat" key={i}>
                               <div className="ap-stat-n">{s[0]}</div>
                               <div className="ap-stat-l">{s[1]}</div>
                             </div>
                           ))}
                         </div>
-                        {c.statsNote && <p className="ap-note">{c.statsNote}</p>}
+                        {statsNote && <p className="ap-note">{statsNote}</p>}
                       </div>
                     )}
 
                     {/* نطاق الأعمال — scope of work */}
-                    {Array.isArray(c.scope) && c.scope.length > 0 ? (
+                    {scope.length > 0 ? (
                       <div className="ap-block">
-                        <h3>{tx("نطاق الأعمال", "Scope of work")}</h3>
-                        {c.scopeIntro && <p className="ap-desc" style={{ margin: "0 0 12px" }}>{c.scopeIntro}</p>}
+                        <h3>{tx("نطاق الأعمال", "Scope of work", "İş kapsamı")}</h3>
+                        {scopeIntro && <p className="ap-desc" style={{ margin: "0 0 12px" }}>{scopeIntro}</p>}
                         <div className="ap-scope">
-                          {c.scope.map((s: string[], i: number) => (
+                          {scope.map((s: string[], i: number) => (
                             <div className="ap-scope-item" key={i}>
                               <h4>{s[0]}</h4>
                               <p>{s[1]}</p>
@@ -110,7 +120,7 @@ export default function ApplicatorsPage() {
                       </div>
                     ) : services.length > 0 && (
                       <div className="ap-block">
-                        <h3>{tx("الخدمات", "Services")}</h3>
+                        <h3>{tx("الخدمات", "Services", "Hizmetler")}</h3>
                         <div className="ap-chips">
                           {services.map((s: string, i: number) => <span key={i}>{s}</span>)}
                         </div>
@@ -118,23 +128,23 @@ export default function ApplicatorsPage() {
                     )}
 
                     {/* من مشاريعها — projects */}
-                    {Array.isArray(c.projectsDetailed) && c.projectsDetailed.length > 0 ? (
+                    {projectsDetailed.length > 0 ? (
                       <div className="ap-block">
-                        <h3>{tx("من مشاريعها", "Selected projects")}</h3>
+                        <h3>{tx("من مشاريعها", "Selected projects", "Seçilmiş projeler")}</h3>
                         <div className="ap-projgrid">
-                          {c.projectsDetailed.map((p: any, i: number) => (
+                          {projectsDetailed.map((p: any, i: number) => (
                             <div className="ap-proj" key={i}>
                               <div className="ap-proj-name">{p.name}</div>
-                              {p.client && <div className="ap-proj-client">{tx("العميل", "Client")}: {p.client}</div>}
+                              {p.client && <div className="ap-proj-client">{tx("العميل", "Client", "İşveren")}: {p.client}</div>}
                               {Array.isArray(p.items) && <ul>{p.items.map((it: string, j: number) => <li key={j}>{it}</li>)}</ul>}
                             </div>
                           ))}
                         </div>
-                        {c.projectsNote && <p className="ap-note">{c.projectsNote}</p>}
+                        {projectsNote && <p className="ap-note">{projectsNote}</p>}
                       </div>
                     ) : projects.length > 0 && (
                       <div className="ap-block">
-                        <h3>{tx("من مشاريعها", "Selected projects")}</h3>
+                        <h3>{tx("من مشاريعها", "Selected projects", "Seçilmiş projeler")}</h3>
                         <ul className="ap-projects">
                           {projects.map((p: string, i: number) => <li key={i}>{p}</li>)}
                         </ul>
@@ -143,7 +153,7 @@ export default function ApplicatorsPage() {
 
                     {certs.length > 0 && (
                       <div className="ap-block">
-                        <h3>{tx("منفذ معتمد (Certified Applicator) من", "Certified Applicator for")}</h3>
+                        <h3>{tx("منفذ معتمد (Certified Applicator) من", "Certified Applicator for", "Onaylı Uygulayıcı")}</h3>
                         <div className="ap-chips gold">
                           {certs.map((x, i) => <span key={i}>{x}</span>)}
                         </div>
